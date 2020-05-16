@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_mp_opforce_assault</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="40" codePart="self setModel(&quot;body_mp_opforce_assault&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="102" charLength="49" codePart="self attach(&quot;head_mp_opforce_headwrap&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="114" charLength="26" />
+      <funcRefArg charIndex="142" charLength="2" />
+      <funcRefArg charIndex="146" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetViewModel" charIndex="155" charLength="39" codePart="self setViewmodel(&quot;viewhands_op_force&quot;)" isCall="True">
+      <funcRefArg charIndex="173" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="244" charLength="40" codePart="precacheModel(&quot;body_mp_opforce_assault&quot;)" isCall="True">
+      <funcRefArg charIndex="258" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="288" charLength="41" codePart="precacheModel(&quot;head_mp_opforce_headwrap&quot;)" isCall="True">
+      <funcRefArg charIndex="302" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="333" charLength="35" codePart="precacheModel(&quot;viewhands_op_force&quot;)" isCall="True">
+      <funcRefArg charIndex="347" charLength="20" />
+    </funcRef>
+  </content>
+</scriptinfo>

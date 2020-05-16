@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\ctf</name>
+  </settings>
+  <content>
+    <include>common_scripts\utility</include>
+    <include>maps\mp\_utility</include>
+    <include>maps\mp\gametypes\_hud_util</include>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPrecacheGameType" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onStartGameType" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getOriginFromBombZone" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="entityName">
+      </param>
+    </func>
+    <func name="onTimeLimit" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onOvertime" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onRoundSwitch" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onDeadEvent" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="onSpawnPlayer" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="captureTheFlag" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="createReturnMessageElems" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="returnFlagHudElems" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="createFlagObject" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="trigger">
+      </param>
+      <param name="visuals">
+      </param>
+    </func>
+    <func name="createCaptureZone" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="trigger">
+      </param>
+    </func>
+    <func name="onPickup" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="player">
+      </param>
+    </func>
+    <func name="onPickupFailed" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="player">
+      </param>
+    </func>
+    <func name="flagReturned" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="player">
+      </param>
+    </func>
+    <func name="monitorFlagCarrier" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="flagCarrier">
+      </param>
+    </func>
+    <func name="onDrop" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="player">
+      </param>
+    </func>
+    <func name="onReset" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="player">
+      </param>
+    </func>
+    <func name="onUse" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="player">
+      </param>
+    </func>
+    <func name="teamScored" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerKilled" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="eInflictor">
+      </param>
+      <param name="attacker">
+      </param>
+      <param name="iDamage">
+      </param>
+      <param name="sMeansOfDeath">
+      </param>
+      <param name="sWeapon">
+      </param>
+      <param name="vDir">
+      </param>
+      <param name="sHitLoc">
+      </param>
+      <param name="psOffsetTime">
+      </param>
+      <param name="deathAnimDuration">
+      </param>
+    </func>
+    <func name="resetObjectiveWaypoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="flagAtHome">
+      </param>
+    </func>
+    <func name="statusDialog" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="dialog">
+      </param>
+      <param name="team">
+      </param>
+    </func>
+    <func name="delayedLeaderDialog" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="sound">
+      </param>
+      <param name="team">
+      </param>
+    </func>
+    <error type="semantic" charIndex="807" charLength="28" lineIndex="16">
+      <message>Could not include file 'openwarfare\_utils'</message>
+      <fullMessage>Bad semantic: Could not include file 'openwarfare\_utils', file 'maps\mp\gametypes\ctf', line 17, '#include openwarfare\_utils;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

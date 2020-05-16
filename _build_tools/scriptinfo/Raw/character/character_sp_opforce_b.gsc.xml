@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_opforce_b</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="34" codePart="self setModel(&quot;body_sp_opforce_b&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="96" charLength="62" codePart="self attach(&quot;head_sp_opforce_3hole_ski_mask_body_b&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="108" charLength="39" />
+      <funcRefArg charIndex="149" charLength="2" />
+      <funcRefArg charIndex="153" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="208" charLength="34" codePart="precacheModel(&quot;body_sp_opforce_b&quot;)" isCall="True">
+      <funcRefArg charIndex="222" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="246" charLength="54" codePart="precacheModel(&quot;head_sp_opforce_3hole_ski_mask_body_b&quot;)" isCall="True">
+      <funcRefArg charIndex="260" charLength="39" />
+    </funcRef>
+  </content>
+</scriptinfo>

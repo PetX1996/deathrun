@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_communique_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="dowindow" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="windnumber">
+      </param>
+      <param name="windfx">
+      </param>
+    </func>
+    <func name="dovent" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ventnumber">
+      </param>
+      <param name="ventfx">
+      </param>
+    </func>
+    <func name="fanspin" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="fanrotate" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="speed">
+      </param>
+    </func>
+  </content>
+</scriptinfo>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="False" compiled="False">
+    <name>maps\mp\_destructible</name>
+  </settings>
+  <content>
+    <error type="syntax" charIndex="62" charLength="31" lineIndex="2">
+      <message>Unknown token</message>
+      <fullMessage>Bad syntax: Unknown token, file 'maps\mp\_destructible', line 3, '#using_animtree( "vehicles" );'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

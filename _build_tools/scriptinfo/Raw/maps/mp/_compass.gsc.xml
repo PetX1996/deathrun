@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_compass</name>
+  </settings>
+  <content>
+    <func name="setupMiniMap" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="material">
+      </param>
+    </func>
+    <func name="vecscale" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="vec">
+      </param>
+      <param name="scalar">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="98" charLength="42" codePart="getdvarfloat(&quot;scr_requiredMapAspectRatio&quot;)" isCall="True">
+      <funcRefArg charIndex="111" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="156" charLength="43" codePart="getentarray(&quot;minimap_corner&quot;, &quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="168" charLength="16" />
+      <funcRefArg charIndex="186" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="233" charLength="111" codePart="println(&quot;^1Error: There are not exactly two \&quot;minimap_corner\&quot; entities in the map. Could not set up minimap.&quot;)" isCall="True">
+      <funcRefArg charIndex="241" charLength="102" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Cos" charIndex="537" charLength="18" codePart="cos(getnorthyaw())" isCall="True">
+      <funcRefArg charIndex="541" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetNorthYaw" charIndex="541" charLength="13" codePart="getnorthyaw()" isCall="True" />
+    <funcRef sfPath="codapi" name="Sin" charIndex="557" charLength="18" codePart="sin(getnorthyaw())" isCall="True">
+      <funcRefArg charIndex="561" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetNorthYaw" charIndex="561" charLength="13" codePart="getnorthyaw()" isCall="True" />
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="730" charLength="27" codePart="vectordot(cornerdiff, west)" isCall="True">
+      <funcRefArg charIndex="740" charLength="10" />
+      <funcRefArg charIndex="752" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="815" charLength="28" codePart="vectordot(cornerdiff, north)" isCall="True">
+      <funcRefArg charIndex="825" charLength="10" />
+      <funcRefArg charIndex="837" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_compass" name="vecscale" charIndex="1027" charLength="45" codePart="vecscale(north, vectordot(cornerdiff, north))" isCall="True">
+      <funcRefArg charIndex="1036" charLength="5" />
+      <funcRefArg charIndex="1043" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="1043" charLength="28" codePart="vectordot(cornerdiff, north)" isCall="True">
+      <funcRefArg charIndex="1053" charLength="10" />
+      <funcRefArg charIndex="1065" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="1206" charLength="28" codePart="vectordot(cornerdiff, north)" isCall="True">
+      <funcRefArg charIndex="1216" charLength="10" />
+      <funcRefArg charIndex="1228" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_compass" name="vecscale" charIndex="1303" charLength="45" codePart="vecscale(north, vectordot(cornerdiff, north))" isCall="True">
+      <funcRefArg charIndex="1312" charLength="5" />
+      <funcRefArg charIndex="1319" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="1319" charLength="28" codePart="vectordot(cornerdiff, north)" isCall="True">
+      <funcRefArg charIndex="1329" charLength="10" />
+      <funcRefArg charIndex="1341" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="1649" charLength="39" codePart="vectordot(northwest - southeast, north)" isCall="True">
+      <funcRefArg charIndex="1659" charLength="21" />
+      <funcRefArg charIndex="1682" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="1707" charLength="38" codePart="vectordot(northwest - southeast, west)" isCall="True">
+      <funcRefArg charIndex="1717" charLength="21" />
+      <funcRefArg charIndex="1740" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_compass" name="vecscale" charIndex="1915" charLength="48" codePart="vecscale( west, westportion * (incr - 1) * 0.5 )" isCall="True">
+      <funcRefArg charIndex="1925" charLength="4" />
+      <funcRefArg charIndex="1931" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_compass" name="vecscale" charIndex="2048" charLength="50" codePart="vecscale( north, northportion * (incr - 1) * 0.5 )" isCall="True">
+      <funcRefArg charIndex="2058" charLength="5" />
+      <funcRefArg charIndex="2065" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetMiniMap" charIndex="2162" charLength="76" codePart="setMiniMap(material, northwest[0], northwest[1], southeast[0], southeast[1])" isCall="True">
+      <funcRefArg charIndex="2173" charLength="8" />
+      <funcRefArg charIndex="2183" charLength="12" />
+      <funcRefArg charIndex="2197" charLength="12" />
+      <funcRefArg charIndex="2211" charLength="12" />
+      <funcRefArg charIndex="2225" charLength="12" />
+    </funcRef>
+  </content>
+</scriptinfo>

@@ -1,0 +1,5 @@
+.svn
+.dds
+.gsc
+.png
+.psd

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_dynamic_foliage2</name>
+  </settings>
+  <content>
+    <include>maps\mp\_utility</include>
+    <include>common_scripts\utility</include>
+    <func name="initdfs" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="tree_animation" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="foliage_animation" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="grass_animation" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+  </content>
+</scriptinfo>

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_deathicons</name>
+  </settings>
+  <content>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerConnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateDeathIconsEnabled" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="addDeathIcon" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="entity">
+      </param>
+      <param name="dyingplayer">
+      </param>
+      <param name="team">
+      </param>
+      <param name="timeout">
+      </param>
+    </func>
+    <func name="destroySlowly" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="timeout">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="50" charLength="31" codePart="precacheShader(&quot;headicon_dead&quot;)" isCall="True">
+      <funcRefArg charIndex="65" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_deathicons" name="onPlayerConnect" charIndex="87" charLength="30" codePart="level thread onPlayerConnect()" isCall="True" />
+    <funcRef sfPath="codapi" name="waittill" charIndex="163" charLength="36" codePart="level waittill(&quot;connecting&quot;, player)" isCall="True">
+      <funcRefArg charIndex="178" charLength="12" />
+      <funcRefArg charIndex="192" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="545" charLength="35" codePart="dyingplayer endon(&quot;spawned_player&quot;)" isCall="True">
+      <funcRefArg charIndex="563" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="584" charLength="31" codePart="dyingplayer endon(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="602" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="WaitTillSlowProcessAllowed" charIndex="634" charLength="60" codePart="maps\mp\gametypes\_globallogic::WaitTillSlowProcessAllowed()" isCall="True" />
+    <funcRef sfPath="codapidev" name="Assert" charIndex="701" charLength="42" codePart="assert(team == &quot;allies&quot; || team == &quot;axis&quot;)" isCall="True">
+      <funcRefArg charIndex="708" charLength="34" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="755" charLength="34" codePart="getDvar( &quot;ui_hud_showdeathicons&quot; )" isCall="True">
+      <funcRefArg charIndex="764" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="859" charLength="31" codePart="isdefined( self.lastDeathIcon )" isCall="True">
+      <funcRefArg charIndex="870" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Destroy" charIndex="896" charLength="28" codePart="self.lastDeathIcon destroy()" isCall="True" />
+    <funcRef sfPath="codapi" name="NewTeamHudElem" charIndex="946" charLength="22" codePart="newTeamHudElem( team )" isCall="True">
+      <funcRefArg charIndex="962" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetShader" charIndex="1158" charLength="47" codePart="newdeathicon setShader(&quot;headicon_dead&quot;, 14, 14)" isCall="True">
+      <funcRefArg charIndex="1181" charLength="15" />
+      <funcRefArg charIndex="1198" charLength="2" />
+      <funcRefArg charIndex="1202" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetShader" charIndex="1217" charLength="45" codePart="newdeathicon setShader(&quot;headicon_dead&quot;, 7, 7)" isCall="True">
+      <funcRefArg charIndex="1240" charLength="15" />
+      <funcRefArg charIndex="1257" charLength="1" />
+      <funcRefArg charIndex="1260" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetWayPoint" charIndex="1266" charLength="30" codePart="newdeathicon setwaypoint(true)" isCall="True">
+      <funcRefArg charIndex="1291" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_deathicons" name="destroySlowly" charIndex="1343" charLength="45" codePart="newdeathicon thread destroySlowly ( timeout )" isCall="True">
+      <funcRefArg charIndex="1379" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="1426" charLength="19" codePart="self endon(&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="1437" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="FadeOverTime" charIndex="1471" charLength="22" codePart="self fadeOverTime(1.0)" isCall="True">
+      <funcRefArg charIndex="1489" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Destroy" charIndex="1530" charLength="14" codePart="self destroy()" isCall="True" />
+  </content>
+</scriptinfo>

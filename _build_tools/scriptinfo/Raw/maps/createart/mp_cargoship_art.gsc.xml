@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createart\mp_cargoship_art</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="152" charLength="33" codePart="setdvar( &quot;scr_fog_disable&quot;, &quot;0&quot; )" isCall="True">
+      <funcRefArg charIndex="161" charLength="17" />
+      <funcRefArg charIndex="180" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VisionSetNaked" charIndex="235" charLength="35" codePart="VisionSetNaked( &quot;mp_cargoship&quot;, 0 )" isCall="True">
+      <funcRefArg charIndex="251" charLength="14" />
+      <funcRefArg charIndex="267" charLength="2" />
+    </funcRef>
+  </content>
+</scriptinfo>

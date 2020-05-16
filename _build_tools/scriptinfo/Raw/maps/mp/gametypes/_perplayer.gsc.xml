@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_perplayer</name>
+  </settings>
+  <content>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="id">
+      </param>
+      <param name="playerBeginCallback">
+      </param>
+      <param name="playerEndCallback">
+      </param>
+    </func>
+    <func name="enable" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="handler">
+      </param>
+    </func>
+    <func name="disable" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="handler">
+      </param>
+    </func>
+    <func name="onPlayerConnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="handler">
+      </param>
+    </func>
+    <func name="onPlayerDisconnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="handler">
+      </param>
+    </func>
+    <func name="onJoinedTeam" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="handler">
+      </param>
+    </func>
+    <func name="onJoinedSpectators" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="handler">
+      </param>
+    </func>
+    <func name="onPlayerSpawned" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="handler">
+      </param>
+    </func>
+    <func name="onPlayerKilled" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="handler">
+      </param>
+    </func>
+    <func name="handlePlayer" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="handler">
+      </param>
+    </func>
+    <func name="unHandlePlayer" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="handler">
+      </param>
+      <param name="unsetready">
+      </param>
+      <param name="disconnected">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="1315" charLength="34" codePart="precacheShader(&quot;objpoint_default&quot;)" isCall="True">
+      <funcRefArg charIndex="1330" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="1366" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_perplayer" name="onPlayerConnect" charIndex="1558" charLength="31" codePart="thread onPlayerConnect(handler)" isCall="True">
+      <funcRefArg charIndex="1581" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="2107" charLength="36" codePart="getentarray( &quot;player&quot;, &quot;classname&quot; )" isCall="True">
+      <funcRefArg charIndex="2120" charLength="8" />
+      <funcRefArg charIndex="2130" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_perplayer" name="handlePlayer" charIndex="2499" charLength="32" codePart="players[i] handlePlayer(handler)" isCall="True">
+      <funcRefArg charIndex="2523" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="2996" charLength="36" codePart="getentarray( &quot;player&quot;, &quot;classname&quot; )" isCall="True">
+      <funcRefArg charIndex="3009" charLength="8" />
+      <funcRefArg charIndex="3019" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_perplayer" name="unHandlePlayer" charIndex="3382" charLength="48" codePart="players[i] unHandlePlayer(handler, false, false)" isCall="True">
+      <funcRefArg charIndex="3408" charLength="7" />
+      <funcRefArg charIndex="3417" charLength="5" />
+      <funcRefArg charIndex="3424" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="3533" charLength="36" codePart="level waittill(&quot;connecting&quot;, player)" isCall="True">
+      <funcRefArg charIndex="3548" charLength="12" />
+      <funcRefArg charIndex="3562" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3581" charLength="26" codePart="isdefined(player.handlers)" isCall="True">
+      <funcRefArg charIndex="3591" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="3668" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_perplayer" name="onPlayerDisconnect" charIndex="3866" charLength="41" codePart="player thread onPlayerDisconnect(handler)" isCall="True">
+      <funcRefArg charIndex="3899" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_perplayer" name="onPlayerSpawned" charIndex="3914" charLength="38" codePart="player thread onPlayerSpawned(handler)" isCall="True">
+      <funcRefArg charIndex="3944" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_perplayer" name="onJoinedTeam" charIndex="3957" charLength="35" codePart="player thread onJoinedTeam(handler)" isCall="True">
+      <funcRefArg charIndex="3984" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_perplayer" name="onJoinedSpectators" charIndex="3997" charLength="41" codePart="player thread onJoinedSpectators(handler)" isCall="True">
+      <funcRefArg charIndex="4030" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_perplayer" name="onPlayerKilled" charIndex="4043" charLength="37" codePart="player thread onPlayerKilled(handler)" isCall="True">
+      <funcRefArg charIndex="4072" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="4123" charLength="27" codePart="self waittill(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="4137" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_perplayer" name="unHandlePlayer" charIndex="4345" charLength="47" codePart="self thread unHandlePlayer(handler, true, true)" isCall="True">
+      <funcRefArg charIndex="4372" charLength="7" />
+      <funcRefArg charIndex="4381" charLength="4" />
+      <funcRefArg charIndex="4387" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="4427" charLength="24" codePart="self endon(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="4438" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="4473" charLength="28" codePart="self waittill(&quot;joined_team&quot;)" isCall="True">
+      <funcRefArg charIndex="4487" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_perplayer" name="unHandlePlayer" charIndex="4506" charLength="48" codePart="self thread unHandlePlayer(handler, true, false)" isCall="True">
+      <funcRefArg charIndex="4533" charLength="7" />
+      <funcRefArg charIndex="4542" charLength="4" />
+      <funcRefArg charIndex="4548" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="4597" charLength="24" codePart="self endon(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="4608" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="4643" charLength="34" codePart="self waittill(&quot;joined_spectators&quot;)" isCall="True">
+      <funcRefArg charIndex="4657" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_perplayer" name="unHandlePlayer" charIndex="4682" charLength="48" codePart="self thread unHandlePlayer(handler, true, false)" isCall="True">
+      <funcRefArg charIndex="4709" charLength="7" />
+      <funcRefArg charIndex="4718" charLength="4" />
+      <funcRefArg charIndex="4724" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="4770" charLength="24" codePart="self endon(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="4781" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="4816" charLength="31" codePart="self waittill(&quot;spawned_player&quot;)" isCall="True">
+      <funcRefArg charIndex="4830" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_perplayer" name="handlePlayer" charIndex="4852" charLength="33" codePart="self thread handlePlayer(handler)" isCall="True">
+      <funcRefArg charIndex="4877" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="4924" charLength="24" codePart="self endon(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="4935" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="4969" charLength="30" codePart="self waittill(&quot;killed_player&quot;)" isCall="True">
+      <funcRefArg charIndex="4983" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_perplayer" name="unHandlePlayer" charIndex="5004" charLength="48" codePart="self thread unHandlePlayer(handler, true, false)" isCall="True">
+      <funcRefArg charIndex="5031" charLength="7" />
+      <funcRefArg charIndex="5040" charLength="4" />
+      <funcRefArg charIndex="5046" charLength="5" />
+    </funcRef>
+  </content>
+</scriptinfo>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_killhouse_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="289" charLength="38" codePart="loadfx( &quot;misc/paper_falling_burning&quot; )" isCall="True">
+      <funcRefArg charIndex="297" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="376" charLength="39" codePart="loadfx( &quot;smoke/ground_smoke_launch_a&quot; )" isCall="True">
+      <funcRefArg charIndex="384" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="460" charLength="35" codePart="loadfx( &quot;dust/amb_dust_hangar_mp&quot; )" isCall="True">
+      <funcRefArg charIndex="468" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="545" charLength="39" codePart="loadfx( &quot;dust/light_shaft_dust_large&quot; )" isCall="True">
+      <funcRefArg charIndex="553" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="633" charLength="37" codePart="loadfx( &quot;dust/light_shaft_dust_med&quot; )" isCall="True">
+      <funcRefArg charIndex="641" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="689" charLength="30" codePart="getdvar( &quot;clientSideEffects&quot; )" isCall="True">
+      <funcRefArg charIndex="698" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\createfx\mp_killhouse_fx" name="main" charIndex="732" charLength="37" codePart="maps\createfx\mp_killhouse_fx::main()" isCall="True" />
+  </content>
+</scriptinfo>

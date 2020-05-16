@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_carentan</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="maps\mp\mp_carentan_fx" name="main" charIndex="12" charLength="30" codePart="maps\mp\mp_carentan_fx::main()" isCall="True" />
+    <funcRef sfPath="maps\createart\mp_carentan_art" name="main" charIndex="46" charLength="38" codePart="maps\createart\mp_carentan_art::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\_load" name="main" charIndex="295" charLength="21" codePart="maps\mp\_load::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\_compass" name="setupMiniMap" charIndex="320" charLength="57" codePart="maps\mp\_compass::setupMiniMap(&quot;compass_map_mp_carentan&quot;)" isCall="True">
+      <funcRefArg charIndex="351" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetExpFog" charIndex="483" charLength="38" codePart="setExpFog(500, 3500, .5, 0.5, 0.45, 0)" isCall="True">
+      <funcRefArg charIndex="493" charLength="3" />
+      <funcRefArg charIndex="498" charLength="4" />
+      <funcRefArg charIndex="504" charLength="2" />
+      <funcRefArg charIndex="508" charLength="3" />
+      <funcRefArg charIndex="513" charLength="4" />
+      <funcRefArg charIndex="519" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AmbientPlay" charIndex="525" charLength="36" codePart="ambientPlay(&quot;ambient_carentan_ext0&quot;)" isCall="True">
+      <funcRefArg charIndex="537" charLength="23" />
+    </funcRef>
+    <error type="warning" charIndex="295" charLength="21" lineIndex="9">
+      <message>Could not find enough arguments, function 'maps\mp\_load::main'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_load::main', file 'maps\mp\mp_carentan', line 10, 'maps\mp\_load::main();'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

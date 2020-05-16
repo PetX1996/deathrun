@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_sas_ct_benjamin</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="49" codePart="self setModel(&quot;body_complete_sp_sas_ct_benjamin&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="34" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="157" charLength="49" codePart="precacheModel(&quot;body_complete_sp_sas_ct_benjamin&quot;)" isCall="True">
+      <funcRefArg charIndex="171" charLength="34" />
+    </funcRef>
+  </content>
+</scriptinfo>

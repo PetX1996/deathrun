@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_backlot_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="51" charLength="39" codePart="loadfx (&quot;fire/firelp_med_pm_nodistort&quot;)" isCall="True">
+      <funcRefArg charIndex="59" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="133" charLength="31" codePart="loadfx (&quot;fire/firelp_small_pm&quot;)" isCall="True">
+      <funcRefArg charIndex="141" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="208" charLength="33" codePart="loadfx (&quot;fire/firelp_small_pm_a&quot;)" isCall="True">
+      <funcRefArg charIndex="216" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="283" charLength="30" codePart="loadfx (&quot;dust/dust_wind_fast&quot;)" isCall="True">
+      <funcRefArg charIndex="291" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="355" charLength="39" codePart="loadfx (&quot;dust/dust_wind_slow_yel_loop&quot;)" isCall="True">
+      <funcRefArg charIndex="363" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="437" charLength="34" codePart="loadfx (&quot;dust/dust_spiral_runner&quot;)" isCall="True">
+      <funcRefArg charIndex="445" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="505" charLength="23" codePart="loadfx (&quot;weather/hawk&quot;)" isCall="True">
+      <funcRefArg charIndex="513" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="577" charLength="40" codePart="loadfx (&quot;misc/bird_seagull_flock_large&quot;)" isCall="True">
+      <funcRefArg charIndex="585" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="632" charLength="30" codePart="getdvar( &quot;clientSideEffects&quot; )" isCall="True">
+      <funcRefArg charIndex="641" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\createfx\mp_backlot_fx" name="main" charIndex="675" charLength="35" codePart="maps\createfx\mp_backlot_fx::main()" isCall="True" />
+  </content>
+</scriptinfo>

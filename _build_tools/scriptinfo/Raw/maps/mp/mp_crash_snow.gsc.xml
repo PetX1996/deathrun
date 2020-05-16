@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_crash_snow</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="maps\mp\mp_crash_snow_fx" name="main" charIndex="12" charLength="32" codePart="maps\mp\mp_crash_snow_fx::main()" isCall="True" />
+    <funcRef sfPath="maps\createart\mp_crash_snow_art" name="main" charIndex="48" charLength="40" codePart="maps\createart\mp_crash_snow_art::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\_load" name="main" charIndex="92" charLength="21" codePart="maps\mp\_load::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\_compass" name="setupMiniMap" charIndex="120" charLength="59" codePart="maps\mp\_compass::setupMiniMap(&quot;compass_map_mp_crash_snow&quot;)" isCall="True">
+      <funcRefArg charIndex="151" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AmbientPlay" charIndex="186" charLength="31" codePart="ambientPlay(&quot;ambient_bloc_ext&quot;)" isCall="True">
+      <funcRefArg charIndex="198" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="424" charLength="38" codePart="setdvar( &quot;r_specularcolorscale&quot;, &quot;1&quot; )" isCall="True">
+      <funcRefArg charIndex="433" charLength="22" />
+      <funcRefArg charIndex="457" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="469" charLength="33" codePart="setdvar(&quot;compassmaxrange&quot;,&quot;1600&quot;)" isCall="True">
+      <funcRefArg charIndex="477" charLength="17" />
+      <funcRefArg charIndex="495" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="529" charLength="43" codePart="loadfx (&quot;explosions/clusterbomb_christmas&quot;)" isCall="True">
+      <funcRefArg charIndex="537" charLength="34" />
+    </funcRef>
+    <error type="warning" charIndex="92" charLength="21" lineIndex="4">
+      <message>Could not find enough arguments, function 'maps\mp\_load::main'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_load::main', file 'maps\mp\mp_crash_snow', line 5, 'maps\mp\_load::main();'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createart\airlift_art</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="395" charLength="31" codePart="getent( &quot;player&quot;, &quot;classname&quot; )" isCall="True">
+      <funcRefArg charIndex="403" charLength="8" />
+      <funcRefArg charIndex="413" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="491" charLength="33" codePart="setdvar( &quot;scr_fog_disable&quot;, &quot;0&quot; )" isCall="True">
+      <funcRefArg charIndex="500" charLength="17" />
+      <funcRefArg charIndex="519" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetExpFog" charIndex="530" charLength="53" codePart="setExpFog(400, 6500, 0.678352, 0.511225, 0.372533, 0)" isCall="True">
+      <funcRefArg charIndex="540" charLength="3" />
+      <funcRefArg charIndex="545" charLength="4" />
+      <funcRefArg charIndex="551" charLength="8" />
+      <funcRefArg charIndex="561" charLength="8" />
+      <funcRefArg charIndex="571" charLength="8" />
+      <funcRefArg charIndex="581" charLength="1" />
+    </funcRef>
+    <error type="semantic" charIndex="395" charLength="67" lineIndex="14">
+      <message>Could not find file 'maps\_art'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_art', file 'maps\createart\airlift_art', line 15, 'getent( "player", "classname" ) maps\_art::setdefaultdepthoffield();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="587" charLength="45" lineIndex="21">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createart\airlift_art', line 22, 'maps\_utility::set_vision_set( "airlift", 0 );'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

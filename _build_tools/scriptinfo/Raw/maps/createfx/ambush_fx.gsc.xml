@@ -1,0 +1,730 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createfx\ambush_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <error type="semantic" charIndex="96" charLength="49" lineIndex="4">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 5, 'ent = maps\_utility::createOneshotEffect( "ambush_vl" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="348" charLength="49" lineIndex="10">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 11, 'ent = maps\_utility::createOneshotEffect( "ambush_vl" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="601" charLength="55" lineIndex="16">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 17, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="860" charLength="55" lineIndex="22">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 23, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1123" charLength="55" lineIndex="28">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 29, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1382" charLength="55" lineIndex="34">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 35, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1644" charLength="55" lineIndex="40">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 41, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1904" charLength="55" lineIndex="46">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 47, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2166" charLength="55" lineIndex="52">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 53, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2428" charLength="55" lineIndex="58">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 59, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2690" charLength="55" lineIndex="64">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 65, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2951" charLength="59" lineIndex="70">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 71, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3207" charLength="59" lineIndex="76">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 77, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3463" charLength="59" lineIndex="82">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 83, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3719" charLength="59" lineIndex="88">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 89, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3976" charLength="59" lineIndex="94">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 95, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4232" charLength="59" lineIndex="100">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 101, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4488" charLength="53" lineIndex="106">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 107, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4745" charLength="48" lineIndex="112">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 113, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4982" charLength="47" lineIndex="118">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 119, 'ent = maps\_utility::createOneshotEffect( "amb_ash" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5229" charLength="53" lineIndex="124">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 125, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5478" charLength="53" lineIndex="130">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 131, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5735" charLength="55" lineIndex="136">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 137, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_blend" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5997" charLength="55" lineIndex="142">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 143, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_blend" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6254" charLength="55" lineIndex="148">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 149, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_blend" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6516" charLength="55" lineIndex="154">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 155, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_blend" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6777" charLength="55" lineIndex="160">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 161, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_blend" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7039" charLength="55" lineIndex="166">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 167, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7302" charLength="55" lineIndex="172">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 173, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7564" charLength="47" lineIndex="178">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 179, 'ent = maps\_utility::createOneshotEffect( "amb_ash" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7814" charLength="48" lineIndex="184">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 185, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8046" charLength="47" lineIndex="190">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 191, 'ent = maps\_utility::createOneshotEffect( "amb_ash" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8291" charLength="47" lineIndex="196">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 197, 'ent = maps\_utility::createOneshotEffect( "amb_ash" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8538" charLength="48" lineIndex="202">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 203, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8771" charLength="57" lineIndex="208">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 209, 'ent = maps\_utility::createOneshotEffect( "firelp_small_pm_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9039" charLength="55" lineIndex="214">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 215, 'ent = maps\_utility::createOneshotEffect( "firelp_small_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9299" charLength="55" lineIndex="220">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 221, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9563" charLength="48" lineIndex="226">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 227, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9800" charLength="48" lineIndex="232">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 233, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10035" charLength="48" lineIndex="238">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 239, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10267" charLength="33" lineIndex="244">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 245, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10474" charLength="33" lineIndex="249">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 250, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10681" charLength="33" lineIndex="254">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 255, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10889" charLength="33" lineIndex="259">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 260, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11097" charLength="33" lineIndex="264">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 265, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11305" charLength="33" lineIndex="269">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 270, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11511" charLength="33" lineIndex="274">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 275, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11717" charLength="33" lineIndex="279">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 280, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11925" charLength="33" lineIndex="284">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 285, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="12133" charLength="33" lineIndex="289">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 290, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="12341" charLength="33" lineIndex="294">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 295, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="12549" charLength="33" lineIndex="299">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 300, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="12757" charLength="33" lineIndex="304">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 305, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="12965" charLength="33" lineIndex="309">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 310, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="13173" charLength="33" lineIndex="314">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 315, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="13380" charLength="33" lineIndex="319">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 320, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="13588" charLength="33" lineIndex="324">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 325, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="13795" charLength="33" lineIndex="329">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 330, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="14003" charLength="33" lineIndex="334">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 335, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="14210" charLength="33" lineIndex="339">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 340, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="14418" charLength="33" lineIndex="344">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 345, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="14625" charLength="33" lineIndex="349">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 350, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="14833" charLength="33" lineIndex="354">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 355, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="15042" charLength="33" lineIndex="359">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 360, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="15243" charLength="33" lineIndex="364">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 365, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="15451" charLength="33" lineIndex="369">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 370, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="15659" charLength="33" lineIndex="374">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 375, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="15867" charLength="33" lineIndex="379">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 380, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="16075" charLength="49" lineIndex="384">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 385, 'ent = maps\_utility::createOneshotEffect( "ambush_vl" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="16329" charLength="48" lineIndex="390">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 391, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="16566" charLength="48" lineIndex="396">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 397, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="16801" charLength="55" lineIndex="402">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 403, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="17064" charLength="55" lineIndex="408">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 409, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="17326" charLength="55" lineIndex="414">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 415, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="17589" charLength="48" lineIndex="420">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 421, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="17826" charLength="48" lineIndex="426">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 427, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18059" charLength="48" lineIndex="432">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 433, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18296" charLength="48" lineIndex="438">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 439, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18533" charLength="48" lineIndex="444">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 445, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18766" charLength="48" lineIndex="450">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 451, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19003" charLength="48" lineIndex="456">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 457, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19236" charLength="48" lineIndex="462">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 463, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19468" charLength="55" lineIndex="468">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 469, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19731" charLength="48" lineIndex="474">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 475, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19968" charLength="49" lineIndex="480">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 481, 'ent = maps\_utility::createOneshotEffect( "ambush_vl" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20220" charLength="49" lineIndex="486">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 487, 'ent = maps\_utility::createOneshotEffect( "ambush_vl" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20472" charLength="49" lineIndex="492">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 493, 'ent = maps\_utility::createOneshotEffect( "ambush_vl" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20724" charLength="49" lineIndex="498">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 499, 'ent = maps\_utility::createOneshotEffect( "ambush_vl" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20977" charLength="49" lineIndex="504">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 505, 'ent = maps\_utility::createOneshotEffect( "ambush_vl" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21231" charLength="49" lineIndex="510">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 511, 'ent = maps\_utility::createOneshotEffect( "ambush_vl" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21485" charLength="47" lineIndex="516">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 517, 'ent = maps\_utility::createOneshotEffect( "amb_ash" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21732" charLength="47" lineIndex="522">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 523, 'ent = maps\_utility::createOneshotEffect( "amb_ash" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21979" charLength="47" lineIndex="528">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 529, 'ent = maps\_utility::createOneshotEffect( "amb_ash" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22223" charLength="55" lineIndex="534">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 535, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_blend" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22484" charLength="48" lineIndex="540">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 541, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22720" charLength="55" lineIndex="546">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 547, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22981" charLength="55" lineIndex="552">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 553, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23243" charLength="53" lineIndex="558">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 559, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23499" charLength="49" lineIndex="564">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 565, 'ent = maps\_utility::createOneshotEffect( "ambush_vl" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23751" charLength="49" lineIndex="570">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 571, 'ent = maps\_utility::createOneshotEffect( "ambush_vl" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24003" charLength="49" lineIndex="576">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 577, 'ent = maps\_utility::createOneshotEffect( "ambush_vl" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24255" charLength="47" lineIndex="582">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 583, 'ent = maps\_utility::createOneshotEffect( "amb_ash" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24502" charLength="55" lineIndex="588">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 589, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24765" charLength="48" lineIndex="594">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 595, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25001" charLength="55" lineIndex="600">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 601, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_blend" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25262" charLength="48" lineIndex="606">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 607, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25496" charLength="48" lineIndex="612">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 613, 'ent = maps\_utility::createOneshotEffect( "amb_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25732" charLength="55" lineIndex="618">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 619, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_blend" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25994" charLength="55" lineIndex="624">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 625, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_blend" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="26255" charLength="47" lineIndex="630">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 631, 'ent = maps\_utility::createOneshotEffect( "amb_ash" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="26500" charLength="47" lineIndex="636">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 637, 'ent = maps\_utility::createOneshotEffect( "amb_ash" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="26746" charLength="47" lineIndex="642">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 643, 'ent = maps\_utility::createOneshotEffect( "amb_ash" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="26992" charLength="47" lineIndex="648">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 649, 'ent = maps\_utility::createOneshotEffect( "amb_ash" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="27238" charLength="47" lineIndex="654">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 655, 'ent = maps\_utility::createOneshotEffect( "amb_ash" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="27481" charLength="55" lineIndex="660">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 661, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="27742" charLength="55" lineIndex="666">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 667, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="28002" charLength="47" lineIndex="672">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 673, 'ent = maps\_utility::createOneshotEffect( "amb_ash" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="28248" charLength="55" lineIndex="678">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 679, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_blend" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="28509" charLength="55" lineIndex="684">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 685, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_blend" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="28770" charLength="55" lineIndex="690">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 691, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_blend" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="29031" charLength="55" lineIndex="696">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 697, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_blend" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="29291" charLength="55" lineIndex="702">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 703, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_blend" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="29552" charLength="55" lineIndex="708">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 709, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_blend" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="29818" charLength="53" lineIndex="714">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 715, 'ent = maps\_utility::createOneshotEffect( "ambush_vl_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="30078" charLength="53" lineIndex="720">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 721, 'ent = maps\_utility::createOneshotEffect( "ambush_vl_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="30339" charLength="53" lineIndex="726">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 727, 'ent = maps\_utility::createOneshotEffect( "ambush_vl_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="30600" charLength="53" lineIndex="732">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 733, 'ent = maps\_utility::createOneshotEffect( "ambush_vl_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="30861" charLength="59" lineIndex="738">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 739, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="31114" charLength="55" lineIndex="744">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 745, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="31376" charLength="55" lineIndex="750">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 751, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="31638" charLength="55" lineIndex="756">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 757, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="31891" charLength="55" lineIndex="762">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 763, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="32146" charLength="55" lineIndex="768">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 769, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="32402" charLength="55" lineIndex="774">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 775, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="32664" charLength="55" lineIndex="780">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 781, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="32925" charLength="55" lineIndex="786">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 787, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="33185" charLength="55" lineIndex="792">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 793, 'ent = maps\_utility::createOneshotEffect( "amb_smoke_add_1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="33446" charLength="53" lineIndex="798">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 799, 'ent = maps\_utility::createOneshotEffect( "ambush_vl_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="33707" charLength="53" lineIndex="804">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 805, 'ent = maps\_utility::createOneshotEffect( "ambush_vl_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="33966" charLength="58" lineIndex="810">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 811, 'ent = maps\_utility::createOneshotEffect( "thin_black_smoke_L" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="34235" charLength="58" lineIndex="816">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 817, 'ent = maps\_utility::createOneshotEffect( "thin_black_smoke_L" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="34503" charLength="60" lineIndex="822">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 823, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="34779" charLength="60" lineIndex="828">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 829, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="35055" charLength="60" lineIndex="834">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 835, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="35331" charLength="60" lineIndex="840">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 841, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="35605" charLength="60" lineIndex="846">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 847, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="35882" charLength="60" lineIndex="852">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 853, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="36160" charLength="60" lineIndex="858">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 859, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="36433" charLength="60" lineIndex="864">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 865, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="36709" charLength="60" lineIndex="870">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 871, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="36982" charLength="60" lineIndex="876">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 877, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="37258" charLength="60" lineIndex="882">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 883, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="37531" charLength="60" lineIndex="888">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 889, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="37808" charLength="60" lineIndex="894">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 895, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="38085" charLength="60" lineIndex="900">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 901, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="38361" charLength="60" lineIndex="906">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 907, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="38638" charLength="60" lineIndex="912">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 913, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="38915" charLength="60" lineIndex="918">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 919, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="39192" charLength="60" lineIndex="924">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 925, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="39469" charLength="60" lineIndex="930">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 931, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="39746" charLength="60" lineIndex="936">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 937, 'ent = maps\_utility::createOneshotEffect( "hallways_smoke_light" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="40023" charLength="47" lineIndex="942">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 943, 'ent = maps\_utility::createExploder( "bullet_spark" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="40352" charLength="47" lineIndex="950">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 951, 'ent = maps\_utility::createExploder( "bullet_spark" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="40680" charLength="47" lineIndex="958">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\ambush_fx', line 959, 'ent = maps\_utility::createExploder( "bullet_spark" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="41008" charLength="33" lineIndex="966">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 967, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="41206" charLength="33" lineIndex="971">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 972, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="41410" charLength="33" lineIndex="976">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 977, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="41614" charLength="33" lineIndex="981">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 982, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="41818" charLength="33" lineIndex="986">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 987, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="42023" charLength="33" lineIndex="991">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 992, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="42228" charLength="33" lineIndex="996">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 997, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="42433" charLength="33" lineIndex="1001">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 1002, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="42638" charLength="33" lineIndex="1006">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 1007, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="42844" charLength="33" lineIndex="1011">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 1012, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="43045" charLength="33" lineIndex="1016">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 1017, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="43247" charLength="33" lineIndex="1021">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 1022, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="43446" charLength="33" lineIndex="1026">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 1027, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="43649" charLength="33" lineIndex="1031">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\ambush_fx', line 1032, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

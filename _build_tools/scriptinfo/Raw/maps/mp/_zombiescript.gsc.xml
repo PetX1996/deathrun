@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_zombiescript</name>
+  </settings>
+  <content>
+    <func name="setGameMode" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="mode">
+      </param>
+    </func>
+    <func name="setPlayerSpawns" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+    </func>
+    <func name="setWorldVision" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="vision">
+      </param>
+      <param name="transitiontime">
+      </param>
+    </func>
+    <func name="buildParachutePickup" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+    </func>
+    <func name="buildWeaponPickup" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+      <param name="itemtext">
+      </param>
+      <param name="weapon">
+      </param>
+      <param name="type">
+      </param>
+    </func>
+    <func name="buildAmmoStock" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+      <param name="loadtime">
+      </param>
+    </func>
+    <func name="buildWeaponUpgrade" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+    </func>
+    <func name="setWeaponHandling" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="id">
+      </param>
+    </func>
+    <func name="setSpawnWeapons" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="primary">
+      </param>
+      <param name="secondary">
+      </param>
+    </func>
+    <func name="beginZomSpawning" access="Public">
+      <self>
+      </self>
+      <summary>@deprecated</summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="buildSurvSpawn" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+      <param name="priority">
+      </param>
+    </func>
+    <func name="startSurvWaves" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="waittillStart" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="buildBarricade" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+      <param name="parts">
+      </param>
+      <param name="health">
+      </param>
+      <param name="deathFx">
+      </param>
+      <param name="buildFx">
+      </param>
+      <param name="dropAll">
+      </param>
+    </func>
+    <error type="semantic" charIndex="1955" charLength="33" lineIndex="37">
+      <message>Could not include file 'scripts\include\utility'</message>
+      <fullMessage>Bad semantic: Could not include file 'scripts\include\utility', file 'maps\mp\_zombiescript', line 38, '#include scripts\include\utility;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

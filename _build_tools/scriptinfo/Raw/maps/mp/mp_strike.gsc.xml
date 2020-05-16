@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_strike</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="maps\mp\mp_strike_fx" name="main" charIndex="12" charLength="28" codePart="maps\mp\mp_strike_fx::main()" isCall="True" />
+    <funcRef sfPath="maps\createart\mp_strike_art" name="main" charIndex="44" charLength="36" codePart="maps\createart\mp_strike_art::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\_load" name="main" charIndex="84" charLength="21" codePart="maps\mp\_load::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\_compass" name="setupMiniMap" charIndex="112" charLength="55" codePart="maps\mp\_compass::setupMiniMap(&quot;compass_map_mp_strike&quot;)" isCall="True">
+      <funcRefArg charIndex="143" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AmbientPlay" charIndex="276" charLength="33" codePart="ambientPlay(&quot;ambient_strike_day&quot;)" isCall="True">
+      <funcRefArg charIndex="288" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="550" charLength="38" codePart="setdvar( &quot;r_specularcolorscale&quot;, &quot;1&quot; )" isCall="True">
+      <funcRefArg charIndex="559" charLength="22" />
+      <funcRefArg charIndex="583" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="594" charLength="37" codePart="setdvar(&quot;r_glowbloomintensity0&quot;,&quot;.1&quot;)" isCall="True">
+      <funcRefArg charIndex="602" charLength="23" />
+      <funcRefArg charIndex="626" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="635" charLength="37" codePart="setdvar(&quot;r_glowbloomintensity1&quot;,&quot;.1&quot;)" isCall="True">
+      <funcRefArg charIndex="643" charLength="23" />
+      <funcRefArg charIndex="667" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="676" charLength="40" codePart="setdvar(&quot;r_glowskybleedintensity0&quot;,&quot;.1&quot;)" isCall="True">
+      <funcRefArg charIndex="684" charLength="26" />
+      <funcRefArg charIndex="711" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="720" charLength="33" codePart="setdvar(&quot;compassmaxrange&quot;,&quot;1900&quot;)" isCall="True">
+      <funcRefArg charIndex="728" charLength="17" />
+      <funcRefArg charIndex="746" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="759" charLength="41" codePart="setdvar( &quot;r_specularcolorscale&quot;, &quot;1.86&quot; )" isCall="True">
+      <funcRefArg charIndex="768" charLength="22" />
+      <funcRefArg charIndex="792" charLength="7" />
+    </funcRef>
+    <error type="warning" charIndex="84" charLength="21" lineIndex="4">
+      <message>Could not find enough arguments, function 'maps\mp\_load::main'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_load::main', file 'maps\mp\mp_strike', line 5, 'maps\mp\_load::main();'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

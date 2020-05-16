@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_hud_message</name>
+  </settings>
+  <content>
+    <include>maps\mp\gametypes\_hud_util</include>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerConnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="hintMessage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="hintText">
+      </param>
+    </func>
+    <func name="initNotifyMessage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="oldNotifyMessage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="titleText">
+      </param>
+      <param name="notifyText">
+      </param>
+      <param name="iconName">
+      </param>
+      <param name="glowColor">
+      </param>
+      <param name="sound">
+      </param>
+      <param name="duration">
+      </param>
+    </func>
+    <func name="notifyMessage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="notifyData">
+      </param>
+    </func>
+    <func name="showNotifyMessage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="notifyData">
+      </param>
+    </func>
+    <func name="waitRequireVisibility" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="waitTime">
+      </param>
+    </func>
+    <func name="canReadText" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="resetOnDeath" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="resetOnCancel" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="resetNotify" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="hintMessageDeathThink" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="lowerMessageThink" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="teamOutcomeNotify" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="winner">
+      </param>
+      <param name="isRound">
+      </param>
+      <param name="endReasonText">
+      </param>
+    </func>
+    <func name="outcomeNotify" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="winner">
+      </param>
+      <param name="endReasonText">
+      </param>
+    </func>
+    <func name="resetOutcomeNotify" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="outcomeTitle">
+      </param>
+      <param name="outcomeText">
+      </param>
+      <param name="firstTitle">
+      </param>
+      <param name="secondTitle">
+      </param>
+      <param name="thirdTitle">
+      </param>
+      <param name="matchBonus">
+      </param>
+    </func>
+    <func name="resetTeamOutcomeNotify" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="outcomeTitle">
+      </param>
+      <param name="outcomeText">
+      </param>
+      <param name="leftIcon">
+      </param>
+      <param name="rightIcon">
+      </param>
+      <param name="LeftScore">
+      </param>
+      <param name="rightScore">
+      </param>
+      <param name="matchBonus">
+      </param>
+    </func>
+    <func name="updateOutcome" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="firstTitle">
+      </param>
+      <param name="secondTitle">
+      </param>
+      <param name="thirdTitle">
+      </param>
+    </func>
+  </content>
+</scriptinfo>

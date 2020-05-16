@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\lts</name>
+  </settings>
+  <content>
+    <include>maps\mp\_utility</include>
+    <include>maps\mp\gametypes\_hud_util</include>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onStartGameType" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onSpawnPlayer" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onDeadEvent" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="onRoundSwitch" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <error type="semantic" charIndex="773" charLength="28" lineIndex="15">
+      <message>Could not include file 'openwarfare\_utils'</message>
+      <fullMessage>Bad semantic: Could not include file 'openwarfare\_utils', file 'maps\mp\gametypes\lts', line 16, '#include openwarfare\_utils;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

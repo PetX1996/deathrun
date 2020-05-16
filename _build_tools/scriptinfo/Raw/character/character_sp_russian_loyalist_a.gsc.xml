@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_russian_loyalist_a</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="43" codePart="self setModel(&quot;body_sp_russian_loyalist_a&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="105" charLength="60" codePart="self attach(&quot;head_sp_loyalist_alex_helmet_body_a&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="117" charLength="37" />
+      <funcRefArg charIndex="156" charLength="2" />
+      <funcRefArg charIndex="160" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="215" charLength="43" codePart="precacheModel(&quot;body_sp_russian_loyalist_a&quot;)" isCall="True">
+      <funcRefArg charIndex="229" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="262" charLength="52" codePart="precacheModel(&quot;head_sp_loyalist_alex_helmet_body_a&quot;)" isCall="True">
+      <funcRefArg charIndex="276" charLength="37" />
+    </funcRef>
+  </content>
+</scriptinfo>

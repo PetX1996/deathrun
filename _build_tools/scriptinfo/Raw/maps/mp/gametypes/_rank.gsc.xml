@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_rank</name>
+  </settings>
+  <content>
+    <include>common_scripts\utility</include>
+    <include>maps\mp\gametypes\_hud_util</include>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="isRegisteredEvent" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="type">
+      </param>
+    </func>
+    <func name="registerScoreInfo" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="type">
+      </param>
+      <param name="value">
+      </param>
+    </func>
+    <func name="getScoreInfoValue" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="type">
+      </param>
+    </func>
+    <func name="getScoreInfoLabel" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="type">
+      </param>
+    </func>
+    <func name="getRankInfoMinXP" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="rankId">
+      </param>
+    </func>
+    <func name="getRankInfoXPAmt" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="rankId">
+      </param>
+    </func>
+    <func name="getRankInfoMaxXp" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="rankId">
+      </param>
+    </func>
+    <func name="getRankInfoFull" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="rankId">
+      </param>
+    </func>
+    <func name="getRankInfoIcon" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="rankId">
+      </param>
+      <param name="prestigeId">
+      </param>
+    </func>
+    <func name="getRankInfoUnlockWeapon" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="rankId">
+      </param>
+    </func>
+    <func name="getRankInfoUnlockPerk" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="rankId">
+      </param>
+    </func>
+    <func name="getRankInfoUnlockChallenge" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="rankId">
+      </param>
+    </func>
+    <func name="getRankInfoUnlockFeature" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="rankId">
+      </param>
+    </func>
+    <func name="getRankInfoUnlockCamo" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="rankId">
+      </param>
+    </func>
+    <func name="getRankInfoUnlockAttachment" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="rankId">
+      </param>
+    </func>
+    <func name="getRankInfoLevel" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="rankId">
+      </param>
+    </func>
+    <func name="TWSEWeapons" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="rankId">
+      </param>
+      <param name="lockIfNeed">
+      </param>
+    </func>
+    <func name="getRankXPFromStats" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerConnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="Checkclient" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="UpdatePlayerData" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="player">
+      </param>
+    </func>
+    <func name="onJoinedTeam" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onJoinedSpectators" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerSpawned" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onDisconnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="roundUp" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="floatVal">
+      </param>
+    </func>
+    <func name="giveRankXP" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="type">
+      </param>
+      <param name="value">
+      </param>
+      <param name="powerrank">
+      </param>
+    </func>
+    <func name="relockToCurrentRank" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateRank" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateRankAnnounceHUD" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="powerrank">
+      </param>
+    </func>
+    <func name="unlockPage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="in_page">
+      </param>
+    </func>
+    <func name="unlockWeapon" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="refString">
+      </param>
+    </func>
+    <func name="unlockfakeWeapon" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="refString">
+      </param>
+    </func>
+    <func name="unlockPerk" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="refString">
+      </param>
+    </func>
+    <func name="unlockPerkEx" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="refString">
+      </param>
+    </func>
+    <func name="unlockCamo" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="refString">
+      </param>
+    </func>
+    <func name="unlockCamoSingular" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="refString">
+      </param>
+    </func>
+    <func name="unlockAttachment" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="refString">
+      </param>
+    </func>
+    <func name="unlockAttachmentSingular" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="refString">
+      </param>
+    </func>
+    <func name="lockAttachmentSingular" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="refString">
+      </param>
+    </func>
+    <func name="unlockChallenge" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="refString">
+      </param>
+    </func>
+    <func name="unlockChallengeSingular" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="refString">
+      </param>
+    </func>
+    <func name="unlockChallengeGroup" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="refString">
+      </param>
+    </func>
+    <func name="unlockFeature" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="refString">
+      </param>
+    </func>
+    <func name="updateChallenges" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="buildChallegeInfo" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="endGameUpdate" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateRankScoreHUD" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="amount">
+      </param>
+      <param name="powerrank">
+      </param>
+      <param name="type">
+      </param>
+    </func>
+    <func name="updateMultiScoreHUD" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="points">
+      </param>
+      <param name="type">
+      </param>
+    </func>
+    <func name="destroyMultiScoreHUD" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="delay">
+      </param>
+    </func>
+    <func name="removeRankHUD" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getRank" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getRankForXp" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="xpVal">
+      </param>
+    </func>
+    <func name="getSPM" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getPrestigeLevel" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getRankXP" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="incRankXP" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="amount">
+      </param>
+    </func>
+    <error type="semantic" charIndex="764" charLength="28" lineIndex="15">
+      <message>Could not include file 'openwarfare\_utils'</message>
+      <fullMessage>Bad semantic: Could not include file 'openwarfare\_utils', file 'maps\mp\gametypes\_rank', line 16, '#include openwarfare\_utils;'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="793" charLength="35" lineIndex="16">
+      <message>Could not include file 'openwarfare\_eventmanager'</message>
+      <fullMessage>Bad semantic: Could not include file 'openwarfare\_eventmanager', file 'maps\mp\gametypes\_rank', line 17, '#include openwarfare\_eventmanager;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

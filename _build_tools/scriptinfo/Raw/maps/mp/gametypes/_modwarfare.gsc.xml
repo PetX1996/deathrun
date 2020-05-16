@@ -1,0 +1,2012 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_modwarfare</name>
+  </settings>
+  <content>
+    <include>maps\mp\_utility</include>
+    <include>maps\mp\gametypes\_hud_util</include>
+    <include>common_scripts\utility</include>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="classDvarUpdate" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerConnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="releaseClass" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="teamName">
+      </param>
+      <param name="classType">
+      </param>
+    </func>
+    <func name="claimClass" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="teamName">
+      </param>
+      <param name="classType">
+      </param>
+    </func>
+    <func name="setClassChoice" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="classType">
+      </param>
+    </func>
+    <func name="setDvarWrapper" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="dvarName">
+      </param>
+      <param name="setVal">
+      </param>
+    </func>
+    <func name="setDvarDefault" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="dvarName">
+      </param>
+      <param name="setVal">
+      </param>
+      <param name="minVal">
+      </param>
+      <param name="maxVal">
+      </param>
+    </func>
+    <func name="setServerDvarDefault" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="dvarName">
+      </param>
+      <param name="setVal">
+      </param>
+      <param name="minVal">
+      </param>
+      <param name="maxVal">
+      </param>
+    </func>
+    <func name="setServerInfoDvarDefault" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="dvarName">
+      </param>
+      <param name="setVal">
+      </param>
+      <param name="minVal">
+      </param>
+      <param name="maxVal">
+      </param>
+    </func>
+    <func name="initClassLoadouts" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="initLoadoutForClass" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="classType">
+      </param>
+    </func>
+    <func name="setDvarsFromClass" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="classType">
+      </param>
+    </func>
+    <func name="processLoadoutResponse" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="respString">
+      </param>
+    </func>
+    <func name="verifyWeaponChoice" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="weaponName">
+      </param>
+      <param name="classType">
+      </param>
+    </func>
+    <func name="verifyClassChoice" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="teamName">
+      </param>
+      <param name="classType">
+      </param>
+    </func>
+    <func name="updateClassAvailability" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="teamName">
+      </param>
+      <param name="classType">
+      </param>
+    </func>
+    <func name="menuAcceptClass" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateServerDvars" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="525" charLength="56" codePart="setServerDvarDefault( &quot;class_assault_limit&quot;, 64, 0, 64 )" isCall="True">
+      <funcRefArg charIndex="547" charLength="21" />
+      <funcRefArg charIndex="570" charLength="2" />
+      <funcRefArg charIndex="574" charLength="1" />
+      <funcRefArg charIndex="577" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="585" charLength="56" codePart="setServerDvarDefault( &quot;class_specops_limit&quot;, 64, 0, 64 )" isCall="True">
+      <funcRefArg charIndex="607" charLength="21" />
+      <funcRefArg charIndex="630" charLength="2" />
+      <funcRefArg charIndex="634" charLength="1" />
+      <funcRefArg charIndex="637" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="645" charLength="60" codePart="setServerDvarDefault( &quot;class_heavygunner_limit&quot;, 64, 0, 64 )" isCall="True">
+      <funcRefArg charIndex="667" charLength="25" />
+      <funcRefArg charIndex="694" charLength="2" />
+      <funcRefArg charIndex="698" charLength="1" />
+      <funcRefArg charIndex="701" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="709" charLength="60" codePart="setServerDvarDefault( &quot;class_demolitions_limit&quot;, 64, 0, 64 )" isCall="True">
+      <funcRefArg charIndex="731" charLength="25" />
+      <funcRefArg charIndex="758" charLength="2" />
+      <funcRefArg charIndex="762" charLength="1" />
+      <funcRefArg charIndex="765" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="773" charLength="55" codePart="setServerDvarDefault( &quot;class_sniper_limit&quot;, 64, 0, 64 )" isCall="True">
+      <funcRefArg charIndex="795" charLength="20" />
+      <funcRefArg charIndex="817" charLength="2" />
+      <funcRefArg charIndex="821" charLength="1" />
+      <funcRefArg charIndex="824" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="834" charLength="52" codePart="setDvarDefault( &quot;class_assault_allowdrop&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="850" charLength="25" />
+      <funcRefArg charIndex="877" charLength="1" />
+      <funcRefArg charIndex="880" charLength="1" />
+      <funcRefArg charIndex="883" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="890" charLength="52" codePart="setDvarDefault( &quot;class_specops_allowdrop&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="906" charLength="25" />
+      <funcRefArg charIndex="933" charLength="1" />
+      <funcRefArg charIndex="936" charLength="1" />
+      <funcRefArg charIndex="939" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="946" charLength="56" codePart="setDvarDefault( &quot;class_heavygunner_allowdrop&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="962" charLength="29" />
+      <funcRefArg charIndex="993" charLength="1" />
+      <funcRefArg charIndex="996" charLength="1" />
+      <funcRefArg charIndex="999" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="1006" charLength="56" codePart="setDvarDefault( &quot;class_demolitions_allowdrop&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="1022" charLength="29" />
+      <funcRefArg charIndex="1053" charLength="1" />
+      <funcRefArg charIndex="1056" charLength="1" />
+      <funcRefArg charIndex="1059" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="1066" charLength="51" codePart="setDvarDefault( &quot;class_sniper_allowdrop&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="1082" charLength="24" />
+      <funcRefArg charIndex="1108" charLength="1" />
+      <funcRefArg charIndex="1111" charLength="1" />
+      <funcRefArg charIndex="1114" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="1143" charLength="43" codePart="setDvarDefault( &quot;weap_allow_m16&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="1159" charLength="16" />
+      <funcRefArg charIndex="1177" charLength="1" />
+      <funcRefArg charIndex="1180" charLength="1" />
+      <funcRefArg charIndex="1183" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="1190" charLength="44" codePart="setDvarDefault( &quot;weap_allow_ak47&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="1206" charLength="17" />
+      <funcRefArg charIndex="1225" charLength="1" />
+      <funcRefArg charIndex="1228" charLength="1" />
+      <funcRefArg charIndex="1231" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="1238" charLength="42" codePart="setDvarDefault( &quot;weap_allow_m4&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="1254" charLength="15" />
+      <funcRefArg charIndex="1271" charLength="1" />
+      <funcRefArg charIndex="1274" charLength="1" />
+      <funcRefArg charIndex="1277" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="1284" charLength="42" codePart="setDvarDefault( &quot;weap_allow_g3&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="1300" charLength="15" />
+      <funcRefArg charIndex="1317" charLength="1" />
+      <funcRefArg charIndex="1320" charLength="1" />
+      <funcRefArg charIndex="1323" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="1330" charLength="44" codePart="setDvarDefault( &quot;weap_allow_g36c&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="1346" charLength="17" />
+      <funcRefArg charIndex="1365" charLength="1" />
+      <funcRefArg charIndex="1368" charLength="1" />
+      <funcRefArg charIndex="1371" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="1378" charLength="43" codePart="setDvarDefault( &quot;weap_allow_m14&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="1394" charLength="16" />
+      <funcRefArg charIndex="1412" charLength="1" />
+      <funcRefArg charIndex="1415" charLength="1" />
+      <funcRefArg charIndex="1418" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="1425" charLength="44" codePart="setDvarDefault( &quot;weap_allow_mp44&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="1441" charLength="17" />
+      <funcRefArg charIndex="1460" charLength="1" />
+      <funcRefArg charIndex="1463" charLength="1" />
+      <funcRefArg charIndex="1466" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="1498" charLength="54" codePart="setDvarDefault( &quot;attach_allow_assault_none&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="1514" charLength="27" />
+      <funcRefArg charIndex="1543" charLength="1" />
+      <funcRefArg charIndex="1546" charLength="1" />
+      <funcRefArg charIndex="1549" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="1556" charLength="52" codePart="setDvarDefault( &quot;attach_allow_assault_gl&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="1572" charLength="25" />
+      <funcRefArg charIndex="1599" charLength="1" />
+      <funcRefArg charIndex="1602" charLength="1" />
+      <funcRefArg charIndex="1605" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="1612" charLength="56" codePart="setDvarDefault( &quot;attach_allow_assault_reflex&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="1628" charLength="29" />
+      <funcRefArg charIndex="1659" charLength="1" />
+      <funcRefArg charIndex="1662" charLength="1" />
+      <funcRefArg charIndex="1665" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="1672" charLength="58" codePart="setDvarDefault( &quot;attach_allow_assault_silencer&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="1688" charLength="31" />
+      <funcRefArg charIndex="1721" charLength="1" />
+      <funcRefArg charIndex="1724" charLength="1" />
+      <funcRefArg charIndex="1727" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="1734" charLength="54" codePart="setDvarDefault( &quot;attach_allow_assault_acog&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="1750" charLength="27" />
+      <funcRefArg charIndex="1779" charLength="1" />
+      <funcRefArg charIndex="1782" charLength="1" />
+      <funcRefArg charIndex="1785" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="1804" charLength="43" codePart="setDvarDefault( &quot;weap_allow_mp5&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="1820" charLength="16" />
+      <funcRefArg charIndex="1838" charLength="1" />
+      <funcRefArg charIndex="1841" charLength="1" />
+      <funcRefArg charIndex="1844" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="1851" charLength="48" codePart="setDvarDefault( &quot;weap_allow_skorpion&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="1867" charLength="21" />
+      <funcRefArg charIndex="1890" charLength="1" />
+      <funcRefArg charIndex="1893" charLength="1" />
+      <funcRefArg charIndex="1896" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="1903" charLength="43" codePart="setDvarDefault( &quot;weap_allow_uzi&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="1919" charLength="16" />
+      <funcRefArg charIndex="1937" charLength="1" />
+      <funcRefArg charIndex="1940" charLength="1" />
+      <funcRefArg charIndex="1943" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="1950" charLength="45" codePart="setDvarDefault( &quot;weap_allow_ak74u&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="1966" charLength="18" />
+      <funcRefArg charIndex="1986" charLength="1" />
+      <funcRefArg charIndex="1989" charLength="1" />
+      <funcRefArg charIndex="1992" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="1999" charLength="43" codePart="setDvarDefault( &quot;weap_allow_p90&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="2015" charLength="16" />
+      <funcRefArg charIndex="2033" charLength="1" />
+      <funcRefArg charIndex="2036" charLength="1" />
+      <funcRefArg charIndex="2039" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="2067" charLength="50" codePart="setDvarDefault( &quot;attach_allow_smg_none&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="2083" charLength="23" />
+      <funcRefArg charIndex="2108" charLength="1" />
+      <funcRefArg charIndex="2111" charLength="1" />
+      <funcRefArg charIndex="2114" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="2121" charLength="52" codePart="setDvarDefault( &quot;attach_allow_smg_reflex&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="2137" charLength="25" />
+      <funcRefArg charIndex="2164" charLength="1" />
+      <funcRefArg charIndex="2167" charLength="1" />
+      <funcRefArg charIndex="2170" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="2177" charLength="54" codePart="setDvarDefault( &quot;attach_allow_smg_silencer&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="2193" charLength="27" />
+      <funcRefArg charIndex="2222" charLength="1" />
+      <funcRefArg charIndex="2225" charLength="1" />
+      <funcRefArg charIndex="2228" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="2235" charLength="50" codePart="setDvarDefault( &quot;attach_allow_smg_acog&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="2251" charLength="23" />
+      <funcRefArg charIndex="2276" charLength="1" />
+      <funcRefArg charIndex="2279" charLength="1" />
+      <funcRefArg charIndex="2282" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="2306" charLength="45" codePart="setDvarDefault( &quot;weap_allow_m1014&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="2322" charLength="18" />
+      <funcRefArg charIndex="2342" charLength="1" />
+      <funcRefArg charIndex="2345" charLength="1" />
+      <funcRefArg charIndex="2348" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="2355" charLength="54" codePart="setDvarDefault( &quot;weap_allow_winchester1200&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="2371" charLength="27" />
+      <funcRefArg charIndex="2400" charLength="1" />
+      <funcRefArg charIndex="2403" charLength="1" />
+      <funcRefArg charIndex="2406" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="2438" charLength="54" codePart="setDvarDefault( &quot;attach_allow_shotgun_none&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="2454" charLength="27" />
+      <funcRefArg charIndex="2483" charLength="1" />
+      <funcRefArg charIndex="2486" charLength="1" />
+      <funcRefArg charIndex="2489" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="2496" charLength="56" codePart="setDvarDefault( &quot;attach_allow_shotgun_reflex&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="2512" charLength="29" />
+      <funcRefArg charIndex="2543" charLength="1" />
+      <funcRefArg charIndex="2546" charLength="1" />
+      <funcRefArg charIndex="2549" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="2556" charLength="54" codePart="setDvarDefault( &quot;attach_allow_shotgun_grip&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="2572" charLength="27" />
+      <funcRefArg charIndex="2601" charLength="1" />
+      <funcRefArg charIndex="2604" charLength="1" />
+      <funcRefArg charIndex="2607" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="2641" charLength="43" codePart="setDvarDefault( &quot;weap_allow_saw&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="2657" charLength="16" />
+      <funcRefArg charIndex="2675" charLength="1" />
+      <funcRefArg charIndex="2678" charLength="1" />
+      <funcRefArg charIndex="2681" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="2688" charLength="43" codePart="setDvarDefault( &quot;weap_allow_rpd&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="2704" charLength="16" />
+      <funcRefArg charIndex="2722" charLength="1" />
+      <funcRefArg charIndex="2725" charLength="1" />
+      <funcRefArg charIndex="2728" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="2735" charLength="45" codePart="setDvarDefault( &quot;weap_allow_m60e4&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="2751" charLength="18" />
+      <funcRefArg charIndex="2771" charLength="1" />
+      <funcRefArg charIndex="2774" charLength="1" />
+      <funcRefArg charIndex="2777" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="2805" charLength="50" codePart="setDvarDefault( &quot;attach_allow_lmg_none&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="2821" charLength="23" />
+      <funcRefArg charIndex="2846" charLength="1" />
+      <funcRefArg charIndex="2849" charLength="1" />
+      <funcRefArg charIndex="2852" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="2859" charLength="52" codePart="setDvarDefault( &quot;attach_allow_lmg_reflex&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="2875" charLength="25" />
+      <funcRefArg charIndex="2902" charLength="1" />
+      <funcRefArg charIndex="2905" charLength="1" />
+      <funcRefArg charIndex="2908" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="2915" charLength="50" codePart="setDvarDefault( &quot;attach_allow_lmg_grip&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="2931" charLength="23" />
+      <funcRefArg charIndex="2956" charLength="1" />
+      <funcRefArg charIndex="2959" charLength="1" />
+      <funcRefArg charIndex="2962" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="2969" charLength="50" codePart="setDvarDefault( &quot;attach_allow_lmg_acog&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="2985" charLength="23" />
+      <funcRefArg charIndex="3010" charLength="1" />
+      <funcRefArg charIndex="3013" charLength="1" />
+      <funcRefArg charIndex="3016" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="3045" charLength="48" codePart="setDvarDefault( &quot;weap_allow_dragunov&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="3061" charLength="21" />
+      <funcRefArg charIndex="3084" charLength="1" />
+      <funcRefArg charIndex="3087" charLength="1" />
+      <funcRefArg charIndex="3090" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="3097" charLength="45" codePart="setDvarDefault( &quot;weap_allow_m40a3&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="3113" charLength="18" />
+      <funcRefArg charIndex="3133" charLength="1" />
+      <funcRefArg charIndex="3136" charLength="1" />
+      <funcRefArg charIndex="3139" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="3146" charLength="47" codePart="setDvarDefault( &quot;weap_allow_barrett&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="3162" charLength="20" />
+      <funcRefArg charIndex="3184" charLength="1" />
+      <funcRefArg charIndex="3187" charLength="1" />
+      <funcRefArg charIndex="3190" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="3197" charLength="52" codePart="setDvarDefault( &quot;weap_allow_remington700&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="3213" charLength="25" />
+      <funcRefArg charIndex="3240" charLength="1" />
+      <funcRefArg charIndex="3243" charLength="1" />
+      <funcRefArg charIndex="3246" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="3253" charLength="43" codePart="setDvarDefault( &quot;weap_allow_m21&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="3269" charLength="16" />
+      <funcRefArg charIndex="3287" charLength="1" />
+      <funcRefArg charIndex="3290" charLength="1" />
+      <funcRefArg charIndex="3293" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="3324" charLength="53" codePart="setDvarDefault( &quot;attach_allow_sniper_none&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="3340" charLength="26" />
+      <funcRefArg charIndex="3368" charLength="1" />
+      <funcRefArg charIndex="3371" charLength="1" />
+      <funcRefArg charIndex="3374" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="3381" charLength="53" codePart="setDvarDefault( &quot;attach_allow_sniper_acog&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="3397" charLength="26" />
+      <funcRefArg charIndex="3425" charLength="1" />
+      <funcRefArg charIndex="3428" charLength="1" />
+      <funcRefArg charIndex="3431" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="3454" charLength="53" codePart="setServerDvarDefault( &quot;weap_allow_beretta&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="3476" charLength="20" />
+      <funcRefArg charIndex="3498" charLength="1" />
+      <funcRefArg charIndex="3501" charLength="1" />
+      <funcRefArg charIndex="3504" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="3511" charLength="52" codePart="setServerDvarDefault( &quot;weap_allow_colt45&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="3533" charLength="19" />
+      <funcRefArg charIndex="3554" charLength="1" />
+      <funcRefArg charIndex="3557" charLength="1" />
+      <funcRefArg charIndex="3560" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="3567" charLength="49" codePart="setServerDvarDefault( &quot;weap_allow_usp&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="3589" charLength="16" />
+      <funcRefArg charIndex="3607" charLength="1" />
+      <funcRefArg charIndex="3610" charLength="1" />
+      <funcRefArg charIndex="3613" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="3620" charLength="57" codePart="setServerDvarDefault( &quot;weap_allow_deserteagle&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="3642" charLength="24" />
+      <funcRefArg charIndex="3668" charLength="1" />
+      <funcRefArg charIndex="3671" charLength="1" />
+      <funcRefArg charIndex="3674" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="3681" charLength="61" codePart="setServerDvarDefault( &quot;weap_allow_deserteaglegold&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="3703" charLength="28" />
+      <funcRefArg charIndex="3733" charLength="1" />
+      <funcRefArg charIndex="3736" charLength="1" />
+      <funcRefArg charIndex="3739" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="3770" charLength="59" codePart="setServerDvarDefault( &quot;attach_allow_pistol_none&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="3792" charLength="26" />
+      <funcRefArg charIndex="3820" charLength="1" />
+      <funcRefArg charIndex="3823" charLength="1" />
+      <funcRefArg charIndex="3826" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="3833" charLength="63" codePart="setServerDvarDefault( &quot;attach_allow_pistol_silencer&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="3855" charLength="30" />
+      <funcRefArg charIndex="3887" charLength="1" />
+      <funcRefArg charIndex="3890" charLength="1" />
+      <funcRefArg charIndex="3893" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="3916" charLength="58" codePart="setServerDvarDefault( &quot;weap_allow_frag_grenade&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="3938" charLength="25" />
+      <funcRefArg charIndex="3965" charLength="1" />
+      <funcRefArg charIndex="3968" charLength="1" />
+      <funcRefArg charIndex="3971" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="3978" charLength="64" codePart="setServerDvarDefault( &quot;weap_allow_concussion_grenade&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="4000" charLength="31" />
+      <funcRefArg charIndex="4033" charLength="1" />
+      <funcRefArg charIndex="4036" charLength="1" />
+      <funcRefArg charIndex="4039" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="4046" charLength="59" codePart="setServerDvarDefault( &quot;weap_allow_flash_grenade&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="4068" charLength="26" />
+      <funcRefArg charIndex="4096" charLength="1" />
+      <funcRefArg charIndex="4099" charLength="1" />
+      <funcRefArg charIndex="4102" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="4109" charLength="59" codePart="setServerDvarDefault( &quot;weap_allow_smoke_grenade&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="4131" charLength="26" />
+      <funcRefArg charIndex="4159" charLength="1" />
+      <funcRefArg charIndex="4162" charLength="1" />
+      <funcRefArg charIndex="4165" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="4186" charLength="65" codePart="setServerDvarDefault( &quot;perk_allow_specialty_parabolic&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="4208" charLength="32" />
+      <funcRefArg charIndex="4242" charLength="1" />
+      <funcRefArg charIndex="4245" charLength="1" />
+      <funcRefArg charIndex="4248" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="4255" charLength="65" codePart="setServerDvarDefault( &quot;perk_allow_specialty_gpsjammer&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="4277" charLength="32" />
+      <funcRefArg charIndex="4311" charLength="1" />
+      <funcRefArg charIndex="4314" charLength="1" />
+      <funcRefArg charIndex="4317" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="4324" charLength="66" codePart="setServerDvarDefault( &quot;perk_allow_specialty_holdbreath&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="4346" charLength="33" />
+      <funcRefArg charIndex="4381" charLength="1" />
+      <funcRefArg charIndex="4384" charLength="1" />
+      <funcRefArg charIndex="4387" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="4394" charLength="63" codePart="setServerDvarDefault( &quot;perk_allow_specialty_quieter&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="4416" charLength="30" />
+      <funcRefArg charIndex="4448" charLength="1" />
+      <funcRefArg charIndex="4451" charLength="1" />
+      <funcRefArg charIndex="4454" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="4461" charLength="68" codePart="setServerDvarDefault( &quot;perk_allow_specialty_longersprint&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="4483" charLength="35" />
+      <funcRefArg charIndex="4520" charLength="1" />
+      <funcRefArg charIndex="4523" charLength="1" />
+      <funcRefArg charIndex="4526" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="4533" charLength="71" codePart="setServerDvarDefault( &quot;perk_allow_specialty_detectexplosive&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="4555" charLength="38" />
+      <funcRefArg charIndex="4595" charLength="1" />
+      <funcRefArg charIndex="4598" charLength="1" />
+      <funcRefArg charIndex="4601" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="4608" charLength="71" codePart="setServerDvarDefault( &quot;perk_allow_specialty_explosivedamage&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="4630" charLength="38" />
+      <funcRefArg charIndex="4670" charLength="1" />
+      <funcRefArg charIndex="4673" charLength="1" />
+      <funcRefArg charIndex="4676" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="4683" charLength="67" codePart="setServerDvarDefault( &quot;perk_allow_specialty_pistoldeath&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="4705" charLength="34" />
+      <funcRefArg charIndex="4741" charLength="1" />
+      <funcRefArg charIndex="4744" charLength="1" />
+      <funcRefArg charIndex="4747" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="4754" charLength="72" codePart="setServerDvarDefault( &quot;perk_allow_specialty_grenadepulldeath&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="4776" charLength="39" />
+      <funcRefArg charIndex="4817" charLength="1" />
+      <funcRefArg charIndex="4820" charLength="1" />
+      <funcRefArg charIndex="4823" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="4830" charLength="68" codePart="setServerDvarDefault( &quot;perk_allow_specialty_bulletdamage&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="4852" charLength="35" />
+      <funcRefArg charIndex="4889" charLength="1" />
+      <funcRefArg charIndex="4892" charLength="1" />
+      <funcRefArg charIndex="4895" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="4902" charLength="73" codePart="setServerDvarDefault( &quot;perk_allow_specialty_bulletpenetration&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="4924" charLength="40" />
+      <funcRefArg charIndex="4966" charLength="1" />
+      <funcRefArg charIndex="4969" charLength="1" />
+      <funcRefArg charIndex="4972" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="4979" charLength="70" codePart="setServerDvarDefault( &quot;perk_allow_specialty_bulletaccuracy&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="5001" charLength="37" />
+      <funcRefArg charIndex="5040" charLength="1" />
+      <funcRefArg charIndex="5043" charLength="1" />
+      <funcRefArg charIndex="5046" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="5053" charLength="59" codePart="setServerDvarDefault( &quot;perk_allow_specialty_rof&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="5075" charLength="26" />
+      <funcRefArg charIndex="5103" charLength="1" />
+      <funcRefArg charIndex="5106" charLength="1" />
+      <funcRefArg charIndex="5109" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="5116" charLength="66" codePart="setServerDvarDefault( &quot;perk_allow_specialty_fastreload&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="5138" charLength="33" />
+      <funcRefArg charIndex="5173" charLength="1" />
+      <funcRefArg charIndex="5176" charLength="1" />
+      <funcRefArg charIndex="5179" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="5186" charLength="65" codePart="setServerDvarDefault( &quot;perk_allow_specialty_extraammo&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="5208" charLength="32" />
+      <funcRefArg charIndex="5242" charLength="1" />
+      <funcRefArg charIndex="5245" charLength="1" />
+      <funcRefArg charIndex="5248" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="5255" charLength="65" codePart="setServerDvarDefault( &quot;perk_allow_specialty_armorvest&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="5277" charLength="32" />
+      <funcRefArg charIndex="5311" charLength="1" />
+      <funcRefArg charIndex="5314" charLength="1" />
+      <funcRefArg charIndex="5317" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="5324" charLength="67" codePart="setServerDvarDefault( &quot;perk_allow_specialty_fraggrenade&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="5346" charLength="34" />
+      <funcRefArg charIndex="5382" charLength="1" />
+      <funcRefArg charIndex="5385" charLength="1" />
+      <funcRefArg charIndex="5388" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="5395" charLength="70" codePart="setServerDvarDefault( &quot;perk_allow_specialty_specialgrenade&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="5417" charLength="37" />
+      <funcRefArg charIndex="5456" charLength="1" />
+      <funcRefArg charIndex="5459" charLength="1" />
+      <funcRefArg charIndex="5462" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="5469" charLength="51" codePart="setServerDvarDefault( &quot;perk_allow_c4_mp&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="5491" charLength="18" />
+      <funcRefArg charIndex="5511" charLength="1" />
+      <funcRefArg charIndex="5514" charLength="1" />
+      <funcRefArg charIndex="5517" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="5524" charLength="57" codePart="setServerDvarDefault( &quot;perk_allow_claymore_mp&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="5546" charLength="24" />
+      <funcRefArg charIndex="5572" charLength="1" />
+      <funcRefArg charIndex="5575" charLength="1" />
+      <funcRefArg charIndex="5578" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="5585" charLength="52" codePart="setServerDvarDefault( &quot;perk_allow_rpg_mp&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="5607" charLength="19" />
+      <funcRefArg charIndex="5628" charLength="1" />
+      <funcRefArg charIndex="5631" charLength="1" />
+      <funcRefArg charIndex="5634" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="5666" charLength="55" codePart="setServerDvarDefault( &quot;allies_allow_assault&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="5688" charLength="22" />
+      <funcRefArg charIndex="5712" charLength="1" />
+      <funcRefArg charIndex="5715" charLength="1" />
+      <funcRefArg charIndex="5718" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="5725" charLength="55" codePart="setServerDvarDefault( &quot;allies_allow_specops&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="5747" charLength="22" />
+      <funcRefArg charIndex="5771" charLength="1" />
+      <funcRefArg charIndex="5774" charLength="1" />
+      <funcRefArg charIndex="5777" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="5784" charLength="59" codePart="setServerDvarDefault( &quot;allies_allow_heavygunner&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="5806" charLength="26" />
+      <funcRefArg charIndex="5834" charLength="1" />
+      <funcRefArg charIndex="5837" charLength="1" />
+      <funcRefArg charIndex="5840" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="5847" charLength="59" codePart="setServerDvarDefault( &quot;allies_allow_demolitions&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="5869" charLength="26" />
+      <funcRefArg charIndex="5897" charLength="1" />
+      <funcRefArg charIndex="5900" charLength="1" />
+      <funcRefArg charIndex="5903" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="5910" charLength="54" codePart="setServerDvarDefault( &quot;allies_allow_sniper&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="5932" charLength="21" />
+      <funcRefArg charIndex="5955" charLength="1" />
+      <funcRefArg charIndex="5958" charLength="1" />
+      <funcRefArg charIndex="5961" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="5968" charLength="53" codePart="setServerDvarDefault( &quot;axis_allow_assault&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="5990" charLength="20" />
+      <funcRefArg charIndex="6012" charLength="1" />
+      <funcRefArg charIndex="6015" charLength="1" />
+      <funcRefArg charIndex="6018" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="6025" charLength="53" codePart="setServerDvarDefault( &quot;axis_allow_specops&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="6047" charLength="20" />
+      <funcRefArg charIndex="6069" charLength="1" />
+      <funcRefArg charIndex="6072" charLength="1" />
+      <funcRefArg charIndex="6075" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="6082" charLength="57" codePart="setServerDvarDefault( &quot;axis_allow_heavygunner&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="6104" charLength="24" />
+      <funcRefArg charIndex="6130" charLength="1" />
+      <funcRefArg charIndex="6133" charLength="1" />
+      <funcRefArg charIndex="6136" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="6143" charLength="57" codePart="setServerDvarDefault( &quot;axis_allow_demolitions&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="6165" charLength="24" />
+      <funcRefArg charIndex="6191" charLength="1" />
+      <funcRefArg charIndex="6194" charLength="1" />
+      <funcRefArg charIndex="6197" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setServerDvarDefault" charIndex="6204" charLength="52" codePart="setServerDvarDefault( &quot;axis_allow_sniper&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="6226" charLength="19" />
+      <funcRefArg charIndex="6247" charLength="1" />
+      <funcRefArg charIndex="6250" charLength="1" />
+      <funcRefArg charIndex="6253" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="6297" charLength="48" codePart="setDvarDefault( &quot;class_assault_primary&quot;, &quot;m16&quot; )" isCall="True">
+      <funcRefArg charIndex="6313" charLength="23" />
+      <funcRefArg charIndex="6338" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="6349" charLength="58" codePart="setDvarDefault( &quot;class_assault_primary_attachment&quot;, &quot;gl&quot; )" isCall="True">
+      <funcRefArg charIndex="6365" charLength="34" />
+      <funcRefArg charIndex="6401" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="6411" charLength="54" codePart="setDvarDefault( &quot;class_assault_secondary&quot;, &quot;beretta&quot; )" isCall="True">
+      <funcRefArg charIndex="6427" charLength="25" />
+      <funcRefArg charIndex="6454" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="6469" charLength="62" codePart="setDvarDefault( &quot;class_assault_secondary_attachment&quot;, &quot;none&quot; )" isCall="True">
+      <funcRefArg charIndex="6485" charLength="36" />
+      <funcRefArg charIndex="6523" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="6535" charLength="57" codePart="setDvarDefault( &quot;class_assault_perk1&quot;, &quot;specialty_null&quot; )" isCall="True">
+      <funcRefArg charIndex="6551" charLength="21" />
+      <funcRefArg charIndex="6574" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="6596" charLength="65" codePart="setDvarDefault( &quot;class_assault_perk2&quot;, &quot;specialty_bulletdamage&quot; )" isCall="True">
+      <funcRefArg charIndex="6612" charLength="21" />
+      <funcRefArg charIndex="6635" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="6665" charLength="65" codePart="setDvarDefault( &quot;class_assault_perk3&quot;, &quot;specialty_longersprint&quot; )" isCall="True">
+      <funcRefArg charIndex="6681" charLength="21" />
+      <funcRefArg charIndex="6704" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="6734" charLength="63" codePart="setDvarDefault( &quot;class_assault_grenade&quot;, &quot;concussion_grenade&quot; )" isCall="True">
+      <funcRefArg charIndex="6750" charLength="23" />
+      <funcRefArg charIndex="6775" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="6801" charLength="51" codePart="setDvarDefault( &quot;class_assault_camo&quot;, &quot;camo_none&quot; )" isCall="True">
+      <funcRefArg charIndex="6817" charLength="20" />
+      <funcRefArg charIndex="6839" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="6856" charLength="48" codePart="setDvarDefault( &quot;class_assault_frags&quot;, 1, 0, 4 )" isCall="True">
+      <funcRefArg charIndex="6872" charLength="21" />
+      <funcRefArg charIndex="6895" charLength="1" />
+      <funcRefArg charIndex="6898" charLength="1" />
+      <funcRefArg charIndex="6901" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="6908" charLength="50" codePart="setDvarDefault( &quot;class_assault_special&quot;, 1, 0, 4 )" isCall="True">
+      <funcRefArg charIndex="6924" charLength="23" />
+      <funcRefArg charIndex="6949" charLength="1" />
+      <funcRefArg charIndex="6952" charLength="1" />
+      <funcRefArg charIndex="6955" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="6999" charLength="48" codePart="setDvarDefault( &quot;class_specops_primary&quot;, &quot;mp5&quot; )" isCall="True">
+      <funcRefArg charIndex="7015" charLength="23" />
+      <funcRefArg charIndex="7040" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="7051" charLength="60" codePart="setDvarDefault( &quot;class_specops_primary_attachment&quot;, &quot;none&quot; )" isCall="True">
+      <funcRefArg charIndex="7067" charLength="34" />
+      <funcRefArg charIndex="7103" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="7115" charLength="50" codePart="setDvarDefault( &quot;class_specops_secondary&quot;, &quot;usp&quot; )" isCall="True">
+      <funcRefArg charIndex="7131" charLength="25" />
+      <funcRefArg charIndex="7158" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="7169" charLength="66" codePart="setDvarDefault( &quot;class_specops_secondary_attachment&quot;, &quot;silencer&quot; )" isCall="True">
+      <funcRefArg charIndex="7185" charLength="36" />
+      <funcRefArg charIndex="7223" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="7239" charLength="48" codePart="setDvarDefault( &quot;class_specops_perk1&quot;, &quot;c4_mp&quot; )" isCall="True">
+      <funcRefArg charIndex="7255" charLength="21" />
+      <funcRefArg charIndex="7278" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="7291" charLength="68" codePart="setDvarDefault( &quot;class_specops_perk2&quot;, &quot;specialty_explosivedamage&quot; )" isCall="True">
+      <funcRefArg charIndex="7307" charLength="21" />
+      <funcRefArg charIndex="7330" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="7363" charLength="67" codePart="setDvarDefault( &quot;class_specops_perk3&quot;, &quot;specialty_bulletaccuracy&quot; )" isCall="True">
+      <funcRefArg charIndex="7379" charLength="21" />
+      <funcRefArg charIndex="7402" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="7434" charLength="58" codePart="setDvarDefault( &quot;class_specops_grenade&quot;, &quot;flash_grenade&quot; )" isCall="True">
+      <funcRefArg charIndex="7450" charLength="23" />
+      <funcRefArg charIndex="7475" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="7496" charLength="51" codePart="setDvarDefault( &quot;class_specops_camo&quot;, &quot;camo_none&quot; )" isCall="True">
+      <funcRefArg charIndex="7512" charLength="20" />
+      <funcRefArg charIndex="7534" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="7551" charLength="48" codePart="setDvarDefault( &quot;class_specops_frags&quot;, 1, 0, 4 )" isCall="True">
+      <funcRefArg charIndex="7567" charLength="21" />
+      <funcRefArg charIndex="7590" charLength="1" />
+      <funcRefArg charIndex="7593" charLength="1" />
+      <funcRefArg charIndex="7596" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="7603" charLength="50" codePart="setDvarDefault( &quot;class_specops_special&quot;, 1, 0, 4 )" isCall="True">
+      <funcRefArg charIndex="7619" charLength="23" />
+      <funcRefArg charIndex="7644" charLength="1" />
+      <funcRefArg charIndex="7647" charLength="1" />
+      <funcRefArg charIndex="7650" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="7698" charLength="52" codePart="setDvarDefault( &quot;class_heavygunner_primary&quot;, &quot;saw&quot; )" isCall="True">
+      <funcRefArg charIndex="7714" charLength="27" />
+      <funcRefArg charIndex="7743" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="7754" charLength="64" codePart="setDvarDefault( &quot;class_heavygunner_primary_attachment&quot;, &quot;none&quot; )" isCall="True">
+      <funcRefArg charIndex="7770" charLength="38" />
+      <funcRefArg charIndex="7810" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="7822" charLength="54" codePart="setDvarDefault( &quot;class_heavygunner_secondary&quot;, &quot;usp&quot; )" isCall="True">
+      <funcRefArg charIndex="7838" charLength="29" />
+      <funcRefArg charIndex="7869" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="7880" charLength="66" codePart="setDvarDefault( &quot;class_heavygunner_secondary_attachment&quot;, &quot;none&quot; )" isCall="True">
+      <funcRefArg charIndex="7896" charLength="40" />
+      <funcRefArg charIndex="7938" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="7950" charLength="71" codePart="setDvarDefault( &quot;class_heavygunner_perk1&quot;, &quot;specialty_specialgrenade&quot; )" isCall="True">
+      <funcRefArg charIndex="7966" charLength="25" />
+      <funcRefArg charIndex="7993" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="8025" charLength="66" codePart="setDvarDefault( &quot;class_heavygunner_perk2&quot;, &quot;specialty_armorvest&quot; )" isCall="True">
+      <funcRefArg charIndex="8041" charLength="25" />
+      <funcRefArg charIndex="8068" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="8095" charLength="74" codePart="setDvarDefault( &quot;class_heavygunner_perk3&quot;, &quot;specialty_bulletpenetration&quot; )" isCall="True">
+      <funcRefArg charIndex="8111" charLength="25" />
+      <funcRefArg charIndex="8138" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="8173" charLength="67" codePart="setDvarDefault( &quot;class_heavygunner_grenade&quot;, &quot;concussion_grenade&quot; )" isCall="True">
+      <funcRefArg charIndex="8189" charLength="27" />
+      <funcRefArg charIndex="8218" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="8244" charLength="55" codePart="setDvarDefault( &quot;class_heavygunner_camo&quot;, &quot;camo_none&quot; )" isCall="True">
+      <funcRefArg charIndex="8260" charLength="24" />
+      <funcRefArg charIndex="8286" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="8303" charLength="52" codePart="setDvarDefault( &quot;class_heavygunner_frags&quot;, 1, 0, 4 )" isCall="True">
+      <funcRefArg charIndex="8319" charLength="25" />
+      <funcRefArg charIndex="8346" charLength="1" />
+      <funcRefArg charIndex="8349" charLength="1" />
+      <funcRefArg charIndex="8352" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="8359" charLength="54" codePart="setDvarDefault( &quot;class_heavygunner_special&quot;, 1, 0, 4 )" isCall="True">
+      <funcRefArg charIndex="8375" charLength="27" />
+      <funcRefArg charIndex="8404" charLength="1" />
+      <funcRefArg charIndex="8407" charLength="1" />
+      <funcRefArg charIndex="8410" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="8458" charLength="63" codePart="setDvarDefault( &quot;class_demolitions_primary&quot;, &quot;winchester1200&quot; )" isCall="True">
+      <funcRefArg charIndex="8474" charLength="27" />
+      <funcRefArg charIndex="8503" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="8525" charLength="64" codePart="setDvarDefault( &quot;class_demolitions_primary_attachment&quot;, &quot;none&quot; )" isCall="True">
+      <funcRefArg charIndex="8541" charLength="38" />
+      <funcRefArg charIndex="8581" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="8593" charLength="58" codePart="setDvarDefault( &quot;class_demolitions_secondary&quot;, &quot;beretta&quot; )" isCall="True">
+      <funcRefArg charIndex="8609" charLength="29" />
+      <funcRefArg charIndex="8640" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="8655" charLength="66" codePart="setDvarDefault( &quot;class_demolitions_secondary_attachment&quot;, &quot;none&quot; )" isCall="True">
+      <funcRefArg charIndex="8671" charLength="40" />
+      <funcRefArg charIndex="8713" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="8725" charLength="53" codePart="setDvarDefault( &quot;class_demolitions_perk1&quot;, &quot;rpg_mp&quot; )" isCall="True">
+      <funcRefArg charIndex="8741" charLength="25" />
+      <funcRefArg charIndex="8768" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="8782" charLength="72" codePart="setDvarDefault( &quot;class_demolitions_perk2&quot;, &quot;specialty_explosivedamage&quot; )" isCall="True">
+      <funcRefArg charIndex="8798" charLength="25" />
+      <funcRefArg charIndex="8825" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="8858" charLength="69" codePart="setDvarDefault( &quot;class_demolitions_perk3&quot;, &quot;specialty_longersprint&quot; )" isCall="True">
+      <funcRefArg charIndex="8874" charLength="25" />
+      <funcRefArg charIndex="8901" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="8931" charLength="62" codePart="setDvarDefault( &quot;class_demolitions_grenade&quot;, &quot;smoke_grenade&quot; )" isCall="True">
+      <funcRefArg charIndex="8947" charLength="27" />
+      <funcRefArg charIndex="8976" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="8997" charLength="55" codePart="setDvarDefault( &quot;class_demolitions_camo&quot;, &quot;camo_none&quot; )" isCall="True">
+      <funcRefArg charIndex="9013" charLength="24" />
+      <funcRefArg charIndex="9039" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="9056" charLength="52" codePart="setDvarDefault( &quot;class_demolitions_frags&quot;, 1, 0, 4 )" isCall="True">
+      <funcRefArg charIndex="9072" charLength="25" />
+      <funcRefArg charIndex="9099" charLength="1" />
+      <funcRefArg charIndex="9102" charLength="1" />
+      <funcRefArg charIndex="9105" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="9112" charLength="54" codePart="setDvarDefault( &quot;class_demolitions_special&quot;, 1, 0, 4 )" isCall="True">
+      <funcRefArg charIndex="9128" charLength="27" />
+      <funcRefArg charIndex="9157" charLength="1" />
+      <funcRefArg charIndex="9160" charLength="1" />
+      <funcRefArg charIndex="9163" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="9206" charLength="49" codePart="setDvarDefault( &quot;class_sniper_primary&quot;, &quot;m40a3&quot; )" isCall="True">
+      <funcRefArg charIndex="9222" charLength="22" />
+      <funcRefArg charIndex="9246" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="9259" charLength="59" codePart="setDvarDefault( &quot;class_sniper_primary_attachment&quot;, &quot;none&quot; )" isCall="True">
+      <funcRefArg charIndex="9275" charLength="33" />
+      <funcRefArg charIndex="9310" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="9322" charLength="53" codePart="setDvarDefault( &quot;class_sniper_secondary&quot;, &quot;beretta&quot; )" isCall="True">
+      <funcRefArg charIndex="9338" charLength="24" />
+      <funcRefArg charIndex="9364" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="9379" charLength="65" codePart="setDvarDefault( &quot;class_sniper_secondary_attachment&quot;, &quot;silencer&quot; )" isCall="True">
+      <funcRefArg charIndex="9395" charLength="35" />
+      <funcRefArg charIndex="9432" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="9448" charLength="66" codePart="setDvarDefault( &quot;class_sniper_perk1&quot;, &quot;specialty_specialgrenade&quot; )" isCall="True">
+      <funcRefArg charIndex="9464" charLength="20" />
+      <funcRefArg charIndex="9486" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="9518" charLength="64" codePart="setDvarDefault( &quot;class_sniper_perk2&quot;, &quot;specialty_bulletdamage&quot; )" isCall="True">
+      <funcRefArg charIndex="9534" charLength="20" />
+      <funcRefArg charIndex="9556" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="9586" charLength="69" codePart="setDvarDefault( &quot;class_sniper_perk3&quot;, &quot;specialty_bulletpenetration&quot; )" isCall="True">
+      <funcRefArg charIndex="9602" charLength="20" />
+      <funcRefArg charIndex="9624" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="9659" charLength="57" codePart="setDvarDefault( &quot;class_sniper_grenade&quot;, &quot;flash_grenade&quot; )" isCall="True">
+      <funcRefArg charIndex="9675" charLength="22" />
+      <funcRefArg charIndex="9699" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="9720" charLength="50" codePart="setDvarDefault( &quot;class_sniper_camo&quot;, &quot;camo_none&quot; )" isCall="True">
+      <funcRefArg charIndex="9736" charLength="19" />
+      <funcRefArg charIndex="9757" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="9774" charLength="47" codePart="setDvarDefault( &quot;class_sniper_frags&quot;, 1, 0, 4 )" isCall="True">
+      <funcRefArg charIndex="9790" charLength="20" />
+      <funcRefArg charIndex="9812" charLength="1" />
+      <funcRefArg charIndex="9815" charLength="1" />
+      <funcRefArg charIndex="9818" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="9825" charLength="49" codePart="setDvarDefault( &quot;class_sniper_special&quot;, 1, 0, 4 )" isCall="True">
+      <funcRefArg charIndex="9841" charLength="22" />
+      <funcRefArg charIndex="9865" charLength="1" />
+      <funcRefArg charIndex="9868" charLength="1" />
+      <funcRefArg charIndex="9871" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="9880" charLength="51" codePart="setDvarDefault( &quot;scr_enable_nightvision&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="9896" charLength="24" />
+      <funcRefArg charIndex="9922" charLength="1" />
+      <funcRefArg charIndex="9925" charLength="1" />
+      <funcRefArg charIndex="9928" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="9935" charLength="45" codePart="setDvarDefault( &quot;scr_enable_music&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="9951" charLength="18" />
+      <funcRefArg charIndex="9971" charLength="1" />
+      <funcRefArg charIndex="9974" charLength="1" />
+      <funcRefArg charIndex="9977" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="9984" charLength="47" codePart="setDvarDefault( &quot;scr_enable_hiticon&quot;, 1, 0, 2 )" isCall="True">
+      <funcRefArg charIndex="10000" charLength="20" />
+      <funcRefArg charIndex="10022" charLength="1" />
+      <funcRefArg charIndex="10025" charLength="1" />
+      <funcRefArg charIndex="10028" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="10035" charLength="49" codePart="setDvarDefault( &quot;scr_enable_scoretext&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="10051" charLength="22" />
+      <funcRefArg charIndex="10075" charLength="1" />
+      <funcRefArg charIndex="10078" charLength="1" />
+      <funcRefArg charIndex="10081" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="10090" charLength="60" codePart="setDvarDefault( &quot;class_assault_movespeed&quot;, 0.95, 0.25, 2.0 )" isCall="True">
+      <funcRefArg charIndex="10106" charLength="25" />
+      <funcRefArg charIndex="10133" charLength="4" />
+      <funcRefArg charIndex="10139" charLength="4" />
+      <funcRefArg charIndex="10145" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="10154" charLength="60" codePart="setDvarDefault( &quot;class_specops_movespeed&quot;, 1.00, 0.25, 2.0 )" isCall="True">
+      <funcRefArg charIndex="10170" charLength="25" />
+      <funcRefArg charIndex="10197" charLength="4" />
+      <funcRefArg charIndex="10203" charLength="4" />
+      <funcRefArg charIndex="10209" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="10218" charLength="65" codePart="setDvarDefault( &quot;class_heavygunner_movespeed&quot;, 0.875, 0.25, 2.0 )" isCall="True">
+      <funcRefArg charIndex="10234" charLength="29" />
+      <funcRefArg charIndex="10265" charLength="5" />
+      <funcRefArg charIndex="10272" charLength="4" />
+      <funcRefArg charIndex="10278" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="10287" charLength="64" codePart="setDvarDefault( &quot;class_demolitions_movespeed&quot;, 1.00, 0.25, 2.0 )" isCall="True">
+      <funcRefArg charIndex="10303" charLength="29" />
+      <funcRefArg charIndex="10334" charLength="4" />
+      <funcRefArg charIndex="10340" charLength="4" />
+      <funcRefArg charIndex="10346" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="10355" charLength="59" codePart="setDvarDefault( &quot;class_sniper_movespeed&quot;, 1.00, 0.25, 2.0 )" isCall="True">
+      <funcRefArg charIndex="10371" charLength="24" />
+      <funcRefArg charIndex="10397" charLength="4" />
+      <funcRefArg charIndex="10403" charLength="4" />
+      <funcRefArg charIndex="10409" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="classDvarUpdate" charIndex="10420" charLength="30" codePart="level thread classDvarUpdate()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="onPlayerConnect" charIndex="10454" charLength="30" codePart="level thread onPlayerConnect()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="10517" charLength="46" codePart="updateClassAvailability( &quot;allies&quot;, &quot;assault&quot; )" isCall="True">
+      <funcRefArg charIndex="10542" charLength="8" />
+      <funcRefArg charIndex="10552" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="10567" charLength="44" codePart="updateClassAvailability( &quot;axis&quot;, &quot;assault&quot; )" isCall="True">
+      <funcRefArg charIndex="10592" charLength="6" />
+      <funcRefArg charIndex="10600" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="10615" charLength="46" codePart="updateClassAvailability( &quot;allies&quot;, &quot;specops&quot; )" isCall="True">
+      <funcRefArg charIndex="10640" charLength="8" />
+      <funcRefArg charIndex="10650" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="10665" charLength="44" codePart="updateClassAvailability( &quot;axis&quot;, &quot;specops&quot; )" isCall="True">
+      <funcRefArg charIndex="10690" charLength="6" />
+      <funcRefArg charIndex="10698" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="10713" charLength="50" codePart="updateClassAvailability( &quot;allies&quot;, &quot;heavygunner&quot; )" isCall="True">
+      <funcRefArg charIndex="10738" charLength="8" />
+      <funcRefArg charIndex="10748" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="10767" charLength="48" codePart="updateClassAvailability( &quot;axis&quot;, &quot;heavygunner&quot; )" isCall="True">
+      <funcRefArg charIndex="10792" charLength="6" />
+      <funcRefArg charIndex="10800" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="10819" charLength="50" codePart="updateClassAvailability( &quot;allies&quot;, &quot;demolitions&quot; )" isCall="True">
+      <funcRefArg charIndex="10844" charLength="8" />
+      <funcRefArg charIndex="10854" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="10873" charLength="48" codePart="updateClassAvailability( &quot;axis&quot;, &quot;demolitions&quot; )" isCall="True">
+      <funcRefArg charIndex="10898" charLength="6" />
+      <funcRefArg charIndex="10906" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="10925" charLength="45" codePart="updateClassAvailability( &quot;allies&quot;, &quot;sniper&quot; )" isCall="True">
+      <funcRefArg charIndex="10950" charLength="8" />
+      <funcRefArg charIndex="10960" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="10974" charLength="43" codePart="updateClassAvailability( &quot;axis&quot;, &quot;sniper&quot; )" isCall="True">
+      <funcRefArg charIndex="10999" charLength="6" />
+      <funcRefArg charIndex="11007" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="11046" charLength="35" codePart="getDvarInt( &quot;class_assault_limit&quot; )" isCall="True">
+      <funcRefArg charIndex="11058" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="11137" charLength="46" codePart="updateClassAvailability( &quot;allies&quot;, &quot;assault&quot; )" isCall="True">
+      <funcRefArg charIndex="11162" charLength="8" />
+      <funcRefArg charIndex="11172" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="11189" charLength="44" codePart="updateClassAvailability( &quot;axis&quot;, &quot;assault&quot; )" isCall="True">
+      <funcRefArg charIndex="11214" charLength="6" />
+      <funcRefArg charIndex="11222" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="11268" charLength="35" codePart="getDvarInt( &quot;class_specops_limit&quot; )" isCall="True">
+      <funcRefArg charIndex="11280" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="11359" charLength="46" codePart="updateClassAvailability( &quot;allies&quot;, &quot;specops&quot; )" isCall="True">
+      <funcRefArg charIndex="11384" charLength="8" />
+      <funcRefArg charIndex="11394" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="11411" charLength="44" codePart="updateClassAvailability( &quot;axis&quot;, &quot;specops&quot; )" isCall="True">
+      <funcRefArg charIndex="11436" charLength="6" />
+      <funcRefArg charIndex="11444" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="11490" charLength="39" codePart="getDvarInt( &quot;class_heavygunner_limit&quot; )" isCall="True">
+      <funcRefArg charIndex="11502" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="11589" charLength="50" codePart="updateClassAvailability( &quot;allies&quot;, &quot;heavygunner&quot; )" isCall="True">
+      <funcRefArg charIndex="11614" charLength="8" />
+      <funcRefArg charIndex="11624" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="11645" charLength="48" codePart="updateClassAvailability( &quot;axis&quot;, &quot;heavygunner&quot; )" isCall="True">
+      <funcRefArg charIndex="11670" charLength="6" />
+      <funcRefArg charIndex="11678" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="11728" charLength="39" codePart="getDvarInt( &quot;class_demolitions_limit&quot; )" isCall="True">
+      <funcRefArg charIndex="11740" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="11827" charLength="50" codePart="updateClassAvailability( &quot;allies&quot;, &quot;demolitions&quot; )" isCall="True">
+      <funcRefArg charIndex="11852" charLength="8" />
+      <funcRefArg charIndex="11862" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="11883" charLength="48" codePart="updateClassAvailability( &quot;axis&quot;, &quot;demolitions&quot; )" isCall="True">
+      <funcRefArg charIndex="11908" charLength="6" />
+      <funcRefArg charIndex="11916" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="11966" charLength="34" codePart="getDvarInt( &quot;class_sniper_limit&quot; )" isCall="True">
+      <funcRefArg charIndex="11978" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="12055" charLength="45" codePart="updateClassAvailability( &quot;allies&quot;, &quot;sniper&quot; )" isCall="True">
+      <funcRefArg charIndex="12080" charLength="8" />
+      <funcRefArg charIndex="12090" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="12106" charLength="43" codePart="updateClassAvailability( &quot;axis&quot;, &quot;sniper&quot; )" isCall="True">
+      <funcRefArg charIndex="12131" charLength="6" />
+      <funcRefArg charIndex="12139" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="12224" charLength="38" codePart="level waittill( &quot;connecting&quot;, player )" isCall="True">
+      <funcRefArg charIndex="12240" charLength="12" />
+      <funcRefArg charIndex="12254" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="initClassLoadouts" charIndex="12271" charLength="33" codePart="player thread initClassLoadouts()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateServerDvars" charIndex="12309" charLength="33" codePart="player thread updateServerDvars()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="12446" charLength="46" codePart="updateClassAvailability( teamName, classType )" isCall="True">
+      <funcRefArg charIndex="12471" charLength="8" />
+      <funcRefArg charIndex="12481" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="updateClassAvailability" charIndex="12590" charLength="46" codePart="updateClassAvailability( teamName, classType )" isCall="True">
+      <funcRefArg charIndex="12615" charLength="8" />
+      <funcRefArg charIndex="12625" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12684" charLength="23" codePart="isDefined( self.class )" isCall="True">
+      <funcRefArg charIndex="12695" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="releaseClass" charIndex="12713" charLength="45" codePart="releaseClass( self.pers[&quot;team&quot;], self.class )" isCall="True">
+      <funcRefArg charIndex="12727" charLength="17" />
+      <funcRefArg charIndex="12746" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12767" charLength="26" codePart="isDefined( self.curClass )" isCall="True">
+      <funcRefArg charIndex="12778" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="releaseClass" charIndex="12830" charLength="48" codePart="releaseClass( self.pers[&quot;team&quot;], self.curClass )" isCall="True">
+      <funcRefArg charIndex="12844" charLength="17" />
+      <funcRefArg charIndex="12863" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="claimClass" charIndex="12946" charLength="48" codePart="self claimClass( self.pers[&quot;team&quot;], self.class )" isCall="True">
+      <funcRefArg charIndex="12963" charLength="17" />
+      <funcRefArg charIndex="12982" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="13005" charLength="26" codePart="isDefined( self.curClass )" isCall="True">
+      <funcRefArg charIndex="13016" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="claimClass" charIndex="13068" charLength="51" codePart="self claimClass( self.pers[&quot;team&quot;], self.curClass )" isCall="True">
+      <funcRefArg charIndex="13085" charLength="17" />
+      <funcRefArg charIndex="13104" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="13127" charLength="48" codePart="self setClientDvar( &quot;loadout_class&quot;, classType )" isCall="True">
+      <funcRefArg charIndex="13147" charLength="15" />
+      <funcRefArg charIndex="13164" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarsFromClass" charIndex="13179" charLength="35" codePart="self setDvarsFromClass( classType )" isCall="True">
+      <funcRefArg charIndex="13203" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvars" charIndex="13269" charLength="400" codePart="self setClientDvars(&#xD;&#xA;					&quot;weap_allow_m16&quot;, getDvar( &quot;weap_allow_m16&quot; ), &#xD;&#xA;					&quot;weap_allow_ak47&quot;, getDvar( &quot;weap_allow_ak47&quot; ), &#xD;&#xA;					&quot;weap_allow_m4&quot;, getDvar( &quot;weap_allow_m4&quot; ), &#xD;&#xA;					&quot;weap_allow_g3&quot;, getDvar( &quot;weap_allow_g3&quot; ), &#xD;&#xA;					&quot;weap_allow_g36c&quot;, getDvar( &quot;weap_allow_g36c&quot; ), &#xD;&#xA;					&quot;weap_allow_m14&quot;, getDvar( &quot;weap_allow_m14&quot; ), &#xD;&#xA;					&quot;weap_allow_mp44&quot;, getDvar( &quot;weap_allow_mp44&quot; ) )" isCall="True">
+      <funcRefArg charIndex="13296" charLength="16" />
+      <funcRefArg charIndex="13314" charLength="27" />
+      <funcRefArg charIndex="13350" charLength="17" />
+      <funcRefArg charIndex="13369" charLength="28" />
+      <funcRefArg charIndex="13406" charLength="15" />
+      <funcRefArg charIndex="13423" charLength="26" />
+      <funcRefArg charIndex="13458" charLength="15" />
+      <funcRefArg charIndex="13475" charLength="26" />
+      <funcRefArg charIndex="13510" charLength="17" />
+      <funcRefArg charIndex="13529" charLength="28" />
+      <funcRefArg charIndex="13566" charLength="16" />
+      <funcRefArg charIndex="13584" charLength="27" />
+      <funcRefArg charIndex="13620" charLength="17" />
+      <funcRefArg charIndex="13639" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="13314" charLength="27" codePart="getDvar( &quot;weap_allow_m16&quot; )" isCall="True">
+      <funcRefArg charIndex="13323" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="13369" charLength="28" codePart="getDvar( &quot;weap_allow_ak47&quot; )" isCall="True">
+      <funcRefArg charIndex="13378" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="13423" charLength="26" codePart="getDvar( &quot;weap_allow_m4&quot; )" isCall="True">
+      <funcRefArg charIndex="13432" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="13475" charLength="26" codePart="getDvar( &quot;weap_allow_g3&quot; )" isCall="True">
+      <funcRefArg charIndex="13484" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="13529" charLength="28" codePart="getDvar( &quot;weap_allow_g36c&quot; )" isCall="True">
+      <funcRefArg charIndex="13538" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="13584" charLength="27" codePart="getDvar( &quot;weap_allow_m14&quot; )" isCall="True">
+      <funcRefArg charIndex="13593" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="13639" charLength="28" codePart="getDvar( &quot;weap_allow_mp44&quot; )" isCall="True">
+      <funcRefArg charIndex="13648" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvars" charIndex="13675" charLength="408" codePart="self setClientDvars(&#xD;&#xA;					&quot;attach_allow_assault_none&quot;, getDvar( &quot;attach_allow_assault_none&quot; ), &#xD;&#xA;					&quot;attach_allow_assault_gl&quot;, getDvar( &quot;attach_allow_assault_gl&quot; ), &#xD;&#xA;					&quot;attach_allow_assault_reflex&quot;, getDvar( &quot;attach_allow_assault_reflex&quot; ), &#xD;&#xA;					&quot;attach_allow_assault_silencer&quot;, getDvar( &quot;attach_allow_assault_silencer&quot; ), &#xD;&#xA;					&quot;attach_allow_assault_acog&quot;, getDvar( &quot;attach_allow_assault_acog&quot; ) )" isCall="True">
+      <funcRefArg charIndex="13702" charLength="27" />
+      <funcRefArg charIndex="13731" charLength="38" />
+      <funcRefArg charIndex="13778" charLength="25" />
+      <funcRefArg charIndex="13805" charLength="36" />
+      <funcRefArg charIndex="13850" charLength="29" />
+      <funcRefArg charIndex="13881" charLength="40" />
+      <funcRefArg charIndex="13930" charLength="31" />
+      <funcRefArg charIndex="13963" charLength="42" />
+      <funcRefArg charIndex="14014" charLength="27" />
+      <funcRefArg charIndex="14043" charLength="39" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="13731" charLength="38" codePart="getDvar( &quot;attach_allow_assault_none&quot; )" isCall="True">
+      <funcRefArg charIndex="13740" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="13805" charLength="36" codePart="getDvar( &quot;attach_allow_assault_gl&quot; )" isCall="True">
+      <funcRefArg charIndex="13814" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="13881" charLength="40" codePart="getDvar( &quot;attach_allow_assault_reflex&quot; )" isCall="True">
+      <funcRefArg charIndex="13890" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="13963" charLength="42" codePart="getDvar( &quot;attach_allow_assault_silencer&quot; )" isCall="True">
+      <funcRefArg charIndex="13972" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="14043" charLength="38" codePart="getDvar( &quot;attach_allow_assault_acog&quot; )" isCall="True">
+      <funcRefArg charIndex="14052" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvars" charIndex="14119" charLength="304" codePart="self setClientDvars(&#xD;&#xA;					&quot;weap_allow_mp5&quot;, getDvar( &quot;weap_allow_mp5&quot; ), &#xD;&#xA;					&quot;weap_allow_skorpion&quot;, getDvar( &quot;weap_allow_skorpion&quot; ), &#xD;&#xA;					&quot;weap_allow_uzi&quot;, getDvar( &quot;weap_allow_uzi&quot; ), &#xD;&#xA;					&quot;weap_allow_ak74u&quot;, getDvar( &quot;weap_allow_ak74u&quot; ), &#xD;&#xA;					&quot;weap_allow_p90&quot;, getDvar( &quot;weap_allow_p90&quot; ) )" isCall="True">
+      <funcRefArg charIndex="14146" charLength="16" />
+      <funcRefArg charIndex="14164" charLength="27" />
+      <funcRefArg charIndex="14200" charLength="21" />
+      <funcRefArg charIndex="14223" charLength="32" />
+      <funcRefArg charIndex="14264" charLength="16" />
+      <funcRefArg charIndex="14282" charLength="27" />
+      <funcRefArg charIndex="14318" charLength="18" />
+      <funcRefArg charIndex="14338" charLength="29" />
+      <funcRefArg charIndex="14376" charLength="16" />
+      <funcRefArg charIndex="14394" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="14164" charLength="27" codePart="getDvar( &quot;weap_allow_mp5&quot; )" isCall="True">
+      <funcRefArg charIndex="14173" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="14223" charLength="32" codePart="getDvar( &quot;weap_allow_skorpion&quot; )" isCall="True">
+      <funcRefArg charIndex="14232" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="14282" charLength="27" codePart="getDvar( &quot;weap_allow_uzi&quot; )" isCall="True">
+      <funcRefArg charIndex="14291" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="14338" charLength="29" codePart="getDvar( &quot;weap_allow_ak74u&quot; )" isCall="True">
+      <funcRefArg charIndex="14347" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="14394" charLength="27" codePart="getDvar( &quot;weap_allow_p90&quot; )" isCall="True">
+      <funcRefArg charIndex="14403" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvars" charIndex="14429" charLength="304" codePart="self setClientDvars(&#xD;&#xA;					&quot;attach_allow_smg_none&quot;, getDvar( &quot;attach_allow_smg_none&quot; ), &#xD;&#xA;					&quot;attach_allow_smg_reflex&quot;, getDvar( &quot;attach_allow_smg_reflex&quot; ), &#xD;&#xA;					&quot;attach_allow_smg_silencer&quot;, getDvar( &quot;attach_allow_smg_silencer&quot; ), &#xD;&#xA;					&quot;attach_allow_smg_acog&quot;, getDvar( &quot;attach_allow_smg_acog&quot; ) )" isCall="True">
+      <funcRefArg charIndex="14456" charLength="23" />
+      <funcRefArg charIndex="14481" charLength="34" />
+      <funcRefArg charIndex="14524" charLength="25" />
+      <funcRefArg charIndex="14551" charLength="36" />
+      <funcRefArg charIndex="14596" charLength="27" />
+      <funcRefArg charIndex="14625" charLength="38" />
+      <funcRefArg charIndex="14672" charLength="23" />
+      <funcRefArg charIndex="14697" charLength="35" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="14481" charLength="34" codePart="getDvar( &quot;attach_allow_smg_none&quot; )" isCall="True">
+      <funcRefArg charIndex="14490" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="14551" charLength="36" codePart="getDvar( &quot;attach_allow_smg_reflex&quot; )" isCall="True">
+      <funcRefArg charIndex="14560" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="14625" charLength="38" codePart="getDvar( &quot;attach_allow_smg_silencer&quot; )" isCall="True">
+      <funcRefArg charIndex="14634" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="14697" charLength="34" codePart="getDvar( &quot;attach_allow_smg_acog&quot; )" isCall="True">
+      <funcRefArg charIndex="14706" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvars" charIndex="14773" charLength="186" codePart="self setClientDvars(&#xD;&#xA;					&quot;weap_allow_saw&quot;, getDvar( &quot;weap_allow_saw&quot; ), &#xD;&#xA;					&quot;weap_allow_rpd&quot;, getDvar( &quot;weap_allow_rpd&quot; ), &#xD;&#xA;					&quot;weap_allow_m60e4&quot;, getDvar( &quot;weap_allow_m60e4&quot; ) )" isCall="True">
+      <funcRefArg charIndex="14800" charLength="16" />
+      <funcRefArg charIndex="14818" charLength="27" />
+      <funcRefArg charIndex="14854" charLength="16" />
+      <funcRefArg charIndex="14872" charLength="27" />
+      <funcRefArg charIndex="14908" charLength="18" />
+      <funcRefArg charIndex="14928" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="14818" charLength="27" codePart="getDvar( &quot;weap_allow_saw&quot; )" isCall="True">
+      <funcRefArg charIndex="14827" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="14872" charLength="27" codePart="getDvar( &quot;weap_allow_rpd&quot; )" isCall="True">
+      <funcRefArg charIndex="14881" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="14928" charLength="29" codePart="getDvar( &quot;weap_allow_m60e4&quot; )" isCall="True">
+      <funcRefArg charIndex="14937" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvars" charIndex="14965" charLength="296" codePart="self setClientDvars(&#xD;&#xA;					&quot;attach_allow_lmg_none&quot;, getDvar( &quot;attach_allow_lmg_none&quot; ), &#xD;&#xA;					&quot;attach_allow_lmg_reflex&quot;, getDvar( &quot;attach_allow_lmg_reflex&quot; ), &#xD;&#xA;					&quot;attach_allow_lmg_grip&quot;, getDvar( &quot;attach_allow_lmg_grip&quot; ), &#xD;&#xA;					&quot;attach_allow_lmg_acog&quot;, getDvar( &quot;attach_allow_lmg_acog&quot; ) )" isCall="True">
+      <funcRefArg charIndex="14992" charLength="23" />
+      <funcRefArg charIndex="15017" charLength="34" />
+      <funcRefArg charIndex="15060" charLength="25" />
+      <funcRefArg charIndex="15087" charLength="36" />
+      <funcRefArg charIndex="15132" charLength="23" />
+      <funcRefArg charIndex="15157" charLength="34" />
+      <funcRefArg charIndex="15200" charLength="23" />
+      <funcRefArg charIndex="15225" charLength="35" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="15017" charLength="34" codePart="getDvar( &quot;attach_allow_lmg_none&quot; )" isCall="True">
+      <funcRefArg charIndex="15026" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="15087" charLength="36" codePart="getDvar( &quot;attach_allow_lmg_reflex&quot; )" isCall="True">
+      <funcRefArg charIndex="15096" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="15157" charLength="34" codePart="getDvar( &quot;attach_allow_lmg_grip&quot; )" isCall="True">
+      <funcRefArg charIndex="15166" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="15225" charLength="34" codePart="getDvar( &quot;attach_allow_lmg_acog&quot; )" isCall="True">
+      <funcRefArg charIndex="15234" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvars" charIndex="15301" charLength="154" codePart="self setClientDvars(&#xD;&#xA;					&quot;weap_allow_m1014&quot;, getDvar( &quot;weap_allow_m1014&quot; ), &#xD;&#xA;					&quot;weap_allow_winchester1200&quot;, getDvar( &quot;weap_allow_winchester1200&quot; ) )" isCall="True">
+      <funcRefArg charIndex="15328" charLength="18" />
+      <funcRefArg charIndex="15348" charLength="29" />
+      <funcRefArg charIndex="15386" charLength="27" />
+      <funcRefArg charIndex="15415" charLength="39" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="15348" charLength="29" codePart="getDvar( &quot;weap_allow_m1014&quot; )" isCall="True">
+      <funcRefArg charIndex="15357" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="15415" charLength="38" codePart="getDvar( &quot;weap_allow_winchester1200&quot; )" isCall="True">
+      <funcRefArg charIndex="15424" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvars" charIndex="15461" charLength="252" codePart="self setClientDvars(&#xD;&#xA;					&quot;attach_allow_shotgun_none&quot;, getDvar( &quot;attach_allow_shotgun_none&quot; ), &#xD;&#xA;					&quot;attach_allow_shotgun_reflex&quot;, getDvar( &quot;attach_allow_shotgun_reflex&quot; ), &#xD;&#xA;					&quot;attach_allow_shotgun_grip&quot;, getDvar( &quot;attach_allow_shotgun_grip&quot; ) )" isCall="True">
+      <funcRefArg charIndex="15488" charLength="27" />
+      <funcRefArg charIndex="15517" charLength="38" />
+      <funcRefArg charIndex="15564" charLength="29" />
+      <funcRefArg charIndex="15595" charLength="40" />
+      <funcRefArg charIndex="15644" charLength="27" />
+      <funcRefArg charIndex="15673" charLength="39" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="15517" charLength="38" codePart="getDvar( &quot;attach_allow_shotgun_none&quot; )" isCall="True">
+      <funcRefArg charIndex="15526" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="15595" charLength="40" codePart="getDvar( &quot;attach_allow_shotgun_reflex&quot; )" isCall="True">
+      <funcRefArg charIndex="15604" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="15673" charLength="38" codePart="getDvar( &quot;attach_allow_shotgun_grip&quot; )" isCall="True">
+      <funcRefArg charIndex="15682" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvars" charIndex="15748" charLength="330" codePart="self setClientDvars(&#xD;&#xA;					&quot;weap_allow_m40a3&quot;, getDvar( &quot;weap_allow_m40a3&quot; ), &#xD;&#xA;					&quot;weap_allow_m21&quot;, getDvar( &quot;weap_allow_m21&quot; ), &#xD;&#xA;					&quot;weap_allow_dragunov&quot;, getDvar( &quot;weap_allow_dragunov&quot; ), &#xD;&#xA;					&quot;weap_allow_barrett&quot;, getDvar( &quot;weap_allow_barrett&quot; ), &#xD;&#xA;					&quot;weap_allow_remington700&quot;, getDvar( &quot;weap_allow_remington700&quot; ) )" isCall="True">
+      <funcRefArg charIndex="15775" charLength="18" />
+      <funcRefArg charIndex="15795" charLength="29" />
+      <funcRefArg charIndex="15833" charLength="16" />
+      <funcRefArg charIndex="15851" charLength="27" />
+      <funcRefArg charIndex="15887" charLength="21" />
+      <funcRefArg charIndex="15910" charLength="32" />
+      <funcRefArg charIndex="15951" charLength="20" />
+      <funcRefArg charIndex="15973" charLength="31" />
+      <funcRefArg charIndex="16013" charLength="25" />
+      <funcRefArg charIndex="16040" charLength="37" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="15795" charLength="29" codePart="getDvar( &quot;weap_allow_m40a3&quot; )" isCall="True">
+      <funcRefArg charIndex="15804" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="15851" charLength="27" codePart="getDvar( &quot;weap_allow_m21&quot; )" isCall="True">
+      <funcRefArg charIndex="15860" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="15910" charLength="32" codePart="getDvar( &quot;weap_allow_dragunov&quot; )" isCall="True">
+      <funcRefArg charIndex="15919" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="15973" charLength="31" codePart="getDvar( &quot;weap_allow_barrett&quot; )" isCall="True">
+      <funcRefArg charIndex="15982" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="16040" charLength="36" codePart="getDvar( &quot;weap_allow_remington700&quot; )" isCall="True">
+      <funcRefArg charIndex="16049" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvars" charIndex="16084" charLength="168" codePart="self setClientDvars(&#xD;&#xA;					&quot;attach_allow_sniper_none&quot;, getDvar( &quot;attach_allow_sniper_none&quot; ), &#xD;&#xA;					&quot;attach_allow_sniper_acog&quot;, getDvar( &quot;attach_allow_sniper_acog&quot; ) )" isCall="True">
+      <funcRefArg charIndex="16111" charLength="26" />
+      <funcRefArg charIndex="16139" charLength="37" />
+      <funcRefArg charIndex="16185" charLength="26" />
+      <funcRefArg charIndex="16213" charLength="38" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="16139" charLength="37" codePart="getDvar( &quot;attach_allow_sniper_none&quot; )" isCall="True">
+      <funcRefArg charIndex="16148" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="16213" charLength="37" codePart="getDvar( &quot;attach_allow_sniper_acog&quot; )" isCall="True">
+      <funcRefArg charIndex="16222" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="16317" charLength="27" codePart="setDvar( dvarName, setVal )" isCall="True">
+      <funcRefArg charIndex="16326" charLength="8" />
+      <funcRefArg charIndex="16336" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="16353" charLength="40" codePart="isDefined( level.serverDvars[dvarName] )" isCall="True">
+      <funcRefArg charIndex="16364" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="16531" charLength="48" codePart="players[index] setClientDvar( dvarName, setVal )" isCall="True">
+      <funcRefArg charIndex="16561" charLength="8" />
+      <funcRefArg charIndex="16571" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="16773" charLength="19" codePart="getDvar( dvarName )" isCall="True">
+      <funcRefArg charIndex="16782" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsString" charIndex="16813" charLength="18" codePart="isString( setVal )" isCall="True">
+      <funcRefArg charIndex="16823" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="16847" charLength="19" codePart="getDvar( dvarName )" isCall="True">
+      <funcRefArg charIndex="16856" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="16889" charLength="24" codePart="getDvarFloat( dvarName )" isCall="True">
+      <funcRefArg charIndex="16903" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="16930" charLength="19" codePart="isDefined( minVal )" isCall="True">
+      <funcRefArg charIndex="16941" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsString" charIndex="16954" charLength="18" codePart="isString( setVal )" isCall="True">
+      <funcRefArg charIndex="16964" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Max" charIndex="16987" charLength="21" codePart="max( setVal, minVal )" isCall="True">
+      <funcRefArg charIndex="16992" charLength="6" />
+      <funcRefArg charIndex="17000" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17019" charLength="19" codePart="isDefined( maxVal )" isCall="True">
+      <funcRefArg charIndex="17030" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsString" charIndex="17043" charLength="18" codePart="isString( setVal )" isCall="True">
+      <funcRefArg charIndex="17053" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Min" charIndex="17076" charLength="21" codePart="min( setVal, maxVal )" isCall="True">
+      <funcRefArg charIndex="17081" charLength="6" />
+      <funcRefArg charIndex="17089" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="17103" charLength="27" codePart="setDvar( dvarName, setVal )" isCall="True">
+      <funcRefArg charIndex="17112" charLength="8" />
+      <funcRefArg charIndex="17122" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="17398" charLength="50" codePart="setDvarDefault( dvarName, setVal, minVal, maxVal )" isCall="True">
+      <funcRefArg charIndex="17414" charLength="8" />
+      <funcRefArg charIndex="17424" charLength="6" />
+      <funcRefArg charIndex="17432" charLength="6" />
+      <funcRefArg charIndex="17440" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="MakeDvarServerInfo" charIndex="17795" charLength="38" codePart="makeDvarServerInfo( dvarName, setVal )" isCall="True">
+      <funcRefArg charIndex="17815" charLength="8" />
+      <funcRefArg charIndex="17825" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarDefault" charIndex="17848" charLength="50" codePart="setDvarDefault( dvarName, setVal, minVal, maxVal )" isCall="True">
+      <funcRefArg charIndex="17864" charLength="8" />
+      <funcRefArg charIndex="17874" charLength="6" />
+      <funcRefArg charIndex="17882" charLength="6" />
+      <funcRefArg charIndex="17890" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="initLoadoutForClass" charIndex="17988" charLength="37" codePart="self initLoadoutForClass( &quot;assault&quot; )" isCall="True">
+      <funcRefArg charIndex="18014" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="initLoadoutForClass" charIndex="18029" charLength="37" codePart="self initLoadoutForClass( &quot;specops&quot; )" isCall="True">
+      <funcRefArg charIndex="18055" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="initLoadoutForClass" charIndex="18070" charLength="41" codePart="self initLoadoutForClass( &quot;heavygunner&quot; )" isCall="True">
+      <funcRefArg charIndex="18096" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="initLoadoutForClass" charIndex="18115" charLength="41" codePart="self initLoadoutForClass( &quot;demolitions&quot; )" isCall="True">
+      <funcRefArg charIndex="18141" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="initLoadoutForClass" charIndex="18160" charLength="36" codePart="self initLoadoutForClass( &quot;sniper&quot; )" isCall="True">
+      <funcRefArg charIndex="18186" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18306" charLength="33" codePart="isDefined( self.pers[classType] )" isCall="True">
+      <funcRefArg charIndex="18317" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18344" charLength="52" codePart="isDefined( self.pers[classType][&quot;loadout_primary&quot;] )" isCall="True">
+      <funcRefArg charIndex="18355" charLength="40" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="18444" charLength="44" codePart="getDvar( &quot;class_&quot; + classType + &quot;_primary&quot; )" isCall="True">
+      <funcRefArg charIndex="18453" charLength="34" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18498" charLength="33" codePart="isDefined( self.pers[classType] )" isCall="True">
+      <funcRefArg charIndex="18509" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18536" charLength="63" codePart="isDefined( self.pers[classType][&quot;loadout_primary_attachment&quot;] )" isCall="True">
+      <funcRefArg charIndex="18547" charLength="51" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="18658" charLength="55" codePart="getDvar( &quot;class_&quot; + classType + &quot;_primary_attachment&quot; )" isCall="True">
+      <funcRefArg charIndex="18667" charLength="45" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18723" charLength="33" codePart="isDefined( self.pers[classType] )" isCall="True">
+      <funcRefArg charIndex="18734" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18761" charLength="54" codePart="isDefined( self.pers[classType][&quot;loadout_secondary&quot;] )" isCall="True">
+      <funcRefArg charIndex="18772" charLength="42" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="18865" charLength="46" codePart="getDvar( &quot;class_&quot; + classType + &quot;_secondary&quot; )" isCall="True">
+      <funcRefArg charIndex="18874" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18921" charLength="33" codePart="isDefined( self.pers[classType] )" isCall="True">
+      <funcRefArg charIndex="18932" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18959" charLength="65" codePart="isDefined( self.pers[classType][&quot;loadout_secondary_attachment&quot;] )" isCall="True">
+      <funcRefArg charIndex="18970" charLength="53" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="19085" charLength="57" codePart="getDvar( &quot;class_&quot; + classType + &quot;_secondary_attachment&quot; )" isCall="True">
+      <funcRefArg charIndex="19094" charLength="47" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19152" charLength="33" codePart="isDefined( self.pers[classType] )" isCall="True">
+      <funcRefArg charIndex="19163" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19190" charLength="50" codePart="isDefined( self.pers[classType][&quot;loadout_perk1&quot;] )" isCall="True">
+      <funcRefArg charIndex="19201" charLength="38" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="19286" charLength="42" codePart="getDvar( &quot;class_&quot; + classType + &quot;_perk1&quot; )" isCall="True">
+      <funcRefArg charIndex="19295" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19338" charLength="33" codePart="isDefined( self.pers[classType] )" isCall="True">
+      <funcRefArg charIndex="19349" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19376" charLength="50" codePart="isDefined( self.pers[classType][&quot;loadout_perk2&quot;] )" isCall="True">
+      <funcRefArg charIndex="19387" charLength="38" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="19472" charLength="42" codePart="getDvar( &quot;class_&quot; + classType + &quot;_perk2&quot; )" isCall="True">
+      <funcRefArg charIndex="19481" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19524" charLength="33" codePart="isDefined( self.pers[classType] )" isCall="True">
+      <funcRefArg charIndex="19535" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19562" charLength="50" codePart="isDefined( self.pers[classType][&quot;loadout_perk3&quot;] )" isCall="True">
+      <funcRefArg charIndex="19573" charLength="38" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="19658" charLength="42" codePart="getDvar( &quot;class_&quot; + classType + &quot;_perk3&quot; )" isCall="True">
+      <funcRefArg charIndex="19667" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19710" charLength="33" codePart="isDefined( self.pers[classType] )" isCall="True">
+      <funcRefArg charIndex="19721" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19748" charLength="52" codePart="isDefined( self.pers[classType][&quot;loadout_grenade&quot;] )" isCall="True">
+      <funcRefArg charIndex="19759" charLength="40" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="19848" charLength="44" codePart="getDvar( &quot;class_&quot; + classType + &quot;_grenade&quot; )" isCall="True">
+      <funcRefArg charIndex="19857" charLength="34" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19902" charLength="33" codePart="isDefined( self.pers[classType] )" isCall="True">
+      <funcRefArg charIndex="19913" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19940" charLength="49" codePart="isDefined( self.pers[classType][&quot;loadout_camo&quot;] )" isCall="True">
+      <funcRefArg charIndex="19951" charLength="37" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="20034" charLength="41" codePart="getDvar( &quot;class_&quot; + classType + &quot;_camo&quot; )" isCall="True">
+      <funcRefArg charIndex="20043" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvars" charIndex="20182" charLength="755" codePart="self setClientDvars(&#xD;&#xA;		&quot;loadout_primary&quot;, self.pers[classType][&quot;loadout_primary&quot;],&#xD;&#xA;		&quot;loadout_primary_attachment&quot;, self.pers[classType][&quot;loadout_primary_attachment&quot;],&#xD;&#xA;		&quot;loadout_secondary&quot;, self.pers[classType][&quot;loadout_secondary&quot;],&#xD;&#xA;		&quot;loadout_secondary_attachment&quot;, self.pers[classType][&quot;loadout_secondary_attachment&quot;],&#xD;&#xA;		&quot;loadout_perk1&quot;, self.pers[classType][&quot;loadout_perk1&quot;],&#xD;&#xA;		&quot;loadout_perk2&quot;, self.pers[classType][&quot;loadout_perk2&quot;],&#xD;&#xA;		&quot;loadout_perk3&quot;, self.pers[classType][&quot;loadout_perk3&quot;],&#xD;&#xA;		&quot;loadout_grenade&quot;, self.pers[classType][&quot;loadout_grenade&quot;],&#xD;&#xA;		&quot;loadout_camo&quot;, self.pers[classType][&quot;loadout_camo&quot;],&#xD;&#xA;		&quot;loadout_frags&quot;, getDvarInt( &quot;class_&quot;+classType+&quot;_frags&quot; ),&#xD;&#xA;		&quot;loadout_special&quot;, getDvarInt( &quot;class_&quot;+classType+&quot;_special&quot; )&#xD;&#xA;		)" isCall="True">
+      <funcRefArg charIndex="20206" charLength="17" />
+      <funcRefArg charIndex="20225" charLength="39" />
+      <funcRefArg charIndex="20269" charLength="28" />
+      <funcRefArg charIndex="20299" charLength="50" />
+      <funcRefArg charIndex="20354" charLength="19" />
+      <funcRefArg charIndex="20375" charLength="41" />
+      <funcRefArg charIndex="20421" charLength="30" />
+      <funcRefArg charIndex="20453" charLength="52" />
+      <funcRefArg charIndex="20510" charLength="15" />
+      <funcRefArg charIndex="20527" charLength="37" />
+      <funcRefArg charIndex="20569" charLength="15" />
+      <funcRefArg charIndex="20586" charLength="37" />
+      <funcRefArg charIndex="20628" charLength="15" />
+      <funcRefArg charIndex="20645" charLength="37" />
+      <funcRefArg charIndex="20687" charLength="17" />
+      <funcRefArg charIndex="20706" charLength="39" />
+      <funcRefArg charIndex="20750" charLength="14" />
+      <funcRefArg charIndex="20766" charLength="36" />
+      <funcRefArg charIndex="20807" charLength="15" />
+      <funcRefArg charIndex="20824" charLength="41" />
+      <funcRefArg charIndex="20870" charLength="17" />
+      <funcRefArg charIndex="20889" charLength="47" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="20824" charLength="41" codePart="getDvarInt( &quot;class_&quot;+classType+&quot;_frags&quot; )" isCall="True">
+      <funcRefArg charIndex="20836" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="20889" charLength="43" codePart="getDvarInt( &quot;class_&quot;+classType+&quot;_special&quot; )" isCall="True">
+      <funcRefArg charIndex="20901" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="StrTok" charIndex="21065" charLength="25" codePart="strTok( respString, &quot;,&quot; )" isCall="True">
+      <funcRefArg charIndex="21073" charLength="10" />
+      <funcRefArg charIndex="21085" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="StrTok" charIndex="21171" charLength="35" codePart="strTok( commandTokens[index], &quot;:&quot; )" isCall="True">
+      <funcRefArg charIndex="21179" charLength="20" />
+      <funcRefArg charIndex="21201" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="21211" charLength="28" codePart="assert( subTokens.size &gt; 1 )" isCall="True">
+      <funcRefArg charIndex="21219" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="21343" charLength="42" codePart="getDvarInt( &quot;weap_allow_&quot; + subTokens[1] )" isCall="True">
+      <funcRefArg charIndex="21355" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="verifyWeaponChoice" charIndex="21389" charLength="51" codePart="self verifyWeaponChoice( subTokens[1], self.class )" isCall="True">
+      <funcRefArg charIndex="21414" charLength="12" />
+      <funcRefArg charIndex="21428" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="21514" charLength="48" codePart="self setClientDvar( subTokens[0], subTokens[1] )" isCall="True">
+      <funcRefArg charIndex="21534" charLength="12" />
+      <funcRefArg charIndex="21548" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="21684" charLength="58" codePart="self setClientDvar( &quot;loadout_primary_attachment&quot;, &quot;none&quot; )" isCall="True">
+      <funcRefArg charIndex="21704" charLength="28" />
+      <funcRefArg charIndex="21734" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="21923" charLength="60" codePart="self setClientDvar( &quot;loadout_secondary_attachment&quot;, &quot;none&quot; )" isCall="True">
+      <funcRefArg charIndex="21943" charLength="30" />
+      <funcRefArg charIndex="21975" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="22088" charLength="71" codePart="self setClientDvar( subTokens[0], self.pers[self.class][subTokens[0]] )" isCall="True">
+      <funcRefArg charIndex="22108" charLength="12" />
+      <funcRefArg charIndex="22122" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="22458" charLength="58" codePart="self setClientDvar( &quot;loadout_primary_attachment&quot;, &quot;none&quot; )" isCall="True">
+      <funcRefArg charIndex="22478" charLength="28" />
+      <funcRefArg charIndex="22508" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="22540" charLength="65" codePart="getDvarInt( &quot;attach_allow_&quot; + subTokens[1] + &quot;_&quot; + subTokens[2] )" isCall="True">
+      <funcRefArg charIndex="22552" charLength="52" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="22679" charLength="48" codePart="self setClientDvar( subTokens[0], subTokens[2] )" isCall="True">
+      <funcRefArg charIndex="22699" charLength="12" />
+      <funcRefArg charIndex="22713" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="22931" charLength="55" codePart="self setClientDvar( &quot;loadout_perk1&quot;, &quot;specialty_null&quot; )" isCall="True">
+      <funcRefArg charIndex="22951" charLength="15" />
+      <funcRefArg charIndex="22968" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="23091" charLength="71" codePart="self setClientDvar( subTokens[0], self.pers[self.class][subTokens[0]] )" isCall="True">
+      <funcRefArg charIndex="23111" charLength="12" />
+      <funcRefArg charIndex="23125" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="23273" charLength="42" codePart="getDvarInt( &quot;perk_allow_&quot; + subTokens[1] )" isCall="True">
+      <funcRefArg charIndex="23285" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="23389" charLength="48" codePart="self setClientDvar( subTokens[0], subTokens[1] )" isCall="True">
+      <funcRefArg charIndex="23409" charLength="12" />
+      <funcRefArg charIndex="23423" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="23534" charLength="71" codePart="self setClientDvar( subTokens[0], self.pers[self.class][subTokens[0]] )" isCall="True">
+      <funcRefArg charIndex="23554" charLength="12" />
+      <funcRefArg charIndex="23568" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="23666" charLength="42" codePart="getDvarInt( &quot;weap_allow_&quot; + subTokens[1] )" isCall="True">
+      <funcRefArg charIndex="23678" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="23782" charLength="48" codePart="self setClientDvar( subTokens[0], subTokens[1] )" isCall="True">
+      <funcRefArg charIndex="23802" charLength="12" />
+      <funcRefArg charIndex="23816" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="23862" charLength="71" codePart="self setClientDvar( subTokens[0], self.pers[self.class][subTokens[0]] )" isCall="True">
+      <funcRefArg charIndex="23882" charLength="12" />
+      <funcRefArg charIndex="23896" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="TableLookup" charIndex="24064" charLength="52" codePart="tableLookup( &quot;mp/statsTable.csv&quot;, 4, weaponName, 2 )" isCall="True">
+      <funcRefArg charIndex="24077" charLength="19" />
+      <funcRefArg charIndex="24098" charLength="1" />
+      <funcRefArg charIndex="24101" charLength="10" />
+      <funcRefArg charIndex="24113" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="TableLookup" charIndex="24213" charLength="52" codePart="tableLookup( &quot;mp/statsTable.csv&quot;, 4, weaponName, 2 )" isCall="True">
+      <funcRefArg charIndex="24226" charLength="19" />
+      <funcRefArg charIndex="24247" charLength="1" />
+      <funcRefArg charIndex="24250" charLength="10" />
+      <funcRefArg charIndex="24262" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="TableLookup" charIndex="24345" charLength="52" codePart="tableLookup( &quot;mp/statsTable.csv&quot;, 4, weaponName, 2 )" isCall="True">
+      <funcRefArg charIndex="24358" charLength="19" />
+      <funcRefArg charIndex="24379" charLength="1" />
+      <funcRefArg charIndex="24382" charLength="10" />
+      <funcRefArg charIndex="24394" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="TableLookup" charIndex="24477" charLength="52" codePart="tableLookup( &quot;mp/statsTable.csv&quot;, 4, weaponName, 2 )" isCall="True">
+      <funcRefArg charIndex="24490" charLength="19" />
+      <funcRefArg charIndex="24511" charLength="1" />
+      <funcRefArg charIndex="24514" charLength="10" />
+      <funcRefArg charIndex="24526" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="TableLookup" charIndex="24609" charLength="52" codePart="tableLookup( &quot;mp/statsTable.csv&quot;, 4, weaponName, 2 )" isCall="True">
+      <funcRefArg charIndex="24622" charLength="19" />
+      <funcRefArg charIndex="24643" charLength="1" />
+      <funcRefArg charIndex="24646" charLength="10" />
+      <funcRefArg charIndex="24658" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="TableLookup" charIndex="24740" charLength="52" codePart="tableLookup( &quot;mp/statsTable.csv&quot;, 4, weaponName, 2 )" isCall="True">
+      <funcRefArg charIndex="24753" charLength="19" />
+      <funcRefArg charIndex="24774" charLength="1" />
+      <funcRefArg charIndex="24777" charLength="10" />
+      <funcRefArg charIndex="24789" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="24919" charLength="52" codePart="assert( teamName == &quot;allies&quot; || teamName == &quot;axis&quot; )" isCall="True">
+      <funcRefArg charIndex="24927" charLength="43" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="24975" charLength="143" codePart="assert( classType == &quot;assault&quot; || classType == &quot;specops&quot; || classType == &quot;heavygunner&quot; || classType == &quot;demolitions&quot; || classType == &quot;sniper&quot; )" isCall="True">
+      <funcRefArg charIndex="24983" charLength="134" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="25127" charLength="26" codePart="isDefined( self.curClass )" isCall="True">
+      <funcRefArg charIndex="25138" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="25187" charLength="45" codePart="getDvarInt( &quot;class_&quot; + classType + &quot;_limit&quot; )" isCall="True">
+      <funcRefArg charIndex="25199" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="25310" charLength="45" codePart="getDvarInt( &quot;class_&quot; + classType + &quot;_limit&quot; )" isCall="True">
+      <funcRefArg charIndex="25322" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="25419" charLength="52" codePart="assert( teamName == &quot;allies&quot; || teamName == &quot;axis&quot; )" isCall="True">
+      <funcRefArg charIndex="25427" charLength="43" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="25475" charLength="143" codePart="assert( classType == &quot;assault&quot; || classType == &quot;specops&quot; || classType == &quot;heavygunner&quot; || classType == &quot;demolitions&quot; || classType == &quot;sniper&quot; )" isCall="True">
+      <funcRefArg charIndex="25483" charLength="134" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="setDvarWrapper" charIndex="25623" charLength="143" codePart="setDvarWrapper( teamName + &quot;_allow_&quot; + classType, game[teamName + &quot;_&quot; + classType + &quot;_count&quot;] &lt; getDvarInt( &quot;class_&quot; + classType + &quot;_limit&quot; ) )" isCall="True">
+      <funcRefArg charIndex="25639" charLength="32" />
+      <funcRefArg charIndex="25673" charLength="92" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="25719" charLength="45" codePart="getDvarInt( &quot;class_&quot; + classType + &quot;_limit&quot; )" isCall="True">
+      <funcRefArg charIndex="25731" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="closeMenus" charIndex="25799" charLength="49" codePart="self maps\mp\gametypes\_globallogic::closeMenus()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="25898" charLength="28" codePart="isDefined(self.pers[&quot;team&quot;])" isCall="True">
+      <funcRefArg charIndex="25908" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="26365" charLength="26" codePart="isDefined( self.curClass )" isCall="True">
+      <funcRefArg charIndex="26376" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="releaseClass" charIndex="26430" charLength="53" codePart="self releaseClass( self.pers[&quot;team&quot;], self.curClass )" isCall="True">
+      <funcRefArg charIndex="26449" charLength="17" />
+      <funcRefArg charIndex="26468" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_class" name="giveLoadout" charIndex="26495" charLength="83" codePart="self maps\mp\gametypes\_class::giveLoadout( self.pers[&quot;team&quot;], self.pers[&quot;class&quot;] )" isCall="True">
+      <funcRefArg charIndex="26539" charLength="17" />
+      <funcRefArg charIndex="26558" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLnBold" charIndex="26602" charLength="52" codePart="self iPrintLnBold( game[&quot;strings&quot;][&quot;change_class&quot;] )" isCall="True">
+      <funcRefArg charIndex="26621" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_modwarfare" name="releaseClass" charIndex="26763" charLength="53" codePart="self releaseClass( self.pers[&quot;team&quot;], self.curClass )" isCall="True">
+      <funcRefArg charIndex="26782" charLength="17" />
+      <funcRefArg charIndex="26801" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="26823" charLength="44" codePart="self setClientDvar( &quot;loadout_curclass&quot;, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="26843" charLength="18" />
+      <funcRefArg charIndex="26863" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="updateTeamStatus" charIndex="27140" charLength="63" codePart="level thread maps\mp\gametypes\_globallogic::updateTeamStatus()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spectating" name="setSpectatePermissions" charIndex="27207" charLength="67" codePart="self thread maps\mp\gametypes\_spectating::setSpectatePermissions()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="27358" charLength="27" codePart="self endon ( &quot;disconnect&quot; )" isCall="True">
+      <funcRefArg charIndex="27371" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetArrayKeys" charIndex="27403" charLength="33" codePart="getArrayKeys( level.serverDvars )" isCall="True">
+      <funcRefArg charIndex="27417" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="27497" charLength="73" codePart="self setClientDvar( dvarKeys[index], level.serverDvars[dvarKeys[index]] )" isCall="True">
+      <funcRefArg charIndex="27517" charLength="15" />
+      <funcRefArg charIndex="27534" charLength="35" />
+    </funcRef>
+    <error type="warning" charIndex="6297" charLength="48" lineIndex="140">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 141, 'setDvarDefault( "class_assault_primary", "m16" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="6349" charLength="58" lineIndex="141">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 142, 'setDvarDefault( "class_assault_primary_attachment", "gl" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="6411" charLength="54" lineIndex="142">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 143, 'setDvarDefault( "class_assault_secondary", "beretta" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="6469" charLength="62" lineIndex="143">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 144, 'setDvarDefault( "class_assault_secondary_attachment", "none" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="6535" charLength="57" lineIndex="144">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 145, 'setDvarDefault( "class_assault_perk1", "specialty_null" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="6596" charLength="65" lineIndex="145">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 146, 'setDvarDefault( "class_assault_perk2", "specialty_bulletdamage" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="6665" charLength="65" lineIndex="146">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 147, 'setDvarDefault( "class_assault_perk3", "specialty_longersprint" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="6734" charLength="63" lineIndex="147">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 148, 'setDvarDefault( "class_assault_grenade", "concussion_grenade" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="6801" charLength="51" lineIndex="148">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 149, 'setDvarDefault( "class_assault_camo", "camo_none" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="6999" charLength="48" lineIndex="153">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 154, 'setDvarDefault( "class_specops_primary", "mp5" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="7051" charLength="60" lineIndex="154">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 155, 'setDvarDefault( "class_specops_primary_attachment", "none" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="7115" charLength="50" lineIndex="155">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 156, 'setDvarDefault( "class_specops_secondary", "usp" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="7169" charLength="66" lineIndex="156">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 157, 'setDvarDefault( "class_specops_secondary_attachment", "silencer" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="7239" charLength="48" lineIndex="157">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 158, 'setDvarDefault( "class_specops_perk1", "c4_mp" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="7291" charLength="68" lineIndex="158">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 159, 'setDvarDefault( "class_specops_perk2", "specialty_explosivedamage" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="7363" charLength="67" lineIndex="159">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 160, 'setDvarDefault( "class_specops_perk3", "specialty_bulletaccuracy" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="7434" charLength="58" lineIndex="160">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 161, 'setDvarDefault( "class_specops_grenade", "flash_grenade" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="7496" charLength="51" lineIndex="161">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 162, 'setDvarDefault( "class_specops_camo", "camo_none" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="7698" charLength="52" lineIndex="166">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 167, 'setDvarDefault( "class_heavygunner_primary", "saw" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="7754" charLength="64" lineIndex="167">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 168, 'setDvarDefault( "class_heavygunner_primary_attachment", "none" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="7822" charLength="54" lineIndex="168">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 169, 'setDvarDefault( "class_heavygunner_secondary", "usp" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="7880" charLength="66" lineIndex="169">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 170, 'setDvarDefault( "class_heavygunner_secondary_attachment", "none" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="7950" charLength="71" lineIndex="170">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 171, 'setDvarDefault( "class_heavygunner_perk1", "specialty_specialgrenade" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8025" charLength="66" lineIndex="171">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 172, 'setDvarDefault( "class_heavygunner_perk2", "specialty_armorvest" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8095" charLength="74" lineIndex="172">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 173, 'setDvarDefault( "class_heavygunner_perk3", "specialty_bulletpenetration" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8173" charLength="67" lineIndex="173">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 174, 'setDvarDefault( "class_heavygunner_grenade", "concussion_grenade" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8244" charLength="55" lineIndex="174">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 175, 'setDvarDefault( "class_heavygunner_camo", "camo_none" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8458" charLength="63" lineIndex="179">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 180, 'setDvarDefault( "class_demolitions_primary", "winchester1200" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8525" charLength="64" lineIndex="180">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 181, 'setDvarDefault( "class_demolitions_primary_attachment", "none" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8593" charLength="58" lineIndex="181">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 182, 'setDvarDefault( "class_demolitions_secondary", "beretta" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8655" charLength="66" lineIndex="182">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 183, 'setDvarDefault( "class_demolitions_secondary_attachment", "none" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8725" charLength="53" lineIndex="183">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 184, 'setDvarDefault( "class_demolitions_perk1", "rpg_mp" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8782" charLength="72" lineIndex="184">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 185, 'setDvarDefault( "class_demolitions_perk2", "specialty_explosivedamage" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8858" charLength="69" lineIndex="185">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 186, 'setDvarDefault( "class_demolitions_perk3", "specialty_longersprint" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8931" charLength="62" lineIndex="186">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 187, 'setDvarDefault( "class_demolitions_grenade", "smoke_grenade" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8997" charLength="55" lineIndex="187">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 188, 'setDvarDefault( "class_demolitions_camo", "camo_none" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="9206" charLength="49" lineIndex="192">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 193, 'setDvarDefault( "class_sniper_primary", "m40a3" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="9259" charLength="59" lineIndex="193">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 194, 'setDvarDefault( "class_sniper_primary_attachment", "none" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="9322" charLength="53" lineIndex="194">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 195, 'setDvarDefault( "class_sniper_secondary", "beretta" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="9379" charLength="65" lineIndex="195">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 196, 'setDvarDefault( "class_sniper_secondary_attachment", "silencer" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="9448" charLength="66" lineIndex="196">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 197, 'setDvarDefault( "class_sniper_perk1", "specialty_specialgrenade" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="9518" charLength="64" lineIndex="197">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 198, 'setDvarDefault( "class_sniper_perk2", "specialty_bulletdamage" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="9586" charLength="69" lineIndex="198">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 199, 'setDvarDefault( "class_sniper_perk3", "specialty_bulletpenetration" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="9659" charLength="57" lineIndex="199">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 200, 'setDvarDefault( "class_sniper_grenade", "flash_grenade" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="9720" charLength="50" lineIndex="200">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_modwarfare::setDvarDefault', file 'maps\mp\gametypes\_modwarfare', line 201, 'setDvarDefault( "class_sniper_camo", "camo_none" );'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

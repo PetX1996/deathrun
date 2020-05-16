@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createart\mp_citystreets_art</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="152" charLength="33" codePart="setdvar( &quot;scr_fog_disable&quot;, &quot;0&quot; )" isCall="True">
+      <funcRefArg charIndex="161" charLength="17" />
+      <funcRefArg charIndex="180" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetExpFog" charIndex="191" charLength="44" codePart="setExpFog( 512, 2200, 0.709, 0.66, 0.60, 0 )" isCall="True">
+      <funcRefArg charIndex="202" charLength="3" />
+      <funcRefArg charIndex="207" charLength="4" />
+      <funcRefArg charIndex="213" charLength="5" />
+      <funcRefArg charIndex="220" charLength="4" />
+      <funcRefArg charIndex="226" charLength="4" />
+      <funcRefArg charIndex="232" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VisionSetNaked" charIndex="239" charLength="37" codePart="VisionSetNaked( &quot;mp_citystreets&quot;, 0 )" isCall="True">
+      <funcRefArg charIndex="255" charLength="16" />
+      <funcRefArg charIndex="273" charLength="2" />
+    </funcRef>
+  </content>
+</scriptinfo>

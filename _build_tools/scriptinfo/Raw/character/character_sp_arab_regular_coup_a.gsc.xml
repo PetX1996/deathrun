@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_arab_regular_coup_a</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="44" codePart="self setModel(&quot;body_sp_arab_regular_coup_a&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="106" charLength="51" codePart="self attach(&quot;head_sp_arab_regular_suren&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="118" charLength="28" />
+      <funcRefArg charIndex="148" charLength="2" />
+      <funcRefArg charIndex="152" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="211" charLength="26" codePart="self attach(self.hatModel)" isCall="True">
+      <funcRefArg charIndex="223" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="284" charLength="44" codePart="precacheModel(&quot;body_sp_arab_regular_coup_a&quot;)" isCall="True">
+      <funcRefArg charIndex="298" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="332" charLength="43" codePart="precacheModel(&quot;head_sp_arab_regular_suren&quot;)" isCall="True">
+      <funcRefArg charIndex="346" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="379" charLength="45" codePart="precacheModel(&quot;helmet_sp_arab_regular_suren&quot;)" isCall="True">
+      <funcRefArg charIndex="393" charLength="30" />
+    </funcRef>
+  </content>
+</scriptinfo>

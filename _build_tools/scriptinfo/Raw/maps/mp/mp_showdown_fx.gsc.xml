@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_showdown_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="42" charLength="38" codePart="loadfx( &quot;explosions/grenadeExp_wood&quot; )" isCall="True">
+      <funcRefArg charIndex="50" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="114" charLength="40" codePart="loadfx( &quot;explosions/grenadeExp_dirt_1&quot; )" isCall="True">
+      <funcRefArg charIndex="122" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="188" charLength="44" codePart="loadfx( &quot;explosions/grenadeExp_concrete_1&quot; )" isCall="True">
+      <funcRefArg charIndex="196" charLength="35" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="275" charLength="39" codePart="loadfx (&quot;fire/firelp_med_pm_nodistort&quot;)" isCall="True">
+      <funcRefArg charIndex="283" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="357" charLength="31" codePart="loadfx (&quot;fire/firelp_small_pm&quot;)" isCall="True">
+      <funcRefArg charIndex="365" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="432" charLength="33" codePart="loadfx (&quot;fire/firelp_small_pm_a&quot;)" isCall="True">
+      <funcRefArg charIndex="440" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="507" charLength="30" codePart="loadfx (&quot;dust/dust_wind_fast&quot;)" isCall="True">
+      <funcRefArg charIndex="515" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="579" charLength="39" codePart="loadfx (&quot;dust/dust_wind_slow_yel_loop&quot;)" isCall="True">
+      <funcRefArg charIndex="587" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="661" charLength="34" codePart="loadfx (&quot;dust/dust_spiral_runner&quot;)" isCall="True">
+      <funcRefArg charIndex="669" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="729" charLength="23" codePart="loadfx (&quot;weather/hawk&quot;)" isCall="True">
+      <funcRefArg charIndex="737" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="801" charLength="36" codePart="loadfx (&quot;smoke/hallway_smoke_light&quot;)" isCall="True">
+      <funcRefArg charIndex="809" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="854" charLength="30" codePart="getdvar( &quot;clientSideEffects&quot; )" isCall="True">
+      <funcRefArg charIndex="863" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\createfx\mp_showdown_fx" name="main" charIndex="897" charLength="36" codePart="maps\createfx\mp_showdown_fx::main()" isCall="True" />
+  </content>
+</scriptinfo>

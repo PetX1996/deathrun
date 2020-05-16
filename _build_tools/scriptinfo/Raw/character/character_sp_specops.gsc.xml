@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_specops</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="32" codePart="self setModel(&quot;body_specops_sp&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="94" charLength="40" codePart="self attach(&quot;head_specops_sp&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="106" charLength="17" />
+      <funcRefArg charIndex="125" charLength="2" />
+      <funcRefArg charIndex="129" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="185" charLength="32" codePart="precacheModel(&quot;body_specops_sp&quot;)" isCall="True">
+      <funcRefArg charIndex="199" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="221" charLength="32" codePart="precacheModel(&quot;head_specops_sp&quot;)" isCall="True">
+      <funcRefArg charIndex="235" charLength="17" />
+    </funcRef>
+  </content>
+</scriptinfo>

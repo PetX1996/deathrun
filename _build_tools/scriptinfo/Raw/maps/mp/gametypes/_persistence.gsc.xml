@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_persistence</name>
+  </settings>
+  <content>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerConnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onDisconnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="playerPersSupport" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="savePersOnly" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getXpData" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="StatFromB3" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updatePlayerStats" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="statGet" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="dataName">
+      </param>
+    </func>
+    <func name="statSet" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="dataName">
+      </param>
+      <param name="value">
+      </param>
+    </func>
+    <func name="statAdd" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="dataName">
+      </param>
+      <param name="value">
+      </param>
+    </func>
+    <error type="semantic" charIndex="704" charLength="30" lineIndex="12">
+      <message>Could not include file 'openwarfare\_logdata'</message>
+      <fullMessage>Bad semantic: Could not include file 'openwarfare\_logdata', file 'maps\mp\gametypes\_persistence', line 13, '#include openwarfare\_logdata;'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="736" charLength="28" lineIndex="13">
+      <message>Could not include file 'openwarfare\_utils'</message>
+      <fullMessage>Bad semantic: Could not include file 'openwarfare\_utils', file 'maps\mp\gametypes\_persistence', line 14, '#include openwarfare\_utils;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

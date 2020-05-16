@@ -1,0 +1,965 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_fx</name>
+  </settings>
+  <content>
+    <include>common_scripts\utility</include>
+    <include>maps\mp\_utility</include>
+    <include>maps\mp\_createfx</include>
+    <func name="print_org" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="fxcommand">
+      </param>
+      <param name="fxId">
+      </param>
+      <param name="fxPos">
+      </param>
+      <param name="waittime">
+      </param>
+    </func>
+    <func name="OneShotfx" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="fxId">
+      </param>
+      <param name="fxPos">
+      </param>
+      <param name="waittime">
+      </param>
+      <param name="fxPos2">
+      </param>
+    </func>
+    <func name="OneShotfxthread" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="create_triggerfx" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="exploderfx" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="num">
+      </param>
+      <param name="fxId">
+      </param>
+      <param name="fxPos">
+      </param>
+      <param name="waittime">
+      </param>
+      <param name="fxPos2">
+      </param>
+      <param name="fireFx">
+      </param>
+      <param name="fireFxDelay">
+      </param>
+      <param name="fireFxSound">
+      </param>
+      <param name="fxSound">
+      </param>
+      <param name="fxQuake">
+      </param>
+      <param name="fxDamage">
+      </param>
+      <param name="soundalias">
+      </param>
+      <param name="repeat">
+      </param>
+      <param name="delay_min">
+      </param>
+      <param name="delay_max">
+      </param>
+      <param name="damage_radius">
+      </param>
+      <param name="fireFxTimeout">
+      </param>
+      <param name="exploder_group">
+      </param>
+    </func>
+    <func name="loopfx" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="fxId">
+      </param>
+      <param name="fxPos">
+      </param>
+      <param name="waittime">
+      </param>
+      <param name="fxPos2">
+      </param>
+      <param name="fxStart">
+      </param>
+      <param name="fxStop">
+      </param>
+      <param name="timeout">
+      </param>
+    </func>
+    <func name="create_looper" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="create_loopsound" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="stop_loopsound" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="loopfxthread" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="loopfxChangeID" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ent">
+      </param>
+    </func>
+    <func name="loopfxChangeOrg" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ent">
+      </param>
+    </func>
+    <func name="loopfxChangeDelay" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ent">
+      </param>
+    </func>
+    <func name="loopfxDeletion" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ent">
+      </param>
+    </func>
+    <func name="loopfxStop" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="timeout">
+      </param>
+    </func>
+    <func name="loopSound" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="sound">
+      </param>
+      <param name="Pos">
+      </param>
+      <param name="waittime">
+      </param>
+    </func>
+    <func name="loopSoundthread" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="sound">
+      </param>
+      <param name="pos">
+      </param>
+      <param name="waittime">
+      </param>
+    </func>
+    <func name="gunfireloopfx" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="fxId">
+      </param>
+      <param name="fxPos">
+      </param>
+      <param name="shotsMin">
+      </param>
+      <param name="shotsMax">
+      </param>
+      <param name="shotdelayMin">
+      </param>
+      <param name="shotdelayMax">
+      </param>
+      <param name="betweenSetsMin">
+      </param>
+      <param name="betweenSetsMax">
+      </param>
+    </func>
+    <func name="gunfireloopfxthread" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="fxId">
+      </param>
+      <param name="fxPos">
+      </param>
+      <param name="shotsMin">
+      </param>
+      <param name="shotsMax">
+      </param>
+      <param name="shotdelayMin">
+      </param>
+      <param name="shotdelayMax">
+      </param>
+      <param name="betweenSetsMin">
+      </param>
+      <param name="betweenSetsMax">
+      </param>
+    </func>
+    <func name="gunfireloopfxVec" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="fxId">
+      </param>
+      <param name="fxPos">
+      </param>
+      <param name="fxPos2">
+      </param>
+      <param name="shotsMin">
+      </param>
+      <param name="shotsMax">
+      </param>
+      <param name="shotdelayMin">
+      </param>
+      <param name="shotdelayMax">
+      </param>
+      <param name="betweenSetsMin">
+      </param>
+      <param name="betweenSetsMax">
+      </param>
+    </func>
+    <func name="gunfireloopfxVecthread" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="fxId">
+      </param>
+      <param name="fxPos">
+      </param>
+      <param name="fxPos2">
+      </param>
+      <param name="shotsMin">
+      </param>
+      <param name="shotsMax">
+      </param>
+      <param name="shotdelayMin">
+      </param>
+      <param name="shotdelayMax">
+      </param>
+      <param name="betweenSetsMin">
+      </param>
+      <param name="betweenSetsMax">
+      </param>
+    </func>
+    <func name="setfireloopmod" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="value">
+      </param>
+    </func>
+    <func name="setup_fx" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="burnville_paratrooper_hack" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="burnville_paratrooper_hack_loop" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="normal">
+      </param>
+      <param name="origin">
+      </param>
+      <param name="id">
+      </param>
+    </func>
+    <func name="script_print_fx" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="script_playfx" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="id">
+      </param>
+      <param name="pos">
+      </param>
+      <param name="pos2">
+      </param>
+    </func>
+    <func name="script_playfxontag" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="id">
+      </param>
+      <param name="ent">
+      </param>
+      <param name="tag">
+      </param>
+    </func>
+    <func name="GrenadeExplosionfx" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="pos">
+      </param>
+    </func>
+    <func name="soundfx" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="fxId">
+      </param>
+      <param name="fxPos">
+      </param>
+      <param name="endonNotify">
+      </param>
+    </func>
+    <func name="soundfxDelete" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="endonNotify">
+      </param>
+    </func>
+    <func name="blendDelete" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="blend">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="2350" charLength="16" codePart="getdvar(&quot;debug&quot;)" isCall="True">
+      <funcRefArg charIndex="2358" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="2382" charLength="13" codePart="println (&quot;{&quot;)" isCall="True">
+      <funcRefArg charIndex="2391" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="2400" charLength="77" codePart="println (&quot;\&quot;origin\&quot; \&quot;&quot; + fxPos[0] + &quot; &quot; + fxPos[1] + &quot; &quot; + fxPos[2] + &quot;\&quot;&quot;)" isCall="True">
+      <funcRefArg charIndex="2409" charLength="67" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="2482" charLength="42" codePart="println (&quot;\&quot;classname\&quot; \&quot;script_model\&quot;&quot;)" isCall="True">
+      <funcRefArg charIndex="2491" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="2529" charLength="28" codePart="println (&quot;\&quot;model\&quot; \&quot;fx\&quot;&quot;)" isCall="True">
+      <funcRefArg charIndex="2538" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="2562" charLength="54" codePart="println (&quot;\&quot;script_fxcommand\&quot; \&quot;&quot; + fxcommand + &quot;\&quot;&quot;)" isCall="True">
+      <funcRefArg charIndex="2571" charLength="44" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="2621" charLength="44" codePart="println (&quot;\&quot;script_fxid\&quot; \&quot;&quot; + fxId + &quot;\&quot;&quot;)" isCall="True">
+      <funcRefArg charIndex="2630" charLength="34" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="2670" charLength="49" codePart="println (&quot;\&quot;script_delay\&quot; \&quot;&quot; + waittime + &quot;\&quot;&quot;)" isCall="True">
+      <funcRefArg charIndex="2679" charLength="39" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="2724" charLength="13" codePart="println (&quot;}&quot;)" isCall="True">
+      <funcRefArg charIndex="2733" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_fx" name="create_triggerfx" charIndex="3044" charLength="18" codePart="create_triggerfx()" isCall="True" />
+    <funcRef sfPath="codapi" name="SpawnFx" charIndex="3113" charLength="91" codePart="spawnFx( level._effect[self.v[&quot;fxid&quot;]], self.v[&quot;origin&quot;], self.v[&quot;forward&quot;], self.v[&quot;up&quot;] )" isCall="True">
+      <funcRefArg charIndex="3122" charLength="29" />
+      <funcRefArg charIndex="3153" charLength="16" />
+      <funcRefArg charIndex="3171" charLength="17" />
+      <funcRefArg charIndex="3190" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="TriggerFX" charIndex="3208" charLength="41" codePart="triggerFx( self.looper, self.v[&quot;delay&quot;] )" isCall="True">
+      <funcRefArg charIndex="3219" charLength="11" />
+      <funcRefArg charIndex="3232" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_fx" name="create_loopsound" charIndex="3253" charLength="18" codePart="create_loopsound()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4241" charLength="17" codePart="isdefined(fxPos2)" isCall="True">
+      <funcRefArg charIndex="4251" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorToAngles" charIndex="4282" charLength="30" codePart="vectortoangles(fxPos2 - fxPos)" isCall="True">
+      <funcRefArg charIndex="4297" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="4412" charLength="32" codePart="spawn (&quot;script_origin&quot;, (0,0,0))" isCall="True">
+      <funcRefArg charIndex="4419" charLength="15" />
+      <funcRefArg charIndex="4436" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorToAngles" charIndex="4553" charLength="31" codePart="vectortoangles (fxPos2 - fxPos)" isCall="True">
+      <funcRefArg charIndex="4569" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToForward" charIndex="5276" charLength="27" codePart="anglestoforward (fx.angles)" isCall="True">
+      <funcRefArg charIndex="5293" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="vectorScale" charIndex="5317" charLength="25" codePart="vectorScale(forward, 150)" isCall="True">
+      <funcRefArg charIndex="5329" charLength="7" />
+      <funcRefArg charIndex="5338" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5388" charLength="35" codePart="isdefined (level._script_exploders)" isCall="True">
+      <funcRefArg charIndex="5399" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="6078" charLength="32" codePart="println(&quot;Loopfx is deprecated!&quot;)" isCall="True">
+      <funcRefArg charIndex="6086" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6206" charLength="17" codePart="isdefined(fxPos2)" isCall="True">
+      <funcRefArg charIndex="6216" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorToAngles" charIndex="6246" charLength="30" codePart="vectortoangles(fxPos2 - fxPos)" isCall="True">
+      <funcRefArg charIndex="6261" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayLoopedFX" charIndex="6579" charLength="115" codePart="playLoopedFx( level._effect[self.v[&quot;fxid&quot;]], self.v[&quot;delay&quot;], self.v[&quot;origin&quot;], 0, self.v[&quot;forward&quot;], self.v[&quot;up&quot;])" isCall="True">
+      <funcRefArg charIndex="6593" charLength="29" />
+      <funcRefArg charIndex="6624" charLength="15" />
+      <funcRefArg charIndex="6641" charLength="16" />
+      <funcRefArg charIndex="6659" charLength="1" />
+      <funcRefArg charIndex="6662" charLength="17" />
+      <funcRefArg charIndex="6681" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_fx" name="create_loopsound" charIndex="6698" charLength="18" codePart="create_loopsound()" isCall="True" />
+    <funcRef sfPath="codapi" name="notify" charIndex="6748" charLength="26" codePart="self notify( &quot;stop_loop&quot; )" isCall="True">
+      <funcRefArg charIndex="6761" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6783" charLength="33" codePart="isdefined( self.v[&quot;soundalias&quot;] )" isCall="True">
+      <funcRefArg charIndex="6794" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6868" charLength="24" codePart="isdefined( self.looper )" isCall="True">
+      <funcRefArg charIndex="6879" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="7141" charLength="26" codePart="self notify( &quot;stop_loop&quot; )" isCall="True">
+      <funcRefArg charIndex="7154" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7405" charLength="24" codePart="isdefined (self.fxStart)" isCall="True">
+      <funcRefArg charIndex="7416" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="7434" charLength="42" codePart="level waittill (&quot;start fx&quot; + self.fxStart)" isCall="True">
+      <funcRefArg charIndex="7450" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_fx" name="create_looper" charIndex="7765" charLength="15" codePart="create_looper()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7793" charLength="24" codePart="isdefined (self.timeout)" isCall="True">
+      <funcRefArg charIndex="7804" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_fx" name="loopfxStop" charIndex="7823" charLength="31" codePart="thread loopfxStop(self.timeout)" isCall="True">
+      <funcRefArg charIndex="7841" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7868" charLength="23" codePart="isdefined (self.fxStop)" isCall="True">
+      <funcRefArg charIndex="7879" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="7897" charLength="40" codePart="level waittill (&quot;stop fx&quot; + self.fxStop)" isCall="True">
+      <funcRefArg charIndex="7913" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7968" charLength="23" codePart="isdefined (self.looper)" isCall="True">
+      <funcRefArg charIndex="7979" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="7997" charLength="20" codePart="self.looper delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8028" charLength="24" codePart="isdefined (self.fxStart)" isCall="True">
+      <funcRefArg charIndex="8039" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="8058" charLength="42" codePart="level waittill (&quot;start fx&quot; + self.fxStart)" isCall="True">
+      <funcRefArg charIndex="8074" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="8157" charLength="20" codePart="self endon (&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="8169" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="8181" charLength="42" codePart="ent waittill (&quot;effect id changed&quot;, change)" isCall="True">
+      <funcRefArg charIndex="8195" charLength="19" />
+      <funcRefArg charIndex="8216" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="8257" charLength="20" codePart="self endon (&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="8269" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="8297" charLength="43" codePart="ent waittill (&quot;effect org changed&quot;, change)" isCall="True">
+      <funcRefArg charIndex="8311" charLength="20" />
+      <funcRefArg charIndex="8333" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="8405" charLength="20" codePart="self endon (&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="8417" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="8429" charLength="45" codePart="ent waittill (&quot;effect delay changed&quot;, change)" isCall="True">
+      <funcRefArg charIndex="8443" charLength="22" />
+      <funcRefArg charIndex="8467" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="8508" charLength="20" codePart="self endon (&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="8520" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="8532" charLength="31" codePart="ent waittill (&quot;effect deleted&quot;)" isCall="True">
+      <funcRefArg charIndex="8546" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="8567" charLength="13" codePart="self delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="8614" charLength="19" codePart="self endon(&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="8625" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="8654" charLength="20" codePart="self.looper delete()" isCall="True" />
+    <funcRef sfPath="maps\mp\_fx" name="loopSoundthread" charIndex="8783" charLength="51" codePart="level thread loopSoundthread (sound, Pos, waittime)" isCall="True">
+      <funcRefArg charIndex="8813" charLength="5" />
+      <funcRefArg charIndex="8820" charLength="3" />
+      <funcRefArg charIndex="8825" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="8894" charLength="30" codePart="spawn (&quot;script_origin&quot;, (pos))" isCall="True">
+      <funcRefArg charIndex="8901" charLength="15" />
+      <funcRefArg charIndex="8918" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayLoopSound" charIndex="8994" charLength="27" codePart="org playLoopSound ( sound )" isCall="True">
+      <funcRefArg charIndex="9014" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_fx" name="gunfireloopfxthread" charIndex="9144" charLength="120" codePart="thread gunfireloopfxthread (fxId, fxPos, shotsMin, shotsMax, shotdelayMin, shotdelayMax, betweenSetsMin, betweenSetsMax)" isCall="True">
+      <funcRefArg charIndex="9172" charLength="4" />
+      <funcRefArg charIndex="9178" charLength="5" />
+      <funcRefArg charIndex="9185" charLength="8" />
+      <funcRefArg charIndex="9195" charLength="8" />
+      <funcRefArg charIndex="9205" charLength="12" />
+      <funcRefArg charIndex="9219" charLength="12" />
+      <funcRefArg charIndex="9233" charLength="14" />
+      <funcRefArg charIndex="9249" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="9391" charLength="38" codePart="level endon (&quot;stop all gunfireloopfx&quot;)" isCall="True">
+      <funcRefArg charIndex="9404" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnFx" charIndex="10067" charLength="37" codePart="spawnFx( level._effect[fxId], fxPos )" isCall="True">
+      <funcRefArg charIndex="10076" charLength="19" />
+      <funcRefArg charIndex="10097" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="10152" charLength="22" codePart="randomint (shotsRange)" isCall="True">
+      <funcRefArg charIndex="10163" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="TriggerFX" charIndex="10212" charLength="18" codePart="triggerFx( fxEnt )" isCall="True">
+      <funcRefArg charIndex="10223" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="10260" charLength="28" codePart="randomfloat (shotdelayRange)" isCall="True">
+      <funcRefArg charIndex="10273" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="10329" charLength="29" codePart="randomfloat(betweenSetsRange)" isCall="True">
+      <funcRefArg charIndex="10341" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_fx" name="gunfireloopfxVecthread" charIndex="10500" charLength="131" codePart="thread gunfireloopfxVecthread (fxId, fxPos, fxPos2, shotsMin, shotsMax, shotdelayMin, shotdelayMax, betweenSetsMin, betweenSetsMax)" isCall="True">
+      <funcRefArg charIndex="10531" charLength="4" />
+      <funcRefArg charIndex="10537" charLength="5" />
+      <funcRefArg charIndex="10544" charLength="6" />
+      <funcRefArg charIndex="10552" charLength="8" />
+      <funcRefArg charIndex="10562" charLength="8" />
+      <funcRefArg charIndex="10572" charLength="12" />
+      <funcRefArg charIndex="10586" charLength="12" />
+      <funcRefArg charIndex="10600" charLength="14" />
+      <funcRefArg charIndex="10616" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="10769" charLength="38" codePart="level endon (&quot;stop all gunfireloopfx&quot;)" isCall="True">
+      <funcRefArg charIndex="10782" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="11446" charLength="32" codePart="vectornormalize (fxPos2 - fxPos)" isCall="True">
+      <funcRefArg charIndex="11463" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnFx" charIndex="11492" charLength="46" codePart="spawnFx ( level._effect[fxId], fxPos, fxPos2 )" isCall="True">
+      <funcRefArg charIndex="11502" charLength="19" />
+      <funcRefArg charIndex="11523" charLength="5" />
+      <funcRefArg charIndex="11530" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="11582" charLength="22" codePart="randomint (shotsRange)" isCall="True">
+      <funcRefArg charIndex="11593" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="11620" charLength="32" codePart="int(shotnum/level.fxfireloopmod)" isCall="True">
+      <funcRefArg charIndex="11624" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="TriggerFX" charIndex="11667" charLength="18" codePart="triggerFx( fxEnt )" isCall="True">
+      <funcRefArg charIndex="11678" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="11716" charLength="28" codePart="randomfloat (shotdelayRange)" isCall="True">
+      <funcRefArg charIndex="11729" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="11852" charLength="28" codePart="randomfloat (shotdelayRange)" isCall="True">
+      <funcRefArg charIndex="11865" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="11910" charLength="29" codePart="randomfloat(betweenSetsRange)" isCall="True">
+      <funcRefArg charIndex="11922" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12040" charLength="28" codePart="isdefined (self.script_fxid)" isCall="True">
+      <funcRefArg charIndex="12051" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12075" charLength="33" codePart="isdefined (self.script_fxcommand)" isCall="True">
+      <funcRefArg charIndex="12086" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12115" charLength="29" codePart="isdefined (self.script_delay)" isCall="True">
+      <funcRefArg charIndex="12126" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12536" charLength="22" codePart="isdefined (self.model)" isCall="True">
+      <funcRefArg charIndex="12547" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_fx" name="burnville_paratrooper_hack" charIndex="12600" charLength="40" codePart="self thread burnville_paratrooper_hack()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12686" charLength="23" codePart="isdefined (self.target)" isCall="True">
+      <funcRefArg charIndex="12697" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="12724" charLength="33" codePart="getent (self.target,&quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="12732" charLength="11" />
+      <funcRefArg charIndex="12744" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12766" charLength="15" codePart="isdefined (ent)" isCall="True">
+      <funcRefArg charIndex="12777" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12840" charLength="31" codePart="isdefined (self.script_fxstart)" isCall="True">
+      <funcRefArg charIndex="12851" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12937" charLength="30" codePart="isdefined (self.script_fxstop)" isCall="True">
+      <funcRefArg charIndex="12948" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_fx" name="OneShotfx" charIndex="13050" charLength="64" codePart="OneShotfx(self.script_fxId, self.origin, self.script_delay, org)" isCall="True">
+      <funcRefArg charIndex="13060" charLength="16" />
+      <funcRefArg charIndex="13078" charLength="11" />
+      <funcRefArg charIndex="13091" charLength="17" />
+      <funcRefArg charIndex="13110" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_fx" name="loopfx" charIndex="13160" charLength="78" codePart="loopfx(self.script_fxId, self.origin, self.script_delay, org, fxStart, fxStop)" isCall="True">
+      <funcRefArg charIndex="13167" charLength="16" />
+      <funcRefArg charIndex="13185" charLength="11" />
+      <funcRefArg charIndex="13198" charLength="17" />
+      <funcRefArg charIndex="13217" charLength="3" />
+      <funcRefArg charIndex="13222" charLength="7" />
+      <funcRefArg charIndex="13231" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_fx" name="loopSound" charIndex="13287" charLength="59" codePart="loopsound(self.script_fxId, self.origin, self.script_delay)" isCall="True">
+      <funcRefArg charIndex="13297" charLength="16" />
+      <funcRefArg charIndex="13315" charLength="11" />
+      <funcRefArg charIndex="13328" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="13352" charLength="13" codePart="self delete()" isCall="True" />
+    <funcRef sfPath="maps\mp\_fx" name="burnville_paratrooper_hack_loop" charIndex="13646" charLength="64" codePart="level thread burnville_paratrooper_hack_loop(normal, origin, id)" isCall="True">
+      <funcRefArg charIndex="13691" charLength="6" />
+      <funcRefArg charIndex="13699" charLength="6" />
+      <funcRefArg charIndex="13707" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="13714" charLength="13" codePart="self delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="PlayFX" charIndex="13871" charLength="19" codePart="playfx (id, origin)" isCall="True">
+      <funcRefArg charIndex="13879" charLength="2" />
+      <funcRefArg charIndex="13883" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="13905" charLength="16" codePart="randomfloat (40)" isCall="True">
+      <funcRefArg charIndex="13918" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="13963" charLength="28" codePart="isdefined (self.script_fxid)" isCall="True">
+      <funcRefArg charIndex="13974" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="13998" charLength="33" codePart="isdefined (self.script_fxcommand)" isCall="True">
+      <funcRefArg charIndex="14009" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="14038" charLength="29" codePart="isdefined (self.script_delay)" isCall="True">
+      <funcRefArg charIndex="14049" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="14077" charLength="100" codePart="println (&quot;Effect at origin &quot;, self.origin,&quot; doesn't have script_fxid/script_fxcommand/script_delay&quot;)" isCall="True">
+      <funcRefArg charIndex="14086" charLength="19" />
+      <funcRefArg charIndex="14107" charLength="11" />
+      <funcRefArg charIndex="14119" charLength="57" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="14182" charLength="13" codePart="self delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="14220" charLength="23" codePart="isdefined (self.target)" isCall="True">
+      <funcRefArg charIndex="14231" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="14254" charLength="27" codePart="getent (self.target).origin" isCall="True">
+      <funcRefArg charIndex="14262" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="14491" charLength="126" codePart="println (&quot;maps\mp\_fx::OneShotfx(\&quot;&quot; + self.script_fxid + &quot;\&quot;, &quot; + self.origin + &quot;, &quot; + self.script_delay + &quot;, &quot; + org + &quot;);&quot;)" isCall="True">
+      <funcRefArg charIndex="14500" charLength="116" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="14665" charLength="123" codePart="println (&quot;maps\mp\_fx::LoopFx(\&quot;&quot; + self.script_fxid + &quot;\&quot;, &quot; + self.origin + &quot;, &quot; + self.script_delay + &quot;, &quot; + org + &quot;);&quot;)" isCall="True">
+      <funcRefArg charIndex="14674" charLength="113" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="14839" charLength="126" codePart="println (&quot;maps\mp\_fx::LoopSound(\&quot;&quot; + self.script_fxid + &quot;\&quot;, &quot; + self.origin + &quot;, &quot; + self.script_delay + &quot;, &quot; + org + &quot;);&quot;)" isCall="True">
+      <funcRefArg charIndex="14848" charLength="116" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="15038" charLength="16" codePart="isdefined (pos2)" isCall="True">
+      <funcRefArg charIndex="15049" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayFX" charIndex="15059" charLength="20" codePart="playfx (id,pos,pos2)" isCall="True">
+      <funcRefArg charIndex="15067" charLength="2" />
+      <funcRefArg charIndex="15070" charLength="3" />
+      <funcRefArg charIndex="15074" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayFX" charIndex="15091" charLength="15" codePart="playfx (id,pos)" isCall="True">
+      <funcRefArg charIndex="15099" charLength="2" />
+      <funcRefArg charIndex="15102" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayFXOnTag" charIndex="15179" charLength="24" codePart="playfxontag (id,ent,tag)" isCall="True">
+      <funcRefArg charIndex="15192" charLength="2" />
+      <funcRefArg charIndex="15195" charLength="3" />
+      <funcRefArg charIndex="15199" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayFX" charIndex="15240" charLength="51" codePart="playfx (level._effect[&quot;mechanical explosion&quot;], pos)" isCall="True">
+      <funcRefArg charIndex="15248" charLength="37" />
+      <funcRefArg charIndex="15287" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Earthquake" charIndex="15295" charLength="31" codePart="earthquake(0.15, 0.5, pos, 250)" isCall="True">
+      <funcRefArg charIndex="15306" charLength="4" />
+      <funcRefArg charIndex="15312" charLength="3" />
+      <funcRefArg charIndex="15317" charLength="3" />
+      <funcRefArg charIndex="15322" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="15593" charLength="31" codePart="spawn (&quot;script_origin&quot;,(0,0,0))" isCall="True">
+      <funcRefArg charIndex="15600" charLength="15" />
+      <funcRefArg charIndex="15616" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayLoopSound" charIndex="15650" charLength="24" codePart="org playloopsound (fxId)" isCall="True">
+      <funcRefArg charIndex="15669" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="15682" charLength="22" codePart="isdefined(endonNotify)" isCall="True">
+      <funcRefArg charIndex="15692" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_fx" name="soundfxDelete" charIndex="15709" charLength="37" codePart="org thread soundfxDelete(endonNotify)" isCall="True">
+      <funcRefArg charIndex="15734" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="15978" charLength="28" codePart="level waittill (endonNotify)" isCall="True">
+      <funcRefArg charIndex="15994" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="16010" charLength="13" codePart="self delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="waittill" charIndex="18726" charLength="23" codePart="self waittill (&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="18741" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="18753" charLength="14" codePart="blend delete()" isCall="True" />
+    <error type="warning" charIndex="2759" charLength="4" lineIndex="71">
+      <message>Variable 'fxId' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'fxId' is defined, but its value is never used., file 'maps\mp\_fx', line 72, 'OneShotfx(fxId, fxPos, waittime, fxPos2)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="2765" charLength="5" lineIndex="71">
+      <message>Variable 'fxPos' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'fxPos' is defined, but its value is never used., file 'maps\mp\_fx', line 72, 'OneShotfx(fxId, fxPos, waittime, fxPos2)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="2772" charLength="8" lineIndex="71">
+      <message>Variable 'waittime' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'waittime' is defined, but its value is never used., file 'maps\mp\_fx', line 72, 'OneShotfx(fxId, fxPos, waittime, fxPos2)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="2782" charLength="6" lineIndex="71">
+      <message>Variable 'fxPos2' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'fxPos2' is defined, but its value is never used., file 'maps\mp\_fx', line 72, 'OneShotfx(fxId, fxPos, waittime, fxPos2)'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4154" charLength="20" lineIndex="134">
+      <message>Unknown function 'createExploder'</message>
+      <fullMessage>Bad semantic: Unknown function 'createExploder', file 'maps\mp\_fx', line 135, 'ent = createExploder(fxId);'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5525" charLength="236" lineIndex="176">
+      <message>Unknown function 'maps\mp\_createfx::createfx_showOrigin'</message>
+      <fullMessage>Bad semantic: Unknown function 'maps\mp\_createfx::createfx_showOrigin', file 'maps\mp\_fx', line 177, 'maps\mp\_createfx::createfx_showOrigin (fxid, fxPos, waittime, fxpos2, "exploderfx", fx, undefined, fireFx, fireFxDelay,'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6120" charLength="22" lineIndex="193">
+      <message>Unknown function 'createLoopEffect'</message>
+      <fullMessage>Bad semantic: Unknown function 'createLoopEffect', file 'maps\mp\_fx', line 194, 'ent = createLoopEffect(fxId);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="6047" charLength="7" lineIndex="190">
+      <message>Variable 'fxStart' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'fxStart' is defined, but its value is never used., file 'maps\mp\_fx', line 191, 'loopfx(fxId, fxPos, waittime, fxPos2, fxStart, fxStop, timeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="6056" charLength="6" lineIndex="190">
+      <message>Variable 'fxStop' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'fxStop' is defined, but its value is never used., file 'maps\mp\_fx', line 191, 'loopfx(fxId, fxPos, waittime, fxPos2, fxStart, fxStop, timeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="6064" charLength="7" lineIndex="190">
+      <message>Variable 'timeout' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'timeout' is defined, but its value is never used., file 'maps\mp\_fx', line 191, 'loopfx(fxId, fxPos, waittime, fxPos2, fxStart, fxStop, timeout)'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6899" charLength="101" lineIndex="221">
+      <message>Unknown function 'maps\mp\_utility::loop_fx_sound'</message>
+      <fullMessage>Bad semantic: Unknown function 'maps\mp\_utility::loop_fx_sound', file 'maps\mp\_fx', line 222, 'self.looper thread maps\mp\_utility::loop_fx_sound( self.v["soundalias"], self.v["origin"], "death" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7014" charLength="93" lineIndex="223">
+      <message>Unknown function 'maps\mp\_utility::loop_fx_sound'</message>
+      <fullMessage>Bad semantic: Unknown function 'maps\mp\_utility::loop_fx_sound', file 'maps\mp\_fx', line 224, 'thread maps\mp\_utility::loop_fx_sound( self.v["soundalias"], self.v["origin"], "stop_loop" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8216" charLength="6" lineIndex="276">
+      <message>Variable 'change' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'change' is defined, but its value is never used., file 'maps\mp\_fx', line 277, 'ent waittill ("effect id changed", change);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8467" charLength="6" lineIndex="292">
+      <message>Variable 'change' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'change' is defined, but its value is never used., file 'maps\mp\_fx', line 293, 'ent waittill ("effect delay changed", change);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8872" charLength="8" lineIndex="315">
+      <message>Variable 'waittime' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'waittime' is defined, but its value is never used., file 'maps\mp\_fx', line 316, 'loopSoundthread ( sound, pos, waittime )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="13160" charLength="78" lineIndex="482">
+      <message>Could not find enough arguments, function 'maps\mp\_fx::loopfx'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_fx::loopfx', file 'maps\mp\_fx', line 483, 'loopfx(self.script_fxId, self.origin, self.script_delay, org, fxStart, fxStop);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="13767" charLength="6" lineIndex="504">
+      <message>Variable 'normal' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'normal' is defined, but its value is never used., file 'maps\mp\_fx', line 505, 'burnville_paratrooper_hack_loop(normal, origin, id)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="14254" charLength="27" lineIndex="525">
+      <message>Could not find enough arguments, function 'codapi::GetEnt'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'codapi::GetEnt', file 'maps\mp\_fx', line 526, 'org = getent (self.target).origin;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

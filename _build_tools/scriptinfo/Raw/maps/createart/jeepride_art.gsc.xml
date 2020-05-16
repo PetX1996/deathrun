@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createart\jeepride_art</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="408" charLength="31" codePart="getent( &quot;player&quot;, &quot;classname&quot; )" isCall="True">
+      <funcRefArg charIndex="416" charLength="8" />
+      <funcRefArg charIndex="426" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="504" charLength="33" codePart="setdvar( &quot;scr_fog_disable&quot;, &quot;0&quot; )" isCall="True">
+      <funcRefArg charIndex="513" charLength="17" />
+      <funcRefArg charIndex="532" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetExpFog" charIndex="543" charLength="54" codePart="setExpFog( 1002.96, 211520, 0.952941, 0.980392, 1, 0 )" isCall="True">
+      <funcRefArg charIndex="554" charLength="7" />
+      <funcRefArg charIndex="563" charLength="6" />
+      <funcRefArg charIndex="571" charLength="8" />
+      <funcRefArg charIndex="581" charLength="8" />
+      <funcRefArg charIndex="591" charLength="1" />
+      <funcRefArg charIndex="594" charLength="2" />
+    </funcRef>
+    <error type="semantic" charIndex="408" charLength="67" lineIndex="14">
+      <message>Could not find file 'maps\_art'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_art', file 'maps\createart\jeepride_art', line 15, 'getent( "player", "classname" ) maps\_art::setdefaultdepthoffield();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="601" charLength="46" lineIndex="21">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createart\jeepride_art', line 22, 'maps\_utility::set_vision_set( "jeepride", 0 );'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

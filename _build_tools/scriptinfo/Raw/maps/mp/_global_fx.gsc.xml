@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_global_fx</name>
+  </settings>
+  <content>
+    <include>common_scripts\utility</include>
+    <include>maps\mp\_utility</include>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="global_FX" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+      <param name="fxName">
+      </param>
+      <param name="fxFile">
+      </param>
+      <param name="delay">
+      </param>
+      <param name="soundalias">
+      </param>
+    </func>
+    <func name="global_FX_create" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="fxName">
+      </param>
+      <param name="fxFile">
+      </param>
+      <param name="delay">
+      </param>
+      <param name="soundalias">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="RandomFloatRange" charIndex="459" charLength="27" codePart="randomfloatrange( -20, -15)" isCall="True">
+      <funcRefArg charIndex="477" charLength="3" />
+      <funcRefArg charIndex="482" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_global_fx" name="global_FX" charIndex="548" charLength="121" codePart="global_FX( &quot;barrel_fireFX_origin&quot;, &quot;global_barrel_fire&quot;, &quot;fire/firelp_barrel_pm&quot;, randomStartDelay, &quot;fire_barrel_small&quot; )" isCall="True">
+      <funcRefArg charIndex="559" charLength="22" />
+      <funcRefArg charIndex="583" charLength="20" />
+      <funcRefArg charIndex="605" charLength="23" />
+      <funcRefArg charIndex="630" charLength="16" />
+      <funcRefArg charIndex="648" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_global_fx" name="global_FX" charIndex="791" charLength="102" codePart="global_FX( &quot;ch_streetlight_02_FX_origin&quot;, &quot;ch_streetlight_02_FX&quot;, &quot;misc/lighthaze&quot;, randomStartDelay )" isCall="True">
+      <funcRefArg charIndex="802" charLength="29" />
+      <funcRefArg charIndex="833" charLength="22" />
+      <funcRefArg charIndex="857" charLength="16" />
+      <funcRefArg charIndex="875" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_global_fx" name="global_FX" charIndex="958" charLength="108" codePart="global_FX( &quot;me_streetlight_01_FX_origin&quot;, &quot;me_streetlight_01_FX&quot;, &quot;misc/lighthaze_bog_a&quot;, randomStartDelay )" isCall="True">
+      <funcRefArg charIndex="969" charLength="29" />
+      <funcRefArg charIndex="1000" charLength="22" />
+      <funcRefArg charIndex="1024" charLength="22" />
+      <funcRefArg charIndex="1048" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_global_fx" name="global_FX" charIndex="1119" charLength="95" codePart="global_FX( &quot;ch_street_light_01_on&quot;, &quot;lamp_glow_FX&quot;, &quot;misc/light_glow_white&quot;, randomStartDelay )" isCall="True">
+      <funcRefArg charIndex="1130" charLength="23" />
+      <funcRefArg charIndex="1155" charLength="14" />
+      <funcRefArg charIndex="1171" charLength="23" />
+      <funcRefArg charIndex="1196" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_global_fx" name="global_FX" charIndex="1275" charLength="104" codePart="global_FX( &quot;highway_lamp_post&quot;, &quot;ch_streetlight_02_FX&quot;, &quot;misc/lighthaze_villassault&quot;, randomStartDelay )" isCall="True">
+      <funcRefArg charIndex="1286" charLength="19" />
+      <funcRefArg charIndex="1307" charLength="22" />
+      <funcRefArg charIndex="1331" charLength="28" />
+      <funcRefArg charIndex="1361" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_global_fx" name="global_FX" charIndex="1440" charLength="118" codePart="global_FX( &quot;cs_cargoship_spotlight_on_FX_origin&quot;, &quot;cs_cargoship_spotlight_on_FX&quot;, &quot;misc/lighthaze&quot;, randomStartDelay )" isCall="True">
+      <funcRefArg charIndex="1451" charLength="37" />
+      <funcRefArg charIndex="1490" charLength="30" />
+      <funcRefArg charIndex="1522" charLength="16" />
+      <funcRefArg charIndex="1540" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_global_fx" name="global_FX" charIndex="1609" charLength="138" codePart="global_FX( &quot;me_dumpster_fire_FX_origin&quot;, &quot;me_dumpster_fire_FX&quot;, &quot;fire/firelp_med_pm_nodistort&quot;, randomStartDelay, &quot;fire_dumpster_medium&quot; )" isCall="True">
+      <funcRefArg charIndex="1620" charLength="28" />
+      <funcRefArg charIndex="1650" charLength="21" />
+      <funcRefArg charIndex="1673" charLength="30" />
+      <funcRefArg charIndex="1705" charLength="16" />
+      <funcRefArg charIndex="1723" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_global_fx" name="global_FX" charIndex="1813" charLength="110" codePart="global_FX( &quot;com_tires_burning01_FX_origin&quot;, &quot;com_tires_burning01_FX&quot;, &quot;fire/tire_fire_med&quot;, randomStartDelay )" isCall="True">
+      <funcRefArg charIndex="1824" charLength="31" />
+      <funcRefArg charIndex="1857" charLength="24" />
+      <funcRefArg charIndex="1883" charLength="20" />
+      <funcRefArg charIndex="1905" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_global_fx" name="global_FX" charIndex="1983" charLength="124" codePart="global_FX( &quot;icbm_powerlinetower_FX_origin&quot;, &quot;icbm_powerlinetower_FX&quot;, &quot;misc/power_tower_light_red_blink&quot;, randomStartDelay )" isCall="True">
+      <funcRefArg charIndex="1994" charLength="31" />
+      <funcRefArg charIndex="2027" charLength="24" />
+      <funcRefArg charIndex="2053" charLength="34" />
+      <funcRefArg charIndex="2089" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="getstructarray" charIndex="2208" charLength="39" codePart="getstructarray(targetname,&quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="2223" charLength="10" />
+      <funcRefArg charIndex="2234" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2257" charLength="17" codePart="isdefined( ents )" isCall="True">
+      <funcRefArg charIndex="2268" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_global_fx" name="global_FX_create" charIndex="2367" charLength="61" codePart="ents[i] global_FX_create( fxName, fxFile, delay, soundalias )" isCall="True">
+      <funcRefArg charIndex="2393" charLength="6" />
+      <funcRefArg charIndex="2401" charLength="6" />
+      <funcRefArg charIndex="2409" charLength="5" />
+      <funcRefArg charIndex="2416" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2501" charLength="26" codePart="isdefined( level._effect )" isCall="True">
+      <funcRefArg charIndex="2512" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2561" charLength="36" codePart="isdefined( level._effect[ fxName ] )" isCall="True">
+      <funcRefArg charIndex="2572" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="2629" charLength="16" codePart="loadfx( fxFile )" isCall="True">
+      <funcRefArg charIndex="2637" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2704" charLength="24" codePart="isdefined( self.angles )" isCall="True">
+      <funcRefArg charIndex="2715" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="2772" charLength="29" codePart="createOneshotEffect( fxName )" isCall="True">
+      <funcRefArg charIndex="2793" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2944" charLength="23" codePart="isdefined( soundalias )" isCall="True">
+      <funcRefArg charIndex="2955" charLength="11" />
+    </funcRef>
+    <error type="warning" charIndex="791" charLength="102" lineIndex="20">
+      <message>Could not find enough arguments, function 'maps\mp\_global_fx::global_FX'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_global_fx::global_FX', file 'maps\mp\_global_fx', line 21, 'global_FX( "ch_streetlight_02_FX_origin", "ch_streetlight_02_FX", "misc/lighthaze", randomStartDelay );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="958" charLength="108" lineIndex="23">
+      <message>Could not find enough arguments, function 'maps\mp\_global_fx::global_FX'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_global_fx::global_FX', file 'maps\mp\_global_fx', line 24, 'global_FX( "me_streetlight_01_FX_origin", "me_streetlight_01_FX", "misc/lighthaze_bog_a", randomStartDelay );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="1119" charLength="95" lineIndex="26">
+      <message>Could not find enough arguments, function 'maps\mp\_global_fx::global_FX'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_global_fx::global_FX', file 'maps\mp\_global_fx', line 27, 'global_FX( "ch_street_light_01_on", "lamp_glow_FX", "misc/light_glow_white", randomStartDelay );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="1275" charLength="104" lineIndex="29">
+      <message>Could not find enough arguments, function 'maps\mp\_global_fx::global_FX'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_global_fx::global_FX', file 'maps\mp\_global_fx', line 30, 'global_FX( "highway_lamp_post", "ch_streetlight_02_FX", "misc/lighthaze_villassault", randomStartDelay );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="1440" charLength="118" lineIndex="32">
+      <message>Could not find enough arguments, function 'maps\mp\_global_fx::global_FX'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_global_fx::global_FX', file 'maps\mp\_global_fx', line 33, 'global_FX( "cs_cargoship_spotlight_on_FX_origin", "cs_cargoship_spotlight_on_FX", "misc/lighthaze", randomStartDelay );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="1813" charLength="110" lineIndex="38">
+      <message>Could not find enough arguments, function 'maps\mp\_global_fx::global_FX'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_global_fx::global_FX', file 'maps\mp\_global_fx', line 39, 'global_FX( "com_tires_burning01_FX_origin", "com_tires_burning01_FX", "fire/tire_fire_med", randomStartDelay );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="1983" charLength="124" lineIndex="41">
+      <message>Could not find enough arguments, function 'maps\mp\_global_fx::global_FX'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_global_fx::global_FX', file 'maps\mp\_global_fx', line 42, 'global_FX( "icbm_powerlinetower_FX_origin", "icbm_powerlinetower_FX", "misc/power_tower_light_red_blink", randomStartDelay );'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

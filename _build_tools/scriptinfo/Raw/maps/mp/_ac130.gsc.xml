@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="False" compiled="False">
+    <name>maps\mp\_ac130</name>
+  </settings>
+  <content>
+    <error type="syntax" charIndex="28" charLength="26" lineIndex="1">
+      <message>Unknown token</message>
+      <fullMessage>Bad syntax: Unknown token, file 'maps\mp\_ac130', line 2, '#using_animtree("ac130");'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

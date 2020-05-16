@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\american_us_cod3_axis_ac130</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="45" codePart="self setModel(&quot;character_us_cod3_axis_ac130&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="154" charLength="45" codePart="precacheModel(&quot;character_us_cod3_axis_ac130&quot;)" isCall="True">
+      <funcRefArg charIndex="168" charLength="30" />
+    </funcRef>
+  </content>
+</scriptinfo>

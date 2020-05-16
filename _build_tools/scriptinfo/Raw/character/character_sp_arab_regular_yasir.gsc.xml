@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_arab_regular_yasir</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="43" codePart="self setModel(&quot;body_sp_arab_regular_yasir&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="105" charLength="52" codePart="self attach(&quot;head_sp_arab_regular_mowrap&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="117" charLength="29" />
+      <funcRefArg charIndex="148" charLength="2" />
+      <funcRefArg charIndex="152" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="204" charLength="43" codePart="precacheModel(&quot;body_sp_arab_regular_yasir&quot;)" isCall="True">
+      <funcRefArg charIndex="218" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="251" charLength="44" codePart="precacheModel(&quot;head_sp_arab_regular_mowrap&quot;)" isCall="True">
+      <funcRefArg charIndex="265" charLength="29" />
+    </funcRef>
+  </content>
+</scriptinfo>

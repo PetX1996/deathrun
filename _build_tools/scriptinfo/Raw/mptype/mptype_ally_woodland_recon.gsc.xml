@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>mptype\mptype_ally_woodland_recon</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="character\character_mp_usmc_woodland_recon" name="main" charIndex="60" charLength="50" codePart="character\character_mp_usmc_woodland_recon::main()" isCall="True" />
+    <funcRef sfPath="character\character_mp_usmc_woodland_recon" name="precache" charIndex="134" charLength="54" codePart="character\character_mp_usmc_woodland_recon::precache()" isCall="True" />
+  </content>
+</scriptinfo>

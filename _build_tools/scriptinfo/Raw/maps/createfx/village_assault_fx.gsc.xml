@@ -1,0 +1,1218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createfx\village_assault_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <error type="semantic" charIndex="96" charLength="50" lineIndex="4">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 5, 'ent = maps\_utility::createOneshotEffect( "headlights" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="351" charLength="50" lineIndex="10">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 11, 'ent = maps\_utility::createOneshotEffect( "headlights" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="607" charLength="64" lineIndex="16">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 17, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_v" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="873" charLength="64" lineIndex="22">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 23, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1152" charLength="62" lineIndex="28">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 29, 'ent = maps\_utility::createOneshotEffect( "firelp_med_streak_pm_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1414" charLength="64" lineIndex="34">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 35, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_v" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1680" charLength="62" lineIndex="40">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 41, 'ent = maps\_utility::createOneshotEffect( "firelp_med_streak_pm_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1942" charLength="55" lineIndex="46">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 47, 'ent = maps\_utility::createOneshotEffect( "firelp_large_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2190" charLength="55" lineIndex="52">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 53, 'ent = maps\_utility::createOneshotEffect( "firelp_large_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2450" charLength="55" lineIndex="58">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 59, 'ent = maps\_utility::createOneshotEffect( "firelp_large_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2698" charLength="55" lineIndex="64">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 65, 'ent = maps\_utility::createOneshotEffect( "firelp_large_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2947" charLength="64" lineIndex="70">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 71, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_v" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3213" charLength="64" lineIndex="76">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 77, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3492" charLength="64" lineIndex="82">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 83, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3771" charLength="64" lineIndex="88">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 89, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_v" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4037" charLength="62" lineIndex="94">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 95, 'ent = maps\_utility::createOneshotEffect( "firelp_med_streak_pm_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4299" charLength="64" lineIndex="100">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 101, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4578" charLength="64" lineIndex="106">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 107, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4856" charLength="62" lineIndex="112">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 113, 'ent = maps\_utility::createOneshotEffect( "firelp_med_streak_pm_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5130" charLength="55" lineIndex="118">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 119, 'ent = maps\_utility::createOneshotEffect( "firelp_large_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5391" charLength="64" lineIndex="124">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 125, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_v" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5668" charLength="64" lineIndex="130">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 131, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5934" charLength="62" lineIndex="136">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 137, 'ent = maps\_utility::createOneshotEffect( "firelp_med_streak_pm_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6196" charLength="64" lineIndex="142">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 143, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6473" charLength="64" lineIndex="148">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 149, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_v" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6738" charLength="55" lineIndex="154">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 155, 'ent = maps\_utility::createOneshotEffect( "firelp_large_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6986" charLength="62" lineIndex="160">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 161, 'ent = maps\_utility::createOneshotEffect( "firelp_med_streak_pm_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7263" charLength="64" lineIndex="166">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 167, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_v" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7529" charLength="64" lineIndex="172">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 173, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7811" charLength="58" lineIndex="178">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 179, 'ent = maps\_utility::createOneshotEffect( "fire_fallingdebris" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8066" charLength="65" lineIndex="184">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 185, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm1_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8338" charLength="65" lineIndex="190">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 191, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm1_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8619" charLength="65" lineIndex="196">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 197, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm1_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8886" charLength="64" lineIndex="202">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 203, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9152" charLength="60" lineIndex="208">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 209, 'ent = maps\_utility::createOneshotEffect( "fire_fallingdebris_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9410" charLength="58" lineIndex="214">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 215, 'ent = maps\_utility::createOneshotEffect( "fire_fallingdebris" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9663" charLength="65" lineIndex="220">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 221, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm1_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9931" charLength="55" lineIndex="226">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 227, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10178" charLength="55" lineIndex="232">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 233, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10426" charLength="55" lineIndex="238">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 239, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10674" charLength="55" lineIndex="244">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 245, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10922" charLength="55" lineIndex="250">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 251, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11170" charLength="55" lineIndex="256">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 257, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11418" charLength="55" lineIndex="262">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 263, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11666" charLength="55" lineIndex="268">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 269, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11912" charLength="55" lineIndex="274">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 275, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="12160" charLength="55" lineIndex="280">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 281, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="12408" charLength="55" lineIndex="286">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 287, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="12656" charLength="55" lineIndex="292">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 293, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="12904" charLength="55" lineIndex="298">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 299, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="13152" charLength="55" lineIndex="304">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 305, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="13399" charLength="55" lineIndex="310">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 311, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="13647" charLength="55" lineIndex="316">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 317, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="13896" charLength="55" lineIndex="322">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 323, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="14145" charLength="55" lineIndex="328">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 329, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="14394" charLength="55" lineIndex="334">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 335, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="14643" charLength="55" lineIndex="340">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 341, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="14891" charLength="55" lineIndex="346">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 347, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="15140" charLength="55" lineIndex="352">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 353, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="15388" charLength="55" lineIndex="358">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 359, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="15637" charLength="49" lineIndex="364">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 365, 'ent = maps\_utility::createOneshotEffect( "leaves_va" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="15876" charLength="49" lineIndex="370">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 371, 'ent = maps\_utility::createOneshotEffect( "leaves_va" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="16114" charLength="49" lineIndex="376">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 377, 'ent = maps\_utility::createOneshotEffect( "leaves_va" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="16353" charLength="49" lineIndex="382">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 383, 'ent = maps\_utility::createOneshotEffect( "leaves_va" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="16589" charLength="49" lineIndex="388">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 389, 'ent = maps\_utility::createOneshotEffect( "leaves_va" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="16828" charLength="49" lineIndex="394">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 395, 'ent = maps\_utility::createOneshotEffect( "leaves_va" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="17067" charLength="49" lineIndex="400">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 401, 'ent = maps\_utility::createOneshotEffect( "leaves_va" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="17304" charLength="49" lineIndex="406">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 407, 'ent = maps\_utility::createOneshotEffect( "leaves_va" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="17542" charLength="49" lineIndex="412">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 413, 'ent = maps\_utility::createOneshotEffect( "leaves_va" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="17781" charLength="51" lineIndex="418">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 419, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18036" charLength="51" lineIndex="424">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 425, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18291" charLength="51" lineIndex="430">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 431, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18545" charLength="51" lineIndex="436">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 437, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18800" charLength="51" lineIndex="442">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 443, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19055" charLength="51" lineIndex="448">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 449, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19314" charLength="51" lineIndex="454">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 455, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19574" charLength="59" lineIndex="460">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 461, 'ent = maps\_utility::createOneshotEffect( "insect_trail_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19833" charLength="59" lineIndex="466">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 467, 'ent = maps\_utility::createOneshotEffect( "insect_trail_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20092" charLength="59" lineIndex="472">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 473, 'ent = maps\_utility::createOneshotEffect( "insect_trail_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20350" charLength="59" lineIndex="478">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 479, 'ent = maps\_utility::createOneshotEffect( "insect_trail_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20622" charLength="59" lineIndex="484">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 485, 'ent = maps\_utility::createOneshotEffect( "insect_trail_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20881" charLength="59" lineIndex="490">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 491, 'ent = maps\_utility::createOneshotEffect( "insect_trail_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21151" charLength="51" lineIndex="496">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 497, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21406" charLength="51" lineIndex="502">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 503, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21660" charLength="51" lineIndex="508">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 509, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21913" charLength="59" lineIndex="514">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 515, 'ent = maps\_utility::createOneshotEffect( "insect_trail_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22171" charLength="59" lineIndex="520">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 521, 'ent = maps\_utility::createOneshotEffect( "insect_trail_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22429" charLength="51" lineIndex="526">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 527, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22679" charLength="59" lineIndex="532">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 533, 'ent = maps\_utility::createOneshotEffect( "insect_trail_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22938" charLength="59" lineIndex="538">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 539, 'ent = maps\_utility::createOneshotEffect( "insect_trail_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23196" charLength="59" lineIndex="544">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 545, 'ent = maps\_utility::createOneshotEffect( "insect_trail_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23454" charLength="51" lineIndex="550">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 551, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23708" charLength="59" lineIndex="556">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 557, 'ent = maps\_utility::createOneshotEffect( "insect_trail_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23964" charLength="51" lineIndex="562">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 563, 'ent = maps\_utility::createOneshotEffect( "village_ash" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24204" charLength="33" lineIndex="568">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 569, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24415" charLength="33" lineIndex="573">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 574, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24624" charLength="55" lineIndex="578">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 579, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24873" charLength="55" lineIndex="584">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 585, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25121" charLength="55" lineIndex="590">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 591, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25371" charLength="55" lineIndex="596">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 597, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25621" charLength="55" lineIndex="602">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 603, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25871" charLength="55" lineIndex="608">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 609, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="26121" charLength="55" lineIndex="614">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 615, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="26371" charLength="55" lineIndex="620">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 621, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="26621" charLength="55" lineIndex="626">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 627, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="26871" charLength="55" lineIndex="632">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 633, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="27120" charLength="55" lineIndex="638">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 639, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="27371" charLength="55" lineIndex="644">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 645, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="27621" charLength="55" lineIndex="650">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 651, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="27872" charLength="55" lineIndex="656">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 657, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="28123" charLength="55" lineIndex="662">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 663, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="28374" charLength="55" lineIndex="668">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 669, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="28624" charLength="55" lineIndex="674">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 675, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="28875" charLength="55" lineIndex="680">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 681, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="29126" charLength="55" lineIndex="686">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 687, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="29377" charLength="55" lineIndex="692">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 693, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="29627" charLength="55" lineIndex="698">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 699, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="29877" charLength="55" lineIndex="704">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 705, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="30127" charLength="55" lineIndex="710">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 711, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="30377" charLength="55" lineIndex="716">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 717, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="30627" charLength="55" lineIndex="722">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 723, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="30877" charLength="55" lineIndex="728">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 729, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="31127" charLength="55" lineIndex="734">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 735, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="31377" charLength="55" lineIndex="740">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 741, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="31627" charLength="55" lineIndex="746">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 747, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="31877" charLength="55" lineIndex="752">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 753, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="32126" charLength="55" lineIndex="758">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 759, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="32375" charLength="55" lineIndex="764">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 765, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="32623" charLength="55" lineIndex="770">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 771, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="32872" charLength="55" lineIndex="776">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 777, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="33121" charLength="55" lineIndex="782">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 783, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="33370" charLength="55" lineIndex="788">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 789, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="33621" charLength="55" lineIndex="794">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 795, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="33872" charLength="55" lineIndex="800">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\village_assault_fx', line 801, 'ent = maps\_utility::createOneshotEffect( "fog_villassault" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="34122" charLength="33" lineIndex="806">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 807, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="34324" charLength="33" lineIndex="811">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 812, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="34526" charLength="33" lineIndex="816">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 817, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="34727" charLength="33" lineIndex="821">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 822, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="34928" charLength="33" lineIndex="826">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 827, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="35134" charLength="33" lineIndex="831">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 832, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="35337" charLength="33" lineIndex="836">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 837, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="35543" charLength="33" lineIndex="841">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 842, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="35749" charLength="33" lineIndex="846">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 847, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="35952" charLength="33" lineIndex="851">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 852, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="36157" charLength="33" lineIndex="856">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 857, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="36362" charLength="33" lineIndex="861">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 862, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="36566" charLength="33" lineIndex="866">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 867, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="36770" charLength="33" lineIndex="871">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 872, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="36973" charLength="33" lineIndex="876">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 877, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="37178" charLength="33" lineIndex="881">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 882, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="37383" charLength="33" lineIndex="886">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 887, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="37587" charLength="33" lineIndex="891">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 892, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="37792" charLength="33" lineIndex="896">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 897, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="37997" charLength="33" lineIndex="901">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 902, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="38202" charLength="33" lineIndex="906">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 907, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="38407" charLength="33" lineIndex="911">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 912, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="38612" charLength="33" lineIndex="916">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 917, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="38818" charLength="33" lineIndex="921">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 922, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="39023" charLength="33" lineIndex="926">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 927, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="39228" charLength="33" lineIndex="931">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 932, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="39433" charLength="33" lineIndex="936">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 937, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="39637" charLength="33" lineIndex="941">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 942, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="39836" charLength="33" lineIndex="946">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 947, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="40035" charLength="33" lineIndex="951">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 952, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="40244" charLength="33" lineIndex="956">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 957, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="40451" charLength="33" lineIndex="961">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 962, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="40655" charLength="33" lineIndex="966">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 967, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="40855" charLength="33" lineIndex="971">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 972, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="41061" charLength="33" lineIndex="976">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 977, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="41271" charLength="33" lineIndex="981">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 982, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="41474" charLength="33" lineIndex="986">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 987, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="41677" charLength="33" lineIndex="991">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 992, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="41880" charLength="33" lineIndex="996">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 997, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="42083" charLength="33" lineIndex="1001">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1002, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="42286" charLength="33" lineIndex="1006">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1007, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="42489" charLength="33" lineIndex="1011">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1012, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="42691" charLength="33" lineIndex="1016">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1017, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="42894" charLength="33" lineIndex="1021">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1022, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="43097" charLength="33" lineIndex="1026">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1027, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="43300" charLength="33" lineIndex="1031">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1032, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="43502" charLength="33" lineIndex="1036">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1037, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="43704" charLength="33" lineIndex="1041">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1042, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="43907" charLength="33" lineIndex="1046">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1047, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="44107" charLength="33" lineIndex="1051">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1052, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="44309" charLength="33" lineIndex="1056">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1057, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="44511" charLength="33" lineIndex="1061">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1062, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="44715" charLength="33" lineIndex="1066">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1067, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="44915" charLength="33" lineIndex="1071">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1072, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="45119" charLength="33" lineIndex="1076">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1077, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="45322" charLength="33" lineIndex="1081">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1082, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="45530" charLength="33" lineIndex="1086">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1087, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="45739" charLength="33" lineIndex="1091">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1092, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="45948" charLength="33" lineIndex="1096">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1097, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="46157" charLength="33" lineIndex="1101">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1102, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="46365" charLength="33" lineIndex="1106">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1107, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="46574" charLength="33" lineIndex="1111">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1112, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="46783" charLength="33" lineIndex="1116">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1117, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="46992" charLength="33" lineIndex="1121">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1122, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="47200" charLength="33" lineIndex="1126">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1127, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="47409" charLength="33" lineIndex="1131">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1132, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="47617" charLength="33" lineIndex="1136">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1137, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="47824" charLength="33" lineIndex="1141">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1142, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="48032" charLength="33" lineIndex="1146">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1147, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="48238" charLength="33" lineIndex="1151">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1152, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="48445" charLength="33" lineIndex="1156">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1157, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="48652" charLength="33" lineIndex="1161">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1162, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="48860" charLength="33" lineIndex="1166">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1167, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="49069" charLength="33" lineIndex="1171">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1172, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="49276" charLength="33" lineIndex="1176">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1177, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="49483" charLength="33" lineIndex="1181">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1182, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="49691" charLength="33" lineIndex="1186">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1187, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="49898" charLength="33" lineIndex="1191">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1192, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="50106" charLength="33" lineIndex="1196">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1197, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="50314" charLength="33" lineIndex="1201">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1202, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="50522" charLength="33" lineIndex="1206">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1207, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="50729" charLength="33" lineIndex="1211">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1212, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="50935" charLength="33" lineIndex="1216">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1217, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="51142" charLength="33" lineIndex="1221">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1222, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="51349" charLength="33" lineIndex="1226">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1227, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="51556" charLength="33" lineIndex="1231">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1232, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="51762" charLength="33" lineIndex="1236">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1237, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="51968" charLength="33" lineIndex="1241">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1242, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="52174" charLength="33" lineIndex="1246">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1247, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="52380" charLength="33" lineIndex="1251">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1252, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="52585" charLength="33" lineIndex="1256">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1257, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="52791" charLength="33" lineIndex="1261">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1262, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="52997" charLength="33" lineIndex="1266">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1267, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="53203" charLength="33" lineIndex="1271">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1272, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="53409" charLength="33" lineIndex="1276">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1277, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="53608" charLength="33" lineIndex="1281">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1282, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="53817" charLength="33" lineIndex="1286">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1287, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="54026" charLength="33" lineIndex="1291">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1292, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="54235" charLength="33" lineIndex="1296">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1297, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="54444" charLength="33" lineIndex="1301">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1302, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="54649" charLength="33" lineIndex="1306">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1307, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="54858" charLength="33" lineIndex="1311">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1312, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="55067" charLength="33" lineIndex="1316">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1317, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="55277" charLength="33" lineIndex="1321">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1322, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="55487" charLength="33" lineIndex="1326">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1327, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="55696" charLength="33" lineIndex="1331">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1332, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="55906" charLength="33" lineIndex="1336">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1337, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="56116" charLength="33" lineIndex="1341">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1342, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="56326" charLength="33" lineIndex="1346">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1347, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="56536" charLength="33" lineIndex="1351">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1352, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="56748" charLength="33" lineIndex="1356">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1357, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="56960" charLength="33" lineIndex="1361">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1362, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="57172" charLength="33" lineIndex="1366">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1367, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="57384" charLength="33" lineIndex="1371">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1372, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="57594" charLength="33" lineIndex="1376">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1377, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="57806" charLength="33" lineIndex="1381">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1382, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="58018" charLength="33" lineIndex="1386">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1387, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="58230" charLength="33" lineIndex="1391">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1392, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="58442" charLength="33" lineIndex="1396">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1397, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="58653" charLength="33" lineIndex="1401">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1402, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="58865" charLength="33" lineIndex="1406">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1407, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="59076" charLength="33" lineIndex="1411">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1412, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="59287" charLength="33" lineIndex="1416">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1417, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="59498" charLength="33" lineIndex="1421">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1422, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="59709" charLength="33" lineIndex="1426">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1427, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="59920" charLength="33" lineIndex="1431">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1432, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="60131" charLength="33" lineIndex="1436">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1437, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="60342" charLength="33" lineIndex="1441">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1442, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="60551" charLength="33" lineIndex="1446">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1447, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="60761" charLength="33" lineIndex="1451">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1452, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="60970" charLength="33" lineIndex="1456">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1457, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="61180" charLength="33" lineIndex="1461">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1462, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="61390" charLength="33" lineIndex="1466">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1467, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="61600" charLength="33" lineIndex="1471">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1472, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="61810" charLength="33" lineIndex="1476">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1477, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="62020" charLength="33" lineIndex="1481">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1482, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="62230" charLength="33" lineIndex="1486">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1487, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="62440" charLength="33" lineIndex="1491">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1492, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="62647" charLength="33" lineIndex="1496">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1497, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="62858" charLength="33" lineIndex="1501">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1502, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="63068" charLength="33" lineIndex="1506">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1507, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="63278" charLength="33" lineIndex="1511">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1512, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="63480" charLength="33" lineIndex="1516">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1517, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="63682" charLength="33" lineIndex="1521">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1522, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="63884" charLength="33" lineIndex="1526">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1527, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="64086" charLength="33" lineIndex="1531">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1532, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="64288" charLength="33" lineIndex="1536">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1537, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="64490" charLength="33" lineIndex="1541">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1542, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="64692" charLength="33" lineIndex="1546">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1547, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="64893" charLength="33" lineIndex="1551">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1552, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="65094" charLength="33" lineIndex="1556">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1557, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="65295" charLength="33" lineIndex="1561">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1562, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="65496" charLength="33" lineIndex="1566">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1567, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="65697" charLength="33" lineIndex="1571">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1572, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="65897" charLength="33" lineIndex="1576">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1577, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="66097" charLength="33" lineIndex="1581">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1582, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="66298" charLength="33" lineIndex="1586">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1587, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="66500" charLength="33" lineIndex="1591">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1592, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="66704" charLength="33" lineIndex="1596">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1597, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="66907" charLength="33" lineIndex="1601">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1602, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="67111" charLength="33" lineIndex="1606">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1607, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="67315" charLength="33" lineIndex="1611">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1612, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="67519" charLength="33" lineIndex="1616">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1617, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="67723" charLength="33" lineIndex="1621">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1622, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="67926" charLength="33" lineIndex="1626">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1627, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="68129" charLength="33" lineIndex="1631">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\village_assault_fx', line 1632, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

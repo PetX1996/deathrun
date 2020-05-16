@@ -1,0 +1,70 @@
+ignore,mod_ignore
+
+// Localized strings
+localize,dr
+localize,weapon2
+
+// client configs
+rawfile,ccfgs/connect.cfg
+
+// GameTypes
+rawfile,maps/mp/gametypes/_gametypes.txt
+rawfile,maps/mp/gametypes/deathrun.txt
+
+// Animation scripts
+rawfile,animtrees/multiplayer.atr
+rawfile,mp/playeranimtypes.txt
+rawfile,mp/playeranim.script
+
+// Bullet penetration
+rawfile,info/bullet_penetration_mp
+
+// String tables
+stringtable,mp/playerstatstable.csv
+stringtable,mp/rankicontable.csv
+stringtable,mp/ranktable.csv
+
+// menus
+menufile,ui_mp/connect.menu
+menufile,ui_mp/hud.menu
+menufile,ui_mp/main.menu
+menufile,ui_mp/options_multi.menu
+menufile,ui_mp/wm_quickmessage.menu
+menufile,ui_mp/scriptmenus/class_allies.menu
+menufile,ui_mp/scriptmenus/class_axis.menu
+menufile,ui_mp/scriptmenus/clientcmd.menu
+menufile,ui_mp/scriptmenus/endofgame.menu
+menufile,ui_mp/scriptmenus/challenges.menu
+menufile,ui_mp/scriptmenus/info.menu
+menufile,ui_mp/scriptmenus/popup_leavegame.menu
+menufile,ui_mp/scriptmenus/quickplayer.menu
+menufile,ui_mp/scriptmenus/quickgraphics.menu
+menufile,ui_mp/scriptmenus/rank.menu
+menufile,ui_mp/scriptmenus/scoreboard.menu
+menufile,ui_mp/scriptmenus/team_marinesopfor.menu
+menufile,ui_mp/scriptmenus/vg.menu
+menufile,ui_mp/scriptmenus/votemap.menu
+
+// sound aliases & sound files
+sound,deathrun,,all_mp
+sound,music,,all_mp
+sound,weapons,,all_mp
+
+// weapons
+weapon,mp/tomahawk_mp
+weapon,mp/knife_mp
+weapon,mp/bh_mp
+weapon,mp/colt44_mp // DR 1.2 support
+
+// INCLUDE
+include,dr_bodies
+include,dr_fx
+include,dr_materials
+include,dr_rank
+include,dr_sprays
+include,dr_trails
+include,dr_visions
+include,dr_xanim
+include,dr_xmodels
+include,dr_menu_icons
+include,dr_weapons

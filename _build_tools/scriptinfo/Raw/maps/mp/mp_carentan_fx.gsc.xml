@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_carentan_fx</name>
+  </settings>
+  <content>
+    <include>common_scripts\utility</include>
+    <include>maps\mp\_utility</include>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precacheFX" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="placeGlows" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="lightGlows" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+      <param name="fxName">
+      </param>
+      <param name="fxFile">
+      </param>
+      <param name="delay">
+      </param>
+      <param name="soundalias">
+      </param>
+    </func>
+    <func name="lightGlows_create" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="fxName">
+      </param>
+      <param name="fxFile">
+      </param>
+      <param name="delay">
+      </param>
+      <param name="soundalias">
+      </param>
+    </func>
+    <funcRef sfPath="maps\mp\mp_carentan_fx" name="precacheFX" charIndex="76" charLength="12" codePart="precacheFX()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="105" charLength="30" codePart="getdvar( &quot;clientSideEffects&quot; )" isCall="True">
+      <funcRefArg charIndex="114" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\createfx\mp_carentan_fx" name="main" charIndex="148" charLength="36" codePart="maps\createfx\mp_carentan_fx::main()" isCall="True" />
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="258" charLength="34" codePart="loadfx( &quot;weather/fog_ground_200&quot; )" isCall="True">
+      <funcRefArg charIndex="266" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="341" charLength="38" codePart="loadfx( &quot;weather/fog_ground_200_red&quot; )" isCall="True">
+      <funcRefArg charIndex="349" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="427" charLength="36" codePart="loadfx( &quot;smoke/hallway_smoke_dark&quot; )" isCall="True">
+      <funcRefArg charIndex="435" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="506" charLength="28" codePart="loadfx( &quot;misc/moth_runner&quot; )" isCall="True">
+      <funcRefArg charIndex="514" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="585" charLength="39" codePart="loadfx( &quot;misc/insects_carcass_runner&quot; )" isCall="True">
+      <funcRefArg charIndex="593" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="668" charLength="27" codePart="loadfx( &quot;misc/drips_slow&quot; )" isCall="True">
+      <funcRefArg charIndex="676" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="743" charLength="34" codePart="loadfx( &quot;smoke/steam_vent_small&quot; )" isCall="True">
+      <funcRefArg charIndex="751" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="822" charLength="31" codePart="loadfx( &quot;smoke/steam_manhole&quot; )" isCall="True">
+      <funcRefArg charIndex="830" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="902" charLength="43" codePart="loadfx( &quot;misc/chinese_latern_glow_orange&quot; )" isCall="True">
+      <funcRefArg charIndex="910" charLength="34" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="997" charLength="36" codePart="loadfx( &quot;misc/ct_street_lamp_glow&quot; )" isCall="True">
+      <funcRefArg charIndex="1005" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloatRange" charIndex="1087" charLength="27" codePart="randomfloatrange( -20, -15)" isCall="True">
+      <funcRefArg charIndex="1105" charLength="3" />
+      <funcRefArg charIndex="1110" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\mp_carentan_fx" name="lightGlows" charIndex="1170" charLength="123" codePart="thread lightGlows( &quot;chinese_lantern_FX_origin&quot;, &quot;chinese_lantern_FX&quot;, &quot;misc/chinese_latern_glow_orange&quot;, randomStartDelay )" isCall="True">
+      <funcRefArg charIndex="1189" charLength="27" />
+      <funcRefArg charIndex="1218" charLength="20" />
+      <funcRefArg charIndex="1240" charLength="33" />
+      <funcRefArg charIndex="1275" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\mp_carentan_fx" name="lightGlows" charIndex="1356" charLength="124" codePart="thread lightGlows( &quot;ct_street_lamp_glow_FX_origin&quot;, &quot;ct_street_lamp_glow_FX&quot;, &quot;misc/ct_street_lamp_glow&quot;, randomStartDelay )" isCall="True">
+      <funcRefArg charIndex="1375" charLength="31" />
+      <funcRefArg charIndex="1408" charLength="24" />
+      <funcRefArg charIndex="1434" charLength="26" />
+      <funcRefArg charIndex="1462" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1576" charLength="26" codePart="isdefined( level._effect )" isCall="True">
+      <funcRefArg charIndex="1587" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1634" charLength="36" codePart="isdefined( level._effect[ fxName ] )" isCall="True">
+      <funcRefArg charIndex="1645" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="1700" charLength="16" codePart="loadfx( fxFile )" isCall="True">
+      <funcRefArg charIndex="1708" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="getstructarray" charIndex="1771" charLength="39" codePart="getstructarray(targetname,&quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="1786" charLength="10" />
+      <funcRefArg charIndex="1797" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1820" charLength="17" codePart="isdefined( ents )" isCall="True">
+      <funcRefArg charIndex="1831" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\mp_carentan_fx" name="lightGlows_create" charIndex="1930" charLength="62" codePart="ents[i] lightGlows_create( fxName, fxFile, delay, soundalias )" isCall="True">
+      <funcRefArg charIndex="1957" charLength="6" />
+      <funcRefArg charIndex="1965" charLength="6" />
+      <funcRefArg charIndex="1973" charLength="5" />
+      <funcRefArg charIndex="1980" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2112" charLength="24" codePart="isdefined( self.angles )" isCall="True">
+      <funcRefArg charIndex="2123" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="2180" charLength="29" codePart="createOneshotEffect( fxName )" isCall="True">
+      <funcRefArg charIndex="2201" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2352" charLength="23" codePart="isdefined( soundalias )" isCall="True">
+      <funcRefArg charIndex="2363" charLength="11" />
+    </funcRef>
+    <error type="warning" charIndex="1170" charLength="123" lineIndex="36">
+      <message>Could not find enough arguments, function 'maps\mp\mp_carentan_fx::lightGlows'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\mp_carentan_fx::lightGlows', file 'maps\mp\mp_carentan_fx', line 37, 'thread lightGlows( "chinese_lantern_FX_origin", "chinese_lantern_FX", "misc/chinese_latern_glow_orange", randomStartDelay );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="1356" charLength="124" lineIndex="39">
+      <message>Could not find enough arguments, function 'maps\mp\mp_carentan_fx::lightGlows'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\mp_carentan_fx::lightGlows', file 'maps\mp\mp_carentan_fx', line 40, 'thread lightGlows( "ct_street_lamp_glow_FX_origin", "ct_street_lamp_glow_FX", "misc/ct_street_lamp_glow", randomStartDelay );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="2027" charLength="6" lineIndex="64">
+      <message>Variable 'fxFile' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'fxFile' is defined, but its value is never used., file 'maps\mp\mp_carentan_fx', line 65, 'lightGlows_create( fxName, fxFile, delay, soundalias )'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

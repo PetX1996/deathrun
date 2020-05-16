@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_healthoverlay</name>
+  </settings>
+  <content>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerConnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onJoinedTeam" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onJoinedSpectators" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerSpawned" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerKilled" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerDisconnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="playerHealthRegen" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="playerBreathingSound" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="healthcap">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="12" charLength="36" codePart="precacheShader(&quot;overlay_low_health&quot;)" isCall="True">
+      <funcRefArg charIndex="27" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_healthoverlay" name="onPlayerConnect" charIndex="381" charLength="30" codePart="level thread onPlayerConnect()" isCall="True" />
+    <funcRef sfPath="codapi" name="waittill" charIndex="457" charLength="36" codePart="level waittill(&quot;connecting&quot;, player)" isCall="True">
+      <funcRefArg charIndex="472" charLength="12" />
+      <funcRefArg charIndex="486" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_healthoverlay" name="onPlayerSpawned" charIndex="498" charLength="31" codePart="player thread onPlayerSpawned()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_healthoverlay" name="onPlayerKilled" charIndex="534" charLength="30" codePart="player thread onPlayerKilled()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_healthoverlay" name="onJoinedTeam" charIndex="569" charLength="28" codePart="player thread onJoinedTeam()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_healthoverlay" name="onJoinedSpectators" charIndex="602" charLength="34" codePart="player thread onJoinedSpectators()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_healthoverlay" name="onPlayerDisconnect" charIndex="641" charLength="34" codePart="player thread onPlayerDisconnect()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="707" charLength="24" codePart="self endon(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="718" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="753" charLength="28" codePart="self waittill(&quot;joined_team&quot;)" isCall="True">
+      <funcRefArg charIndex="767" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="786" charLength="30" codePart="self notify(&quot;end_healthregen&quot;)" isCall="True">
+      <funcRefArg charIndex="798" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="854" charLength="24" codePart="self endon(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="865" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="900" charLength="34" codePart="self waittill(&quot;joined_spectators&quot;)" isCall="True">
+      <funcRefArg charIndex="914" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="939" charLength="30" codePart="self notify(&quot;end_healthregen&quot;)" isCall="True">
+      <funcRefArg charIndex="951" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="1004" charLength="24" codePart="self endon(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="1015" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="1050" charLength="31" codePart="self waittill(&quot;spawned_player&quot;)" isCall="True">
+      <funcRefArg charIndex="1064" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_healthoverlay" name="playerHealthRegen" charIndex="1086" charLength="31" codePart="self thread playerHealthRegen()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="1151" charLength="24" codePart="self endon(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="1162" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="1197" charLength="30" codePart="self waittill(&quot;killed_player&quot;)" isCall="True">
+      <funcRefArg charIndex="1211" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="1232" charLength="30" codePart="self notify(&quot;end_healthregen&quot;)" isCall="True">
+      <funcRefArg charIndex="1244" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="1300" charLength="27" codePart="self waittill(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="1314" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="1331" charLength="30" codePart="self notify(&quot;end_healthregen&quot;)" isCall="True">
+      <funcRefArg charIndex="1343" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="1394" charLength="29" codePart="self endon(&quot;end_healthregen&quot;)" isCall="True">
+      <funcRefArg charIndex="1405" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="1461" charLength="26" codePart="assert( !isalive( self ) )" isCall="True">
+      <funcRefArg charIndex="1469" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsAlive" charIndex="1470" charLength="15" codePart="isalive( self )" isCall="True">
+      <funcRefArg charIndex="1479" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_healthoverlay" name="playerBreathingSound" charIndex="1691" charLength="45" codePart="thread playerBreathingSound(maxhealth * 0.35)" isCall="True">
+      <funcRefArg charIndex="1719" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="2209" charLength="9" codePart="gettime()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetTime" charIndex="2284" charLength="9" codePart="gettime()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetTime" charIndex="2427" charLength="9" codePart="gettime()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetTime" charIndex="2536" charLength="9" codePart="gettime()" isCall="True" />
+    <funcRef sfPath="codapi" name="PlayLocalSound" charIndex="2552" charLength="39" codePart="self playLocalSound(&quot;breathing_better&quot;)" isCall="True">
+      <funcRefArg charIndex="2572" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="2659" charLength="9" codePart="gettime()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_missions" name="healthRegenerated" charIndex="2823" charLength="53" codePart="self maps\mp\gametypes\_missions::healthRegenerated()" isCall="True" />
+    <funcRef sfPath="codapi" name="SetNormalHealth" charIndex="2993" charLength="34" codePart="player setnormalhealth (newHealth)" isCall="True">
+      <funcRefArg charIndex="3017" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="3149" charLength="9" codePart="gettime()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="3254" charLength="29" codePart="self endon(&quot;end_healthregen&quot;)" isCall="True">
+      <funcRefArg charIndex="3265" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="3542" charLength="9" codePart="gettime()" isCall="True" />
+    <funcRef sfPath="codapi" name="PlayLocalSound" charIndex="3603" charLength="39" codePart="player playLocalSound(&quot;breathing_hurt&quot;)" isCall="True">
+      <funcRefArg charIndex="3625" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="3673" charLength="17" codePart="randomfloat (0.8)" isCall="True">
+      <funcRefArg charIndex="3686" charLength="3" />
+    </funcRef>
+  </content>
+</scriptinfo>

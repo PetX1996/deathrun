@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>mptype\mptype_axis_sniper</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="character\character_mp_arab_regular_sniper" name="main" charIndex="60" charLength="50" codePart="character\character_mp_arab_regular_sniper::main()" isCall="True" />
+    <funcRef sfPath="character\character_mp_arab_regular_sniper" name="precache" charIndex="134" charLength="54" codePart="character\character_mp_arab_regular_sniper::precache()" isCall="True" />
+  </content>
+</scriptinfo>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_mp_sas_urban_specops</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="42" codePart="self setModel(&quot;body_mp_sas_urban_specops&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetViewModel" charIndex="104" charLength="40" codePart="self setViewmodel(&quot;viewhands_black_kit&quot;)" isCall="True">
+      <funcRefArg charIndex="122" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="194" charLength="42" codePart="precacheModel(&quot;body_mp_sas_urban_specops&quot;)" isCall="True">
+      <funcRefArg charIndex="208" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="240" charLength="36" codePart="precacheModel(&quot;viewhands_black_kit&quot;)" isCall="True">
+      <funcRefArg charIndex="254" charLength="21" />
+    </funcRef>
+  </content>
+</scriptinfo>

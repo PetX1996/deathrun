@@ -1,0 +1,1530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>common_scripts\utility</name>
+  </settings>
+  <content>
+    <func name="scriptPrintln" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="channel">
+      </param>
+      <param name="msg">
+      </param>
+    </func>
+    <func name="debugPrintln" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="channel">
+      </param>
+      <param name="msg">
+      </param>
+    </func>
+    <func name="draw_debug_line" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="start">
+      </param>
+      <param name="end">
+      </param>
+      <param name="timer">
+      </param>
+    </func>
+    <func name="waittillend" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="msg">
+      </param>
+    </func>
+    <func name="randomvector" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="num">
+      </param>
+    </func>
+    <func name="angle_dif" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="oldangle">
+      </param>
+      <param name="newangle">
+      </param>
+    </func>
+    <func name="vectorScale" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="vector">
+      </param>
+      <param name="scale">
+      </param>
+    </func>
+    <func name="sign" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="x">
+      </param>
+    </func>
+    <func name="track" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="spot_to_track">
+      </param>
+    </func>
+    <func name="get_enemy_team" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="clear_exception" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="type">
+      </param>
+    </func>
+    <func name="set_exception" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="type">
+      </param>
+      <param name="func">
+      </param>
+    </func>
+    <func name="set_all_exceptions" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="exceptionFunc">
+      </param>
+    </func>
+    <func name="set_flash_duration" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="time_in_seconds">
+      </param>
+    </func>
+    <func name="cointoss" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="waittill_string" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="msg">
+      </param>
+      <param name="ent">
+      </param>
+    </func>
+    <func name="waittill_multiple" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="string1">
+      </param>
+      <param name="string2">
+      </param>
+      <param name="string3">
+      </param>
+      <param name="string4">
+      </param>
+      <param name="string5">
+      </param>
+    </func>
+    <func name="waittill_multiple_ents" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ent1">
+      </param>
+      <param name="string1">
+      </param>
+      <param name="ent2">
+      </param>
+      <param name="string2">
+      </param>
+      <param name="ent3">
+      </param>
+      <param name="string3">
+      </param>
+      <param name="ent4">
+      </param>
+      <param name="string4">
+      </param>
+    </func>
+    <func name="waittill_any_return" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="string1">
+      </param>
+      <param name="string2">
+      </param>
+      <param name="string3">
+      </param>
+      <param name="string4">
+      </param>
+      <param name="string5">
+      </param>
+    </func>
+    <func name="waittill_any" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="string1">
+      </param>
+      <param name="string2">
+      </param>
+      <param name="string3">
+      </param>
+      <param name="string4">
+      </param>
+      <param name="string5">
+      </param>
+    </func>
+    <func name="waittill_any_ents" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ent1">
+      </param>
+      <param name="string1">
+      </param>
+      <param name="ent2">
+      </param>
+      <param name="string2">
+      </param>
+      <param name="ent3">
+      </param>
+      <param name="string3">
+      </param>
+      <param name="ent4">
+      </param>
+      <param name="string4">
+      </param>
+      <param name="ent5">
+      </param>
+      <param name="string5">
+      </param>
+      <param name="ent6">
+      </param>
+      <param name="string6">
+      </param>
+      <param name="ent7">
+      </param>
+      <param name="string7">
+      </param>
+    </func>
+    <func name="isFlashed" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="flag" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="message">
+      </param>
+    </func>
+    <func name="flag_init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="message">
+      </param>
+    </func>
+    <func name="empty_init_func" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="empty">
+      </param>
+    </func>
+    <func name="issuffix" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="msg">
+      </param>
+      <param name="suffix">
+      </param>
+    </func>
+    <func name="flag_set" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="message">
+      </param>
+    </func>
+    <func name="flag_wait" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="msg">
+      </param>
+    </func>
+    <func name="flag_clear" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="message">
+      </param>
+    </func>
+    <func name="flag_waitopen" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="msg">
+      </param>
+    </func>
+    <func name="script_gen_dump_addline" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="string">
+      </param>
+      <param name="signature">
+      </param>
+    </func>
+    <func name="array_thread" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="entities">
+      </param>
+      <param name="process">
+      </param>
+      <param name="var1">
+      </param>
+      <param name="var2">
+      </param>
+      <param name="var3">
+      </param>
+    </func>
+    <func name="array_thread4" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="entities">
+      </param>
+      <param name="process">
+      </param>
+      <param name="var1">
+      </param>
+      <param name="var2">
+      </param>
+      <param name="var3">
+      </param>
+      <param name="var4">
+      </param>
+    </func>
+    <func name="array_thread5" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="entities">
+      </param>
+      <param name="process">
+      </param>
+      <param name="var1">
+      </param>
+      <param name="var2">
+      </param>
+      <param name="var3">
+      </param>
+      <param name="var4">
+      </param>
+      <param name="var5">
+      </param>
+    </func>
+    <func name="remove_undefined_from_array" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="array">
+      </param>
+    </func>
+    <func name="trigger_on" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="name">
+      </param>
+      <param name="type">
+      </param>
+    </func>
+    <func name="trigger_on_proc" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="trigger_off" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="name">
+      </param>
+      <param name="type">
+      </param>
+    </func>
+    <func name="trigger_off_proc" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="set_trigger_flag_permissions" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="msg">
+      </param>
+    </func>
+    <func name="update_trigger_based_on_flags" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="create_flags_and_return_tokens" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="flags">
+      </param>
+    </func>
+    <func name="init_trigger_flags" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getstructarray" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="name">
+      </param>
+      <param name="type">
+      </param>
+    </func>
+    <func name="struct_class_init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="fileprint_start" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="file">
+      </param>
+    </func>
+    <func name="fileprint_map_start" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="file">
+      </param>
+    </func>
+    <func name="fileprint_chk" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="file">
+      </param>
+      <param name="str">
+      </param>
+    </func>
+    <func name="fileprint_map_header" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="bInclude_blank_worldspawn">
+      </param>
+    </func>
+    <func name="fileprint_map_keypairprint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="key1">
+      </param>
+      <param name="key2">
+      </param>
+    </func>
+    <func name="fileprint_map_entity_start" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="fileprint_map_entity_end" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="fileprint_end" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="fileprint_radiant_vec" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="vector">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="SetPrintChannel" charIndex="33" charLength="24" codePart="setprintchannel(channel)" isCall="True">
+      <funcRefArg charIndex="49" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="61" charLength="12" codePart="println(msg)" isCall="True">
+      <funcRefArg charIndex="69" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetPrintChannel" charIndex="77" charLength="26" codePart="setprintchannel (&quot;script&quot;)" isCall="True">
+      <funcRefArg charIndex="94" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetPrintChannel" charIndex="143" charLength="31" codePart="setprintchannel(&quot;script_debug&quot;)" isCall="True">
+      <funcRefArg charIndex="159" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="178" charLength="12" codePart="println(msg)" isCall="True">
+      <funcRefArg charIndex="186" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetPrintChannel" charIndex="194" charLength="26" codePart="setprintchannel (&quot;script&quot;)" isCall="True">
+      <funcRefArg charIndex="211" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="300" charLength="28" codePart="line (start, end, (1,1,0.5))" isCall="True">
+      <funcRefArg charIndex="306" charLength="5" />
+      <funcRefArg charIndex="313" charLength="3" />
+      <funcRefArg charIndex="318" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittillmatch" charIndex="378" charLength="31" codePart="self waittillmatch (msg, &quot;end&quot;)" isCall="True">
+      <funcRefArg charIndex="398" charLength="3" />
+      <funcRefArg charIndex="403" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="448" charLength="16" codePart="randomfloat(num)" isCall="True">
+      <funcRefArg charIndex="460" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="476" charLength="16" codePart="randomfloat(num)" isCall="True">
+      <funcRefArg charIndex="488" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="503" charLength="16" codePart="randomfloat(num)" isCall="True">
+      <funcRefArg charIndex="515" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1510" charLength="30" codePart="isdefined(self.current_target)" isCall="True">
+      <funcRefArg charIndex="1520" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="1682" charLength="60" codePart="assertEx( team != &quot;neutral&quot;, &quot;Team must be allies or axis&quot; )" isCall="True">
+      <funcRefArg charIndex="1692" charLength="17" />
+      <funcRefArg charIndex="1711" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="1880" charLength="45" codePart="assert( isdefined( self.exception[ type ] ) )" isCall="True">
+      <funcRefArg charIndex="1888" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1888" charLength="35" codePart="isdefined( self.exception[ type ] )" isCall="True">
+      <funcRefArg charIndex="1899" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="2016" charLength="45" codePart="assert( isdefined( self.exception[ type ] ) )" isCall="True">
+      <funcRefArg charIndex="2024" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2024" charLength="35" codePart="isdefined( self.exception[ type ] )" isCall="True">
+      <funcRefArg charIndex="2035" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetArrayKeys" charIndex="2150" charLength="30" codePart="getArrayKeys( self.exception )" isCall="True">
+      <funcRefArg charIndex="2164" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="2394" charLength="16" codePart="randomint( 100 )" isCall="True">
+      <funcRefArg charIndex="2405" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="2485" charLength="20" codePart="self endon (&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="2497" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="2513" charLength="19" codePart="ent endon ( &quot;die&quot; )" isCall="True">
+      <funcRefArg charIndex="2525" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="2536" charLength="21" codePart="self waittill ( msg )" isCall="True">
+      <funcRefArg charIndex="2552" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="2561" charLength="30" codePart="ent notify ( &quot;returned&quot;, msg )" isCall="True">
+      <funcRefArg charIndex="2574" charLength="10" />
+      <funcRefArg charIndex="2586" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="2669" charLength="20" codePart="self endon (&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="2681" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="2699" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2741" charLength="19" codePart="isdefined (string1)" isCall="True">
+      <funcRefArg charIndex="2752" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="waittill_string" charIndex="2769" charLength="42" codePart="self thread waittill_string (string1, ent)" isCall="True">
+      <funcRefArg charIndex="2798" charLength="7" />
+      <funcRefArg charIndex="2807" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2841" charLength="19" codePart="isdefined (string2)" isCall="True">
+      <funcRefArg charIndex="2852" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="waittill_string" charIndex="2869" charLength="42" codePart="self thread waittill_string (string2, ent)" isCall="True">
+      <funcRefArg charIndex="2898" charLength="7" />
+      <funcRefArg charIndex="2907" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2941" charLength="19" codePart="isdefined (string3)" isCall="True">
+      <funcRefArg charIndex="2952" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="waittill_string" charIndex="2969" charLength="42" codePart="self thread waittill_string (string3, ent)" isCall="True">
+      <funcRefArg charIndex="2998" charLength="7" />
+      <funcRefArg charIndex="3007" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3041" charLength="19" codePart="isdefined (string4)" isCall="True">
+      <funcRefArg charIndex="3052" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="waittill_string" charIndex="3069" charLength="42" codePart="self thread waittill_string (string4, ent)" isCall="True">
+      <funcRefArg charIndex="3098" charLength="7" />
+      <funcRefArg charIndex="3107" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3141" charLength="19" codePart="isdefined (string5)" isCall="True">
+      <funcRefArg charIndex="3152" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="waittill_string" charIndex="3169" charLength="42" codePart="self thread waittill_string (string5, ent)" isCall="True">
+      <funcRefArg charIndex="3198" charLength="7" />
+      <funcRefArg charIndex="3207" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="3266" charLength="25" codePart="ent waittill (&quot;returned&quot;)" isCall="True">
+      <funcRefArg charIndex="3280" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="3319" charLength="18" codePart="ent notify (&quot;die&quot;)" isCall="True">
+      <funcRefArg charIndex="3331" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="3435" charLength="20" codePart="self endon (&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="3447" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="3465" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3508" charLength="17" codePart="isdefined( ent1 )" isCall="True">
+      <funcRefArg charIndex="3519" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="3535" charLength="30" codePart="assert( isdefined( string1 ) )" isCall="True">
+      <funcRefArg charIndex="3543" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3543" charLength="20" codePart="isdefined( string1 )" isCall="True">
+      <funcRefArg charIndex="3554" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="waittill_string" charIndex="3570" charLength="43" codePart="ent1 thread waittill_string( string1, ent )" isCall="True">
+      <funcRefArg charIndex="3599" charLength="7" />
+      <funcRefArg charIndex="3608" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3644" charLength="17" codePart="isdefined( ent2 )" isCall="True">
+      <funcRefArg charIndex="3655" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="3671" charLength="30" codePart="assert( isdefined( string2 ) )" isCall="True">
+      <funcRefArg charIndex="3679" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3679" charLength="20" codePart="isdefined( string2 )" isCall="True">
+      <funcRefArg charIndex="3690" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="waittill_string" charIndex="3706" charLength="44" codePart="ent2 thread waittill_string ( string2, ent )" isCall="True">
+      <funcRefArg charIndex="3736" charLength="7" />
+      <funcRefArg charIndex="3745" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3781" charLength="17" codePart="isdefined( ent3 )" isCall="True">
+      <funcRefArg charIndex="3792" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="3808" charLength="30" codePart="assert( isdefined( string3 ) )" isCall="True">
+      <funcRefArg charIndex="3816" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3816" charLength="20" codePart="isdefined( string3 )" isCall="True">
+      <funcRefArg charIndex="3827" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="waittill_string" charIndex="3843" charLength="44" codePart="ent3 thread waittill_string ( string3, ent )" isCall="True">
+      <funcRefArg charIndex="3873" charLength="7" />
+      <funcRefArg charIndex="3882" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3918" charLength="17" codePart="isdefined( ent4 )" isCall="True">
+      <funcRefArg charIndex="3929" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="3945" charLength="30" codePart="assert( isdefined( string4 ) )" isCall="True">
+      <funcRefArg charIndex="3953" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3953" charLength="20" codePart="isdefined( string4 )" isCall="True">
+      <funcRefArg charIndex="3964" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="waittill_string" charIndex="3980" charLength="44" codePart="ent4 thread waittill_string ( string4, ent )" isCall="True">
+      <funcRefArg charIndex="4010" charLength="7" />
+      <funcRefArg charIndex="4019" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="4079" charLength="25" codePart="ent waittill (&quot;returned&quot;)" isCall="True">
+      <funcRefArg charIndex="4093" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="4132" charLength="18" codePart="ent notify (&quot;die&quot;)" isCall="True">
+      <funcRefArg charIndex="4144" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4236" charLength="19" codePart="isdefined (string1)" isCall="True">
+      <funcRefArg charIndex="4247" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4290" charLength="19" codePart="isdefined (string2)" isCall="True">
+      <funcRefArg charIndex="4301" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4344" charLength="19" codePart="isdefined (string3)" isCall="True">
+      <funcRefArg charIndex="4355" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4398" charLength="19" codePart="isdefined (string4)" isCall="True">
+      <funcRefArg charIndex="4409" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4452" charLength="19" codePart="isdefined (string5)" isCall="True">
+      <funcRefArg charIndex="4463" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="4499" charLength="20" codePart="self endon (&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="4511" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="4533" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4556" charLength="19" codePart="isdefined (string1)" isCall="True">
+      <funcRefArg charIndex="4567" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="waittill_string" charIndex="4580" charLength="42" codePart="self thread waittill_string (string1, ent)" isCall="True">
+      <funcRefArg charIndex="4609" charLength="7" />
+      <funcRefArg charIndex="4618" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4632" charLength="19" codePart="isdefined (string2)" isCall="True">
+      <funcRefArg charIndex="4643" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="waittill_string" charIndex="4656" charLength="42" codePart="self thread waittill_string (string2, ent)" isCall="True">
+      <funcRefArg charIndex="4685" charLength="7" />
+      <funcRefArg charIndex="4694" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4708" charLength="19" codePart="isdefined (string3)" isCall="True">
+      <funcRefArg charIndex="4719" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="waittill_string" charIndex="4732" charLength="42" codePart="self thread waittill_string (string3, ent)" isCall="True">
+      <funcRefArg charIndex="4761" charLength="7" />
+      <funcRefArg charIndex="4770" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4784" charLength="19" codePart="isdefined (string4)" isCall="True">
+      <funcRefArg charIndex="4795" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="waittill_string" charIndex="4808" charLength="42" codePart="self thread waittill_string (string4, ent)" isCall="True">
+      <funcRefArg charIndex="4837" charLength="7" />
+      <funcRefArg charIndex="4846" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4860" charLength="19" codePart="isdefined (string5)" isCall="True">
+      <funcRefArg charIndex="4871" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="waittill_string" charIndex="4884" charLength="42" codePart="self thread waittill_string (string5, ent)" isCall="True">
+      <funcRefArg charIndex="4913" charLength="7" />
+      <funcRefArg charIndex="4922" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="4932" charLength="30" codePart="ent waittill (&quot;returned&quot;, msg)" isCall="True">
+      <funcRefArg charIndex="4946" charLength="10" />
+      <funcRefArg charIndex="4958" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="4966" charLength="18" codePart="ent notify (&quot;die&quot;)" isCall="True">
+      <funcRefArg charIndex="4978" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="5071" charLength="30" codePart="assert( isdefined( string1 ) )" isCall="True">
+      <funcRefArg charIndex="5079" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5079" charLength="20" codePart="isdefined( string1 )" isCall="True">
+      <funcRefArg charIndex="5090" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5113" charLength="20" codePart="isdefined( string2 )" isCall="True">
+      <funcRefArg charIndex="5124" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="5139" charLength="21" codePart="self endon( string2 )" isCall="True">
+      <funcRefArg charIndex="5151" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5171" charLength="20" codePart="isdefined( string3 )" isCall="True">
+      <funcRefArg charIndex="5182" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="5197" charLength="21" codePart="self endon( string3 )" isCall="True">
+      <funcRefArg charIndex="5209" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5229" charLength="20" codePart="isdefined( string4 )" isCall="True">
+      <funcRefArg charIndex="5240" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="5255" charLength="21" codePart="self endon( string4 )" isCall="True">
+      <funcRefArg charIndex="5267" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5287" charLength="20" codePart="isdefined( string5 )" isCall="True">
+      <funcRefArg charIndex="5298" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="5313" charLength="21" codePart="self endon( string5 )" isCall="True">
+      <funcRefArg charIndex="5325" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="5341" charLength="24" codePart="self waittill( string1 )" isCall="True">
+      <funcRefArg charIndex="5356" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="5503" charLength="27" codePart="assert( isdefined( ent1 ) )" isCall="True">
+      <funcRefArg charIndex="5511" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5511" charLength="17" codePart="isdefined( ent1 )" isCall="True">
+      <funcRefArg charIndex="5522" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="5534" charLength="30" codePart="assert( isdefined( string1 ) )" isCall="True">
+      <funcRefArg charIndex="5542" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5542" charLength="20" codePart="isdefined( string1 )" isCall="True">
+      <funcRefArg charIndex="5553" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5578" charLength="17" codePart="isdefined( ent2 )" isCall="True">
+      <funcRefArg charIndex="5589" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5603" charLength="20" codePart="isdefined( string2 )" isCall="True">
+      <funcRefArg charIndex="5614" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="5631" charLength="21" codePart="ent2 endon( string2 )" isCall="True">
+      <funcRefArg charIndex="5643" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5665" charLength="17" codePart="isdefined( ent3 )" isCall="True">
+      <funcRefArg charIndex="5676" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5690" charLength="20" codePart="isdefined( string3 )" isCall="True">
+      <funcRefArg charIndex="5701" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="5718" charLength="21" codePart="ent3 endon( string3 )" isCall="True">
+      <funcRefArg charIndex="5730" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5753" charLength="17" codePart="isdefined( ent4 )" isCall="True">
+      <funcRefArg charIndex="5764" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5778" charLength="20" codePart="isdefined( string4 )" isCall="True">
+      <funcRefArg charIndex="5789" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="5806" charLength="21" codePart="ent4 endon( string4 )" isCall="True">
+      <funcRefArg charIndex="5818" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5841" charLength="17" codePart="isdefined( ent5 )" isCall="True">
+      <funcRefArg charIndex="5852" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5866" charLength="20" codePart="isdefined( string5 )" isCall="True">
+      <funcRefArg charIndex="5877" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="5894" charLength="21" codePart="ent5 endon( string5 )" isCall="True">
+      <funcRefArg charIndex="5906" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5929" charLength="17" codePart="isdefined( ent6 )" isCall="True">
+      <funcRefArg charIndex="5940" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5954" charLength="20" codePart="isdefined( string6 )" isCall="True">
+      <funcRefArg charIndex="5965" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="5982" charLength="21" codePart="ent6 endon( string6 )" isCall="True">
+      <funcRefArg charIndex="5994" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6017" charLength="17" codePart="isdefined( ent7 )" isCall="True">
+      <funcRefArg charIndex="6028" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6042" charLength="20" codePart="isdefined( string7 )" isCall="True">
+      <funcRefArg charIndex="6053" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="6070" charLength="21" codePart="ent7 endon( string7 )" isCall="True">
+      <funcRefArg charIndex="6082" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="6098" charLength="24" codePart="ent1 waittill( string1 )" isCall="True">
+      <funcRefArg charIndex="6113" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6412" charLength="30" codePart="isdefined( self.flashEndTime )" isCall="True">
+      <funcRefArg charIndex="6423" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="6474" charLength="9" codePart="gettime()" isCall="True" />
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="6838" charLength="85" codePart="assertEx( isdefined( message ), &quot;Tried to check flag but the flag was not defined.&quot; )" isCall="True">
+      <funcRefArg charIndex="6848" charLength="20" />
+      <funcRefArg charIndex="6870" charLength="52" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6848" charLength="20" codePart="isdefined( message )" isCall="True">
+      <funcRefArg charIndex="6859" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="6927" charLength="119" codePart="assertEx( isdefined( level.flag[ message ] ), &quot;Tried to check flag &quot; + message + &quot; but the flag was not initialized.&quot; )" isCall="True">
+      <funcRefArg charIndex="6937" charLength="34" />
+      <funcRefArg charIndex="6973" charLength="72" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6937" charLength="34" codePart="isdefined( level.flag[ message ] )" isCall="True">
+      <funcRefArg charIndex="6948" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7522" charLength="23" codePart="isDefined( level.flag )" isCall="True">
+      <funcRefArg charIndex="7533" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7607" charLength="40" codePart="isdefined( level.sp_stat_tracking_func )" isCall="True">
+      <funcRefArg charIndex="7618" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="empty_init_func" charIndex="7684" charLength="17" codePart="::empty_init_func" isCall="False" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7717" charLength="30" codePart="isdefined( level.first_frame )" isCall="True">
+      <funcRefArg charIndex="7728" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="7753" charLength="103" codePart="assertEx( !isDefined( level.flag[ message ] ), &quot;Attempt to reinitialize existing message: &quot; + message )" isCall="True">
+      <funcRefArg charIndex="7763" charLength="35" />
+      <funcRefArg charIndex="7800" charLength="55" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7764" charLength="34" codePart="isDefined( level.flag[ message ] )" isCall="True">
+      <funcRefArg charIndex="7775" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7952" charLength="32" codePart="isdefined( level.trigger_flags )" isCall="True">
+      <funcRefArg charIndex="7963" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="init_trigger_flags" charIndex="7994" charLength="20" codePart="init_trigger_flags()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8075" charLength="43" codePart="isdefined( level.trigger_flags[ message ] )" isCall="True">
+      <funcRefArg charIndex="8086" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="issuffix" charIndex="8179" charLength="26" codePart="issuffix( message, &quot;aa_&quot; )" isCall="True">
+      <funcRefArg charIndex="8189" charLength="7" />
+      <funcRefArg charIndex="8198" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="8870" charLength="108" codePart="assertEx( isDefined( level.flag[ message ] ), &quot;Attempt to set a flag before calling flag_init: &quot; + message )" isCall="True">
+      <funcRefArg charIndex="8880" charLength="34" />
+      <funcRefArg charIndex="8916" charLength="61" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8880" charLength="34" codePart="isDefined( level.flag[ message ] )" isCall="True">
+      <funcRefArg charIndex="8891" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="8982" charLength="62" codePart="assert( level.flag[ message ] == level.flags_lock[ message ] )" isCall="True">
+      <funcRefArg charIndex="8990" charLength="53" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="9124" charLength="23" codePart="level notify( message )" isCall="True">
+      <funcRefArg charIndex="9138" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="set_trigger_flag_permissions" charIndex="9153" charLength="39" codePart="set_trigger_flag_permissions( message )" isCall="True">
+      <funcRefArg charIndex="9183" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="9558" charLength="21" codePart="level waittill( msg )" isCall="True">
+      <funcRefArg charIndex="9574" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="9912" charLength="108" codePart="assertEx( isDefined( level.flag[ message ] ), &quot;Attempt to set a flag before calling flag_init: &quot; + message )" isCall="True">
+      <funcRefArg charIndex="9922" charLength="34" />
+      <funcRefArg charIndex="9958" charLength="61" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="9922" charLength="34" codePart="isDefined( level.flag[ message ] )" isCall="True">
+      <funcRefArg charIndex="9933" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="10024" charLength="62" codePart="assert( level.flag[ message ] == level.flags_lock[ message ] )" isCall="True">
+      <funcRefArg charIndex="10032" charLength="53" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="10264" charLength="23" codePart="level notify( message )" isCall="True">
+      <funcRefArg charIndex="10278" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="set_trigger_flag_permissions" charIndex="10292" charLength="39" codePart="set_trigger_flag_permissions( message )" isCall="True">
+      <funcRefArg charIndex="10322" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="10673" charLength="21" codePart="level waittill( msg )" isCall="True">
+      <funcRefArg charIndex="10689" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10761" charLength="19" codePart="isdefined( string )" isCall="True">
+      <funcRefArg charIndex="10772" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10925" charLength="31" codePart="isdefined( level._loadstarted )" isCall="True">
+      <funcRefArg charIndex="10936" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="11058" charLength="42" codePart="isdefined( level.script_gen_dump_preload )" isCall="True">
+      <funcRefArg charIndex="11069" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="11157" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="11348" charLength="47" codePart="isdefined( level.script_gen_dump[ signature ] )" isCall="True">
+      <funcRefArg charIndex="11359" charLength="35" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetArrayKeys" charIndex="12526" charLength="24" codePart="getArrayKeys( entities )" isCall="True">
+      <funcRefArg charIndex="12540" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12562" charLength="17" codePart="isdefined( var3 )" isCall="True">
+      <funcRefArg charIndex="12573" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12722" charLength="17" codePart="isdefined( var2 )" isCall="True">
+      <funcRefArg charIndex="12733" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12876" charLength="17" codePart="isdefined( var1 )" isCall="True">
+      <funcRefArg charIndex="12887" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetArrayKeys" charIndex="13181" charLength="24" codePart="getArrayKeys( entities )" isCall="True">
+      <funcRefArg charIndex="13195" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetArrayKeys" charIndex="13401" charLength="24" codePart="getArrayKeys( entities )" isCall="True">
+      <funcRefArg charIndex="13415" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="13657" charLength="23" codePart="isdefined( array[ i ] )" isCall="True">
+      <funcRefArg charIndex="13668" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="14393" charLength="18" codePart="isdefined ( name )" isCall="True">
+      <funcRefArg charIndex="14405" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="14415" charLength="17" codePart="isdefined( type )" isCall="True">
+      <funcRefArg charIndex="14426" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="14449" charLength="25" codePart="getentarray( name, type )" isCall="True">
+      <funcRefArg charIndex="14462" charLength="4" />
+      <funcRefArg charIndex="14468" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="array_thread" charIndex="14479" charLength="39" codePart="array_thread( ents, ::trigger_on_proc )" isCall="True">
+      <funcRefArg charIndex="14493" charLength="4" />
+      <funcRefArg charIndex="14499" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="trigger_on_proc" charIndex="14499" charLength="17" codePart="::trigger_on_proc" isCall="False" />
+    <funcRef sfPath="common_scripts\utility" name="trigger_on_proc" charIndex="14534" charLength="22" codePart="self trigger_on_proc()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="14593" charLength="28" codePart="isDefined( self.realOrigin )" isCall="True">
+      <funcRefArg charIndex="14604" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="15250" charLength="18" codePart="isdefined ( name )" isCall="True">
+      <funcRefArg charIndex="15262" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="15272" charLength="17" codePart="isdefined( type )" isCall="True">
+      <funcRefArg charIndex="15283" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="15306" charLength="25" codePart="getentarray( name, type )" isCall="True">
+      <funcRefArg charIndex="15319" charLength="4" />
+      <funcRefArg charIndex="15325" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="array_thread" charIndex="15336" charLength="40" codePart="array_thread( ents, ::trigger_off_proc )" isCall="True">
+      <funcRefArg charIndex="15350" charLength="4" />
+      <funcRefArg charIndex="15356" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="trigger_off_proc" charIndex="15356" charLength="18" codePart="::trigger_off_proc" isCall="False" />
+    <funcRef sfPath="common_scripts\utility" name="trigger_off_proc" charIndex="15392" charLength="23" codePart="self trigger_off_proc()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="15455" charLength="28" codePart="isDefined( self.realOrigin )" isCall="True">
+      <funcRefArg charIndex="15466" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="15853" charLength="32" codePart="isdefined( level.trigger_flags )" isCall="True">
+      <funcRefArg charIndex="15864" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="remove_undefined_from_array" charIndex="16041" charLength="57" codePart="remove_undefined_from_array( level.trigger_flags[ msg ] )" isCall="True">
+      <funcRefArg charIndex="16070" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="array_thread" charIndex="16102" charLength="75" codePart="array_thread( level.trigger_flags[ msg ], ::update_trigger_based_on_flags )" isCall="True">
+      <funcRefArg charIndex="16116" charLength="26" />
+      <funcRefArg charIndex="16144" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="update_trigger_based_on_flags" charIndex="16144" charLength="31" codePart="::update_trigger_based_on_flags" isCall="False" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="16245" charLength="34" codePart="isdefined( self.script_flag_true )" isCall="True">
+      <funcRefArg charIndex="16256" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="create_flags_and_return_tokens" charIndex="16318" charLength="55" codePart="create_flags_and_return_tokens( self.script_flag_true )" isCall="True">
+      <funcRefArg charIndex="16350" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="flag" charIndex="16475" charLength="19" codePart="flag( tokens[ i ] )" isCall="True">
+      <funcRefArg charIndex="16481" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="16581" charLength="35" codePart="isdefined( self.script_flag_false )" isCall="True">
+      <funcRefArg charIndex="16592" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="create_flags_and_return_tokens" charIndex="16635" charLength="56" codePart="create_flags_and_return_tokens( self.script_flag_false )" isCall="True">
+      <funcRefArg charIndex="16667" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="flag" charIndex="16793" charLength="19" codePart="flag( tokens[ i ] )" isCall="True">
+      <funcRefArg charIndex="16799" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="StrTok" charIndex="16990" charLength="20" codePart="strtok( flags, &quot; &quot; )" isCall="True">
+      <funcRefArg charIndex="16998" charLength="5" />
+      <funcRefArg charIndex="17005" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17109" charLength="38" codePart="isdefined( level.flag[ tokens[ i ] ] )" isCall="True">
+      <funcRefArg charIndex="17120" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="flag_init" charIndex="17159" charLength="24" codePart="flag_init( tokens[ i ] )" isCall="True">
+      <funcRefArg charIndex="17170" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="trigger_on" charIndex="17303" charLength="12" codePart="::trigger_on" isCall="False" />
+    <funcRef sfPath="common_scripts\utility" name="trigger_off" charIndex="17349" charLength="13" codePart="::trigger_off" isCall="False" />
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="17752" charLength="100" codePart="assertEx( isdefined( level.struct_class_names ), &quot;Tried to getstruct before the structs were init&quot; )" isCall="True">
+      <funcRefArg charIndex="17762" charLength="37" />
+      <funcRefArg charIndex="17801" charLength="50" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17762" charLength="37" codePart="isdefined( level.struct_class_names )" isCall="True">
+      <funcRefArg charIndex="17773" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17917" charLength="18" codePart="isdefined( array )" isCall="True">
+      <funcRefArg charIndex="17928" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="17999" charLength="152" codePart="assertEx( !isdefined( level.struct_class_names ), &quot;level.struct_class_names is being initialized in the wrong place! It shouldn't be initialized yet.&quot; )" isCall="True">
+      <funcRefArg charIndex="18009" charLength="38" />
+      <funcRefArg charIndex="18049" charLength="101" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18010" charLength="37" codePart="isdefined( level.struct_class_names )" isCall="True">
+      <funcRefArg charIndex="18021" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18450" charLength="41" codePart="isdefined( level.struct[ i ].targetname )" isCall="True">
+      <funcRefArg charIndex="18461" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18509" charLength="85" codePart="isdefined( level.struct_class_names[ &quot;targetname&quot; ][ level.struct[ i ].targetname ] )" isCall="True">
+      <funcRefArg charIndex="18520" charLength="73" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18895" charLength="37" codePart="isdefined( level.struct[ i ].target )" isCall="True">
+      <funcRefArg charIndex="18906" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18950" charLength="77" codePart="isdefined( level.struct_class_names[ &quot;target&quot; ][ level.struct[ i ].target ] )" isCall="True">
+      <funcRefArg charIndex="18961" charLength="65" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19304" charLength="48" codePart="isdefined( level.struct[ i ].script_noteworthy )" isCall="True">
+      <funcRefArg charIndex="19315" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19370" charLength="99" codePart="isdefined( level.struct_class_names[ &quot;script_noteworthy&quot; ][ level.struct[ i ].script_noteworthy ] )" isCall="True">
+      <funcRefArg charIndex="19381" charLength="87" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19812" charLength="46" codePart="isdefined( level.struct[ i ].script_linkname )" isCall="True">
+      <funcRefArg charIndex="19823" charLength="34" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="19870" charLength="146" codePart="assertex( !isdefined( level.struct_class_names[ &quot;script_linkname&quot; ][ level.struct[ i ].script_linkname ] ), &quot;Two structs have the same linkname&quot; )" isCall="True">
+      <funcRefArg charIndex="19880" charLength="96" />
+      <funcRefArg charIndex="19978" charLength="37" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19881" charLength="95" codePart="isdefined( level.struct_class_names[ &quot;script_linkname&quot; ][ level.struct[ i ].script_linkname ] )" isCall="True">
+      <funcRefArg charIndex="19892" charLength="83" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="OpenFile" charIndex="20324" charLength="29" codePart="openfile( filename, &quot;write&quot; )" isCall="True">
+      <funcRefArg charIndex="20334" charLength="8" />
+      <funcRefArg charIndex="20344" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="fileprint_start" charIndex="21121" charLength="23" codePart="fileprint_start( file )" isCall="True">
+      <funcRefArg charIndex="21138" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="fileprint_map_header" charIndex="21213" charLength="28" codePart="fileprint_map_header( true )" isCall="True">
+      <funcRefArg charIndex="21235" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FPrintLn" charIndex="21519" charLength="21" codePart="fprintln( file, str )" isCall="True">
+      <funcRefArg charIndex="21529" charLength="4" />
+      <funcRefArg charIndex="21535" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="21614" charLength="38" codePart="isdefined( bInclude_blank_worldspawn )" isCall="True">
+      <funcRefArg charIndex="21625" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="21754" charLength="38" codePart="assert( isdefined( level.fileprint ) )" isCall="True">
+      <funcRefArg charIndex="21762" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="21762" charLength="28" codePart="isdefined( level.fileprint )" isCall="True">
+      <funcRefArg charIndex="21773" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="fileprint_chk" charIndex="21802" charLength="43" codePart="fileprint_chk( level.fileprint, &quot;iwmap 4&quot; )" isCall="True">
+      <funcRefArg charIndex="21817" charLength="15" />
+      <funcRefArg charIndex="21834" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="fileprint_chk" charIndex="21849" charLength="64" codePart="fileprint_chk( level.fileprint, &quot;\&quot;000_Global\&quot; flags  active&quot; )" isCall="True">
+      <funcRefArg charIndex="21864" charLength="15" />
+      <funcRefArg charIndex="21881" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="fileprint_chk" charIndex="21917" charLength="53" codePart="fileprint_chk( level.fileprint, &quot;\&quot;The Map\&quot; flags&quot; )" isCall="True">
+      <funcRefArg charIndex="21932" charLength="15" />
+      <funcRefArg charIndex="21949" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="fileprint_map_entity_start" charIndex="22026" charLength="28" codePart="fileprint_map_entity_start()" isCall="True" />
+    <funcRef sfPath="common_scripts\utility" name="fileprint_map_keypairprint" charIndex="22059" charLength="55" codePart="fileprint_map_keypairprint( &quot;classname&quot;, &quot;worldspawn&quot; )" isCall="True">
+      <funcRefArg charIndex="22087" charLength="11" />
+      <funcRefArg charIndex="22100" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="fileprint_map_entity_end" charIndex="22119" charLength="26" codePart="fileprint_map_entity_end()" isCall="True" />
+    <funcRef sfPath="codapidev" name="Assert" charIndex="22623" charLength="38" codePart="assert( isdefined( level.fileprint ) )" isCall="True">
+      <funcRefArg charIndex="22631" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="22631" charLength="28" codePart="isdefined( level.fileprint )" isCall="True">
+      <funcRefArg charIndex="22642" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="fileprint_chk" charIndex="22665" charLength="69" codePart="fileprint_chk( level.fileprint, &quot;\&quot;&quot; + key1 + &quot;\&quot; \&quot;&quot; + key2 + &quot;\&quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="22680" charLength="15" />
+      <funcRefArg charIndex="22697" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="23090" charLength="51" codePart="assert( !isdefined( level.fileprint_entitystart ) )" isCall="True">
+      <funcRefArg charIndex="23098" charLength="42" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="23099" charLength="40" codePart="isdefined( level.fileprint_entitystart )" isCall="True">
+      <funcRefArg charIndex="23110" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="23183" charLength="38" codePart="assert( isdefined( level.fileprint ) )" isCall="True">
+      <funcRefArg charIndex="23191" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="23191" charLength="28" codePart="isdefined( level.fileprint )" isCall="True">
+      <funcRefArg charIndex="23202" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="fileprint_chk" charIndex="23225" charLength="76" codePart="fileprint_chk( level.fileprint, &quot;// entity &quot; + level.fileprint_mapentcount )" isCall="True">
+      <funcRefArg charIndex="23240" charLength="15" />
+      <funcRefArg charIndex="23257" charLength="43" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="fileprint_chk" charIndex="23305" charLength="37" codePart="fileprint_chk( level.fileprint, &quot;{&quot; )" isCall="True">
+      <funcRefArg charIndex="23320" charLength="15" />
+      <funcRefArg charIndex="23337" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="23725" charLength="50" codePart="assert( isdefined( level.fileprint_entitystart ) )" isCall="True">
+      <funcRefArg charIndex="23733" charLength="41" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="23733" charLength="40" codePart="isdefined( level.fileprint_entitystart )" isCall="True">
+      <funcRefArg charIndex="23744" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="23779" charLength="38" codePart="assert( isdefined( level.fileprint ) )" isCall="True">
+      <funcRefArg charIndex="23787" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="23787" charLength="28" codePart="isdefined( level.fileprint )" isCall="True">
+      <funcRefArg charIndex="23798" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="fileprint_chk" charIndex="23864" charLength="37" codePart="fileprint_chk( level.fileprint, &quot;}&quot; )" isCall="True">
+      <funcRefArg charIndex="23879" charLength="15" />
+      <funcRefArg charIndex="23896" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="24185" charLength="51" codePart="assert( !isdefined( level.fileprint_entitystart ) )" isCall="True">
+      <funcRefArg charIndex="24193" charLength="42" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="24194" charLength="40" codePart="isdefined( level.fileprint_entitystart )" isCall="True">
+      <funcRefArg charIndex="24205" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="CloseFile" charIndex="24248" charLength="28" codePart="closefile( level.fileprint )" isCall="True">
+      <funcRefArg charIndex="24259" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="24303" charLength="46" codePart="println(&quot;-----------------------------------&quot;)" isCall="True">
+      <funcRefArg charIndex="24311" charLength="37" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="24354" charLength="12" codePart="println(&quot; &quot;)" isCall="True">
+      <funcRefArg charIndex="24362" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="24371" charLength="29" codePart="println(&quot;file write failure&quot;)" isCall="True">
+      <funcRefArg charIndex="24379" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="24405" charLength="52" codePart="println(&quot;file with name: &quot;+level.fileprint_filename)" isCall="True">
+      <funcRefArg charIndex="24413" charLength="43" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="24462" charLength="65" codePart="println(&quot;make sure you checkout the file you are trying to save&quot;)" isCall="True">
+      <funcRefArg charIndex="24470" charLength="56" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="24532" charLength="70" codePart="println(&quot;note: USE P4 Search to find the file and check that one out&quot;)" isCall="True">
+      <funcRefArg charIndex="24540" charLength="61" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="24607" charLength="70" codePart="println(&quot;      Do not checkin files in from the xenonoutput folder, &quot;)" isCall="True">
+      <funcRefArg charIndex="24615" charLength="61" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="24682" charLength="80" codePart="println(&quot;      this is junctioned to the proper directory where you need to go&quot;)" isCall="True">
+      <funcRefArg charIndex="24690" charLength="71" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="24767" charLength="36" codePart="println(&quot;junctions looks like this&quot;)" isCall="True">
+      <funcRefArg charIndex="24775" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="24808" charLength="12" codePart="println(&quot; &quot;)" isCall="True">
+      <funcRefArg charIndex="24816" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="24825" charLength="84" codePart="println(&quot;..\\xenonOutput\\scriptdata\\createfx      ..\\share\\raw\\maps\\createfx&quot;)" isCall="True">
+      <funcRefArg charIndex="24833" charLength="75" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="24914" charLength="85" codePart="println(&quot;..\\xenonOutput\\scriptdata\\createart     ..\\share\\raw\\maps\\createart&quot;)" isCall="True">
+      <funcRefArg charIndex="24922" charLength="76" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="25004" charLength="76" codePart="println(&quot;..\\xenonOutput\\scriptdata\\vision        ..\\share\\raw\\vision&quot;)" isCall="True">
+      <funcRefArg charIndex="25012" charLength="67" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="25085" charLength="85" codePart="println(&quot;..\\xenonOutput\\scriptdata\\scriptgen     ..\\share\\raw\\maps\\scriptgen&quot;)" isCall="True">
+      <funcRefArg charIndex="25093" charLength="76" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="25175" charLength="76" codePart="println(&quot;..\\xenonOutput\\scriptdata\\zone_source   ..\\xenon\\zone_source&quot;)" isCall="True">
+      <funcRefArg charIndex="25183" charLength="67" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="25256" charLength="78" codePart="println(&quot;..\\xenonOutput\\accuracy                  ..\\share\\raw\\accuracy&quot;)" isCall="True">
+      <funcRefArg charIndex="25264" charLength="69" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="25339" charLength="82" codePart="println(&quot;..\\xenonOutput\\scriptdata\\map_source    ..\\map_source\\xenon_export&quot;)" isCall="True">
+      <funcRefArg charIndex="25347" charLength="73" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="25426" charLength="12" codePart="println(&quot; &quot;)" isCall="True">
+      <funcRefArg charIndex="25434" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="25443" charLength="46" codePart="println(&quot;-----------------------------------&quot;)" isCall="True">
+      <funcRefArg charIndex="25451" charLength="37" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="25498" charLength="56" codePart="println( &quot;File not saved( see console.log for info ) &quot; )" isCall="True">
+      <funcRefArg charIndex="25507" charLength="46" />
+    </funcRef>
+    <error type="warning" charIndex="124" charLength="7" lineIndex="7">
+      <message>Variable 'channel' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'channel' is defined, but its value is never used., file 'common_scripts\utility', line 8, 'debugPrintln(channel, msg)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="378" charLength="31" lineIndex="25">
+      <message>Function 'codapi::waittillmatch' has more arguments than parameters in the definition</message>
+      <fullMessage>Warning: Function 'codapi::waittillmatch' has more arguments than parameters in the definition, file 'common_scripts\utility', line 26, 'self waittillmatch (msg, "end");'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1954" charLength="21" lineIndex="117">
+      <message>Unknown variable/constant 'anim'</message>
+      <fullMessage>Bad semantic: Unknown variable/constant 'anim', file 'common_scripts\utility', line 118, 'self.exception[ type ] = anim.defaultException;'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8295" charLength="5" lineIndex="405">
+      <message>Variable 'empty' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'empty' is defined, but its value is never used., file 'common_scripts\utility', line 406, 'empty_init_func( empty )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="14479" charLength="39" lineIndex="633">
+      <message>Could not find enough arguments, function 'common_scripts\utility::array_thread'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'common_scripts\utility::array_thread', file 'common_scripts\utility', line 634, 'array_thread( ents, ::trigger_on_proc );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="15336" charLength="40" lineIndex="666">
+      <message>Could not find enough arguments, function 'common_scripts\utility::array_thread'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'common_scripts\utility::array_thread', file 'common_scripts\utility', line 667, 'array_thread( ents, ::trigger_off_proc );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="16102" charLength="75" lineIndex="692">
+      <message>Could not find enough arguments, function 'common_scripts\utility::array_thread'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'common_scripts\utility::array_thread', file 'common_scripts\utility', line 693, 'array_thread( level.trigger_flags[ msg ], ::update_trigger_based_on_flags );'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

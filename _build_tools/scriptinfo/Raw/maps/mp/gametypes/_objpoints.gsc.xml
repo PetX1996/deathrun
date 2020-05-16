@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_objpoints</name>
+  </settings>
+  <content>
+    <include>maps\mp\_utility</include>
+    <include>maps\mp\gametypes\_hud_util</include>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="createTeamObjpoint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="name">
+      </param>
+      <param name="origin">
+      </param>
+      <param name="team">
+      </param>
+      <param name="shader">
+      </param>
+      <param name="alpha">
+      </param>
+      <param name="scale">
+      </param>
+    </func>
+    <func name="deleteObjPoint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="oldObjPoint">
+      </param>
+    </func>
+    <func name="updateOrigin" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="origin">
+      </param>
+    </func>
+    <func name="setOriginByName" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="name">
+      </param>
+      <param name="origin">
+      </param>
+    </func>
+    <func name="getObjPointByName" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="name">
+      </param>
+    </func>
+    <func name="getObjPointByIndex" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="index">
+      </param>
+    </func>
+    <func name="startFlashing" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="stopFlashing" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="81" charLength="34" codePart="precacheShader(&quot;objpoint_default&quot;)" isCall="True">
+      <funcRefArg charIndex="96" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="1386" charLength="61" codePart="assert( team == &quot;axis&quot; || team == &quot;allies&quot; || team == &quot;all&quot; )" isCall="True">
+      <funcRefArg charIndex="1394" charLength="52" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_objpoints" name="getObjPointByName" charIndex="1465" charLength="25" codePart="getObjPointByName( name )" isCall="True">
+      <funcRefArg charIndex="1484" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1502" charLength="21" codePart="isDefined( objPoint )" isCall="True">
+      <funcRefArg charIndex="1513" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_objpoints" name="deleteObjPoint" charIndex="1529" charLength="26" codePart="deleteObjPoint( objPoint )" isCall="True">
+      <funcRefArg charIndex="1545" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1568" charLength="19" codePart="isDefined( shader )" isCall="True">
+      <funcRefArg charIndex="1579" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1632" charLength="18" codePart="isDefined( scale )" isCall="True">
+      <funcRefArg charIndex="1643" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewTeamHudElem" charIndex="1710" charLength="22" codePart="newTeamHudElem( team )" isCall="True">
+      <funcRefArg charIndex="1726" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewHudElem" charIndex="1755" charLength="12" codePart="newHudElem()" isCall="True" />
+    <funcRef sfPath="codapi" name="SetShader" charIndex="1961" charLength="68" codePart="objPoint setShader( shader, level.objPointSize, level.objPointSize )" isCall="True">
+      <funcRefArg charIndex="1981" charLength="6" />
+      <funcRefArg charIndex="1989" charLength="18" />
+      <funcRefArg charIndex="2009" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetWayPoint" charIndex="2033" charLength="28" codePart="objPoint setWaypoint( true )" isCall="True">
+      <funcRefArg charIndex="2055" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2073" charLength="18" codePart="isDefined( alpha )" isCall="True">
+      <funcRefArg charIndex="2084" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="2423" charLength="58" codePart="assert( level.objPoints.size == level.objPointNames.size )" isCall="True">
+      <funcRefArg charIndex="2431" charLength="49" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="2528" charLength="52" codePart="assert( level.objPointNames[0] == oldObjPoint.name )" isCall="True">
+      <funcRefArg charIndex="2536" charLength="43" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="2585" charLength="56" codePart="assert( isDefined( level.objPoints[oldObjPoint.name] ) )" isCall="True">
+      <funcRefArg charIndex="2593" charLength="47" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2593" charLength="46" codePart="isDefined( level.objPoints[oldObjPoint.name] )" isCall="True">
+      <funcRefArg charIndex="2604" charLength="34" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Destroy" charIndex="2704" charLength="21" codePart="oldObjPoint destroy()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_objpoints" name="getObjPointByIndex" charIndex="2838" charLength="30" codePart="getObjPointByIndex( oldIndex )" isCall="True">
+      <funcRefArg charIndex="2858" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Destroy" charIndex="3050" charLength="21" codePart="oldObjPoint destroy()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_objpoints" name="getObjPointByName" charIndex="3323" charLength="25" codePart="getObjPointByName( name )" isCall="True">
+      <funcRefArg charIndex="3342" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_objpoints" name="updateOrigin" charIndex="3352" charLength="31" codePart="objPoint updateOrigin( origin )" isCall="True">
+      <funcRefArg charIndex="3375" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3429" charLength="34" codePart="isDefined( level.objPoints[name] )" isCall="True">
+      <funcRefArg charIndex="3440" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3571" charLength="39" codePart="isDefined( level.objPointNames[index] )" isCall="True">
+      <funcRefArg charIndex="3582" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="3723" charLength="34" codePart="self endon(&quot;stop_flashing_thread&quot;)" isCall="True">
+      <funcRefArg charIndex="3734" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="FadeOverTime" charIndex="3865" charLength="25" codePart="self fadeOverTime( 0.75 )" isCall="True">
+      <funcRefArg charIndex="3884" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="FadeOverTime" charIndex="3956" charLength="25" codePart="self fadeOverTime( 0.75 )" isCall="True">
+      <funcRefArg charIndex="3975" charLength="5" />
+    </funcRef>
+  </content>
+</scriptinfo>

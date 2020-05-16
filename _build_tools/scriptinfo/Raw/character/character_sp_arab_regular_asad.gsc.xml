@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_arab_regular_asad</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="42" codePart="self setModel(&quot;body_sp_arab_regular_asad&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="104" charLength="50" codePart="self attach(&quot;head_sp_arab_regular_asad&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="116" charLength="27" />
+      <funcRefArg charIndex="145" charLength="2" />
+      <funcRefArg charIndex="149" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="207" charLength="26" codePart="self attach(self.hatModel)" isCall="True">
+      <funcRefArg charIndex="219" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="280" charLength="42" codePart="precacheModel(&quot;body_sp_arab_regular_asad&quot;)" isCall="True">
+      <funcRefArg charIndex="294" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="326" charLength="42" codePart="precacheModel(&quot;head_sp_arab_regular_asad&quot;)" isCall="True">
+      <funcRefArg charIndex="340" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="372" charLength="44" codePart="precacheModel(&quot;helmet_sp_arab_regular_asad&quot;)" isCall="True">
+      <funcRefArg charIndex="386" charLength="29" />
+    </funcRef>
+  </content>
+</scriptinfo>

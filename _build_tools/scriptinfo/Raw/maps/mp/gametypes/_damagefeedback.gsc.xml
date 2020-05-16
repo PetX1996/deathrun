@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_damagefeedback</name>
+  </settings>
+  <content>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerConnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateDamageFeedback" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="hitBodyArmor">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="12" charLength="33" codePart="precacheShader(&quot;damage_feedback&quot;)" isCall="True">
+      <funcRefArg charIndex="27" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="49" charLength="35" codePart="precacheShader(&quot;damage_feedback_j&quot;)" isCall="True">
+      <funcRefArg charIndex="64" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_damagefeedback" name="onPlayerConnect" charIndex="90" charLength="30" codePart="level thread onPlayerConnect()" isCall="True" />
+    <funcRef sfPath="codapi" name="waittill" charIndex="166" charLength="36" codePart="level waittill(&quot;connecting&quot;, player)" isCall="True">
+      <funcRefArg charIndex="181" charLength="12" />
+      <funcRefArg charIndex="195" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewClientHudElem" charIndex="237" charLength="24" codePart="newClientHudElem(player)" isCall="True">
+      <funcRefArg charIndex="254" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetShader" charIndex="530" charLength="62" codePart="player.hud_damagefeedback setShader(&quot;damage_feedback&quot;, 24, 48)" isCall="True">
+      <funcRefArg charIndex="566" charLength="17" />
+      <funcRefArg charIndex="585" charLength="2" />
+      <funcRefArg charIndex="589" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsPlayer" charIndex="652" charLength="16" codePart="isPlayer( self )" isCall="True">
+      <funcRefArg charIndex="662" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetShader" charIndex="714" charLength="62" codePart="self.hud_damagefeedback setShader(&quot;damage_feedback_j&quot;, 24, 48)" isCall="True">
+      <funcRefArg charIndex="748" charLength="19" />
+      <funcRefArg charIndex="769" charLength="2" />
+      <funcRefArg charIndex="773" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayLocalSound" charIndex="781" charLength="35" codePart="self playlocalsound(&quot;MP_hit_alert&quot;)" isCall="True">
+      <funcRefArg charIndex="801" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetShader" charIndex="859" charLength="60" codePart="self.hud_damagefeedback setShader(&quot;damage_feedback&quot;, 24, 48)" isCall="True">
+      <funcRefArg charIndex="893" charLength="17" />
+      <funcRefArg charIndex="912" charLength="2" />
+      <funcRefArg charIndex="916" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayLocalSound" charIndex="924" charLength="35" codePart="self playlocalsound(&quot;MP_hit_alert&quot;)" isCall="True">
+      <funcRefArg charIndex="944" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="FadeOverTime" charIndex="1007" charLength="39" codePart="self.hud_damagefeedback fadeOverTime(1)" isCall="True">
+      <funcRefArg charIndex="1044" charLength="1" />
+    </funcRef>
+  </content>
+</scriptinfo>

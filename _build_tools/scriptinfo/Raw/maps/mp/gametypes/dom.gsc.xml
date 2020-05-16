@@ -1,0 +1,1112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\dom</name>
+  </settings>
+  <content>
+    <include>maps\mp\_utility</include>
+    <include>maps\mp\gametypes\_hud_util</include>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPrecacheGameType" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onStartGameType" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onSpawnPlayer" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="domFlags" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getUnownedFlagNearestStart" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="excludeFlag">
+      </param>
+    </func>
+    <func name="domDebug" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onBeginUse" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="player">
+      </param>
+    </func>
+    <func name="onUseUpdate" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="progress">
+      </param>
+      <param name="change">
+      </param>
+    </func>
+    <func name="statusDialog" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="dialog">
+      </param>
+      <param name="team">
+      </param>
+    </func>
+    <func name="onEndUse" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="player">
+      </param>
+      <param name="success">
+      </param>
+    </func>
+    <func name="resetFlagBaseEffect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onUse" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="player">
+      </param>
+    </func>
+    <func name="giveFlagCaptureXP" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="touchList">
+      </param>
+    </func>
+    <func name="delayedLeaderDialog" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="sound">
+      </param>
+      <param name="team">
+      </param>
+    </func>
+    <func name="delayedLeaderDialogBothTeams" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="sound1">
+      </param>
+      <param name="team1">
+      </param>
+      <param name="sound2">
+      </param>
+      <param name="team2">
+      </param>
+    </func>
+    <func name="updateDomScores" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerKilled" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="eInflictor">
+      </param>
+      <param name="attacker">
+      </param>
+      <param name="iDamage">
+      </param>
+      <param name="sMeansOfDeath">
+      </param>
+      <param name="sWeapon">
+      </param>
+      <param name="vDir">
+      </param>
+      <param name="sHitLoc">
+      </param>
+      <param name="psOffsetTime">
+      </param>
+      <param name="deathAnimDuration">
+      </param>
+    </func>
+    <func name="getTeamFlagCount" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="getFlagTeam" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getBoundaryFlags" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getBoundaryFlagSpawns" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="getSpawnsBoundingFlag" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="avoidflag">
+      </param>
+    </func>
+    <func name="getOwnedAndBoundingFlagSpawns" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="getOwnedFlagSpawns" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="flagSetup" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="3036" charLength="18" codePart="getdvar(&quot;mapname&quot;)" isCall="True">
+      <funcRefArg charIndex="3044" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="init" charIndex="3090" charLength="38" codePart="maps\mp\gametypes\_globallogic::init()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_callbacksetup" name="SetupCallbacks" charIndex="3132" charLength="50" codePart="maps\mp\gametypes\_callbacksetup::SetupCallbacks()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="SetupCallbacks" charIndex="3186" charLength="48" codePart="maps\mp\gametypes\_globallogic::SetupCallbacks()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="registerTimeLimitDvar" charIndex="3240" charLength="75" codePart="maps\mp\gametypes\_globallogic::registerTimeLimitDvar( &quot;dom&quot;, 30, 0, 1440 )" isCall="True">
+      <funcRefArg charIndex="3295" charLength="5" />
+      <funcRefArg charIndex="3302" charLength="2" />
+      <funcRefArg charIndex="3306" charLength="1" />
+      <funcRefArg charIndex="3309" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="registerScoreLimitDvar" charIndex="3319" charLength="77" codePart="maps\mp\gametypes\_globallogic::registerScoreLimitDvar( &quot;dom&quot;, 300, 0, 1000 )" isCall="True">
+      <funcRefArg charIndex="3375" charLength="5" />
+      <funcRefArg charIndex="3382" charLength="3" />
+      <funcRefArg charIndex="3387" charLength="1" />
+      <funcRefArg charIndex="3390" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="registerRoundLimitDvar" charIndex="3400" charLength="73" codePart="maps\mp\gametypes\_globallogic::registerRoundLimitDvar( &quot;dom&quot;, 1, 0, 10 )" isCall="True">
+      <funcRefArg charIndex="3456" charLength="5" />
+      <funcRefArg charIndex="3463" charLength="1" />
+      <funcRefArg charIndex="3466" charLength="1" />
+      <funcRefArg charIndex="3469" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="registerNumLivesDvar" charIndex="3477" charLength="71" codePart="maps\mp\gametypes\_globallogic::registerNumLivesDvar( &quot;dom&quot;, 0, 0, 10 )" isCall="True">
+      <funcRefArg charIndex="3531" charLength="5" />
+      <funcRefArg charIndex="3538" charLength="1" />
+      <funcRefArg charIndex="3541" charLength="1" />
+      <funcRefArg charIndex="3544" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="onStartGameType" charIndex="3639" charLength="17" codePart="::onStartGameType" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\dom" name="onSpawnPlayer" charIndex="3682" charLength="15" codePart="::onSpawnPlayer" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\dom" name="onPlayerKilled" charIndex="3724" charLength="16" codePart="::onPlayerKilled" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\dom" name="onPrecacheGameType" charIndex="3771" charLength="20" codePart="::onPrecacheGameType" isCall="False" />
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="3974" charLength="51" codePart="precacheShader( &quot;compass_waypoint_captureneutral&quot; )" isCall="True">
+      <funcRefArg charIndex="3990" charLength="34" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4029" charLength="44" codePart="precacheShader( &quot;compass_waypoint_capture&quot; )" isCall="True">
+      <funcRefArg charIndex="4045" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4077" charLength="43" codePart="precacheShader( &quot;compass_waypoint_defend&quot; )" isCall="True">
+      <funcRefArg charIndex="4093" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4124" charLength="53" codePart="precacheShader( &quot;compass_waypoint_captureneutral_a&quot; )" isCall="True">
+      <funcRefArg charIndex="4140" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4181" charLength="46" codePart="precacheShader( &quot;compass_waypoint_capture_a&quot; )" isCall="True">
+      <funcRefArg charIndex="4197" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4231" charLength="45" codePart="precacheShader( &quot;compass_waypoint_defend_a&quot; )" isCall="True">
+      <funcRefArg charIndex="4247" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4280" charLength="53" codePart="precacheShader( &quot;compass_waypoint_captureneutral_b&quot; )" isCall="True">
+      <funcRefArg charIndex="4296" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4337" charLength="46" codePart="precacheShader( &quot;compass_waypoint_capture_b&quot; )" isCall="True">
+      <funcRefArg charIndex="4353" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4387" charLength="45" codePart="precacheShader( &quot;compass_waypoint_defend_b&quot; )" isCall="True">
+      <funcRefArg charIndex="4403" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4436" charLength="53" codePart="precacheShader( &quot;compass_waypoint_captureneutral_c&quot; )" isCall="True">
+      <funcRefArg charIndex="4452" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4493" charLength="46" codePart="precacheShader( &quot;compass_waypoint_capture_c&quot; )" isCall="True">
+      <funcRefArg charIndex="4509" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4543" charLength="45" codePart="precacheShader( &quot;compass_waypoint_defend_c&quot; )" isCall="True">
+      <funcRefArg charIndex="4559" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4592" charLength="53" codePart="precacheShader( &quot;compass_waypoint_captureneutral_d&quot; )" isCall="True">
+      <funcRefArg charIndex="4608" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4649" charLength="46" codePart="precacheShader( &quot;compass_waypoint_capture_d&quot; )" isCall="True">
+      <funcRefArg charIndex="4665" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4699" charLength="45" codePart="precacheShader( &quot;compass_waypoint_defend_d&quot; )" isCall="True">
+      <funcRefArg charIndex="4715" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4748" charLength="53" codePart="precacheShader( &quot;compass_waypoint_captureneutral_e&quot; )" isCall="True">
+      <funcRefArg charIndex="4764" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4805" charLength="46" codePart="precacheShader( &quot;compass_waypoint_capture_e&quot; )" isCall="True">
+      <funcRefArg charIndex="4821" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4855" charLength="45" codePart="precacheShader( &quot;compass_waypoint_defend_e&quot; )" isCall="True">
+      <funcRefArg charIndex="4871" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4906" charLength="43" codePart="precacheShader( &quot;waypoint_captureneutral&quot; )" isCall="True">
+      <funcRefArg charIndex="4922" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4953" charLength="36" codePart="precacheShader( &quot;waypoint_capture&quot; )" isCall="True">
+      <funcRefArg charIndex="4969" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="4993" charLength="35" codePart="precacheShader( &quot;waypoint_defend&quot; )" isCall="True">
+      <funcRefArg charIndex="5009" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="5032" charLength="45" codePart="precacheShader( &quot;waypoint_captureneutral_a&quot; )" isCall="True">
+      <funcRefArg charIndex="5048" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="5081" charLength="38" codePart="precacheShader( &quot;waypoint_capture_a&quot; )" isCall="True">
+      <funcRefArg charIndex="5097" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="5123" charLength="37" codePart="precacheShader( &quot;waypoint_defend_a&quot; )" isCall="True">
+      <funcRefArg charIndex="5139" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="5164" charLength="45" codePart="precacheShader( &quot;waypoint_captureneutral_b&quot; )" isCall="True">
+      <funcRefArg charIndex="5180" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="5213" charLength="38" codePart="precacheShader( &quot;waypoint_capture_b&quot; )" isCall="True">
+      <funcRefArg charIndex="5229" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="5255" charLength="37" codePart="precacheShader( &quot;waypoint_defend_b&quot; )" isCall="True">
+      <funcRefArg charIndex="5271" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="5296" charLength="45" codePart="precacheShader( &quot;waypoint_captureneutral_c&quot; )" isCall="True">
+      <funcRefArg charIndex="5312" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="5345" charLength="38" codePart="precacheShader( &quot;waypoint_capture_c&quot; )" isCall="True">
+      <funcRefArg charIndex="5361" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="5387" charLength="37" codePart="precacheShader( &quot;waypoint_defend_c&quot; )" isCall="True">
+      <funcRefArg charIndex="5403" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="5428" charLength="45" codePart="precacheShader( &quot;waypoint_captureneutral_d&quot; )" isCall="True">
+      <funcRefArg charIndex="5444" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="5477" charLength="38" codePart="precacheShader( &quot;waypoint_capture_d&quot; )" isCall="True">
+      <funcRefArg charIndex="5493" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="5519" charLength="37" codePart="precacheShader( &quot;waypoint_defend_d&quot; )" isCall="True">
+      <funcRefArg charIndex="5535" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="5560" charLength="45" codePart="precacheShader( &quot;waypoint_captureneutral_e&quot; )" isCall="True">
+      <funcRefArg charIndex="5576" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="5609" charLength="38" codePart="precacheShader( &quot;waypoint_capture_e&quot; )" isCall="True">
+      <funcRefArg charIndex="5625" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="5651" charLength="37" codePart="precacheShader( &quot;waypoint_defend_e&quot; )" isCall="True">
+      <funcRefArg charIndex="5667" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="5956" charLength="40" codePart="loadfx( flagBaseFX[ game[ &quot;allies&quot; ] ] )" isCall="True">
+      <funcRefArg charIndex="5964" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="6033" charLength="40" codePart="loadfx( flagBaseFX[ game[ &quot;axis&quot;   ] ] )" isCall="True">
+      <funcRefArg charIndex="6041" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveText" charIndex="6107" charLength="79" codePart="maps\mp\gametypes\_globallogic::setObjectiveText( &quot;allies&quot;, &amp;&quot;OBJECTIVES_DOM&quot; )" isCall="True">
+      <funcRefArg charIndex="6157" charLength="8" />
+      <funcRefArg charIndex="6167" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveText" charIndex="6190" charLength="77" codePart="maps\mp\gametypes\_globallogic::setObjectiveText( &quot;axis&quot;, &amp;&quot;OBJECTIVES_DOM&quot; )" isCall="True">
+      <funcRefArg charIndex="6240" charLength="6" />
+      <funcRefArg charIndex="6248" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveScoreText" charIndex="6305" charLength="84" codePart="maps\mp\gametypes\_globallogic::setObjectiveScoreText( &quot;allies&quot;, &amp;&quot;OBJECTIVES_DOM&quot; )" isCall="True">
+      <funcRefArg charIndex="6360" charLength="8" />
+      <funcRefArg charIndex="6370" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveScoreText" charIndex="6394" charLength="82" codePart="maps\mp\gametypes\_globallogic::setObjectiveScoreText( &quot;axis&quot;, &amp;&quot;OBJECTIVES_DOM&quot; )" isCall="True">
+      <funcRefArg charIndex="6449" charLength="6" />
+      <funcRefArg charIndex="6457" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveScoreText" charIndex="6496" charLength="90" codePart="maps\mp\gametypes\_globallogic::setObjectiveScoreText( &quot;allies&quot;, &amp;&quot;OBJECTIVES_DOM_SCORE&quot; )" isCall="True">
+      <funcRefArg charIndex="6551" charLength="8" />
+      <funcRefArg charIndex="6561" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveScoreText" charIndex="6591" charLength="88" codePart="maps\mp\gametypes\_globallogic::setObjectiveScoreText( &quot;axis&quot;, &amp;&quot;OBJECTIVES_DOM_SCORE&quot; )" isCall="True">
+      <funcRefArg charIndex="6646" charLength="6" />
+      <funcRefArg charIndex="6654" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveHintText" charIndex="6687" charLength="88" codePart="maps\mp\gametypes\_globallogic::setObjectiveHintText( &quot;allies&quot;, &amp;&quot;OBJECTIVES_DOM_HINT&quot; )" isCall="True">
+      <funcRefArg charIndex="6741" charLength="8" />
+      <funcRefArg charIndex="6751" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveHintText" charIndex="6779" charLength="86" codePart="maps\mp\gametypes\_globallogic::setObjectiveHintText( &quot;axis&quot;, &amp;&quot;OBJECTIVES_DOM_HINT&quot; )" isCall="True">
+      <funcRefArg charIndex="6833" charLength="6" />
+      <funcRefArg charIndex="6841" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientNameMode" charIndex="6871" charLength="32" codePart="setClientNameMode(&quot;auto_change&quot;)" isCall="True">
+      <funcRefArg charIndex="6889" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="placeSpawnPoints" charIndex="6975" charLength="78" codePart="maps\mp\gametypes\_spawnlogic::placeSpawnPoints( &quot;mp_dom_spawn_allies_start&quot; )" isCall="True">
+      <funcRefArg charIndex="7024" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="placeSpawnPoints" charIndex="7057" charLength="76" codePart="maps\mp\gametypes\_spawnlogic::placeSpawnPoints( &quot;mp_dom_spawn_axis_start&quot; )" isCall="True">
+      <funcRefArg charIndex="7106" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="addSpawnPoints" charIndex="7137" charLength="73" codePart="maps\mp\gametypes\_spawnlogic::addSpawnPoints( &quot;allies&quot;, &quot;mp_dom_spawn&quot; )" isCall="True">
+      <funcRefArg charIndex="7184" charLength="8" />
+      <funcRefArg charIndex="7194" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="addSpawnPoints" charIndex="7214" charLength="71" codePart="maps\mp\gametypes\_spawnlogic::addSpawnPoints( &quot;axis&quot;, &quot;mp_dom_spawn&quot; )" isCall="True">
+      <funcRefArg charIndex="7261" charLength="6" />
+      <funcRefArg charIndex="7269" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="findBoxCenter" charIndex="7310" charLength="80" codePart="maps\mp\gametypes\_spawnlogic::findBoxCenter( level.spawnMins, level.spawnMaxs )" isCall="True">
+      <funcRefArg charIndex="7356" charLength="15" />
+      <funcRefArg charIndex="7373" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetMapCenter" charIndex="7394" charLength="31" codePart="setMapCenter( level.mapCenter )" isCall="True">
+      <funcRefArg charIndex="7408" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="7450" charLength="42" codePart="getentarray( &quot;mp_dom_spawn&quot;, &quot;classname&quot; )" isCall="True">
+      <funcRefArg charIndex="7463" charLength="14" />
+      <funcRefArg charIndex="7479" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="7521" charLength="52" codePart="getentarray(&quot;mp_dom_spawn_axis_start&quot;, &quot;classname&quot; )" isCall="True">
+      <funcRefArg charIndex="7533" charLength="25" />
+      <funcRefArg charIndex="7560" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="7604" charLength="54" codePart="getentarray(&quot;mp_dom_spawn_allies_start&quot;, &quot;classname&quot; )" isCall="True">
+      <funcRefArg charIndex="7616" charLength="27" />
+      <funcRefArg charIndex="7645" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="main" charIndex="7846" charLength="45" codePart="maps\mp\gametypes\_gameobjects::main(allowed)" isCall="True">
+      <funcRefArg charIndex="7883" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_rank" name="registerScoreInfo" charIndex="7897" charLength="55" codePart="maps\mp\gametypes\_rank::registerScoreInfo( &quot;kill&quot;, 5 )" isCall="True">
+      <funcRefArg charIndex="7941" charLength="6" />
+      <funcRefArg charIndex="7949" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_rank" name="registerScoreInfo" charIndex="7956" charLength="59" codePart="maps\mp\gametypes\_rank::registerScoreInfo( &quot;headshot&quot;, 5 )" isCall="True">
+      <funcRefArg charIndex="8000" charLength="10" />
+      <funcRefArg charIndex="8012" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_rank" name="registerScoreInfo" charIndex="8019" charLength="57" codePart="maps\mp\gametypes\_rank::registerScoreInfo( &quot;assist&quot;, 1 )" isCall="True">
+      <funcRefArg charIndex="8063" charLength="8" />
+      <funcRefArg charIndex="8073" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_rank" name="registerScoreInfo" charIndex="8082" charLength="59" codePart="maps\mp\gametypes\_rank::registerScoreInfo( &quot;capture&quot;, 15 )" isCall="True">
+      <funcRefArg charIndex="8126" charLength="9" />
+      <funcRefArg charIndex="8137" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_rank" name="registerScoreInfo" charIndex="8147" charLength="57" codePart="maps\mp\gametypes\_rank::registerScoreInfo( &quot;defend&quot;, 5 )" isCall="True">
+      <funcRefArg charIndex="8191" charLength="8" />
+      <funcRefArg charIndex="8201" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_rank" name="registerScoreInfo" charIndex="8208" charLength="64" codePart="maps\mp\gametypes\_rank::registerScoreInfo( &quot;defend_assist&quot;, 1 )" isCall="True">
+      <funcRefArg charIndex="8252" charLength="15" />
+      <funcRefArg charIndex="8269" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_rank" name="registerScoreInfo" charIndex="8278" charLength="58" codePart="maps\mp\gametypes\_rank::registerScoreInfo( &quot;assault&quot;, 5 )" isCall="True">
+      <funcRefArg charIndex="8322" charLength="9" />
+      <funcRefArg charIndex="8333" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_rank" name="registerScoreInfo" charIndex="8340" charLength="65" codePart="maps\mp\gametypes\_rank::registerScoreInfo( &quot;assault_assist&quot;, 1 )" isCall="True">
+      <funcRefArg charIndex="8384" charLength="16" />
+      <funcRefArg charIndex="8402" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="domFlags" charIndex="8413" charLength="17" codePart="thread domFlags()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\dom" name="updateDomScores" charIndex="8434" charLength="24" codePart="thread updateDomScores()" isCall="True" />
+    <funcRef sfPath="maps\mp\_utility" name="getOtherTeam" charIndex="8641" charLength="22" codePart="getOtherTeam( myTeam )" isCall="True">
+      <funcRefArg charIndex="8655" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="getFlagTeam" charIndex="8725" charLength="28" codePart="level.flags[i] getFlagTeam()" isCall="True" />
+    <funcRef sfPath="maps\mp\_utility" name="getOtherTeam" charIndex="9050" charLength="33" codePart="getOtherTeam( self.pers[&quot;team&quot;] )" isCall="True">
+      <funcRefArg charIndex="9064" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getSpawnpoint_NearTeam" charIndex="9109" charLength="117" codePart="maps\mp\gametypes\_spawnlogic::getSpawnpoint_NearTeam( level.spawn_all, getSpawnsBoundingFlag( enemyBestSpawnFlag ) )" isCall="True">
+      <funcRefArg charIndex="9164" charLength="15" />
+      <funcRefArg charIndex="9181" charLength="44" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="getSpawnsBoundingFlag" charIndex="9181" charLength="43" codePart="getSpawnsBoundingFlag( enemyBestSpawnFlag )" isCall="True">
+      <funcRefArg charIndex="9204" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getSpawnpoint_NearTeam" charIndex="9359" charLength="105" codePart="maps\mp\gametypes\_spawnlogic::getSpawnpoint_NearTeam( level.spawn_all, getBoundaryFlagSpawns( myTeam ) )" isCall="True">
+      <funcRefArg charIndex="9414" charLength="15" />
+      <funcRefArg charIndex="9431" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="getBoundaryFlagSpawns" charIndex="9431" charLength="31" codePart="getBoundaryFlagSpawns( myTeam )" isCall="True">
+      <funcRefArg charIndex="9454" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="getUnownedFlagNearestStart" charIndex="9668" charLength="36" codePart="getUnownedFlagNearestStart( myTeam )" isCall="True">
+      <funcRefArg charIndex="9696" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="9722" charLength="21" codePart="isdefined( bestFlag )" isCall="True">
+      <funcRefArg charIndex="9733" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getSpawnpoint_NearTeam" charIndex="9945" charLength="95" codePart="maps\mp\gametypes\_spawnlogic::getSpawnpoint_NearTeam( level.spawn_all, bestFlag.nearbyspawns )" isCall="True">
+      <funcRefArg charIndex="10000" charLength="15" />
+      <funcRefArg charIndex="10017" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10062" charLength="23" codePart="isdefined( spawnpoint )" isCall="True">
+      <funcRefArg charIndex="10073" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getSpawnpoint_Random" charIndex="10145" charLength="75" codePart="maps\mp\gametypes\_spawnlogic::getSpawnpoint_Random(level.spawn_axis_start)" isCall="True">
+      <funcRefArg charIndex="10197" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getSpawnpoint_Random" charIndex="10247" charLength="77" codePart="maps\mp\gametypes\_spawnlogic::getSpawnpoint_Random(level.spawn_allies_start)" isCall="True">
+      <funcRefArg charIndex="10299" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="10429" charLength="31" codePart="assert( isDefined(spawnpoint) )" isCall="True">
+      <funcRefArg charIndex="10437" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10437" charLength="21" codePart="isDefined(spawnpoint)" isCall="True">
+      <funcRefArg charIndex="10447" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="10467" charLength="48" codePart="self spawn(spawnpoint.origin, spawnpoint.angles)" isCall="True">
+      <funcRefArg charIndex="10478" charLength="17" />
+      <funcRefArg charIndex="10497" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="10999" charLength="46" codePart="precacheModel( game[&quot;flagmodels&quot;][&quot;neutral&quot;] )" isCall="True">
+      <funcRefArg charIndex="11014" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="11049" charLength="45" codePart="precacheModel( game[&quot;flagmodels&quot;][&quot;allies&quot;] )" isCall="True">
+      <funcRefArg charIndex="11064" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="11098" charLength="43" codePart="precacheModel( game[&quot;flagmodels&quot;][&quot;axis&quot;] )" isCall="True">
+      <funcRefArg charIndex="11113" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="11153" charLength="38" codePart="precacheString( &amp;&quot;MP_CAPTURING_FLAG&quot; )" isCall="True">
+      <funcRefArg charIndex="11169" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="11195" charLength="35" codePart="precacheString( &amp;&quot;MP_LOSING_FLAG&quot; )" isCall="True">
+      <funcRefArg charIndex="11211" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="11280" charLength="50" codePart="precacheString( &amp;&quot;MP_DOM_YOUR_FLAG_WAS_CAPTURED&quot; )" isCall="True">
+      <funcRefArg charIndex="11296" charLength="33" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="11334" charLength="47" codePart="precacheString( &amp;&quot;MP_DOM_ENEMY_FLAG_CAPTURED&quot; )" isCall="True">
+      <funcRefArg charIndex="11350" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="11385" charLength="49" codePart="precacheString( &amp;&quot;MP_DOM_NEUTRAL_FLAG_CAPTURED&quot; )" isCall="True">
+      <funcRefArg charIndex="11401" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="11440" charLength="46" codePart="precacheString( &amp;&quot;MP_ENEMY_FLAG_CAPTURED_BY&quot; )" isCall="True">
+      <funcRefArg charIndex="11456" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="11490" charLength="48" codePart="precacheString( &amp;&quot;MP_NEUTRAL_FLAG_CAPTURED_BY&quot; )" isCall="True">
+      <funcRefArg charIndex="11506" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="11542" charLength="49" codePart="precacheString( &amp;&quot;MP_FRIENDLY_FLAG_CAPTURED_BY&quot; )" isCall="True">
+      <funcRefArg charIndex="11558" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="11616" charLength="43" codePart="getEntArray( &quot;flag_primary&quot;, &quot;targetname&quot; )" isCall="True">
+      <funcRefArg charIndex="11629" charLength="14" />
+      <funcRefArg charIndex="11645" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="11680" charLength="45" codePart="getEntArray( &quot;flag_secondary&quot;, &quot;targetname&quot; )" isCall="True">
+      <funcRefArg charIndex="11693" charLength="16" />
+      <funcRefArg charIndex="11711" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="11792" charLength="58" codePart="printLn( &quot;^1Not enough domination flags found in level!&quot; )" isCall="True">
+      <funcRefArg charIndex="11801" charLength="48" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_callbacksetup" name="AbortLevel" charIndex="11855" charLength="46" codePart="maps\mp\gametypes\_callbacksetup::AbortLevel()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12298" charLength="27" codePart="isDefined( trigger.target )" isCall="True">
+      <funcRefArg charIndex="12309" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="12350" charLength="38" codePart="getEnt( trigger.target, &quot;targetname&quot; )" isCall="True">
+      <funcRefArg charIndex="12358" charLength="14" />
+      <funcRefArg charIndex="12374" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="12425" charLength="39" codePart="spawn( &quot;script_model&quot;, trigger.origin )" isCall="True">
+      <funcRefArg charIndex="12432" charLength="14" />
+      <funcRefArg charIndex="12448" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="12516" charLength="52" codePart="visuals[0] setModel( game[&quot;flagmodels&quot;][&quot;neutral&quot;] )" isCall="True">
+      <funcRefArg charIndex="12537" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="createUseObject" charIndex="12585" charLength="89" codePart="maps\mp\gametypes\_gameobjects::createUseObject( &quot;neutral&quot;, trigger, visuals, (0,0,100) )" isCall="True">
+      <funcRefArg charIndex="12634" charLength="9" />
+      <funcRefArg charIndex="12645" charLength="7" />
+      <funcRefArg charIndex="12654" charLength="7" />
+      <funcRefArg charIndex="12663" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="allowUse" charIndex="12679" charLength="59" codePart="domFlag maps\mp\gametypes\_gameobjects::allowUse( &quot;enemy&quot; )" isCall="True">
+      <funcRefArg charIndex="12729" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setUseTime" charIndex="12743" charLength="58" codePart="domFlag maps\mp\gametypes\_gameobjects::setUseTime( 10.0 )" isCall="True">
+      <funcRefArg charIndex="12795" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setUseText" charIndex="12806" charLength="74" codePart="domFlag maps\mp\gametypes\_gameobjects::setUseText( &amp;&quot;MP_CAPTURING_FLAG&quot; )" isCall="True">
+      <funcRefArg charIndex="12858" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="getLabel" charIndex="12893" charLength="50" codePart="domFlag maps\mp\gametypes\_gameobjects::getLabel()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set2DIcon" charIndex="12974" charLength="98" codePart="domFlag maps\mp\gametypes\_gameobjects::set2DIcon( &quot;friendly&quot;, &quot;compass_waypoint_defend&quot; + label )" isCall="True">
+      <funcRefArg charIndex="13025" charLength="10" />
+      <funcRefArg charIndex="13037" charLength="34" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set3DIcon" charIndex="13077" charLength="90" codePart="domFlag maps\mp\gametypes\_gameobjects::set3DIcon( &quot;friendly&quot;, &quot;waypoint_defend&quot; + label )" isCall="True">
+      <funcRefArg charIndex="13128" charLength="10" />
+      <funcRefArg charIndex="13140" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set2DIcon" charIndex="13172" charLength="103" codePart="domFlag maps\mp\gametypes\_gameobjects::set2DIcon( &quot;enemy&quot;, &quot;compass_waypoint_captureneutral&quot; + label )" isCall="True">
+      <funcRefArg charIndex="13223" charLength="7" />
+      <funcRefArg charIndex="13232" charLength="42" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set3DIcon" charIndex="13280" charLength="95" codePart="domFlag maps\mp\gametypes\_gameobjects::set3DIcon( &quot;enemy&quot;, &quot;waypoint_captureneutral&quot; + label )" isCall="True">
+      <funcRefArg charIndex="13331" charLength="7" />
+      <funcRefArg charIndex="13340" charLength="34" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setVisibleTeam" charIndex="13380" charLength="63" codePart="domFlag maps\mp\gametypes\_gameobjects::setVisibleTeam( &quot;any&quot; )" isCall="True">
+      <funcRefArg charIndex="13436" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="onUse" charIndex="13464" charLength="7" codePart="::onUse" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\dom" name="onBeginUse" charIndex="13497" charLength="12" codePart="::onBeginUse" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\dom" name="onUseUpdate" charIndex="13536" charLength="13" codePart="::onUseUpdate" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\dom" name="onEndUse" charIndex="13573" charLength="10" codePart="::onEndUse" isCall="False" />
+    <funcRef sfPath="codapi" name="BulletTrace" charIndex="13695" charLength="53" codePart="bulletTrace( traceStart, traceEnd, false, undefined )" isCall="True">
+      <funcRefArg charIndex="13708" charLength="10" />
+      <funcRefArg charIndex="13720" charLength="8" />
+      <funcRefArg charIndex="13730" charLength="5" />
+      <funcRefArg charIndex="13737" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorToAngles" charIndex="13767" charLength="33" codePart="vectorToAngles( trace[&quot;normal&quot;] )" isCall="True">
+      <funcRefArg charIndex="13783" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToForward" charIndex="13833" charLength="27" codePart="anglesToForward( upangles )" isCall="True">
+      <funcRefArg charIndex="13850" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToRight" charIndex="13891" charLength="25" codePart="anglesToRight( upangles )" isCall="True">
+      <funcRefArg charIndex="13906" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="getUnownedFlagNearestStart" charIndex="14590" charLength="49" codePart="getUnownedFlagNearestStart( &quot;allies&quot;, undefined )" isCall="True">
+      <funcRefArg charIndex="14618" charLength="8" />
+      <funcRefArg charIndex="14628" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="getUnownedFlagNearestStart" charIndex="14675" charLength="69" codePart="getUnownedFlagNearestStart( &quot;axis&quot;, level.bestSpawnFlag[ &quot;allies&quot; ] )" isCall="True">
+      <funcRefArg charIndex="14703" charLength="6" />
+      <funcRefArg charIndex="14711" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="flagSetup" charIndex="14751" charLength="11" codePart="flagSetup()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\dom" name="domDebug" charIndex="14834" charLength="17" codePart="thread domDebug()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\dom" name="getFlagTeam" charIndex="15046" charLength="18" codePart="flag getFlagTeam()" isCall="True" />
+    <funcRef sfPath="codapi" name="DistanceSquared" charIndex="15110" charLength="52" codePart="distanceSquared( flag.origin, level.startPos[team] )" isCall="True">
+      <funcRefArg charIndex="15127" charLength="11" />
+      <funcRefArg charIndex="15140" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="15174" charLength="24" codePart="isDefined( excludeFlag )" isCall="True">
+      <funcRefArg charIndex="15185" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="15228" charLength="17" codePart="isdefined( best )" isCall="True">
+      <funcRefArg charIndex="15239" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="15389" charLength="23" codePart="getdvar(&quot;scr_domdebug&quot;)" isCall="True">
+      <funcRefArg charIndex="15397" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="15483" charLength="23" codePart="getdvar(&quot;scr_domdebug&quot;)" isCall="True">
+      <funcRefArg charIndex="15491" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="15693" charLength="71" codePart="line(level.flags[i].origin, level.flags[i].adjflags[j].origin, (1,1,1))" isCall="True">
+      <funcRefArg charIndex="15698" charLength="21" />
+      <funcRefArg charIndex="15721" charLength="33" />
+      <funcRefArg charIndex="15756" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="15847" charLength="78" codePart="line(level.flags[i].origin, level.flags[i].nearbyspawns[j].origin, (.2,.2,.6))" isCall="True">
+      <funcRefArg charIndex="15852" charLength="21" />
+      <funcRefArg charIndex="15875" charLength="37" />
+      <funcRefArg charIndex="15914" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="16006" charLength="58" codePart="print3d( level.flags[i].origin, &quot;allies best spawn flag&quot; )" isCall="True">
+      <funcRefArg charIndex="16015" charLength="21" />
+      <funcRefArg charIndex="16038" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="16130" charLength="56" codePart="print3d( level.flags[i].origin, &quot;axis best spawn flag&quot; )" isCall="True">
+      <funcRefArg charIndex="16139" charLength="21" />
+      <funcRefArg charIndex="16162" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="getOwnerTeam" charIndex="16265" charLength="51" codePart="self maps\mp\gametypes\_gameobjects::getOwnerTeam()" isCall="True" />
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="16320" charLength="84" codePart="setDvar( &quot;scr_obj&quot; + self maps\mp\gametypes\_gameobjects::getLabel() + &quot;_flash&quot;, 1 )" isCall="True">
+      <funcRefArg charIndex="16329" charLength="70" />
+      <funcRefArg charIndex="16401" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="getLabel" charIndex="16341" charLength="47" codePart="self maps\mp\gametypes\_gameobjects::getLabel()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\dom" name="statusDialog" charIndex="16480" charLength="58" codePart="statusDialog( &quot;securing&quot;+self.label, player.pers[&quot;team&quot;] )" isCall="True">
+      <funcRefArg charIndex="16494" charLength="21" />
+      <funcRefArg charIndex="16517" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_objpoints" name="startFlashing" charIndex="16543" charLength="88" codePart="self.objPoints[player.pers[&quot;team&quot;]] thread maps\mp\gametypes\_objpoints::startFlashing()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_objpoints" name="startFlashing" charIndex="16742" charLength="77" codePart="self.objPoints[&quot;allies&quot;] thread maps\mp\gametypes\_objpoints::startFlashing()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_objpoints" name="startFlashing" charIndex="16823" charLength="75" codePart="self.objPoints[&quot;axis&quot;] thread maps\mp\gametypes\_objpoints::startFlashing()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="getOwnerTeam" charIndex="17028" charLength="51" codePart="self maps\mp\gametypes\_gameobjects::getOwnerTeam()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\dom" name="statusDialog" charIndex="17123" charLength="43" codePart="statusDialog( &quot;securing&quot;+self.label, team )" isCall="True">
+      <funcRefArg charIndex="17137" charLength="21" />
+      <funcRefArg charIndex="17160" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="statusDialog" charIndex="17190" charLength="46" codePart="statusDialog( &quot;losing&quot;+self.label, ownerTeam )" isCall="True">
+      <funcRefArg charIndex="17204" charLength="19" />
+      <funcRefArg charIndex="17225" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="statusDialog" charIndex="17242" charLength="43" codePart="statusDialog( &quot;securing&quot;+self.label, team )" isCall="True">
+      <funcRefArg charIndex="17256" charLength="21" />
+      <funcRefArg charIndex="17279" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="17379" charLength="9" codePart="getTime()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetTime" charIndex="17397" charLength="9" codePart="getTime()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\dom" name="delayedLeaderDialog" charIndex="17458" charLength="42" codePart="thread delayedLeaderDialog( dialog, team )" isCall="True">
+      <funcRefArg charIndex="17486" charLength="6" />
+      <funcRefArg charIndex="17494" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="17529" charLength="9" codePart="getTime()" isCall="True" />
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="17588" charLength="84" codePart="setDvar( &quot;scr_obj&quot; + self maps\mp\gametypes\_gameobjects::getLabel() + &quot;_flash&quot;, 0 )" isCall="True">
+      <funcRefArg charIndex="17597" charLength="70" />
+      <funcRefArg charIndex="17669" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="getLabel" charIndex="17609" charLength="47" codePart="self maps\mp\gametypes\_gameobjects::getLabel()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_objpoints" name="stopFlashing" charIndex="17678" charLength="76" codePart="self.objPoints[&quot;allies&quot;] thread maps\mp\gametypes\_objpoints::stopFlashing()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_objpoints" name="stopFlashing" charIndex="17758" charLength="74" codePart="self.objPoints[&quot;axis&quot;] thread maps\mp\gametypes\_objpoints::stopFlashing()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17874" charLength="28" codePart="isdefined( self.baseeffect )" isCall="True">
+      <funcRefArg charIndex="17885" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="17908" charLength="24" codePart="self.baseeffect delete()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="getOwnerTeam" charIndex="17946" charLength="51" codePart="self maps\mp\gametypes\_gameobjects::getOwnerTeam()" isCall="True" />
+    <funcRef sfPath="codapi" name="SpawnFx" charIndex="18119" charLength="81" codePart="spawnFx( fxid, self.baseeffectpos, self.baseeffectforward, self.baseeffectright )" isCall="True">
+      <funcRefArg charIndex="18128" charLength="4" />
+      <funcRefArg charIndex="18134" charLength="18" />
+      <funcRefArg charIndex="18154" charLength="22" />
+      <funcRefArg charIndex="18178" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="TriggerFX" charIndex="18204" charLength="28" codePart="triggerFx( self.baseeffect )" isCall="True">
+      <funcRefArg charIndex="18215" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="getOwnerTeam" charIndex="18301" charLength="51" codePart="self maps\mp\gametypes\_gameobjects::getOwnerTeam()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="getLabel" charIndex="18364" charLength="47" codePart="self maps\mp\gametypes\_gameobjects::getLabel()" isCall="True" />
+    <funcRef sfPath="codapi" name="LogString" charIndex="18418" charLength="50" codePart="player logString( &quot;flag captured: &quot; + self.label )" isCall="True">
+      <funcRefArg charIndex="18436" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setOwnerTeam" charIndex="18475" charLength="57" codePart="self maps\mp\gametypes\_gameobjects::setOwnerTeam( team )" isCall="True">
+      <funcRefArg charIndex="18526" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set2DIcon" charIndex="18536" charLength="93" codePart="self maps\mp\gametypes\_gameobjects::set2DIcon( &quot;enemy&quot;, &quot;compass_waypoint_capture&quot; + label )" isCall="True">
+      <funcRefArg charIndex="18584" charLength="7" />
+      <funcRefArg charIndex="18593" charLength="35" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set3DIcon" charIndex="18633" charLength="85" codePart="self maps\mp\gametypes\_gameobjects::set3DIcon( &quot;enemy&quot;, &quot;waypoint_capture&quot; + label )" isCall="True">
+      <funcRefArg charIndex="18681" charLength="7" />
+      <funcRefArg charIndex="18690" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="18722" charLength="52" codePart="self.visuals[0] setModel( game[&quot;flagmodels&quot;][team] )" isCall="True">
+      <funcRefArg charIndex="18748" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="18778" charLength="76" codePart="setDvar( &quot;scr_obj&quot; + self maps\mp\gametypes\_gameobjects::getLabel(), team )" isCall="True">
+      <funcRefArg charIndex="18787" charLength="59" />
+      <funcRefArg charIndex="18848" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="getLabel" charIndex="18799" charLength="47" codePart="self maps\mp\gametypes\_gameobjects::getLabel()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\dom" name="resetFlagBaseEffect" charIndex="18862" charLength="26" codePart="self resetFlagBaseEffect()" isCall="True" />
+    <funcRef sfPath="codapidev" name="Assert" charIndex="18930" charLength="27" codePart="assert( team != &quot;neutral&quot; )" isCall="True">
+      <funcRefArg charIndex="18938" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="getOtherTeam" charIndex="19011" charLength="20" codePart="getOtherTeam( team )" isCall="True">
+      <funcRefArg charIndex="19025" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="printAndSoundOnEveryone" charIndex="19036" charLength="158" codePart="thread printAndSoundOnEveryone( team, otherTeam, &amp;&quot;MP_NEUTRAL_FLAG_CAPTURED_BY&quot;, &amp;&quot;MP_NEUTRAL_FLAG_CAPTURED_BY&quot;, &quot;mp_war_objective_taken&quot;, undefined, player )" isCall="True">
+      <funcRefArg charIndex="19068" charLength="4" />
+      <funcRefArg charIndex="19074" charLength="9" />
+      <funcRefArg charIndex="19085" charLength="30" />
+      <funcRefArg charIndex="19117" charLength="30" />
+      <funcRefArg charIndex="19149" charLength="24" />
+      <funcRefArg charIndex="19175" charLength="9" />
+      <funcRefArg charIndex="19186" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="statusDialog" charIndex="19203" charLength="42" codePart="statusDialog( &quot;secured&quot;+self.label, team )" isCall="True">
+      <funcRefArg charIndex="19217" charLength="20" />
+      <funcRefArg charIndex="19239" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="statusDialog" charIndex="19250" charLength="49" codePart="statusDialog( &quot;enemy_has&quot;+self.label, otherTeam )" isCall="True">
+      <funcRefArg charIndex="19264" charLength="22" />
+      <funcRefArg charIndex="19288" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="printAndSoundOnEveryone" charIndex="19319" charLength="169" codePart="thread printAndSoundOnEveryone( team, oldTeam, &amp;&quot;MP_ENEMY_FLAG_CAPTURED_BY&quot;, &amp;&quot;MP_FRIENDLY_FLAG_CAPTURED_BY&quot;, &quot;mp_war_objective_taken&quot;, &quot;mp_war_objective_lost&quot;, player )" isCall="True">
+      <funcRefArg charIndex="19351" charLength="4" />
+      <funcRefArg charIndex="19357" charLength="7" />
+      <funcRefArg charIndex="19366" charLength="28" />
+      <funcRefArg charIndex="19396" charLength="31" />
+      <funcRefArg charIndex="19429" charLength="24" />
+      <funcRefArg charIndex="19455" charLength="23" />
+      <funcRefArg charIndex="19480" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="getTeamFlagCount" charIndex="19588" charLength="24" codePart="getTeamFlagCount( team )" isCall="True">
+      <funcRefArg charIndex="19606" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="statusDialog" charIndex="19644" charLength="34" codePart="statusDialog( &quot;secure_all&quot;, team )" isCall="True">
+      <funcRefArg charIndex="19658" charLength="12" />
+      <funcRefArg charIndex="19672" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="statusDialog" charIndex="19684" charLength="35" codePart="statusDialog( &quot;lost_all&quot;, oldTeam )" isCall="True">
+      <funcRefArg charIndex="19698" charLength="10" />
+      <funcRefArg charIndex="19710" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="statusDialog" charIndex="19744" charLength="42" codePart="statusDialog( &quot;secured&quot;+self.label, team )" isCall="True">
+      <funcRefArg charIndex="19758" charLength="20" />
+      <funcRefArg charIndex="19780" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="statusDialog" charIndex="19792" charLength="42" codePart="statusDialog( &quot;lost&quot;+self.label, oldTeam )" isCall="True">
+      <funcRefArg charIndex="19806" charLength="17" />
+      <funcRefArg charIndex="19825" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="giveFlagCaptureXP" charIndex="19905" charLength="48" codePart="thread giveFlagCaptureXP( self.touchList[team] )" isCall="True">
+      <funcRefArg charIndex="19931" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="WaitTillSlowProcessAllowed" charIndex="20009" charLength="60" codePart="maps\mp\gametypes\_globallogic::WaitTillSlowProcessAllowed()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetArrayKeys" charIndex="20086" charLength="25" codePart="getArrayKeys( touchList )" isCall="True">
+      <funcRefArg charIndex="20100" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="givePlayerScore" charIndex="20248" charLength="94" codePart="maps\mp\gametypes\_globallogic::givePlayerScore( &quot;capture&quot;, touchList[players[index]].player )" isCall="True">
+      <funcRefArg charIndex="20297" charLength="9" />
+      <funcRefArg charIndex="20308" charLength="33" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="WaitTillSlowProcessAllowed" charIndex="20405" charLength="60" codePart="maps\mp\gametypes\_globallogic::WaitTillSlowProcessAllowed()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="leaderDialog" charIndex="20472" charLength="59" codePart="maps\mp\gametypes\_globallogic::leaderDialog( sound, team )" isCall="True">
+      <funcRefArg charIndex="20518" charLength="5" />
+      <funcRefArg charIndex="20525" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="WaitTillSlowProcessAllowed" charIndex="20614" charLength="60" codePart="maps\mp\gametypes\_globallogic::WaitTillSlowProcessAllowed()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="leaderDialogBothTeams" charIndex="20681" charLength="85" codePart="maps\mp\gametypes\_globallogic::leaderDialogBothTeams( sound1, team1, sound2, team2 )" isCall="True">
+      <funcRefArg charIndex="20736" charLength="6" />
+      <funcRefArg charIndex="20744" charLength="5" />
+      <funcRefArg charIndex="20751" charLength="6" />
+      <funcRefArg charIndex="20759" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="getTeamFlagCount" charIndex="20968" charLength="28" codePart="getTeamFlagCount( &quot;allies&quot; )" isCall="True">
+      <funcRefArg charIndex="20986" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="getTeamFlagCount" charIndex="21122" charLength="26" codePart="getTeamFlagCount( &quot;axis&quot; )" isCall="True">
+      <funcRefArg charIndex="21140" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="checkScoreLimit" charIndex="21296" charLength="49" codePart="maps\mp\gametypes\_globallogic::checkScoreLimit()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsPlayer" charIndex="21571" charLength="20" codePart="isPlayer( attacker )" isCall="True">
+      <funcRefArg charIndex="21581" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetArrayKeys" charIndex="21660" charLength="34" codePart="getArrayKeys( self.touchTriggers )" isCall="True">
+      <funcRefArg charIndex="21674" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="givePlayerScore" charIndex="21887" charLength="70" codePart="maps\mp\gametypes\_globallogic::givePlayerScore( &quot;assault&quot;, attacker )" isCall="True">
+      <funcRefArg charIndex="21936" charLength="9" />
+      <funcRefArg charIndex="21947" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="givePlayerScore" charIndex="22034" charLength="69" codePart="maps\mp\gametypes\_globallogic::givePlayerScore( &quot;defend&quot;, attacker )" isCall="True">
+      <funcRefArg charIndex="22083" charLength="8" />
+      <funcRefArg charIndex="22093" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="getOwnerTeam" charIndex="22219" charLength="64" codePart="level.domFlags[i] maps\mp\gametypes\_gameobjects::getOwnerTeam()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="getOwnerTeam" charIndex="22360" charLength="58" codePart="self.useObj maps\mp\gametypes\_gameobjects::getOwnerTeam()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="getOwnerTeam" charIndex="22657" charLength="68" codePart="level.flags[i].useObj maps\mp\gametypes\_gameobjects::getOwnerTeam()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="getOwnerTeam" charIndex="22729" charLength="80" codePart="level.flags[i].adjflags[j].useObj maps\mp\gametypes\_gameobjects::getOwnerTeam()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\dom" name="getBoundaryFlags" charIndex="22974" charLength="18" codePart="getBoundaryFlags()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="23041" charLength="15" codePart="isdefined(team)" isCall="True">
+      <funcRefArg charIndex="23051" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\dom" name="getFlagTeam" charIndex="23060" charLength="23" codePart="bflags[i] getFlagTeam()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\dom" name="getFlagTeam" charIndex="24015" charLength="28" codePart="level.flags[i] getFlagTeam()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\dom" name="getFlagTeam" charIndex="24299" charLength="40" codePart="level.flags[i].adjflags[j] getFlagTeam()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\dom" name="getFlagTeam" charIndex="24768" charLength="28" codePart="level.flags[i] getFlagTeam()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="25119" charLength="44" codePart="getentarray(&quot;flag_descriptor&quot;, &quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="25131" charLength="17" />
+      <funcRefArg charIndex="25150" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="25356" charLength="48" codePart="distance(flags[i].origin, descriptors[j].origin)" isCall="True">
+      <funcRefArg charIndex="25365" charLength="15" />
+      <funcRefArg charIndex="25382" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="25415" charLength="22" codePart="isdefined(closestdist)" isCall="True">
+      <funcRefArg charIndex="25425" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="25546" charLength="22" codePart="isdefined(closestdesc)" isCall="True">
+      <funcRefArg charIndex="25556" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="25697" charLength="27" codePart="isdefined(closestdesc.flag)" isCall="True">
+      <funcRefArg charIndex="25707" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="26186" charLength="44" codePart="isdefined(flags[i].descriptor.script_linkto)" isCall="True">
+      <funcRefArg charIndex="26196" charLength="33" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="StrTok" charIndex="26248" charLength="46" codePart="strtok(flags[i].descriptor.script_linkto, &quot; &quot;)" isCall="True">
+      <funcRefArg charIndex="26255" charLength="33" />
+      <funcRefArg charIndex="26290" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="26434" charLength="20" codePart="isdefined(otherdesc)" isCall="True">
+      <funcRefArg charIndex="26444" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="27213" charLength="40" codePart="getentarray(&quot;mp_dom_spawn&quot;, &quot;classname&quot;)" isCall="True">
+      <funcRefArg charIndex="27225" charLength="14" />
+      <funcRefArg charIndex="27241" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="27307" charLength="39" codePart="isdefined(spawnpoints[i].script_linkto)" isCall="True">
+      <funcRefArg charIndex="27317" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="27423" charLength="15" codePart="isdefined(desc)" isCall="True">
+      <funcRefArg charIndex="27433" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="DistanceSquared" charIndex="27957" charLength="55" codePart="distancesquared(flags[j].origin, spawnpoints[i].origin)" isCall="True">
+      <funcRefArg charIndex="27973" charLength="15" />
+      <funcRefArg charIndex="27990" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="28024" charLength="22" codePart="isdefined(nearestflag)" isCall="True">
+      <funcRefArg charIndex="28034" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="28268" charLength="49" codePart="println(&quot;^1------------ Map Errors ------------&quot;)" isCall="True">
+      <funcRefArg charIndex="28276" charLength="40" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="28362" charLength="21" codePart="println(maperrors[i])" isCall="True">
+      <funcRefArg charIndex="28370" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="28388" charLength="49" codePart="println(&quot;^1------------------------------------&quot;)" isCall="True">
+      <funcRefArg charIndex="28396" charLength="40" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="error" charIndex="28446" charLength="48" codePart="maps\mp\_utility::error(&quot;Map errors. See above&quot;)" isCall="True">
+      <funcRefArg charIndex="28470" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_callbacksetup" name="AbortLevel" charIndex="28499" charLength="46" codePart="maps\mp\gametypes\_callbacksetup::AbortLevel()" isCall="True" />
+    <error type="warning" charIndex="9668" charLength="36" lineIndex="244">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\dom::getUnownedFlagNearestStart'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\dom::getUnownedFlagNearestStart', file 'maps\mp\gametypes\dom', line 245, 'bestFlag = getUnownedFlagNearestStart( myTeam );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="17372" charLength="4" lineIndex="499">
+      <message>Variable 'time' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'time' is defined, but its value is never used., file 'maps\mp\gametypes\dom', line 500, 'time = getTime();'</fullMessage>
+    </error>
+    <error type="warning" charIndex="17559" charLength="4" lineIndex="508">
+      <message>Variable 'team' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'team' is defined, but its value is never used., file 'maps\mp\gametypes\dom', line 509, 'onEndUse( team, player, success )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="17565" charLength="6" lineIndex="508">
+      <message>Variable 'player' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'player' is defined, but its value is never used., file 'maps\mp\gametypes\dom', line 509, 'onEndUse( team, player, success )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="17573" charLength="7" lineIndex="508">
+      <message>Variable 'success' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'success' is defined, but its value is never used., file 'maps\mp\gametypes\dom', line 509, 'onEndUse( team, player, success )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="20248" charLength="94" lineIndex="593">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::givePlayerScore'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::givePlayerScore', file 'maps\mp\gametypes\dom', line 594, 'maps\mp\gametypes\_globallogic::givePlayerScore( "capture", touchList[players[index]].player );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="20472" charLength="59" lineIndex="602">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::leaderDialog'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::leaderDialog', file 'maps\mp\gametypes\dom', line 603, 'maps\mp\gametypes\_globallogic::leaderDialog( sound, team );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="20681" charLength="85" lineIndex="609">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::leaderDialogBothTeams'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::leaderDialogBothTeams', file 'maps\mp\gametypes\dom', line 610, 'maps\mp\gametypes\_globallogic::leaderDialogBothTeams( sound1, team1, sound2, team2 );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="21887" charLength="70" lineIndex="648">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::givePlayerScore'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::givePlayerScore', file 'maps\mp\gametypes\dom', line 649, 'maps\mp\gametypes\_globallogic::givePlayerScore( "assault", attacker );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="22034" charLength="69" lineIndex="653">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::givePlayerScore'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::givePlayerScore', file 'maps\mp\gametypes\dom', line 654, 'maps\mp\gametypes\_globallogic::givePlayerScore( "defend", attacker );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="21430" charLength="10" lineIndex="637">
+      <message>Variable 'eInflictor' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'eInflictor' is defined, but its value is never used., file 'maps\mp\gametypes\dom', line 638, 'onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHitLoc, psOffsetTime, deathAnimDuration )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="21452" charLength="7" lineIndex="637">
+      <message>Variable 'iDamage' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'iDamage' is defined, but its value is never used., file 'maps\mp\gametypes\dom', line 638, 'onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHitLoc, psOffsetTime, deathAnimDuration )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="21461" charLength="13" lineIndex="637">
+      <message>Variable 'sMeansOfDeath' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'sMeansOfDeath' is defined, but its value is never used., file 'maps\mp\gametypes\dom', line 638, 'onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHitLoc, psOffsetTime, deathAnimDuration )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="21476" charLength="7" lineIndex="637">
+      <message>Variable 'sWeapon' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'sWeapon' is defined, but its value is never used., file 'maps\mp\gametypes\dom', line 638, 'onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHitLoc, psOffsetTime, deathAnimDuration )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="21485" charLength="4" lineIndex="637">
+      <message>Variable 'vDir' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'vDir' is defined, but its value is never used., file 'maps\mp\gametypes\dom', line 638, 'onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHitLoc, psOffsetTime, deathAnimDuration )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="21491" charLength="7" lineIndex="637">
+      <message>Variable 'sHitLoc' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'sHitLoc' is defined, but its value is never used., file 'maps\mp\gametypes\dom', line 638, 'onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHitLoc, psOffsetTime, deathAnimDuration )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="21500" charLength="12" lineIndex="637">
+      <message>Variable 'psOffsetTime' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'psOffsetTime' is defined, but its value is never used., file 'maps\mp\gametypes\dom', line 638, 'onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHitLoc, psOffsetTime, deathAnimDuration )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="21514" charLength="17" lineIndex="637">
+      <message>Variable 'deathAnimDuration' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'deathAnimDuration' is defined, but its value is never used., file 'maps\mp\gametypes\dom', line 638, 'onPlayerKilled( eInflictor, attacker, iDamage, sMeansOfDeath, sWeapon, vDir, sHitLoc, psOffsetTime, deathAnimDuration )'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

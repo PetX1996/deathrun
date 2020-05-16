@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_usmc_james_nod</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="35" codePart="self setModel(&quot;body_sp_usmc_james&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="97" charLength="58" codePart="self attach(&quot;head_sp_usmc_james_james_body_nod&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="109" charLength="35" />
+      <funcRefArg charIndex="146" charLength="2" />
+      <funcRefArg charIndex="150" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="206" charLength="35" codePart="precacheModel(&quot;body_sp_usmc_james&quot;)" isCall="True">
+      <funcRefArg charIndex="220" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="245" charLength="50" codePart="precacheModel(&quot;head_sp_usmc_james_james_body_nod&quot;)" isCall="True">
+      <funcRefArg charIndex="259" charLength="35" />
+    </funcRef>
+  </content>
+</scriptinfo>

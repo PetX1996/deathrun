@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_killcam</name>
+  </settings>
+  <content>
+    <include>maps\mp\gametypes\_hud_util</include>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="killcam" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="killcamstart">
+      </param>
+      <param name="attackerNum">
+      </param>
+      <param name="killcamentity">
+      </param>
+      <param name="sWeapon">
+      </param>
+      <param name="predelay">
+      </param>
+      <param name="offsetTime">
+      </param>
+      <param name="respawn">
+      </param>
+      <param name="maxtime">
+      </param>
+      <param name="perks">
+      </param>
+      <param name="attacker">
+      </param>
+    </func>
+    <func name="waitKillcamTime" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="waitSkipKillcamButton" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="endKillcam" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="spawnedKillcamCleanup" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="spectatorKillcamCleanup" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="attacker">
+      </param>
+    </func>
+    <func name="endedKillcamCleanup" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="roundwinningkill" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="attackerNum">
+      </param>
+      <param name="killcamentity">
+      </param>
+      <param name="sWeapon">
+      </param>
+      <param name="perks">
+      </param>
+      <param name="attacker">
+      </param>
+      <param name="victim">
+      </param>
+    </func>
+  </content>
+</scriptinfo>

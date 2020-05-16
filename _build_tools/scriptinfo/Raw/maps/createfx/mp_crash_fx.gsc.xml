@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createfx\mp_crash_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="95" charLength="66" codePart="maps\mp\_utility::createOneshotEffect( &quot;battlefield_smokebank_S&quot; )" isCall="True">
+      <funcRefArg charIndex="134" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="362" charLength="66" codePart="maps\mp\_utility::createOneshotEffect( &quot;battlefield_smokebank_S&quot; )" isCall="True">
+      <funcRefArg charIndex="401" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="629" charLength="59" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_spiral&quot; )" isCall="True">
+      <funcRefArg charIndex="668" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="882" charLength="59" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_spiral&quot; )" isCall="True">
+      <funcRefArg charIndex="921" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="1134" charLength="59" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_spiral&quot; )" isCall="True">
+      <funcRefArg charIndex="1173" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="1386" charLength="59" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_spiral&quot; )" isCall="True">
+      <funcRefArg charIndex="1425" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="1640" charLength="57" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_fast&quot; )" isCall="True">
+      <funcRefArg charIndex="1679" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="1904" charLength="57" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_fast&quot; )" isCall="True">
+      <funcRefArg charIndex="1943" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="2162" charLength="57" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_fast&quot; )" isCall="True">
+      <funcRefArg charIndex="2201" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="2425" charLength="57" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_slow&quot; )" isCall="True">
+      <funcRefArg charIndex="2464" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="2686" charLength="57" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_slow&quot; )" isCall="True">
+      <funcRefArg charIndex="2725" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="2947" charLength="59" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_spiral&quot; )" isCall="True">
+      <funcRefArg charIndex="2986" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="3201" charLength="57" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_slow&quot; )" isCall="True">
+      <funcRefArg charIndex="3240" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="3463" charLength="57" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_slow&quot; )" isCall="True">
+      <funcRefArg charIndex="3502" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="3725" charLength="58" codePart="maps\mp\_utility::createOneshotEffect( &quot;firelp_small_pm&quot; )" isCall="True">
+      <funcRefArg charIndex="3764" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="3974" charLength="60" codePart="maps\mp\_utility::createOneshotEffect( &quot;firelp_small_pm_a&quot; )" isCall="True">
+      <funcRefArg charIndex="4013" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="4229" charLength="60" codePart="maps\mp\_utility::createOneshotEffect( &quot;firelp_small_pm_a&quot; )" isCall="True">
+      <funcRefArg charIndex="4268" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="4484" charLength="58" codePart="maps\mp\_utility::createOneshotEffect( &quot;firelp_small_pm&quot; )" isCall="True">
+      <funcRefArg charIndex="4523" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="4735" charLength="60" codePart="maps\mp\_utility::createOneshotEffect( &quot;firelp_small_pm_a&quot; )" isCall="True">
+      <funcRefArg charIndex="4774" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="4989" charLength="58" codePart="maps\mp\_utility::createOneshotEffect( &quot;firelp_small_pm&quot; )" isCall="True">
+      <funcRefArg charIndex="5028" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="5240" charLength="59" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_spiral&quot; )" isCall="True">
+      <funcRefArg charIndex="5279" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="5495" charLength="59" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_spiral&quot; )" isCall="True">
+      <funcRefArg charIndex="5534" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="5750" charLength="59" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_spiral&quot; )" isCall="True">
+      <funcRefArg charIndex="5789" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="6004" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="6043" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="6267" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="6306" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="6530" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="6569" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="6793" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="6832" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="7055" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="7094" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="7317" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="7356" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="7578" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="7617" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="7853" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="7892" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="8128" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="8167" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="8389" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="8428" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="8649" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="8688" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="8909" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="8948" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="9171" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="9210" charLength="22" />
+    </funcRef>
+  </content>
+</scriptinfo>

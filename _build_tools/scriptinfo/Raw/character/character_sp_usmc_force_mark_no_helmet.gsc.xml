@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_usmc_force_mark_no_helmet</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="45" codePart="self setModel(&quot;sp_usmc_force_mark_no_helmet&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="153" charLength="45" codePart="precacheModel(&quot;sp_usmc_force_mark_no_helmet&quot;)" isCall="True">
+      <funcRefArg charIndex="167" charLength="30" />
+    </funcRef>
+  </content>
+</scriptinfo>

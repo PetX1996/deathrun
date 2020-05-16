@@ -1,0 +1,2134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_createfx</name>
+  </settings>
+  <content>
+    <include>common_scripts\utility</include>
+    <include>maps\mp\_utility</include>
+    <include>maps\mp\_createfxMenu</include>
+    <func name="createfx" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="fx_init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="add_effect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="name">
+      </param>
+      <param name="effect">
+      </param>
+    </func>
+    <func name="createEffect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="type">
+      </param>
+      <param name="fxid">
+      </param>
+    </func>
+    <func name="createLoopSound" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="createNewExploder" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="set_forward_and_up_vectors" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="createFxLogic" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="toggle_createfx_drawing" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="manipulate_createfx_ents" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="highlightedEnt">
+      </param>
+      <param name="leftClick">
+      </param>
+      <param name="leftHeld">
+      </param>
+      <param name="ctrlHeld">
+      </param>
+      <param name="colors">
+      </param>
+      <param name="right">
+      </param>
+    </func>
+    <func name="clear_settable_fx" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="reset_fx_hud_colors" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="button_is_held" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="name">
+      </param>
+      <param name="name2">
+      </param>
+    </func>
+    <func name="button_is_clicked" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="name">
+      </param>
+      <param name="name2">
+      </param>
+    </func>
+    <func name="toggle_entity_selection" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="index">
+      </param>
+      <param name="ent">
+      </param>
+    </func>
+    <func name="select_entity" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="index">
+      </param>
+      <param name="ent">
+      </param>
+    </func>
+    <func name="ent_is_highlighted" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ent">
+      </param>
+    </func>
+    <func name="deselect_entity" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="index">
+      </param>
+      <param name="ent">
+      </param>
+    </func>
+    <func name="index_is_selected" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="index">
+      </param>
+    </func>
+    <func name="ent_is_selected" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ent">
+      </param>
+    </func>
+    <func name="clear_entity_selection" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="draw_axis" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="clear_fx_hudElements" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="set_fx_hudElement" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="text">
+      </param>
+    </func>
+    <func name="createfx_centerprint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="text">
+      </param>
+    </func>
+    <func name="createfx_centerprint_thread" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="text">
+      </param>
+    </func>
+    <func name="buttonDown" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="button">
+      </param>
+      <param name="button2">
+      </param>
+    </func>
+    <func name="buttonPressed_internal" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="button">
+      </param>
+    </func>
+    <func name="get_selected_move_vector" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="process_button_held_and_clicked" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="locked" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="name">
+      </param>
+    </func>
+    <func name="kb_locked" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="name">
+      </param>
+    </func>
+    <func name="add_button" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="name">
+      </param>
+    </func>
+    <func name="add_kb_button" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="name">
+      </param>
+    </func>
+    <func name="set_anglemod_move_vector" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="cfxprintln" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="file">
+      </param>
+      <param name="string">
+      </param>
+    </func>
+    <func name="generate_fx_log" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="autosave">
+      </param>
+    </func>
+    <func name="print_fx_options" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ent">
+      </param>
+      <param name="tab">
+      </param>
+      <param name="file">
+      </param>
+      <param name="autosave">
+      </param>
+    </func>
+    <func name="entity_highlight_disable" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="entity_highlight_enable" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="get_center_of_array" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="array">
+      </param>
+    </func>
+    <func name="ent_draw_axis" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="rotation_is_occuring" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="process_fx_rotater" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="rotate_over_time" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="org">
+      </param>
+      <param name="rotater">
+      </param>
+    </func>
+    <func name="delete_pressed" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="remove_selected_option" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="remove_option" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="name">
+      </param>
+    </func>
+    <func name="delete_selection" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="move_selection_to_cursor" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="insert_effect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="show_help" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="select_last_entity" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="copy_ents" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="post_entity_creation_function" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="paste_ents" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="add_and_select_entity" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ent">
+      </param>
+    </func>
+    <func name="update_fx_looper" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="update">
+      </param>
+    </func>
+    <func name="update_selected_entities" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="copy_angles_of_selected_ents" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="reset_axis_of_selected_ents" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="last_selected_entity_has_changed" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="lastSelectEntity">
+      </param>
+    </func>
+    <func name="createfx_showOrigin" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="id">
+      </param>
+      <param name="org">
+      </param>
+      <param name="delay">
+      </param>
+      <param name="org2">
+      </param>
+      <param name="type">
+      </param>
+      <param name="exploder">
+      </param>
+      <param name="id2">
+      </param>
+      <param name="fireFx">
+      </param>
+      <param name="fireFxDelay">
+      </param>
+      <param name="fireFxSound">
+      </param>
+      <param name="fxSound">
+      </param>
+      <param name="fxQuake">
+      </param>
+      <param name="fxDamage">
+      </param>
+      <param name="soundalias">
+      </param>
+      <param name="repeat">
+      </param>
+      <param name="delay_min">
+      </param>
+      <param name="delay_max">
+      </param>
+      <param name="damage_radius">
+      </param>
+      <param name="fireFxTimeout">
+      </param>
+    </func>
+    <func name="drop_selection_to_ground" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="set_off_exploders" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="draw_distance" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="createfx_autosave" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="Callback_PlayerConnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="void" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="200" charLength="23" codePart="precacheShader(&quot;black&quot;)" isCall="True">
+      <funcRefArg charIndex="215" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="flag_init" charIndex="230" charLength="30" codePart="flag_init( &quot;createfx_saving&quot; )" isCall="True">
+      <funcRefArg charIndex="241" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="296" charLength="27" codePart="isdefined( level.createFX )" isCall="True">
+      <funcRefArg charIndex="307" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="366" charLength="46" codePart="getentarray( &quot;trigger_multiple&quot;, &quot;classname&quot; )" isCall="True">
+      <funcRefArg charIndex="379" charLength="18" />
+      <funcRefArg charIndex="399" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="449" charLength="20" codePart="triggers[i] delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="487" charLength="44" codePart="getentarray( &quot;trigger_radius&quot;, &quot;classname&quot; )" isCall="True">
+      <funcRefArg charIndex="500" charLength="16" />
+      <funcRefArg charIndex="518" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="568" charLength="20" codePart="triggers[i] delete()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="void" charIndex="624" charLength="6" codePart="::void" isCall="False" />
+    <funcRef sfPath="maps\mp\_createfx" name="void" charIndex="667" charLength="6" codePart="::void" isCall="False" />
+    <funcRef sfPath="maps\mp\_createfx" name="void" charIndex="706" charLength="6" codePart="::void" isCall="False" />
+    <funcRef sfPath="maps\mp\_createfx" name="void" charIndex="745" charLength="6" codePart="::void" isCall="False" />
+    <funcRef sfPath="maps\mp\_createfx" name="Callback_PlayerConnect" charIndex="785" charLength="24" codePart="::Callback_PlayerConnect" isCall="False" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="822" charLength="23" codePart="isdefined(level.player)" isCall="True">
+      <funcRefArg charIndex="832" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="createFxLogic" charIndex="941" charLength="22" codePart="thread createFxLogic()" isCall="True" />
+    <funcRef sfPath="codapi" name="waittill" charIndex="970" charLength="27" codePart="level waittill (&quot;eternity&quot;)" isCall="True">
+      <funcRefArg charIndex="986" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="exploder_before_load" charIndex="1157" charLength="38" codePart="maps\mp\_utility::exploder_before_load" isCall="False" />
+    <funcRef sfPath="maps\mp\_utility" name="exploder_after_load" charIndex="1479" charLength="37" codePart="maps\mp\_utility::exploder_after_load" isCall="False" />
+    <funcRef sfPath="maps\mp\_createfx" name="set_forward_and_up_vectors" charIndex="1604" charLength="32" codePart="ent set_forward_and_up_vectors()" isCall="True" />
+    <funcRef sfPath="maps\mp\_fx" name="loopfxthread" charIndex="1680" charLength="38" codePart="ent thread maps\mp\_fx::loopfxthread()" isCall="True" />
+    <funcRef sfPath="maps\mp\_fx" name="OneShotfxthread" charIndex="1761" charLength="41" codePart="ent thread maps\mp\_fx::oneshotfxthread()" isCall="True" />
+    <funcRef sfPath="maps\mp\_fx" name="create_loopsound" charIndex="1843" charLength="42" codePart="ent thread maps\mp\_fx::create_loopsound()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1932" charLength="25" codePart="isdefined (level._effect)" isCall="True">
+      <funcRefArg charIndex="1943" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="2010" charLength="16" codePart="loadfx( effect )" isCall="True">
+      <funcRefArg charIndex="2018" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="2072" charLength="13" codePart="spawnStruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2094" charLength="28" codePart="isdefined(level.createFXent)" isCall="True">
+      <funcRefArg charIndex="2104" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="2394" charLength="13" codePart="spawnStruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2416" charLength="28" codePart="isdefined(level.createFXent)" isCall="True">
+      <funcRefArg charIndex="2426" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="2757" charLength="13" codePart="spawnStruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2780" charLength="30" codePart="isdefined( level.createFXent )" isCall="True">
+      <funcRefArg charIndex="2791" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToUp" charIndex="3221" charLength="28" codePart="anglestoup(self.v[&quot;angles&quot;])" isCall="True">
+      <funcRefArg charIndex="3232" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToForward" charIndex="3273" charLength="33" codePart="anglestoforward(self.v[&quot;angles&quot;])" isCall="True">
+      <funcRefArg charIndex="3289" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfxMenu" name="menu_init" charIndex="3382" charLength="11" codePart="menu_init()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3406" charLength="26" codePart="isdefined( level._effect )" isCall="True">
+      <funcRefArg charIndex="3417" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="3466" charLength="23" codePart="getdvar(&quot;createfx_map&quot;)" isCall="True">
+      <funcRefArg charIndex="3474" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="3500" charLength="37" codePart="setdvar(&quot;createfx_map&quot;, level.script)" isCall="True">
+      <funcRefArg charIndex="3508" charLength="14" />
+      <funcRefArg charIndex="3524" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="3552" charLength="23" codePart="getdvar(&quot;createfx_map&quot;)" isCall="True">
+      <funcRefArg charIndex="3560" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="4445" charLength="20" codePart="setdvar(&quot;fx&quot;, &quot;nil&quot;)" isCall="True">
+      <funcRefArg charIndex="4453" charLength="4" />
+      <funcRefArg charIndex="4459" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewHudElem" charIndex="4507" charLength="12" codePart="newHudElem()" isCall="True" />
+    <funcRef sfPath="codapi" name="SetText" charIndex="4754" charLength="22" codePart="crossHair setText(&quot;.&quot;)" isCall="True">
+      <funcRefArg charIndex="4772" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewHudElem" charIndex="4871" charLength="12" codePart="newHudElem()" isCall="True" />
+    <funcRef sfPath="codapi" name="SetText" charIndex="4922" charLength="41" codePart="level.clearTextMarker setText( &quot;marker&quot; )" isCall="True">
+      <funcRefArg charIndex="4953" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewHudElem" charIndex="5076" charLength="12" codePart="newHudElem()" isCall="True" />
+    <funcRef sfPath="codapi" name="NewHudElem" charIndex="5669" charLength="12" codePart="newHudElem()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfxMenu" name="setmenu" charIndex="7677" charLength="15" codePart="setMenu(&quot;none&quot;)" isCall="True">
+      <funcRefArg charIndex="7685" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewHudElem" charIndex="7773" charLength="12" codePart="newHudElem()" isCall="True" />
+    <funcRef sfPath="codapi" name="SetShader" charIndex="7916" charLength="34" codePart="black setShader(&quot;black&quot;, 250, 160)" isCall="True">
+      <funcRefArg charIndex="7932" charLength="7" />
+      <funcRefArg charIndex="7941" charLength="3" />
+      <funcRefArg charIndex="7946" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="post_entity_creation_function" charIndex="8110" charLength="35" codePart="ent post_entity_creation_function()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="draw_distance" charIndex="8155" charLength="22" codePart="thread draw_distance()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createfx_autosave" charIndex="8214" charLength="26" codePart="thread createfx_autosave()" isCall="True" />
+    <funcRef sfPath="codapi" name="AnglesToRight" charIndex="8335" charLength="46" codePart="anglestoright (level.player getplayerangles())" isCall="True">
+      <funcRefArg charIndex="8350" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetPlayerAngles" charIndex="8350" charLength="30" codePart="level.player getplayerangles()" isCall="True" />
+    <funcRef sfPath="codapi" name="AnglesToForward" charIndex="8396" charLength="48" codePart="anglestoforward (level.player getplayerangles())" isCall="True">
+      <funcRefArg charIndex="8413" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetPlayerAngles" charIndex="8413" charLength="30" codePart="level.player getplayerangles()" isCall="True" />
+    <funcRef sfPath="codapi" name="AnglesToUp" charIndex="8454" charLength="43" codePart="anglestoup (level.player getplayerangles())" isCall="True">
+      <funcRefArg charIndex="8466" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetPlayerAngles" charIndex="8466" charLength="30" codePart="level.player getplayerangles()" isCall="True" />
+    <funcRef sfPath="common_scripts\utility" name="vectorScale" charIndex="8537" charLength="25" codePart="vectorScale(forward, 750)" isCall="True">
+      <funcRefArg charIndex="8549" charLength="7" />
+      <funcRefArg charIndex="8558" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTrace" charIndex="8590" charLength="93" codePart="bullettrace(level.player geteye(), level.player geteye() + placeEnt_vector, false, undefined)" isCall="True">
+      <funcRefArg charIndex="8602" charLength="21" />
+      <funcRefArg charIndex="8625" charLength="39" />
+      <funcRefArg charIndex="8666" charLength="5" />
+      <funcRefArg charIndex="8673" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEye" charIndex="8602" charLength="21" codePart="level.player geteye()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetEye" charIndex="8625" charLength="21" codePart="level.player geteye()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="process_button_held_and_clicked" charIndex="8952" charLength="33" codePart="process_button_held_and_clicked()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="button_is_held" charIndex="9001" charLength="40" codePart="button_is_held(&quot;ctrl&quot;, &quot;BUTTON_LSHLDR&quot; )" isCall="True">
+      <funcRefArg charIndex="9016" charLength="6" />
+      <funcRefArg charIndex="9024" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="button_is_clicked" charIndex="9058" charLength="40" codePart="button_is_clicked(&quot;mouse1&quot;, &quot;BUTTON_A&quot; )" isCall="True">
+      <funcRefArg charIndex="9076" charLength="8" />
+      <funcRefArg charIndex="9086" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="button_is_held" charIndex="9114" charLength="37" codePart="button_is_held(&quot;mouse1&quot;, &quot;BUTTON_A&quot; )" isCall="True">
+      <funcRefArg charIndex="9129" charLength="8" />
+      <funcRefArg charIndex="9139" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfxMenu" name="create_fx_menu" charIndex="9158" charLength="16" codePart="create_fx_menu()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="button_is_clicked" charIndex="9185" charLength="38" codePart="button_is_clicked(&quot;shift&quot;, &quot;BUTTON_X&quot;)" isCall="True">
+      <funcRefArg charIndex="9203" charLength="7" />
+      <funcRefArg charIndex="9212" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="button_is_clicked" charIndex="9261" charLength="25" codePart="button_is_clicked( &quot;F5&quot; )" isCall="True">
+      <funcRefArg charIndex="9280" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="generate_fx_log" charIndex="9293" charLength="17" codePart="generate_fx_log()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="button_is_clicked" charIndex="9322" charLength="25" codePart="button_is_clicked( &quot;F2&quot; )" isCall="True">
+      <funcRefArg charIndex="9341" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="toggle_createfx_drawing" charIndex="9354" charLength="25" codePart="toggle_createfx_drawing()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="button_is_clicked" charIndex="9390" charLength="24" codePart="button_is_clicked(&quot;ins&quot;)" isCall="True">
+      <funcRefArg charIndex="9408" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="insert_effect" charIndex="9420" charLength="15" codePart="insert_effect()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="button_is_clicked" charIndex="9446" charLength="24" codePart="button_is_clicked(&quot;del&quot;)" isCall="True">
+      <funcRefArg charIndex="9464" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="delete_pressed" charIndex="9476" charLength="16" codePart="delete_pressed()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="button_is_clicked" charIndex="9506" charLength="29" codePart="button_is_clicked(&quot;end&quot;, &quot;l&quot;)" isCall="True">
+      <funcRefArg charIndex="9524" charLength="5" />
+      <funcRefArg charIndex="9531" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="drop_selection_to_ground" charIndex="9546" charLength="26" codePart="drop_selection_to_ground()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="button_is_clicked" charIndex="9623" charLength="27" codePart="button_is_clicked(&quot;escape&quot;)" isCall="True">
+      <funcRefArg charIndex="9641" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="clear_settable_fx" charIndex="9656" charLength="19" codePart="clear_settable_fx()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="button_is_clicked" charIndex="9687" charLength="26" codePart="button_is_clicked(&quot;space&quot;)" isCall="True">
+      <funcRefArg charIndex="9705" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_off_exploders" charIndex="9720" charLength="19" codePart="set_off_exploders()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="button_is_clicked" charIndex="9750" charLength="41" codePart="button_is_clicked(&quot;tab&quot;, &quot;BUTTON_RSHLDR&quot;)" isCall="True">
+      <funcRefArg charIndex="9768" charLength="5" />
+      <funcRefArg charIndex="9775" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="move_selection_to_cursor" charIndex="9802" charLength="26" codePart="move_selection_to_cursor()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="button_is_held" charIndex="9879" charLength="27" codePart="button_is_held( &quot;h&quot;, &quot;F1&quot; )" isCall="True">
+      <funcRefArg charIndex="9895" charLength="3" />
+      <funcRefArg charIndex="9900" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="show_help" charIndex="9918" charLength="11" codePart="show_help()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="button_is_clicked" charIndex="9977" charLength="36" codePart="button_is_clicked( &quot;BUTTON_LSTICK&quot; )" isCall="True">
+      <funcRefArg charIndex="9996" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="copy_ents" charIndex="10020" charLength="11" codePart="copy_ents()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="button_is_clicked" charIndex="10041" charLength="36" codePart="button_is_clicked( &quot;BUTTON_RSTICK&quot; )" isCall="True">
+      <funcRefArg charIndex="10060" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="paste_ents" charIndex="10084" charLength="12" codePart="paste_ents()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="button_is_clicked" charIndex="10130" charLength="22" codePart="button_is_clicked(&quot;c&quot;)" isCall="True">
+      <funcRefArg charIndex="10148" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="copy_ents" charIndex="10159" charLength="11" codePart="copy_ents()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="button_is_clicked" charIndex="10182" charLength="22" codePart="button_is_clicked(&quot;v&quot;)" isCall="True">
+      <funcRefArg charIndex="10200" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="paste_ents" charIndex="10211" charLength="12" codePart="paste_ents()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10243" charLength="41" codePart="isdefined(level.selected_fx_option_index)" isCall="True">
+      <funcRefArg charIndex="10253" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfxMenu" name="menu_fx_option_set" charIndex="10290" charLength="20" codePart="menu_fx_option_set()" isCall="True" />
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="10612" charLength="67" codePart="vectornormalize(ent.v[&quot;origin&quot;] - (level.player.origin + (0,0,55)))" isCall="True">
+      <funcRefArg charIndex="10628" charLength="50" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="10694" charLength="30" codePart="vectordot(forward, difference)" isCall="True">
+      <funcRefArg charIndex="10704" charLength="7" />
+      <funcRefArg charIndex="10713" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10870" charLength="25" codePart="isdefined(highLightedEnt)" isCall="True">
+      <funcRefArg charIndex="10880" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10910" charLength="29" codePart="isdefined(lastHighlightedEnt)" isCall="True">
+      <funcRefArg charIndex="10920" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="ent_is_selected" charIndex="11172" charLength="35" codePart="ent_is_selected(lastHighlightedEnt)" isCall="True">
+      <funcRefArg charIndex="11188" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="entity_highlight_disable" charIndex="11216" charLength="52" codePart="lastHighlightedEnt thread entity_highlight_disable()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="ent_is_selected" charIndex="11471" charLength="31" codePart="ent_is_selected(highlightedEnt)" isCall="True">
+      <funcRefArg charIndex="11487" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="entity_highlight_enable" charIndex="11511" charLength="47" codePart="highlightedEnt thread entity_highlight_enable()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="ent_is_selected" charIndex="11783" charLength="31" codePart="ent_is_selected(highlightedEnt)" isCall="True">
+      <funcRefArg charIndex="11799" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="entity_highlight_enable" charIndex="11822" charLength="47" codePart="highlightedEnt thread entity_highlight_enable()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="manipulate_createfx_ents" charIndex="11887" charLength="88" codePart="manipulate_createfx_ents( highlightedEnt, leftClick, leftHeld, ctrlHeld, colors, right )" isCall="True">
+      <funcRefArg charIndex="11913" charLength="14" />
+      <funcRefArg charIndex="11929" charLength="9" />
+      <funcRefArg charIndex="11940" charLength="8" />
+      <funcRefArg charIndex="11950" charLength="8" />
+      <funcRefArg charIndex="11960" charLength="6" />
+      <funcRefArg charIndex="11968" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="process_fx_rotater" charIndex="12274" charLength="27" codePart="thread process_fx_rotater()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="button_is_clicked" charIndex="12312" charLength="33" codePart="button_is_clicked( &quot;enter&quot;, &quot;p&quot; )" isCall="True">
+      <funcRefArg charIndex="12331" charLength="7" />
+      <funcRefArg charIndex="12340" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="reset_axis_of_selected_ents" charIndex="12353" charLength="29" codePart="reset_axis_of_selected_ents()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="button_is_clicked" charIndex="12395" charLength="24" codePart="button_is_clicked( &quot;v&quot; )" isCall="True">
+      <funcRefArg charIndex="12414" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="copy_angles_of_selected_ents" charIndex="12427" charLength="30" codePart="copy_angles_of_selected_ents()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="draw_axis" charIndex="12522" charLength="37" codePart="level.selected_fx_ents[i] draw_axis()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="get_selected_move_vector" charIndex="13120" charLength="26" codePart="get_selected_move_vector()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="13254" charLength="20" codePart="isdefined(ent.model)" isCall="True">
+      <funcRefArg charIndex="13264" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="13439" charLength="39" codePart="distance( (0,0,0), selectedMove_vector)" isCall="True">
+      <funcRefArg charIndex="13449" charLength="7" />
+      <funcRefArg charIndex="13458" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="update_selected_entities" charIndex="13577" charLength="26" codePart="update_selected_entities()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="last_selected_entity_has_changed" charIndex="14128" charLength="53" codePart="last_selected_entity_has_changed ( lastSelectEntity )" isCall="True">
+      <funcRefArg charIndex="14163" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="clear_settable_fx" charIndex="14226" charLength="19" codePart="clear_settable_fx()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfxMenu" name="setmenu" charIndex="14251" charLength="15" codePart="setmenu(&quot;none&quot;)" isCall="True">
+      <funcRefArg charIndex="14259" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="14816" charLength="34" codePart="getdvarfloat( &quot;createfx_scaleid&quot; )" isCall="True">
+      <funcRefArg charIndex="14830" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="14864" charLength="27" codePart="isdefined( highlightedEnt )" isCall="True">
+      <funcRefArg charIndex="14875" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfxMenu" name="entities_are_selected" charIndex="14934" charLength="23" codePart="entities_are_selected()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfxMenu" name="display_fx_info" charIndex="14965" charLength="22" codePart="display_fx_info( ent )" isCall="True">
+      <funcRefArg charIndex="14982" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="index_is_selected" charIndex="15044" charLength="22" codePart="index_is_selected( i )" isCall="True">
+      <funcRefArg charIndex="15063" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="clear_entity_selection" charIndex="15235" charLength="24" codePart="clear_entity_selection()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="select_entity" charIndex="15317" charLength="23" codePart="select_entity( i, ent )" isCall="True">
+      <funcRefArg charIndex="15332" charLength="1" />
+      <funcRefArg charIndex="15335" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="toggle_entity_selection" charIndex="15354" charLength="33" codePart="toggle_entity_selection( i, ent )" isCall="True">
+      <funcRefArg charIndex="15379" charLength="1" />
+      <funcRefArg charIndex="15382" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="select_entity" charIndex="15503" charLength="22" codePart="select_entity( i, ent)" isCall="True">
+      <funcRefArg charIndex="15518" charLength="1" />
+      <funcRefArg charIndex="15521" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="deselect_entity" charIndex="15575" charLength="24" codePart="deselect_entity( i, ent)" isCall="True">
+      <funcRefArg charIndex="15592" charLength="1" />
+      <funcRefArg charIndex="15595" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="index_is_selected" charIndex="15659" charLength="22" codePart="index_is_selected( i )" isCall="True">
+      <funcRefArg charIndex="15678" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="15729" charLength="82" codePart="print3d( ent.v[&quot;origin&quot;], &quot;.&quot;, colors[ ent.v[ &quot;type&quot; ] ][ colorIndex ], 1, scale )" isCall="True">
+      <funcRefArg charIndex="15738" charLength="15" />
+      <funcRefArg charIndex="15755" charLength="3" />
+      <funcRefArg charIndex="15760" charLength="39" />
+      <funcRefArg charIndex="15801" charLength="1" />
+      <funcRefArg charIndex="15804" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="vectorScale" charIndex="15866" charLength="58" codePart="vectorScale( right, ent.v[ &quot;fxid&quot; ].size * -2.93 * scale )" isCall="True">
+      <funcRefArg charIndex="15879" charLength="5" />
+      <funcRefArg charIndex="15886" charLength="37" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="15931" charLength="132" codePart="print3d( ent.v[ &quot;origin&quot; ] + printRight + (0,0,15), ent.v[ &quot;fxid&quot; ], colors[ ent.v[ &quot;type&quot; ] ][ colorIndex ], ent.textalpha, scale )" isCall="True">
+      <funcRefArg charIndex="15940" charLength="41" />
+      <funcRefArg charIndex="15983" charLength="15" />
+      <funcRefArg charIndex="16000" charLength="39" />
+      <funcRefArg charIndex="16041" charLength="13" />
+      <funcRefArg charIndex="16056" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="index_is_selected" charIndex="16126" charLength="22" codePart="index_is_selected( i )" isCall="True">
+      <funcRefArg charIndex="16145" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="16190" charLength="84" codePart="print3d( ent.v[ &quot;origin&quot; ], &quot;.&quot;, colors[ ent.v[ &quot;type&quot; ] ][ colorIndex ], 1, scale )" isCall="True">
+      <funcRefArg charIndex="16199" charLength="17" />
+      <funcRefArg charIndex="16218" charLength="3" />
+      <funcRefArg charIndex="16223" charLength="39" />
+      <funcRefArg charIndex="16264" charLength="1" />
+      <funcRefArg charIndex="16267" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="vectorScale" charIndex="16329" charLength="47" codePart="vectorScale(right, ent.v[&quot;fxid&quot;].size * -2.93 )" isCall="True">
+      <funcRefArg charIndex="16341" charLength="5" />
+      <funcRefArg charIndex="16348" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="16383" charLength="132" codePart="print3d( ent.v[ &quot;origin&quot; ] + printRight + (0,0,15), ent.v[ &quot;fxid&quot; ], colors[ ent.v[ &quot;type&quot; ] ][ colorIndex ], ent.textalpha, scale )" isCall="True">
+      <funcRefArg charIndex="16392" charLength="41" />
+      <funcRefArg charIndex="16435" charLength="15" />
+      <funcRefArg charIndex="16452" charLength="39" />
+      <funcRefArg charIndex="16493" charLength="13" />
+      <funcRefArg charIndex="16508" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="16601" charLength="20" codePart="setdvar(&quot;fx&quot;, &quot;nil&quot;)" isCall="True">
+      <funcRefArg charIndex="16609" charLength="4" />
+      <funcRefArg charIndex="16615" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="reset_fx_hud_colors" charIndex="16712" charLength="21" codePart="reset_fx_hud_colors()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="16914" charLength="18" codePart="isdefined( name2 )" isCall="True">
+      <funcRefArg charIndex="16925" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="16946" charLength="37" codePart="isdefined (level.buttonIsHeld[name2])" isCall="True">
+      <funcRefArg charIndex="16957" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17016" charLength="35" codePart="isdefined(level.buttonIsHeld[name])" isCall="True">
+      <funcRefArg charIndex="17026" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17101" charLength="16" codePart="isdefined(name2)" isCall="True">
+      <funcRefArg charIndex="17111" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17130" charLength="35" codePart="isdefined(level.buttonClick[name2])" isCall="True">
+      <funcRefArg charIndex="17140" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17197" charLength="34" codePart="isdefined(level.buttonClick[name])" isCall="True">
+      <funcRefArg charIndex="17207" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17286" charLength="35" codePart="isdefined(level.selected_fx[index])" isCall="True">
+      <funcRefArg charIndex="17296" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="deselect_entity" charIndex="17326" charLength="27" codePart="deselect_entity(index, ent)" isCall="True">
+      <funcRefArg charIndex="17342" charLength="5" />
+      <funcRefArg charIndex="17349" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="select_entity" charIndex="17365" charLength="25" codePart="select_entity(index, ent)" isCall="True">
+      <funcRefArg charIndex="17379" charLength="5" />
+      <funcRefArg charIndex="17386" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17435" charLength="35" codePart="isdefined(level.selected_fx[index])" isCall="True">
+      <funcRefArg charIndex="17445" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="clear_settable_fx" charIndex="17485" charLength="19" codePart="clear_settable_fx()" isCall="True" />
+    <funcRef sfPath="codapi" name="notify" charIndex="17508" charLength="34" codePart="level notify (&quot;new_ent_selection&quot;)" isCall="True">
+      <funcRefArg charIndex="17522" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="entity_highlight_enable" charIndex="17550" charLength="36" codePart="ent thread entity_highlight_enable()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17731" charLength="36" codePart="isdefined( level.fx_highLightedEnt )" isCall="True">
+      <funcRefArg charIndex="17742" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17875" charLength="35" codePart="isdefined(level.selected_fx[index])" isCall="True">
+      <funcRefArg charIndex="17885" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="clear_settable_fx" charIndex="17927" charLength="19" codePart="clear_settable_fx()" isCall="True" />
+    <funcRef sfPath="codapi" name="notify" charIndex="17950" charLength="34" codePart="level notify (&quot;new_ent_selection&quot;)" isCall="True">
+      <funcRefArg charIndex="17964" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="ent_is_highlighted" charIndex="18039" charLength="23" codePart="ent_is_highlighted(ent)" isCall="True">
+      <funcRefArg charIndex="18058" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="entity_highlight_disable" charIndex="18067" charLength="37" codePart="ent thread entity_highlight_disable()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18421" charLength="35" codePart="isdefined(level.selected_fx[index])" isCall="True">
+      <funcRefArg charIndex="18431" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="ent_is_highlighted" charIndex="18716" charLength="47" codePart="ent_is_highlighted( level.selected_fx_ents[i] )" isCall="True">
+      <funcRefArg charIndex="18736" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="entity_highlight_disable" charIndex="18769" charLength="59" codePart="level.selected_fx_ents[i] thread entity_highlight_disable()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="18926" charLength="32" codePart="getdvarfloat(&quot;createfx_scaleid&quot;)" isCall="True">
+      <funcRefArg charIndex="18939" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToForward" charIndex="18990" charLength="33" codePart="anglestoforward(self.v[&quot;angles&quot;])" isCall="True">
+      <funcRefArg charIndex="19006" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="vectorScale" charIndex="19037" charLength="27" codePart="vectorscale(forward, range)" isCall="True">
+      <funcRefArg charIndex="19049" charLength="7" />
+      <funcRefArg charIndex="19058" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToRight" charIndex="19076" charLength="31" codePart="anglestoright(self.v[&quot;angles&quot;])" isCall="True">
+      <funcRefArg charIndex="19090" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="vectorScale" charIndex="19119" charLength="25" codePart="vectorscale(right, range)" isCall="True">
+      <funcRefArg charIndex="19131" charLength="5" />
+      <funcRefArg charIndex="19138" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToUp" charIndex="19153" charLength="28" codePart="anglestoup(self.v[&quot;angles&quot;])" isCall="True">
+      <funcRefArg charIndex="19164" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="vectorScale" charIndex="19190" charLength="22" codePart="vectorscale(up, range)" isCall="True">
+      <funcRefArg charIndex="19202" charLength="2" />
+      <funcRefArg charIndex="19206" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="19216" charLength="62" codePart="line(self.v[&quot;origin&quot;], self.v[&quot;origin&quot;] + forward, (1,0,0), 1)" isCall="True">
+      <funcRefArg charIndex="19221" charLength="16" />
+      <funcRefArg charIndex="19239" charLength="26" />
+      <funcRefArg charIndex="19267" charLength="7" />
+      <funcRefArg charIndex="19276" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="19282" charLength="57" codePart="line(self.v[&quot;origin&quot;], self.v[&quot;origin&quot;] + up, (0,1,0), 1)" isCall="True">
+      <funcRefArg charIndex="19287" charLength="16" />
+      <funcRefArg charIndex="19305" charLength="21" />
+      <funcRefArg charIndex="19328" charLength="7" />
+      <funcRefArg charIndex="19337" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="19343" charLength="60" codePart="line(self.v[&quot;origin&quot;], self.v[&quot;origin&quot;] + right, (0,0,1), 1)" isCall="True">
+      <funcRefArg charIndex="19348" charLength="16" />
+      <funcRefArg charIndex="19366" charLength="24" />
+      <funcRefArg charIndex="19392" charLength="7" />
+      <funcRefArg charIndex="19401" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="ClearAllTextAfterHudelem" charIndex="19441" charLength="48" codePart="level.clearTextMarker clearAllTextAfterHudElem()" isCall="True" />
+    <funcRef sfPath="codapi" name="SetText" charIndex="19568" charLength="43" codePart="level.createFxHudElements[i][p] setText(&quot;&quot;)" isCall="True">
+      <funcRefArg charIndex="19608" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetText" charIndex="19704" charLength="65" codePart="level.createFxHudElements[level.fxHudElements][p] setText( text )" isCall="True">
+      <funcRefArg charIndex="19763" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="19801" charLength="57" codePart="assert (level.fxHudElements &lt; level.createFx_hudElements)" isCall="True">
+      <funcRefArg charIndex="19809" charLength="48" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="createfx_centerprint_thread" charIndex="19900" charLength="42" codePart="thread createfx_centerprint_thread( text )" isCall="True">
+      <funcRefArg charIndex="19936" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="19992" charLength="41" codePart="level notify (&quot;new_createfx_centerprint&quot;)" isCall="True">
+      <funcRefArg charIndex="20006" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="20037" charLength="40" codePart="level endon (&quot;new_createfx_centerprint&quot;)" isCall="True">
+      <funcRefArg charIndex="20050" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetText" charIndex="20102" charLength="45" codePart="level.createFX_centerPrint[p] setText( text )" isCall="True">
+      <funcRefArg charIndex="20141" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetText" charIndex="20186" charLength="43" codePart="level.createFX_centerPrint[p] setText( &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="20225" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="buttonPressed_internal" charIndex="20279" charLength="32" codePart="buttonPressed_internal( button )" isCall="True">
+      <funcRefArg charIndex="20303" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="buttonPressed_internal" charIndex="20315" charLength="33" codePart="buttonPressed_internal( button2 )" isCall="True">
+      <funcRefArg charIndex="20339" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="20404" charLength="19" codePart="isdefined( button )" isCall="True">
+      <funcRefArg charIndex="20415" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="kb_locked" charIndex="20583" charLength="19" codePart="kb_locked( button )" isCall="True">
+      <funcRefArg charIndex="20594" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="ButtonPressed" charIndex="20633" charLength="36" codePart="level.player buttonPressed( button )" isCall="True">
+      <funcRefArg charIndex="20661" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetPlayerAngles" charIndex="20717" charLength="33" codePart="level.player getplayerangles()[1]" isCall="True" />
+    <funcRef sfPath="codapi" name="AnglesToRight" charIndex="20786" charLength="22" codePart="anglestoright (angles)" isCall="True">
+      <funcRefArg charIndex="20801" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToForward" charIndex="20822" charLength="24" codePart="anglestoforward (angles)" isCall="True">
+      <funcRefArg charIndex="20839" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToUp" charIndex="20855" charLength="19" codePart="anglestoup (angles)" isCall="True">
+      <funcRefArg charIndex="20867" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="buttonDown" charIndex="20921" charLength="35" codePart="buttonDown(&quot;kp_uparrow&quot;, &quot;DPAD_UP&quot;)" isCall="True">
+      <funcRefArg charIndex="20932" charLength="12" />
+      <funcRefArg charIndex="20946" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="buttonDown" charIndex="21125" charLength="39" codePart="buttonDown(&quot;kp_downarrow&quot;, &quot;DPAD_DOWN&quot;)" isCall="True">
+      <funcRefArg charIndex="21136" charLength="14" />
+      <funcRefArg charIndex="21152" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="buttonDown" charIndex="21366" charLength="41" codePart="buttonDown(&quot;kp_rightarrow&quot;, &quot;DPAD_RIGHT&quot;)" isCall="True">
+      <funcRefArg charIndex="21377" charLength="15" />
+      <funcRefArg charIndex="21394" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="buttonDown" charIndex="21568" charLength="39" codePart="buttonDown(&quot;kp_leftarrow&quot;, &quot;DPAD_LEFT&quot;)" isCall="True">
+      <funcRefArg charIndex="21579" charLength="14" />
+      <funcRefArg charIndex="21595" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="buttonDown" charIndex="21799" charLength="22" codePart="buttonDown(&quot;BUTTON_Y&quot;)" isCall="True">
+      <funcRefArg charIndex="21810" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="buttonDown" charIndex="21970" charLength="22" codePart="buttonDown(&quot;BUTTON_B&quot;)" isCall="True">
+      <funcRefArg charIndex="21981" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="vectorScale" charIndex="22288" charLength="48" codePart="vectorScale(forward, level.selectedMove_forward)" isCall="True">
+      <funcRefArg charIndex="22300" charLength="7" />
+      <funcRefArg charIndex="22309" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="vectorScale" charIndex="22350" charLength="44" codePart="vectorScale(right, level.selectedMove_right)" isCall="True">
+      <funcRefArg charIndex="22362" charLength="5" />
+      <funcRefArg charIndex="22369" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="vectorScale" charIndex="22408" charLength="38" codePart="vectorScale(up, level.selectedMove_up)" isCall="True">
+      <funcRefArg charIndex="22420" charLength="2" />
+      <funcRefArg charIndex="22424" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_button" charIndex="22513" charLength="20" codePart="add_button(&quot;mouse1&quot;)" isCall="True">
+      <funcRefArg charIndex="22524" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="22537" charLength="22" codePart="add_kb_button(&quot;shift&quot;)" isCall="True">
+      <funcRefArg charIndex="22551" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="22563" charLength="21" codePart="add_kb_button(&quot;ctrl&quot;)" isCall="True">
+      <funcRefArg charIndex="22577" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_button" charIndex="22588" charLength="27" codePart="add_button(&quot;BUTTON_RSHLDR&quot;)" isCall="True">
+      <funcRefArg charIndex="22599" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_button" charIndex="22619" charLength="27" codePart="add_button(&quot;BUTTON_LSHLDR&quot;)" isCall="True">
+      <funcRefArg charIndex="22630" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_button" charIndex="22650" charLength="27" codePart="add_button(&quot;BUTTON_RSTICK&quot;)" isCall="True">
+      <funcRefArg charIndex="22661" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_button" charIndex="22681" charLength="27" codePart="add_button(&quot;BUTTON_LSTICK&quot;)" isCall="True">
+      <funcRefArg charIndex="22692" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_button" charIndex="22712" charLength="22" codePart="add_button(&quot;BUTTON_A&quot;)" isCall="True">
+      <funcRefArg charIndex="22723" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_button" charIndex="22738" charLength="22" codePart="add_button(&quot;BUTTON_B&quot;)" isCall="True">
+      <funcRefArg charIndex="22749" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_button" charIndex="22764" charLength="22" codePart="add_button(&quot;BUTTON_X&quot;)" isCall="True">
+      <funcRefArg charIndex="22775" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_button" charIndex="22790" charLength="22" codePart="add_button(&quot;BUTTON_Y&quot;)" isCall="True">
+      <funcRefArg charIndex="22801" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_button" charIndex="22816" charLength="21" codePart="add_button(&quot;DPAD_UP&quot;)" isCall="True">
+      <funcRefArg charIndex="22827" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_button" charIndex="22841" charLength="23" codePart="add_button(&quot;DPAD_LEFT&quot;)" isCall="True">
+      <funcRefArg charIndex="22852" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_button" charIndex="22868" charLength="24" codePart="add_button(&quot;DPAD_RIGHT&quot;)" isCall="True">
+      <funcRefArg charIndex="22879" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_button" charIndex="22896" charLength="23" codePart="add_button(&quot;DPAD_DOWN&quot;)" isCall="True">
+      <funcRefArg charIndex="22907" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="22923" charLength="23" codePart="add_kb_button(&quot;escape&quot;)" isCall="True">
+      <funcRefArg charIndex="22937" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="22953" charLength="18" codePart="add_kb_button(&quot;a&quot;)" isCall="True">
+      <funcRefArg charIndex="22967" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_button" charIndex="22975" charLength="16" codePart="add_button(&quot;F1&quot;)" isCall="True">
+      <funcRefArg charIndex="22986" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_button" charIndex="22995" charLength="16" codePart="add_button(&quot;F5&quot;)" isCall="True">
+      <funcRefArg charIndex="23006" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_button" charIndex="23015" charLength="16" codePart="add_button(&quot;F2&quot;)" isCall="True">
+      <funcRefArg charIndex="23026" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23035" charLength="18" codePart="add_kb_button(&quot;c&quot;)" isCall="True">
+      <funcRefArg charIndex="23049" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23057" charLength="18" codePart="add_kb_button(&quot;h&quot;)" isCall="True">
+      <funcRefArg charIndex="23071" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23079" charLength="18" codePart="add_kb_button(&quot;i&quot;)" isCall="True">
+      <funcRefArg charIndex="23093" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23101" charLength="18" codePart="add_kb_button(&quot;k&quot;)" isCall="True">
+      <funcRefArg charIndex="23115" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23123" charLength="18" codePart="add_kb_button(&quot;l&quot;)" isCall="True">
+      <funcRefArg charIndex="23137" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23145" charLength="18" codePart="add_kb_button(&quot;m&quot;)" isCall="True">
+      <funcRefArg charIndex="23159" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23167" charLength="18" codePart="add_kb_button(&quot;p&quot;)" isCall="True">
+      <funcRefArg charIndex="23181" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23189" charLength="18" codePart="add_kb_button(&quot;x&quot;)" isCall="True">
+      <funcRefArg charIndex="23203" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_button" charIndex="23211" charLength="17" codePart="add_button(&quot;del&quot;)" isCall="True">
+      <funcRefArg charIndex="23222" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23285" charLength="20" codePart="add_kb_button(&quot;end&quot;)" isCall="True">
+      <funcRefArg charIndex="23299" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23309" charLength="20" codePart="add_kb_button(&quot;tab&quot;)" isCall="True">
+      <funcRefArg charIndex="23323" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23333" charLength="20" codePart="add_kb_button(&quot;ins&quot;)" isCall="True">
+      <funcRefArg charIndex="23347" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23357" charLength="20" codePart="add_kb_button(&quot;add&quot;)" isCall="True">
+      <funcRefArg charIndex="23371" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23381" charLength="22" codePart="add_kb_button(&quot;space&quot;)" isCall="True">
+      <funcRefArg charIndex="23395" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23407" charLength="22" codePart="add_kb_button(&quot;enter&quot;)" isCall="True">
+      <funcRefArg charIndex="23421" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23433" charLength="18" codePart="add_kb_button(&quot;v&quot;)" isCall="True">
+      <funcRefArg charIndex="23447" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23455" charLength="18" codePart="add_kb_button(&quot;1&quot;)" isCall="True">
+      <funcRefArg charIndex="23469" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23477" charLength="18" codePart="add_kb_button(&quot;2&quot;)" isCall="True">
+      <funcRefArg charIndex="23491" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23499" charLength="18" codePart="add_kb_button(&quot;3&quot;)" isCall="True">
+      <funcRefArg charIndex="23513" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23521" charLength="18" codePart="add_kb_button(&quot;4&quot;)" isCall="True">
+      <funcRefArg charIndex="23535" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23543" charLength="18" codePart="add_kb_button(&quot;5&quot;)" isCall="True">
+      <funcRefArg charIndex="23557" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23565" charLength="18" codePart="add_kb_button(&quot;6&quot;)" isCall="True">
+      <funcRefArg charIndex="23579" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23587" charLength="18" codePart="add_kb_button(&quot;7&quot;)" isCall="True">
+      <funcRefArg charIndex="23601" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23609" charLength="18" codePart="add_kb_button(&quot;8&quot;)" isCall="True">
+      <funcRefArg charIndex="23623" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23631" charLength="18" codePart="add_kb_button(&quot;9&quot;)" isCall="True">
+      <funcRefArg charIndex="23645" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_kb_button" charIndex="23653" charLength="18" codePart="add_kb_button(&quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="23667" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="23708" charLength="42" codePart="isdefined(level.createfx_lockedList[name])" isCall="True">
+      <funcRefArg charIndex="23718" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="kb_locked" charIndex="23783" charLength="17" codePart="kb_locked( name )" isCall="True">
+      <funcRefArg charIndex="23794" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="23868" charLength="39" codePart="isdefined( level.button_is_kb[ name ] )" isCall="True">
+      <funcRefArg charIndex="23879" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="locked" charIndex="23946" charLength="14" codePart="locked( name )" isCall="True">
+      <funcRefArg charIndex="23954" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="23983" charLength="35" codePart="isdefined(level.buttonIsHeld[name])" isCall="True">
+      <funcRefArg charIndex="23993" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="ButtonPressed" charIndex="24031" charLength="32" codePart="level.player buttonPressed(name)" isCall="True">
+      <funcRefArg charIndex="24058" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="ButtonPressed" charIndex="24209" charLength="32" codePart="level.player buttonPressed(name)" isCall="True">
+      <funcRefArg charIndex="24236" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="add_button" charIndex="24369" charLength="18" codePart="add_button( name )" isCall="True">
+      <funcRefArg charIndex="24381" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="buttonDown" charIndex="24450" charLength="35" codePart="buttonDown(&quot;kp_uparrow&quot;, &quot;DPAD_UP&quot;)" isCall="True">
+      <funcRefArg charIndex="24461" charLength="12" />
+      <funcRefArg charIndex="24475" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="buttonDown" charIndex="24654" charLength="39" codePart="buttonDown(&quot;kp_downarrow&quot;, &quot;DPAD_DOWN&quot;)" isCall="True">
+      <funcRefArg charIndex="24665" charLength="14" />
+      <funcRefArg charIndex="24681" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="buttonDown" charIndex="24895" charLength="39" codePart="buttonDown(&quot;kp_leftarrow&quot;, &quot;DPAD_LEFT&quot;)" isCall="True">
+      <funcRefArg charIndex="24906" charLength="14" />
+      <funcRefArg charIndex="24922" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="buttonDown" charIndex="25095" charLength="41" codePart="buttonDown(&quot;kp_rightarrow&quot;, &quot;DPAD_RIGHT&quot;)" isCall="True">
+      <funcRefArg charIndex="25106" charLength="15" />
+      <funcRefArg charIndex="25123" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="buttonDown" charIndex="25328" charLength="22" codePart="buttonDown(&quot;BUTTON_Y&quot;)" isCall="True">
+      <funcRefArg charIndex="25339" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="buttonDown" charIndex="25515" charLength="22" codePart="buttonDown(&quot;BUTTON_B&quot;)" isCall="True">
+      <funcRefArg charIndex="25526" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FPrintLn" charIndex="25831" charLength="21" codePart="fprintln(file,string)" isCall="True">
+      <funcRefArg charIndex="25840" charLength="4" />
+      <funcRefArg charIndex="25845" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="flag_waitopen" charIndex="26077" charLength="34" codePart="flag_waitopen( &quot;createfx_saving&quot; )" isCall="True">
+      <funcRefArg charIndex="26092" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="flag_set" charIndex="26115" charLength="29" codePart="flag_set( &quot;createfx_saving&quot; )" isCall="True">
+      <funcRefArg charIndex="26125" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="26159" charLength="21" codePart="isdefined( autosave )" isCall="True">
+      <funcRefArg charIndex="26170" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="OpenFile" charIndex="26316" charLength="26" codePart="openfile(filename,&quot;write&quot;)" isCall="True">
+      <funcRefArg charIndex="26325" charLength="8" />
+      <funcRefArg charIndex="26334" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="26346" charLength="87" codePart="assertex(file != -1, &quot;File not writeable (maybe you should check it out): &quot; + filename)" isCall="True">
+      <funcRefArg charIndex="26355" charLength="10" />
+      <funcRefArg charIndex="26367" charLength="65" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="cfxprintln" charIndex="26437" charLength="57" codePart="cfxprintln (file,&quot;//_createfx generated. Do not touch!!&quot;)" isCall="True">
+      <funcRefArg charIndex="26449" charLength="4" />
+      <funcRefArg charIndex="26454" charLength="39" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="cfxprintln" charIndex="26498" charLength="26" codePart="cfxprintln (file,&quot;main()&quot;)" isCall="True">
+      <funcRefArg charIndex="26510" charLength="4" />
+      <funcRefArg charIndex="26515" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="cfxprintln" charIndex="26528" charLength="21" codePart="cfxprintln (file,&quot;{&quot;)" isCall="True">
+      <funcRefArg charIndex="26540" charLength="4" />
+      <funcRefArg charIndex="26545" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="cfxprintln" charIndex="26555" charLength="76" codePart="cfxprintln (file, &quot;// CreateFX entities placed: &quot; + level.createFxEnt.size )" isCall="True">
+      <funcRefArg charIndex="26567" charLength="4" />
+      <funcRefArg charIndex="26573" charLength="57" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="27162" charLength="84" codePart="println (&quot; *** CREATING EFFECT, COPY THESE LINES TO &quot;, level.script, &quot;_fx.gsc *** &quot;)" isCall="True">
+      <funcRefArg charIndex="27171" charLength="44" />
+      <funcRefArg charIndex="27217" charLength="12" />
+      <funcRefArg charIndex="27231" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="27412" charLength="86" codePart="assertEX(isdefined(e.v[&quot;type&quot;]), &quot;effect at origin &quot; + e.v[&quot;origin&quot;] + &quot; has no type&quot;)" isCall="True">
+      <funcRefArg charIndex="27421" charLength="22" />
+      <funcRefArg charIndex="27445" charLength="52" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="27421" charLength="22" codePart="isdefined(e.v[&quot;type&quot;])" isCall="True">
+      <funcRefArg charIndex="27431" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="27595" charLength="18" codePart="isdefined(e.model)" isCall="True">
+      <funcRefArg charIndex="27605" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="27758" charLength="83" codePart="println (&quot;	ent = maps\\mp\\_utility::createLoopEffect( \&quot;&quot; + e.v[&quot;fxid&quot;] + &quot;\&quot; );&quot;)" isCall="True">
+      <funcRefArg charIndex="27767" charLength="73" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="cfxprintln" charIndex="27847" charLength="96" codePart="cfxprintln (file,tab+ &quot;	ent = maps\\mp\\_utility::createLoopEffect( \&quot;&quot; + e.v[&quot;fxid&quot;] + &quot;\&quot; );&quot;)" isCall="True">
+      <funcRefArg charIndex="27859" charLength="4" />
+      <funcRefArg charIndex="27864" charLength="78" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="28021" charLength="86" codePart="println (&quot;	ent = maps\\mp\\_utility::createOneshotEffect( \&quot;&quot; + e.v[&quot;fxid&quot;] + &quot;\&quot; );&quot;)" isCall="True">
+      <funcRefArg charIndex="28030" charLength="76" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="cfxprintln" charIndex="28113" charLength="99" codePart="cfxprintln (file,tab+ &quot;	ent = maps\\mp\\_utility::createOneshotEffect( \&quot;&quot; + e.v[&quot;fxid&quot;] + &quot;\&quot; );&quot;)" isCall="True">
+      <funcRefArg charIndex="28125" charLength="4" />
+      <funcRefArg charIndex="28130" charLength="81" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="28285" charLength="81" codePart="println (&quot;	ent = maps\\mp\\_utility::createExploder( \&quot;&quot; + e.v[&quot;fxid&quot;] + &quot;\&quot; );&quot;)" isCall="True">
+      <funcRefArg charIndex="28294" charLength="71" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="cfxprintln" charIndex="28372" charLength="94" codePart="cfxprintln (file,tab+ &quot;	ent = maps\\mp\\_utility::createExploder( \&quot;&quot; + e.v[&quot;fxid&quot;] + &quot;\&quot; );&quot;)" isCall="True">
+      <funcRefArg charIndex="28384" charLength="4" />
+      <funcRefArg charIndex="28389" charLength="76" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="28542" charLength="59" codePart="println( &quot;	ent = maps\\mp\\_createfx::createLoopSound();&quot; )" isCall="True">
+      <funcRefArg charIndex="28551" charLength="49" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="cfxprintln" charIndex="28607" charLength="74" codePart="cfxprintln( file, tab + &quot;	ent = maps\\mp\\_createfx::createLoopSound();&quot; )" isCall="True">
+      <funcRefArg charIndex="28619" charLength="4" />
+      <funcRefArg charIndex="28625" charLength="55" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="28717" charLength="116" codePart="println (&quot;	ent.v[ \&quot;origin\&quot; ] = ( &quot; + e.v[&quot;origin&quot;][0] + &quot;, &quot; + e.v[&quot;origin&quot;][1] + &quot;, &quot; + e.v[&quot;origin&quot;][2] + &quot; );&quot;)" isCall="True">
+      <funcRefArg charIndex="28726" charLength="106" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="cfxprintln" charIndex="28838" charLength="129" codePart="cfxprintln (file,tab+ &quot;	ent.v[ \&quot;origin\&quot; ] = ( &quot; + e.v[&quot;origin&quot;][0] + &quot;, &quot; + e.v[&quot;origin&quot;][1] + &quot;, &quot; + e.v[&quot;origin&quot;][2] + &quot; );&quot;)" isCall="True">
+      <funcRefArg charIndex="28850" charLength="4" />
+      <funcRefArg charIndex="28855" charLength="111" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="28994" charLength="116" codePart="println (&quot;	ent.v[ \&quot;angles\&quot; ] = ( &quot; + e.v[&quot;angles&quot;][0] + &quot;, &quot; + e.v[&quot;angles&quot;][1] + &quot;, &quot; + e.v[&quot;angles&quot;][2] + &quot; );&quot;)" isCall="True">
+      <funcRefArg charIndex="29003" charLength="106" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="cfxprintln" charIndex="29115" charLength="129" codePart="cfxprintln (file,tab+ &quot;	ent.v[ \&quot;angles\&quot; ] = ( &quot; + e.v[&quot;angles&quot;][0] + &quot;, &quot; + e.v[&quot;angles&quot;][1] + &quot;, &quot; + e.v[&quot;angles&quot;][2] + &quot; );&quot;)" isCall="True">
+      <funcRefArg charIndex="29127" charLength="4" />
+      <funcRefArg charIndex="29132" charLength="111" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="print_fx_options" charIndex="29253" charLength="43" codePart="print_fx_options( e, tab , file, autosave )" isCall="True">
+      <funcRefArg charIndex="29271" charLength="1" />
+      <funcRefArg charIndex="29274" charLength="4" />
+      <funcRefArg charIndex="29280" charLength="4" />
+      <funcRefArg charIndex="29286" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="29323" charLength="13" codePart="println (&quot; &quot;)" isCall="True">
+      <funcRefArg charIndex="29332" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="cfxprintln" charIndex="29341" charLength="21" codePart="cfxprintln (file,&quot; &quot;)" isCall="True">
+      <funcRefArg charIndex="29353" charLength="4" />
+      <funcRefArg charIndex="29358" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="script_gen_dump_addline" charIndex="29404" charLength="94" codePart="script_gen_dump_addline(&quot;maps\\mp\\createfx\\&quot;+level.script+&quot;_fx::main();&quot;,level.script+&quot;_fx&quot;)" isCall="True">
+      <funcRefArg charIndex="29428" charLength="50" />
+      <funcRefArg charIndex="29479" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dump" charIndex="29529" charLength="32" codePart="maps\mp\_load::script_gen_dump()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="cfxprintln" charIndex="29595" charLength="21" codePart="cfxprintln (file,&quot;}&quot;)" isCall="True">
+      <funcRefArg charIndex="29607" charLength="4" />
+      <funcRefArg charIndex="29612" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="CloseFile" charIndex="29628" charLength="15" codePart="closefile(file)" isCall="True">
+      <funcRefArg charIndex="29638" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="29647" charLength="71" codePart="assertex(saved == 1,&quot;File not saved (see above message?): &quot; + filename)" isCall="True">
+      <funcRefArg charIndex="29656" charLength="10" />
+      <funcRefArg charIndex="29667" charLength="50" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="flag_clear" charIndex="29722" charLength="31" codePart="flag_clear( &quot;createfx_saving&quot; )" isCall="True">
+      <funcRefArg charIndex="29734" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="29759" charLength="64" codePart="println( &quot;CreateFX entities placed: &quot; + level.createFxEnt.size )" isCall="True">
+      <funcRefArg charIndex="29768" charLength="54" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="29986" charLength="32" codePart="isdefined(ent.v[option[&quot;name&quot;]])" isCall="True">
+      <funcRefArg charIndex="29996" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfxMenu" name="mask" charIndex="30043" charLength="38" codePart="mask ( option[&quot;mask&quot;], ent.v[&quot;type&quot;] )" isCall="True">
+      <funcRefArg charIndex="30050" charLength="14" />
+      <funcRefArg charIndex="30066" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="30170" charLength="87" codePart="println (&quot;	ent.v[ \&quot;&quot; + option[&quot;name&quot;] + &quot;\&quot; ] = \&quot;&quot; + ent.v[ option[&quot;name&quot;] ] + &quot;\&quot;;&quot;)" isCall="True">
+      <funcRefArg charIndex="30179" charLength="77" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="cfxprintln" charIndex="30263" charLength="100" codePart="cfxprintln (file,tab+ &quot;	ent.v[ \&quot;&quot; + option[&quot;name&quot;] + &quot;\&quot; ] = \&quot;&quot; + ent.v[ option[&quot;name&quot;] ] + &quot;\&quot;;&quot;)" isCall="True">
+      <funcRefArg charIndex="30275" charLength="4" />
+      <funcRefArg charIndex="30280" charLength="82" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="30429" charLength="83" codePart="println (&quot;	ent.v[ \&quot;&quot; + option[&quot;name&quot;] + &quot;\&quot; ] = &quot; + ent.v[ option[&quot;name&quot;] ] + &quot;;&quot;)" isCall="True">
+      <funcRefArg charIndex="30438" charLength="73" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="cfxprintln" charIndex="30517" charLength="96" codePart="cfxprintln (file,tab+ &quot;	ent.v[ \&quot;&quot; + option[&quot;name&quot;] + &quot;\&quot; ] = &quot; + ent.v[ option[&quot;name&quot;] ] + &quot;;&quot;)" isCall="True">
+      <funcRefArg charIndex="30529" charLength="4" />
+      <funcRefArg charIndex="30534" charLength="78" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="30658" charLength="32" codePart="self notify (&quot;highlight change&quot;)" isCall="True">
+      <funcRefArg charIndex="30671" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="30694" charLength="31" codePart="self endon (&quot;highlight change&quot;)" isCall="True">
+      <funcRefArg charIndex="30706" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="30951" charLength="32" codePart="self notify (&quot;highlight change&quot;)" isCall="True">
+      <funcRefArg charIndex="30964" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="30987" charLength="31" codePart="self endon (&quot;highlight change&quot;)" isCall="True">
+      <funcRefArg charIndex="30999" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="31761" charLength="20" codePart="self endon (&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="31773" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="draw_axis" charIndex="31801" charLength="11" codePart="draw_axis()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="set_anglemod_move_vector" charIndex="32099" charLength="26" codePart="set_anglemod_move_vector()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="rotation_is_occuring" charIndex="32138" charLength="22" codePart="rotation_is_occuring()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="get_center_of_array" charIndex="32220" charLength="43" codePart="get_center_of_array(level.selected_fx_ents)" isCall="True">
+      <funcRefArg charIndex="32240" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="32273" charLength="30" codePart="spawn(&quot;script_origin&quot;, center)" isCall="True">
+      <funcRefArg charIndex="32279" charLength="15" />
+      <funcRefArg charIndex="32296" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="32483" charLength="61" codePart="spawn(&quot;script_origin&quot;, level.selected_fx_ents[i].v[&quot;origin&quot;])" isCall="True">
+      <funcRefArg charIndex="32489" charLength="15" />
+      <funcRefArg charIndex="32506" charLength="37" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LinkTo" charIndex="32611" charLength="23" codePart="rotater[i] linkto (org)" isCall="True">
+      <funcRefArg charIndex="32630" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="rotate_over_time" charIndex="32736" charLength="30" codePart="rotate_over_time(org, rotater)" isCall="True">
+      <funcRefArg charIndex="32753" charLength="3" />
+      <funcRefArg charIndex="32758" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="32774" charLength="12" codePart="org delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="Delete" charIndex="32830" charLength="19" codePart="rotater[i] delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="32929" charLength="33" codePart="level endon (&quot;new_ent_selection&quot;)" isCall="True">
+      <funcRefArg charIndex="32942" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="DevAddPitch" charIndex="33054" charLength="43" codePart="org devAddPitch(level.selectedRotate_pitch)" isCall="True">
+      <funcRefArg charIndex="33070" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="DevAddYaw" charIndex="33149" charLength="39" codePart="org devAddYaw(level.selectedRotate_yaw)" isCall="True">
+      <funcRefArg charIndex="33163" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="DevAddRoll" charIndex="33202" charLength="41" codePart="org devAddRoll(level.selectedRotate_roll)" isCall="True">
+      <funcRefArg charIndex="33217" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="draw_axis" charIndex="33266" charLength="15" codePart="org draw_axis()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="33387" charLength="20" codePart="isdefined(ent.model)" isCall="True">
+      <funcRefArg charIndex="33397" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="remove_selected_option" charIndex="33650" charLength="24" codePart="remove_selected_option()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="delete_selection" charIndex="33695" charLength="18" codePart="delete_selection()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="33757" charLength="43" codePart="isdefined( level.selected_fx_option_index )" isCall="True">
+      <funcRefArg charIndex="33768" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="ent_is_selected" charIndex="33994" charLength="22" codePart="ent_is_selected( ent )" isCall="True">
+      <funcRefArg charIndex="34011" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="remove_option" charIndex="34038" charLength="25" codePart="ent remove_option( name )" isCall="True">
+      <funcRefArg charIndex="34057" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="update_selected_entities" charIndex="34074" charLength="26" codePart="update_selected_entities()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="clear_settable_fx" charIndex="34104" charLength="19" codePart="clear_settable_fx()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="ent_is_selected" charIndex="34325" charLength="20" codePart="ent_is_selected(ent)" isCall="True">
+      <funcRefArg charIndex="34341" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="34360" charLength="21" codePart="isdefined(ent.looper)" isCall="True">
+      <funcRefArg charIndex="34370" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="34388" charLength="19" codePart="ent.looper delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="notify" charIndex="34415" charLength="25" codePart="ent notify( &quot;stop_loop&quot; )" isCall="True">
+      <funcRefArg charIndex="34427" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="clear_fx_hudElements" charIndex="34591" charLength="22" codePart="clear_fx_hudElements()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="get_center_of_array" charIndex="34763" charLength="43" codePart="get_center_of_array(level.selected_fx_ents)" isCall="True">
+      <funcRefArg charIndex="34783" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="34939" charLength="20" codePart="isdefined(ent.model)" isCall="True">
+      <funcRefArg charIndex="34949" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfxMenu" name="setmenu" charIndex="35103" charLength="19" codePart="setMenu(&quot;creation&quot;)" isCall="True">
+      <funcRefArg charIndex="35111" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="clear_fx_hudElements" charIndex="35158" charLength="22" codePart="clear_fx_hudElements()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="35184" charLength="48" codePart="set_fx_hudElement(&quot;Pick effect type to create:&quot;)" isCall="True">
+      <funcRefArg charIndex="35202" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="35236" charLength="35" codePart="set_fx_hudElement(&quot;1. One Shot fx&quot;)" isCall="True">
+      <funcRefArg charIndex="35254" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="35275" charLength="34" codePart="set_fx_hudElement(&quot;2. Looping fx&quot;)" isCall="True">
+      <funcRefArg charIndex="35293" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="35313" charLength="37" codePart="set_fx_hudElement(&quot;3. Looping sound&quot;)" isCall="True">
+      <funcRefArg charIndex="35331" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="35354" charLength="32" codePart="set_fx_hudElement(&quot;4. Exploder&quot;)" isCall="True">
+      <funcRefArg charIndex="35372" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="35390" charLength="31" codePart="set_fx_hudElement(&quot;(c) Cancel&quot;)" isCall="True">
+      <funcRefArg charIndex="35408" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="35425" charLength="29" codePart="set_fx_hudElement(&quot;(x) Exit&quot;)" isCall="True">
+      <funcRefArg charIndex="35443" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="clear_fx_hudElements" charIndex="35673" charLength="22" codePart="clear_fx_hudElements()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="35699" charLength="26" codePart="set_fx_hudElement(&quot;Help:&quot;)" isCall="True">
+      <funcRefArg charIndex="35717" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="35729" charLength="50" codePart="set_fx_hudElement(&quot;Insert          Insert entity&quot;)" isCall="True">
+      <funcRefArg charIndex="35747" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="35783" charLength="73" codePart="set_fx_hudElement(&quot;L               Drop selected entities to the ground&quot;)" isCall="True">
+      <funcRefArg charIndex="35801" charLength="54" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="35860" charLength="72" codePart="set_fx_hudElement(&quot;A               Add option to the selected entities&quot;)" isCall="True">
+      <funcRefArg charIndex="35878" charLength="53" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="35936" charLength="80" codePart="set_fx_hudElement(&quot;P               Reset the rotation of the selected entities&quot;)" isCall="True">
+      <funcRefArg charIndex="35954" charLength="61" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="36020" charLength="109" codePart="set_fx_hudElement(&quot;V               Copy the angles from the most recently selected fx onto all selected fx.&quot;)" isCall="True">
+      <funcRefArg charIndex="36038" charLength="90" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="36133" charLength="63" codePart="set_fx_hudElement(&quot;Delete          Kill the selected entities&quot;)" isCall="True">
+      <funcRefArg charIndex="36151" charLength="44" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="36200" charLength="93" codePart="set_fx_hudElement(&quot;ESCAPE          Cancel out of option-modify-mode, must have console open&quot;)" isCall="True">
+      <funcRefArg charIndex="36218" charLength="74" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="36297" charLength="41" codePart="set_fx_hudElement(&quot;Ctrl-C          Copy&quot;)" isCall="True">
+      <funcRefArg charIndex="36315" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="36342" charLength="42" codePart="set_fx_hudElement(&quot;Ctrl-V          Paste&quot;)" isCall="True">
+      <funcRefArg charIndex="36360" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="36388" charLength="73" codePart="set_fx_hudElement(&quot;F2              Toggle createfx dot and text drawing&quot;)" isCall="True">
+      <funcRefArg charIndex="36406" charLength="54" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="36465" charLength="52" codePart="set_fx_hudElement(&quot;F5              SAVES your work&quot;)" isCall="True">
+      <funcRefArg charIndex="36483" charLength="33" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="36521" charLength="86" codePart="set_fx_hudElement(&quot;Dpad            Move selected entitise on X/Y or rotate pitch/yaw&quot;)" isCall="True">
+      <funcRefArg charIndex="36539" charLength="67" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="36611" charLength="79" codePart="set_fx_hudElement(&quot;A button        Toggle the selection of the current entity&quot;)" isCall="True">
+      <funcRefArg charIndex="36629" charLength="60" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="36694" charLength="64" codePart="set_fx_hudElement(&quot;X button        Toggle entity rotation mode&quot;)" isCall="True">
+      <funcRefArg charIndex="36712" charLength="45" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="36762" charLength="76" codePart="set_fx_hudElement(&quot;Y button        Move selected entites up or rotate roll&quot;)" isCall="True">
+      <funcRefArg charIndex="36780" charLength="57" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="36842" charLength="78" codePart="set_fx_hudElement(&quot;B button        Move selected entites down or rotate roll&quot;)" isCall="True">
+      <funcRefArg charIndex="36860" charLength="59" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="36924" charLength="73" codePart="set_fx_hudElement(&quot;R Shoulder      Move selected entities to the cursor&quot;)" isCall="True">
+      <funcRefArg charIndex="36942" charLength="54" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="37001" charLength="68" codePart="set_fx_hudElement(&quot;L Shoulder      Hold to select multiple entites&quot;)" isCall="True">
+      <funcRefArg charIndex="37019" charLength="49" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="37073" charLength="41" codePart="set_fx_hudElement(&quot;L JoyClick      Copy&quot;)" isCall="True">
+      <funcRefArg charIndex="37091" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="37118" charLength="42" codePart="set_fx_hudElement(&quot;R JoyClick      Paste&quot;)" isCall="True">
+      <funcRefArg charIndex="37136" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="37164" charLength="40" codePart="set_fx_hudElement(&quot;N               UFO&quot;)" isCall="True">
+      <funcRefArg charIndex="37182" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="37208" charLength="58" codePart="set_fx_hudElement(&quot;T               Toggle Timescale FAST&quot;)" isCall="True">
+      <funcRefArg charIndex="37226" charLength="39" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="37270" charLength="58" codePart="set_fx_hudElement(&quot;Y               Toggle Timescale SLOW&quot;)" isCall="True">
+      <funcRefArg charIndex="37288" charLength="39" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="37332" charLength="57" codePart="set_fx_hudElement(&quot;[               Toggle FX Visibility&quot;)" isCall="True">
+      <funcRefArg charIndex="37350" charLength="38" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="37393" charLength="52" codePart="set_fx_hudElement(&quot;]               Toggle ShowTris&quot;)" isCall="True">
+      <funcRefArg charIndex="37411" charLength="33" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_fx_hudElement" charIndex="37449" charLength="54" codePart="set_fx_hudElement(&quot;F11             Toggle FX Profile&quot;)" isCall="True">
+      <funcRefArg charIndex="37467" charLength="35" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="select_entity" charIndex="37539" charLength="84" codePart="select_entity(level.createFXent.size-1, level.createFXent[level.createFXent.size-1])" isCall="True">
+      <funcRefArg charIndex="37553" charLength="24" />
+      <funcRefArg charIndex="37579" charLength="43" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="37817" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="post_entity_creation_function" charIndex="37860" charLength="38" codePart="newent post_entity_creation_function()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="38080" charLength="28" codePart="isdefined(level.stored_ents)" isCall="True">
+      <funcRefArg charIndex="38090" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="clear_entity_selection" charIndex="38126" charLength="24" codePart="clear_entity_selection()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="add_and_select_entity" charIndex="38199" charLength="43" codePart="add_and_select_entity(level.stored_ents[i])" isCall="True">
+      <funcRefArg charIndex="38221" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="move_selection_to_cursor" charIndex="38249" charLength="27" codePart="move_selection_to_cursor( )" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="update_selected_entities" charIndex="38280" charLength="26" codePart="update_selected_entities()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="copy_ents" charIndex="38336" charLength="11" codePart="copy_ents()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="select_last_entity" charIndex="38496" charLength="20" codePart="select_last_entity()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="38558" charLength="22" codePart="isdefined(self.looper)" isCall="True">
+      <funcRefArg charIndex="38568" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="38585" charLength="20" codePart="self.looper delete()" isCall="True" />
+    <funcRef sfPath="maps\mp\_fx" name="stop_loopsound" charIndex="38609" charLength="34" codePart="self maps\mp\_fx::stop_loopsound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="set_forward_and_up_vectors" charIndex="38669" charLength="33" codePart="self set_forward_and_up_vectors()" isCall="True" />
+    <funcRef sfPath="maps\mp\_fx" name="create_looper" charIndex="38803" charLength="33" codePart="self maps\mp\_fx::create_looper()" isCall="True" />
+    <funcRef sfPath="maps\mp\_fx" name="create_triggerfx" charIndex="38948" charLength="36" codePart="self maps\mp\_fx::create_triggerfx()" isCall="True" />
+    <funcRef sfPath="maps\mp\_fx" name="create_loopsound" charIndex="39094" charLength="36" codePart="self maps\mp\_fx::create_loopsound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="update_fx_looper" charIndex="39276" charLength="26" codePart="ent update_fx_looper(true)" isCall="True">
+      <funcRefArg charIndex="39297" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="39391" charLength="35" codePart="level notify( &quot;new_ent_selection&quot; )" isCall="True">
+      <funcRefArg charIndex="39405" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_forward_and_up_vectors" charIndex="39624" charLength="32" codePart="ent set_forward_and_up_vectors()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="update_selected_entities" charIndex="39667" charLength="26" codePart="update_selected_entities()" isCall="True" />
+    <funcRef sfPath="codapi" name="notify" charIndex="39777" charLength="34" codePart="level notify (&quot;new_ent_selection&quot;)" isCall="True">
+      <funcRefArg charIndex="39791" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="set_forward_and_up_vectors" charIndex="39940" charLength="32" codePart="ent set_forward_and_up_vectors()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="update_selected_entities" charIndex="39983" charLength="26" codePart="update_selected_entities()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="40080" charLength="29" codePart="isdefined( lastSelectEntity )" isCall="True">
+      <funcRefArg charIndex="40091" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfxMenu" name="entities_are_selected" charIndex="40125" charLength="23" codePart="entities_are_selected()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfxMenu" name="entities_are_selected" charIndex="40189" charLength="23" codePart="entities_are_selected()" isCall="True" />
+    <funcRef sfPath="codapi" name="BulletTrace" charIndex="40649" charLength="77" codePart="bullettrace(ent.v[&quot;origin&quot;], ent.v[&quot;origin&quot;] + (0,0,-2048), false, undefined)" isCall="True">
+      <funcRefArg charIndex="40661" charLength="15" />
+      <funcRefArg charIndex="40678" charLength="29" />
+      <funcRefArg charIndex="40709" charLength="5" />
+      <funcRefArg charIndex="40716" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="40803" charLength="40" codePart="level notify (&quot;createfx_exploder_reset&quot;)" isCall="True">
+      <funcRefArg charIndex="40817" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="40962" charLength="30" codePart="isdefined( ent.v[&quot;exploder&quot;] )" isCall="True">
+      <funcRefArg charIndex="40973" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetArrayKeys" charIndex="41053" charLength="25" codePart="getarraykeys( exploders )" isCall="True">
+      <funcRefArg charIndex="41067" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="exploder" charIndex="41119" charLength="19" codePart="exploder( keys[i] )" isCall="True">
+      <funcRefArg charIndex="41129" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="41189" charLength="33" codePart="getdvarint( &quot;createfx_drawdist&quot; )" isCall="True">
+      <funcRefArg charIndex="41201" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="41233" charLength="38" codePart="setdvar( &quot;createfx_drawdist&quot;, &quot;1500&quot; )" isCall="True">
+      <funcRefArg charIndex="41242" charLength="19" />
+      <funcRefArg charIndex="41263" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="41305" charLength="33" codePart="getdvarint( &quot;createfx_drawdist&quot; )" isCall="True">
+      <funcRefArg charIndex="41317" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="41445" charLength="50" codePart="distance( level.player.origin, ent.v[ &quot;origin&quot; ] )" isCall="True">
+      <funcRefArg charIndex="41455" charLength="19" />
+      <funcRefArg charIndex="41476" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="flag_waitopen" charIndex="41708" charLength="34" codePart="flag_waitopen( &quot;createfx_saving&quot; )" isCall="True">
+      <funcRefArg charIndex="41723" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="generate_fx_log" charIndex="41747" charLength="23" codePart="generate_fx_log( true )" isCall="True">
+      <funcRefArg charIndex="41764" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="41827" charLength="24" codePart="self waittill( &quot;begin&quot; )" isCall="True">
+      <funcRefArg charIndex="41842" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="41862" charLength="29" codePart="isdefined( level.hasSpawned )" isCall="True">
+      <funcRefArg charIndex="41873" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="41981" charLength="50" codePart="getentarray(&quot;mp_global_intermission&quot;, &quot;classname&quot;)" isCall="True">
+      <funcRefArg charIndex="41993" charLength="24" />
+      <funcRefArg charIndex="42019" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="42039" charLength="26" codePart="assert( spawnpoints.size )" isCall="True">
+      <funcRefArg charIndex="42047" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getSpawnpoint_Random" charIndex="42086" charLength="64" codePart="maps\mp\gametypes\_spawnlogic::getSpawnpoint_Random(spawnpoints)" isCall="True">
+      <funcRefArg charIndex="42138" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="42232" charLength="48" codePart="self spawn(spawnpoint.origin, spawnpoint.angles)" isCall="True">
+      <funcRefArg charIndex="42243" charLength="17" />
+      <funcRefArg charIndex="42262" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Kick" charIndex="42350" charLength="15" codePart="kick(self.name)" isCall="True">
+      <funcRefArg charIndex="42355" charLength="9" />
+    </funcRef>
+    <error type="warning" charIndex="9261" charLength="25" lineIndex="355">
+      <message>Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked', file 'maps\mp\_createfx', line 356, 'if ( button_is_clicked( "F5" ) )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="9293" charLength="17" lineIndex="356">
+      <message>Could not find enough arguments, function 'maps\mp\_createfx::generate_fx_log'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_createfx::generate_fx_log', file 'maps\mp\_createfx', line 357, 'generate_fx_log();'</fullMessage>
+    </error>
+    <error type="warning" charIndex="9322" charLength="25" lineIndex="358">
+      <message>Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked', file 'maps\mp\_createfx', line 359, 'if ( button_is_clicked( "F2" ) )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="9390" charLength="24" lineIndex="361">
+      <message>Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked', file 'maps\mp\_createfx', line 362, 'if (button_is_clicked("ins"))'</fullMessage>
+    </error>
+    <error type="warning" charIndex="9446" charLength="24" lineIndex="364">
+      <message>Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked', file 'maps\mp\_createfx', line 365, 'if (button_is_clicked("del"))'</fullMessage>
+    </error>
+    <error type="warning" charIndex="9623" charLength="27" lineIndex="373">
+      <message>Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked', file 'maps\mp\_createfx', line 374, 'if (button_is_clicked("escape"))'</fullMessage>
+    </error>
+    <error type="warning" charIndex="9687" charLength="26" lineIndex="376">
+      <message>Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked', file 'maps\mp\_createfx', line 377, 'if ( button_is_clicked("space") )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="9977" charLength="36" lineIndex="392">
+      <message>Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked', file 'maps\mp\_createfx', line 393, 'if ( button_is_clicked( "BUTTON_LSTICK" ) )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="10041" charLength="36" lineIndex="394">
+      <message>Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked', file 'maps\mp\_createfx', line 395, 'if ( button_is_clicked( "BUTTON_RSTICK" ) )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="10130" charLength="22" lineIndex="399">
+      <message>Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked', file 'maps\mp\_createfx', line 400, 'if (button_is_clicked("c"))'</fullMessage>
+    </error>
+    <error type="warning" charIndex="10182" charLength="22" lineIndex="402">
+      <message>Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked', file 'maps\mp\_createfx', line 403, 'if (button_is_clicked("v"))'</fullMessage>
+    </error>
+    <error type="warning" charIndex="12395" charLength="24" lineIndex="475">
+      <message>Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_createfx::button_is_clicked', file 'maps\mp\_createfx', line 476, 'if ( button_is_clicked( "v" ) )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8449" charLength="2" lineIndex="328">
+      <message>Variable 'up' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'up' is defined, but its value is never used., file 'maps\mp\_createfx', line 329, 'up = anglestoup (level.player getplayerangles());'</fullMessage>
+    </error>
+    <error type="warning" charIndex="21799" charLength="22" lineIndex="856">
+      <message>Could not find enough arguments, function 'maps\mp\_createfx::buttonDown'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_createfx::buttonDown', file 'maps\mp\_createfx', line 857, 'if (buttonDown("BUTTON_Y"))'</fullMessage>
+    </error>
+    <error type="warning" charIndex="21970" charLength="22" lineIndex="864">
+      <message>Could not find enough arguments, function 'maps\mp\_createfx::buttonDown'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_createfx::buttonDown', file 'maps\mp\_createfx', line 865, 'if (buttonDown("BUTTON_B"))'</fullMessage>
+    </error>
+    <error type="warning" charIndex="20880" charLength="10" lineIndex="819">
+      <message>Variable 'keypressed' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'keypressed' is defined, but its value is never used., file 'maps\mp\_createfx', line 820, 'keypressed = false;'</fullMessage>
+    </error>
+    <error type="warning" charIndex="25328" charLength="22" lineIndex="1017">
+      <message>Could not find enough arguments, function 'maps\mp\_createfx::buttonDown'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_createfx::buttonDown', file 'maps\mp\_createfx', line 1018, 'if (buttonDown("BUTTON_Y"))'</fullMessage>
+    </error>
+    <error type="warning" charIndex="25515" charLength="22" lineIndex="1025">
+      <message>Could not find enough arguments, function 'maps\mp\_createfx::buttonDown'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_createfx::buttonDown', file 'maps\mp\_createfx', line 1026, 'if (buttonDown("BUTTON_B"))'</fullMessage>
+    </error>
+    <error type="warning" charIndex="40331" charLength="2" lineIndex="1595">
+      <message>Variable 'id' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'id' is defined, but its value is never used., file 'maps\mp\_createfx', line 1596, 'createfx_showOrigin (id, org, delay, org2, type, exploder, id2, fireFx, fireFxDelay, fireFxSound, fxSound, fxQuake, fxDamage, soundalias, repeat, delay_min, delay_max, damage_radius, fireFxTimeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="40335" charLength="3" lineIndex="1595">
+      <message>Variable 'org' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'org' is defined, but its value is never used., file 'maps\mp\_createfx', line 1596, 'createfx_showOrigin (id, org, delay, org2, type, exploder, id2, fireFx, fireFxDelay, fireFxSound, fxSound, fxQuake, fxDamage, soundalias, repeat, delay_min, delay_max, damage_radius, fireFxTimeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="40340" charLength="5" lineIndex="1595">
+      <message>Variable 'delay' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'delay' is defined, but its value is never used., file 'maps\mp\_createfx', line 1596, 'createfx_showOrigin (id, org, delay, org2, type, exploder, id2, fireFx, fireFxDelay, fireFxSound, fxSound, fxQuake, fxDamage, soundalias, repeat, delay_min, delay_max, damage_radius, fireFxTimeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="40347" charLength="4" lineIndex="1595">
+      <message>Variable 'org2' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'org2' is defined, but its value is never used., file 'maps\mp\_createfx', line 1596, 'createfx_showOrigin (id, org, delay, org2, type, exploder, id2, fireFx, fireFxDelay, fireFxSound, fxSound, fxQuake, fxDamage, soundalias, repeat, delay_min, delay_max, damage_radius, fireFxTimeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="40353" charLength="4" lineIndex="1595">
+      <message>Variable 'type' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'type' is defined, but its value is never used., file 'maps\mp\_createfx', line 1596, 'createfx_showOrigin (id, org, delay, org2, type, exploder, id2, fireFx, fireFxDelay, fireFxSound, fxSound, fxQuake, fxDamage, soundalias, repeat, delay_min, delay_max, damage_radius, fireFxTimeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="40359" charLength="8" lineIndex="1595">
+      <message>Variable 'exploder' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'exploder' is defined, but its value is never used., file 'maps\mp\_createfx', line 1596, 'createfx_showOrigin (id, org, delay, org2, type, exploder, id2, fireFx, fireFxDelay, fireFxSound, fxSound, fxQuake, fxDamage, soundalias, repeat, delay_min, delay_max, damage_radius, fireFxTimeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="40369" charLength="3" lineIndex="1595">
+      <message>Variable 'id2' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'id2' is defined, but its value is never used., file 'maps\mp\_createfx', line 1596, 'createfx_showOrigin (id, org, delay, org2, type, exploder, id2, fireFx, fireFxDelay, fireFxSound, fxSound, fxQuake, fxDamage, soundalias, repeat, delay_min, delay_max, damage_radius, fireFxTimeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="40374" charLength="6" lineIndex="1595">
+      <message>Variable 'fireFx' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'fireFx' is defined, but its value is never used., file 'maps\mp\_createfx', line 1596, 'createfx_showOrigin (id, org, delay, org2, type, exploder, id2, fireFx, fireFxDelay, fireFxSound, fxSound, fxQuake, fxDamage, soundalias, repeat, delay_min, delay_max, damage_radius, fireFxTimeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="40382" charLength="11" lineIndex="1595">
+      <message>Variable 'fireFxDelay' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'fireFxDelay' is defined, but its value is never used., file 'maps\mp\_createfx', line 1596, 'createfx_showOrigin (id, org, delay, org2, type, exploder, id2, fireFx, fireFxDelay, fireFxSound, fxSound, fxQuake, fxDamage, soundalias, repeat, delay_min, delay_max, damage_radius, fireFxTimeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="40395" charLength="11" lineIndex="1595">
+      <message>Variable 'fireFxSound' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'fireFxSound' is defined, but its value is never used., file 'maps\mp\_createfx', line 1596, 'createfx_showOrigin (id, org, delay, org2, type, exploder, id2, fireFx, fireFxDelay, fireFxSound, fxSound, fxQuake, fxDamage, soundalias, repeat, delay_min, delay_max, damage_radius, fireFxTimeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="40408" charLength="7" lineIndex="1595">
+      <message>Variable 'fxSound' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'fxSound' is defined, but its value is never used., file 'maps\mp\_createfx', line 1596, 'createfx_showOrigin (id, org, delay, org2, type, exploder, id2, fireFx, fireFxDelay, fireFxSound, fxSound, fxQuake, fxDamage, soundalias, repeat, delay_min, delay_max, damage_radius, fireFxTimeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="40417" charLength="7" lineIndex="1595">
+      <message>Variable 'fxQuake' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'fxQuake' is defined, but its value is never used., file 'maps\mp\_createfx', line 1596, 'createfx_showOrigin (id, org, delay, org2, type, exploder, id2, fireFx, fireFxDelay, fireFxSound, fxSound, fxQuake, fxDamage, soundalias, repeat, delay_min, delay_max, damage_radius, fireFxTimeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="40426" charLength="8" lineIndex="1595">
+      <message>Variable 'fxDamage' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'fxDamage' is defined, but its value is never used., file 'maps\mp\_createfx', line 1596, 'createfx_showOrigin (id, org, delay, org2, type, exploder, id2, fireFx, fireFxDelay, fireFxSound, fxSound, fxQuake, fxDamage, soundalias, repeat, delay_min, delay_max, damage_radius, fireFxTimeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="40436" charLength="10" lineIndex="1595">
+      <message>Variable 'soundalias' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'soundalias' is defined, but its value is never used., file 'maps\mp\_createfx', line 1596, 'createfx_showOrigin (id, org, delay, org2, type, exploder, id2, fireFx, fireFxDelay, fireFxSound, fxSound, fxQuake, fxDamage, soundalias, repeat, delay_min, delay_max, damage_radius, fireFxTimeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="40448" charLength="6" lineIndex="1595">
+      <message>Variable 'repeat' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'repeat' is defined, but its value is never used., file 'maps\mp\_createfx', line 1596, 'createfx_showOrigin (id, org, delay, org2, type, exploder, id2, fireFx, fireFxDelay, fireFxSound, fxSound, fxQuake, fxDamage, soundalias, repeat, delay_min, delay_max, damage_radius, fireFxTimeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="40456" charLength="9" lineIndex="1595">
+      <message>Variable 'delay_min' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'delay_min' is defined, but its value is never used., file 'maps\mp\_createfx', line 1596, 'createfx_showOrigin (id, org, delay, org2, type, exploder, id2, fireFx, fireFxDelay, fireFxSound, fxSound, fxQuake, fxDamage, soundalias, repeat, delay_min, delay_max, damage_radius, fireFxTimeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="40467" charLength="9" lineIndex="1595">
+      <message>Variable 'delay_max' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'delay_max' is defined, but its value is never used., file 'maps\mp\_createfx', line 1596, 'createfx_showOrigin (id, org, delay, org2, type, exploder, id2, fireFx, fireFxDelay, fireFxSound, fxSound, fxQuake, fxDamage, soundalias, repeat, delay_min, delay_max, damage_radius, fireFxTimeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="40478" charLength="13" lineIndex="1595">
+      <message>Variable 'damage_radius' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'damage_radius' is defined, but its value is never used., file 'maps\mp\_createfx', line 1596, 'createfx_showOrigin (id, org, delay, org2, type, exploder, id2, fireFx, fireFxDelay, fireFxSound, fxSound, fxQuake, fxDamage, soundalias, repeat, delay_min, delay_max, damage_radius, fireFxTimeout)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="40493" charLength="13" lineIndex="1595">
+      <message>Variable 'fireFxTimeout' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'fireFxTimeout' is defined, but its value is never used., file 'maps\mp\_createfx', line 1596, 'createfx_showOrigin (id, org, delay, org2, type, exploder, id2, fireFx, fireFxDelay, fireFxSound, fxSound, fxQuake, fxDamage, soundalias, repeat, delay_min, delay_max, damage_radius, fireFxTimeout)'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

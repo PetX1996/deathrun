@@ -1,0 +1,1312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\twar</name>
+  </settings>
+  <content>
+    <include>maps\mp\_utility</include>
+    <include>maps\mp\gametypes\_hud_util</include>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPrecacheGameType" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onRoundSwitch" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getTimeLimitDvarValue" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onOvertime" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onStartGameType" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onTimeLimit" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onTeamOutcomeNotify" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="winner">
+      </param>
+      <param name="isRound">
+      </param>
+      <param name="endReasonText">
+      </param>
+    </func>
+    <func name="getRespawnDelay" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="twar_sendDvarToAllPlayers" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="dvar">
+      </param>
+      <param name="value">
+      </param>
+      <param name="inc_count">
+      </param>
+      <param name="time_inc">
+      </param>
+    </func>
+    <func name="twar_setClientDvar" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="dvar">
+      </param>
+      <param name="value">
+      </param>
+      <param name="time">
+      </param>
+    </func>
+    <func name="sendFlagCallsignDvar" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="label">
+      </param>
+      <param name="dvar">
+      </param>
+      <param name="time">
+      </param>
+    </func>
+    <func name="sendFlagCallsignDvars" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerConnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onTeamChange" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="clearPlayersTouchingFlag" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="hideHudOnNotify" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="hardpointMomentum" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="isHidingHud" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateAllPlayersHudIcons" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="contested_flag">
+      </param>
+    </func>
+    <func name="hideAllPlayersHudIcons" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="fadeInIconChild" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="fadeInIconElemAndChildren" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="fadeInIconElem" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="fadeOutIconElemAndChildren" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="threadedUpdateHudIcons" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="hide">
+      </param>
+      <param name="parent_elem_index">
+      </param>
+      <param name="time">
+      </param>
+    </func>
+    <func name="updateHudIcons" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="hide">
+      </param>
+    </func>
+    <func name="updateHudProgressBar" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="flag">
+      </param>
+    </func>
+    <func name="updateAllPlayersHudPlayerProgressBars" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="flag">
+      </param>
+    </func>
+    <func name="updateAllPlayersHudPlayerCounts" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="flag">
+      </param>
+    </func>
+    <func name="updateHudPlayerCounts" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="flag">
+      </param>
+      <param name="numAllies">
+      </param>
+      <param name="numAxis">
+      </param>
+    </func>
+    <func name="updateHudMomentumForTeam" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="createWarGameDataHudElem" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateHudMomentum" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateMomentum" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="amount">
+      </param>
+    </func>
+    <func name="alliesBlitzkriegCountdown" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="axisBlitzkriegCountdown" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateFlagStatusHudDvars" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="flag">
+      </param>
+    </func>
+    <func name="onSpawnPlayerUnified" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onSpawnPlayer" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onSpawnSpectator" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="origin">
+      </param>
+      <param name="angles">
+      </param>
+    </func>
+    <func name="twar_playerSpawnedCB" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="twar_threadedPlayerSpawnedCB" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="twarFlags" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="sortFlags" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getUnownedFlagNearestStart" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="excludeFlag">
+      </param>
+    </func>
+    <func name="domDebug" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="isTeamLastFlag" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="label">
+      </param>
+    </func>
+    <func name="onTouchUse" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="player">
+      </param>
+    </func>
+    <func name="onEndTouchUse" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="player">
+      </param>
+    </func>
+    <func name="onBeginUse" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="player">
+      </param>
+    </func>
+    <func name="onUseUpdate" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="progress">
+      </param>
+      <param name="change">
+      </param>
+    </func>
+    <func name="statusDialog" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="dialog">
+      </param>
+      <param name="team">
+      </param>
+      <param name="checkTime">
+      </param>
+    </func>
+    <func name="onEndUse" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="player">
+      </param>
+      <param name="success">
+      </param>
+    </func>
+    <func name="resetFlagBaseEffect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="delay_time">
+      </param>
+    </func>
+    <func name="setFlagOwner" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="flagNeutralTimer" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onUse" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="player">
+      </param>
+    </func>
+    <func name="checkIfLastFlag" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="checkIfLastFlagCaptured" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="getUseRate" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="accelPercent">
+      </param>
+    </func>
+    <func name="onUpdateUseRate" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="giveFlagCaptureXP" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="touchList">
+      </param>
+      <param name="isLastFlag">
+      </param>
+    </func>
+    <func name="delayedLeaderDialog" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="sound">
+      </param>
+      <param name="team">
+      </param>
+    </func>
+    <func name="delayedLeaderDialogBothTeams" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="sound1">
+      </param>
+      <param name="team1">
+      </param>
+      <param name="sound2">
+      </param>
+      <param name="team2">
+      </param>
+    </func>
+    <func name="onPlayerKilled" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="eInflictor">
+      </param>
+      <param name="attacker">
+      </param>
+      <param name="iDamage">
+      </param>
+      <param name="sMeansOfDeath">
+      </param>
+      <param name="sWeapon">
+      </param>
+      <param name="vDir">
+      </param>
+      <param name="sHitLoc">
+      </param>
+      <param name="psOffsetTime">
+      </param>
+      <param name="deathAnimDuration">
+      </param>
+    </func>
+    <func name="updateTwarScores" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getTeamFlagCount" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="getFlagTeam" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getBoundaryFlags" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getBoundaryFlagSpawns" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="getSpawnsBoundingFlag" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="avoidflag">
+      </param>
+    </func>
+    <func name="getOwnedAndBoundingFlagSpawns" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="getOwnedFlagSpawns" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="flagSetup" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="refWrapper">
+      </param>
+    </func>
+    <func name="onEndGame" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="winningTeam">
+      </param>
+    </func>
+    <func name="printMapErrors" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="refWrapper">
+      </param>
+    </func>
+    <func name="twar_flag_index_to_script_flag" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="flag_index">
+      </param>
+    </func>
+    <func name="twar_generate_non_enemy_flag_indices" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="player_team">
+      </param>
+    </func>
+    <func name="twar_is_valid_influencer_for_flag" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="influencer_entity">
+      </param>
+      <param name="flag_team">
+      </param>
+      <param name="script_flag">
+      </param>
+    </func>
+    <func name="twar_create_designer_placed_spawn_influencers_for_flag" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="placed_influencers">
+      </param>
+      <param name="flag_index">
+      </param>
+      <param name="flag_team">
+      </param>
+      <param name="score">
+      </param>
+    </func>
+    <func name="twar_update_spawn_influencers" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="twar_create_spawn_influencers" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="twar_create_spawn_influencers_for_team" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="placed_influencers">
+      </param>
+    </func>
+    <func name="twar_create_contested_objective_influencer" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="flag_entity">
+      </param>
+    </func>
+    <func name="twar_create_contested_objective_positive_influencer" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="flag_entity">
+      </param>
+    </func>
+    <func name="twar_remove_spawn_influencers" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="locate_contested_twar_flag" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="locate_contested_twar_flag_index" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="hud_beginUseHudFlagProgressBarsForPlayers" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="captureTeam">
+      </param>
+    </func>
+    <func name="hud_beginUseHudFlagProgressBars" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="captureTeam">
+      </param>
+    </func>
+    <func name="hud_createPlayerFlagElems" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="hud_createPlayersFlagElems" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="hud_getDefaultOwnerTeam" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="index">
+      </param>
+    </func>
+    <func name="hud_createPlayerFlagIcons" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="hud_createPlayerFlagProgressBar" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="hud_createPlayerFlagCapCount" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="hud_updateHudParentingForAllPlayers" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="hud_updateHudParentingForPlayer" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="parent_elem_index">
+      </param>
+    </func>
+    <func name="hud_hideHudForPlayer" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="hud_showHudForPlayer" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="contested_flag">
+      </param>
+    </func>
+    <func name="hud_showProgressBarForPlayer" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="enabled">
+      </param>
+    </func>
+    <func name="hud_showProgressBarsForAllPlayers" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="enabled">
+      </param>
+      <param name="exclude">
+      </param>
+    </func>
+    <func name="hud_hideProgressAndCountsForAllPlayers" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="hud_showHudElem" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="enabled">
+      </param>
+    </func>
+    <func name="hud_showPlayerCountForPlayer" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="contested_flag">
+      </param>
+      <param name="enabled">
+      </param>
+    </func>
+    <func name="hud_showPlayerCountForAllPlayers" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="contested_flag">
+      </param>
+      <param name="enabled">
+      </param>
+    </func>
+    <func name="hud_threadedShowPlayerCountForAllPlayers" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="contested_flag">
+      </param>
+      <param name="enabled">
+      </param>
+    </func>
+    <error type="semantic" charIndex="427" charLength="27" lineIndex="8">
+      <message>Could not include file 'maps\mp\_geometry'</message>
+      <fullMessage>Bad semantic: Could not include file 'maps\mp\_geometry', file 'maps\mp\gametypes\twar', line 9, '#include maps\mp\_geometry;'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="495" charLength="24" lineIndex="10">
+      <message>Could not include file 'maps\mp\_music'</message>
+      <fullMessage>Bad semantic: Could not include file 'maps\mp\_music', file 'maps\mp\gametypes\twar', line 11, '#include maps\mp\_music;'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="521" charLength="28" lineIndex="11">
+      <message>Could not include file 'openwarfare\_utils'</message>
+      <fullMessage>Bad semantic: Could not include file 'openwarfare\_utils', file 'maps\mp\gametypes\twar', line 12, '#include openwarfare\_utils;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

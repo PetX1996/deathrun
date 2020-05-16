@@ -1,0 +1,1138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createfx\sniperescape_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <error type="semantic" charIndex="96" charLength="42" lineIndex="4">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 5, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="530" charLength="42" lineIndex="15">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 16, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="966" charLength="42" lineIndex="26">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 27, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1401" charLength="42" lineIndex="37">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 38, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1837" charLength="42" lineIndex="48">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 49, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2273" charLength="42" lineIndex="59">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 60, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2607" charLength="42" lineIndex="67">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 68, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3043" charLength="42" lineIndex="78">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 79, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3479" charLength="42" lineIndex="89">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 90, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3915" charLength="42" lineIndex="100">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 101, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4351" charLength="42" lineIndex="111">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 112, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4787" charLength="42" lineIndex="122">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 123, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5222" charLength="42" lineIndex="133">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 134, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5658" charLength="42" lineIndex="144">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 145, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6094" charLength="42" lineIndex="155">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 156, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6530" charLength="42" lineIndex="166">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 167, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6963" charLength="42" lineIndex="177">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 178, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7297" charLength="42" lineIndex="185">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 186, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7631" charLength="42" lineIndex="193">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 194, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8064" charLength="42" lineIndex="204">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 205, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8500" charLength="42" lineIndex="215">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 216, 'ent = maps\_utility::createExploder( "bird_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8935" charLength="51" lineIndex="226">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 227, 'ent = maps\_utility::createExploder( "aerial_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9278" charLength="51" lineIndex="234">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 235, 'ent = maps\_utility::createExploder( "aerial_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9617" charLength="51" lineIndex="242">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 243, 'ent = maps\_utility::createExploder( "aerial_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9960" charLength="51" lineIndex="250">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 251, 'ent = maps\_utility::createExploder( "aerial_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10282" charLength="51" lineIndex="258">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 259, 'ent = maps\_utility::createExploder( "aerial_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10598" charLength="51" lineIndex="266">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 267, 'ent = maps\_utility::createExploder( "aerial_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10914" charLength="51" lineIndex="274">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 275, 'ent = maps\_utility::createExploder( "aerial_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11228" charLength="51" lineIndex="282">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 283, 'ent = maps\_utility::createExploder( "aerial_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11571" charLength="51" lineIndex="290">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 291, 'ent = maps\_utility::createExploder( "aerial_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11912" charLength="51" lineIndex="298">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 299, 'ent = maps\_utility::createExploder( "window_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="12273" charLength="52" lineIndex="306">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 307, 'ent = maps\_utility::createExploder( "window_fire_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="12686" charLength="49" lineIndex="316">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 317, 'ent = maps\_utility::createExploder( "heli_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="12998" charLength="51" lineIndex="324">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 325, 'ent = maps\_utility::createExploder( "window_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="13441" charLength="52" lineIndex="334">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 335, 'ent = maps\_utility::createExploder( "window_fire_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="13770" charLength="51" lineIndex="342">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 343, 'ent = maps\_utility::createExploder( "window_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="14131" charLength="52" lineIndex="350">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 351, 'ent = maps\_utility::createExploder( "window_fire_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="14544" charLength="51" lineIndex="360">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 361, 'ent = maps\_utility::createExploder( "window_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="14905" charLength="52" lineIndex="368">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 369, 'ent = maps\_utility::createExploder( "window_fire_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="15318" charLength="52" lineIndex="378">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 379, 'ent = maps\_utility::createExploder( "window_fire_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="15648" charLength="40" lineIndex="386">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 387, 'ent = maps\_utility::createExploder( "No FX" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="15960" charLength="52" lineIndex="394">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 395, 'ent = maps\_utility::createExploder( "window_fire_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="16278" charLength="62" lineIndex="402">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 403, 'ent = maps\_utility::createOneshotEffect( "dust_ceiling_ash_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="16541" charLength="62" lineIndex="408">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 409, 'ent = maps\_utility::createOneshotEffect( "dust_ceiling_ash_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="16804" charLength="62" lineIndex="414">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 415, 'ent = maps\_utility::createOneshotEffect( "dust_ceiling_ash_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="17067" charLength="53" lineIndex="420">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 421, 'ent = maps\_utility::createOneshotEffect( "room_dust_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="17312" charLength="53" lineIndex="426">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 427, 'ent = maps\_utility::createOneshotEffect( "room_dust_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="17553" charLength="60" lineIndex="432">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 433, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="17829" charLength="60" lineIndex="438">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 439, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18105" charLength="62" lineIndex="444">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 445, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18383" charLength="62" lineIndex="450">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 451, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18662" charLength="33" lineIndex="456">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 457, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18868" charLength="33" lineIndex="461">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 462, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19075" charLength="33" lineIndex="466">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 467, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19282" charLength="33" lineIndex="471">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 472, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19489" charLength="33" lineIndex="476">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 477, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19696" charLength="33" lineIndex="481">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 482, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19903" charLength="33" lineIndex="486">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 487, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20110" charLength="33" lineIndex="491">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 492, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20317" charLength="33" lineIndex="496">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 497, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20525" charLength="33" lineIndex="501">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 502, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20733" charLength="33" lineIndex="506">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 507, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20944" charLength="33" lineIndex="511">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 512, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21153" charLength="33" lineIndex="516">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 517, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21361" charLength="33" lineIndex="521">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 522, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21568" charLength="33" lineIndex="526">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 527, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21775" charLength="33" lineIndex="531">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 532, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21982" charLength="33" lineIndex="536">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 537, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22189" charLength="33" lineIndex="541">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 542, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22395" charLength="33" lineIndex="546">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 547, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22602" charLength="33" lineIndex="551">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 552, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22809" charLength="33" lineIndex="556">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 557, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23016" charLength="33" lineIndex="561">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 562, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23223" charLength="33" lineIndex="566">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 567, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23430" charLength="33" lineIndex="571">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 572, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23637" charLength="33" lineIndex="576">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 577, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23844" charLength="33" lineIndex="581">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 582, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24051" charLength="33" lineIndex="586">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 587, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24259" charLength="33" lineIndex="591">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 592, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24466" charLength="33" lineIndex="596">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 597, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24674" charLength="33" lineIndex="601">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 602, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24879" charLength="33" lineIndex="606">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 607, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25087" charLength="33" lineIndex="611">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 612, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25295" charLength="33" lineIndex="616">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 617, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25503" charLength="33" lineIndex="621">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 622, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25710" charLength="33" lineIndex="626">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 627, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25917" charLength="33" lineIndex="631">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 632, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="26125" charLength="33" lineIndex="636">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 637, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="26332" charLength="33" lineIndex="641">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 642, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="26540" charLength="33" lineIndex="646">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 647, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="26748" charLength="33" lineIndex="651">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 652, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="26956" charLength="33" lineIndex="656">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 657, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="27164" charLength="33" lineIndex="661">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 662, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="27372" charLength="33" lineIndex="666">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 667, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="27579" charLength="33" lineIndex="671">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 672, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="27787" charLength="33" lineIndex="676">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 677, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="27994" charLength="33" lineIndex="681">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 682, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="28202" charLength="33" lineIndex="686">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 687, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="28409" charLength="33" lineIndex="691">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 692, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="28616" charLength="33" lineIndex="696">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 697, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="28821" charLength="33" lineIndex="701">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 702, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="29029" charLength="33" lineIndex="706">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 707, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="29237" charLength="52" lineIndex="711">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 712, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="29479" charLength="52" lineIndex="717">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 718, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="29721" charLength="52" lineIndex="723">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 724, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="29963" charLength="52" lineIndex="729">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 730, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="30206" charLength="52" lineIndex="735">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 736, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="30448" charLength="52" lineIndex="741">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 742, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="30691" charLength="52" lineIndex="747">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 748, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="30934" charLength="52" lineIndex="753">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 754, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="31175" charLength="52" lineIndex="759">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 760, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="31417" charLength="52" lineIndex="765">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 766, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="31661" charLength="52" lineIndex="771">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 772, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="31904" charLength="52" lineIndex="777">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 778, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="32148" charLength="52" lineIndex="783">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 784, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="32391" charLength="60" lineIndex="789">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 790, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="32666" charLength="60" lineIndex="795">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 796, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="32942" charLength="60" lineIndex="801">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 802, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="33217" charLength="60" lineIndex="807">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 808, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="33493" charLength="60" lineIndex="813">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 814, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="33769" charLength="53" lineIndex="819">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 820, 'ent = maps\_utility::createOneshotEffect( "room_dust_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="34014" charLength="53" lineIndex="825">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 826, 'ent = maps\_utility::createOneshotEffect( "room_dust_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="34259" charLength="60" lineIndex="831">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 832, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="34535" charLength="60" lineIndex="837">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 838, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="34811" charLength="72" lineIndex="843">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 844, 'ent = maps\_utility::createOneshotEffect( "dust_ceiling_ash_large_stairwell" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="35105" charLength="72" lineIndex="849">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 850, 'ent = maps\_utility::createOneshotEffect( "dust_ceiling_ash_large_stairwell" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="35400" charLength="62" lineIndex="855">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 856, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="35680" charLength="62" lineIndex="861">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 862, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="35957" charLength="62" lineIndex="867">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 868, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="36234" charLength="60" lineIndex="873">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 874, 'ent = maps\_utility::createOneshotEffect( "village_smolder_hall" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="36494" charLength="60" lineIndex="879">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 880, 'ent = maps\_utility::createOneshotEffect( "village_smolder_hall" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="36755" charLength="60" lineIndex="885">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 886, 'ent = maps\_utility::createOneshotEffect( "village_smolder_hall" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="37015" charLength="60" lineIndex="891">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 892, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="37289" charLength="60" lineIndex="897">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 898, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="37564" charLength="60" lineIndex="903">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 904, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="37839" charLength="60" lineIndex="909">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 910, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="38115" charLength="60" lineIndex="915">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 916, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="38391" charLength="52" lineIndex="921">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 922, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="38633" charLength="52" lineIndex="927">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 928, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="38874" charLength="52" lineIndex="933">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 934, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="39118" charLength="52" lineIndex="939">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 940, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="39362" charLength="52" lineIndex="945">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 946, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="39599" charLength="52" lineIndex="951">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 952, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="39842" charLength="52" lineIndex="957">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 958, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="40086" charLength="52" lineIndex="963">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 964, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="40330" charLength="72" lineIndex="969">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 970, 'ent = maps\_utility::createOneshotEffect( "dust_ceiling_ash_large_stairwell" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="40625" charLength="72" lineIndex="975">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 976, 'ent = maps\_utility::createOneshotEffect( "dust_ceiling_ash_large_stairwell" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="40919" charLength="62" lineIndex="981">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 982, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="41198" charLength="62" lineIndex="987">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 988, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="41477" charLength="62" lineIndex="993">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 994, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="41756" charLength="64" lineIndex="999">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1000, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="42023" charLength="64" lineIndex="1005">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1006, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_v" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="42303" charLength="64" lineIndex="1011">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1012, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_v" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="42570" charLength="52" lineIndex="1017">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1018, 'ent = maps\_utility::createOneshotEffect( "fire_wall_50" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="42828" charLength="52" lineIndex="1023">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1024, 'ent = maps\_utility::createOneshotEffect( "fire_wall_50" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="43087" charLength="52" lineIndex="1029">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1030, 'ent = maps\_utility::createOneshotEffect( "fire_wall_50" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="43346" charLength="44" lineIndex="1035">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1036, 'ent = maps\_utility::createOneshotEffect( "lava" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="43585" charLength="46" lineIndex="1041">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1042, 'ent = maps\_utility::createOneshotEffect( "lava_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="43827" charLength="46" lineIndex="1047">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1048, 'ent = maps\_utility::createOneshotEffect( "lava_c" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="44070" charLength="46" lineIndex="1053">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1054, 'ent = maps\_utility::createOneshotEffect( "lava_b" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="44313" charLength="55" lineIndex="1059">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1060, 'ent = maps\_utility::createOneshotEffect( "lava_ash_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="44577" charLength="55" lineIndex="1065">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1066, 'ent = maps\_utility::createOneshotEffect( "lava_ash_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="44840" charLength="55" lineIndex="1071">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1072, 'ent = maps\_utility::createOneshotEffect( "lava_ash_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="45104" charLength="46" lineIndex="1077">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1078, 'ent = maps\_utility::createOneshotEffect( "lava_d" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="45352" charLength="46" lineIndex="1083">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1084, 'ent = maps\_utility::createOneshotEffect( "lava_d" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="45595" charLength="44" lineIndex="1089">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1090, 'ent = maps\_utility::createOneshotEffect( "lava" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="45833" charLength="46" lineIndex="1095">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1096, 'ent = maps\_utility::createOneshotEffect( "lava_d" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="46073" charLength="44" lineIndex="1101">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1102, 'ent = maps\_utility::createOneshotEffect( "lava" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="46316" charLength="46" lineIndex="1107">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1108, 'ent = maps\_utility::createOneshotEffect( "lava_b" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="46563" charLength="46" lineIndex="1113">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1114, 'ent = maps\_utility::createOneshotEffect( "lava_d" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="46809" charLength="44" lineIndex="1119">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1120, 'ent = maps\_utility::createOneshotEffect( "lava" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="47051" charLength="52" lineIndex="1125">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1126, 'ent = maps\_utility::createOneshotEffect( "lava_a_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="47310" charLength="46" lineIndex="1131">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1132, 'ent = maps\_utility::createOneshotEffect( "lava_c" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="47558" charLength="44" lineIndex="1137">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1138, 'ent = maps\_utility::createOneshotEffect( "lava" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="47802" charLength="44" lineIndex="1143">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1144, 'ent = maps\_utility::createOneshotEffect( "lava" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="48046" charLength="60" lineIndex="1149">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1150, 'ent = maps\_utility::createOneshotEffect( "village_smolder_hall" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="48304" charLength="60" lineIndex="1155">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1156, 'ent = maps\_utility::createOneshotEffect( "village_smolder_hall" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="48563" charLength="60" lineIndex="1161">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1162, 'ent = maps\_utility::createOneshotEffect( "village_smolder_hall" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="48821" charLength="60" lineIndex="1167">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1168, 'ent = maps\_utility::createOneshotEffect( "village_smolder_hall" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="49080" charLength="60" lineIndex="1173">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1174, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="49355" charLength="60" lineIndex="1179">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1180, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="49630" charLength="62" lineIndex="1185">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1186, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="49907" charLength="62" lineIndex="1191">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1192, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="50185" charLength="62" lineIndex="1197">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1198, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="50463" charLength="52" lineIndex="1203">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1204, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="50705" charLength="52" lineIndex="1209">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1210, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="50946" charLength="49" lineIndex="1215">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1216, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="51195" charLength="49" lineIndex="1221">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1222, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="51445" charLength="49" lineIndex="1227">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1228, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="51694" charLength="49" lineIndex="1233">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1234, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="51939" charLength="49" lineIndex="1239">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1240, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="52189" charLength="49" lineIndex="1245">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1246, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="52434" charLength="49" lineIndex="1251">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1252, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="52684" charLength="52" lineIndex="1257">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1258, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="52928" charLength="52" lineIndex="1263">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1264, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="53172" charLength="49" lineIndex="1269">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1270, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="53416" charLength="52" lineIndex="1275">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1276, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="53655" charLength="49" lineIndex="1281">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1282, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="53896" charLength="49" lineIndex="1287">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1288, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="54141" charLength="49" lineIndex="1293">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1294, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="54391" charLength="62" lineIndex="1299">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1300, 'ent = maps\_utility::createOneshotEffect( "dust_ceiling_ash_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="54655" charLength="62" lineIndex="1305">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1306, 'ent = maps\_utility::createOneshotEffect( "dust_ceiling_ash_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="54919" charLength="62" lineIndex="1311">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1312, 'ent = maps\_utility::createOneshotEffect( "dust_ceiling_ash_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="55183" charLength="62" lineIndex="1317">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1318, 'ent = maps\_utility::createOneshotEffect( "dust_ceiling_ash_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="55447" charLength="62" lineIndex="1323">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1324, 'ent = maps\_utility::createOneshotEffect( "dust_ceiling_ash_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="55711" charLength="62" lineIndex="1329">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1330, 'ent = maps\_utility::createOneshotEffect( "dust_ceiling_ash_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="55972" charLength="62" lineIndex="1335">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1336, 'ent = maps\_utility::createOneshotEffect( "dust_ceiling_ash_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="56236" charLength="52" lineIndex="1341">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1342, 'ent = maps\_utility::createOneshotEffect( "ground_smoke" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="56479" charLength="49" lineIndex="1347">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1348, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="56724" charLength="49" lineIndex="1353">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1354, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="56972" charLength="49" lineIndex="1359">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1360, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="57219" charLength="49" lineIndex="1365">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1366, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="57467" charLength="49" lineIndex="1371">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1372, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="57714" charLength="49" lineIndex="1377">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1378, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="57963" charLength="49" lineIndex="1383">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1384, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="58212" charLength="49" lineIndex="1389">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1390, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="58460" charLength="49" lineIndex="1395">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1396, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="58709" charLength="49" lineIndex="1401">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1402, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="58951" charLength="49" lineIndex="1407">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1408, 'ent = maps\_utility::createOneshotEffect( "snow_wind" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="59198" charLength="56" lineIndex="1413">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1414, 'ent = maps\_utility::createExploder( "helicopter_crash_dirt" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="59563" charLength="56" lineIndex="1421">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1422, 'ent = maps\_utility::createExploder( "helicopter_crash_dirt" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="59888" charLength="46" lineIndex="1429">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1430, 'ent = maps\_utility::createExploder( "window_rock" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="60212" charLength="46" lineIndex="1437">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1438, 'ent = maps\_utility::createExploder( "window_rock" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="60533" charLength="46" lineIndex="1445">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1446, 'ent = maps\_utility::createExploder( "window_rock" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="60856" charLength="50" lineIndex="1453">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1454, 'ent = maps\_utility::createExploder( "heli_rotor_dirt" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="61172" charLength="50" lineIndex="1461">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\sniperescape_fx', line 1462, 'ent = maps\_utility::createExploder( "heli_rotor_dirt" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="61487" charLength="33" lineIndex="1469">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1470, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="61695" charLength="33" lineIndex="1474">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1475, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="61895" charLength="33" lineIndex="1479">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1480, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="62095" charLength="33" lineIndex="1484">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1485, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="62295" charLength="33" lineIndex="1489">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1490, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="62495" charLength="33" lineIndex="1494">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1495, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="62695" charLength="33" lineIndex="1499">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1500, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="62897" charLength="33" lineIndex="1504">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1505, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="63098" charLength="33" lineIndex="1509">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1510, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="63305" charLength="33" lineIndex="1514">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1515, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="63512" charLength="33" lineIndex="1519">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1520, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="63713" charLength="33" lineIndex="1524">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1525, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="63921" charLength="33" lineIndex="1529">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1530, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="64129" charLength="33" lineIndex="1534">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1535, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="64337" charLength="33" lineIndex="1539">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1540, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="64545" charLength="33" lineIndex="1544">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1545, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="64753" charLength="33" lineIndex="1549">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1550, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="64960" charLength="33" lineIndex="1554">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1555, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="65162" charLength="33" lineIndex="1559">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1560, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="65364" charLength="33" lineIndex="1564">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1565, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="65567" charLength="33" lineIndex="1569">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1570, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="65778" charLength="33" lineIndex="1574">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1575, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="65984" charLength="33" lineIndex="1579">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1580, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="66195" charLength="33" lineIndex="1584">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1585, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="66401" charLength="33" lineIndex="1589">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1590, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="66612" charLength="33" lineIndex="1594">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1595, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="66818" charLength="33" lineIndex="1599">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1600, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="67029" charLength="33" lineIndex="1604">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1605, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="67240" charLength="33" lineIndex="1609">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1610, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="67451" charLength="33" lineIndex="1614">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1615, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="67662" charLength="33" lineIndex="1619">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1620, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="67873" charLength="33" lineIndex="1624">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1625, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="68079" charLength="33" lineIndex="1629">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1630, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="68289" charLength="33" lineIndex="1634">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1635, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="68499" charLength="33" lineIndex="1639">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1640, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="68709" charLength="33" lineIndex="1644">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1645, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="68920" charLength="33" lineIndex="1649">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1650, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="69128" charLength="33" lineIndex="1654">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1655, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="69337" charLength="33" lineIndex="1659">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1660, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="69546" charLength="33" lineIndex="1664">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1665, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="69754" charLength="33" lineIndex="1669">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1670, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="69963" charLength="33" lineIndex="1674">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1675, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="70172" charLength="33" lineIndex="1679">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1680, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="70380" charLength="33" lineIndex="1684">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1685, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="70590" charLength="33" lineIndex="1689">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1690, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="70798" charLength="33" lineIndex="1694">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1695, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="71007" charLength="33" lineIndex="1699">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1700, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="71209" charLength="33" lineIndex="1704">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1705, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="71417" charLength="33" lineIndex="1709">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1710, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="71619" charLength="33" lineIndex="1714">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1715, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="71821" charLength="33" lineIndex="1719">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1720, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="72036" charLength="33" lineIndex="1724">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1725, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="72237" charLength="33" lineIndex="1729">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1730, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="72438" charLength="33" lineIndex="1734">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\sniperescape_fx', line 1735, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

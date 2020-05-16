@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_scoreboard</name>
+  </settings>
+  <content>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="56" charLength="47" codePart="setdvar(&quot;g_TeamName_Allies&quot;, &amp;&quot;MPUI_SAS_SHORT&quot;)" isCall="True">
+      <funcRefArg charIndex="64" charLength="19" />
+      <funcRefArg charIndex="85" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="110" charLength="33" codePart="precacheShader(&quot;faction_128_sas&quot;)" isCall="True">
+      <funcRefArg charIndex="125" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="148" charLength="47" codePart="setdvar(&quot;g_TeamIcon_Allies&quot;, &quot;faction_128_sas&quot;)" isCall="True">
+      <funcRefArg charIndex="156" charLength="19" />
+      <funcRefArg charIndex="177" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="200" charLength="41" codePart="setdvar(&quot;g_TeamColor_Allies&quot;, &quot;.5 .5 .5&quot;)" isCall="True">
+      <funcRefArg charIndex="208" charLength="20" />
+      <funcRefArg charIndex="230" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="246" charLength="40" codePart="setdvar(&quot;g_ScoresColor_Allies&quot;, &quot;0 0 0&quot;)" isCall="True">
+      <funcRefArg charIndex="254" charLength="22" />
+      <funcRefArg charIndex="278" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="324" charLength="51" codePart="setdvar(&quot;g_TeamName_Allies&quot;, &amp;&quot;MPUI_MARINES_SHORT&quot;)" isCall="True">
+      <funcRefArg charIndex="332" charLength="19" />
+      <funcRefArg charIndex="353" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="382" charLength="34" codePart="precacheShader(&quot;faction_128_usmc&quot;)" isCall="True">
+      <funcRefArg charIndex="397" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="421" charLength="48" codePart="setdvar(&quot;g_TeamIcon_Allies&quot;, &quot;faction_128_usmc&quot;)" isCall="True">
+      <funcRefArg charIndex="429" charLength="19" />
+      <funcRefArg charIndex="450" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="474" charLength="46" codePart="setdvar(&quot;g_TeamColor_Allies&quot;, &quot;0.6 0.64 0.69&quot;)" isCall="True">
+      <funcRefArg charIndex="482" charLength="20" />
+      <funcRefArg charIndex="504" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="525" charLength="48" codePart="setdvar(&quot;g_ScoresColor_Allies&quot;, &quot;0.6 0.64 0.69&quot;)" isCall="True">
+      <funcRefArg charIndex="533" charLength="22" />
+      <funcRefArg charIndex="557" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="652" charLength="47" codePart="setdvar(&quot;g_TeamName_Axis&quot;, &amp;&quot;MPUI_OPFOR_SHORT&quot;)" isCall="True">
+      <funcRefArg charIndex="660" charLength="17" />
+      <funcRefArg charIndex="679" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="706" charLength="34" codePart="precacheShader(&quot;faction_128_arab&quot;)" isCall="True">
+      <funcRefArg charIndex="721" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="745" charLength="46" codePart="setdvar(&quot;g_TeamIcon_Axis&quot;, &quot;faction_128_arab&quot;)" isCall="True">
+      <funcRefArg charIndex="753" charLength="17" />
+      <funcRefArg charIndex="772" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="796" charLength="45" codePart="setdvar(&quot;g_TeamColor_Axis&quot;, &quot;0.65 0.57 0.41&quot;)" isCall="True">
+      <funcRefArg charIndex="804" charLength="18" />
+      <funcRefArg charIndex="824" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="848" charLength="47" codePart="setdvar(&quot;g_ScoresColor_Axis&quot;, &quot;0.65 0.57 0.41&quot;)" isCall="True">
+      <funcRefArg charIndex="856" charLength="20" />
+      <funcRefArg charIndex="878" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="924" charLength="50" codePart="setdvar(&quot;g_TeamName_Axis&quot;, &amp;&quot;MPUI_SPETSNAZ_SHORT&quot;)" isCall="True">
+      <funcRefArg charIndex="932" charLength="17" />
+      <funcRefArg charIndex="951" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="981" charLength="34" codePart="precacheShader(&quot;faction_128_ussr&quot;)" isCall="True">
+      <funcRefArg charIndex="996" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1020" charLength="46" codePart="setdvar(&quot;g_TeamIcon_Axis&quot;, &quot;faction_128_ussr&quot;)" isCall="True">
+      <funcRefArg charIndex="1028" charLength="17" />
+      <funcRefArg charIndex="1047" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1071" charLength="45" codePart="setdvar(&quot;g_TeamColor_Axis&quot;, &quot;0.52 0.28 0.28&quot;)" isCall="True">
+      <funcRefArg charIndex="1079" charLength="18" />
+      <funcRefArg charIndex="1099" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1123" charLength="47" codePart="setdvar(&quot;g_ScoresColor_Axis&quot;, &quot;0.52 0.28 0.28&quot;)" isCall="True">
+      <funcRefArg charIndex="1131" charLength="20" />
+      <funcRefArg charIndex="1153" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1188" charLength="49" codePart="setdvar(&quot;g_ScoresColor_Spectator&quot;, &quot;.25 .25 .25&quot;)" isCall="True">
+      <funcRefArg charIndex="1196" charLength="25" />
+      <funcRefArg charIndex="1223" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1241" charLength="44" codePart="setdvar(&quot;g_ScoresColor_Free&quot;, &quot;.76 .78 .10&quot;)" isCall="True">
+      <funcRefArg charIndex="1249" charLength="20" />
+      <funcRefArg charIndex="1271" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1289" charLength="42" codePart="setdvar(&quot;g_teamColor_MyTeam&quot;, &quot;.6 .8 .6&quot; )" isCall="True">
+      <funcRefArg charIndex="1297" charLength="20" />
+      <funcRefArg charIndex="1319" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1335" charLength="45" codePart="setdvar(&quot;g_teamColor_EnemyTeam&quot;, &quot;1 .45 .5&quot; )" isCall="True">
+      <funcRefArg charIndex="1343" charLength="23" />
+      <funcRefArg charIndex="1368" charLength="11" />
+    </funcRef>
+  </content>
+</scriptinfo>

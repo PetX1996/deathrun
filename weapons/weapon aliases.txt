@@ -1,0 +1,162 @@
+meleeDelay 0.13
+meleeChargeDelay 0.16
+meleeTime 0.8 - 0.6 (25%) (inc 0.04 per weapon)
+meleeChargeTime 1.16 - 0.87 (25%) (inc 0.058 per weapon)
+
+	// Assault class weapons
+m16_acog_mp
+m16_gl_mp
+m16_mp
+m16_reflex_mp
+m16_silencer_mp
+
+ak47_acog_mp
+ak47_gl_mp --> t850
+ak47_mp
+ak47_reflex_mp
+ak47_silencer_mp
+
+m4_acog_mp
+m4_gl_mp
+m4_mp
+m4_reflex_mp
+m4_silencer_mp
+
+g3_acog_mp
+g3_gl_mp
+g3_mp
+g3_reflex_mp
+g3_silencer_mp
+
+g36c_acog_mp
+g36c_gl_mp
+g36c_mp
+g36c_reflex_mp
+g36c_silencer_mp
+
+m14_acog_mp
+m14_gl_mp
+m14_mp
+m14_reflex_mp
+m14_silencer_mp
+
+mp44_mp
+
+		// Granatomets
+gl_ak47_mp 	--> axe
+gl_m4_mp 	--> katana
+gl_g3_mp 	--> shovel
+gl_g36c_mp 	--> lightsabre red
+gl_m14_mp 	--> lightsabre blue
+gl_m16_mp	--> ice sword
+gl_mp		--> knife1	
+
+
+	// Special Ops class weapons
+
+mp5_acog_mp	--> kar98
+mp5_mp
+mp5_reflex_mp
+mp5_silencer_mp
+
+skorpion_acog_mp
+skorpion_mp
+skorpion_reflex_mp
+skorpion_silencer_mp
+
+uzi_acog_mp
+uzi_mp
+uzi_reflex_mp
+uzi_silencer_mp
+
+ak74u_acog_mp
+ak74u_mp
+ak74u_reflex_mp
+ak74u_silencer_mp
+
+p90_acog_mp
+p90_mp
+p90_reflex_mp
+p90_silencer_mp
+
+
+	// Demolition class weapons
+m1014_grip_mp
+m1014_mp
+m1014_reflex_mp
+
+winchester1200_grip_mp
+winchester1200_mp
+winchester1200_reflex_mp
+
+
+	// Heavy gunner class weapons
+saw_acog_mp
+saw_grip_mp
+saw_mp
+saw_reflex_mp
+
+rpd_acog_mp
+rpd_grip_mp
+rpd_mp
+rpd_reflex_mp
+
+m60e4_acog_mp
+m60e4_grip_mp
+m60e4_mp
+m60e4_reflex_mp
+
+
+	// Sniper class weapons
+dragunov_acog_mp
+dragunov_mp
+
+m40a3_acog_mp
+m40a3_mp
+
+barrett_acog_mp
+barrett_mp
+
+remington700_acog_mp
+remington700_mp
+
+m21_acog_mp
+m21_mp
+
+
+	// Handguns
+beretta_mp
+beretta_silencer_mp --> Five_seven
+
+colt45_mp
+colt45_silencer_mp --> kimber
+
+usp_mp
+usp_silencer_mp --> mk22
+
+deserteagle_mp
+deserteaglegold_mp
+
+	// GR+EX
+flash_grenade_mp
+smoke_grenade_mp
+concussion_grenade_mp
+frag_grenade_short_mp
+frag_grenade_mp
+c4_mp
+claymore_mp
+
+	// Others
+defaultweapon_mp
+helicopter_mp
+cobra_20mm_mp
+cobra_ffar_mp
+hind_ffar_mp
+location_selector_mp
+radar_mp
+artillery_mp
+airstrike_mp
+
+
+tomahawk_mp	--> tomahawk
+knife_mp	--> knife1

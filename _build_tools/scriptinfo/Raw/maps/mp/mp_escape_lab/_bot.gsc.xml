@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_escape_lab\_bot</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="StartBot" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ent">
+      </param>
+      <param name="velocity">
+      </param>
+      <param name="size">
+      </param>
+    </func>
+    <func name="GetNewCoords" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ent">
+      </param>
+      <param name="size">
+      </param>
+    </func>
+    <func name="MoveToCoords" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ent">
+      </param>
+      <param name="coords">
+      </param>
+      <param name="velocity">
+      </param>
+    </func>
+  </content>
+</scriptinfo>

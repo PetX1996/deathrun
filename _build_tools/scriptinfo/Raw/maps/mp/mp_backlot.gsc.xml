@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_backlot</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="maps\mp\mp_backlot_fx" name="main" charIndex="12" charLength="29" codePart="maps\mp\mp_backlot_fx::main()" isCall="True" />
+    <funcRef sfPath="maps\createart\mp_backlot_art" name="main" charIndex="45" charLength="37" codePart="maps\createart\mp_backlot_art::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\_load" name="main" charIndex="86" charLength="21" codePart="maps\mp\_load::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\_compass" name="setupMiniMap" charIndex="115" charLength="56" codePart="maps\mp\_compass::setupMiniMap(&quot;compass_map_mp_backlot&quot;)" isCall="True">
+      <funcRefArg charIndex="146" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AmbientPlay" charIndex="260" charLength="34" codePart="ambientPlay(&quot;ambient_backlot_ext&quot;)" isCall="True">
+      <funcRefArg charIndex="272" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="500" charLength="38" codePart="setdvar( &quot;r_specularcolorscale&quot;, &quot;1&quot; )" isCall="True">
+      <funcRefArg charIndex="509" charLength="22" />
+      <funcRefArg charIndex="533" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="544" charLength="38" codePart="setdvar(&quot;r_glowbloomintensity0&quot;,&quot;.25&quot;)" isCall="True">
+      <funcRefArg charIndex="552" charLength="23" />
+      <funcRefArg charIndex="576" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="586" charLength="38" codePart="setdvar(&quot;r_glowbloomintensity1&quot;,&quot;.25&quot;)" isCall="True">
+      <funcRefArg charIndex="594" charLength="23" />
+      <funcRefArg charIndex="618" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="628" charLength="40" codePart="setdvar(&quot;r_glowskybleedintensity0&quot;,&quot;.3&quot;)" isCall="True">
+      <funcRefArg charIndex="636" charLength="26" />
+      <funcRefArg charIndex="663" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="672" charLength="33" codePart="setdvar(&quot;compassmaxrange&quot;,&quot;1800&quot;)" isCall="True">
+      <funcRefArg charIndex="680" charLength="17" />
+      <funcRefArg charIndex="698" charLength="6" />
+    </funcRef>
+    <error type="warning" charIndex="86" charLength="21" lineIndex="4">
+      <message>Could not find enough arguments, function 'maps\mp\_load::main'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_load::main', file 'maps\mp\mp_backlot', line 5, 'maps\mp\_load::main();'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

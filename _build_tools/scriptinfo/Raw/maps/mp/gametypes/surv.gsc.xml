@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\surv</name>
+  </settings>
+  <content>
+    <include>maps\mp\_debug</include>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="Callback_StartGameType" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precacheDefault" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <error type="semantic" charIndex="1783" charLength="33" lineIndex="34">
+      <message>Could not include file 'scripts\include\utility'</message>
+      <fullMessage>Bad semantic: Could not include file 'scripts\include\utility', file 'maps\mp\gametypes\surv', line 35, '#include scripts\include\utility;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

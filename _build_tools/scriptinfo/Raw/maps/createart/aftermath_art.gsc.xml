@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createart\aftermath_art</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="148" charLength="43" codePart="setdvar(&quot;scr_fog_exp_halfplane&quot;, &quot;2261.76&quot;)" isCall="True">
+      <funcRefArg charIndex="156" charLength="23" />
+      <funcRefArg charIndex="181" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="195" charLength="33" codePart="setdvar(&quot;scr_fog_nearplane&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="203" charLength="19" />
+      <funcRefArg charIndex="224" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="232" charLength="34" codePart="setdvar(&quot;scr_fog_red&quot;, &quot;0.621145&quot;)" isCall="True">
+      <funcRefArg charIndex="240" charLength="13" />
+      <funcRefArg charIndex="255" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="270" charLength="36" codePart="setdvar(&quot;scr_fog_green&quot;, &quot;0.552245&quot;)" isCall="True">
+      <funcRefArg charIndex="278" charLength="15" />
+      <funcRefArg charIndex="295" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="310" charLength="35" codePart="setdvar(&quot;scr_fog_blue&quot;, &quot;0.431437&quot;)" isCall="True">
+      <funcRefArg charIndex="318" charLength="14" />
+      <funcRefArg charIndex="334" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="608" charLength="28" codePart="getent(&quot;player&quot;,&quot;classname&quot;)" isCall="True">
+      <funcRefArg charIndex="615" charLength="8" />
+      <funcRefArg charIndex="624" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="676" charLength="43" codePart="setdvar(&quot;visionstore_glowTweakEnable&quot;, &quot;1&quot;)" isCall="True">
+      <funcRefArg charIndex="684" charLength="29" />
+      <funcRefArg charIndex="715" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="723" charLength="50" codePart="setdvar(&quot;visionstore_glowTweakRadius0&quot;, &quot;19.8627&quot;)" isCall="True">
+      <funcRefArg charIndex="731" charLength="30" />
+      <funcRefArg charIndex="763" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="777" charLength="44" codePart="setdvar(&quot;visionstore_glowTweakRadius1&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="785" charLength="30" />
+      <funcRefArg charIndex="817" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="825" charLength="55" codePart="setdvar(&quot;visionstore_glowTweakBloomCutoff&quot;, &quot;0.851585&quot;)" isCall="True">
+      <funcRefArg charIndex="833" charLength="34" />
+      <funcRefArg charIndex="869" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="884" charLength="54" codePart="setdvar(&quot;visionstore_glowTweakBloomDesaturation&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="892" charLength="40" />
+      <funcRefArg charIndex="934" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="942" charLength="59" codePart="setdvar(&quot;visionstore_glowTweakBloomIntensity0&quot;, &quot;0.240968&quot;)" isCall="True">
+      <funcRefArg charIndex="950" charLength="38" />
+      <funcRefArg charIndex="990" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1005" charLength="52" codePart="setdvar(&quot;visionstore_glowTweakBloomIntensity1&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="1013" charLength="38" />
+      <funcRefArg charIndex="1053" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1061" charLength="55" codePart="setdvar(&quot;visionstore_glowTweakSkyBleedIntensity0&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="1069" charLength="41" />
+      <funcRefArg charIndex="1112" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1120" charLength="55" codePart="setdvar(&quot;visionstore_glowTweakSkyBleedIntensity1&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="1128" charLength="41" />
+      <funcRefArg charIndex="1171" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1179" charLength="43" codePart="setdvar(&quot;visionstore_filmTweakEnable&quot;, &quot;1&quot;)" isCall="True">
+      <funcRefArg charIndex="1187" charLength="29" />
+      <funcRefArg charIndex="1218" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1226" charLength="48" codePart="setdvar(&quot;visionstore_filmTweakContrast&quot;, &quot;1.58&quot;)" isCall="True">
+      <funcRefArg charIndex="1234" charLength="31" />
+      <funcRefArg charIndex="1267" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1278" charLength="56" codePart="setdvar(&quot;visionstore_filmTweakBrightness&quot;, &quot;-0.0268923&quot;)" isCall="True">
+      <funcRefArg charIndex="1286" charLength="33" />
+      <funcRefArg charIndex="1321" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1338" charLength="56" codePart="setdvar(&quot;visionstore_filmTweakDesaturation&quot;, &quot;0.447133&quot;)" isCall="True">
+      <funcRefArg charIndex="1346" charLength="35" />
+      <funcRefArg charIndex="1383" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1398" charLength="43" codePart="setdvar(&quot;visionstore_filmTweakInvert&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="1406" charLength="29" />
+      <funcRefArg charIndex="1437" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1445" charLength="62" codePart="setdvar(&quot;visionstore_filmTweakLightTint&quot;, &quot;1.20616 1.05 0.85&quot;)" isCall="True">
+      <funcRefArg charIndex="1453" charLength="32" />
+      <funcRefArg charIndex="1487" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1511" charLength="67" codePart="setdvar(&quot;visionstore_filmTweakDarkTint&quot;, &quot;1.20074 1.10472 1.05002&quot;)" isCall="True">
+      <funcRefArg charIndex="1519" charLength="31" />
+      <funcRefArg charIndex="1552" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetExpFog" charIndex="1591" charLength="54" codePart="setExpFog(0, 2261.76, 0.621145, 0.552245, 0.431437, 0)" isCall="True">
+      <funcRefArg charIndex="1601" charLength="1" />
+      <funcRefArg charIndex="1604" charLength="7" />
+      <funcRefArg charIndex="1613" charLength="8" />
+      <funcRefArg charIndex="1623" charLength="8" />
+      <funcRefArg charIndex="1633" charLength="8" />
+      <funcRefArg charIndex="1643" charLength="1" />
+    </funcRef>
+    <error type="semantic" charIndex="608" charLength="64" lineIndex="22">
+      <message>Could not find file 'maps\_art'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_art', file 'maps\createart\aftermath_art', line 23, 'getent("player","classname") maps\_art::setdefaultdepthoffield();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1649" charLength="47" lineIndex="43">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createart\aftermath_art', line 44, 'maps\_utility::set_vision_set( "aftermath", 0 );'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

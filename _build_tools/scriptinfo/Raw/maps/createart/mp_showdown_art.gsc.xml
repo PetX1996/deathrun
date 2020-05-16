@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createart\mp_showdown_art</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="149" charLength="33" codePart="setdvar( &quot;scr_fog_disable&quot;, &quot;0&quot; )" isCall="True">
+      <funcRefArg charIndex="158" charLength="17" />
+      <funcRefArg charIndex="177" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetExpFog" charIndex="188" charLength="38" codePart="setExpFog(500, 14000, 0.7, 0.6, .4, 0)" isCall="True">
+      <funcRefArg charIndex="198" charLength="3" />
+      <funcRefArg charIndex="203" charLength="5" />
+      <funcRefArg charIndex="210" charLength="3" />
+      <funcRefArg charIndex="215" charLength="3" />
+      <funcRefArg charIndex="220" charLength="2" />
+      <funcRefArg charIndex="224" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VisionSetNaked" charIndex="230" charLength="34" codePart="VisionSetNaked( &quot;mp_showdown&quot;, 0 )" isCall="True">
+      <funcRefArg charIndex="246" charLength="13" />
+      <funcRefArg charIndex="261" charLength="2" />
+    </funcRef>
+  </content>
+</scriptinfo>

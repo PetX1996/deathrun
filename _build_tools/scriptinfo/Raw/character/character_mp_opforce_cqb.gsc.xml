@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_mp_opforce_cqb</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="36" codePart="self setModel(&quot;body_mp_opforce_cqb&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="98" charLength="48" codePart="self attach(&quot;head_mp_opforce_gasmask&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="110" charLength="25" />
+      <funcRefArg charIndex="137" charLength="2" />
+      <funcRefArg charIndex="141" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetViewModel" charIndex="150" charLength="39" codePart="self setViewmodel(&quot;viewhands_op_force&quot;)" isCall="True">
+      <funcRefArg charIndex="168" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="239" charLength="36" codePart="precacheModel(&quot;body_mp_opforce_cqb&quot;)" isCall="True">
+      <funcRefArg charIndex="253" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="279" charLength="40" codePart="precacheModel(&quot;head_mp_opforce_gasmask&quot;)" isCall="True">
+      <funcRefArg charIndex="293" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="323" charLength="35" codePart="precacheModel(&quot;viewhands_op_force&quot;)" isCall="True">
+      <funcRefArg charIndex="337" charLength="20" />
+    </funcRef>
+  </content>
+</scriptinfo>

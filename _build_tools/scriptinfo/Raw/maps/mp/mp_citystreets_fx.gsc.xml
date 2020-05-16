@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_citystreets_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="51" charLength="29" codePart="loadfx( &quot;weather/fog_bog_a&quot; )" isCall="True">
+      <funcRefArg charIndex="59" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="120" charLength="25" codePart="loadfx( &quot;smoke/amb_ash&quot; )" isCall="True">
+      <funcRefArg charIndex="128" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="192" charLength="33" codePart="loadfx( &quot;misc/floodlight_white&quot; )" isCall="True">
+      <funcRefArg charIndex="200" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="272" charLength="34" codePart="loadfx( &quot;misc/floodlight_yellow&quot; )" isCall="True">
+      <funcRefArg charIndex="280" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="353" charLength="33" codePart="loadfx( &quot;misc/fluorescent_glow&quot; )" isCall="True">
+      <funcRefArg charIndex="361" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="401" charLength="30" codePart="getdvar( &quot;clientSideEffects&quot; )" isCall="True">
+      <funcRefArg charIndex="410" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\createfx\mp_citystreets_fx" name="main" charIndex="445" charLength="39" codePart="maps\createfx\mp_citystreets_fx::main()" isCall="True" />
+  </content>
+</scriptinfo>

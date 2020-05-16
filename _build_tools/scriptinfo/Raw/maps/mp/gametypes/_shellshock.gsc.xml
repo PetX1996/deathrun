@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_shellshock</name>
+  </settings>
+  <content>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="shellshockOnDamage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="cause">
+      </param>
+      <param name="damage">
+      </param>
+    </func>
+    <func name="endOnDeath" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="grenade_earthQuake" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="c4_earthQuake" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="barrel_earthQuake" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="artillery_earthQuake" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="PreCacheShellShock" charIndex="12" charLength="39" codePart="precacheShellShock( &quot;frag_grenade_mp&quot; )" isCall="True">
+      <funcRefArg charIndex="32" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShellShock" charIndex="55" charLength="33" codePart="precacheShellShock( &quot;damage_mp&quot; )" isCall="True">
+      <funcRefArg charIndex="75" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheRumble" charIndex="92" charLength="36" codePart="precacheRumble( &quot;artillery_rumble&quot; )" isCall="True">
+      <funcRefArg charIndex="108" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheRumble" charIndex="132" charLength="34" codePart="precacheRumble( &quot;grenade_rumble&quot; )" isCall="True">
+      <funcRefArg charIndex="148" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_flashgrenades" name="isFlashbanged" charIndex="220" charLength="44" codePart="self maps\mp\_flashgrenades::isFlashbanged()" isCall="True" />
+    <funcRef sfPath="codapi" name="ShellShock" charIndex="706" charLength="39" codePart="self shellshock(&quot;frag_grenade_mp&quot;, 0.5)" isCall="True">
+      <funcRefArg charIndex="722" charLength="17" />
+      <funcRefArg charIndex="741" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="780" charLength="24" codePart="self waittill( &quot;death&quot; )" isCall="True">
+      <funcRefArg charIndex="795" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="828" charLength="29" codePart="self notify ( &quot;end_explode&quot; )" isCall="True">
+      <funcRefArg charIndex="842" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_shellshock" name="endOnDeath" charIndex="891" charLength="24" codePart="self thread endOnDeath()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="919" charLength="27" codePart="self endon( &quot;end_explode&quot; )" isCall="True">
+      <funcRefArg charIndex="931" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="950" charLength="36" codePart="self waittill( &quot;explode&quot;, position )" isCall="True">
+      <funcRefArg charIndex="965" charLength="9" />
+      <funcRefArg charIndex="976" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayRumbleOnPosition" charIndex="990" charLength="50" codePart="PlayRumbleOnPosition( &quot;grenade_rumble&quot;, position )" isCall="True">
+      <funcRefArg charIndex="1012" charLength="16" />
+      <funcRefArg charIndex="1030" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Earthquake" charIndex="1044" charLength="37" codePart="earthquake( 0.3, 0.5, position, 400 )" isCall="True">
+      <funcRefArg charIndex="1056" charLength="3" />
+      <funcRefArg charIndex="1061" charLength="3" />
+      <funcRefArg charIndex="1066" charLength="8" />
+      <funcRefArg charIndex="1076" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_shellshock" name="endOnDeath" charIndex="1110" charLength="24" codePart="self thread endOnDeath()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="1138" charLength="27" codePart="self endon( &quot;end_explode&quot; )" isCall="True">
+      <funcRefArg charIndex="1150" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="1169" charLength="36" codePart="self waittill( &quot;explode&quot;, position )" isCall="True">
+      <funcRefArg charIndex="1184" charLength="9" />
+      <funcRefArg charIndex="1195" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayRumbleOnPosition" charIndex="1209" charLength="50" codePart="PlayRumbleOnPosition( &quot;grenade_rumble&quot;, position )" isCall="True">
+      <funcRefArg charIndex="1231" charLength="16" />
+      <funcRefArg charIndex="1249" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Earthquake" charIndex="1263" charLength="37" codePart="earthquake( 0.4, 0.5, position, 512 )" isCall="True">
+      <funcRefArg charIndex="1275" charLength="3" />
+      <funcRefArg charIndex="1280" charLength="3" />
+      <funcRefArg charIndex="1285" charLength="8" />
+      <funcRefArg charIndex="1295" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayRumbleOnPosition" charIndex="1333" charLength="53" codePart="PlayRumbleOnPosition( &quot;grenade_rumble&quot;, self.origin )" isCall="True">
+      <funcRefArg charIndex="1355" charLength="16" />
+      <funcRefArg charIndex="1373" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Earthquake" charIndex="1390" charLength="40" codePart="earthquake( 0.4, 0.5, self.origin, 512 )" isCall="True">
+      <funcRefArg charIndex="1402" charLength="3" />
+      <funcRefArg charIndex="1407" charLength="3" />
+      <funcRefArg charIndex="1412" charLength="11" />
+      <funcRefArg charIndex="1425" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayRumbleOnPosition" charIndex="1468" charLength="55" codePart="PlayRumbleOnPosition( &quot;artillery_rumble&quot;, self.origin )" isCall="True">
+      <funcRefArg charIndex="1490" charLength="18" />
+      <funcRefArg charIndex="1510" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Earthquake" charIndex="1527" charLength="40" codePart="earthquake( 0.7, 0.5, self.origin, 800 )" isCall="True">
+      <funcRefArg charIndex="1539" charLength="3" />
+      <funcRefArg charIndex="1544" charLength="3" />
+      <funcRefArg charIndex="1549" charLength="11" />
+      <funcRefArg charIndex="1562" charLength="4" />
+    </funcRef>
+  </content>
+</scriptinfo>

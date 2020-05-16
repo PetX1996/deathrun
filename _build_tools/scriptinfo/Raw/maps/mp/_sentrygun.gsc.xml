@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_sentrygun</name>
+  </settings>
+  <content>
+    <include>common_scripts\utility</include>
+    <include>maps\mp\_utility</include>
+    <include>maps\mp\gametypes\_hud_util</include>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerConnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerJoinedTeam" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onDisconnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="sentry_turret" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="sentryobj" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="sentry_idle" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="sentry_targeting" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="sentry_target" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="sentry_fire" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="anchor_barrel" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="sentry_bullet" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="sentry_damage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="manual_move" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="CreatePickupMessage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="DeletePickupMessage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="sentry_remove" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="play">
+      </param>
+    </func>
+    <func name="sentry_explode" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="IsLookingAt" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="gameEntity">
+      </param>
+    </func>
+    <func name="createHudTextElement" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="hud_text_name">
+      </param>
+      <param name="x">
+      </param>
+      <param name="y">
+      </param>
+      <param name="xAlign">
+      </param>
+      <param name="yAlign">
+      </param>
+      <param name="horzAlign">
+      </param>
+      <param name="vertAlign">
+      </param>
+      <param name="foreground">
+      </param>
+      <param name="sort">
+      </param>
+      <param name="alpha">
+      </param>
+      <param name="color_r">
+      </param>
+      <param name="color_g">
+      </param>
+      <param name="color_b">
+      </param>
+      <param name="size">
+      </param>
+      <param name="text">
+      </param>
+    </func>
+    <func name="deleteHudTextElementbyName" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="hud_text_name">
+      </param>
+    </func>
+    <func name="createHudElement" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="hud_element_name">
+      </param>
+      <param name="x">
+      </param>
+      <param name="y">
+      </param>
+      <param name="xAlign">
+      </param>
+      <param name="yAlign">
+      </param>
+      <param name="horzAlign">
+      </param>
+      <param name="vertAlign">
+      </param>
+      <param name="foreground">
+      </param>
+      <param name="shader">
+      </param>
+      <param name="shader_width">
+      </param>
+      <param name="shader_height">
+      </param>
+      <param name="sort">
+      </param>
+      <param name="alpha">
+      </param>
+      <param name="color_r">
+      </param>
+      <param name="color_g">
+      </param>
+      <param name="color_b">
+      </param>
+    </func>
+    <func name="deleteHudElementbyName" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="hud_element_name">
+      </param>
+    </func>
+    <func name="detectflash" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="deleteObjectiveKill" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="objID">
+      </param>
+    </func>
+  </content>
+</scriptinfo>

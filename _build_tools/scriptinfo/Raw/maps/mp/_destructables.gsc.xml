@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_destructables</name>
+  </settings>
+  <content>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="destructable_think" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="destructable_destruct" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="blockArea" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="area">
+      </param>
+    </func>
+    <func name="blockEntsInArea" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ents">
+      </param>
+      <param name="area">
+      </param>
+    </func>
+    <func name="unblockArea" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="area">
+      </param>
+    </func>
+    <func name="unblockEntsInArea" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ents">
+      </param>
+      <param name="area">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="95" charLength="41" codePart="getentarray(&quot;destructable&quot;, &quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="107" charLength="14" />
+      <funcRefArg charIndex="123" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="147" charLength="28" codePart="getdvar(&quot;scr_destructables&quot;)" isCall="True">
+      <funcRefArg charIndex="155" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="227" charLength="16" codePart="ents[i] delete()" isCall="True" />
+    <funcRef sfPath="maps\mp\_destructables" name="destructable_think" charIndex="304" charLength="35" codePart="ents[i] thread destructable_think()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="424" charLength="33" codePart="isdefined(self.script_accumulate)" isCall="True">
+      <funcRefArg charIndex="434" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="505" charLength="32" codePart="isdefined(self.script_threshold)" isCall="True">
+      <funcRefArg charIndex="515" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="586" charLength="40" codePart="isdefined(self.script_destructable_area)" isCall="True">
+      <funcRefArg charIndex="596" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="StrTok" charIndex="641" charLength="42" codePart="strtok(self.script_destructable_area, &quot; &quot;)" isCall="True">
+      <funcRefArg charIndex="648" charLength="29" />
+      <funcRefArg charIndex="679" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_destructables" name="blockArea" charIndex="725" charLength="24" codePart="self blockArea(areas[i])" isCall="True">
+      <funcRefArg charIndex="740" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="765" charLength="29" codePart="isdefined( self.script_fxid )" isCall="True">
+      <funcRefArg charIndex="776" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="810" charLength="26" codePart="loadfx( self.script_fxid )" isCall="True">
+      <funcRefArg charIndex="818" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetCanDamage" charIndex="856" charLength="23" codePart="self setcandamage(true)" isCall="True">
+      <funcRefArg charIndex="874" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="899" charLength="38" codePart="self waittill(&quot;damage&quot;, amount, other)" isCall="True">
+      <funcRefArg charIndex="913" charLength="8" />
+      <funcRefArg charIndex="923" charLength="6" />
+      <funcRefArg charIndex="931" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_destructables" name="destructable_destruct" charIndex="1029" charLength="35" codePart="self thread destructable_destruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1147" charLength="40" codePart="isdefined(self.script_destructable_area)" isCall="True">
+      <funcRefArg charIndex="1157" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="StrTok" charIndex="1202" charLength="42" codePart="strtok(self.script_destructable_area, &quot; &quot;)" isCall="True">
+      <funcRefArg charIndex="1209" charLength="29" />
+      <funcRefArg charIndex="1240" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_destructables" name="unblockArea" charIndex="1286" charLength="26" codePart="self unblockArea(areas[i])" isCall="True">
+      <funcRefArg charIndex="1303" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1325" charLength="19" codePart="isdefined( ent.fx )" isCall="True">
+      <funcRefArg charIndex="1336" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayFX" charIndex="1350" charLength="38" codePart="playfx( ent.fx, ent.origin + (0,0,6) )" isCall="True">
+      <funcRefArg charIndex="1358" charLength="6" />
+      <funcRefArg charIndex="1366" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="1392" charLength="12" codePart="ent delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="1442" charLength="40" codePart="getentarray(&quot;mp_tdm_spawn&quot;, &quot;classname&quot;)" isCall="True">
+      <funcRefArg charIndex="1454" charLength="14" />
+      <funcRefArg charIndex="1470" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_destructables" name="blockEntsInArea" charIndex="1486" charLength="29" codePart="blockEntsInArea(spawns, area)" isCall="True">
+      <funcRefArg charIndex="1502" charLength="6" />
+      <funcRefArg charIndex="1510" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="1528" charLength="39" codePart="getentarray(&quot;mp_dm_spawn&quot;, &quot;classname&quot;)" isCall="True">
+      <funcRefArg charIndex="1540" charLength="13" />
+      <funcRefArg charIndex="1555" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_destructables" name="blockEntsInArea" charIndex="1571" charLength="29" codePart="blockEntsInArea(spawns, area)" isCall="True">
+      <funcRefArg charIndex="1587" charLength="6" />
+      <funcRefArg charIndex="1595" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1681" charLength="43" codePart="isdefined(ents[i].script_destructable_area)" isCall="True">
+      <funcRefArg charIndex="1691" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="1854" charLength="40" codePart="getentarray(&quot;mp_tdm_spawn&quot;, &quot;classname&quot;)" isCall="True">
+      <funcRefArg charIndex="1866" charLength="14" />
+      <funcRefArg charIndex="1882" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_destructables" name="unblockEntsInArea" charIndex="1898" charLength="31" codePart="unblockEntsInArea(spawns, area)" isCall="True">
+      <funcRefArg charIndex="1916" charLength="6" />
+      <funcRefArg charIndex="1924" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="1942" charLength="39" codePart="getentarray(&quot;mp_dm_spawn&quot;, &quot;classname&quot;)" isCall="True">
+      <funcRefArg charIndex="1954" charLength="13" />
+      <funcRefArg charIndex="1969" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_destructables" name="unblockEntsInArea" charIndex="1985" charLength="31" codePart="unblockEntsInArea(spawns, area)" isCall="True">
+      <funcRefArg charIndex="2003" charLength="6" />
+      <funcRefArg charIndex="2011" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2099" charLength="43" codePart="isdefined(ents[i].script_destructable_area)" isCall="True">
+      <funcRefArg charIndex="2109" charLength="32" />
+    </funcRef>
+    <error type="warning" charIndex="931" charLength="5" lineIndex="44">
+      <message>Variable 'other' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'other' is defined, but its value is never used., file 'maps\mp\_destructables', line 45, 'self waittill("damage", amount, other);'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_hill_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <error type="semantic" charIndex="0" charLength="23" lineIndex="0">
+      <message>Could not include file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not include file 'maps\_utility', file 'maps\mp\mp_hill_fx', line 1, '#include maps\_utility;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

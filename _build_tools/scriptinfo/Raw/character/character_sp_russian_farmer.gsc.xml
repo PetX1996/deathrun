@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_russian_farmer</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="48" codePart="self setModel(&quot;body_complete_sp_russian_farmer&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="33" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="156" charLength="48" codePart="precacheModel(&quot;body_complete_sp_russian_farmer&quot;)" isCall="True">
+      <funcRefArg charIndex="170" charLength="33" />
+    </funcRef>
+  </content>
+</scriptinfo>

@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createfx\jeepride_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <error type="semantic" charIndex="96" charLength="54" lineIndex="4">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 5, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="355" charLength="54" lineIndex="10">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 11, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="603" charLength="54" lineIndex="16">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 17, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="866" charLength="54" lineIndex="22">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 23, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1125" charLength="54" lineIndex="28">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 29, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1384" charLength="54" lineIndex="34">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 35, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1630" charLength="54" lineIndex="40">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 41, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1891" charLength="54" lineIndex="46">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 47, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2138" charLength="54" lineIndex="52">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 53, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2387" charLength="54" lineIndex="58">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 59, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2633" charLength="54" lineIndex="64">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 65, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2880" charLength="54" lineIndex="70">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 71, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3127" charLength="54" lineIndex="76">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 77, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3372" charLength="54" lineIndex="82">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 83, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3620" charLength="54" lineIndex="88">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 89, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3868" charLength="54" lineIndex="94">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 95, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4116" charLength="54" lineIndex="100">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 101, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4362" charLength="54" lineIndex="106">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 107, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4609" charLength="54" lineIndex="112">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 113, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4856" charLength="54" lineIndex="118">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 119, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5102" charLength="54" lineIndex="124">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 125, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5350" charLength="54" lineIndex="130">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 131, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5614" charLength="54" lineIndex="136">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 137, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5873" charLength="45" lineIndex="142">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 143, 'ent = maps\_utility::createOneshotEffect( "hawks" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6103" charLength="45" lineIndex="148">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 149, 'ent = maps\_utility::createOneshotEffect( "hawks" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6332" charLength="45" lineIndex="154">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 155, 'ent = maps\_utility::createOneshotEffect( "hawks" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6562" charLength="54" lineIndex="160">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 161, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6811" charLength="54" lineIndex="166">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 167, 'ent = maps\_utility::createOneshotEffect( "cloud_bank_far" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7069" charLength="57" lineIndex="172">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 173, 'ent = maps\_utility::createExploder( "cliff_explode_jeepride" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7412" charLength="51" lineIndex="180">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 181, 'ent = maps\_utility::createExploder( "tanker_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7733" charLength="62" lineIndex="188">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 189, 'ent = maps\_utility::createExploder( "tanker_explosion_groundfire" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8077" charLength="51" lineIndex="196">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 197, 'ent = maps\_utility::createExploder( "tanker_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8392" charLength="51" lineIndex="204">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\jeepride_fx', line 205, 'ent = maps\_utility::createExploder( "tanker_explosion" );'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

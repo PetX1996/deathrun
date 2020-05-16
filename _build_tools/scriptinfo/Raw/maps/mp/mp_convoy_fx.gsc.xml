@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_convoy_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="61" charLength="29" codePart="loadfx( &quot;smoke/smoke_large&quot; )" isCall="True">
+      <funcRefArg charIndex="69" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="107" charLength="30" codePart="getdvar( &quot;clientSideEffects&quot; )" isCall="True">
+      <funcRefArg charIndex="116" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\createfx\mp_convoy_fx" name="main" charIndex="151" charLength="34" codePart="maps\createfx\mp_convoy_fx::main()" isCall="True" />
+  </content>
+</scriptinfo>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_creek</name>
+  </settings>
+  <content>
+    <include>maps\mp\_utility</include>
+    <include>common_scripts\utility</include>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetExpFog" charIndex="76" charLength="44" codePart="setExpFog(612, 25000, 0.613, 0.671, 0.75, 0)" isCall="True">
+      <funcRefArg charIndex="86" charLength="3" />
+      <funcRefArg charIndex="91" charLength="5" />
+      <funcRefArg charIndex="98" charLength="5" />
+      <funcRefArg charIndex="105" charLength="5" />
+      <funcRefArg charIndex="112" charLength="4" />
+      <funcRefArg charIndex="118" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VisionSetNaked" charIndex="124" charLength="31" codePart="VisionSetNaked( &quot;mp_creek&quot;, 0 )" isCall="True">
+      <funcRefArg charIndex="140" charLength="10" />
+      <funcRefArg charIndex="152" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\mp_creek_fx" name="main" charIndex="161" charLength="27" codePart="maps\mp\mp_creek_fx::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\_load" name="main" charIndex="194" charLength="21" codePart="maps\mp\_load::main()" isCall="True" />
+    <funcRef sfPath="codapi" name="AmbientPlay" charIndex="219" charLength="33" codePart="ambientPlay(&quot;ambient_creek_ext0&quot;)" isCall="True">
+      <funcRefArg charIndex="231" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_compass" name="setupMiniMap" charIndex="259" charLength="54" codePart="maps\mp\_compass::setupMiniMap(&quot;compass_map_mp_creek&quot;)" isCall="True">
+      <funcRefArg charIndex="290" charLength="22" />
+    </funcRef>
+    <error type="warning" charIndex="194" charLength="21" lineIndex="10">
+      <message>Could not find enough arguments, function 'maps\mp\_load::main'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_load::main', file 'maps\mp\mp_creek', line 11, 'maps\mp\_load::main();'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

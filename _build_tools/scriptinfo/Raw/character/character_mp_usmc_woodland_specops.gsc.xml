@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_mp_usmc_woodland_specops</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="46" codePart="self setModel(&quot;body_mp_usmc_woodland_specops&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="108" charLength="65" codePart="self attach(&quot;head_mp_usmc_tactical_mich_stripes_nomex&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="120" charLength="42" />
+      <funcRefArg charIndex="164" charLength="2" />
+      <funcRefArg charIndex="168" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetViewModel" charIndex="177" charLength="43" codePart="self setViewmodel(&quot;viewhands_sas_woodland&quot;)" isCall="True">
+      <funcRefArg charIndex="195" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="270" charLength="46" codePart="precacheModel(&quot;body_mp_usmc_woodland_specops&quot;)" isCall="True">
+      <funcRefArg charIndex="284" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="320" charLength="57" codePart="precacheModel(&quot;head_mp_usmc_tactical_mich_stripes_nomex&quot;)" isCall="True">
+      <funcRefArg charIndex="334" charLength="42" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="381" charLength="39" codePart="precacheModel(&quot;viewhands_sas_woodland&quot;)" isCall="True">
+      <funcRefArg charIndex="395" charLength="24" />
+    </funcRef>
+  </content>
+</scriptinfo>

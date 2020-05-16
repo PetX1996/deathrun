@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createfx\mp_crash_snow_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="96" charLength="66" codePart="maps\mp\_utility::createOneshotEffect( &quot;battlefield_smokebank_S&quot; )" isCall="True">
+      <funcRefArg charIndex="135" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="363" charLength="66" codePart="maps\mp\_utility::createOneshotEffect( &quot;battlefield_smokebank_S&quot; )" isCall="True">
+      <funcRefArg charIndex="402" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="630" charLength="59" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_spiral&quot; )" isCall="True">
+      <funcRefArg charIndex="669" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="883" charLength="59" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_spiral&quot; )" isCall="True">
+      <funcRefArg charIndex="922" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="1135" charLength="59" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_spiral&quot; )" isCall="True">
+      <funcRefArg charIndex="1174" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="1387" charLength="59" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_spiral&quot; )" isCall="True">
+      <funcRefArg charIndex="1426" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="1641" charLength="57" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_fast&quot; )" isCall="True">
+      <funcRefArg charIndex="1680" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="1905" charLength="57" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_fast&quot; )" isCall="True">
+      <funcRefArg charIndex="1944" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="2163" charLength="57" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_fast&quot; )" isCall="True">
+      <funcRefArg charIndex="2202" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="2426" charLength="57" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_slow&quot; )" isCall="True">
+      <funcRefArg charIndex="2465" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="2687" charLength="57" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_slow&quot; )" isCall="True">
+      <funcRefArg charIndex="2726" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="2948" charLength="57" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_slow&quot; )" isCall="True">
+      <funcRefArg charIndex="2987" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="3210" charLength="57" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_slow&quot; )" isCall="True">
+      <funcRefArg charIndex="3249" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="3472" charLength="58" codePart="maps\mp\_utility::createOneshotEffect( &quot;firelp_small_pm&quot; )" isCall="True">
+      <funcRefArg charIndex="3511" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="3721" charLength="60" codePart="maps\mp\_utility::createOneshotEffect( &quot;firelp_small_pm_a&quot; )" isCall="True">
+      <funcRefArg charIndex="3760" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="4027" charLength="60" codePart="maps\mp\_utility::createOneshotEffect( &quot;firelp_small_pm_a&quot; )" isCall="True">
+      <funcRefArg charIndex="4066" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="4282" charLength="58" codePart="maps\mp\_utility::createOneshotEffect( &quot;firelp_small_pm&quot; )" isCall="True">
+      <funcRefArg charIndex="4321" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="4584" charLength="60" codePart="maps\mp\_utility::createOneshotEffect( &quot;firelp_small_pm_a&quot; )" isCall="True">
+      <funcRefArg charIndex="4623" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="4838" charLength="58" codePart="maps\mp\_utility::createOneshotEffect( &quot;firelp_small_pm&quot; )" isCall="True">
+      <funcRefArg charIndex="4877" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="5140" charLength="59" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_spiral&quot; )" isCall="True">
+      <funcRefArg charIndex="5179" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="5395" charLength="59" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_spiral&quot; )" isCall="True">
+      <funcRefArg charIndex="5434" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="5650" charLength="59" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_spiral&quot; )" isCall="True">
+      <funcRefArg charIndex="5689" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="5904" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="5943" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="6167" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="6206" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="6430" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="6469" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="6693" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="6732" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="6955" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="6994" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="7217" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="7256" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="7478" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="7517" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="7753" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="7792" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="8028" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="8067" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="8289" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="8328" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="8549" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="8588" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="8809" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="8848" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="9071" charLength="62" codePart="maps\mp\_utility::createOneshotEffect( &quot;hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="9110" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="9334" charLength="53" codePart="maps\mp\_utility::createOneshotEffect( &quot;snow_light&quot; )" isCall="True">
+      <funcRefArg charIndex="9373" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="9575" charLength="57" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_slow&quot; )" isCall="True">
+      <funcRefArg charIndex="9614" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="9836" charLength="59" codePart="maps\mp\_utility::createOneshotEffect( &quot;dust_wind_spiral&quot; )" isCall="True">
+      <funcRefArg charIndex="9875" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="10084" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="10296" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="10504" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="10713" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="10922" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="11133" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="11343" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="11553" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="11764" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="11975" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="12186" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="12396" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="12601" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="12811" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="13017" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="13222" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="13430" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="13639" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="13847" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="14057" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="14268" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="14478" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="14688" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="14899" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="15109" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="15318" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="15527" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="15736" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="15946" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="16154" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="16363" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="16573" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="16783" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="16993" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="17202" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="17407" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="17612" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="17819" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="18027" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="18234" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="18440" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="18647" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="18854" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="19062" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="19270" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="19477" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="19686" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="19900" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="20111" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="20321" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="20532" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="20740" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="20947" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="21150" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createLoopSound" charIndex="21357" charLength="36" codePart="maps\mp\_createfx::createLoopSound()" isCall="True" />
+  </content>
+</scriptinfo>

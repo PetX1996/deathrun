@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_quickmessages</name>
+  </settings>
+  <content>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="quickcommands" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="response">
+      </param>
+    </func>
+    <func name="quickstatements" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="response">
+      </param>
+    </func>
+    <func name="quickresponses" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="response">
+      </param>
+    </func>
+    <func name="doQuickMessage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="soundalias">
+      </param>
+      <param name="saytext">
+      </param>
+    </func>
+    <func name="saveHeadIcon" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="restoreHeadIcon" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="PrecacheMenu" charIndex="164" charLength="40" codePart="precacheMenu(game[&quot;menu_quickcommands&quot;])" isCall="True">
+      <funcRefArg charIndex="177" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PrecacheMenu" charIndex="208" charLength="42" codePart="precacheMenu(game[&quot;menu_quickstatements&quot;])" isCall="True">
+      <funcRefArg charIndex="221" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PrecacheMenu" charIndex="254" charLength="41" codePart="precacheMenu(game[&quot;menu_quickresponses&quot;])" isCall="True">
+      <funcRefArg charIndex="267" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheHeadIcon" charIndex="299" charLength="31" codePart="precacheHeadIcon(&quot;talkingicon&quot;)" isCall="True">
+      <funcRefArg charIndex="316" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="336" charLength="43" codePart="precacheString( &amp;&quot;QUICKMESSAGE_FOLLOW_ME&quot; )" isCall="True">
+      <funcRefArg charIndex="352" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="383" charLength="41" codePart="precacheString( &amp;&quot;QUICKMESSAGE_MOVE_IN&quot; )" isCall="True">
+      <funcRefArg charIndex="399" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="428" charLength="43" codePart="precacheString( &amp;&quot;QUICKMESSAGE_FALL_BACK&quot; )" isCall="True">
+      <funcRefArg charIndex="444" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="475" charLength="50" codePart="precacheString( &amp;&quot;QUICKMESSAGE_SUPPRESSING_FIRE&quot; )" isCall="True">
+      <funcRefArg charIndex="491" charLength="33" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="529" charLength="51" codePart="precacheString( &amp;&quot;QUICKMESSAGE_ATTACK_LEFT_FLANK&quot; )" isCall="True">
+      <funcRefArg charIndex="545" charLength="34" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="584" charLength="52" codePart="precacheString( &amp;&quot;QUICKMESSAGE_ATTACK_RIGHT_FLANK&quot; )" isCall="True">
+      <funcRefArg charIndex="600" charLength="35" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="640" charLength="52" codePart="precacheString( &amp;&quot;QUICKMESSAGE_HOLD_THIS_POSITION&quot; )" isCall="True">
+      <funcRefArg charIndex="656" charLength="35" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="696" charLength="41" codePart="precacheString( &amp;&quot;QUICKMESSAGE_REGROUP&quot; )" isCall="True">
+      <funcRefArg charIndex="712" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="741" charLength="47" codePart="precacheString( &amp;&quot;QUICKMESSAGE_ENEMY_SPOTTED&quot; )" isCall="True">
+      <funcRefArg charIndex="757" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="792" charLength="49" codePart="precacheString( &amp;&quot;QUICKMESSAGE_ENEMIES_SPOTTED&quot; )" isCall="True">
+      <funcRefArg charIndex="808" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="845" charLength="48" codePart="precacheString( &amp;&quot;QUICKMESSAGE_IM_IN_POSITION&quot; )" isCall="True">
+      <funcRefArg charIndex="861" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="897" charLength="45" codePart="precacheString( &amp;&quot;QUICKMESSAGE_AREA_SECURE&quot; )" isCall="True">
+      <funcRefArg charIndex="913" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="946" charLength="41" codePart="precacheString( &amp;&quot;QUICKMESSAGE_GRENADE&quot; )" isCall="True">
+      <funcRefArg charIndex="962" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="991" charLength="40" codePart="precacheString( &amp;&quot;QUICKMESSAGE_SNIPER&quot; )" isCall="True">
+      <funcRefArg charIndex="1007" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="1035" charLength="53" codePart="precacheString( &amp;&quot;QUICKMESSAGE_NEED_REINFORCEMENTS&quot; )" isCall="True">
+      <funcRefArg charIndex="1051" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="1092" charLength="48" codePart="precacheString( &amp;&quot;QUICKMESSAGE_HOLD_YOUR_FIRE&quot; )" isCall="True">
+      <funcRefArg charIndex="1108" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="1144" charLength="41" codePart="precacheString( &amp;&quot;QUICKMESSAGE_YES_SIR&quot; )" isCall="True">
+      <funcRefArg charIndex="1160" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="1189" charLength="40" codePart="precacheString( &amp;&quot;QUICKMESSAGE_NO_SIR&quot; )" isCall="True">
+      <funcRefArg charIndex="1205" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="1233" charLength="46" codePart="precacheString( &amp;&quot;QUICKMESSAGE_IM_ON_MY_WAY&quot; )" isCall="True">
+      <funcRefArg charIndex="1249" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="1283" charLength="39" codePart="precacheString( &amp;&quot;QUICKMESSAGE_SORRY&quot; )" isCall="True">
+      <funcRefArg charIndex="1299" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="1326" charLength="44" codePart="precacheString( &amp;&quot;QUICKMESSAGE_GREAT_SHOT&quot; )" isCall="True">
+      <funcRefArg charIndex="1342" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="1374" charLength="50" codePart="precacheString( &amp;&quot;QUICKMESSAGE_TOOK_LONG_ENOUGH&quot; )" isCall="True">
+      <funcRefArg charIndex="1390" charLength="33" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="1428" charLength="47" codePart="precacheString( &amp;&quot;QUICKMESSAGE_ARE_YOU_CRAZY&quot; )" isCall="True">
+      <funcRefArg charIndex="1444" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="1480" charLength="43" codePart="precacheString( &amp;&quot;QUICKMESSAGE_WATCH_SIX&quot; )" isCall="True">
+      <funcRefArg charIndex="1496" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="1528" charLength="41" codePart="precacheString( &amp;&quot;QUICKMESSAGE_COME_ON&quot; )" isCall="True">
+      <funcRefArg charIndex="1544" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="1607" charLength="27" codePart="self endon ( &quot;disconnect&quot; )" isCall="True">
+      <funcRefArg charIndex="1620" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1645" charLength="28" codePart="isdefined(self.pers[&quot;team&quot;])" isCall="True">
+      <funcRefArg charIndex="1655" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1713" charLength="25" codePart="isdefined(self.spamdelay)" isCall="True">
+      <funcRefArg charIndex="1723" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="2836" charLength="23" codePart="assert(response == &quot;8&quot;)" isCall="True">
+      <funcRefArg charIndex="2843" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_quickmessages" name="saveHeadIcon" charIndex="2982" charLength="19" codePart="self saveHeadIcon()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_quickmessages" name="doQuickMessage" charIndex="3005" charLength="40" codePart="self doQuickMessage(soundalias, saytext)" isCall="True">
+      <funcRefArg charIndex="3025" charLength="10" />
+      <funcRefArg charIndex="3037" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_quickmessages" name="restoreHeadIcon" charIndex="3091" charLength="22" codePart="self restoreHeadIcon()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3157" charLength="28" codePart="isdefined(self.pers[&quot;team&quot;])" isCall="True">
+      <funcRefArg charIndex="3167" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3225" charLength="25" codePart="isdefined(self.spamdelay)" isCall="True">
+      <funcRefArg charIndex="3235" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="4168" charLength="23" codePart="assert(response == &quot;7&quot;)" isCall="True">
+      <funcRefArg charIndex="4175" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_quickmessages" name="saveHeadIcon" charIndex="4349" charLength="19" codePart="self saveHeadIcon()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_quickmessages" name="doQuickMessage" charIndex="4372" charLength="40" codePart="self doQuickMessage(soundalias, saytext)" isCall="True">
+      <funcRefArg charIndex="4392" charLength="10" />
+      <funcRefArg charIndex="4404" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_quickmessages" name="restoreHeadIcon" charIndex="4458" charLength="22" codePart="self restoreHeadIcon()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4522" charLength="28" codePart="isdefined(self.pers[&quot;team&quot;])" isCall="True">
+      <funcRefArg charIndex="4532" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4590" charLength="25" codePart="isdefined(self.spamdelay)" isCall="True">
+      <funcRefArg charIndex="4600" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="5342" charLength="23" codePart="assert(response == &quot;6&quot;)" isCall="True">
+      <funcRefArg charIndex="5349" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_quickmessages" name="saveHeadIcon" charIndex="5496" charLength="19" codePart="self saveHeadIcon()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_quickmessages" name="doQuickMessage" charIndex="5519" charLength="40" codePart="self doQuickMessage(soundalias, saytext)" isCall="True">
+      <funcRefArg charIndex="5539" charLength="10" />
+      <funcRefArg charIndex="5551" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_quickmessages" name="restoreHeadIcon" charIndex="5605" charLength="22" codePart="self restoreHeadIcon()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5961" charLength="34" codePart="isdefined(level.QuickMessageToAll)" isCall="True">
+      <funcRefArg charIndex="5971" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlaySound" charIndex="6098" charLength="35" codePart="self playSound( prefix+soundalias )" isCall="True">
+      <funcRefArg charIndex="6114" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SayAll" charIndex="6138" charLength="20" codePart="self sayAll(saytext)" isCall="True">
+      <funcRefArg charIndex="6150" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlaySound" charIndex="6359" charLength="35" codePart="self playSound( prefix+soundalias )" isCall="True">
+      <funcRefArg charIndex="6375" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SayTeam" charIndex="6399" charLength="23" codePart="self sayTeam( saytext )" isCall="True">
+      <funcRefArg charIndex="6413" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PingPlayer" charIndex="6427" charLength="17" codePart="self pingPlayer()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6479" charLength="24" codePart="isdefined(self.headicon)" isCall="True">
+      <funcRefArg charIndex="6489" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6549" charLength="28" codePart="isdefined(self.headiconteam)" isCall="True">
+      <funcRefArg charIndex="6559" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6656" charLength="27" codePart="isdefined(self.oldheadicon)" isCall="True">
+      <funcRefArg charIndex="6666" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6729" charLength="31" codePart="isdefined(self.oldheadiconteam)" isCall="True">
+      <funcRefArg charIndex="6739" charLength="20" />
+    </funcRef>
+  </content>
+</scriptinfo>

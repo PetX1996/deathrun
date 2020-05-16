@@ -1,0 +1,1682 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_spawnlogic</name>
+  </settings>
+  <content>
+    <include>common_scripts\utility</include>
+    <include>maps\mp\_utility</include>
+    <func name="onPlayerConnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="findBoxCenter" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="mins">
+      </param>
+      <param name="maxs">
+      </param>
+    </func>
+    <func name="expandMins" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="mins">
+      </param>
+      <param name="point">
+      </param>
+    </func>
+    <func name="expandMaxs" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="maxs">
+      </param>
+      <param name="point">
+      </param>
+    </func>
+    <func name="addSpawnPoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="spawnPointName">
+      </param>
+    </func>
+    <func name="placeSpawnPoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="spawnPointName">
+      </param>
+    </func>
+    <func name="spawnPointInit" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getTeamSpawnPoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="getSpawnpoint_Final" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="spawnpoints">
+      </param>
+      <param name="useweights">
+      </param>
+    </func>
+    <func name="getBestWeightedSpawnpoint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="spawnpoints">
+      </param>
+    </func>
+    <func name="checkBad" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="spawnpoint">
+      </param>
+    </func>
+    <func name="badSpawnLine" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="start">
+      </param>
+      <param name="end">
+      </param>
+      <param name="name1">
+      </param>
+      <param name="name2">
+      </param>
+    </func>
+    <func name="storeSpawnData" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="spawnpoints">
+      </param>
+      <param name="useweights">
+      </param>
+      <param name="bestspawnpoint">
+      </param>
+    </func>
+    <func name="readSpawnData" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="desiredID">
+      </param>
+      <param name="relativepos">
+      </param>
+    </func>
+    <func name="drawSpawnData" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="vectostr" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="vec">
+      </param>
+    </func>
+    <func name="strtovec" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="str">
+      </param>
+    </func>
+    <func name="getSpawnpoint_Random" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="spawnpoints">
+      </param>
+    </func>
+    <func name="getAllOtherPlayers" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getAllAlliedAndEnemyPlayers" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="obj">
+      </param>
+    </func>
+    <func name="initWeights" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="spawnpoints">
+      </param>
+    </func>
+    <func name="getSpawnpoint_NearTeam" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="spawnpoints">
+      </param>
+      <param name="favoredspawnpoints">
+      </param>
+    </func>
+    <func name="getSpawnpoint_DM" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="spawnpoints">
+      </param>
+    </func>
+    <func name="Spawnlogic_Begin" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="watchSpawnProfile" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="spawnProfile" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="loopbotspawns" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="allowSpawnDataReading" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="showDeathsDebug" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateDeathInfoDebug" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="spawnWeightDebug" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="spawnpoints">
+      </param>
+    </func>
+    <func name="profileDebug" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="debugNearbyPlayers" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="players">
+      </param>
+      <param name="origin">
+      </param>
+    </func>
+    <func name="deathOccured" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="dier">
+      </param>
+      <param name="killer">
+      </param>
+    </func>
+    <func name="checkForSimilarDeaths" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="deathInfo">
+      </param>
+    </func>
+    <func name="updateDeathInfo" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="trackGrenades" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="isPointVulnerable" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="playerorigin">
+      </param>
+    </func>
+    <func name="avoidWeaponDamage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="spawnpoints">
+      </param>
+    </func>
+    <func name="spawnPerFrameUpdate" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getLosPenalty" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="lastMinuteSightTraces" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="spawnpoint">
+      </param>
+    </func>
+    <func name="avoidVisibleEnemies" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="spawnpoints">
+      </param>
+      <param name="teambased">
+      </param>
+    </func>
+    <func name="avoidSpawnReuse" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="spawnpoints">
+      </param>
+      <param name="teambased">
+      </param>
+    </func>
+    <func name="avoidSameSpawn" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="spawnpoints">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="waittill" charIndex="102" charLength="35" codePart="level waittill(&quot;connected&quot;, player)" isCall="True">
+      <funcRefArg charIndex="117" charLength="11" />
+      <funcRefArg charIndex="130" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="1025" charLength="42" codePart="getEntArray( spawnPointName, &quot;classname&quot; )" isCall="True">
+      <funcRefArg charIndex="1038" charLength="14" />
+      <funcRefArg charIndex="1054" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="1122" charLength="68" codePart="println( &quot;^1No &quot; + spawnPointName + &quot; spawnpoints found in level!&quot; )" isCall="True">
+      <funcRefArg charIndex="1131" charLength="58" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_callbacksetup" name="AbortLevel" charIndex="1195" charLength="46" codePart="maps\mp\gametypes\_callbacksetup::AbortLevel()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1345" charLength="30" codePart="isDefined( level.spawnpoints )" isCall="True">
+      <funcRefArg charIndex="1356" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1548" charLength="30" codePart="isdefined( spawnpoint.inited )" isCall="True">
+      <funcRefArg charIndex="1559" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="spawnPointInit" charIndex="1590" charLength="27" codePart="spawnpoint spawnPointInit()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="expandMins" charIndex="1893" charLength="37" codePart="expandMins( level.spawnMins, origin )" isCall="True">
+      <funcRefArg charIndex="1905" charLength="15" />
+      <funcRefArg charIndex="1922" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="expandMaxs" charIndex="1953" charLength="37" codePart="expandMaxs( level.spawnMaxs, origin )" isCall="True">
+      <funcRefArg charIndex="1965" charLength="15" />
+      <funcRefArg charIndex="1982" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="2152" charLength="42" codePart="getEntArray( spawnPointName, &quot;classname&quot; )" isCall="True">
+      <funcRefArg charIndex="2165" charLength="14" />
+      <funcRefArg charIndex="2181" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="2233" charLength="68" codePart="println( &quot;^1No &quot; + spawnPointName + &quot; spawnpoints found in level!&quot; )" isCall="True">
+      <funcRefArg charIndex="2242" charLength="58" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_callbacksetup" name="AbortLevel" charIndex="2306" charLength="46" codePart="maps\mp\gametypes\_callbacksetup::AbortLevel()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="spawnPointInit" charIndex="2509" charLength="35" codePart="spawnPoints[index] spawnPointInit()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="expandMins" charIndex="2783" charLength="37" codePart="expandMins( level.spawnMins, origin )" isCall="True">
+      <funcRefArg charIndex="2795" charLength="15" />
+      <funcRefArg charIndex="2812" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="expandMaxs" charIndex="2842" charLength="37" codePart="expandMaxs( level.spawnMaxs, origin )" isCall="True">
+      <funcRefArg charIndex="2854" charLength="15" />
+      <funcRefArg charIndex="2871" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlaceSpawnPoint" charIndex="2886" charLength="28" codePart="spawnpoint placeSpawnpoint()" isCall="True" />
+    <funcRef sfPath="codapi" name="AnglesToForward" charIndex="2939" charLength="36" codePart="anglesToForward( spawnpoint.angles )" isCall="True">
+      <funcRefArg charIndex="2956" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_begin" charIndex="3502" charLength="28" codePart="prof_begin( &quot; spawn_final&quot; )" isCall="True">
+      <funcRefArg charIndex="3514" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3576" charLength="24" codePart="isdefined( spawnpoints )" isCall="True">
+      <funcRefArg charIndex="3587" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3660" charLength="23" codePart="isdefined( useweights )" isCall="True">
+      <funcRefArg charIndex="3671" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getBestWeightedSpawnpoint" charIndex="3844" charLength="40" codePart="getBestWeightedSpawnpoint( spawnpoints )" isCall="True">
+      <funcRefArg charIndex="3871" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="spawnWeightDebug" charIndex="3889" charLength="38" codePart="thread spawnWeightDebug( spawnpoints )" isCall="True">
+      <funcRefArg charIndex="3914" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4136" charLength="32" codePart="isdefined( self.lastspawnpoint )" isCall="True">
+      <funcRefArg charIndex="4147" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PositionWouldTelefrag" charIndex="4241" charLength="46" codePart="positionWouldTelefrag( spawnpoints[i].origin )" isCall="True">
+      <funcRefArg charIndex="4264" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4372" charLength="27" codePart="isdefined( bestspawnpoint )" isCall="True">
+      <funcRefArg charIndex="4383" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4599" charLength="32" codePart="isdefined( self.lastspawnpoint )" isCall="True">
+      <funcRefArg charIndex="4610" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PositionWouldTelefrag" charIndex="4636" charLength="51" codePart="positionWouldTelefrag( self.lastspawnpoint.origin )" isCall="True">
+      <funcRefArg charIndex="4659" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4987" charLength="27" codePart="isdefined( bestspawnpoint )" isCall="True">
+      <funcRefArg charIndex="4998" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="5209" charLength="27" codePart="randomint(spawnpoints.size)" isCall="True">
+      <funcRefArg charIndex="5219" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="5315" charLength="9" codePart="getTime()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="storeSpawnData" charIndex="5490" charLength="62" codePart="self storeSpawnData( spawnpoints, useweights, bestspawnpoint )" isCall="True">
+      <funcRefArg charIndex="5511" charLength="11" />
+      <funcRefArg charIndex="5524" charLength="10" />
+      <funcRefArg charIndex="5536" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_end" charIndex="5564" charLength="26" codePart="prof_end( &quot; spawn_final&quot; )" isCall="True">
+      <funcRefArg charIndex="5574" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5907" charLength="23" codePart="isdefined( bestweight )" isCall="True">
+      <funcRefArg charIndex="5918" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PositionWouldTelefrag" charIndex="5988" charLength="46" codePart="positionWouldTelefrag( spawnpoints[i].origin )" isCall="True">
+      <funcRefArg charIndex="6011" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PositionWouldTelefrag" charIndex="6244" charLength="46" codePart="positionWouldTelefrag( spawnpoints[i].origin )" isCall="True">
+      <funcRefArg charIndex="6267" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="6557" charLength="33" codePart="randomint( bestspawnpoints.size )" isCall="True">
+      <funcRefArg charIndex="6568" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6679" charLength="46" codePart="isdefined( bestspawnpoint.lastSightTraceTime )" isCall="True">
+      <funcRefArg charIndex="6690" charLength="34" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="6766" charLength="9" codePart="gettime()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="lastMinuteSightTraces" charIndex="6818" charLength="39" codePart="lastMinuteSightTraces( bestspawnpoint )" isCall="True">
+      <funcRefArg charIndex="6841" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getLosPenalty" charIndex="6904" charLength="15" codePart="getLosPenalty()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetTime" charIndex="7146" charLength="9" codePart="gettime()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsAlive" charIndex="7289" charLength="17" codePart="isAlive( player )" isCall="True">
+      <funcRefArg charIndex="7298" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTracePassed" charIndex="7462" charLength="89" codePart="bullettracepassed(player.origin + (0,0,50), spawnpoint.sightTracePoint, false, undefined)" isCall="True">
+      <funcRefArg charIndex="7480" charLength="24" />
+      <funcRefArg charIndex="7506" charLength="26" />
+      <funcRefArg charIndex="7534" charLength="5" />
+      <funcRefArg charIndex="7541" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="badSpawnLine" charIndex="7577" charLength="99" codePart="thread badSpawnLine( spawnpoint.sightTracePoint, player.origin + (0,0,50), self.name, player.name )" isCall="True">
+      <funcRefArg charIndex="7598" charLength="26" />
+      <funcRefArg charIndex="7626" charLength="24" />
+      <funcRefArg charIndex="7652" charLength="9" />
+      <funcRefArg charIndex="7663" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="7741" charLength="19" codePart="distance(start,end)" isCall="True">
+      <funcRefArg charIndex="7750" charLength="5" />
+      <funcRefArg charIndex="7756" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="7803" charLength="27" codePart="line( start, end, (1,0,0) )" isCall="True">
+      <funcRefArg charIndex="7809" charLength="5" />
+      <funcRefArg charIndex="7816" charLength="3" />
+      <funcRefArg charIndex="7821" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="7835" charLength="60" codePart="print3d( start, &quot;Bad spawn! &quot; + name1 + &quot;, dist = &quot; + dist )" isCall="True">
+      <funcRefArg charIndex="7844" charLength="5" />
+      <funcRefArg charIndex="7851" charLength="43" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="7900" charLength="21" codePart="print3d( end, name2 )" isCall="True">
+      <funcRefArg charIndex="7909" charLength="3" />
+      <funcRefArg charIndex="7914" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8024" charLength="31" codePart="isdefined(level.storeSpawnData)" isCall="True">
+      <funcRefArg charIndex="8034" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="8120" charLength="33" codePart="getdvarint(&quot;scr_recordspawndata&quot;)" isCall="True">
+      <funcRefArg charIndex="8131" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8205" charLength="24" codePart="isdefined(level.spawnID)" isCall="True">
+      <funcRefArg charIndex="8215" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="8256" charLength="14" codePart="randomint(100)" isCall="True">
+      <funcRefArg charIndex="8266" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="OpenFile" charIndex="8739" charLength="35" codePart="openfile(&quot;spawndata.txt&quot;, &quot;append&quot;)" isCall="True">
+      <funcRefArg charIndex="8748" charLength="15" />
+      <funcRefArg charIndex="8765" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FPrintFields" charIndex="8778" charLength="102" codePart="fPrintFields(file, level.spawnGameID + &quot;.&quot; + level.spawnID + &quot;,&quot; + spawnpoints.size + &quot;,&quot; + self.name)" isCall="True">
+      <funcRefArg charIndex="8791" charLength="4" />
+      <funcRefArg charIndex="8797" charLength="82" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="vectostr" charIndex="8938" charLength="31" codePart="vectostr(spawnpoints[i].origin)" isCall="True">
+      <funcRefArg charIndex="8947" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="9171" charLength="35" codePart="isdefined(spawnpoints[i].spawnData)" isCall="True">
+      <funcRefArg charIndex="9181" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="9251" charLength="37" codePart="isdefined(spawnpoints[i].sightChecks)" isCall="True">
+      <funcRefArg charIndex="9261" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="vectostr" charIndex="9653" charLength="31" codePart="vectostr(spawnpoints[i].origin)" isCall="True">
+      <funcRefArg charIndex="9662" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FPrintFields" charIndex="9704" charLength="23" codePart="fPrintFields(file, str)" isCall="True">
+      <funcRefArg charIndex="9717" charLength="4" />
+      <funcRefArg charIndex="9723" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="9744" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getAllAlliedAndEnemyPlayers" charIndex="9761" charLength="32" codePart="getAllAlliedAndEnemyPlayers(obj)" isCall="True">
+      <funcRefArg charIndex="9789" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="vectostr" charIndex="9958" charLength="30" codePart="vectostr(obj.allies[i].origin)" isCall="True">
+      <funcRefArg charIndex="9967" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="vectostr" charIndex="10072" charLength="31" codePart="vectostr(obj.enemies[i].origin)" isCall="True">
+      <funcRefArg charIndex="10081" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FPrintFields" charIndex="10167" charLength="23" codePart="fPrintFields(file, str)" isCall="True">
+      <funcRefArg charIndex="10180" charLength="4" />
+      <funcRefArg charIndex="10186" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10219" charLength="24" codePart="isdefined(level.bombguy)" isCall="True">
+      <funcRefArg charIndex="10229" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="10296" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10430" charLength="24" codePart="isdefined(level.bombpos)" isCall="True">
+      <funcRefArg charIndex="10440" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="10507" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10611" charLength="22" codePart="isdefined(level.flags)" isCall="True">
+      <funcRefArg charIndex="10621" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="10735" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="getOwnerTeam" charIndex="10831" charLength="68" codePart="level.flags[i].useObj maps\mp\gametypes\_gameobjects::getOwnerTeam()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="vectostr" charIndex="11003" charLength="29" codePart="vectostr(otherdata[i].origin)" isCall="True">
+      <funcRefArg charIndex="11012" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FPrintFields" charIndex="11072" charLength="23" codePart="fPrintFields(file, str)" isCall="True">
+      <funcRefArg charIndex="11085" charLength="4" />
+      <funcRefArg charIndex="11091" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="CloseFile" charIndex="11102" charLength="15" codePart="closefile(file)" isCall="True">
+      <funcRefArg charIndex="11112" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="11184" charLength="27" codePart="isdefined(self.thisspawnid)" isCall="True">
+      <funcRefArg charIndex="11194" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="OpenFile" charIndex="11427" charLength="33" codePart="openfile(&quot;spawndata.txt&quot;, &quot;read&quot;)" isCall="True">
+      <funcRefArg charIndex="11436" charLength="15" />
+      <funcRefArg charIndex="11453" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="11687" charLength="24" codePart="isdefined( relativepos )" isCall="True">
+      <funcRefArg charIndex="11698" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="11716" charLength="25" codePart="isdefined( oldspawndata )" isCall="True">
+      <funcRefArg charIndex="11727" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FReadLn" charIndex="11780" charLength="13" codePart="freadln(file)" isCall="True">
+      <funcRefArg charIndex="11788" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="11821" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="codapidev" name="FGetArg" charIndex="11853" charLength="16" codePart="fgetarg(file, 0)" isCall="True">
+      <funcRefArg charIndex="11861" charLength="4" />
+      <funcRefArg charIndex="11867" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="11886" charLength="21" codePart="int(fgetarg(file, 1))" isCall="True">
+      <funcRefArg charIndex="11890" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FGetArg" charIndex="11890" charLength="16" codePart="fgetarg(file, 1)" isCall="True">
+      <funcRefArg charIndex="11898" charLength="4" />
+      <funcRefArg charIndex="11904" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FGetArg" charIndex="11965" charLength="16" codePart="fgetarg(file, 2)" isCall="True">
+      <funcRefArg charIndex="11973" charLength="4" />
+      <funcRefArg charIndex="11979" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FReadLn" charIndex="12133" charLength="13" codePart="freadln(file)" isCall="True">
+      <funcRefArg charIndex="12141" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="12187" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="strtovec" charIndex="12231" charLength="26" codePart="strtovec(fgetarg(file, 0))" isCall="True">
+      <funcRefArg charIndex="12240" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FGetArg" charIndex="12240" charLength="16" codePart="fgetarg(file, 0)" isCall="True">
+      <funcRefArg charIndex="12248" charLength="4" />
+      <funcRefArg charIndex="12254" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="12283" charLength="21" codePart="int(fgetarg(file, 1))" isCall="True">
+      <funcRefArg charIndex="12287" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FGetArg" charIndex="12287" charLength="16" codePart="fgetarg(file, 1)" isCall="True">
+      <funcRefArg charIndex="12295" charLength="4" />
+      <funcRefArg charIndex="12301" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="12330" charLength="21" codePart="int(fgetarg(file, 2))" isCall="True">
+      <funcRefArg charIndex="12334" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FGetArg" charIndex="12334" charLength="16" codePart="fgetarg(file, 2)" isCall="True">
+      <funcRefArg charIndex="12342" charLength="4" />
+      <funcRefArg charIndex="12348" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="12751" charLength="21" codePart="int(fgetarg(file, 3))" isCall="True">
+      <funcRefArg charIndex="12755" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FGetArg" charIndex="12755" charLength="16" codePart="fgetarg(file, 3)" isCall="True">
+      <funcRefArg charIndex="12763" charLength="4" />
+      <funcRefArg charIndex="12769" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FGetArg" charIndex="12894" charLength="21" codePart="fgetarg(file, argnum)" isCall="True">
+      <funcRefArg charIndex="12902" charLength="4" />
+      <funcRefArg charIndex="12908" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="12959" charLength="26" codePart="int(fgetarg(file, argnum))" isCall="True">
+      <funcRefArg charIndex="12963" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FGetArg" charIndex="12963" charLength="21" codePart="fgetarg(file, argnum)" isCall="True">
+      <funcRefArg charIndex="12971" charLength="4" />
+      <funcRefArg charIndex="12977" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="13169" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="Int" charIndex="13229" charLength="26" codePart="int(fgetarg(file, argnum))" isCall="True">
+      <funcRefArg charIndex="13233" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FGetArg" charIndex="13233" charLength="21" codePart="fgetarg(file, argnum)" isCall="True">
+      <funcRefArg charIndex="13241" charLength="4" />
+      <funcRefArg charIndex="13247" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="strtovec" charIndex="13316" charLength="31" codePart="strtovec(fgetarg(file, argnum))" isCall="True">
+      <funcRefArg charIndex="13325" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FGetArg" charIndex="13325" charLength="21" codePart="fgetarg(file, argnum)" isCall="True">
+      <funcRefArg charIndex="13333" charLength="4" />
+      <funcRefArg charIndex="13339" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="13450" charLength="25" codePart="isdefined(data.minweight)" isCall="True">
+      <funcRefArg charIndex="13460" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FReadLn" charIndex="13626" charLength="13" codePart="freadln(file)" isCall="True">
+      <funcRefArg charIndex="13634" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="13673" charLength="21" codePart="int(fgetarg(file, 0))" isCall="True">
+      <funcRefArg charIndex="13677" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FGetArg" charIndex="13677" charLength="16" codePart="fgetarg(file, 0)" isCall="True">
+      <funcRefArg charIndex="13685" charLength="4" />
+      <funcRefArg charIndex="13691" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="13712" charLength="21" codePart="int(fgetarg(file, 1))" isCall="True">
+      <funcRefArg charIndex="13716" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FGetArg" charIndex="13716" charLength="16" codePart="fgetarg(file, 1)" isCall="True">
+      <funcRefArg charIndex="13724" charLength="4" />
+      <funcRefArg charIndex="13730" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="strtovec" charIndex="13883" charLength="31" codePart="strtovec(fgetarg(file, argnum))" isCall="True">
+      <funcRefArg charIndex="13892" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FGetArg" charIndex="13892" charLength="21" codePart="fgetarg(file, argnum)" isCall="True">
+      <funcRefArg charIndex="13900" charLength="4" />
+      <funcRefArg charIndex="13906" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="strtovec" charIndex="14014" charLength="31" codePart="strtovec(fgetarg(file, argnum))" isCall="True">
+      <funcRefArg charIndex="14023" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FGetArg" charIndex="14023" charLength="21" codePart="fgetarg(file, argnum)" isCall="True">
+      <funcRefArg charIndex="14031" charLength="4" />
+      <funcRefArg charIndex="14037" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FReadLn" charIndex="14075" charLength="13" codePart="freadln(file)" isCall="True">
+      <funcRefArg charIndex="14083" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="14124" charLength="21" codePart="int(fgetarg(file, 0))" isCall="True">
+      <funcRefArg charIndex="14128" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FGetArg" charIndex="14128" charLength="16" codePart="fgetarg(file, 0)" isCall="True">
+      <funcRefArg charIndex="14136" charLength="4" />
+      <funcRefArg charIndex="14142" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="14221" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="strtovec" charIndex="14259" charLength="31" codePart="strtovec(fgetarg(file, argnum))" isCall="True">
+      <funcRefArg charIndex="14268" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FGetArg" charIndex="14268" charLength="21" codePart="fgetarg(file, argnum)" isCall="True">
+      <funcRefArg charIndex="14276" charLength="4" />
+      <funcRefArg charIndex="14282" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FGetArg" charIndex="14327" charLength="21" codePart="fgetarg(file, argnum)" isCall="True">
+      <funcRefArg charIndex="14335" charLength="4" />
+      <funcRefArg charIndex="14341" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="14439" charLength="24" codePart="isdefined( relativepos )" isCall="True">
+      <funcRefArg charIndex="14450" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="15401" charLength="25" codePart="isdefined( oldspawndata )" isCall="True">
+      <funcRefArg charIndex="15412" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="CloseFile" charIndex="15508" charLength="15" codePart="closefile(file)" isCall="True">
+      <funcRefArg charIndex="15518" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="15550" charLength="34" codePart="level notify(&quot;drawing_spawn_data&quot;)" isCall="True">
+      <funcRefArg charIndex="15563" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="15588" charLength="33" codePart="level endon(&quot;drawing_spawn_data&quot;)" isCall="True">
+      <funcRefArg charIndex="15600" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="15675" charLength="29" codePart="isdefined(level.curspawndata)" isCall="True">
+      <funcRefArg charIndex="15685" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="15810" charLength="61" codePart="print3d(level.curspawndata.friends[i], &quot;=)&quot;, (.5,1,.5), 1, 5)" isCall="True">
+      <funcRefArg charIndex="15818" charLength="29" />
+      <funcRefArg charIndex="15849" charLength="4" />
+      <funcRefArg charIndex="15855" charLength="9" />
+      <funcRefArg charIndex="15866" charLength="1" />
+      <funcRefArg charIndex="15869" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="15944" charLength="61" codePart="print3d(level.curspawndata.enemies[i], &quot;=(&quot;, (1,.5,.5), 1, 5)" isCall="True">
+      <funcRefArg charIndex="15952" charLength="29" />
+      <funcRefArg charIndex="15983" charLength="4" />
+      <funcRefArg charIndex="15989" charLength="9" />
+      <funcRefArg charIndex="16000" charLength="1" />
+      <funcRefArg charIndex="16003" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="16084" charLength="103" codePart="print3d(level.curspawndata.otherdata[i].origin, level.curspawndata.otherdata[i].text, (.5,.75,1), 1, 2)" isCall="True">
+      <funcRefArg charIndex="16092" charLength="38" />
+      <funcRefArg charIndex="16132" charLength="36" />
+      <funcRefArg charIndex="16170" charLength="10" />
+      <funcRefArg charIndex="16182" charLength="1" />
+      <funcRefArg charIndex="16185" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="16363" charLength="79" codePart="print3d(orig, level.curspawndata.playername + &quot; spawned here&quot;, (.5,.5,1), 1, 2)" isCall="True">
+      <funcRefArg charIndex="16371" charLength="4" />
+      <funcRefArg charIndex="16377" charLength="47" />
+      <funcRefArg charIndex="16426" charLength="9" />
+      <funcRefArg charIndex="16437" charLength="1" />
+      <funcRefArg charIndex="16440" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="16598" charLength="55" codePart="print3d(orig, &quot;Weight: &quot; + sp.weight, (1-amnt,amnt,.5))" isCall="True">
+      <funcRefArg charIndex="16606" charLength="4" />
+      <funcRefArg charIndex="16612" charLength="22" />
+      <funcRefArg charIndex="16636" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="16729" charLength="34" codePart="print3d(orig, sp.data[j], (1,1,1))" isCall="True">
+      <funcRefArg charIndex="16737" charLength="4" />
+      <funcRefArg charIndex="16743" charLength="10" />
+      <funcRefArg charIndex="16755" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="16912" charLength="70" codePart="print3d(orig, &quot;Sightchecks: -&quot; + sp.sightchecks[j].penalty, (1,.5,.5))" isCall="True">
+      <funcRefArg charIndex="16920" charLength="4" />
+      <funcRefArg charIndex="16926" charLength="44" />
+      <funcRefArg charIndex="16972" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="17071" charLength="11" codePart="int(vec[0])" isCall="True">
+      <funcRefArg charIndex="17075" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="17091" charLength="11" codePart="int(vec[1])" isCall="True">
+      <funcRefArg charIndex="17095" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="17111" charLength="11" codePart="int(vec[2])" isCall="True">
+      <funcRefArg charIndex="17115" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="StrTok" charIndex="17155" charLength="16" codePart="strtok(str, &quot;/&quot;)" isCall="True">
+      <funcRefArg charIndex="17162" charLength="3" />
+      <funcRefArg charIndex="17167" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="17225" charLength="13" codePart="int(parts[0])" isCall="True">
+      <funcRefArg charIndex="17229" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="17240" charLength="13" codePart="int(parts[1])" isCall="True">
+      <funcRefArg charIndex="17244" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="17255" charLength="13" codePart="int(parts[2])" isCall="True">
+      <funcRefArg charIndex="17259" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17404" charLength="22" codePart="isdefined(spawnpoints)" isCall="True">
+      <funcRefArg charIndex="17414" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="17523" charLength="27" codePart="randomInt(spawnpoints.size)" isCall="True">
+      <funcRefArg charIndex="17533" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getSpawnpoint_Final" charIndex="17668" charLength="39" codePart="getSpawnpoint_Final(spawnpoints, false)" isCall="True">
+      <funcRefArg charIndex="17688" charLength="11" />
+      <funcRefArg charIndex="17701" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17884" charLength="29" codePart="isdefined( level.players[i] )" isCall="True">
+      <funcRefArg charIndex="17895" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="18348" charLength="37" codePart="assert( self.pers[&quot;team&quot;] == &quot;axis&quot; )" isCall="True">
+      <funcRefArg charIndex="18356" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19082" charLength="22" codePart="isdefined(spawnpoints)" isCall="True">
+      <funcRefArg charIndex="19092" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="19142" charLength="29" codePart="getdvar(&quot;scr_spawn_randomly&quot;)" isCall="True">
+      <funcRefArg charIndex="19150" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="19183" charLength="34" codePart="setdvar(&quot;scr_spawn_randomly&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="19191" charLength="20" />
+      <funcRefArg charIndex="19213" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="19226" charLength="29" codePart="getdvar(&quot;scr_spawn_randomly&quot;)" isCall="True">
+      <funcRefArg charIndex="19234" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getSpawnpoint_Random" charIndex="19275" charLength="35" codePart="getSpawnpoint_Random( spawnpoints )" isCall="True">
+      <funcRefArg charIndex="19297" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_begin" charIndex="19323" charLength="30" codePart="prof_begin(&quot;basic_spawnlogic&quot;)" isCall="True">
+      <funcRefArg charIndex="19334" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="19365" charLength="29" codePart="getdvarint(&quot;scr_spawnsimple&quot;)" isCall="True">
+      <funcRefArg charIndex="19376" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getSpawnpoint_Random" charIndex="19411" charLength="35" codePart="getSpawnpoint_Random( spawnpoints )" isCall="True">
+      <funcRefArg charIndex="19433" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="Spawnlogic_Begin" charIndex="19453" charLength="18" codePart="Spawnlogic_Begin()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="initWeights" charIndex="19478" charLength="24" codePart="initWeights(spawnpoints)" isCall="True">
+      <funcRefArg charIndex="19490" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_begin" charIndex="19509" charLength="23" codePart="prof_begin(&quot; getteams&quot;)" isCall="True">
+      <funcRefArg charIndex="19520" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="19542" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getAllAlliedAndEnemyPlayers" charIndex="19559" charLength="32" codePart="getAllAlliedAndEnemyPlayers(obj)" isCall="True">
+      <funcRefArg charIndex="19587" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_end" charIndex="19595" charLength="21" codePart="prof_end(&quot; getteams&quot;)" isCall="True">
+      <funcRefArg charIndex="19604" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_begin" charIndex="19708" charLength="23" codePart="prof_begin(&quot; sumdists&quot;)" isCall="True">
+      <funcRefArg charIndex="19719" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="getOtherTeam" charIndex="19777" charLength="22" codePart="getOtherTeam( myTeam )" isCall="True">
+      <funcRefArg charIndex="19791" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_end" charIndex="20269" charLength="21" codePart="prof_end(&quot; sumdists&quot;)" isCall="True">
+      <funcRefArg charIndex="20278" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="20301" charLength="29" codePart="isdefined(favoredspawnpoints)" isCall="True">
+      <funcRefArg charIndex="20311" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_end" charIndex="20444" charLength="28" codePart="prof_end(&quot;basic_spawnlogic&quot;)" isCall="True">
+      <funcRefArg charIndex="20453" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_begin" charIndex="20478" charLength="32" codePart="prof_begin(&quot;complex_spawnlogic&quot;)" isCall="True">
+      <funcRefArg charIndex="20489" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="avoidSameSpawn" charIndex="20516" charLength="27" codePart="avoidSameSpawn(spawnpoints)" isCall="True">
+      <funcRefArg charIndex="20531" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="avoidSpawnReuse" charIndex="20547" charLength="34" codePart="avoidSpawnReuse(spawnpoints, true)" isCall="True">
+      <funcRefArg charIndex="20563" charLength="11" />
+      <funcRefArg charIndex="20576" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="avoidWeaponDamage" charIndex="20719" charLength="30" codePart="avoidWeaponDamage(spawnpoints)" isCall="True">
+      <funcRefArg charIndex="20737" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="avoidVisibleEnemies" charIndex="20753" charLength="38" codePart="avoidVisibleEnemies(spawnpoints, true)" isCall="True">
+      <funcRefArg charIndex="20773" charLength="11" />
+      <funcRefArg charIndex="20786" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_end" charIndex="20798" charLength="30" codePart="prof_end(&quot;complex_spawnlogic&quot;)" isCall="True">
+      <funcRefArg charIndex="20807" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getSpawnpoint_Final" charIndex="20843" charLength="32" codePart="getSpawnpoint_Final(spawnpoints)" isCall="True">
+      <funcRefArg charIndex="20863" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="20892" charLength="28" codePart="getdvar(&quot;scr_spawn_showbad&quot;)" isCall="True">
+      <funcRefArg charIndex="20900" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="20932" charLength="33" codePart="setdvar(&quot;scr_spawn_showbad&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="20940" charLength="19" />
+      <funcRefArg charIndex="20961" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="20974" charLength="28" codePart="getdvar(&quot;scr_spawn_showbad&quot;)" isCall="True">
+      <funcRefArg charIndex="20982" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="checkBad" charIndex="21015" charLength="18" codePart="checkBad( result )" isCall="True">
+      <funcRefArg charIndex="21025" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="21262" charLength="22" codePart="isdefined(spawnpoints)" isCall="True">
+      <funcRefArg charIndex="21272" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="Spawnlogic_Begin" charIndex="21312" charLength="18" codePart="Spawnlogic_Begin()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="initWeights" charIndex="21336" charLength="24" codePart="initWeights(spawnpoints)" isCall="True">
+      <funcRefArg charIndex="21348" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getAllOtherPlayers" charIndex="21382" charLength="20" codePart="getAllOtherPlayers()" isCall="True" />
+    <funcRef sfPath="codapi" name="Distance" charIndex="21776" charLength="55" codePart="distance(spawnpoints[i].origin, aliveplayers[j].origin)" isCall="True">
+      <funcRefArg charIndex="21785" charLength="21" />
+      <funcRefArg charIndex="21808" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Abs" charIndex="21944" charLength="21" codePart="abs(dist - idealDist)" isCall="True">
+      <funcRefArg charIndex="21948" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="22519" charLength="15" codePart="randomfloat(.2)" isCall="True">
+      <funcRefArg charIndex="22531" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="avoidSameSpawn" charIndex="22550" charLength="27" codePart="avoidSameSpawn(spawnpoints)" isCall="True">
+      <funcRefArg charIndex="22565" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="avoidSpawnReuse" charIndex="22581" charLength="35" codePart="avoidSpawnReuse(spawnpoints, false)" isCall="True">
+      <funcRefArg charIndex="22597" charLength="11" />
+      <funcRefArg charIndex="22610" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="avoidWeaponDamage" charIndex="22666" charLength="30" codePart="avoidWeaponDamage(spawnpoints)" isCall="True">
+      <funcRefArg charIndex="22684" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="avoidVisibleEnemies" charIndex="22700" charLength="39" codePart="avoidVisibleEnemies(spawnpoints, false)" isCall="True">
+      <funcRefArg charIndex="22720" charLength="11" />
+      <funcRefArg charIndex="22733" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getSpawnpoint_Final" charIndex="22753" charLength="32" codePart="getSpawnpoint_Final(spawnpoints)" isCall="True">
+      <funcRefArg charIndex="22773" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="22961" charLength="33" codePart="getdvarint(&quot;scr_recordspawndata&quot;)" isCall="True">
+      <funcRefArg charIndex="22972" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="23061" charLength="30" codePart="getdvar(&quot;scr_recordspawndata&quot;)" isCall="True">
+      <funcRefArg charIndex="23069" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="23102" charLength="33" codePart="setdvar(&quot;scr_recordspawndata&quot;, 0)" isCall="True">
+      <funcRefArg charIndex="23110" charLength="21" />
+      <funcRefArg charIndex="23133" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="23162" charLength="33" codePart="getdvarint(&quot;scr_recordspawndata&quot;)" isCall="True">
+      <funcRefArg charIndex="23173" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="23206" charLength="23" codePart="getdvar(&quot;scr_killbots&quot;)" isCall="True">
+      <funcRefArg charIndex="23214" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="23240" charLength="26" codePart="setdvar(&quot;scr_killbots&quot;, 0)" isCall="True">
+      <funcRefArg charIndex="23248" charLength="14" />
+      <funcRefArg charIndex="23264" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="23274" charLength="27" codePart="getdvar(&quot;scr_killbottimer&quot;)" isCall="True">
+      <funcRefArg charIndex="23282" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="23312" charLength="33" codePart="setdvar(&quot;scr_killbottimer&quot;, 0.25)" isCall="True">
+      <funcRefArg charIndex="23320" charLength="18" />
+      <funcRefArg charIndex="23340" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="loopbotspawns" charIndex="23349" charLength="22" codePart="thread loopbotspawns()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="onPlayerConnect" charIndex="23567" charLength="30" codePart="level thread onPlayerConnect()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="trackGrenades" charIndex="23601" charLength="28" codePart="level thread trackGrenades()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="23662" charLength="26" codePart="getdvar(&quot;scr_spawnsimple&quot;)" isCall="True">
+      <funcRefArg charIndex="23670" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="23699" charLength="31" codePart="setdvar(&quot;scr_spawnsimple&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="23707" charLength="17" />
+      <funcRefArg charIndex="23726" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="23738" charLength="30" codePart="getdvar(&quot;scr_spawnpointdebug&quot;)" isCall="True">
+      <funcRefArg charIndex="23746" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="23779" charLength="35" codePart="setdvar(&quot;scr_spawnpointdebug&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="23787" charLength="21" />
+      <funcRefArg charIndex="23810" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="23822" charLength="33" codePart="getdvarint(&quot;scr_spawnpointdebug&quot;)" isCall="True">
+      <funcRefArg charIndex="23833" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="showDeathsDebug" charIndex="23868" charLength="24" codePart="thread showDeathsDebug()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="updateDeathInfoDebug" charIndex="23897" charLength="29" codePart="thread updateDeathInfoDebug()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="profileDebug" charIndex="23931" charLength="21" codePart="thread profileDebug()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="allowSpawnDataReading" charIndex="23991" charLength="30" codePart="thread allowSpawnDataReading()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="24033" charLength="27" codePart="getdvar(&quot;scr_spawnprofile&quot;)" isCall="True">
+      <funcRefArg charIndex="24041" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="24071" charLength="32" codePart="setdvar(&quot;scr_spawnprofile&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="24079" charLength="18" />
+      <funcRefArg charIndex="24099" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="watchSpawnProfile" charIndex="24107" charLength="26" codePart="thread watchSpawnProfile()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="24213" charLength="30" codePart="getdvarint(&quot;scr_spawnprofile&quot;)" isCall="True">
+      <funcRefArg charIndex="24224" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="spawnProfile" charIndex="24287" charLength="21" codePart="thread spawnProfile()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="24339" charLength="30" codePart="getdvarint(&quot;scr_spawnprofile&quot;)" isCall="True">
+      <funcRefArg charIndex="24350" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="24414" charLength="34" codePart="level notify(&quot;stop_spawn_profile&quot;)" isCall="True">
+      <funcRefArg charIndex="24427" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="24480" charLength="33" codePart="level endon(&quot;stop_spawn_profile&quot;)" isCall="True">
+      <funcRefArg charIndex="24492" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="24614" charLength="29" codePart="randomint(level.players.size)" isCall="True">
+      <funcRefArg charIndex="24624" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="24714" charLength="19" codePart="isdefined( player )" isCall="True">
+      <funcRefArg charIndex="24725" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getSpawnpoint_NearTeam" charIndex="24902" charLength="48" codePart="player getSpawnpoint_NearTeam(level.spawnpoints)" isCall="True">
+      <funcRefArg charIndex="24932" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="25032" charLength="26" codePart="getdvarint(&quot;scr_killbots&quot;)" isCall="True">
+      <funcRefArg charIndex="25043" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="25110" charLength="26" codePart="isdefined( level.players )" isCall="True">
+      <funcRefArg charIndex="25121" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="25254" charLength="29" codePart="isdefined( level.players[i] )" isCall="True">
+      <funcRefArg charIndex="25265" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="25358" charLength="38" codePart="issubstr(level.players[i].name, &quot;bot&quot;)" isCall="True">
+      <funcRefArg charIndex="25367" charLength="21" />
+      <funcRefArg charIndex="25390" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="25495" charLength="28" codePart="getdvarint( &quot;scr_killbots&quot; )" isCall="True">
+      <funcRefArg charIndex="25507" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="25556" charLength="20" codePart="randomint(bots.size)" isCall="True">
+      <funcRefArg charIndex="25566" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="25598" charLength="20" codePart="randomint(bots.size)" isCall="True">
+      <funcRefArg charIndex="25608" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="26385" charLength="28" codePart="getdvarint( &quot;scr_killbots&quot; )" isCall="True">
+      <funcRefArg charIndex="26397" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="26521" charLength="20" codePart="randomint(bots.size)" isCall="True">
+      <funcRefArg charIndex="26531" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="26564" charLength="20" codePart="randomint(bots.size)" isCall="True">
+      <funcRefArg charIndex="26574" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="26608" charLength="23" codePart="isDefined( lastVictim )" isCall="True">
+      <funcRefArg charIndex="26619" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="26679" charLength="20" codePart="randomint(bots.size)" isCall="True">
+      <funcRefArg charIndex="26689" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="27506" charLength="27" codePart="getdvar(&quot;scr_killbottimer&quot;)" isCall="True">
+      <funcRefArg charIndex="27514" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="27551" charLength="32" codePart="getdvarfloat(&quot;scr_killbottimer&quot;)" isCall="True">
+      <funcRefArg charIndex="27564" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="27656" charLength="30" codePart="setdvar(&quot;scr_showspawnid&quot;, &quot;&quot;)" isCall="True">
+      <funcRefArg charIndex="27664" charLength="17" />
+      <funcRefArg charIndex="27683" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="27700" charLength="26" codePart="getdvar(&quot;scr_showspawnid&quot;)" isCall="True">
+      <funcRefArg charIndex="27708" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="27746" charLength="27" codePart="getdvar(&quot;scr_spawnidcycle&quot;)" isCall="True">
+      <funcRefArg charIndex="27754" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="27829" charLength="26" codePart="getdvar(&quot;scr_showspawnid&quot;)" isCall="True">
+      <funcRefArg charIndex="27837" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="27888" charLength="14" codePart="isdefined(val)" isCall="True">
+      <funcRefArg charIndex="27898" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="27940" charLength="27" codePart="getdvar(&quot;scr_spawnidcycle&quot;)" isCall="True">
+      <funcRefArg charIndex="27948" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="27978" charLength="19" codePart="isdefined( relval )" isCall="True">
+      <funcRefArg charIndex="27989" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="28027" charLength="31" codePart="setdvar(&quot;scr_spawnidcycle&quot;, &quot;&quot;)" isCall="True">
+      <funcRefArg charIndex="28035" charLength="18" />
+      <funcRefArg charIndex="28055" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="readSpawnData" charIndex="28176" charLength="28" codePart="readSpawnData( val, relval )" isCall="True">
+      <funcRefArg charIndex="28191" charLength="3" />
+      <funcRefArg charIndex="28196" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="28219" charLength="31" codePart="isdefined( level.curspawndata )" isCall="True">
+      <funcRefArg charIndex="28230" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="28262" charLength="35" codePart="println( &quot;No spawn data to draw.&quot; )" isCall="True">
+      <funcRefArg charIndex="28271" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="28321" charLength="54" codePart="println( &quot;Drawing spawn ID &quot; + level.curspawndata.id )" isCall="True">
+      <funcRefArg charIndex="28330" charLength="44" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="drawSpawnData" charIndex="28389" charLength="22" codePart="thread drawSpawnData()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="28478" charLength="30" codePart="getdvar(&quot;scr_spawnpointdebug&quot;)" isCall="True">
+      <funcRefArg charIndex="28486" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="28563" charLength="9" codePart="getTime()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="28645" charLength="41" codePart="isdefined(level.spawnlogic_deaths[i].los)" isCall="True">
+      <funcRefArg charIndex="28655" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="28693" charLength="81" codePart="line(level.spawnlogic_deaths[i].org, level.spawnlogic_deaths[i].killOrg, (1,0,0))" isCall="True">
+      <funcRefArg charIndex="28698" charLength="30" />
+      <funcRefArg charIndex="28730" charLength="34" />
+      <funcRefArg charIndex="28766" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="28825" charLength="81" codePart="line(level.spawnlogic_deaths[i].org, level.spawnlogic_deaths[i].killOrg, (1,1,1))" isCall="True">
+      <funcRefArg charIndex="28830" charLength="30" />
+      <funcRefArg charIndex="28862" charLength="34" />
+      <funcRefArg charIndex="28898" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="28964" charLength="17" codePart="isdefined(killer)" isCall="True">
+      <funcRefArg charIndex="28974" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsAlive" charIndex="28985" charLength="15" codePart="isalive(killer)" isCall="True">
+      <funcRefArg charIndex="28993" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="29007" charLength="67" codePart="line(level.spawnlogic_deaths[i].killOrg, killer.origin, (.4,.4,.8))" isCall="True">
+      <funcRefArg charIndex="29012" charLength="34" />
+      <funcRefArg charIndex="29048" charLength="13" />
+      <funcRefArg charIndex="29063" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="29144" charLength="29" codePart="isdefined( level.players[p] )" isCall="True">
+      <funcRefArg charIndex="29155" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="29199" charLength="47" codePart="isdefined(level.players[p].spawnlogic_killdist)" isCall="True">
+      <funcRefArg charIndex="29209" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="29253" charLength="90" codePart="print3d(level.players[p].origin + (0,0,64), level.players[p].spawnlogic_killdist, (1,1,1))" isCall="True">
+      <funcRefArg charIndex="29261" charLength="34" />
+      <funcRefArg charIndex="29297" charLength="36" />
+      <funcRefArg charIndex="29335" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="29786" charLength="66" codePart="line(spawnkill.spawnpointorigin, spawnkill.dierorigin, (.4,.5,.4))" isCall="True">
+      <funcRefArg charIndex="29791" charLength="26" />
+      <funcRefArg charIndex="29819" charLength="20" />
+      <funcRefArg charIndex="29841" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="29859" charLength="59" codePart="line(spawnkill.dierorigin, spawnkill.killerorigin, (0,1,1))" isCall="True">
+      <funcRefArg charIndex="29864" charLength="20" />
+      <funcRefArg charIndex="29886" charLength="22" />
+      <funcRefArg charIndex="29910" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="29925" charLength="65" codePart="print3d(spawnkill.dierorigin + (0,0,32), &quot;SPAWNKILLED!&quot;, (0,1,1))" isCall="True">
+      <funcRefArg charIndex="29933" charLength="31" />
+      <funcRefArg charIndex="29966" charLength="14" />
+      <funcRefArg charIndex="29982" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="30014" charLength="68" codePart="line(spawnkill.spawnpointorigin, spawnkill.killerorigin, (.4,.5,.4))" isCall="True">
+      <funcRefArg charIndex="30019" charLength="26" />
+      <funcRefArg charIndex="30047" charLength="22" />
+      <funcRefArg charIndex="30071" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="30089" charLength="59" codePart="line(spawnkill.killerorigin, spawnkill.dierorigin, (0,1,1))" isCall="True">
+      <funcRefArg charIndex="30094" charLength="22" />
+      <funcRefArg charIndex="30118" charLength="20" />
+      <funcRefArg charIndex="30140" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="30155" charLength="63" codePart="print3d(spawnkill.dierorigin + (0,0,32), &quot;SPAWNDIED!&quot;, (0,1,1))" isCall="True">
+      <funcRefArg charIndex="30163" charLength="31" />
+      <funcRefArg charIndex="30196" charLength="12" />
+      <funcRefArg charIndex="30210" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="30444" charLength="30" codePart="getdvar(&quot;scr_spawnpointdebug&quot;)" isCall="True">
+      <funcRefArg charIndex="30452" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="updateDeathInfo" charIndex="30520" charLength="17" codePart="updateDeathInfo()" isCall="True" />
+    <funcRef sfPath="codapi" name="notify" charIndex="30604" charLength="39" codePart="level notify(&quot;stop_spawn_weight_debug&quot;)" isCall="True">
+      <funcRefArg charIndex="30617" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="30647" charLength="38" codePart="level endon(&quot;stop_spawn_weight_debug&quot;)" isCall="True">
+      <funcRefArg charIndex="30659" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="30709" charLength="30" codePart="getdvar(&quot;scr_spawnpointdebug&quot;)" isCall="True">
+      <funcRefArg charIndex="30717" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="30945" charLength="77" codePart="print3d(spawnpoints[i].origin + (0,0,64), spawnpoints[i].weight, (1,amnt,.5))" isCall="True">
+      <funcRefArg charIndex="30953" charLength="32" />
+      <funcRefArg charIndex="30987" charLength="21" />
+      <funcRefArg charIndex="31010" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="31101" charLength="32" codePart="getdvar(&quot;scr_spawnpointprofile&quot;)" isCall="True">
+      <funcRefArg charIndex="31109" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="31262" charLength="16" codePart="randomint(10000)" isCall="True">
+      <funcRefArg charIndex="31272" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getSpawnpoint_NearTeam" charIndex="31315" charLength="86" codePart="level.players[randomint(level.players.size)] getSpawnpoint_NearTeam(level.spawnpoints)" isCall="True">
+      <funcRefArg charIndex="31383" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="31329" charLength="29" codePart="randomint(level.players.size)" isCall="True">
+      <funcRefArg charIndex="31339" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="31484" charLength="30" codePart="getdvar(&quot;scr_spawnpointdebug&quot;)" isCall="True">
+      <funcRefArg charIndex="31492" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="31554" charLength="9" codePart="gettime()" isCall="True" />
+    <funcRef sfPath="codapidev" name="Line" charIndex="31622" charLength="42" codePart="line(players[i].origin, origin, (.5,1,.5))" isCall="True">
+      <funcRefArg charIndex="31627" charLength="17" />
+      <funcRefArg charIndex="31646" charLength="6" />
+      <funcRefArg charIndex="31654" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="31673" charLength="9" codePart="gettime()" isCall="True" />
+    <funcRef sfPath="codapi" name="Distance" charIndex="33744" charLength="55" codePart="distance(level.spawnlogic_deaths[i].org, deathInfo.org)" isCall="True">
+      <funcRefArg charIndex="33753" charLength="30" />
+      <funcRefArg charIndex="33785" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="33842" charLength="63" codePart="distance(level.spawnlogic_deaths[i].killOrg, deathInfo.killOrg)" isCall="True">
+      <funcRefArg charIndex="33851" charLength="34" />
+      <funcRefArg charIndex="33887" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_begin" charIndex="34026" charLength="30" codePart="prof_begin(&quot; updateDeathInfo&quot;)" isCall="True">
+      <funcRefArg charIndex="34037" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="34070" charLength="9" codePart="getTime()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="34358" charLength="27" codePart="isdefined(deathInfo.killer)" isCall="True">
+      <funcRefArg charIndex="34368" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsAlive" charIndex="34394" charLength="25" codePart="isalive(deathInfo.killer)" isCall="True">
+      <funcRefArg charIndex="34402" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="34521" charLength="52" codePart="distance(deathInfo.killer.origin, deathInfo.killOrg)" isCall="True">
+      <funcRefArg charIndex="34530" charLength="23" />
+      <funcRefArg charIndex="34555" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="34953" charLength="29" codePart="isdefined(oldarray[i].remove)" isCall="True">
+      <funcRefArg charIndex="34963" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_end" charIndex="35065" charLength="28" codePart="prof_end(&quot; updateDeathInfo&quot;)" isCall="True">
+      <funcRefArg charIndex="35074" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="36731" charLength="35" codePart="getentarray(&quot;grenade&quot;, &quot;classname&quot;)" isCall="True">
+      <funcRefArg charIndex="36743" charLength="9" />
+      <funcRefArg charIndex="36754" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="DistanceSquared" charIndex="36975" charLength="31" codePart="distancesquared(pos, playerpos)" isCall="True">
+      <funcRefArg charIndex="36991" charLength="3" />
+      <funcRefArg charIndex="36996" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToForward" charIndex="37023" charLength="28" codePart="anglestoforward(self.angles)" isCall="True">
+      <funcRefArg charIndex="37039" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="37153" charLength="32" codePart="vectornormalize(playerpos - pos)" isCall="True">
+      <funcRefArg charIndex="37169" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="ACos" charIndex="37198" charLength="35" codePart="acos(vectordot(playerdir, forward))" isCall="True">
+      <funcRefArg charIndex="37203" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="37203" charLength="29" codePart="vectordot(playerdir, forward)" isCall="True">
+      <funcRefArg charIndex="37213" charLength="9" />
+      <funcRefArg charIndex="37224" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="37376" charLength="33" codePart="getdvar(&quot;scr_spawnpointnewlogic&quot;)" isCall="True">
+      <funcRefArg charIndex="37384" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_begin" charIndex="37443" charLength="28" codePart="prof_begin(&quot; spawn_grenade&quot;)" isCall="True">
+      <funcRefArg charIndex="37454" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="37513" charLength="38" codePart="getdvar(&quot;scr_spawnpointweaponpenalty&quot;)" isCall="True">
+      <funcRefArg charIndex="37521" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="37561" charLength="38" codePart="getdvar(&quot;scr_spawnpointweaponpenalty&quot;)" isCall="True">
+      <funcRefArg charIndex="37569" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="37633" charLength="43" codePart="getdvarfloat(&quot;scr_spawnpointweaponpenalty&quot;)" isCall="True">
+      <funcRefArg charIndex="37646" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="37896" charLength="30" codePart="isdefined( level.grenades[j] )" isCall="True">
+      <funcRefArg charIndex="37907" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="DistanceSquared" charIndex="38022" charLength="64" codePart="distancesquared(spawnpoints[i].origin, level.grenades[j].origin)" isCall="True">
+      <funcRefArg charIndex="38038" charLength="21" />
+      <funcRefArg charIndex="38061" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="38349" charLength="41" codePart="isDefined( level.artilleryDangerCenters )" isCall="True">
+      <funcRefArg charIndex="38360" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hardpoints" name="getAirstrikeDanger" charIndex="38432" charLength="74" codePart="maps\mp\gametypes\_hardpoints::getAirstrikeDanger( spawnpoints[i].origin )" isCall="True">
+      <funcRefArg charIndex="38483" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_end" charIndex="38852" charLength="26" codePart="prof_end(&quot; spawn_grenade&quot;)" isCall="True">
+      <funcRefArg charIndex="38861" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_begin" charIndex="39083" charLength="32" codePart="prof_begin(&quot;spawn_sight_checks&quot;)" isCall="True">
+      <funcRefArg charIndex="39094" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="39157" charLength="30" codePart="isDefined( level.spawnPoints )" isCall="True">
+      <funcRefArg charIndex="39168" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="39689" charLength="33" codePart="getdvarint(&quot;scr_spawnpointdebug&quot;)" isCall="True">
+      <funcRefArg charIndex="39700" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Length" charIndex="40101" charLength="14" codePart="length( diff )" isCall="True">
+      <funcRefArg charIndex="40109" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToForward" charIndex="40474" charLength="30" codePart="anglestoforward(player.angles)" isCall="True">
+      <funcRefArg charIndex="40490" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="40514" charLength="30" codePart="vectordot(spawnpointdir, diff)" isCall="True">
+      <funcRefArg charIndex="40524" charLength="13" />
+      <funcRefArg charIndex="40539" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="40552" charLength="21" codePart="vectordot(pdir, diff)" isCall="True">
+      <funcRefArg charIndex="40562" charLength="4" />
+      <funcRefArg charIndex="40568" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTracePassed" charIndex="40697" charLength="89" codePart="bullettracepassed(player.origin + (0,0,50), spawnpoint.sightTracePoint, false, undefined)" isCall="True">
+      <funcRefArg charIndex="40715" charLength="24" />
+      <funcRefArg charIndex="40741" charLength="26" />
+      <funcRefArg charIndex="40769" charLength="5" />
+      <funcRefArg charIndex="40776" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="40829" charLength="9" codePart="gettime()" isCall="True" />
+    <funcRef sfPath="codapidev" name="Line" charIndex="41582" charLength="69" codePart="line(player.origin + (0,0,50), spawnpoint.sightTracePoint, (.5,1,.5))" isCall="True">
+      <funcRefArg charIndex="41587" charLength="24" />
+      <funcRefArg charIndex="41613" charLength="26" />
+      <funcRefArg charIndex="41641" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_end" charIndex="41768" charLength="30" codePart="prof_end(&quot;spawn_sight_checks&quot;)" isCall="True">
+      <funcRefArg charIndex="41777" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="41835" charLength="35" codePart="getdvar(&quot;scr_spawnpointlospenalty&quot;)" isCall="True">
+      <funcRefArg charIndex="41843" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="41880" charLength="35" codePart="getdvar(&quot;scr_spawnpointlospenalty&quot;)" isCall="True">
+      <funcRefArg charIndex="41888" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="41934" charLength="40" codePart="getdvarfloat(&quot;scr_spawnpointlospenalty&quot;)" isCall="True">
+      <funcRefArg charIndex="41947" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_begin" charIndex="42040" charLength="33" codePart="prof_begin(&quot; spawn_lastminutesc&quot;)" isCall="True">
+      <funcRefArg charIndex="42051" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="getOtherTeam" charIndex="42129" charLength="33" codePart="getOtherTeam( self.pers[&quot;team&quot;] )" isCall="True">
+      <funcRefArg charIndex="42143" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="42175" charLength="37" codePart="isdefined( spawnpoint.nearbyPlayers )" isCall="True">
+      <funcRefArg charIndex="42186" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="42477" charLength="19" codePart="isdefined( player )" isCall="True">
+      <funcRefArg charIndex="42488" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="DistanceSquared" charIndex="42625" charLength="51" codePart="distanceSquared( spawnpoint.origin, player.origin )" isCall="True">
+      <funcRefArg charIndex="42642" charLength="17" />
+      <funcRefArg charIndex="42661" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="42687" charLength="20" codePart="isdefined( closest )" isCall="True">
+      <funcRefArg charIndex="42698" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="42885" charLength="26" codePart="isdefined( secondClosest )" isCall="True">
+      <funcRefArg charIndex="42896" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="43032" charLength="20" codePart="isdefined( closest )" isCall="True">
+      <funcRefArg charIndex="43043" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTracePassed" charIndex="43067" charLength="97" codePart="bullettracepassed( closest.origin       + (0,0,50), spawnpoint.sightTracePoint, false, undefined)" isCall="True">
+      <funcRefArg charIndex="43086" charLength="31" />
+      <funcRefArg charIndex="43119" charLength="26" />
+      <funcRefArg charIndex="43147" charLength="5" />
+      <funcRefArg charIndex="43154" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="43195" charLength="26" codePart="isdefined( secondClosest )" isCall="True">
+      <funcRefArg charIndex="43206" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTracePassed" charIndex="43236" charLength="97" codePart="bullettracepassed( secondClosest.origin + (0,0,50), spawnpoint.sightTracePoint, false, undefined)" isCall="True">
+      <funcRefArg charIndex="43255" charLength="31" />
+      <funcRefArg charIndex="43288" charLength="26" />
+      <funcRefArg charIndex="43316" charLength="5" />
+      <funcRefArg charIndex="43323" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="43435" charLength="33" codePart="getdvar(&quot;scr_spawnpointnewlogic&quot;)" isCall="True">
+      <funcRefArg charIndex="43443" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_begin" charIndex="43512" charLength="23" codePart="prof_begin(&quot; spawn_sc&quot;)" isCall="True">
+      <funcRefArg charIndex="43523" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getLosPenalty" charIndex="43555" charLength="15" codePart="getLosPenalty()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="43743" charLength="32" codePart="isdefined(spawnpoints[i].sights)" isCall="True">
+      <funcRefArg charIndex="43753" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="44028" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="44193" charLength="32" codePart="isdefined(spawnpoints[i].sights)" isCall="True">
+      <funcRefArg charIndex="44203" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="44461" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="prof_end" charIndex="44575" charLength="21" codePart="prof_end(&quot; spawn_sc&quot;)" isCall="True">
+      <funcRefArg charIndex="44584" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="44664" charLength="33" codePart="getdvar(&quot;scr_spawnpointnewlogic&quot;)" isCall="True">
+      <funcRefArg charIndex="44672" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_begin" charIndex="44728" charLength="26" codePart="prof_begin(&quot; spawn_reuse&quot;)" isCall="True">
+      <funcRefArg charIndex="44739" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="44767" charLength="9" codePart="getTime()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="44882" charLength="43" codePart="isdefined(spawnpoints[i].lastspawnedplayer)" isCall="True">
+      <funcRefArg charIndex="44892" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="44930" charLength="39" codePart="isdefined(spawnpoints[i].lastspawntime)" isCall="True">
+      <funcRefArg charIndex="44940" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsAlive" charIndex="44978" charLength="41" codePart="isalive(spawnpoints[i].lastspawnedplayer)" isCall="True">
+      <funcRefArg charIndex="44986" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="DistanceSquared" charIndex="45308" charLength="79" codePart="distanceSquared(spawnpoints[i].lastspawnedplayer.origin, spawnpoints[i].origin)" isCall="True">
+      <funcRefArg charIndex="45324" charLength="39" />
+      <funcRefArg charIndex="45365" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_end" charIndex="45906" charLength="24" codePart="prof_end(&quot; spawn_reuse&quot;)" isCall="True">
+      <funcRefArg charIndex="45915" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="45986" charLength="33" codePart="getdvar(&quot;scr_spawnpointnewlogic&quot;)" isCall="True">
+      <funcRefArg charIndex="45994" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_begin" charIndex="46050" charLength="29" codePart="prof_begin(&quot; spawn_samespwn&quot;)" isCall="True">
+      <funcRefArg charIndex="46061" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="46090" charLength="30" codePart="isdefined(self.lastspawnpoint)" isCall="True">
+      <funcRefArg charIndex="46100" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="prof_end" charIndex="46472" charLength="27" codePart="prof_end(&quot; spawn_samespwn&quot;)" isCall="True">
+      <funcRefArg charIndex="46481" charLength="17" />
+    </funcRef>
+    <error type="warning" charIndex="130" charLength="6" lineIndex="7">
+      <message>Variable 'player' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'player' is defined, but its value is never used., file 'maps\mp\gametypes\_spawnlogic', line 8, 'level waittill("connected", player);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="20843" charLength="32" lineIndex="827">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_spawnlogic::getSpawnpoint_Final'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_spawnlogic::getSpawnpoint_Final', file 'maps\mp\gametypes\_spawnlogic', line 828, 'result = getSpawnpoint_Final(spawnpoints);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="19623" charLength="10" lineIndex="781">
+      <message>Variable 'numplayers' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'numplayers' is defined, but its value is never used., file 'maps\mp\gametypes\_spawnlogic', line 782, 'numplayers = obj.allies.size + obj.enemies.size;'</fullMessage>
+    </error>
+    <error type="warning" charIndex="22753" charLength="32" lineIndex="895">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_spawnlogic::getSpawnpoint_Final'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_spawnlogic::getSpawnpoint_Final', file 'maps\mp\gametypes\_spawnlogic', line 896, 'return getSpawnpoint_Final(spawnpoints);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="24902" charLength="48" lineIndex="1001">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_spawnlogic::getSpawnpoint_NearTeam'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_spawnlogic::getSpawnpoint_NearTeam', file 'maps\mp\gametypes\_spawnlogic', line 1002, 'player getSpawnpoint_NearTeam(level.spawnpoints);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="27733" charLength="10" lineIndex="1097">
+      <message>Variable 'prevrelval' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'prevrelval' is defined, but its value is never used., file 'maps\mp\gametypes\_spawnlogic', line 1098, 'prevrelval = getdvar("scr_spawnidcycle");'</fullMessage>
+    </error>
+    <error type="warning" charIndex="31315" charLength="86" lineIndex="1244">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_spawnlogic::getSpawnpoint_NearTeam'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_spawnlogic::getSpawnpoint_NearTeam', file 'maps\mp\gametypes\_spawnlogic', line 1245, 'level.players[randomint(level.players.size)] getSpawnpoint_NearTeam(level.spawnpoints);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="31751" charLength="4" lineIndex="1266">
+      <message>Variable 'dier' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'dier' is defined, but its value is never used., file 'maps\mp\gametypes\_spawnlogic', line 1267, 'deathOccured(dier, killer)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="31757" charLength="6" lineIndex="1266">
+      <message>Variable 'killer' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'killer' is defined, but its value is never used., file 'maps\mp\gametypes\_spawnlogic', line 1267, 'deathOccured(dier, killer)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="38997" charLength="14" lineIndex="1505">
+      <message>Variable 'prevspawnpoint' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'prevspawnpoint' is defined, but its value is never used., file 'maps\mp\gametypes\_spawnlogic', line 1506, 'prevspawnpoint = undefined;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

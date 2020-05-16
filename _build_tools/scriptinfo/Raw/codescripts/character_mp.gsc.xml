@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>codescripts\character_mp</name>
+  </settings>
+  <content>
+    <func name="setModelFromArray" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="a">
+      </param>
+    </func>
+    <func name="precacheModelArray" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="a">
+      </param>
+    </func>
+    <func name="attachFromArray" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="a">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="26" charLength="35" codePart="self setModel(a[randomint(a.size)])" isCall="True">
+      <funcRefArg charIndex="40" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="42" charLength="17" codePart="randomint(a.size)" isCall="True">
+      <funcRefArg charIndex="52" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="128" charLength="19" codePart="precacheModel(a[i])" isCall="True">
+      <funcRefArg charIndex="142" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="179" charLength="62" codePart="self attach(codescripts\character::randomElement(a), &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="191" charLength="39" />
+      <funcRefArg charIndex="232" charLength="2" />
+      <funcRefArg charIndex="236" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codescripts\character" name="randomElement" charIndex="191" charLength="39" codePart="codescripts\character::randomElement(a)" isCall="True">
+      <funcRefArg charIndex="228" charLength="1" />
+    </funcRef>
+  </content>
+</scriptinfo>

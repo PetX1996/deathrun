@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_arab_regular_mgportable</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="43" codePart="self setModel(&quot;body_sp_arab_regular_yasir&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="105" charLength="51" codePart="self attach(&quot;head_sp_arab_regular_suren&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="117" charLength="28" />
+      <funcRefArg charIndex="147" charLength="2" />
+      <funcRefArg charIndex="151" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="210" charLength="26" codePart="self attach(self.hatModel)" isCall="True">
+      <funcRefArg charIndex="222" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="240" charLength="46" codePart="self attach(&quot;weapon_mg42_carry&quot;, &quot;TAG_ORIGIN&quot;)" isCall="True">
+      <funcRefArg charIndex="252" charLength="19" />
+      <funcRefArg charIndex="273" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="333" charLength="43" codePart="precacheModel(&quot;body_sp_arab_regular_yasir&quot;)" isCall="True">
+      <funcRefArg charIndex="347" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="380" charLength="43" codePart="precacheModel(&quot;head_sp_arab_regular_suren&quot;)" isCall="True">
+      <funcRefArg charIndex="394" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="427" charLength="45" codePart="precacheModel(&quot;helmet_sp_arab_regular_suren&quot;)" isCall="True">
+      <funcRefArg charIndex="441" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="476" charLength="34" codePart="precacheModel(&quot;weapon_mg42_carry&quot;)" isCall="True">
+      <funcRefArg charIndex="490" charLength="19" />
+    </funcRef>
+  </content>
+</scriptinfo>

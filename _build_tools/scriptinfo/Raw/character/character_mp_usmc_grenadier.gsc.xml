@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_mp_usmc_grenadier</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="39" codePart="self setModel(&quot;body_mp_usmc_grenadier&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetViewModel" charIndex="101" charLength="45" codePart="self setViewmodel(&quot;viewmodel_base_viewhands&quot;)" isCall="True">
+      <funcRefArg charIndex="119" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="197" charLength="39" codePart="precacheModel(&quot;body_mp_usmc_grenadier&quot;)" isCall="True">
+      <funcRefArg charIndex="211" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="240" charLength="41" codePart="precacheModel(&quot;viewmodel_base_viewhands&quot;)" isCall="True">
+      <funcRefArg charIndex="254" charLength="26" />
+    </funcRef>
+  </content>
+</scriptinfo>

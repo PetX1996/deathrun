@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_shipment_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="59" charLength="40" codePart="loadfx (&quot;misc/bird_seagull_flock_large&quot;)" isCall="True">
+      <funcRefArg charIndex="67" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="142" charLength="43" codePart="loadfx( &quot;weather/jeepride_cloud_bank_far&quot; )" isCall="True">
+      <funcRefArg charIndex="150" charLength="34" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="223" charLength="28" codePart="loadfx (&quot;weather/fog_bog_a&quot;)" isCall="True">
+      <funcRefArg charIndex="231" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="268" charLength="30" codePart="getdvar( &quot;clientSideEffects&quot; )" isCall="True">
+      <funcRefArg charIndex="277" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\createfx\mp_shipment_fx" name="main" charIndex="312" charLength="36" codePart="maps\createfx\mp_shipment_fx::main()" isCall="True" />
+  </content>
+</scriptinfo>

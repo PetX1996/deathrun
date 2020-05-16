@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_german_sheperd_dog</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="35" codePart="self setModel(&quot;german_sheperd_dog&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="140" charLength="35" codePart="precacheModel(&quot;german_sheperd_dog&quot;)" isCall="True">
+      <funcRefArg charIndex="154" charLength="20" />
+    </funcRef>
+  </content>
+</scriptinfo>

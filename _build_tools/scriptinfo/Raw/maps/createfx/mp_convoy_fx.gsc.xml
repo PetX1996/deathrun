@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createfx\mp_convoy_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="21" charLength="54" codePart="maps\mp\_utility::createOneshotEffect( &quot;smoke_large&quot; )" isCall="True">
+      <funcRefArg charIndex="60" charLength="14" />
+    </funcRef>
+  </content>
+</scriptinfo>

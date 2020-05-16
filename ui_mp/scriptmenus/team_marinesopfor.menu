@@ -1,0 +1,208 @@
+// ui_mainS
+// ui_mainVer
+
+// ui_mainSV
+// ui_mainMap
+// "ui_mainSV_" + i
+// "ui_mainMap_" + i
+// ui_mainMapD
+// ui_mainMapL
+// ui_mainMapC
+// ui_mainMapN
+
+#include "ui_mp/macros.inc"
+
+{
+	menuDef
+	{	
+		name			"team_marinesopfor"
+		blurworld		1.5
+		rect			0 0 640 480 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP // always has aspect ration 4:3
+		
+		#include "ui_mp/scriptmenus/main_bg.inc"
+		
+		#include "ui_mp/scriptmenus/main_menu.inc"
+		
+		#include "ui_mp/scriptmenus/main_class.inc"
+		
+		onEsc
+		{
+			close self;
+		}
+		onOpen
+		{
+			ONOPEN_DEFAULT;
+			
+			scriptMenuResponse "onOpen";
+			setDvar ui_mainSel 999; // reset main menu selector
+		}
+		onClose
+		{
+			ONCLOSE_DEFAULT;
+		}
+		
+		#define SV_X CENTER_X
+		#define SV_Y CENTER_Y
+		#define SV_W ((CENTER_W - SPACE_INNER) * 0.5)
+		#define SV_H CENTER_H
+		
+		#define SV_BAR_X SV_X
+		#define SV_BAR_Y SV_Y
+		#define SV_BAR_W SV_W
+		#define SV_BAR_H 20
+		
+		#define SV_WORKSPACE_X SV_X
+		#define SV_WORKSPACE_Y (SV_BAR_Y + SV_BAR_H)
+		#define SV_WORKSPACE_W SV_W
+		#define SV_WORKSPACE_H (SV_H - SV_BAR_H)
+	
+		#define SV_LOGO_X (SV_WORKSPACE_X + SPACE_INNER)
+		#define SV_LOGO_Y (SV_WORKSPACE_Y + SPACE_INNER)
+		#define SV_LOGO_W (SV_WORKSPACE_W - (SPACE_INNER * 2))
+		#define SV_LOGO_H (SV_LOGO_W * 0.62)
+		
+		#define SV_LINES_X (SV_WORKSPACE_X + SPACE_INNER)
+		#define SV_LINES_Y (SV_LOGO_Y + SV_LOGO_H + SPACE_INNER)
+		#define SV_LINE_W (SV_WORKSPACE_W - (SPACE_INNER * 2))
+		#define SV_LINE_H 12		
+	
+		// CENTER WINDOW
+		PANEL_STATIC(SV_X, SV_Y, SV_W, SV_H, COLOR_BG_TRANSPARENT, 1)
+		
+		// BAR
+		PANEL_STATIC(SV_BAR_X, SV_BAR_Y, SV_BAR_W, SV_BAR_H, COLOR_FG_HIGHLIGHT, 1)
+		TEXT_DYNAMIC(SV_BAR_X, SV_BAR_Y, SV_BAR_W, SV_BAR_H, DvarString("ui_mainSV"), FONTSCALE_16, COLOR_WHITE, ITEM_ALIGN_MIDDLE_LEFT textAlignX 4, 1)
+	
+		// LOGO
+		SHADER_DYNAMIC(SV_LOGO_X, SV_LOGO_Y, SV_LOGO_W, SV_LOGO_H, "ui_logoserver", COLOR_WHITE, 1)
+	
+		// LINES
+		#define SV_LINE(i) \
+			TEXT_DYNAMIC(SV_LINES_X, (SV_LINES_Y + (SV_LINE_H * i)), SV_LINE_W, SV_LINE_H, DvarString("ui_mainSV_" + i), FONTSCALE_12, COLOR_WHITE, ITEM_ALIGN_MIDDLE_LEFT textAlignX 0, 1)
+	
+		SV_LINE(0)
+		SV_LINE(1)
+		SV_LINE(2)
+		SV_LINE(3)
+		SV_LINE(4)
+		SV_LINE(5)
+		SV_LINE(6)
+		SV_LINE(7)
+		SV_LINE(8)
+		SV_LINE(9)
+		SV_LINE(10)
+		SV_LINE(11)
+		SV_LINE(12)
+		
+		#define MAP_X (SV_X + SV_W + SPACE_INNER)
+		#define MAP_Y CENTER_Y
+		#define MAP_W ((CENTER_W - SPACE_INNER) * 0.5)
+		#define MAP_H CENTER_H
+		
+		#define MAP_BAR_X MAP_X
+		#define MAP_BAR_Y MAP_Y
+		#define MAP_BAR_W MAP_W
+		#define MAP_BAR_H 20
+		
+		#define MAP_WORKSPACE_X MAP_X
+		#define MAP_WORKSPACE_Y (MAP_BAR_Y + MAP_BAR_H)
+		#define MAP_WORKSPACE_W MAP_W
+		#define MAP_WORKSPACE_H (MAP_H - MAP_BAR_H)
+		
+		#define MAP_LOGO_X (MAP_WORKSPACE_X + SPACE_INNER)
+		#define MAP_LOGO_Y (MAP_WORKSPACE_Y + SPACE_INNER)
+		#define MAP_LOGO_W (MAP_WORKSPACE_W - (SPACE_INNER * 2))
+		#define MAP_LOGO_H (MAP_LOGO_W * 0.62)
+		
+		#define MAP_NEW_W 20
+		#define MAP_NEW_H MAP_NEW_W
+		#define MAP_NEW_X ((MAP_LOGO_X + MAP_LOGO_W) - MAP_NEW_W)
+		#define MAP_NEW_Y MAP_LOGO_Y
+
+		#define MAP_DIFF_X (MAP_WORKSPACE_X + SPACE_INNER)
+		#define MAP_DIFF_Y (MAP_LOGO_Y + MAP_LOGO_H)
+		#define MAP_DIFF_W (MAP_WORKSPACE_W - (SPACE_INNER * 2))
+		#define MAP_DIFF_H 12
+		
+		#define MAP_DIFF_STARS_X (MAP_DIFF_X + MAP_DIFF_W)
+		#define MAP_DIFF_STARS_Y MAP_DIFF_Y
+		#define MAP_DIFF_STAR_H 12
+		#define MAP_DIFF_STAR_W MAP_DIFF_STAR_H
+		
+		#define MAP_LEN_X (MAP_WORKSPACE_X + SPACE_INNER)
+		#define MAP_LEN_Y (MAP_DIFF_Y + MAP_DIFF_H)
+		#define MAP_LEN_W (MAP_WORKSPACE_W - (SPACE_INNER * 2))
+		#define MAP_LEN_H 12
+		
+		#define MAP_LEN_STARS_X (MAP_LEN_X + MAP_LEN_W)
+		#define MAP_LEN_STARS_Y MAP_LEN_Y
+		#define MAP_LEN_STAR_H 12
+		#define MAP_LEN_STAR_W MAP_LEN_STAR_H
+		
+		#define MAP_CRE_X (MAP_WORKSPACE_X + SPACE_INNER)
+		#define MAP_CRE_Y (MAP_LEN_Y + MAP_LEN_H)
+		#define MAP_CRE_W (MAP_WORKSPACE_W - (SPACE_INNER * 2))
+		#define MAP_CRE_H 12		
+		
+		#define MAP_LINES_X (MAP_WORKSPACE_X + SPACE_INNER)
+		#define MAP_LINES_Y (MAP_CRE_Y + MAP_CRE_H + SPACE_INNER)
+		#define MAP_LINE_W (MAP_WORKSPACE_W - (SPACE_INNER * 2))
+		#define MAP_LINE_H 12	
+		
+		// CENTER WINDOW
+		PANEL_STATIC(MAP_X, MAP_Y, MAP_W, MAP_H, COLOR_BG_TRANSPARENT, 1)
+		
+		// BAR
+		PANEL_STATIC(MAP_BAR_X, MAP_BAR_Y, MAP_BAR_W, MAP_BAR_H, COLOR_FG_HIGHLIGHT, 1)
+		TEXT_DYNAMIC(MAP_BAR_X, MAP_BAR_Y, MAP_BAR_W, MAP_BAR_H, DvarString("ui_mainMap"), FONTSCALE_16, COLOR_WHITE, ITEM_ALIGN_MIDDLE_LEFT textAlignX 4, 1)
+		
+		// LOGO
+		SHADER_STATIC(MAP_LOGO_X, MAP_LOGO_Y, MAP_LOGO_W, MAP_LOGO_H, "$levelBriefing", COLOR_WHITE, 1)
+		
+		// NEW
+		SHADER_STATIC(MAP_NEW_X, MAP_NEW_Y, MAP_NEW_W, MAP_NEW_H, "specialty_new", COLOR_WHITE, DvarBool("ui_mainMapN"))
+		
+		// DIFF
+		TEXT_STATIC(MAP_DIFF_X, MAP_DIFF_Y, MAP_DIFF_W, MAP_DIFF_H, "Difficulty", FONTSCALE_12, COLOR_WHITE, ITEM_ALIGN_MIDDLE_LEFT textAlignX 0, DvarInt("ui_mainMapD") > 0)
+		
+		#define DIFF_STAR(i) \
+			SHADER_STATIC((MAP_DIFF_STARS_X - (MAP_DIFF_STAR_W * (i + 1))), MAP_DIFF_STARS_Y, MAP_DIFF_STAR_W, MAP_DIFF_STAR_H, "icon_rate", COLOR_WHITE, DvarInt("ui_mainMapD") > i)
+			
+		DIFF_STAR(0)
+		DIFF_STAR(1)
+		DIFF_STAR(2)
+		DIFF_STAR(3)
+		DIFF_STAR(4)
+		
+		// LEN
+		TEXT_STATIC(MAP_LEN_X, MAP_LEN_Y, MAP_LEN_W, MAP_LEN_H, "Length", FONTSCALE_12, COLOR_WHITE, ITEM_ALIGN_MIDDLE_LEFT textAlignX 0, DvarInt("ui_mainMapL") > 0)
+		
+		#define LEN_STAR(i) \
+			SHADER_STATIC((MAP_LEN_STARS_X - (MAP_LEN_STAR_W * (i + 1))), MAP_LEN_STARS_Y, MAP_LEN_STAR_W, MAP_LEN_STAR_H, "icon_rate", COLOR_WHITE, DvarInt("ui_mainMapL") > i)
+			
+		LEN_STAR(0)
+		LEN_STAR(1)
+		LEN_STAR(2)
+		LEN_STAR(3)
+		LEN_STAR(4)
+
+		// CREATOR
+		TEXT_STATIC(MAP_CRE_X, MAP_CRE_Y, MAP_CRE_W, MAP_CRE_H, "Creator", FONTSCALE_12, COLOR_WHITE, ITEM_ALIGN_MIDDLE_LEFT textAlignX 0, DvarString("ui_mainMapC") != "")
+		TEXT_DYNAMIC(MAP_CRE_X, MAP_CRE_Y, MAP_CRE_W, MAP_CRE_H, DvarString("ui_mainMapC"), FONTSCALE_12, COLOR_WHITE, ITEM_ALIGN_MIDDLE_RIGHT textAlignX 0, 1)
+		
+		// LINES
+		#define MAP_LINE(i) \
+			TEXT_DYNAMIC(MAP_LINES_X, (MAP_LINES_Y + (MAP_LINE_H * i)), MAP_LINE_W, MAP_LINE_H, DvarString("ui_mainMap_" + i), FONTSCALE_12, COLOR_WHITE, ITEM_ALIGN_MIDDLE_LEFT textAlignX 0, 1)
+	
+		MAP_LINE(0)
+		MAP_LINE(1)
+		MAP_LINE(2)
+		MAP_LINE(3)
+		MAP_LINE(4)
+		MAP_LINE(5)
+		MAP_LINE(6)
+		MAP_LINE(7)
+		MAP_LINE(8)
+		MAP_LINE(9)
+	}
+}

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createart\killhouse_art</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="391" charLength="31" codePart="getent( &quot;player&quot;, &quot;classname&quot; )" isCall="True">
+      <funcRefArg charIndex="399" charLength="8" />
+      <funcRefArg charIndex="409" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="487" charLength="33" codePart="setdvar( &quot;scr_fog_disable&quot;, &quot;0&quot; )" isCall="True">
+      <funcRefArg charIndex="496" charLength="17" />
+      <funcRefArg charIndex="515" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetExpFog" charIndex="526" charLength="46" codePart="setExpFog( 0, 13397.4, 0.11, 0.162, 0.107, 0 )" isCall="True">
+      <funcRefArg charIndex="537" charLength="1" />
+      <funcRefArg charIndex="540" charLength="7" />
+      <funcRefArg charIndex="549" charLength="4" />
+      <funcRefArg charIndex="555" charLength="5" />
+      <funcRefArg charIndex="562" charLength="5" />
+      <funcRefArg charIndex="569" charLength="2" />
+    </funcRef>
+    <error type="semantic" charIndex="391" charLength="67" lineIndex="13">
+      <message>Could not find file 'maps\_art'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_art', file 'maps\createart\killhouse_art', line 14, 'getent( "player", "classname" ) maps\_art::setdefaultdepthoffield();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="576" charLength="47" lineIndex="20">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createart\killhouse_art', line 21, 'maps\_utility::set_vision_set( "killhouse", 0 );'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

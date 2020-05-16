@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createart\blackout_art</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetExpFog" charIndex="155" charLength="61" codePart="setExpFog(16689.2, 31981.7, 0.0864362, 0.127279, 0.154118, 0)" isCall="True">
+      <funcRefArg charIndex="165" charLength="7" />
+      <funcRefArg charIndex="174" charLength="7" />
+      <funcRefArg charIndex="183" charLength="9" />
+      <funcRefArg charIndex="194" charLength="8" />
+      <funcRefArg charIndex="204" charLength="8" />
+      <funcRefArg charIndex="214" charLength="1" />
+    </funcRef>
+    <error type="semantic" charIndex="220" charLength="46" lineIndex="11">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createart\blackout_art', line 12, 'maps\_utility::set_vision_set( "blackout", 0 );'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

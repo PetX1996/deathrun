@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_bog_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="45" charLength="38" codePart="loadfx( &quot;explosions/grenadeExp_wood&quot; )" isCall="True">
+      <funcRefArg charIndex="53" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="120" charLength="40" codePart="loadfx( &quot;explosions/grenadeExp_dirt_1&quot; )" isCall="True">
+      <funcRefArg charIndex="128" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="197" charLength="44" codePart="loadfx( &quot;explosions/grenadeExp_concrete_1&quot; )" isCall="True">
+      <funcRefArg charIndex="205" charLength="35" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="287" charLength="33" codePart="loadfx( &quot;fire/firelp_barrel_pm&quot; )" isCall="True">
+      <funcRefArg charIndex="295" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="364" charLength="37" codePart="loadfx( &quot;misc/antiair_runner_night&quot; )" isCall="True">
+      <funcRefArg charIndex="372" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="441" charLength="29" codePart="loadfx( &quot;weather/fog_bog_a&quot; )" isCall="True">
+      <funcRefArg charIndex="449" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="521" charLength="45" codePart="loadfx( &quot;smoke/battlefield_smokebank_bog_a&quot; )" isCall="True">
+      <funcRefArg charIndex="529" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="615" charLength="48" codePart="loadfx( &quot;ambient_runners/mp_bog_horizon_flash&quot; )" isCall="True">
+      <funcRefArg charIndex="623" charLength="39" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="678" charLength="30" codePart="getdvar( &quot;clientSideEffects&quot; )" isCall="True">
+      <funcRefArg charIndex="687" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\createfx\mp_bog_fx" name="main" charIndex="721" charLength="31" codePart="maps\createfx\mp_bog_fx::main()" isCall="True" />
+  </content>
+</scriptinfo>

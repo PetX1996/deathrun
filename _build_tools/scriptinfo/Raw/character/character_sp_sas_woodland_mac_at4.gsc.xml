@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_sas_woodland_mac_at4</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="41" codePart="self setModel(&quot;body_sp_sas_woodland_at4&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="103" charLength="49" codePart="self attach(&quot;head_sp_sas_woodland_mac&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="115" charLength="26" />
+      <funcRefArg charIndex="143" charLength="2" />
+      <funcRefArg charIndex="147" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="202" charLength="41" codePart="precacheModel(&quot;body_sp_sas_woodland_at4&quot;)" isCall="True">
+      <funcRefArg charIndex="216" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="247" charLength="41" codePart="precacheModel(&quot;head_sp_sas_woodland_mac&quot;)" isCall="True">
+      <funcRefArg charIndex="261" charLength="26" />
+    </funcRef>
+  </content>
+</scriptinfo>

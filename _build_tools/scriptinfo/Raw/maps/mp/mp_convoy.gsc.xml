@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_convoy</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="maps\mp\mp_convoy_fx" name="main" charIndex="12" charLength="28" codePart="maps\mp\mp_convoy_fx::main()" isCall="True" />
+    <funcRef sfPath="maps\createart\mp_convoy_art" name="main" charIndex="44" charLength="36" codePart="maps\createart\mp_convoy_art::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\_load" name="main" charIndex="84" charLength="21" codePart="maps\mp\_load::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\_compass" name="setupMiniMap" charIndex="111" charLength="55" codePart="maps\mp\_compass::setupMiniMap(&quot;compass_map_mp_convoy&quot;)" isCall="True">
+      <funcRefArg charIndex="142" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetExpFog" charIndex="172" charLength="51" codePart="setExpFog(800, 20000, 0.583, 0.631569, 0.553078, 0)" isCall="True">
+      <funcRefArg charIndex="182" charLength="3" />
+      <funcRefArg charIndex="187" charLength="5" />
+      <funcRefArg charIndex="194" charLength="5" />
+      <funcRefArg charIndex="201" charLength="8" />
+      <funcRefArg charIndex="211" charLength="8" />
+      <funcRefArg charIndex="221" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AmbientPlay" charIndex="273" charLength="29" codePart="ambientPlay(&quot;ambient_convoy&quot;)" isCall="True">
+      <funcRefArg charIndex="285" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="508" charLength="38" codePart="setdvar( &quot;r_specularcolorscale&quot;, &quot;1&quot; )" isCall="True">
+      <funcRefArg charIndex="517" charLength="22" />
+      <funcRefArg charIndex="541" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="552" charLength="33" codePart="setdvar(&quot;compassmaxrange&quot;,&quot;2000&quot;)" isCall="True">
+      <funcRefArg charIndex="560" charLength="17" />
+      <funcRefArg charIndex="578" charLength="6" />
+    </funcRef>
+    <error type="warning" charIndex="84" charLength="21" lineIndex="4">
+      <message>Could not find enough arguments, function 'maps\mp\_load::main'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_load::main', file 'maps\mp\mp_convoy', line 5, 'maps\mp\_load::main();'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

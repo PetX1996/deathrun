@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_friendicons</name>
+  </settings>
+  <content>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerConnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerSpawned" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerKilled" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="showFriendIcon" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateFriendIconSettings" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateFriendIcons" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="53" charLength="25" codePart="getdvar(&quot;scr_drawfriend&quot;)" isCall="True">
+      <funcRefArg charIndex="61" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="89" charLength="30" codePart="setdvar(&quot;scr_drawfriend&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="97" charLength="16" />
+      <funcRefArg charIndex="115" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="142" charLength="28" codePart="getdvarInt(&quot;scr_drawfriend&quot;)" isCall="True">
+      <funcRefArg charIndex="153" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheHeadIcon" charIndex="716" charLength="43" codePart="precacheHeadIcon( game[&quot;headicon_allies&quot;] )" isCall="True">
+      <funcRefArg charIndex="734" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheHeadIcon" charIndex="763" charLength="41" codePart="precacheHeadIcon( game[&quot;headicon_axis&quot;] )" isCall="True">
+      <funcRefArg charIndex="781" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_friendicons" name="onPlayerConnect" charIndex="810" charLength="30" codePart="level thread onPlayerConnect()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_friendicons" name="updateFriendIconSettings" charIndex="862" charLength="26" codePart="updateFriendIconSettings()" isCall="True" />
+    <funcRef sfPath="codapi" name="waittill" charIndex="949" charLength="36" codePart="level waittill(&quot;connecting&quot;, player)" isCall="True">
+      <funcRefArg charIndex="964" charLength="12" />
+      <funcRefArg charIndex="978" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_friendicons" name="onPlayerSpawned" charIndex="992" charLength="31" codePart="player thread onPlayerSpawned()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_friendicons" name="onPlayerKilled" charIndex="1028" charLength="30" codePart="player thread onPlayerKilled()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="1093" charLength="24" codePart="self endon(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="1104" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="1139" charLength="31" codePart="self waittill(&quot;spawned_player&quot;)" isCall="True">
+      <funcRefArg charIndex="1153" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_friendicons" name="showFriendIcon" charIndex="1179" charLength="28" codePart="self thread showFriendIcon()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="1241" charLength="24" codePart="self endon(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="1252" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="1287" charLength="30" codePart="self waittill(&quot;killed_player&quot;)" isCall="True">
+      <funcRefArg charIndex="1301" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="1675" charLength="30" codePart="getdvarFloat(&quot;scr_drawfriend&quot;)" isCall="True">
+      <funcRefArg charIndex="1688" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_friendicons" name="updateFriendIcons" charIndex="1787" charLength="19" codePart="updateFriendIcons()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1999" charLength="30" codePart="isDefined(player.pers[&quot;team&quot;])" isCall="True">
+      <funcRefArg charIndex="2009" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2526" charLength="30" codePart="isDefined(player.pers[&quot;team&quot;])" isCall="True">
+      <funcRefArg charIndex="2536" charLength="19" />
+    </funcRef>
+  </content>
+</scriptinfo>

@@ -1,0 +1,44 @@
+
+
+weapon_ak47				lightsabre R
+weapon_aks74u				tomahawk
+weapon_barrett50cal			
+weapon_benelli_m4			lightsabre B
+weapon_c4
+weapon_claymore
+weapon_colt_45
+weapon_desert_eagle
+weapon_desert_eagle_gold
+weapon_dragunovsvd
+weapon_g3				kar98
+weapon_g36c
+weapon_m4carbine
+weapon_m9beretta
+weapon_m14
+weapon_m16a4
+weapon_m40a3
+weapon_m60e4
+weapon_m249saw
+weapon_mini_uzi
+weapon_mp5
+weapon_mp44
+weapon_p90
+weapon_rpd
+weapon_remington700
+weapon_remington700_acog
+weapon_rpg7
+weapon_skorpion
+weapon_usp_45
+weapon_winchester1200
+
+
+weapon_flashbang
+weapon_fraggrenade
+weapon_smokegrenade
+
+
+weapon_attachment_acog			ice sword
+weapon_attachment_grip			tom axe
+weapon_attachment_m203			MENU?
+weapon_attachment_reflex		tom katana
+weapon_attachment_suppressor		tom shovel

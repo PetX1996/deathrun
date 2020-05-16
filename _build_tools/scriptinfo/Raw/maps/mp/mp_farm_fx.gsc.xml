@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_farm_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="43" charLength="38" codePart="loadfx( &quot;explosions/grenadeExp_wood&quot; )" isCall="True">
+      <funcRefArg charIndex="51" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="116" charLength="40" codePart="loadfx( &quot;explosions/grenadeExp_dirt_1&quot; )" isCall="True">
+      <funcRefArg charIndex="124" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="191" charLength="44" codePart="loadfx( &quot;explosions/grenadeExp_concrete_1&quot; )" isCall="True">
+      <funcRefArg charIndex="199" charLength="35" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="278" charLength="44" codePart="loadfx( &quot;explosions/grenadeExp_concrete_1&quot; )" isCall="True">
+      <funcRefArg charIndex="286" charLength="35" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="365" charLength="32" codePart="loadfx( &quot;weather/rain_mp_farm&quot; )" isCall="True">
+      <funcRefArg charIndex="373" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="435" charLength="37" codePart="loadfx( &quot;weather/lightning_mp_farm&quot; )" isCall="True">
+      <funcRefArg charIndex="443" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="514" charLength="31" codePart="loadfx( &quot;misc/cgoshp_drips_a&quot; )" isCall="True">
+      <funcRefArg charIndex="522" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="613" charLength="49" codePart="loadfx( &quot;ambient_runners/mp_farm_rain_splash01&quot; )" isCall="True">
+      <funcRefArg charIndex="621" charLength="40" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="704" charLength="52" codePart="loadfx( &quot;ambient_runners/mp_farm_water_noise_ud01&quot; )" isCall="True">
+      <funcRefArg charIndex="712" charLength="43" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="796" charLength="49" codePart="loadfx( &quot;ambient_runners/mp_farm_water_noise01&quot; )" isCall="True">
+      <funcRefArg charIndex="804" charLength="40" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="863" charLength="30" codePart="getdvar( &quot;clientSideEffects&quot; )" isCall="True">
+      <funcRefArg charIndex="872" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\createfx\mp_farm_fx" name="main" charIndex="906" charLength="32" codePart="maps\createfx\mp_farm_fx::main()" isCall="True" />
+  </content>
+</scriptinfo>

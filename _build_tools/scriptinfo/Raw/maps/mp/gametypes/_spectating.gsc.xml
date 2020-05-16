@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_spectating</name>
+  </settings>
+  <content>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerConnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerSpawned" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onJoinedTeam" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onJoinedSpectators" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateSpectateSettings" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getOtherTeam" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="setSpectatePermissions" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="47" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="97" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spectating" name="onPlayerConnect" charIndex="116" charLength="30" codePart="level thread onPlayerConnect()" isCall="True" />
+    <funcRef sfPath="codapi" name="waittill" charIndex="194" charLength="36" codePart="level waittill(&quot;connecting&quot;, player)" isCall="True">
+      <funcRefArg charIndex="209" charLength="12" />
+      <funcRefArg charIndex="223" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spectating" name="onJoinedTeam" charIndex="239" charLength="28" codePart="player thread onJoinedTeam()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spectating" name="onJoinedSpectators" charIndex="272" charLength="34" codePart="player thread onJoinedSpectators()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_spectating" name="onPlayerSpawned" charIndex="311" charLength="31" codePart="player thread onPlayerSpawned()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="379" charLength="24" codePart="self endon(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="390" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="424" charLength="31" codePart="self waittill(&quot;spawned_player&quot;)" isCall="True">
+      <funcRefArg charIndex="438" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spectating" name="setSpectatePermissions" charIndex="460" charLength="29" codePart="self setSpectatePermissions()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="523" charLength="24" codePart="self endon(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="534" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="569" charLength="28" codePart="self waittill(&quot;joined_team&quot;)" isCall="True">
+      <funcRefArg charIndex="583" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spectating" name="setSpectatePermissions" charIndex="602" charLength="29" codePart="self setSpectatePermissions()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="669" charLength="24" codePart="self endon(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="680" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="715" charLength="34" codePart="self waittill(&quot;joined_spectators&quot;)" isCall="True">
+      <funcRefArg charIndex="729" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spectating" name="setSpectatePermissions" charIndex="754" charLength="29" codePart="self setSpectatePermissions()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="827" charLength="28" codePart="level endon ( &quot;game_ended&quot; )" isCall="True">
+      <funcRefArg charIndex="841" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spectating" name="setSpectatePermissions" charIndex="920" charLength="45" codePart="level.players[index] setSpectatePermissions()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="getTweakableValue" charIndex="1202" charLength="74" codePart="maps\mp\gametypes\_tweakables::getTweakableValue( &quot;game&quot;, &quot;spectatetype&quot; )" isCall="True">
+      <funcRefArg charIndex="1252" charLength="6" />
+      <funcRefArg charIndex="1260" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="1336" charLength="41" codePart="self allowSpectateTeam( &quot;allies&quot;, false )" isCall="True">
+      <funcRefArg charIndex="1360" charLength="8" />
+      <funcRefArg charIndex="1370" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="1383" charLength="39" codePart="self allowSpectateTeam( &quot;axis&quot;, false )" isCall="True">
+      <funcRefArg charIndex="1407" charLength="6" />
+      <funcRefArg charIndex="1415" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="1428" charLength="43" codePart="self allowSpectateTeam( &quot;freelook&quot;, false )" isCall="True">
+      <funcRefArg charIndex="1452" charLength="10" />
+      <funcRefArg charIndex="1464" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="1477" charLength="38" codePart="self allowSpectateTeam( &quot;none&quot;, true )" isCall="True">
+      <funcRefArg charIndex="1501" charLength="6" />
+      <funcRefArg charIndex="1509" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="1598" charLength="40" codePart="self allowSpectateTeam( &quot;allies&quot;, true )" isCall="True">
+      <funcRefArg charIndex="1622" charLength="8" />
+      <funcRefArg charIndex="1632" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="1645" charLength="38" codePart="self allowSpectateTeam( &quot;axis&quot;, true )" isCall="True">
+      <funcRefArg charIndex="1669" charLength="6" />
+      <funcRefArg charIndex="1677" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="1690" charLength="38" codePart="self allowSpectateTeam( &quot;none&quot;, true )" isCall="True">
+      <funcRefArg charIndex="1714" charLength="6" />
+      <funcRefArg charIndex="1722" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="1735" charLength="43" codePart="self allowSpectateTeam( &quot;freelook&quot;, false )" isCall="True">
+      <funcRefArg charIndex="1759" charLength="10" />
+      <funcRefArg charIndex="1771" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1800" charLength="17" codePart="isDefined( team )" isCall="True">
+      <funcRefArg charIndex="1811" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="1871" charLength="36" codePart="self allowSpectateTeam( team, true )" isCall="True">
+      <funcRefArg charIndex="1895" charLength="4" />
+      <funcRefArg charIndex="1901" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="1914" charLength="53" codePart="self allowSpectateTeam( getOtherTeam( team ), false )" isCall="True">
+      <funcRefArg charIndex="1938" charLength="20" />
+      <funcRefArg charIndex="1960" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spectating" name="getOtherTeam" charIndex="1938" charLength="20" codePart="getOtherTeam( team )" isCall="True">
+      <funcRefArg charIndex="1952" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="1974" charLength="43" codePart="self allowSpectateTeam( &quot;freelook&quot;, false )" isCall="True">
+      <funcRefArg charIndex="1998" charLength="10" />
+      <funcRefArg charIndex="2010" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="2024" charLength="39" codePart="self allowSpectateTeam( &quot;none&quot;, false )" isCall="True">
+      <funcRefArg charIndex="2048" charLength="6" />
+      <funcRefArg charIndex="2056" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="2091" charLength="41" codePart="self allowSpectateTeam( &quot;allies&quot;, false )" isCall="True">
+      <funcRefArg charIndex="2115" charLength="8" />
+      <funcRefArg charIndex="2125" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="2139" charLength="39" codePart="self allowSpectateTeam( &quot;axis&quot;, false )" isCall="True">
+      <funcRefArg charIndex="2163" charLength="6" />
+      <funcRefArg charIndex="2171" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="2185" charLength="43" codePart="self allowSpectateTeam( &quot;freelook&quot;, false )" isCall="True">
+      <funcRefArg charIndex="2209" charLength="10" />
+      <funcRefArg charIndex="2221" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="2235" charLength="39" codePart="self allowSpectateTeam( &quot;none&quot;, false )" isCall="True">
+      <funcRefArg charIndex="2259" charLength="6" />
+      <funcRefArg charIndex="2267" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="2316" charLength="40" codePart="self allowSpectateTeam( &quot;allies&quot;, true )" isCall="True">
+      <funcRefArg charIndex="2340" charLength="8" />
+      <funcRefArg charIndex="2350" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="2362" charLength="38" codePart="self allowSpectateTeam( &quot;axis&quot;, true )" isCall="True">
+      <funcRefArg charIndex="2386" charLength="6" />
+      <funcRefArg charIndex="2394" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="2406" charLength="42" codePart="self allowSpectateTeam( &quot;freelook&quot;, true )" isCall="True">
+      <funcRefArg charIndex="2430" charLength="10" />
+      <funcRefArg charIndex="2442" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="2454" charLength="38" codePart="self allowSpectateTeam( &quot;none&quot;, true )" isCall="True">
+      <funcRefArg charIndex="2478" charLength="6" />
+      <funcRefArg charIndex="2486" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2519" charLength="17" codePart="isDefined( team )" isCall="True">
+      <funcRefArg charIndex="2530" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2591" charLength="57" codePart="isdefined(level.spectateOverride[team].allowFreeSpectate)" isCall="True">
+      <funcRefArg charIndex="2601" charLength="46" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="2655" charLength="42" codePart="self allowSpectateTeam( &quot;freelook&quot;, true )" isCall="True">
+      <funcRefArg charIndex="2679" charLength="10" />
+      <funcRefArg charIndex="2691" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2710" charLength="58" codePart="isdefined(level.spectateOverride[team].allowEnemySpectate)" isCall="True">
+      <funcRefArg charIndex="2720" charLength="47" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AllowSpectateTeam" charIndex="2774" charLength="52" codePart="self allowSpectateTeam( getOtherTeam( team ), true )" isCall="True">
+      <funcRefArg charIndex="2798" charLength="20" />
+      <funcRefArg charIndex="2820" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spectating" name="getOtherTeam" charIndex="2798" charLength="20" codePart="getOtherTeam( team )" isCall="True">
+      <funcRefArg charIndex="2812" charLength="5" />
+    </funcRef>
+  </content>
+</scriptinfo>

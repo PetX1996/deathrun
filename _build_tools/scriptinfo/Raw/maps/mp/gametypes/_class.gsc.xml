@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_class</name>
+  </settings>
+  <content>
+    <include>common_scripts\utility</include>
+    <include>maps\mp\_utility</include>
+    <include>maps\mp\gametypes\_hud_util</include>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="load_default_loadout" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="datatable">
+      </param>
+      <param name="team">
+      </param>
+      <param name="class">
+      </param>
+      <param name="stat_num">
+      </param>
+    </func>
+    <func name="load_default_loadout_raw" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="class_dataTable">
+      </param>
+      <param name="team">
+      </param>
+      <param name="class">
+      </param>
+      <param name="stat_num">
+      </param>
+    </func>
+    <func name="weapon_class_register" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="weapon">
+      </param>
+      <param name="weapon_type">
+      </param>
+    </func>
+    <func name="cac_init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getClassChoice" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="response">
+      </param>
+    </func>
+    <func name="getWeaponChoice" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="response">
+      </param>
+    </func>
+    <func name="cac_getdata" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="validatePerk" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="perkIndex">
+      </param>
+      <param name="perkSlotIndex">
+      </param>
+    </func>
+    <func name="logClassChoice" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="class">
+      </param>
+      <param name="primaryWeapon">
+      </param>
+      <param name="specialType">
+      </param>
+      <param name="perks">
+      </param>
+    </func>
+    <func name="get_specialtydata" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="class_num">
+      </param>
+      <param name="specialty">
+      </param>
+    </func>
+    <func name="reset_specialty_slots" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="class_num">
+      </param>
+    </func>
+    <func name="giveLoadout" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="class">
+      </param>
+    </func>
+    <func name="setWeaponAmmoOverall" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="weaponname">
+      </param>
+      <param name="amount">
+      </param>
+    </func>
+    <func name="replenishLoadout" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerConnecting" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="fadeAway" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="waitDelay">
+      </param>
+      <param name="fadeDelay">
+      </param>
+    </func>
+    <func name="setClass" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="newClass">
+      </param>
+    </func>
+    <func name="initPerkDvars" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="cac_selector" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="register_perks" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="cac_get_dvar_int" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="dvar">
+      </param>
+      <param name="def">
+      </param>
+    </func>
+    <func name="cac_get_dvar" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="dvar">
+      </param>
+      <param name="def">
+      </param>
+    </func>
+    <func name="cac_hasSpecialty" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="perk_reference">
+      </param>
+    </func>
+    <func name="cac_modified_damage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="victim">
+      </param>
+      <param name="attacker">
+      </param>
+      <param name="damage">
+      </param>
+      <param name="meansofdeath">
+      </param>
+    </func>
+    <func name="isExplosiveDamage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="meansofdeath">
+      </param>
+    </func>
+    <func name="isPrimaryDamage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="meansofdeath">
+      </param>
+    </func>
+    <func name="getPlayerCustomClass" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="primaryWeapon">
+      </param>
+    </func>
+    <error type="semantic" charIndex="807" charLength="28" lineIndex="16">
+      <message>Could not include file 'openwarfare\_utils'</message>
+      <fullMessage>Bad semantic: Could not include file 'openwarfare\_utils', file 'maps\mp\gametypes\_class', line 17, '#include openwarfare\_utils;'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="837" charLength="30" lineIndex="17">
+      <message>Could not include file 'openwarfare\_logdata'</message>
+      <fullMessage>Bad semantic: Could not include file 'openwarfare\_logdata', file 'maps\mp\gametypes\_class', line 18, '#include openwarfare\_logdata;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

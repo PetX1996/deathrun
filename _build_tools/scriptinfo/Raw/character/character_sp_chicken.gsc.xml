@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_chicken</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="24" codePart="self setModel(&quot;chicken&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="129" charLength="24" codePart="precacheModel(&quot;chicken&quot;)" isCall="True">
+      <funcRefArg charIndex="143" charLength="9" />
+    </funcRef>
+  </content>
+</scriptinfo>

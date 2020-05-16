@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_mp_opforce_sniper</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="39" codePart="self setModel(&quot;body_mp_opforce_sniper&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="101" charLength="48" codePart="self attach(&quot;head_mp_opforce_ghillie&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="113" charLength="25" />
+      <funcRefArg charIndex="140" charLength="2" />
+      <funcRefArg charIndex="144" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetViewModel" charIndex="153" charLength="44" codePart="self setViewmodel(&quot;viewhands_marine_sniper&quot;)" isCall="True">
+      <funcRefArg charIndex="171" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="247" charLength="39" codePart="precacheModel(&quot;body_mp_opforce_sniper&quot;)" isCall="True">
+      <funcRefArg charIndex="261" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="290" charLength="40" codePart="precacheModel(&quot;head_mp_opforce_ghillie&quot;)" isCall="True">
+      <funcRefArg charIndex="304" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="334" charLength="40" codePart="precacheModel(&quot;viewhands_marine_sniper&quot;)" isCall="True">
+      <funcRefArg charIndex="348" charLength="25" />
+    </funcRef>
+  </content>
+</scriptinfo>

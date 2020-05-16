@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>mptype\mptype_axis_support</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="character\character_mp_arab_regular_support" name="main" charIndex="60" charLength="51" codePart="character\character_mp_arab_regular_support::main()" isCall="True" />
+    <funcRef sfPath="character\character_mp_arab_regular_support" name="precache" charIndex="135" charLength="55" codePart="character\character_mp_arab_regular_support::precache()" isCall="True" />
+  </content>
+</scriptinfo>

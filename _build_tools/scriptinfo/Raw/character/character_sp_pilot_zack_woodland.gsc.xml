@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_pilot_zack_woodland</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="59" codePart="self setModel(&quot;body_complete_sp_cobra_pilot_woodland_zack&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="44" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="168" charLength="59" codePart="precacheModel(&quot;body_complete_sp_cobra_pilot_woodland_zack&quot;)" isCall="True">
+      <funcRefArg charIndex="182" charLength="44" />
+    </funcRef>
+  </content>
+</scriptinfo>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createart\village_assault_art</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="150" charLength="40" codePart="setdvar(&quot;scr_fog_exp_halfplane&quot;, &quot;5500&quot;)" isCall="True">
+      <funcRefArg charIndex="158" charLength="23" />
+      <funcRefArg charIndex="183" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="194" charLength="35" codePart="setdvar(&quot;scr_fog_nearplane&quot;, &quot;500&quot;)" isCall="True">
+      <funcRefArg charIndex="202" charLength="19" />
+      <funcRefArg charIndex="223" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="233" charLength="30" codePart="setdvar(&quot;scr_fog_red&quot;, &quot;0.05&quot;)" isCall="True">
+      <funcRefArg charIndex="241" charLength="13" />
+      <funcRefArg charIndex="256" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="267" charLength="32" codePart="setdvar(&quot;scr_fog_green&quot;, &quot;0.03&quot;)" isCall="True">
+      <funcRefArg charIndex="275" charLength="15" />
+      <funcRefArg charIndex="292" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="303" charLength="31" codePart="setdvar(&quot;scr_fog_blue&quot;, &quot;0.13&quot;)" isCall="True">
+      <funcRefArg charIndex="311" charLength="14" />
+      <funcRefArg charIndex="327" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="596" charLength="28" codePart="getent(&quot;player&quot;,&quot;classname&quot;)" isCall="True">
+      <funcRefArg charIndex="603" charLength="8" />
+      <funcRefArg charIndex="612" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetExpFog" charIndex="810" charLength="39" codePart="setExpFog(500, 5500, .05, .08, 0.13, 0)" isCall="True">
+      <funcRefArg charIndex="820" charLength="3" />
+      <funcRefArg charIndex="825" charLength="4" />
+      <funcRefArg charIndex="831" charLength="3" />
+      <funcRefArg charIndex="836" charLength="3" />
+      <funcRefArg charIndex="841" charLength="4" />
+      <funcRefArg charIndex="847" charLength="1" />
+    </funcRef>
+    <error type="semantic" charIndex="596" charLength="64" lineIndex="22">
+      <message>Could not find file 'maps\_art'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_art', file 'maps\createart\village_assault_art', line 23, 'getent("player","classname") maps\_art::setdefaultdepthoffield();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="853" charLength="50" lineIndex="27">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createart\village_assault_art', line 28, 'maps\_utility::set_vision_set( "village_assault" );'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

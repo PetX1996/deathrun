@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>codescripts\delete</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="12" charLength="23" codePart="assert(isdefined(self))" isCall="True">
+      <funcRefArg charIndex="19" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19" charLength="15" codePart="isdefined(self)" isCall="True">
+      <funcRefArg charIndex="29" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="53" charLength="15" codePart="isdefined(self)" isCall="True">
+      <funcRefArg charIndex="63" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="73" charLength="13" codePart="self delete()" isCall="True" />
+  </content>
+</scriptinfo>

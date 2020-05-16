@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_usmc_force_c</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="37" codePart="self setModel(&quot;body_sp_usmc_force_c&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="99" charLength="49" codePart="self attach(&quot;head_sp_usmc_force_nomex&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="111" charLength="26" />
+      <funcRefArg charIndex="139" charLength="2" />
+      <funcRefArg charIndex="143" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="198" charLength="37" codePart="precacheModel(&quot;body_sp_usmc_force_c&quot;)" isCall="True">
+      <funcRefArg charIndex="212" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="239" charLength="41" codePart="precacheModel(&quot;head_sp_usmc_force_nomex&quot;)" isCall="True">
+      <funcRefArg charIndex="253" charLength="26" />
+    </funcRef>
+  </content>
+</scriptinfo>

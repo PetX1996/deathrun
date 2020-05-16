@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_spetsnaz_vlad</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="38" codePart="self setModel(&quot;body_sp_spetsnaz_vlad&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="100" charLength="55" codePart="self attach(&quot;head_sp_spetsnaz_vlad_vladbody&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="112" charLength="32" />
+      <funcRefArg charIndex="146" charLength="2" />
+      <funcRefArg charIndex="150" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="205" charLength="38" codePart="precacheModel(&quot;body_sp_spetsnaz_vlad&quot;)" isCall="True">
+      <funcRefArg charIndex="219" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="247" charLength="47" codePart="precacheModel(&quot;head_sp_spetsnaz_vlad_vladbody&quot;)" isCall="True">
+      <funcRefArg charIndex="261" charLength="32" />
+    </funcRef>
+  </content>
+</scriptinfo>

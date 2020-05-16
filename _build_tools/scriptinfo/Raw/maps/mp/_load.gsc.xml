@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_load</name>
+  </settings>
+  <content>
+    <include>common_scripts\utility</include>
+    <include>maps\mp\_utility</include>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="bScriptgened">
+      </param>
+      <param name="bCSVgened">
+      </param>
+      <param name="bsgenabled">
+      </param>
+    </func>
+    <func name="exploder_load" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="trigger">
+      </param>
+    </func>
+    <func name="setupExploders" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="lanterns" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="script_gen_dump_checksaved" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="script_gen_dump" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="script_gen_csvdumpprintln" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="file">
+      </param>
+      <param name="signature">
+      </param>
+    </func>
+    <func name="script_gen_dumpprintln" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="file">
+      </param>
+      <param name="string">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="120" charLength="42" codePart="isdefined( level.script_gen_dump_reasons )" isCall="True">
+      <funcRefArg charIndex="131" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="212" charLength="23" codePart="isdefined( bsgenabled )" isCall="True">
+      <funcRefArg charIndex="223" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="336" charLength="22" codePart="isdefined( bCSVgened )" isCall="True">
+      <funcRefArg charIndex="347" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="425" charLength="25" codePart="isdefined( bScriptgened )" isCall="True">
+      <funcRefArg charIndex="436" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="struct_class_init" charIndex="581" charLength="19" codePart="struct_class_init()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="612" charLength="23" codePart="isdefined( level.flag )" isCall="True">
+      <funcRefArg charIndex="623" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="flag_init" charIndex="716" charLength="29" codePart="flag_init( &quot;scriptgen_done&quot; )" isCall="True">
+      <funcRefArg charIndex="727" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="793" charLength="34" codePart="isdefined( level.script_gen_dump )" isCall="True">
+      <funcRefArg charIndex="804" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="932" charLength="35" codePart="isdefined( level.script_gen_dump2 )" isCall="True">
+      <funcRefArg charIndex="943" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1013" charLength="30" codePart="isdefined( level.createFXent )" isCall="True">
+      <funcRefArg charIndex="1024" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="script_gen_dump_addline" charIndex="1049" charLength="103" codePart="script_gen_dump_addline( &quot;maps\\mp\\createfx\\&quot; + level.script + &quot;_fx::main();&quot;, level.script + &quot;_fx&quot; )" isCall="True">
+      <funcRefArg charIndex="1074" charLength="54" />
+      <funcRefArg charIndex="1130" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1190" charLength="42" codePart="isdefined( level.script_gen_dump_preload )" isCall="True">
+      <funcRefArg charIndex="1201" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="script_gen_dump_addline" charIndex="1300" charLength="114" codePart="script_gen_dump_addline( level.script_gen_dump_preload[ i ].string, level.script_gen_dump_preload[ i ].signature )" isCall="True">
+      <funcRefArg charIndex="1325" charLength="41" />
+      <funcRefArg charIndex="1368" charLength="45" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="1424" charLength="37" codePart="getDvar(&quot;scr_RequiredMapAspectratio&quot;)" isCall="True">
+      <funcRefArg charIndex="1432" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1472" charLength="42" codePart="setDvar(&quot;scr_RequiredMapAspectratio&quot;, &quot;1&quot;)" isCall="True">
+      <funcRefArg charIndex="1480" charLength="28" />
+      <funcRefArg charIndex="1510" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="init" charIndex="1522" charLength="44" codePart="thread maps\mp\gametypes\_tweakables::init()" isCall="True" />
+    <funcRef sfPath="maps\mp\_minefields" name="minefields" charIndex="1570" charLength="40" codePart="thread maps\mp\_minefields::minefields()" isCall="True" />
+    <funcRef sfPath="maps\mp\_shutter" name="main" charIndex="1614" charLength="31" codePart="thread maps\mp\_shutter::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\_destructables" name="init" charIndex="1649" charLength="37" codePart="thread maps\mp\_destructables::init()" isCall="True" />
+    <funcRef sfPath="codapi" name="VisionSetNight" charIndex="1732" charLength="33" codePart="VisionSetNight( &quot;default_night&quot; )" isCall="True">
+      <funcRefArg charIndex="1748" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="1782" charLength="49" codePart="getentarray(&quot;lantern_glowFX_origin&quot;,&quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="1794" charLength="23" />
+      <funcRefArg charIndex="1818" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="lanterns" charIndex="1877" charLength="29" codePart="lanterns[i] thread lanterns()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="1939" charLength="21" codePart="getdvar( &quot;createfx&quot; )" isCall="True">
+      <funcRefArg charIndex="1948" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="main" charIndex="1972" charLength="20" codePart="maps\mp\_art::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\_load" name="setupExploders" charIndex="1996" charLength="16" codePart="setupExploders()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="fx_init" charIndex="2018" charLength="35" codePart="thread maps\mp\_createfx::fx_init()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createfx" charIndex="2090" charLength="29" codePart="maps\mp\_createfx::createfx()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="2130" charLength="38" codePart="getdvar( &quot;r_reflectionProbeGenerate&quot; )" isCall="True">
+      <funcRefArg charIndex="2139" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_global_fx" name="main" charIndex="2185" charLength="26" codePart="maps\mp\_global_fx::main()" isCall="True" />
+    <funcRef sfPath="codapi" name="waittill" charIndex="2216" charLength="28" codePart="level waittill( &quot;eternity&quot; )" isCall="True">
+      <funcRefArg charIndex="2232" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_global_fx" name="main" charIndex="2254" charLength="33" codePart="thread maps\mp\_global_fx::main()" isCall="True" />
+    <funcRef sfPath="codapidev" name="Assert" charIndex="2717" charLength="16" codePart="assert( p == 5 )" isCall="True">
+      <funcRefArg charIndex="2725" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="2805" charLength="39" codePart="getentarray( triggertype, &quot;classname&quot; )" isCall="True">
+      <funcRefArg charIndex="2818" charLength="11" />
+      <funcRefArg charIndex="2831" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2901" charLength="48" codePart="isdefined( triggers[ i ].script_prefab_exploder)" isCall="True">
+      <funcRefArg charIndex="2912" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3035" charLength="41" codePart="isdefined( triggers[ i ].script_exploder)" isCall="True">
+      <funcRefArg charIndex="3046" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="exploder_load" charIndex="3084" charLength="58" codePart="level thread maps\mp\_load::exploder_load( triggers[ i ] )" isCall="True">
+      <funcRefArg charIndex="3127" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="3189" charLength="63" codePart="level endon( &quot;killexplodertridgers&quot; + trigger.script_exploder )" isCall="True">
+      <funcRefArg charIndex="3202" charLength="49" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="3256" charLength="29" codePart="trigger waittill( &quot;trigger&quot; )" isCall="True">
+      <funcRefArg charIndex="3274" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3294" charLength="34" codePart="isdefined( trigger.script_chance )" isCall="True">
+      <funcRefArg charIndex="3305" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="3332" charLength="16" codePart="randomfloat( 1 )" isCall="True">
+      <funcRefArg charIndex="3345" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3387" charLength="33" codePart="isdefined( trigger.script_delay )" isCall="True">
+      <funcRefArg charIndex="3398" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="exploder_load" charIndex="3477" charLength="37" codePart="level thread exploder_load( trigger )" isCall="True">
+      <funcRefArg charIndex="3505" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="exploder" charIndex="3533" charLength="53" codePart="maps\mp\_utility::exploder( trigger.script_exploder )" isCall="True">
+      <funcRefArg charIndex="3561" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="3590" charLength="64" codePart="level notify( &quot;killexplodertridgers&quot; + trigger.script_exploder )" isCall="True">
+      <funcRefArg charIndex="3604" charLength="49" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="3720" charLength="47" codePart="getentarray( &quot;script_brushmodel&quot;, &quot;classname&quot; )" isCall="True">
+      <funcRefArg charIndex="3733" charLength="19" />
+      <funcRefArg charIndex="3754" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="3781" charLength="42" codePart="getentarray( &quot;script_model&quot;, &quot;classname&quot; )" isCall="True">
+      <funcRefArg charIndex="3794" charLength="14" />
+      <funcRefArg charIndex="3810" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3949" charLength="45" codePart="isdefined( ents[ i ].script_prefab_exploder )" isCall="True">
+      <funcRefArg charIndex="3960" charLength="33" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4073" charLength="38" codePart="isdefined( ents[ i ].script_exploder )" isCall="True">
+      <funcRefArg charIndex="4084" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4164" charLength="33" codePart="isdefined( ents[ i ].targetname )" isCall="True">
+      <funcRefArg charIndex="4175" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Hide" charIndex="4256" charLength="16" codePart="ents[ i ] hide()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4290" charLength="33" codePart="isdefined( ents[ i ].targetname )" isCall="True">
+      <funcRefArg charIndex="4301" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Hide" charIndex="4381" charLength="16" codePart="ents[ i ] hide()" isCall="True" />
+    <funcRef sfPath="codapi" name="NotSolid" charIndex="4404" charLength="20" codePart="ents[ i ] notsolid()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4542" charLength="33" codePart="isdefined( ents[ i ].targetname )" isCall="True">
+      <funcRefArg charIndex="4553" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Hide" charIndex="4638" charLength="16" codePart="ents[ i ] hide()" isCall="True" />
+    <funcRef sfPath="codapi" name="NotSolid" charIndex="4661" charLength="20" codePart="ents[ i ] notsolid()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="4864" charLength="47" codePart="getentarray( &quot;script_brushmodel&quot;, &quot;classname&quot; )" isCall="True">
+      <funcRefArg charIndex="4877" charLength="19" />
+      <funcRefArg charIndex="4898" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4974" charLength="59" codePart="isdefined( potentialExploders[ i ].script_prefab_exploder )" isCall="True">
+      <funcRefArg charIndex="4985" charLength="47" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5143" charLength="52" codePart="isdefined( potentialExploders[ i ].script_exploder )" isCall="True">
+      <funcRefArg charIndex="5154" charLength="40" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="5300" charLength="42" codePart="getentarray( &quot;script_model&quot;, &quot;classname&quot; )" isCall="True">
+      <funcRefArg charIndex="5313" charLength="14" />
+      <funcRefArg charIndex="5329" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5405" charLength="59" codePart="isdefined( potentialExploders[ i ].script_prefab_exploder )" isCall="True">
+      <funcRefArg charIndex="5416" charLength="47" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5571" charLength="52" codePart="isdefined( potentialExploders[ i ].script_exploder )" isCall="True">
+      <funcRefArg charIndex="5582" charLength="40" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="5728" charLength="41" codePart="getentarray( &quot;item_health&quot;, &quot;classname&quot; )" isCall="True">
+      <funcRefArg charIndex="5741" charLength="13" />
+      <funcRefArg charIndex="5756" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5832" charLength="59" codePart="isdefined( potentialExploders[ i ].script_prefab_exploder )" isCall="True">
+      <funcRefArg charIndex="5843" charLength="47" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5998" charLength="52" codePart="isdefined( potentialExploders[ i ].script_exploder )" isCall="True">
+      <funcRefArg charIndex="6009" charLength="40" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6141" charLength="30" codePart="isdefined( level.createFXent )" isCall="True">
+      <funcRefArg charIndex="6152" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createExploder" charIndex="6492" charLength="38" codePart="createExploder( exploder.script_fxid )" isCall="True">
+      <funcRefArg charIndex="6508" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7418" charLength="33" codePart="isdefined( exploder.script_fxid )" isCall="True">
+      <funcRefArg charIndex="7429" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="7591" charLength="118" codePart="assertEx( isdefined( exploder.script_exploder ), &quot;Exploder at origin &quot; + exploder.origin + &quot; has no script_exploder&quot; )" isCall="True">
+      <funcRefArg charIndex="7601" charLength="37" />
+      <funcRefArg charIndex="7640" charLength="68" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7601" charLength="37" codePart="isdefined( exploder.script_exploder )" isCall="True">
+      <funcRefArg charIndex="7612" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7722" charLength="29" codePart="isdefined( ent.v[ &quot;delay&quot; ] )" isCall="True">
+      <funcRefArg charIndex="7733" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7793" charLength="28" codePart="isdefined( exploder.target )" isCall="True">
+      <funcRefArg charIndex="7804" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="7839" charLength="48" codePart="getent( ent.v[ &quot;target&quot; ], &quot;targetname&quot; ).origin" isCall="True">
+      <funcRefArg charIndex="7847" charLength="17" />
+      <funcRefArg charIndex="7866" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorToAngles" charIndex="7913" charLength="41" codePart="vectortoangles( org - ent.v[ &quot;origin&quot; ] )" isCall="True">
+      <funcRefArg charIndex="7929" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8168" charLength="27" codePart="isdefined( exploder.model )" isCall="True">
+      <funcRefArg charIndex="8179" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8312" charLength="32" codePart="isdefined( exploder.targetname )" isCall="True">
+      <funcRefArg charIndex="8323" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8348" charLength="57" codePart="isdefined( acceptableTargetnames[ exploder.targetname ] )" isCall="True">
+      <funcRefArg charIndex="8359" charLength="45" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="post_entity_creation_function" charIndex="8516" charLength="54" codePart="ent maps\mp\_createfx::post_entity_creation_function()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8603" charLength="41" codePart="isdefined(level._effect[&quot;lantern_light&quot;])" isCall="True">
+      <funcRefArg charIndex="8613" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="8682" charLength="27" codePart="loadfx(&quot;props/glow_latern&quot;)" isCall="True">
+      <funcRefArg charIndex="8689" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_fx" name="loopfx" charIndex="8713" charLength="77" codePart="maps\mp\_fx::loopfx(&quot;lantern_light&quot;, self.origin, 0.3, self.origin + (0,0,1))" isCall="True">
+      <funcRefArg charIndex="8733" charLength="15" />
+      <funcRefArg charIndex="8750" charLength="11" />
+      <funcRefArg charIndex="8763" charLength="3" />
+      <funcRefArg charIndex="8768" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetArrayKeys" charIndex="8845" charLength="37" codePart="getarraykeys( level.script_gen_dump )" isCall="True">
+      <funcRefArg charIndex="8859" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8934" charLength="54" codePart="isdefined( level.script_gen_dump2[ signatures[ i ] ] )" isCall="True">
+      <funcRefArg charIndex="8945" charLength="42" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dump_checksaved" charIndex="9268" charLength="28" codePart="script_gen_dump_checksaved()" isCall="True" />
+    <funcRef sfPath="common_scripts\utility" name="flag_set" charIndex="9487" charLength="28" codePart="flag_set( &quot;scriptgen_done&quot; )" isCall="True">
+      <funcRefArg charIndex="9497" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="9635" charLength="14" codePart="println( &quot; &quot; )" isCall="True">
+      <funcRefArg charIndex="9644" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="9654" charLength="14" codePart="println( &quot; &quot; )" isCall="True">
+      <funcRefArg charIndex="9663" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="9673" charLength="14" codePart="println( &quot; &quot; )" isCall="True">
+      <funcRefArg charIndex="9682" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="9692" charLength="76" codePart="println( &quot;^2 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- &quot; )" isCall="True">
+      <funcRefArg charIndex="9701" charLength="66" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="9773" charLength="55" codePart="println( &quot;^3Dumping scriptgen dump for these reasons&quot; )" isCall="True">
+      <funcRefArg charIndex="9782" charLength="45" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="9833" charLength="76" codePart="println( &quot;^2 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- &quot; )" isCall="True">
+      <funcRefArg charIndex="9842" charLength="66" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="9988" charLength="57" codePart="issubstr( level.script_gen_dump_reasons[ i ], &quot;nowrite&quot; )" isCall="True">
+      <funcRefArg charIndex="9998" charLength="34" />
+      <funcRefArg charIndex="10034" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetSubStr" charIndex="10068" charLength="51" codePart="getsubstr( level.script_gen_dump_reasons[ i ], 15 )" isCall="True">
+      <funcRefArg charIndex="10079" charLength="34" />
+      <funcRefArg charIndex="10115" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="10179" charLength="30" codePart="println( i + &quot;. ) &quot; + substr )" isCall="True">
+      <funcRefArg charIndex="10188" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="10237" charLength="58" codePart="println( i + &quot;. ) &quot; + level.script_gen_dump_reasons[ i ] )" isCall="True">
+      <funcRefArg charIndex="10246" charLength="48" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="10388" charLength="76" codePart="println( &quot;^2 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- &quot; )" isCall="True">
+      <funcRefArg charIndex="10397" charLength="66" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="10469" charLength="14" codePart="println( &quot; &quot; )" isCall="True">
+      <funcRefArg charIndex="10478" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="10513" charLength="183" codePart="println( &quot;for First Run make sure you delete all of the vehicle precache script calls, createart calls, createfx calls( most commonly placed in maps\\&quot; + level.script + &quot;_fx.gsc ) &quot; )" isCall="True">
+      <funcRefArg charIndex="10522" charLength="173" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="10702" charLength="14" codePart="println( &quot; &quot; )" isCall="True">
+      <funcRefArg charIndex="10711" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="10722" charLength="21" codePart="println( &quot;replace:&quot; )" isCall="True">
+      <funcRefArg charIndex="10731" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="10749" charLength="37" codePart="println( &quot;maps\\\_load::main( 1 );&quot; )" isCall="True">
+      <funcRefArg charIndex="10758" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="10792" charLength="14" codePart="println( &quot; &quot; )" isCall="True">
+      <funcRefArg charIndex="10801" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="10812" charLength="57" codePart="println( &quot;with( don't forget to add this file to P4 ):&quot; )" isCall="True">
+      <funcRefArg charIndex="10821" charLength="47" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="10875" charLength="69" codePart="println( &quot;maps\\scriptgen\\&quot; + level.script + &quot;_scriptgen::main();&quot; )" isCall="True">
+      <funcRefArg charIndex="10884" charLength="59" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="10950" charLength="14" codePart="println( &quot; &quot; )" isCall="True">
+      <funcRefArg charIndex="10959" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="11127" charLength="76" codePart="println( &quot;^2 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- &quot; )" isCall="True">
+      <funcRefArg charIndex="11136" charLength="66" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="11208" charLength="14" codePart="println( &quot; &quot; )" isCall="True">
+      <funcRefArg charIndex="11217" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="11227" charLength="30" codePart="println( &quot;^2 / \\ / \\ / \\&quot; )" isCall="True">
+      <funcRefArg charIndex="11236" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="11262" charLength="24" codePart="println( &quot;^2scroll up&quot; )" isCall="True">
+      <funcRefArg charIndex="11271" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="11291" charLength="30" codePart="println( &quot;^2 / \\ / \\ / \\&quot; )" isCall="True">
+      <funcRefArg charIndex="11300" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="11326" charLength="14" codePart="println( &quot; &quot; )" isCall="True">
+      <funcRefArg charIndex="11335" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="OpenFile" charIndex="11953" charLength="29" codePart="openfile( filename, &quot;write&quot; )" isCall="True">
+      <funcRefArg charIndex="11963" charLength="8" />
+      <funcRefArg charIndex="11973" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="12008" charLength="93" codePart="assertex( file != -1, &quot;File not writeable( check it and and restart the map ): &quot; + filename )" isCall="True">
+      <funcRefArg charIndex="12018" charLength="10" />
+      <funcRefArg charIndex="12030" charLength="70" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="12107" charLength="121" codePart="script_gen_dumpprintln( file, &quot;// script generated script do not write your own script here it will go away if you do.&quot; )" isCall="True">
+      <funcRefArg charIndex="12131" charLength="4" />
+      <funcRefArg charIndex="12137" charLength="90" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="12232" charLength="40" codePart="script_gen_dumpprintln( file, &quot;main()&quot; )" isCall="True">
+      <funcRefArg charIndex="12256" charLength="4" />
+      <funcRefArg charIndex="12262" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="12276" charLength="35" codePart="script_gen_dumpprintln( file, &quot;{&quot; )" isCall="True">
+      <funcRefArg charIndex="12300" charLength="4" />
+      <funcRefArg charIndex="12306" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="12315" charLength="34" codePart="script_gen_dumpprintln( file, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="12339" charLength="4" />
+      <funcRefArg charIndex="12345" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="12353" charLength="63" codePart="script_gen_dumpprintln( file, &quot;\tlevel.script_gen_dump = [];&quot; )" isCall="True">
+      <funcRefArg charIndex="12377" charLength="4" />
+      <funcRefArg charIndex="12383" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="12420" charLength="34" codePart="script_gen_dumpprintln( file, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="12444" charLength="4" />
+      <funcRefArg charIndex="12450" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetArrayKeys" charIndex="12473" charLength="37" codePart="getarraykeys( level.script_gen_dump )" isCall="True">
+      <funcRefArg charIndex="12487" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="12562" charLength="63" codePart="issubstr( level.script_gen_dump[ signatures[ i ] ], &quot;nowrite&quot; )" isCall="True">
+      <funcRefArg charIndex="12572" charLength="40" />
+      <funcRefArg charIndex="12614" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="12632" charLength="79" codePart="script_gen_dumpprintln( file, &quot;\t&quot; + level.script_gen_dump[ signatures[ i ] ] )" isCall="True">
+      <funcRefArg charIndex="12656" charLength="4" />
+      <funcRefArg charIndex="12662" charLength="48" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="12765" charLength="63" codePart="issubstr( level.script_gen_dump[ signatures[ i ] ], &quot;nowrite&quot; )" isCall="True">
+      <funcRefArg charIndex="12775" charLength="40" />
+      <funcRefArg charIndex="12817" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="12835" charLength="139" codePart="script_gen_dumpprintln( file, &quot;\tlevel.script_gen_dump[ &quot; + &quot;\&quot;&quot; + signatures[ i ] + &quot;\&quot;&quot; + &quot; ] = &quot; + &quot;\&quot;&quot; + signatures[ i ] + &quot;\&quot;&quot; + &quot;;&quot; )" isCall="True">
+      <funcRefArg charIndex="12859" charLength="4" />
+      <funcRefArg charIndex="12865" charLength="108" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="12988" charLength="123" codePart="script_gen_dumpprintln( file, &quot;\tlevel.script_gen_dump[ &quot; + &quot;\&quot;&quot; + signatures[ i ] + &quot;\&quot;&quot; + &quot; ] = &quot; + &quot;\&quot;nowrite\&quot;&quot; + &quot;;&quot; )" isCall="True">
+      <funcRefArg charIndex="13012" charLength="4" />
+      <funcRefArg charIndex="13018" charLength="92" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="13117" charLength="34" codePart="script_gen_dumpprintln( file, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="13141" charLength="4" />
+      <funcRefArg charIndex="13147" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="13259" charLength="35" codePart="isdefined( level.sg_precacheanims )" isCall="True">
+      <funcRefArg charIndex="13270" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetArrayKeys" charIndex="13308" charLength="38" codePart="getarraykeys( level.sg_precacheanims )" isCall="True">
+      <funcRefArg charIndex="13322" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="13355" charLength="18" codePart="isdefined( keys1 )" isCall="True">
+      <funcRefArg charIndex="13366" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="13417" charLength="70" codePart="script_gen_dumpprintln( file, &quot;\tanim_precach_&quot; + keys1[ i ] + &quot;();&quot; )" isCall="True">
+      <funcRefArg charIndex="13441" charLength="4" />
+      <funcRefArg charIndex="13447" charLength="39" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="13496" charLength="88" codePart="script_gen_dumpprintln( file, &quot;\tmaps\\\_load::main( 1, &quot; + level.bCSVgened + &quot;, 1 );&quot; )" isCall="True">
+      <funcRefArg charIndex="13520" charLength="4" />
+      <funcRefArg charIndex="13526" charLength="57" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="13588" charLength="35" codePart="script_gen_dumpprintln( file, &quot;}&quot; )" isCall="True">
+      <funcRefArg charIndex="13612" charLength="4" />
+      <funcRefArg charIndex="13618" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="13627" charLength="34" codePart="script_gen_dumpprintln( file, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="13651" charLength="4" />
+      <funcRefArg charIndex="13657" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="13753" charLength="35" codePart="isdefined( level.sg_precacheanims )" isCall="True">
+      <funcRefArg charIndex="13764" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetArrayKeys" charIndex="13802" charLength="38" codePart="getarraykeys( level.sg_precacheanims )" isCall="True">
+      <funcRefArg charIndex="13816" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="13849" charLength="18" codePart="isdefined( keys1 )" isCall="True">
+      <funcRefArg charIndex="13860" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="13948" charLength="76" codePart="script_gen_dumpprintln( file, &quot;#using_animtree( \&quot;&quot; + keys1[ i ] + &quot;\&quot; );&quot; )" isCall="True">
+      <funcRefArg charIndex="13972" charLength="4" />
+      <funcRefArg charIndex="13978" charLength="45" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="14029" charLength="67" codePart="script_gen_dumpprintln( file, &quot;anim_precach_&quot; + keys1[ i ] + &quot;()&quot; )" isCall="True">
+      <funcRefArg charIndex="14053" charLength="4" />
+      <funcRefArg charIndex="14059" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="14126" charLength="35" codePart="script_gen_dumpprintln( file, &quot;{&quot; )" isCall="True">
+      <funcRefArg charIndex="14150" charLength="4" />
+      <funcRefArg charIndex="14156" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="14166" charLength="92" codePart="script_gen_dumpprintln( file, &quot;\tlevel.sg_animtree[ \&quot;&quot; + keys1[ i ] + &quot;\&quot; ] = #animtree;&quot; )" isCall="True">
+      <funcRefArg charIndex="14190" charLength="4" />
+      <funcRefArg charIndex="14196" charLength="61" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetArrayKeys" charIndex="14365" charLength="52" codePart="getarraykeys( level.sg_precacheanims[ keys1[ i ] ] )" isCall="True">
+      <funcRefArg charIndex="14379" charLength="37" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="14427" charLength="18" codePart="isdefined( keys2 )" isCall="True">
+      <funcRefArg charIndex="14438" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="14494" charLength="98" codePart="script_gen_dumpprintln( file, &quot;\tlevel.sg_anim[ \&quot;&quot; + keys2[ j ] + &quot;\&quot; ] = %&quot; + keys2[ j ] + &quot;;&quot; )" isCall="True">
+      <funcRefArg charIndex="14518" charLength="4" />
+      <funcRefArg charIndex="14524" charLength="67" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="14631" charLength="35" codePart="script_gen_dumpprintln( file, &quot;}&quot; )" isCall="True">
+      <funcRefArg charIndex="14655" charLength="4" />
+      <funcRefArg charIndex="14661" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_dumpprintln" charIndex="14671" charLength="34" codePart="script_gen_dumpprintln( file, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="14695" charLength="4" />
+      <funcRefArg charIndex="14701" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="CloseFile" charIndex="14756" charLength="17" codePart="closefile( file )" isCall="True">
+      <funcRefArg charIndex="14767" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="OpenFile" charIndex="14893" charLength="32" codePart="openfile( csvfilename, &quot;write&quot; )" isCall="True">
+      <funcRefArg charIndex="14903" charLength="11" />
+      <funcRefArg charIndex="14916" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="14955" charLength="99" codePart="assertex( csvfile != -1, &quot;File not writeable( check it and and restart the map ): &quot; + csvfilename )" isCall="True">
+      <funcRefArg charIndex="14965" charLength="13" />
+      <funcRefArg charIndex="14980" charLength="73" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetArrayKeys" charIndex="15074" charLength="37" codePart="getarraykeys( level.script_gen_dump )" isCall="True">
+      <funcRefArg charIndex="15088" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_load" name="script_gen_csvdumpprintln" charIndex="15157" charLength="53" codePart="script_gen_csvdumpprintln( csvfile, signatures[ i ] )" isCall="True">
+      <funcRefArg charIndex="15184" charLength="7" />
+      <funcRefArg charIndex="15193" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="CloseFile" charIndex="15257" charLength="20" codePart="closefile( csvfile )" isCall="True">
+      <funcRefArg charIndex="15268" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="15350" charLength="84" codePart="assertex( csvfilesaved == 1, &quot;csv not saved( see above message? ): &quot; + csvfilename )" isCall="True">
+      <funcRefArg charIndex="15360" charLength="17" />
+      <funcRefArg charIndex="15379" charLength="54" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="15438" charLength="74" codePart="assertex( saved == 1, &quot;map not saved( see above message? ): &quot; + filename )" isCall="True">
+      <funcRefArg charIndex="15448" charLength="10" />
+      <funcRefArg charIndex="15460" charLength="51" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="15623" charLength="114" codePart="assertex( !level.bScriptgened, &quot;SCRIPTGEN generated: follow instructions listed above this error in the console&quot; )" isCall="True">
+      <funcRefArg charIndex="15633" charLength="19" />
+      <funcRefArg charIndex="15654" charLength="82" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertMsg" charIndex="15770" charLength="69" codePart="assertmsg( &quot;SCRIPTGEN updated: Rebuild fast file and run map again&quot; )" isCall="True">
+      <funcRefArg charIndex="15781" charLength="57" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="flag_set" charIndex="15847" charLength="28" codePart="flag_set( &quot;scriptgen_done&quot; )" isCall="True">
+      <funcRefArg charIndex="15857" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="16034" charLength="31" codePart="issubstr( signature, &quot;ignore&quot; )" isCall="True">
+      <funcRefArg charIndex="16044" charLength="9" />
+      <funcRefArg charIndex="16055" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="16104" charLength="35" codePart="issubstr( signature, &quot;col_map_sp&quot; )" isCall="True">
+      <funcRefArg charIndex="16114" charLength="9" />
+      <funcRefArg charIndex="16125" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="16182" charLength="32" codePart="issubstr( signature, &quot;gfx_map&quot; )" isCall="True">
+      <funcRefArg charIndex="16192" charLength="9" />
+      <funcRefArg charIndex="16203" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="16254" charLength="32" codePart="issubstr( signature, &quot;rawfile&quot; )" isCall="True">
+      <funcRefArg charIndex="16264" charLength="9" />
+      <funcRefArg charIndex="16275" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="16326" charLength="30" codePart="issubstr( signature, &quot;sound&quot; )" isCall="True">
+      <funcRefArg charIndex="16336" charLength="9" />
+      <funcRefArg charIndex="16347" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="16394" charLength="31" codePart="issubstr( signature, &quot;xmodel&quot; )" isCall="True">
+      <funcRefArg charIndex="16404" charLength="9" />
+      <funcRefArg charIndex="16415" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="16464" charLength="30" codePart="issubstr( signature, &quot;xanim&quot; )" isCall="True">
+      <funcRefArg charIndex="16474" charLength="9" />
+      <funcRefArg charIndex="16485" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="16532" charLength="29" codePart="issubstr( signature, &quot;item&quot; )" isCall="True">
+      <funcRefArg charIndex="16542" charLength="9" />
+      <funcRefArg charIndex="16553" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="16652" charLength="27" codePart="issubstr( signature, &quot;fx&quot; )" isCall="True">
+      <funcRefArg charIndex="16662" charLength="9" />
+      <funcRefArg charIndex="16673" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="16722" charLength="29" codePart="issubstr( signature, &quot;menu&quot; )" isCall="True">
+      <funcRefArg charIndex="16732" charLength="9" />
+      <funcRefArg charIndex="16743" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="16882" charLength="31" codePart="issubstr( signature, &quot;rumble&quot; )" isCall="True">
+      <funcRefArg charIndex="16892" charLength="9" />
+      <funcRefArg charIndex="16903" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="17011" charLength="31" codePart="issubstr( signature, &quot;shader&quot; )" isCall="True">
+      <funcRefArg charIndex="17021" charLength="9" />
+      <funcRefArg charIndex="17032" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="17120" charLength="30" codePart="issubstr( signature, &quot;shock&quot; )" isCall="True">
+      <funcRefArg charIndex="17130" charLength="9" />
+      <funcRefArg charIndex="17141" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="17271" charLength="31" codePart="issubstr( signature, &quot;string&quot; )" isCall="True">
+      <funcRefArg charIndex="17281" charLength="9" />
+      <funcRefArg charIndex="17292" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertMsg" charIndex="17334" charLength="52" codePart="assertmsg( &quot;string not yet supported by scriptgen&quot; )" isCall="True">
+      <funcRefArg charIndex="17345" charLength="40" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="17505" charLength="31" codePart="issubstr( signature, &quot;turret&quot; )" isCall="True">
+      <funcRefArg charIndex="17515" charLength="9" />
+      <funcRefArg charIndex="17526" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="17629" charLength="32" codePart="issubstr( signature, &quot;vehicle&quot; )" isCall="True">
+      <funcRefArg charIndex="17639" charLength="9" />
+      <funcRefArg charIndex="17650" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17813" charLength="19" codePart="isdefined( prefix )" isCall="True">
+      <funcRefArg charIndex="17824" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17854" charLength="26" codePart="isdefined( writtenprefix )" isCall="True">
+      <funcRefArg charIndex="17865" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetSubStr" charIndex="17911" charLength="55" codePart="getsubstr( signature, prefix.size + 1, signature.size )" isCall="True">
+      <funcRefArg charIndex="17922" charLength="9" />
+      <funcRefArg charIndex="17933" charLength="15" />
+      <funcRefArg charIndex="17950" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetSubStr" charIndex="18017" charLength="55" codePart="getsubstr( signature, prefix.size + 1, signature.size )" isCall="True">
+      <funcRefArg charIndex="18028" charLength="9" />
+      <funcRefArg charIndex="18039" charLength="15" />
+      <funcRefArg charIndex="18056" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="18576" charLength="17" codePart="println( string )" isCall="True">
+      <funcRefArg charIndex="18585" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FPrintLn" charIndex="18605" charLength="24" codePart="fprintln( file, string )" isCall="True">
+      <funcRefArg charIndex="18615" charLength="4" />
+      <funcRefArg charIndex="18621" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="18759" charLength="17" codePart="println( string )" isCall="True">
+      <funcRefArg charIndex="18768" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FPrintLn" charIndex="18788" charLength="24" codePart="fprintln( file, string )" isCall="True">
+      <funcRefArg charIndex="18798" charLength="4" />
+      <funcRefArg charIndex="18804" charLength="7" />
+    </funcRef>
+    <error type="semantic" charIndex="1690" charLength="36" lineIndex="56">
+      <message>Could not find file 'maps\mp\_destructible'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\mp\_destructible', file 'maps\mp\_load', line 57, 'thread maps\mp\_destructible::init();'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8713" charLength="77" lineIndex="277">
+      <message>Could not find enough arguments, function 'maps\mp\_fx::loopfx'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_fx::loopfx', file 'maps\mp\_load', line 278, 'maps\mp\_fx::loopfx("lantern_light", self.origin, 0.3, self.origin + (0,0,1));'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

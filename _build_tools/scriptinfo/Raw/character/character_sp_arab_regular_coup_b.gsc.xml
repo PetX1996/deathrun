@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_arab_regular_coup_b</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="44" codePart="self setModel(&quot;body_sp_arab_regular_coup_b&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="106" charLength="54" codePart="self attach(&quot;head_sp_arab_regular_ski_mask&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="118" charLength="31" />
+      <funcRefArg charIndex="151" charLength="2" />
+      <funcRefArg charIndex="155" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="207" charLength="44" codePart="precacheModel(&quot;body_sp_arab_regular_coup_b&quot;)" isCall="True">
+      <funcRefArg charIndex="221" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="255" charLength="46" codePart="precacheModel(&quot;head_sp_arab_regular_ski_mask&quot;)" isCall="True">
+      <funcRefArg charIndex="269" charLength="31" />
+    </funcRef>
+  </content>
+</scriptinfo>

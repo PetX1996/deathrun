@@ -1,0 +1,1030 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_hud_util</name>
+  </settings>
+  <content>
+    <func name="setParent" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="element">
+      </param>
+    </func>
+    <func name="getParent" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="addChild" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="element">
+      </param>
+    </func>
+    <func name="removeChild" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="element">
+      </param>
+    </func>
+    <func name="setPoint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="point">
+      </param>
+      <param name="relativePoint">
+      </param>
+      <param name="xOffset">
+      </param>
+      <param name="yOffset">
+      </param>
+      <param name="moveTime">
+      </param>
+    </func>
+    <func name="setPointBar" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="point">
+      </param>
+      <param name="relativePoint">
+      </param>
+      <param name="xOffset">
+      </param>
+      <param name="yOffset">
+      </param>
+    </func>
+    <func name="updateBar" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="barFrac">
+      </param>
+      <param name="rateOfChange">
+      </param>
+    </func>
+    <func name="updateBarScale" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="barFrac">
+      </param>
+      <param name="rateOfChange">
+      </param>
+    </func>
+    <func name="createFontString" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="font">
+      </param>
+      <param name="fontScale">
+      </param>
+    </func>
+    <func name="createServerFontString" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="font">
+      </param>
+      <param name="fontScale">
+      </param>
+      <param name="team">
+      </param>
+    </func>
+    <func name="createServerTimer" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="font">
+      </param>
+      <param name="fontScale">
+      </param>
+      <param name="team">
+      </param>
+    </func>
+    <func name="createIcon" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="shader">
+      </param>
+      <param name="width">
+      </param>
+      <param name="height">
+      </param>
+    </func>
+    <func name="createServerIcon" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="shader">
+      </param>
+      <param name="width">
+      </param>
+      <param name="height">
+      </param>
+      <param name="team">
+      </param>
+    </func>
+    <func name="createServerBar" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="color">
+      </param>
+      <param name="width">
+      </param>
+      <param name="height">
+      </param>
+      <param name="flashFrac">
+      </param>
+      <param name="team">
+      </param>
+      <param name="selected">
+      </param>
+    </func>
+    <func name="createBar" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="color">
+      </param>
+      <param name="width">
+      </param>
+      <param name="height">
+      </param>
+      <param name="flashFrac">
+      </param>
+    </func>
+    <func name="getCurrentFraction" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="createPrimaryProgressBar" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="createPrimaryProgressBarText" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="createTeamProgressBar" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="createTeamProgressBarText" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="setFlashFrac" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="flashFrac">
+      </param>
+    </func>
+    <func name="hideElem" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="showElem" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="flashThread" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="destroyElem" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="setIconShader" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="shader">
+      </param>
+    </func>
+    <func name="setWidth" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="width">
+      </param>
+    </func>
+    <func name="setHeight" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="height">
+      </param>
+    </func>
+    <func name="setSize" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="width">
+      </param>
+      <param name="height">
+      </param>
+    </func>
+    <func name="updateChildren" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="showPerk" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="index">
+      </param>
+      <param name="perk">
+      </param>
+      <param name="ypos">
+      </param>
+    </func>
+    <func name="hidePerk" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="index">
+      </param>
+      <param name="fadetime">
+      </param>
+      <param name="hideTextOnly">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="808" charLength="24" codePart="isDefined( self.parent )" isCall="True">
+      <funcRefArg charIndex="819" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="883" charLength="24" codePart="isDefined( self.parent )" isCall="True">
+      <funcRefArg charIndex="894" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="removeChild" charIndex="913" charLength="31" codePart="self.parent removeChild( self )" isCall="True">
+      <funcRefArg charIndex="938" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="addChild" charIndex="975" charLength="28" codePart="self.parent addChild( self )" isCall="True">
+      <funcRefArg charIndex="997" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1014" charLength="23" codePart="isDefined( self.point )" isCall="True">
+      <funcRefArg charIndex="1025" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setPoint" charIndex="1043" charLength="75" codePart="self setPoint( self.point, self.relativePoint, self.xOffset, self.yOffset )" isCall="True">
+      <funcRefArg charIndex="1058" charLength="10" />
+      <funcRefArg charIndex="1070" charLength="18" />
+      <funcRefArg charIndex="1090" charLength="12" />
+      <funcRefArg charIndex="1104" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setPoint" charIndex="1130" charLength="26" codePart="self setPoint( &quot;TOPLEFT&quot; )" isCall="True">
+      <funcRefArg charIndex="1145" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1732" charLength="21" codePart="isDefined( moveTime )" isCall="True">
+      <funcRefArg charIndex="1743" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="getParent" charIndex="1787" charLength="16" codePart="self getParent()" isCall="True" />
+    <funcRef sfPath="codapi" name="MoveOverTime" charIndex="1828" charLength="29" codePart="self moveOverTime( moveTime )" isCall="True">
+      <funcRefArg charIndex="1847" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1870" charLength="20" codePart="isDefined( xOffset )" isCall="True">
+      <funcRefArg charIndex="1881" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1945" charLength="20" codePart="isDefined( yOffset )" isCall="True">
+      <funcRefArg charIndex="1956" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="2099" charLength="24" codePart="isSubStr( point, &quot;TOP&quot; )" isCall="True">
+      <funcRefArg charIndex="2109" charLength="5" />
+      <funcRefArg charIndex="2116" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="2157" charLength="27" codePart="isSubStr( point, &quot;BOTTOM&quot; )" isCall="True">
+      <funcRefArg charIndex="2167" charLength="5" />
+      <funcRefArg charIndex="2174" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="2221" charLength="25" codePart="isSubStr( point, &quot;LEFT&quot; )" isCall="True">
+      <funcRefArg charIndex="2231" charLength="5" />
+      <funcRefArg charIndex="2238" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="2281" charLength="26" codePart="isSubStr( point, &quot;RIGHT&quot; )" isCall="True">
+      <funcRefArg charIndex="2291" charLength="5" />
+      <funcRefArg charIndex="2298" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2346" charLength="26" codePart="isDefined( relativePoint )" isCall="True">
+      <funcRefArg charIndex="2357" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="2500" charLength="32" codePart="isSubStr( relativePoint, &quot;TOP&quot; )" isCall="True">
+      <funcRefArg charIndex="2510" charLength="13" />
+      <funcRefArg charIndex="2525" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="2564" charLength="35" codePart="isSubStr( relativePoint, &quot;BOTTOM&quot; )" isCall="True">
+      <funcRefArg charIndex="2574" charLength="13" />
+      <funcRefArg charIndex="2589" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="2634" charLength="33" codePart="isSubStr( relativePoint, &quot;LEFT&quot; )" isCall="True">
+      <funcRefArg charIndex="2644" charLength="13" />
+      <funcRefArg charIndex="2659" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="2700" charLength="34" codePart="isSubStr( relativePoint, &quot;RIGHT&quot; )" isCall="True">
+      <funcRefArg charIndex="2710" charLength="13" />
+      <funcRefArg charIndex="2725" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="3125" charLength="22" codePart="int(element.width / 2)" isCall="True">
+      <funcRefArg charIndex="3129" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="3578" charLength="23" codePart="int(element.height / 2)" isCall="True">
+      <funcRefArg charIndex="3582" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setPointBar" charIndex="3978" charLength="53" codePart="setPointBar( point, relativePoint, xOffset, yOffset )" isCall="True">
+      <funcRefArg charIndex="3991" charLength="5" />
+      <funcRefArg charIndex="3998" charLength="13" />
+      <funcRefArg charIndex="4013" charLength="7" />
+      <funcRefArg charIndex="4022" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setParent" charIndex="4104" charLength="43" codePart="self.barFrame setParent( self getParent() )" isCall="True">
+      <funcRefArg charIndex="4129" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="getParent" charIndex="4129" charLength="16" codePart="self getParent()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setPoint" charIndex="4153" charLength="64" codePart="self.barFrame setPoint( point, relativePoint, xOffset, yOffset )" isCall="True">
+      <funcRefArg charIndex="4177" charLength="5" />
+      <funcRefArg charIndex="4184" charLength="13" />
+      <funcRefArg charIndex="4199" charLength="7" />
+      <funcRefArg charIndex="4208" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="updateChildren" charIndex="4239" charLength="21" codePart="self updateChildren()" isCall="True" />
+    <funcRef sfPath="codapi" name="Int" charIndex="4656" charLength="19" codePart="int(self.width / 2)" isCall="True">
+      <funcRefArg charIndex="4660" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="updateBar" charIndex="4800" charLength="31" codePart="self updateBar( self.bar.frac )" isCall="True">
+      <funcRefArg charIndex="4816" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="updateBarScale" charIndex="4914" charLength="39" codePart="updateBarScale( barFrac, rateOfChange )" isCall="True">
+      <funcRefArg charIndex="4930" charLength="7" />
+      <funcRefArg charIndex="4939" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="5091" charLength="31" codePart="int(self.width * barFrac + 0.5)" isCall="True">
+      <funcRefArg charIndex="5095" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetShader" charIndex="5213" charLength="60" codePart="self.bar setShader( self.bar.shader, barWidth, self.height )" isCall="True">
+      <funcRefArg charIndex="5233" charLength="15" />
+      <funcRefArg charIndex="5250" charLength="8" />
+      <funcRefArg charIndex="5260" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="5280" charLength="125" codePart="assertEx( barWidth &lt;= self.width, &quot;barWidth &lt;= self.width: &quot; + barWidth + &quot; &lt;= &quot; + self.width + &quot; - barFrac was &quot; + barFrac )" isCall="True">
+      <funcRefArg charIndex="5290" charLength="22" />
+      <funcRefArg charIndex="5314" charLength="90" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5494" charLength="25" codePart="isDefined( rateOfChange )" isCall="True">
+      <funcRefArg charIndex="5505" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="5698" charLength="103" codePart="assertex( ((1 - barFrac) / rateOfChange) &gt; 0, &quot;barFrac: &quot; + barFrac + &quot;rateOfChange: &quot; + rateOfChange )" isCall="True">
+      <funcRefArg charIndex="5708" charLength="34" />
+      <funcRefArg charIndex="5744" charLength="56" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="ScaleOverTime" charIndex="5807" charLength="79" codePart="self.bar scaleOverTime( (1 - barFrac) / rateOfChange, self.width, self.height )" isCall="True">
+      <funcRefArg charIndex="5831" charLength="28" />
+      <funcRefArg charIndex="5861" charLength="10" />
+      <funcRefArg charIndex="5873" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="6036" charLength="105" codePart="assertex(  (barFrac / (-1 * rateOfChange)) &gt; 0, &quot;barFrac: &quot; + barFrac + &quot;rateOfChange: &quot; + rateOfChange )" isCall="True">
+      <funcRefArg charIndex="6047" charLength="35" />
+      <funcRefArg charIndex="6084" charLength="56" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="ScaleOverTime" charIndex="6147" charLength="71" codePart="self.bar scaleOverTime( barFrac / (-1 * rateOfChange), 1, self.height )" isCall="True">
+      <funcRefArg charIndex="6171" charLength="29" />
+      <funcRefArg charIndex="6202" charLength="1" />
+      <funcRefArg charIndex="6205" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="6297" charLength="9" codePart="getTime()" isCall="True" />
+    <funcRef sfPath="codapi" name="NewClientHudElem" charIndex="6368" charLength="24" codePart="newClientHudElem( self )" isCall="True">
+      <funcRefArg charIndex="6386" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="6560" charLength="33" codePart="int(level.fontHeight * fontScale)" isCall="True">
+      <funcRefArg charIndex="6564" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setParent" charIndex="6671" charLength="36" codePart="fontElem setParent( level.uiParent )" isCall="True">
+      <funcRefArg charIndex="6691" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6821" charLength="17" codePart="isDefined( team )" isCall="True">
+      <funcRefArg charIndex="6832" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewTeamHudElem" charIndex="6855" charLength="22" codePart="newTeamHudElem( team )" isCall="True">
+      <funcRefArg charIndex="6871" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewHudElem" charIndex="6900" charLength="18" codePart="newHudElem( self )" isCall="True">
+      <funcRefArg charIndex="6912" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="7089" charLength="33" codePart="int(level.fontHeight * fontScale)" isCall="True">
+      <funcRefArg charIndex="7093" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setParent" charIndex="7200" charLength="36" codePart="fontElem setParent( level.uiParent )" isCall="True">
+      <funcRefArg charIndex="7220" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7347" charLength="17" codePart="isDefined( team )" isCall="True">
+      <funcRefArg charIndex="7358" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewTeamHudElem" charIndex="7382" charLength="22" codePart="newTeamHudElem( team )" isCall="True">
+      <funcRefArg charIndex="7398" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewHudElem" charIndex="7428" charLength="18" codePart="newHudElem( self )" isCall="True">
+      <funcRefArg charIndex="7440" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="7622" charLength="33" codePart="int(level.fontHeight * fontScale)" isCall="True">
+      <funcRefArg charIndex="7626" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setParent" charIndex="7736" charLength="37" codePart="timerElem setParent( level.uiParent )" isCall="True">
+      <funcRefArg charIndex="7757" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewClientHudElem" charIndex="7884" charLength="24" codePart="newClientHudElem( self )" isCall="True">
+      <funcRefArg charIndex="7902" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setParent" charIndex="8106" charLength="36" codePart="iconElem setParent( level.uiParent )" isCall="True">
+      <funcRefArg charIndex="8126" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8181" charLength="19" codePart="isDefined( shader )" isCall="True">
+      <funcRefArg charIndex="8192" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetShader" charIndex="8206" charLength="43" codePart="iconElem setShader( shader, width, height )" isCall="True">
+      <funcRefArg charIndex="8226" charLength="6" />
+      <funcRefArg charIndex="8234" charLength="5" />
+      <funcRefArg charIndex="8241" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8339" charLength="17" codePart="isDefined( team )" isCall="True">
+      <funcRefArg charIndex="8350" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewTeamHudElem" charIndex="8373" charLength="22" codePart="newTeamHudElem( team )" isCall="True">
+      <funcRefArg charIndex="8389" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewHudElem" charIndex="8418" charLength="18" codePart="newHudElem( self )" isCall="True">
+      <funcRefArg charIndex="8430" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setParent" charIndex="8634" charLength="36" codePart="iconElem setParent( level.uiParent )" isCall="True">
+      <funcRefArg charIndex="8654" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8709" charLength="19" codePart="isDefined( shader )" isCall="True">
+      <funcRefArg charIndex="8720" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetShader" charIndex="8734" charLength="43" codePart="iconElem setShader( shader, width, height )" isCall="True">
+      <funcRefArg charIndex="8754" charLength="6" />
+      <funcRefArg charIndex="8762" charLength="5" />
+      <funcRefArg charIndex="8769" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8886" charLength="17" codePart="isDefined( team )" isCall="True">
+      <funcRefArg charIndex="8897" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewTeamHudElem" charIndex="8919" charLength="22" codePart="newTeamHudElem( team )" isCall="True">
+      <funcRefArg charIndex="8935" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewHudElem" charIndex="8963" charLength="18" codePart="newHudElem( self )" isCall="True">
+      <funcRefArg charIndex="8975" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetShader" charIndex="9125" charLength="55" codePart="barElem setShader( &quot;progress_bar_fill&quot;, width, height )" isCall="True">
+      <funcRefArg charIndex="9144" charLength="19" />
+      <funcRefArg charIndex="9165" charLength="5" />
+      <funcRefArg charIndex="9172" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="9215" charLength="22" codePart="isDefined( flashFrac )" isCall="True">
+      <funcRefArg charIndex="9226" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="9326" charLength="17" codePart="isDefined( team )" isCall="True">
+      <funcRefArg charIndex="9337" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewTeamHudElem" charIndex="9364" charLength="22" codePart="newTeamHudElem( team )" isCall="True">
+      <funcRefArg charIndex="9380" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewHudElem" charIndex="9413" charLength="18" codePart="newHudElem( self )" isCall="True">
+      <funcRefArg charIndex="9425" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setParent" charIndex="9789" charLength="40" codePart="barElemFrame setParent( level.uiParent )" isCall="True">
+      <funcRefArg charIndex="9813" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="9838" charLength="21" codePart="isDefined( selected )" isCall="True">
+      <funcRefArg charIndex="9849" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetShader" charIndex="9865" charLength="62" codePart="barElemFrame setShader( &quot;progress_bar_fg_sel&quot;, width, height )" isCall="True">
+      <funcRefArg charIndex="9889" charLength="21" />
+      <funcRefArg charIndex="9912" charLength="5" />
+      <funcRefArg charIndex="9919" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetShader" charIndex="9939" charLength="58" codePart="barElemFrame setShader( &quot;progress_bar_fg&quot;, width, height )" isCall="True">
+      <funcRefArg charIndex="9963" charLength="17" />
+      <funcRefArg charIndex="9982" charLength="5" />
+      <funcRefArg charIndex="9989" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10039" charLength="17" codePart="isDefined( team )" isCall="True">
+      <funcRefArg charIndex="10050" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewTeamHudElem" charIndex="10074" charLength="22" codePart="newTeamHudElem( team )" isCall="True">
+      <funcRefArg charIndex="10090" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewHudElem" charIndex="10120" charLength="18" codePart="newHudElem( self )" isCall="True">
+      <funcRefArg charIndex="10132" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setParent" charIndex="10484" charLength="37" codePart="barElemBG setParent( level.uiParent )" isCall="True">
+      <funcRefArg charIndex="10505" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetShader" charIndex="10525" charLength="55" codePart="barElemBG setShader( &quot;progress_bar_bg&quot;, width, height )" isCall="True">
+      <funcRefArg charIndex="10546" charLength="17" />
+      <funcRefArg charIndex="10565" charLength="5" />
+      <funcRefArg charIndex="10572" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewClientHudElem" charIndex="10699" charLength="24" codePart="newClientHudElem(	self )" isCall="True">
+      <funcRefArg charIndex="10717" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetShader" charIndex="10868" charLength="55" codePart="barElem setShader( &quot;progress_bar_fill&quot;, width, height )" isCall="True">
+      <funcRefArg charIndex="10887" charLength="19" />
+      <funcRefArg charIndex="10908" charLength="5" />
+      <funcRefArg charIndex="10915" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10958" charLength="22" codePart="isDefined( flashFrac )" isCall="True">
+      <funcRefArg charIndex="10969" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewClientHudElem" charIndex="11079" charLength="24" codePart="newClientHudElem( self )" isCall="True">
+      <funcRefArg charIndex="11097" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setParent" charIndex="11461" charLength="40" codePart="barElemFrame setParent( level.uiParent )" isCall="True">
+      <funcRefArg charIndex="11485" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewClientHudElem" charIndex="11615" charLength="24" codePart="newClientHudElem( self )" isCall="True">
+      <funcRefArg charIndex="11633" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setParent" charIndex="12025" charLength="37" codePart="barElemBG setParent( level.uiParent )" isCall="True">
+      <funcRefArg charIndex="12046" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetShader" charIndex="12095" charLength="63" codePart="barElemBG setShader( &quot;progress_bar_bg&quot;, width + 4, height + 4 )" isCall="True">
+      <funcRefArg charIndex="12116" charLength="17" />
+      <funcRefArg charIndex="12135" charLength="9" />
+      <funcRefArg charIndex="12146" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetShader" charIndex="12170" charLength="63" codePart="barElemBG setShader( &quot;progress_bar_bg&quot;, width + 0, height + 0 )" isCall="True">
+      <funcRefArg charIndex="12191" charLength="17" />
+      <funcRefArg charIndex="12210" charLength="9" />
+      <funcRefArg charIndex="12221" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12346" charLength="32" codePart="isdefined(self.bar.rateOfChange)" isCall="True">
+      <funcRefArg charIndex="12356" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="12396" charLength="9" codePart="getTime()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="createBar" charIndex="12575" charLength="85" codePart="createBar( (1, 1, 1), level.primaryProgressBarWidth, level.primaryProgressBarHeight )" isCall="True">
+      <funcRefArg charIndex="12586" charLength="9" />
+      <funcRefArg charIndex="12597" charLength="29" />
+      <funcRefArg charIndex="12628" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setPoint" charIndex="12692" charLength="84" codePart="bar setPoint(&quot;TOP&quot;, undefined, level.primaryProgressBarX, level.primaryProgressBarY)" isCall="True">
+      <funcRefArg charIndex="12705" charLength="5" />
+      <funcRefArg charIndex="12712" charLength="9" />
+      <funcRefArg charIndex="12723" charLength="25" />
+      <funcRefArg charIndex="12750" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setPoint" charIndex="12788" charLength="87" codePart="bar setPoint(&quot;CENTER&quot;, undefined, level.primaryProgressBarX, level.primaryProgressBarY)" isCall="True">
+      <funcRefArg charIndex="12801" charLength="8" />
+      <funcRefArg charIndex="12811" charLength="9" />
+      <funcRefArg charIndex="12822" charLength="25" />
+      <funcRefArg charIndex="12849" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="createFontString" charIndex="12940" charLength="65" codePart="createFontString( &quot;objective&quot;, level.primaryProgressBarFontSize )" isCall="True">
+      <funcRefArg charIndex="12958" charLength="11" />
+      <funcRefArg charIndex="12971" charLength="33" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setPoint" charIndex="13037" charLength="93" codePart="text setPoint(&quot;TOP&quot;, undefined, level.primaryProgressBarTextX, level.primaryProgressBarTextY)" isCall="True">
+      <funcRefArg charIndex="13051" charLength="5" />
+      <funcRefArg charIndex="13058" charLength="9" />
+      <funcRefArg charIndex="13069" charLength="29" />
+      <funcRefArg charIndex="13100" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setPoint" charIndex="13142" charLength="96" codePart="text setPoint(&quot;CENTER&quot;, undefined, level.primaryProgressBarTextX, level.primaryProgressBarTextY)" isCall="True">
+      <funcRefArg charIndex="13156" charLength="8" />
+      <funcRefArg charIndex="13166" charLength="9" />
+      <funcRefArg charIndex="13177" charLength="29" />
+      <funcRefArg charIndex="13208" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="createServerBar" charIndex="13760" charLength="100" codePart="createServerBar( (1,0,0), level.teamProgressBarWidth, level.teamProgressBarHeight, undefined, team )" isCall="True">
+      <funcRefArg charIndex="13777" charLength="7" />
+      <funcRefArg charIndex="13786" charLength="26" />
+      <funcRefArg charIndex="13814" charLength="27" />
+      <funcRefArg charIndex="13843" charLength="9" />
+      <funcRefArg charIndex="13854" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setPoint" charIndex="13864" charLength="57" codePart="bar setPoint(&quot;TOP&quot;, undefined, 0, level.teamProgressBarY)" isCall="True">
+      <funcRefArg charIndex="13877" charLength="5" />
+      <funcRefArg charIndex="13884" charLength="9" />
+      <funcRefArg charIndex="13895" charLength="1" />
+      <funcRefArg charIndex="13898" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="createServerFontString" charIndex="13987" charLength="72" codePart="createServerFontString( &quot;default&quot;, level.teamProgressBarFontSize, team )" isCall="True">
+      <funcRefArg charIndex="14011" charLength="9" />
+      <funcRefArg charIndex="14022" charLength="29" />
+      <funcRefArg charIndex="14053" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setPoint" charIndex="14063" charLength="62" codePart="text setPoint(&quot;TOP&quot;, undefined, 0, level.teamProgressBarTextY)" isCall="True">
+      <funcRefArg charIndex="14077" charLength="5" />
+      <funcRefArg charIndex="14084" charLength="9" />
+      <funcRefArg charIndex="14095" charLength="1" />
+      <funcRefArg charIndex="14098" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="15002" charLength="22" codePart="self endon ( &quot;death&quot; )" isCall="True">
+      <funcRefArg charIndex="15015" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="FadeOverTime" charIndex="15166" charLength="22" codePart="self fadeOverTime(0.3)" isCall="True">
+      <funcRefArg charIndex="15184" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="FadeOverTime" charIndex="15234" charLength="22" codePart="self fadeOverTime(0.3)" isCall="True">
+      <funcRefArg charIndex="15252" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="15529" charLength="33" codePart="isDefined( self.children[index] )" isCall="True">
+      <funcRefArg charIndex="15540" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setParent" charIndex="15690" charLength="49" codePart="tempChildren[index] setParent( self getParent() )" isCall="True">
+      <funcRefArg charIndex="15721" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="getParent" charIndex="15721" charLength="16" codePart="self getParent()" isCall="True" />
+    <funcRef sfPath="codapi" name="Destroy" charIndex="15817" charLength="18" codePart="self.bar destroy()" isCall="True" />
+    <funcRef sfPath="codapi" name="Destroy" charIndex="15840" charLength="23" codePart="self.barFrame destroy()" isCall="True" />
+    <funcRef sfPath="codapi" name="Destroy" charIndex="15875" charLength="14" codePart="self destroy()" isCall="True" />
+    <funcRef sfPath="codapi" name="SetShader" charIndex="15926" charLength="49" codePart="self setShader( shader, self.width, self.height )" isCall="True">
+      <funcRefArg charIndex="15942" charLength="6" />
+      <funcRefArg charIndex="15950" charLength="10" />
+      <funcRefArg charIndex="15962" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setPoint" charIndex="16284" charLength="80" codePart="child setPoint( child.point, child.relativePoint, child.xOffset, child.yOffset )" isCall="True">
+      <funcRefArg charIndex="16300" charLength="11" />
+      <funcRefArg charIndex="16313" charLength="19" />
+      <funcRefArg charIndex="16334" charLength="13" />
+      <funcRefArg charIndex="16349" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="16512" charLength="26" codePart="isdefined( self.perkicon )" isCall="True">
+      <funcRefArg charIndex="16523" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="16626" charLength="35" codePart="isdefined( self.perkicon[ index ] )" isCall="True">
+      <funcRefArg charIndex="16637" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="16671" charLength="46" codePart="assert( !isdefined( self.perkname[ index ] ) )" isCall="True">
+      <funcRefArg charIndex="16679" charLength="37" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="16680" charLength="35" codePart="isdefined( self.perkname[ index ] )" isCall="True">
+      <funcRefArg charIndex="16691" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="createIcon" charIndex="16879" charLength="41" codePart="createIcon( &quot;white&quot;, iconsize, iconsize )" isCall="True">
+      <funcRefArg charIndex="16891" charLength="7" />
+      <funcRefArg charIndex="16900" charLength="8" />
+      <funcRefArg charIndex="16910" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setPoint" charIndex="16925" charLength="53" codePart="icon setPoint( &quot;BOTTOMRIGHT&quot;, undefined, xpos, ypos )" isCall="True">
+      <funcRefArg charIndex="16940" charLength="13" />
+      <funcRefArg charIndex="16955" charLength="9" />
+      <funcRefArg charIndex="16966" charLength="4" />
+      <funcRefArg charIndex="16972" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="createFontString" charIndex="17047" charLength="34" codePart="createFontString( &quot;default&quot;, 1.4 )" isCall="True">
+      <funcRefArg charIndex="17065" charLength="9" />
+      <funcRefArg charIndex="17076" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setParent" charIndex="17086" charLength="22" codePart="text setParent( icon )" isCall="True">
+      <funcRefArg charIndex="17102" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="setPoint" charIndex="17113" charLength="39" codePart="text setPoint( &quot;RIGHT&quot;, &quot;LEFT&quot;, -5, 0 )" isCall="True">
+      <funcRefArg charIndex="17128" charLength="7" />
+      <funcRefArg charIndex="17137" charLength="6" />
+      <funcRefArg charIndex="17145" charLength="2" />
+      <funcRefArg charIndex="17149" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="17500" charLength="52" codePart="assertex( isDefined( level.perkIcons[perk] ), perk )" isCall="True">
+      <funcRefArg charIndex="17510" charLength="34" />
+      <funcRefArg charIndex="17546" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17510" charLength="34" codePart="isDefined( level.perkIcons[perk] )" isCall="True">
+      <funcRefArg charIndex="17521" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="17557" charLength="52" codePart="assertex( isDefined( level.perkNames[perk] ), perk )" isCall="True">
+      <funcRefArg charIndex="17567" charLength="34" />
+      <funcRefArg charIndex="17603" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17567" charLength="34" codePart="isDefined( level.perkNames[perk] )" isCall="True">
+      <funcRefArg charIndex="17578" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetShader" charIndex="17637" charLength="59" codePart="icon setShader( level.perkIcons[perk], iconsize, iconsize )" isCall="True">
+      <funcRefArg charIndex="17653" charLength="21" />
+      <funcRefArg charIndex="17676" charLength="8" />
+      <funcRefArg charIndex="17686" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetText" charIndex="17724" charLength="37" codePart="text setText( level.perkNames[perk] )" isCall="True">
+      <funcRefArg charIndex="17738" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="17917" charLength="46" codePart="assert( !isdefined( self.perkicon[ index ] ) )" isCall="True">
+      <funcRefArg charIndex="17925" charLength="37" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17926" charLength="35" codePart="isdefined( self.perkicon[ index ] )" isCall="True">
+      <funcRefArg charIndex="17937" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="17968" charLength="46" codePart="assert( !isdefined( self.perkname[ index ] ) )" isCall="True">
+      <funcRefArg charIndex="17976" charLength="37" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17977" charLength="35" codePart="isdefined( self.perkname[ index ] )" isCall="True">
+      <funcRefArg charIndex="17988" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="18033" charLength="45" codePart="assert( isdefined( self.perkicon[ index ] ) )" isCall="True">
+      <funcRefArg charIndex="18041" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18041" charLength="35" codePart="isdefined( self.perkicon[ index ] )" isCall="True">
+      <funcRefArg charIndex="18052" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="18082" charLength="45" codePart="assert( isdefined( self.perkname[ index ] ) )" isCall="True">
+      <funcRefArg charIndex="18090" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18090" charLength="35" codePart="isdefined( self.perkname[ index ] )" isCall="True">
+      <funcRefArg charIndex="18101" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18139" charLength="21" codePart="isdefined( fadetime )" isCall="True">
+      <funcRefArg charIndex="18150" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18176" charLength="25" codePart="isDefined( hideTextOnly )" isCall="True">
+      <funcRefArg charIndex="18187" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="FadeOverTime" charIndex="18225" charLength="47" codePart="self.perkicon[ index ] fadeOverTime( fadetime )" isCall="True">
+      <funcRefArg charIndex="18262" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="FadeOverTime" charIndex="18277" charLength="47" codePart="self.perkname[ index ] fadeOverTime( fadetime )" isCall="True">
+      <funcRefArg charIndex="18314" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18341" charLength="25" codePart="isDefined( hideTextOnly )" isCall="True">
+      <funcRefArg charIndex="18352" charLength="13" />
+    </funcRef>
+    <error type="warning" charIndex="1043" charLength="75" lineIndex="31">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint', file 'maps\mp\gametypes\_hud_util', line 32, 'self setPoint( self.point, self.relativePoint, self.xOffset, self.yOffset );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="1130" charLength="26" lineIndex="33">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint', file 'maps\mp\gametypes\_hud_util', line 34, 'self setPoint( "TOPLEFT" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="4153" charLength="64" lineIndex="178">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint', file 'maps\mp\gametypes\_hud_util', line 179, 'self.barFrame setPoint( point, relativePoint, xOffset, yOffset );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="4800" charLength="31" lineIndex="207">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::updateBar'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::updateBar', file 'maps\mp\gametypes\_hud_util', line 208, 'self updateBar( self.bar.frac );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="4283" charLength="5" lineIndex="186">
+      <message>Variable 'point' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'point' is defined, but its value is never used., file 'maps\mp\gametypes\_hud_util', line 187, 'setPointBar( point, relativePoint, xOffset, yOffset )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="4290" charLength="13" lineIndex="186">
+      <message>Variable 'relativePoint' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'relativePoint' is defined, but its value is never used., file 'maps\mp\gametypes\_hud_util', line 187, 'setPointBar( point, relativePoint, xOffset, yOffset )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="4305" charLength="7" lineIndex="186">
+      <message>Variable 'xOffset' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'xOffset' is defined, but its value is never used., file 'maps\mp\gametypes\_hud_util', line 187, 'setPointBar( point, relativePoint, xOffset, yOffset )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="4314" charLength="7" lineIndex="186">
+      <message>Variable 'yOffset' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'yOffset' is defined, but its value is never used., file 'maps\mp\gametypes\_hud_util', line 187, 'setPointBar( point, relativePoint, xOffset, yOffset )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="6900" charLength="18" lineIndex="275">
+      <message>Function 'codapi::NewHudElem' has more arguments than parameters in the definition</message>
+      <fullMessage>Warning: Function 'codapi::NewHudElem' has more arguments than parameters in the definition, file 'maps\mp\gametypes\_hud_util', line 276, 'fontElem = newHudElem( self );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="7428" charLength="18" lineIndex="298">
+      <message>Function 'codapi::NewHudElem' has more arguments than parameters in the definition</message>
+      <fullMessage>Warning: Function 'codapi::NewHudElem' has more arguments than parameters in the definition, file 'maps\mp\gametypes\_hud_util', line 299, 'timerElem = newHudElem( self );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8418" charLength="18" lineIndex="341">
+      <message>Function 'codapi::NewHudElem' has more arguments than parameters in the definition</message>
+      <fullMessage>Warning: Function 'codapi::NewHudElem' has more arguments than parameters in the definition, file 'maps\mp\gametypes\_hud_util', line 342, 'iconElem = newHudElem( self );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8963" charLength="18" lineIndex="365">
+      <message>Function 'codapi::NewHudElem' has more arguments than parameters in the definition</message>
+      <fullMessage>Warning: Function 'codapi::NewHudElem' has more arguments than parameters in the definition, file 'maps\mp\gametypes\_hud_util', line 366, 'barElem = newHudElem( self );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="9413" charLength="18" lineIndex="383">
+      <message>Function 'codapi::NewHudElem' has more arguments than parameters in the definition</message>
+      <fullMessage>Warning: Function 'codapi::NewHudElem' has more arguments than parameters in the definition, file 'maps\mp\gametypes\_hud_util', line 384, 'barElemFrame = newHudElem( self );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="10120" charLength="18" lineIndex="406">
+      <message>Function 'codapi::NewHudElem' has more arguments than parameters in the definition</message>
+      <fullMessage>Warning: Function 'codapi::NewHudElem' has more arguments than parameters in the definition, file 'maps\mp\gametypes\_hud_util', line 407, 'barElemBG = newHudElem( self );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="12575" charLength="85" lineIndex="502">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::createBar'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::createBar', file 'maps\mp\gametypes\_hud_util', line 503, 'bar = createBar( (1, 1, 1), level.primaryProgressBarWidth, level.primaryProgressBarHeight );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="12692" charLength="84" lineIndex="504">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint', file 'maps\mp\gametypes\_hud_util', line 505, 'bar setPoint("TOP", undefined, level.primaryProgressBarX, level.primaryProgressBarY);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="12788" charLength="87" lineIndex="506">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint', file 'maps\mp\gametypes\_hud_util', line 507, 'bar setPoint("CENTER", undefined, level.primaryProgressBarX, level.primaryProgressBarY);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="13037" charLength="93" lineIndex="514">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint', file 'maps\mp\gametypes\_hud_util', line 515, 'text setPoint("TOP", undefined, level.primaryProgressBarTextX, level.primaryProgressBarTextY);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="13142" charLength="96" lineIndex="516">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint', file 'maps\mp\gametypes\_hud_util', line 517, 'text setPoint("CENTER", undefined, level.primaryProgressBarTextX, level.primaryProgressBarTextY);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="13760" charLength="100" lineIndex="541">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::createServerBar'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::createServerBar', file 'maps\mp\gametypes\_hud_util', line 542, 'bar = createServerBar( (1,0,0), level.teamProgressBarWidth, level.teamProgressBarHeight, undefined, team );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="13864" charLength="57" lineIndex="542">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint', file 'maps\mp\gametypes\_hud_util', line 543, 'bar setPoint("TOP", undefined, 0, level.teamProgressBarY);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="14063" charLength="62" lineIndex="548">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint', file 'maps\mp\gametypes\_hud_util', line 549, 'text setPoint("TOP", undefined, 0, level.teamProgressBarTextY);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="16284" charLength="80" lineIndex="684">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint', file 'maps\mp\gametypes\_hud_util', line 685, 'child setPoint( child.point, child.relativePoint, child.xOffset, child.yOffset );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="16925" charLength="53" lineIndex="714">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint', file 'maps\mp\gametypes\_hud_util', line 715, 'icon setPoint( "BOTTOMRIGHT", undefined, xpos, ypos );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="17113" charLength="39" lineIndex="720">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::setPoint', file 'maps\mp\gametypes\_hud_util', line 721, 'text setPoint( "RIGHT", "LEFT", -5, 0 );'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

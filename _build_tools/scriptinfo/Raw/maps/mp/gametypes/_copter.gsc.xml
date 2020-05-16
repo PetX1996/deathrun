@@ -1,0 +1,1102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_copter</name>
+  </settings>
+  <content>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getAboveBuildingsLocation" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="location">
+      </param>
+    </func>
+    <func name="vectorAngle" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="v1">
+      </param>
+      <param name="v2">
+      </param>
+    </func>
+    <func name="vectorTowardsOtherVector" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="v1">
+      </param>
+      <param name="v2">
+      </param>
+      <param name="angle">
+      </param>
+    </func>
+    <func name="veclength" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="v">
+      </param>
+    </func>
+    <func name="createCopter" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="location">
+      </param>
+      <param name="team">
+      </param>
+      <param name="damagetrig">
+      </param>
+    </func>
+    <func name="makeCopterPassive" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="makeCopterActive" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="damagetrig">
+      </param>
+    </func>
+    <func name="mylinkto" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="obj">
+      </param>
+    </func>
+    <func name="setCopterDefenseArea" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="areaEnt">
+      </param>
+    </func>
+    <func name="copterAI" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="determineBestPos" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targets">
+      </param>
+      <param name="descendEnt">
+      </param>
+      <param name="startorigin">
+      </param>
+    </func>
+    <func name="determineBestEnt" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targets">
+      </param>
+      <param name="descendEnts">
+      </param>
+      <param name="startorigin">
+      </param>
+    </func>
+    <func name="determineBestAttackPos" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetpos">
+      </param>
+      <param name="curpos">
+      </param>
+      <param name="desireddist">
+      </param>
+    </func>
+    <func name="getRandomPos" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="origin">
+      </param>
+      <param name="radius">
+      </param>
+    </func>
+    <func name="copterShoot" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="myMagicBullet" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="pos">
+      </param>
+      <param name="dir">
+      </param>
+    </func>
+    <func name="setCopterDest" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="newlocation">
+      </param>
+      <param name="descend">
+      </param>
+      <param name="dontascend">
+      </param>
+    </func>
+    <func name="notifyArrived" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="vecscale" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="vec">
+      </param>
+      <param name="scalar">
+      </param>
+    </func>
+    <func name="abs" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="x">
+      </param>
+    </func>
+    <func name="copterMove" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="copterDamage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="damagetrig">
+      </param>
+    </func>
+    <func name="copterDie" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="deleteCopter" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="copterExplodeFX" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="66" charLength="32" codePart="precacheModel(level.coptermodel)" isCall="True">
+      <funcRefArg charIndex="80" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="371" charLength="38" codePart="loadfx(&quot;explosions/default_explosion&quot;)" isCall="True">
+      <funcRefArg charIndex="378" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="442" charLength="44" codePart="loadfx(&quot;explosions/large_vehicle_explosion&quot;)" isCall="True">
+      <funcRefArg charIndex="449" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTrace" charIndex="543" charLength="63" codePart="bullettrace(location + (0,0,10000), location, false, undefined)" isCall="True">
+      <funcRefArg charIndex="555" charLength="22" />
+      <funcRefArg charIndex="579" charLength="8" />
+      <funcRefArg charIndex="589" charLength="5" />
+      <funcRefArg charIndex="596" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTrace" charIndex="913" charLength="78" codePart="bullettrace(thisstartorigin, thisstartorigin + (0,0,-10000), false, undefined)" isCall="True">
+      <funcRefArg charIndex="925" charLength="15" />
+      <funcRefArg charIndex="942" charLength="30" />
+      <funcRefArg charIndex="974" charLength="5" />
+      <funcRefArg charIndex="981" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="1183" charLength="17" codePart="vectordot(v1, v2)" isCall="True">
+      <funcRefArg charIndex="1193" charLength="2" />
+      <funcRefArg charIndex="1197" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="ACos" charIndex="1277" charLength="9" codePart="acos(dot)" isCall="True">
+      <funcRefArg charIndex="1282" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="1343" charLength="17" codePart="vectordot(v1, v2)" isCall="True">
+      <funcRefArg charIndex="1353" charLength="2" />
+      <funcRefArg charIndex="1357" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="1414" charLength="39" codePart="vectornormalize(v2 - vecscale(v1, dot))" isCall="True">
+      <funcRefArg charIndex="1430" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vecscale" charIndex="1435" charLength="17" codePart="vecscale(v1, dot)" isCall="True">
+      <funcRefArg charIndex="1444" charLength="2" />
+      <funcRefArg charIndex="1448" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vecscale" charIndex="1467" charLength="24" codePart="vecscale(v1, cos(angle))" isCall="True">
+      <funcRefArg charIndex="1476" charLength="2" />
+      <funcRefArg charIndex="1480" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Cos" charIndex="1480" charLength="10" codePart="cos(angle)" isCall="True">
+      <funcRefArg charIndex="1484" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vecscale" charIndex="1494" charLength="24" codePart="vecscale(v3, sin(angle))" isCall="True">
+      <funcRefArg charIndex="1503" charLength="2" />
+      <funcRefArg charIndex="1507" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Sin" charIndex="1507" charLength="10" codePart="sin(angle)" isCall="True">
+      <funcRefArg charIndex="1511" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="1549" charLength="20" codePart="distance((0,0,0), v)" isCall="True">
+      <funcRefArg charIndex="1558" charLength="7" />
+      <funcRefArg charIndex="1567" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="getAboveBuildingsLocation" charIndex="1634" charLength="35" codePart="getAboveBuildingsLocation(location)" isCall="True">
+      <funcRefArg charIndex="1660" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="1691" charLength="32" codePart="spawn(&quot;script_origin&quot;, location)" isCall="True">
+      <funcRefArg charIndex="1697" charLength="15" />
+      <funcRefArg charIndex="1714" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorToAngles" charIndex="1749" charLength="25" codePart="vectorToAngles((1, 0, 0))" isCall="True">
+      <funcRefArg charIndex="1764" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="1790" charLength="31" codePart="spawn(&quot;script_model&quot;, location)" isCall="True">
+      <funcRefArg charIndex="1796" charLength="14" />
+      <funcRefArg charIndex="1812" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorToAngles" charIndex="1841" charLength="25" codePart="vectorToAngles((0, 1, 0))" isCall="True">
+      <funcRefArg charIndex="1856" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LinkTo" charIndex="1873" charLength="27" codePart="copter linkto(scriptorigin)" isCall="True">
+      <funcRefArg charIndex="1887" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="1936" charLength="34" codePart="copter setModel(level.coptermodel)" isCall="True">
+      <funcRefArg charIndex="1952" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayLoopSound" charIndex="1974" charLength="42" codePart="copter playLoopSound(&quot;mp_copter_ambience&quot;)" isCall="True">
+      <funcRefArg charIndex="1995" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="mylinkto" charIndex="2066" charLength="40" codePart="damagetrig thread mylinkto(scriptorigin)" isCall="True">
+      <funcRefArg charIndex="2093" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="2463" charLength="28" codePart="getdvar(&quot;scr_copter_health&quot;)" isCall="True">
+      <funcRefArg charIndex="2471" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="2524" charLength="33" codePart="getdvarfloat(&quot;scr_copter_health&quot;)" isCall="True">
+      <funcRefArg charIndex="2537" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="copterAI" charIndex="2595" charLength="30" codePart="scriptorigin thread copterAI()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="copterDamage" charIndex="2629" charLength="44" codePart="scriptorigin thread copterDamage(damagetrig)" isCall="True">
+      <funcRefArg charIndex="2662" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="2732" charLength="32" codePart="self.damagetrig notify(&quot;unlink&quot;)" isCall="True">
+      <funcRefArg charIndex="2755" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="2801" charLength="22" codePart="self notify(&quot;passive&quot;)" isCall="True">
+      <funcRefArg charIndex="2813" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="mylinkto" charIndex="2968" charLength="32" codePart="damagetrig thread mylinkto(self)" isCall="True">
+      <funcRefArg charIndex="2995" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="copterAI" charIndex="3039" charLength="22" codePart="self thread copterAI()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="copterDamage" charIndex="3065" charLength="36" codePart="self thread copterDamage(damagetrig)" isCall="True">
+      <funcRefArg charIndex="3090" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="3128" charLength="20" codePart="self endon(&quot;unlink&quot;)" isCall="True">
+      <funcRefArg charIndex="3139" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3341" charLength="25" codePart="isdefined(areaEnt.target)" isCall="True">
+      <funcRefArg charIndex="3351" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="3398" charLength="41" codePart="getentarray(areaEnt.target, &quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="3410" charLength="14" />
+      <funcRefArg charIndex="3426" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="3542" charLength="54" codePart="getent(self.areaDescentPoints[i].target, &quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="3549" charLength="32" />
+      <funcRefArg charIndex="3583" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="copterMove" charIndex="3624" charLength="24" codePart="self thread copterMove()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="copterShoot" charIndex="3652" charLength="25" codePart="self thread copterShoot()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="3684" charLength="19" codePart="self endon(&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="3695" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="3707" charLength="21" codePart="self endon(&quot;passive&quot;)" isCall="True">
+      <funcRefArg charIndex="3718" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3864" charLength="23" codePart="isdefined(self.areaEnt)" isCall="True">
+      <funcRefArg charIndex="3874" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsAlive" charIndex="4060" charLength="19" codePart="isalive(players[i])" isCall="True">
+      <funcRefArg charIndex="4068" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4083" charLength="34" codePart="isdefined(players[i].pers[&quot;team&quot;])" isCall="True">
+      <funcRefArg charIndex="4093" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4162" charLength="30" codePart="isdefined(players[i].usingObj)" isCall="True">
+      <funcRefArg charIndex="4172" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="4327" charLength="43" codePart="distance(playerorigin, self.areaEnt.origin)" isCall="True">
+      <funcRefArg charIndex="4336" charLength="12" />
+      <funcRefArg charIndex="4350" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTrace" charIndex="4535" charLength="84" codePart="bullettrace(self.origin, self.origin + (0,0,10000), false, undefined)[&quot;position&quot;][2]" isCall="True">
+      <funcRefArg charIndex="4547" charLength="11" />
+      <funcRefArg charIndex="4560" charLength="25" />
+      <funcRefArg charIndex="4587" charLength="5" />
+      <funcRefArg charIndex="4594" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTrace" charIndex="4753" charLength="102" codePart="bulletTrace(enemyTargets[i].origin + (0,0,10), enemyTargets[i].origin + (0,0,10000), false, undefined)" isCall="True">
+      <funcRefArg charIndex="4765" charLength="33" />
+      <funcRefArg charIndex="4800" charLength="36" />
+      <funcRefArg charIndex="4838" charLength="5" />
+      <funcRefArg charIndex="4845" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="determineBestEnt" charIndex="5358" charLength="68" codePart="determineBestEnt(insideTargets, self.areaDescentPoints, self.origin)" isCall="True">
+      <funcRefArg charIndex="5375" charLength="13" />
+      <funcRefArg charIndex="5390" charLength="22" />
+      <funcRefArg charIndex="5414" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5480" charLength="24" codePart="isdefined(descendingEnt)" isCall="True">
+      <funcRefArg charIndex="5490" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5837" charLength="24" codePart="isdefined(descendingEnt)" isCall="True">
+      <funcRefArg charIndex="5847" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="determineBestPos" charIndex="5950" charLength="59" codePart="determineBestPos(insideTargets, descendingEnt, self.origin)" isCall="True">
+      <funcRefArg charIndex="5967" charLength="13" />
+      <funcRefArg charIndex="5982" charLength="13" />
+      <funcRefArg charIndex="5997" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6023" charLength="18" codePart="isdefined(goToPos)" isCall="True">
+      <funcRefArg charIndex="6033" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6121" charLength="24" codePart="isdefined(descendingEnt)" isCall="True">
+      <funcRefArg charIndex="6131" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="determineBestPos" charIndex="6287" charLength="59" codePart="determineBestPos(insideTargets, descendingEnt, self.origin)" isCall="True">
+      <funcRefArg charIndex="6304" charLength="13" />
+      <funcRefArg charIndex="6319" charLength="13" />
+      <funcRefArg charIndex="6334" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6365" charLength="18" codePart="isdefined(goToPos)" isCall="True">
+      <funcRefArg charIndex="6375" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="determineBestEnt" charIndex="6402" charLength="68" codePart="determineBestEnt(insideTargets, self.areaDescentPoints, self.origin)" isCall="True">
+      <funcRefArg charIndex="6419" charLength="13" />
+      <funcRefArg charIndex="6434" charLength="22" />
+      <funcRefArg charIndex="6458" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6482" charLength="31" codePart="isdefined(result[&quot;descendEnt&quot;])" isCall="True">
+      <funcRefArg charIndex="6492" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6668" charLength="24" codePart="isdefined(descendingEnt)" isCall="True">
+      <funcRefArg charIndex="6678" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6708" charLength="25" codePart="isdefined(self.finalDest)" isCall="True">
+      <funcRefArg charIndex="6718" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6941" charLength="18" codePart="isdefined(goToPos)" isCall="True">
+      <funcRefArg charIndex="6951" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="7116" charLength="87" codePart="distance((self.origin[0], self.origin[1], self.areaEnt.origin[2]), self.areaEnt.origin)" isCall="True">
+      <funcRefArg charIndex="7125" charLength="56" />
+      <funcRefArg charIndex="7183" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsAlive" charIndex="7720" charLength="19" codePart="isalive(players[i])" isCall="True">
+      <funcRefArg charIndex="7728" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7743" charLength="34" codePart="isdefined(players[i].pers[&quot;team&quot;])" isCall="True">
+      <funcRefArg charIndex="7753" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7822" charLength="30" codePart="isdefined(players[i].usingObj)" isCall="True">
+      <funcRefArg charIndex="7832" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="7993" charLength="48" codePart="distance(players[i].origin, self.areaEnt.origin)" isCall="True">
+      <funcRefArg charIndex="8002" charLength="17" />
+      <funcRefArg charIndex="8021" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="abs" charIndex="8263" charLength="66" codePart="abs(distance(outsideTargets[i].origin, self.origin) - desireddist)" isCall="True">
+      <funcRefArg charIndex="8267" charLength="61" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="8267" charLength="47" codePart="distance(outsideTargets[i].origin, self.origin)" isCall="True">
+      <funcRefArg charIndex="8276" charLength="24" />
+      <funcRefArg charIndex="8302" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8341" charLength="15" codePart="isdefined(best)" isCall="True">
+      <funcRefArg charIndex="8351" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8460" charLength="15" codePart="isdefined(best)" isCall="True">
+      <funcRefArg charIndex="8470" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="determineBestAttackPos" charIndex="8607" charLength="59" codePart="determineBestAttackPos(attackpos, self.origin, desireddist)" isCall="True">
+      <funcRefArg charIndex="8630" charLength="9" />
+      <funcRefArg charIndex="8641" charLength="11" />
+      <funcRefArg charIndex="8654" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="setCopterDest" charIndex="8726" charLength="34" codePart="self setCopterDest(goToPos, false)" isCall="True">
+      <funcRefArg charIndex="8745" charLength="7" />
+      <funcRefArg charIndex="8754" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="8788" charLength="36" codePart="vectornormalize(attackpos - goToPos)" isCall="True">
+      <funcRefArg charIndex="8804" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="getRandomPos" charIndex="8974" charLength="54" codePart="getRandomPos(self.areaEnt.origin, self.areaEnt.radius)" isCall="True">
+      <funcRefArg charIndex="8987" charLength="19" />
+      <funcRefArg charIndex="9008" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="setCopterDest" charIndex="9035" charLength="34" codePart="self setCopterDest(goToPos, false)" isCall="True">
+      <funcRefArg charIndex="9054" charLength="7" />
+      <funcRefArg charIndex="9063" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="9249" charLength="43" codePart="distance(self.origin, descendingEnt.origin)" isCall="True">
+      <funcRefArg charIndex="9258" charLength="11" />
+      <funcRefArg charIndex="9271" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="9413" charLength="27" codePart="isdefined(oldDescendingEnt)" isCall="True">
+      <funcRefArg charIndex="9423" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="9560" charLength="86" codePart="vectornormalize(descendingEnt.targetEnt.origin - (goToPos - level.copterCenterOffset))" isCall="True">
+      <funcRefArg charIndex="9576" charLength="69" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="setCopterDest" charIndex="9788" charLength="72" codePart="self setCopterDest(goToPos - level.copterCenterOffset, true, goDirectly)" isCall="True">
+      <funcRefArg charIndex="9807" charLength="34" />
+      <funcRefArg charIndex="9843" charLength="4" />
+      <funcRefArg charIndex="9849" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="10178" charLength="38" codePart="distance(targetpos, descendEnt.origin)" isCall="True">
+      <funcRefArg charIndex="10187" charLength="9" />
+      <funcRefArg charIndex="10198" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTracePassed" charIndex="10378" charLength="56" codePart="bullettracepassed(enemypos, targetpos, false, undefined)" isCall="True">
+      <funcRefArg charIndex="10396" charLength="8" />
+      <funcRefArg charIndex="10406" charLength="9" />
+      <funcRefArg charIndex="10417" charLength="5" />
+      <funcRefArg charIndex="10424" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vecscale" charIndex="10528" charLength="43" codePart="vecscale(vectornormalize(dir),circleradius)" isCall="True">
+      <funcRefArg charIndex="10537" charLength="20" />
+      <funcRefArg charIndex="10558" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="10537" charLength="20" codePart="vectornormalize(dir)" isCall="True">
+      <funcRefArg charIndex="10553" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="10657" charLength="34" codePart="distance(isect, descendEnt.origin)" isCall="True">
+      <funcRefArg charIndex="10666" charLength="5" />
+      <funcRefArg charIndex="10673" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="10742" charLength="28" codePart="distance(isect, startorigin)" isCall="True">
+      <funcRefArg charIndex="10751" charLength="5" />
+      <funcRefArg charIndex="10758" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10782" charLength="20" codePart="isdefined(bestpoint)" isCall="True">
+      <funcRefArg charIndex="10792" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="determineBestPos" charIndex="11299" charLength="54" codePart="determineBestPos(targets, descendEnts[i], startorigin)" isCall="True">
+      <funcRefArg charIndex="11316" charLength="7" />
+      <funcRefArg charIndex="11325" charLength="14" />
+      <funcRefArg charIndex="11341" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="11362" charLength="18" codePart="isdefined(thispos)" isCall="True">
+      <funcRefArg charIndex="11372" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="11399" charLength="30" codePart="distance(thispos, startorigin)" isCall="True">
+      <funcRefArg charIndex="11408" charLength="7" />
+      <funcRefArg charIndex="11417" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="11440" charLength="18" codePart="isdefined(bestpos)" isCall="True">
+      <funcRefArg charIndex="11450" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="11577" charLength="18" codePart="isdefined(bestpos)" isCall="True">
+      <funcRefArg charIndex="11587" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="11951" charLength="27" codePart="vectornormalize(attackdirx)" isCall="True">
+      <funcRefArg charIndex="11967" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vecscale" charIndex="12141" charLength="32" codePart="vecscale(attackdirx, cos(theta))" isCall="True">
+      <funcRefArg charIndex="12150" charLength="10" />
+      <funcRefArg charIndex="12162" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Cos" charIndex="12162" charLength="10" codePart="cos(theta)" isCall="True">
+      <funcRefArg charIndex="12166" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vecscale" charIndex="12176" charLength="32" codePart="vecscale(attackdiry, sin(theta))" isCall="True">
+      <funcRefArg charIndex="12185" charLength="10" />
+      <funcRefArg charIndex="12197" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Sin" charIndex="12197" charLength="10" codePart="sin(theta)" isCall="True">
+      <funcRefArg charIndex="12201" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vecscale" charIndex="12248" charLength="30" codePart="vecscale(thisdir, desireddist)" isCall="True">
+      <funcRefArg charIndex="12257" charLength="7" />
+      <funcRefArg charIndex="12266" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTracePassed" charIndex="12299" charLength="56" codePart="bullettracepassed(targetpos, traceend, false, undefined)" isCall="True">
+      <funcRefArg charIndex="12317" charLength="9" />
+      <funcRefArg charIndex="12328" charLength="8" />
+      <funcRefArg charIndex="12338" charLength="5" />
+      <funcRefArg charIndex="12345" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="12392" charLength="26" codePart="distance(traceend, curpos)" isCall="True">
+      <funcRefArg charIndex="12401" charLength="8" />
+      <funcRefArg charIndex="12411" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12429" charLength="18" codePart="isdefined(bestpos)" isCall="True">
+      <funcRefArg charIndex="12439" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12572" charLength="18" codePart="isdefined(bestpos)" isCall="True">
+      <funcRefArg charIndex="12582" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="12639" charLength="39" codePart="distance(targetposcopterheight, curpos)" isCall="True">
+      <funcRefArg charIndex="12648" charLength="21" />
+      <funcRefArg charIndex="12671" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vecscale" charIndex="12735" charLength="61" codePart="vecscale(vectornormalize(attackdirx), 0-(dist - desireddist))" isCall="True">
+      <funcRefArg charIndex="12744" charLength="27" />
+      <funcRefArg charIndex="12773" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="12744" charLength="27" codePart="vectornormalize(attackdirx)" isCall="True">
+      <funcRefArg charIndex="12760" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="12972" charLength="14" codePart="randomfloat(2)" isCall="True">
+      <funcRefArg charIndex="12984" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="12999" charLength="14" codePart="randomfloat(2)" isCall="True">
+      <funcRefArg charIndex="13011" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="DistanceSquared" charIndex="13037" charLength="28" codePart="distanceSquared(pos, origin)" isCall="True">
+      <funcRefArg charIndex="13053" charLength="3" />
+      <funcRefArg charIndex="13058" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="13103" charLength="14" codePart="randomfloat(2)" isCall="True">
+      <funcRefArg charIndex="13115" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="13130" charLength="14" codePart="randomfloat(2)" isCall="True">
+      <funcRefArg charIndex="13142" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="13202" charLength="19" codePart="self endon(&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="13213" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="13225" charLength="21" codePart="self endon(&quot;passive&quot;)" isCall="True">
+      <funcRefArg charIndex="13236" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Cos" charIndex="13268" charLength="7" codePart="cos(10)" isCall="True">
+      <funcRefArg charIndex="13272" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="13299" charLength="32" codePart="isdefined(self.desiredDirEntity)" isCall="True">
+      <funcRefArg charIndex="13309" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="13335" charLength="39" codePart="isdefined(self.desiredDirEntity.origin)" isCall="True">
+      <funcRefArg charIndex="13345" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToForward" charIndex="13518" charLength="28" codePart="anglesToForward(self.angles)" isCall="True">
+      <funcRefArg charIndex="13534" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="13599" charLength="28" codePart="vectornormalize(enemydirraw)" isCall="True">
+      <funcRefArg charIndex="13615" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="13642" charLength="27" codePart="vectordot(curdir, enemydir)" isCall="True">
+      <funcRefArg charIndex="13652" charLength="6" />
+      <funcRefArg charIndex="13660" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTracePassed" charIndex="13712" charLength="52" codePart="bullettracepassed(mypos, enemypos, false, undefined)" isCall="True">
+      <funcRefArg charIndex="13730" charLength="5" />
+      <funcRefArg charIndex="13737" charLength="8" />
+      <funcRefArg charIndex="13747" charLength="5" />
+      <funcRefArg charIndex="13754" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsPlayer" charIndex="13792" charLength="31" codePart="isplayer(self.desiredDirEntity)" isCall="True">
+      <funcRefArg charIndex="13801" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsAlive" charIndex="13827" charLength="30" codePart="isalive(self.desiredDirEntity)" isCall="True">
+      <funcRefArg charIndex="13835" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTracePassed" charIndex="13880" charLength="74" codePart="bullettracepassed(mypos, self.desiredDirEntity getEye(), false, undefined)" isCall="True">
+      <funcRefArg charIndex="13898" charLength="5" />
+      <funcRefArg charIndex="13905" charLength="30" />
+      <funcRefArg charIndex="13937" charLength="5" />
+      <funcRefArg charIndex="13944" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEye" charIndex="13905" charLength="30" codePart="self.desiredDirEntity getEye()" isCall="True" />
+    <funcRef sfPath="codapi" name="PlaySound" charIndex="14003" charLength="33" codePart="self playSound(&quot;mp_copter_shoot&quot;)" isCall="True">
+      <funcRefArg charIndex="14018" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToForward" charIndex="14437" charLength="28" codePart="anglesToForward(self.angles)" isCall="True">
+      <funcRefArg charIndex="14453" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="14490" charLength="14" codePart="randomfloat(2)" isCall="True">
+      <funcRefArg charIndex="14502" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="14515" charLength="14" codePart="randomfloat(2)" isCall="True">
+      <funcRefArg charIndex="14527" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="14540" charLength="14" codePart="randomfloat(2)" isCall="True">
+      <funcRefArg charIndex="14552" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="14578" charLength="20" codePart="vectornormalize(dir)" isCall="True">
+      <funcRefArg charIndex="14594" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="myMagicBullet" charIndex="14607" charLength="30" codePart="self myMagicBullet(mypos, dir)" isCall="True">
+      <funcRefArg charIndex="14626" charLength="5" />
+      <funcRefArg charIndex="14633" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="14955" charLength="28" codePart="getdvar(&quot;scr_copter_damage&quot;)" isCall="True">
+      <funcRefArg charIndex="14963" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="15003" charLength="31" codePart="getdvarint(&quot;scr_copter_damage&quot;)" isCall="True">
+      <funcRefArg charIndex="15014" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTrace" charIndex="15085" charLength="61" codePart="bullettrace(pos, pos + vecscale(dir, 10000), true, undefined)" isCall="True">
+      <funcRefArg charIndex="15097" charLength="3" />
+      <funcRefArg charIndex="15102" charLength="26" />
+      <funcRefArg charIndex="15130" charLength="4" />
+      <funcRefArg charIndex="15136" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vecscale" charIndex="15108" charLength="20" codePart="vecscale(dir, 10000)" isCall="True">
+      <funcRefArg charIndex="15117" charLength="3" />
+      <funcRefArg charIndex="15122" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="15154" charLength="26" codePart="isdefined(trace[&quot;entity&quot;])" isCall="True">
+      <funcRefArg charIndex="15164" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsPlayer" charIndex="15184" charLength="25" codePart="isplayer(trace[&quot;entity&quot;])" isCall="True">
+      <funcRefArg charIndex="15193" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsAlive" charIndex="15213" charLength="24" codePart="isalive(trace[&quot;entity&quot;])" isCall="True">
+      <funcRefArg charIndex="15221" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="getAboveBuildingsLocation" charIndex="16095" charLength="38" codePart="getAboveBuildingsLocation(newlocation)" isCall="True">
+      <funcRefArg charIndex="16121" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="16141" charLength="18" codePart="isdefined(descend)" isCall="True">
+      <funcRefArg charIndex="16151" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="16318" charLength="21" codePart="isdefined(dontascend)" isCall="True">
+      <funcRefArg charIndex="16328" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="16411" charLength="22" codePart="self notify(&quot;arrived&quot;)" isCall="True">
+      <funcRefArg charIndex="16423" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="16602" charLength="19" codePart="self endon(&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="16613" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="16632" charLength="33" codePart="isdefined(self.copterMoveRunning)" isCall="True">
+      <funcRefArg charIndex="16642" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="DistanceSquared" charIndex="16827" charLength="95" codePart="distanceSquared((self.origin[0], self.origin[1], 0), (self.finalDest[0], self.finalDest[1], 0))" isCall="True">
+      <funcRefArg charIndex="16843" charLength="35" />
+      <funcRefArg charIndex="16880" charLength="41" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="getAboveBuildingsLocation" charIndex="17416" charLength="41" codePart="getAboveBuildingsLocation(self.origin)[2]" isCall="True">
+      <funcRefArg charIndex="17442" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="abs" charIndex="17487" charLength="30" codePart="abs(self.origin[2] - desiredZ)" isCall="True">
+      <funcRefArg charIndex="17491" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="18015" charLength="24" codePart="assert(movingVertically)" isCall="True">
+      <funcRefArg charIndex="18022" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vecscale" charIndex="18172" charLength="94" codePart="vecscale(thisDest - (self.origin + vecscale(self.vel, level.copter_accellookahead)), interval)" isCall="True">
+      <funcRefArg charIndex="18181" charLength="74" />
+      <funcRefArg charIndex="18257" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vecscale" charIndex="18207" charLength="47" codePart="vecscale(self.vel, level.copter_accellookahead)" isCall="True">
+      <funcRefArg charIndex="18216" charLength="8" />
+      <funcRefArg charIndex="18226" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="veclength" charIndex="18279" charLength="21" codePart="veclength(idealAccel)" isCall="True">
+      <funcRefArg charIndex="18289" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vecscale" charIndex="18360" charLength="50" codePart="vecscale(idealAccel, level.copter_maxaccel / vlen)" isCall="True">
+      <funcRefArg charIndex="18369" charLength="10" />
+      <funcRefArg charIndex="18381" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="veclength" charIndex="18472" charLength="19" codePart="veclength(self.vel)" isCall="True">
+      <funcRefArg charIndex="18482" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vecscale" charIndex="18547" charLength="46" codePart="vecscale(self.vel, level.copter_maxvel / vlen)" isCall="True">
+      <funcRefArg charIndex="18556" charLength="8" />
+      <funcRefArg charIndex="18566" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vecscale" charIndex="18635" charLength="28" codePart="vecscale(self.vel, interval)" isCall="True">
+      <funcRefArg charIndex="18644" charLength="8" />
+      <funcRefArg charIndex="18654" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="MoveTo" charIndex="18674" charLength="36" codePart="self moveto(thisDest, interval*.999)" isCall="True">
+      <funcRefArg charIndex="18686" charLength="8" />
+      <funcRefArg charIndex="18696" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="veclength" charIndex="18729" charLength="19" codePart="veclength(self.vel)" isCall="True">
+      <funcRefArg charIndex="18739" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18763" charLength="32" codePart="isdefined(self.desiredDirEntity)" isCall="True">
+      <funcRefArg charIndex="18773" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18799" charLength="39" codePart="isdefined(self.desiredDirEntity.origin)" isCall="True">
+      <funcRefArg charIndex="18809" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="18862" charLength="120" codePart="vectornormalize((self.desiredDirEntity.origin + self.desiredDirEntityOffset) - (self.origin + level.copterCenterOffset))" isCall="True">
+      <funcRefArg charIndex="18878" charLength="103" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19003" charLength="26" codePart="isdefined(self.desiredDir)" isCall="True">
+      <funcRefArg charIndex="19013" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToForward" charIndex="19129" charLength="28" codePart="anglesToForward(self.angles)" isCall="True">
+      <funcRefArg charIndex="19145" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="19179" charLength="54" codePart="vectornormalize((self.destDir[0], self.destDir[1], 0))" isCall="True">
+      <funcRefArg charIndex="19195" charLength="37" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="19418" charLength="54" codePart="vectornormalize((self.destDir[0], self.destDir[1], 0))" isCall="True">
+      <funcRefArg charIndex="19434" charLength="37" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vectorAngle" charIndex="19529" charLength="55" codePart="vectorAngle(anglesToForward(self.angles), self.destDir)" isCall="True">
+      <funcRefArg charIndex="19541" charLength="28" />
+      <funcRefArg charIndex="19571" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToForward" charIndex="19541" charLength="28" codePart="anglesToForward(self.angles)" isCall="True">
+      <funcRefArg charIndex="19557" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="19614" charLength="67" codePart="vectornormalize((self.destDir[0], self.destDir[1], tiltamnt * -.4))" isCall="True">
+      <funcRefArg charIndex="19630" charLength="50" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="20490" charLength="44" codePart="vectornormalize((newdir[0], newdir[1], -.4))" isCall="True">
+      <funcRefArg charIndex="20506" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="CombineAngles" charIndex="20719" charLength="37" codePart="combineangles(copterangles, (0,90,0))" isCall="True">
+      <funcRefArg charIndex="20733" charLength="12" />
+      <funcRefArg charIndex="20747" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToForward" charIndex="20770" charLength="29" codePart="anglesToForward(copterangles)" isCall="True">
+      <funcRefArg charIndex="20786" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="20939" charLength="42" codePart="vectornormalize((olddir[0], olddir[1], 0))" isCall="True">
+      <funcRefArg charIndex="20955" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="20997" charLength="42" codePart="vectornormalize((newdir[0], newdir[1], 0))" isCall="True">
+      <funcRefArg charIndex="21013" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vectorAngle" charIndex="21056" charLength="31" codePart="vectorAngle(olddir2d, newdir2d)" isCall="True">
+      <funcRefArg charIndex="21068" charLength="8" />
+      <funcRefArg charIndex="21078" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vectorAngle" charIndex="21102" charLength="27" codePart="vectorAngle(olddir, newdir)" isCall="True">
+      <funcRefArg charIndex="21114" charLength="6" />
+      <funcRefArg charIndex="21122" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vectorTowardsOtherVector" charIndex="21294" charLength="55" codePart="vectorTowardsOtherVector(olddir2d, newdir2d, thisangle)" isCall="True">
+      <funcRefArg charIndex="21319" charLength="8" />
+      <funcRefArg charIndex="21329" charLength="8" />
+      <funcRefArg charIndex="21339" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="veclength" charIndex="21372" charLength="36" codePart="veclength((olddir[0], olddir[1], 0))" isCall="True">
+      <funcRefArg charIndex="21382" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="veclength" charIndex="21431" charLength="36" codePart="veclength((newdir[0], newdir[1], 0))" isCall="True">
+      <funcRefArg charIndex="21441" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="21540" charLength="52" codePart="vectornormalize((newdir2d[0], newdir2d[1], interpz))" isCall="True">
+      <funcRefArg charIndex="21556" charLength="35" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorToAngles" charIndex="21618" charLength="22" codePart="vectorToAngles(newdir)" isCall="True">
+      <funcRefArg charIndex="21633" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="CombineAngles" charIndex="21661" charLength="38" codePart="combineangles(copterangles, (0,-90,0))" isCall="True">
+      <funcRefArg charIndex="21675" charLength="12" />
+      <funcRefArg charIndex="21689" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RotateTo" charIndex="21705" charLength="42" codePart="self rotateto(copterangles, interval*.999)" isCall="True">
+      <funcRefArg charIndex="21719" charLength="12" />
+      <funcRefArg charIndex="21733" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vectorTowardsOtherVector" charIndex="21955" charLength="51" codePart="vectorTowardsOtherVector(olddir, newdir, thisangle)" isCall="True">
+      <funcRefArg charIndex="21980" charLength="6" />
+      <funcRefArg charIndex="21988" charLength="6" />
+      <funcRefArg charIndex="21996" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="22021" charLength="23" codePart="vectornormalize(newdir)" isCall="True">
+      <funcRefArg charIndex="22037" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorToAngles" charIndex="22070" charLength="22" codePart="vectorToAngles(newdir)" isCall="True">
+      <funcRefArg charIndex="22085" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="CombineAngles" charIndex="22113" charLength="38" codePart="combineangles(copterangles, (0,-90,0))" isCall="True">
+      <funcRefArg charIndex="22127" charLength="12" />
+      <funcRefArg charIndex="22141" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RotateTo" charIndex="22157" charLength="42" codePart="self rotateto(copterangles, interval*.999)" isCall="True">
+      <funcRefArg charIndex="22171" charLength="12" />
+      <funcRefArg charIndex="22185" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="22266" charLength="21" codePart="self endon(&quot;passive&quot;)" isCall="True">
+      <funcRefArg charIndex="22277" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="22310" charLength="47" codePart="damagetrig waittill(&quot;damage&quot;, amount, attacker)" isCall="True">
+      <funcRefArg charIndex="22330" charLength="8" />
+      <funcRefArg charIndex="22340" charLength="6" />
+      <funcRefArg charIndex="22348" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="22399" charLength="19" codePart="isdefined(attacker)" isCall="True">
+      <funcRefArg charIndex="22409" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsPlayer" charIndex="22422" charLength="18" codePart="isplayer(attacker)" isCall="True">
+      <funcRefArg charIndex="22431" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="22444" charLength="32" codePart="isdefined(attacker.pers[&quot;team&quot;])" isCall="True">
+      <funcRefArg charIndex="22454" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="copterDie" charIndex="22591" charLength="23" codePart="self thread copterDie()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="22690" charLength="21" codePart="self endon(&quot;passive&quot;)" isCall="True">
+      <funcRefArg charIndex="22701" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="22718" charLength="20" codePart="self notify(&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="22730" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="copterExplodeFX" charIndex="22765" charLength="29" codePart="self thread copterExplodeFX()" isCall="True" />
+    <funcRef sfPath="codapi" name="RotateYaw" charIndex="22846" charLength="47" codePart="self rotateyaw(360 + randomfloat(360), rottime)" isCall="True">
+      <funcRefArg charIndex="22861" charLength="22" />
+      <funcRefArg charIndex="22885" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="22867" charLength="16" codePart="randomfloat(360)" isCall="True">
+      <funcRefArg charIndex="22879" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RotatePitch" charIndex="22897" charLength="49" codePart="self rotatepitch(360 + randomfloat(360), rottime)" isCall="True">
+      <funcRefArg charIndex="22914" charLength="22" />
+      <funcRefArg charIndex="22938" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="22920" charLength="16" codePart="randomfloat(360)" isCall="True">
+      <funcRefArg charIndex="22932" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RotateRoll" charIndex="22950" charLength="48" codePart="self rotateroll(360 + randomfloat(360), rottime)" isCall="True">
+      <funcRefArg charIndex="22966" charLength="22" />
+      <funcRefArg charIndex="22990" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="22972" charLength="16" codePart="randomfloat(360)" isCall="True">
+      <funcRefArg charIndex="22984" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vecscale" charIndex="23040" charLength="30" codePart="vecscale((0,0,-200), interval)" isCall="True">
+      <funcRefArg charIndex="23049" charLength="10" />
+      <funcRefArg charIndex="23061" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="vecscale" charIndex="23098" charLength="28" codePart="vecscale(self.vel, interval)" isCall="True">
+      <funcRefArg charIndex="23107" charLength="8" />
+      <funcRefArg charIndex="23117" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTracePassed" charIndex="23185" charLength="56" codePart="bullettracepassed(self.origin, newpos, false, undefined)" isCall="True">
+      <funcRefArg charIndex="23203" charLength="11" />
+      <funcRefArg charIndex="23216" charLength="6" />
+      <funcRefArg charIndex="23224" charLength="5" />
+      <funcRefArg charIndex="23231" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="MoveTo" charIndex="23280" charLength="34" codePart="self moveto(newpos, interval*.999)" isCall="True">
+      <funcRefArg charIndex="23292" charLength="6" />
+      <funcRefArg charIndex="23300" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayFX" charIndex="23349" charLength="48" codePart="playfx (level.copterfinalexplosion, self.origin)" isCall="True">
+      <funcRefArg charIndex="23357" charLength="26" />
+      <funcRefArg charIndex="23385" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="23412" charLength="35" codePart="spawn(&quot;script_origin&quot;, self.origin)" isCall="True">
+      <funcRefArg charIndex="23418" charLength="15" />
+      <funcRefArg charIndex="23435" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlaySound" charIndex="23451" charLength="41" codePart="fakeself playsound(&quot;mp_copter_explosion&quot;)" isCall="True">
+      <funcRefArg charIndex="23470" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="23496" charLength="25" codePart="self notify(&quot;finaldeath&quot;)" isCall="True">
+      <funcRefArg charIndex="23508" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_copter" name="deleteCopter" charIndex="23528" charLength="14" codePart="deleteCopter()" isCall="True" />
+    <funcRef sfPath="codapi" name="Delete" charIndex="23560" charLength="17" codePart="fakeself delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="23607" charLength="26" codePart="isdefined(self.damagetrig)" isCall="True">
+      <funcRefArg charIndex="23617" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="23640" charLength="32" codePart="self.damagetrig notify(&quot;unlink&quot;)" isCall="True">
+      <funcRefArg charIndex="23663" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="23712" charLength="20" codePart="self.copter delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="Delete" charIndex="23736" charLength="13" codePart="self delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="23778" charLength="24" codePart="self endon(&quot;finaldeath&quot;)" isCall="True">
+      <funcRefArg charIndex="23789" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayFX" charIndex="23824" charLength="43" codePart="playfx (level.copterexplosion, self.origin)" isCall="True">
+      <funcRefArg charIndex="23832" charLength="21" />
+      <funcRefArg charIndex="23855" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlaySound" charIndex="23872" charLength="37" codePart="self playsound(&quot;mp_copter_explosion&quot;)" isCall="True">
+      <funcRefArg charIndex="23887" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="23924" charLength="14" codePart="randomfloat(1)" isCall="True">
+      <funcRefArg charIndex="23936" charLength="1" />
+    </funcRef>
+    <error type="warning" charIndex="8726" charLength="34" lineIndex="309">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_copter::setCopterDest'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_copter::setCopterDest', file 'maps\mp\gametypes\_copter', line 310, 'self setCopterDest(goToPos, false);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="9035" charLength="34" lineIndex="319">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_copter::setCopterDest'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_copter::setCopterDest', file 'maps\mp\gametypes\_copter', line 320, 'self setCopterDest(goToPos, false);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="4633" charLength="10" lineIndex="185">
+      <message>Variable 'bestTarget' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'bestTarget' is defined, but its value is never used., file 'maps\mp\gametypes\_copter', line 186, 'bestTarget = undefined;'</fullMessage>
+    </error>
+    <error type="warning" charIndex="4660" charLength="10" lineIndex="186">
+      <message>Variable 'bestWeight' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'bestWeight' is defined, but its value is never used., file 'maps\mp\gametypes\_copter', line 187, 'bestWeight = 0;'</fullMessage>
+    </error>
+    <error type="warning" charIndex="4725" charLength="6" lineIndex="188">
+      <message>Variable 'inside' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'inside' is defined, but its value is never used., file 'maps\mp\gametypes\_copter', line 189, 'inside = false;'</fullMessage>
+    </error>
+    <error type="warning" charIndex="16528" charLength="52" lineIndex="573">
+      <message>Member 'abs' already defined(codapi::Abs)</message>
+      <fullMessage>Warning: Member 'abs' already defined(codapi::Abs), file 'maps\mp\gametypes\_copter', line 574, 'abs(x)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="16760" charLength="7" lineIndex="590">
+      <message>Variable 'zinterp' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'zinterp' is defined, but its value is never used., file 'maps\mp\gametypes\_copter', line 591, 'zinterp = .1;'</fullMessage>
+    </error>
+    <error type="warning" charIndex="16931" charLength="10" lineIndex="596">
+      <message>Variable 'doneMoving' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'doneMoving' is defined, but its value is never used., file 'maps\mp\gametypes\_copter', line 597, 'doneMoving = horizDistSquared &lt; 10*10;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps/mp/_createfxMenu</name>
+  </settings>
+  <content>
+    <func name="menu" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="name">
+      </param>
+    </func>
+    <func name="setmenu" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="name">
+      </param>
+    </func>
+    <func name="create_fx_menu" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="exit_menu" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="get_last_selected_entity" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="menu_fx_creation" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="finish_creating_entity" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ent">
+      </param>
+    </func>
+    <func name="menu_init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="get_last_selected_ent" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="entities_are_selected" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="menu_change_selected_fx" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="prepare_option_for_change" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="option">
+      </param>
+      <param name="drawnCount">
+      </param>
+    </func>
+    <func name="menu_fx_option_set" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="apply_option_to_selected_fx" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="option">
+      </param>
+      <param name="setting">
+      </param>
+    </func>
+    <func name="set_option_index" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="name">
+      </param>
+    </func>
+    <func name="get_selected_option" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="mask" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="type">
+      </param>
+      <param name="name">
+      </param>
+    </func>
+    <func name="addOption" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="type">
+      </param>
+      <param name="name">
+      </param>
+      <param name="description">
+      </param>
+      <param name="defaultSetting">
+      </param>
+      <param name="mask">
+      </param>
+    </func>
+    <func name="get_option" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="name">
+      </param>
+    </func>
+    <func name="display_fx_info" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ent">
+      </param>
+    </func>
+    <func name="display_fx_add_options" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ent">
+      </param>
+    </func>
+    <func name="add_option_to_selected_entities" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="option">
+      </param>
+    </func>
+    <func name="menuNone" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="draw_effects_list" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="increment_list_offset" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <error type="semantic" charIndex="0" charLength="26" lineIndex="0">
+      <message>Could not include file 'maps\mp\_utility'</message>
+      <fullMessage>Bad semantic: Could not include file 'maps\mp\_utility', file 'maps/mp/_createfxMenu', line 1, '#include maps\mp\_utility;'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="28" charLength="27" lineIndex="1">
+      <message>Could not include file 'maps\mp\_createfx'</message>
+      <fullMessage>Bad semantic: Could not include file 'maps\mp\_createfx', file 'maps/mp/_createfxMenu', line 2, '#include maps\mp\_createfx;'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="57" charLength="32" lineIndex="2">
+      <message>Could not include file 'common_scripts\utility'</message>
+      <fullMessage>Bad semantic: Could not include file 'common_scripts\utility', file 'maps/mp/_createfxMenu', line 3, '#include common_scripts\utility;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

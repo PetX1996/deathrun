@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createfx\coup_audio</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="init_animsounds" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="maps\createfx\coup_audio" name="init_animsounds" charIndex="163" charLength="24" codePart="thread init_animsounds()" isCall="True" />
+    <error type="semantic" charIndex="0" charLength="20" lineIndex="0">
+      <message>Could not include file 'maps\_anim'</message>
+      <fullMessage>Bad semantic: Could not include file 'maps\_anim', file 'maps\createfx\coup_audio', line 1, '#include maps\_anim;'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="238" charLength="88" lineIndex="10">
+      <message>Unknown function 'addNotetrack_animSound'</message>
+      <fullMessage>Bad semantic: Unknown function 'addNotetrack_animSound', file 'maps\createfx\coup_audio', line 11, 'addNotetrack_animSound( "playerview", "intro", "throw_in_car", "scn_coup_throw_in_car" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="330" charLength="77" lineIndex="11">
+      <message>Unknown function 'addNotetrack_animSound'</message>
+      <fullMessage>Bad semantic: Unknown function 'addNotetrack_animSound', file 'maps\createfx\coup_audio', line 12, 'addNotetrack_animSound( "playerview", "intro", "hit", "scn_coup_rifle_butt" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="411" charLength="93" lineIndex="12">
+      <message>Unknown function 'addNotetrack_animSound'</message>
+      <fullMessage>Bad semantic: Unknown function 'addNotetrack_animSound', file 'maps\createfx\coup_audio', line 13, 'addNotetrack_animSound( "human", "intro_leftguard", "door_close", "scn_coup_car_door_close" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="508" charLength="85" lineIndex="13">
+      <message>Unknown function 'addNotetrack_animSound'</message>
+      <fullMessage>Bad semantic: Unknown function 'addNotetrack_animSound', file 'maps\createfx\coup_audio', line 14, 'addNotetrack_animSound( "human", "intro_leftguard", "roof_tap", "scn_coup_roof_tap" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="600" charLength="93" lineIndex="15">
+      <message>Unknown function 'addNotetrack_animSound'</message>
+      <fullMessage>Bad semantic: Unknown function 'addNotetrack_animSound', file 'maps\createfx\coup_audio', line 16, 'addNotetrack_animSound( "human", "carexit_leftguard", "door_open", "scn_coup_car_door_open" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="697" charLength="96" lineIndex="16">
+      <message>Unknown function 'addNotetrack_animSound'</message>
+      <fullMessage>Bad semantic: Unknown function 'addNotetrack_animSound', file 'maps\createfx\coup_audio', line 17, 'addNotetrack_animSound( "playerview", "carexit", "pulled_from_car", "scn_coup_pulled_from_car" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="797" charLength="80" lineIndex="17">
+      <message>Unknown function 'addNotetrack_animSound'</message>
+      <fullMessage>Bad semantic: Unknown function 'addNotetrack_animSound', file 'maps\createfx\coup_audio', line 18, 'addNotetrack_animSound( "playerview", "carexit", "kick", "scn_coup_curb_stomp" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="883" charLength="89" lineIndex="19">
+      <message>Unknown function 'addNotetrack_animSound'</message>
+      <fullMessage>Bad semantic: Unknown function 'addNotetrack_animSound', file 'maps\createfx\coup_audio', line 20, 'addNotetrack_animSound( "playerview", "ending", "tied_to_post", "scn_coup_tied_to_post" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="976" charLength="86" lineIndex="20">
+      <message>Unknown function 'addNotetrack_animSound'</message>
+      <fullMessage>Bad semantic: Unknown function 'addNotetrack_animSound', file 'maps\createfx\coup_audio', line 21, 'addNotetrack_animSound( "human", "ending_alasad", "cock_gun", "assassination_hammer" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1160" charLength="92" lineIndex="23">
+      <message>Unknown function 'addNotetrack_animSound'</message>
+      <fullMessage>Bad semantic: Unknown function 'addNotetrack_animSound', file 'maps\createfx\coup_audio', line 24, 'addNotetrack_animSound( "dumpster", "dumpster_open", "lid_close", "scn_dumpster_lid_close" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1256" charLength="102" lineIndex="24">
+      <message>Unknown function 'addNotetrack_animSound'</message>
+      <fullMessage>Bad semantic: Unknown function 'addNotetrack_animSound', file 'maps\createfx\coup_audio', line 25, 'addNotetrack_animSound( "trashcan_rig", "trash_stumble", "sound_trashcan", "scn_trashcan_knock_over" );'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

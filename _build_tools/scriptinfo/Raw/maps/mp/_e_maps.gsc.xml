@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_e_maps</name>
+  </settings>
+  <content>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="destroy_brush_init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="destroy_brush" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="fx">
+      </param>
+    </func>
+    <func name="damagebyplayers" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="damage">
+      </param>
+    </func>
+    <func name="SpawnDebug" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="text">
+      </param>
+    </func>
+    <func name="SpawnDebugPrint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="text">
+      </param>
+    </func>
+    <error type="semantic" charIndex="0" charLength="23" lineIndex="0">
+      <message>Could not include file 'petx\_include'</message>
+      <fullMessage>Bad semantic: Could not include file 'petx\_include', file 'maps\mp\_e_maps', line 1, '#include petx\_include;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

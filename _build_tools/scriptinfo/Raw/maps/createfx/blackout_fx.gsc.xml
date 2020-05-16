@@ -1,0 +1,1490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createfx\blackout_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <error type="semantic" charIndex="96" charLength="53" lineIndex="4">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 5, 'ent = maps\_utility::createOneshotEffect( "firelp_med_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="394" charLength="53" lineIndex="11">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 12, 'ent = maps\_utility::createOneshotEffect( "firelp_med_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="690" charLength="53" lineIndex="18">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 19, 'ent = maps\_utility::createOneshotEffect( "firelp_med_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="990" charLength="53" lineIndex="25">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 26, 'ent = maps\_utility::createOneshotEffect( "firelp_med_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1297" charLength="40" lineIndex="32">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 33, 'ent = maps\_utility::createExploder( "No FX" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1615" charLength="40" lineIndex="40">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 41, 'ent = maps\_utility::createExploder( "No FX" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1935" charLength="40" lineIndex="48">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 49, 'ent = maps\_utility::createExploder( "No FX" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2252" charLength="40" lineIndex="56">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 57, 'ent = maps\_utility::createExploder( "No FX" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2572" charLength="40" lineIndex="64">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 65, 'ent = maps\_utility::createExploder( "No FX" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2892" charLength="40" lineIndex="72">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 73, 'ent = maps\_utility::createExploder( "No FX" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3212" charLength="40" lineIndex="80">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 81, 'ent = maps\_utility::createExploder( "No FX" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3532" charLength="40" lineIndex="88">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 89, 'ent = maps\_utility::createExploder( "No FX" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3851" charLength="41" lineIndex="96">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 97, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4248" charLength="41" lineIndex="106">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 107, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4645" charLength="41" lineIndex="116">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 117, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5041" charLength="41" lineIndex="126">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 127, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5438" charLength="41" lineIndex="136">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 137, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5835" charLength="41" lineIndex="146">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 147, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6232" charLength="41" lineIndex="156">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 157, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6629" charLength="41" lineIndex="166">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 167, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7025" charLength="41" lineIndex="176">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 177, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7420" charLength="41" lineIndex="186">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 187, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7815" charLength="41" lineIndex="196">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 197, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8210" charLength="41" lineIndex="206">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 207, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8605" charLength="41" lineIndex="216">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 217, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9000" charLength="41" lineIndex="226">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 227, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9395" charLength="41" lineIndex="236">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 237, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9790" charLength="41" lineIndex="246">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 247, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10185" charLength="41" lineIndex="256">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 257, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10580" charLength="41" lineIndex="266">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 267, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10975" charLength="41" lineIndex="276">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 277, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11370" charLength="41" lineIndex="286">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 287, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11764" charLength="41" lineIndex="296">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 297, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="12159" charLength="41" lineIndex="306">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 307, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="12554" charLength="41" lineIndex="316">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 317, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="12949" charLength="41" lineIndex="326">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 327, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="13344" charLength="41" lineIndex="336">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 337, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="13739" charLength="41" lineIndex="346">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 347, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="14134" charLength="41" lineIndex="356">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 357, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="14528" charLength="41" lineIndex="366">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 367, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="14923" charLength="41" lineIndex="376">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 377, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="15318" charLength="41" lineIndex="386">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 387, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="15713" charLength="41" lineIndex="396">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 397, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="16108" charLength="41" lineIndex="406">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 407, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="16503" charLength="41" lineIndex="416">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 417, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="16897" charLength="41" lineIndex="426">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 427, 'ent = maps\_utility::createExploder( "mortar" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="17292" charLength="46" lineIndex="436">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 437, 'ent = maps\_utility::createOneshotEffect( "lava_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="17536" charLength="46" lineIndex="442">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 443, 'ent = maps\_utility::createOneshotEffect( "lava_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="17779" charLength="46" lineIndex="448">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 449, 'ent = maps\_utility::createOneshotEffect( "lava_b" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18023" charLength="46" lineIndex="454">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 455, 'ent = maps\_utility::createOneshotEffect( "lava_b" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18266" charLength="46" lineIndex="460">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 461, 'ent = maps\_utility::createOneshotEffect( "lava_b" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18509" charLength="46" lineIndex="466">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 467, 'ent = maps\_utility::createOneshotEffect( "lava_d" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18753" charLength="46" lineIndex="472">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 473, 'ent = maps\_utility::createOneshotEffect( "lava_c" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18988" charLength="53" lineIndex="478">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 479, 'ent = maps\_utility::createOneshotEffect( "firelp_med_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19284" charLength="53" lineIndex="485">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 486, 'ent = maps\_utility::createOneshotEffect( "firelp_med_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19594" charLength="46" lineIndex="492">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 493, 'ent = maps\_utility::createOneshotEffect( "lava_b" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19828" charLength="46" lineIndex="498">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 499, 'ent = maps\_utility::createOneshotEffect( "lava_c" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20063" charLength="46" lineIndex="504">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 505, 'ent = maps\_utility::createOneshotEffect( "lava_c" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20298" charLength="46" lineIndex="510">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 511, 'ent = maps\_utility::createOneshotEffect( "lava_c" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20532" charLength="46" lineIndex="516">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 517, 'ent = maps\_utility::createOneshotEffect( "lava_d" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20767" charLength="44" lineIndex="522">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 523, 'ent = maps\_utility::createOneshotEffect( "lava" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20998" charLength="50" lineIndex="528">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 529, 'ent = maps\_utility::createOneshotEffect( "lava_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21240" charLength="52" lineIndex="534">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 535, 'ent = maps\_utility::createOneshotEffect( "lava_a_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21487" charLength="50" lineIndex="540">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 541, 'ent = maps\_utility::createOneshotEffect( "lava_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21730" charLength="52" lineIndex="546">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 547, 'ent = maps\_utility::createOneshotEffect( "lava_a_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21977" charLength="52" lineIndex="552">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 553, 'ent = maps\_utility::createOneshotEffect( "lava_a_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22221" charLength="50" lineIndex="558">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 559, 'ent = maps\_utility::createOneshotEffect( "lava_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22464" charLength="46" lineIndex="564">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 565, 'ent = maps\_utility::createOneshotEffect( "lava_c" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22699" charLength="46" lineIndex="570">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 571, 'ent = maps\_utility::createOneshotEffect( "lava_d" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22933" charLength="46" lineIndex="576">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 577, 'ent = maps\_utility::createOneshotEffect( "lava_d" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23162" charLength="52" lineIndex="582">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 583, 'ent = maps\_utility::createOneshotEffect( "lava_a_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23406" charLength="52" lineIndex="588">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 589, 'ent = maps\_utility::createOneshotEffect( "lava_a_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23647" charLength="50" lineIndex="594">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 595, 'ent = maps\_utility::createOneshotEffect( "lava_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23883" charLength="50" lineIndex="600">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 601, 'ent = maps\_utility::createOneshotEffect( "lava_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24120" charLength="46" lineIndex="606">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 607, 'ent = maps\_utility::createOneshotEffect( "lava_c" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24349" charLength="52" lineIndex="612">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 613, 'ent = maps\_utility::createOneshotEffect( "lava_a_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24591" charLength="50" lineIndex="618">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 619, 'ent = maps\_utility::createOneshotEffect( "lava_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24829" charLength="46" lineIndex="624">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 625, 'ent = maps\_utility::createOneshotEffect( "lava_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25070" charLength="46" lineIndex="630">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 631, 'ent = maps\_utility::createOneshotEffect( "lava_b" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25310" charLength="52" lineIndex="636">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 637, 'ent = maps\_utility::createOneshotEffect( "lava_a_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25563" charLength="50" lineIndex="642">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 643, 'ent = maps\_utility::createOneshotEffect( "lava_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25812" charLength="50" lineIndex="648">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 649, 'ent = maps\_utility::createOneshotEffect( "lava_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="26061" charLength="55" lineIndex="654">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 655, 'ent = maps\_utility::createOneshotEffect( "lava_ash_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="26321" charLength="55" lineIndex="660">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 661, 'ent = maps\_utility::createOneshotEffect( "lava_ash_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="26579" charLength="55" lineIndex="666">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 667, 'ent = maps\_utility::createOneshotEffect( "lava_ash_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="26839" charLength="55" lineIndex="672">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 673, 'ent = maps\_utility::createOneshotEffect( "lava_ash_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="27101" charLength="55" lineIndex="678">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 679, 'ent = maps\_utility::createOneshotEffect( "lava_ash_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="27356" charLength="55" lineIndex="684">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 685, 'ent = maps\_utility::createOneshotEffect( "lava_ash_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="27618" charLength="60" lineIndex="690">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 691, 'ent = maps\_utility::createOneshotEffect( "village_smolder_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="27890" charLength="64" lineIndex="696">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 697, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_v" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="28170" charLength="64" lineIndex="702">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 703, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_v" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="28450" charLength="64" lineIndex="708">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 709, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="28730" charLength="64" lineIndex="714">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 715, 'ent = maps\_utility::createOneshotEffect( "firelp_small_streak_pm_h" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="29010" charLength="53" lineIndex="720">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 721, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="29253" charLength="53" lineIndex="726">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 727, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="29494" charLength="53" lineIndex="732">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 733, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="29737" charLength="53" lineIndex="738">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 739, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="29980" charLength="53" lineIndex="744">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 745, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="30223" charLength="53" lineIndex="750">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 751, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="30466" charLength="53" lineIndex="756">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 757, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="30709" charLength="53" lineIndex="762">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 763, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="30949" charLength="53" lineIndex="768">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 769, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="31196" charLength="53" lineIndex="774">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 775, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="31438" charLength="53" lineIndex="780">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 781, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="31684" charLength="53" lineIndex="786">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 787, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="31931" charLength="53" lineIndex="792">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 793, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="32178" charLength="53" lineIndex="798">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 799, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="32431" charLength="53" lineIndex="804">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 805, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="32674" charLength="53" lineIndex="810">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 811, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="32917" charLength="53" lineIndex="816">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 817, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="33160" charLength="53" lineIndex="822">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 823, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="33403" charLength="53" lineIndex="828">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 829, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="33646" charLength="53" lineIndex="834">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 835, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="33889" charLength="53" lineIndex="840">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 841, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="34136" charLength="53" lineIndex="846">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 847, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="34382" charLength="53" lineIndex="852">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 853, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="34628" charLength="53" lineIndex="858">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 859, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="34875" charLength="53" lineIndex="864">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 865, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="35122" charLength="53" lineIndex="870">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 871, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="35369" charLength="53" lineIndex="876">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 877, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="35616" charLength="53" lineIndex="882">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 883, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="35863" charLength="53" lineIndex="888">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 889, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="36110" charLength="53" lineIndex="894">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 895, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="36354" charLength="53" lineIndex="900">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 901, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="36601" charLength="53" lineIndex="906">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 907, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="36848" charLength="53" lineIndex="912">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 913, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="37095" charLength="57" lineIndex="918">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 919, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="37346" charLength="57" lineIndex="924">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 925, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="37601" charLength="57" lineIndex="930">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 931, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="37856" charLength="57" lineIndex="936">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 937, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="38105" charLength="57" lineIndex="942">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 943, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="38356" charLength="57" lineIndex="948">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 949, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="38607" charLength="57" lineIndex="954">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 955, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="38858" charLength="57" lineIndex="960">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 961, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="39108" charLength="57" lineIndex="966">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 967, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="39359" charLength="57" lineIndex="972">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 973, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="39610" charLength="57" lineIndex="978">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 979, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="39861" charLength="57" lineIndex="984">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 985, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="40112" charLength="57" lineIndex="990">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 991, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="40363" charLength="57" lineIndex="996">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 997, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="40614" charLength="57" lineIndex="1002">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1003, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="40869" charLength="57" lineIndex="1008">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1009, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="41120" charLength="57" lineIndex="1014">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1015, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="41370" charLength="57" lineIndex="1020">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1021, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="41625" charLength="57" lineIndex="1026">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1027, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="41879" charLength="57" lineIndex="1032">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1033, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="42134" charLength="57" lineIndex="1038">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1039, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="42389" charLength="57" lineIndex="1044">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1045, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="42639" charLength="57" lineIndex="1050">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1051, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="42891" charLength="57" lineIndex="1056">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1057, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="43145" charLength="57" lineIndex="1062">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1063, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="43400" charLength="57" lineIndex="1068">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1069, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="43667" charLength="57" lineIndex="1074">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1075, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="43922" charLength="57" lineIndex="1080">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1081, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="44177" charLength="57" lineIndex="1086">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1087, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="44428" charLength="57" lineIndex="1092">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1093, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="44683" charLength="57" lineIndex="1098">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1099, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="44938" charLength="57" lineIndex="1104">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1105, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="45193" charLength="57" lineIndex="1110">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1111, 'ent = maps\_utility::createOneshotEffect( "insects_firefly_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="45448" charLength="62" lineIndex="1116">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1117, 'ent = maps\_utility::createOneshotEffect( "dust_ceiling_ash_small" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="45712" charLength="60" lineIndex="1122">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1123, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="45988" charLength="60" lineIndex="1128">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1129, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="46264" charLength="62" lineIndex="1134">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1135, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_field" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="46545" charLength="51" lineIndex="1140">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1141, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="46787" charLength="51" lineIndex="1146">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1147, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="47041" charLength="51" lineIndex="1152">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1153, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="47293" charLength="51" lineIndex="1158">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1159, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="47531" charLength="51" lineIndex="1164">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1165, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="47769" charLength="51" lineIndex="1170">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1171, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="48019" charLength="51" lineIndex="1176">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1177, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="48266" charLength="51" lineIndex="1182">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1183, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="48508" charLength="51" lineIndex="1188">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1189, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="48750" charLength="51" lineIndex="1194">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1195, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="49003" charLength="51" lineIndex="1200">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1201, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="49257" charLength="51" lineIndex="1206">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1207, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="49510" charLength="51" lineIndex="1212">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1213, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="49769" charLength="62" lineIndex="1218">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1219, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="50032" charLength="62" lineIndex="1224">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1225, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="50309" charLength="62" lineIndex="1230">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1231, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="50573" charLength="62" lineIndex="1236">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1237, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="50837" charLength="62" lineIndex="1242">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1243, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="51101" charLength="62" lineIndex="1248">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1249, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="51365" charLength="62" lineIndex="1254">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1255, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="51628" charLength="62" lineIndex="1260">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1261, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="51892" charLength="62" lineIndex="1266">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1267, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="52168" charLength="62" lineIndex="1272">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1273, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="52431" charLength="62" lineIndex="1278">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1279, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="52695" charLength="62" lineIndex="1284">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1285, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="52958" charLength="62" lineIndex="1290">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1291, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="53221" charLength="62" lineIndex="1296">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1297, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="53484" charLength="62" lineIndex="1302">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1303, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="53747" charLength="62" lineIndex="1308">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1309, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="54009" charLength="62" lineIndex="1314">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1315, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="54272" charLength="51" lineIndex="1320">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1321, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="54513" charLength="51" lineIndex="1326">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1327, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="54754" charLength="51" lineIndex="1332">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1333, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="55005" charLength="62" lineIndex="1338">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1339, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="55268" charLength="62" lineIndex="1344">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1345, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="55530" charLength="62" lineIndex="1350">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1351, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="55793" charLength="62" lineIndex="1356">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1357, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="56052" charLength="62" lineIndex="1362">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1363, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="56315" charLength="51" lineIndex="1368">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1369, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="56568" charLength="62" lineIndex="1374">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1375, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="56831" charLength="62" lineIndex="1380">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1381, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="57093" charLength="62" lineIndex="1386">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1387, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="57356" charLength="62" lineIndex="1392">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1393, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="57619" charLength="53" lineIndex="1398">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1399, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="57864" charLength="53" lineIndex="1404">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1405, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="58110" charLength="53" lineIndex="1410">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1411, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="58356" charLength="62" lineIndex="1416">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1417, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="58620" charLength="62" lineIndex="1422">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1423, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="58883" charLength="62" lineIndex="1428">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1429, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="59143" charLength="62" lineIndex="1434">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1435, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="59407" charLength="62" lineIndex="1440">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1441, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="59670" charLength="62" lineIndex="1446">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1447, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="59934" charLength="62" lineIndex="1452">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1453, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="60195" charLength="62" lineIndex="1458">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1459, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="60459" charLength="62" lineIndex="1464">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1465, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="60721" charLength="53" lineIndex="1470">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1471, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="60966" charLength="53" lineIndex="1476">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1477, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="61208" charLength="53" lineIndex="1482">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1483, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="61453" charLength="53" lineIndex="1488">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1489, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="61698" charLength="53" lineIndex="1494">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1495, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="61943" charLength="53" lineIndex="1500">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1501, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="62188" charLength="51" lineIndex="1506">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1507, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="62441" charLength="51" lineIndex="1512">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1513, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="62694" charLength="51" lineIndex="1518">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1519, 'ent = maps\_utility::createOneshotEffect( "moth_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="62944" charLength="62" lineIndex="1524">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1525, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="63207" charLength="62" lineIndex="1530">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1531, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="63469" charLength="62" lineIndex="1536">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1537, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="63732" charLength="62" lineIndex="1542">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1543, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="63994" charLength="62" lineIndex="1548">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1549, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="64257" charLength="62" lineIndex="1554">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1555, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="64519" charLength="62" lineIndex="1560">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1561, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="64780" charLength="53" lineIndex="1566">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1567, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="65026" charLength="53" lineIndex="1572">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1573, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="65272" charLength="53" lineIndex="1578">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1579, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="65517" charLength="53" lineIndex="1584">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1585, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="65763" charLength="53" lineIndex="1590">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1591, 'ent = maps\_utility::createOneshotEffect( "fog_river_200" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="66009" charLength="60" lineIndex="1596">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1597, 'ent = maps\_utility::createOneshotEffect( "village_smolder_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="66264" charLength="60" lineIndex="1602">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1603, 'ent = maps\_utility::createOneshotEffect( "village_smolder_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="66523" charLength="60" lineIndex="1608">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1609, 'ent = maps\_utility::createOneshotEffect( "village_smolder_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="66783" charLength="62" lineIndex="1614">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1615, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="67047" charLength="62" lineIndex="1620">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1621, 'ent = maps\_utility::createOneshotEffect( "insects_carcass_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="67311" charLength="60" lineIndex="1626">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1627, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="67587" charLength="60" lineIndex="1632">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1633, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="67863" charLength="60" lineIndex="1638">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1639, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="68139" charLength="60" lineIndex="1644">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1645, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="68415" charLength="60" lineIndex="1650">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 1651, 'ent = maps\_utility::createOneshotEffect( "light_shaft_dust_med" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="68690" charLength="33" lineIndex="1656">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1657, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="68899" charLength="33" lineIndex="1661">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1662, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="69102" charLength="33" lineIndex="1666">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1667, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="69305" charLength="33" lineIndex="1671">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1672, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="69508" charLength="33" lineIndex="1676">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1677, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="69711" charLength="33" lineIndex="1681">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1682, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="69914" charLength="33" lineIndex="1686">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1687, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="70115" charLength="33" lineIndex="1691">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1692, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="70318" charLength="33" lineIndex="1696">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1697, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="70519" charLength="33" lineIndex="1701">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1702, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="70725" charLength="33" lineIndex="1706">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1707, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="70928" charLength="33" lineIndex="1711">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1712, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="71134" charLength="33" lineIndex="1716">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1717, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="71339" charLength="33" lineIndex="1721">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1722, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="71543" charLength="33" lineIndex="1726">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1727, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="71748" charLength="33" lineIndex="1731">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1732, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="71953" charLength="33" lineIndex="1736">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1737, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="72158" charLength="33" lineIndex="1741">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1742, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="72362" charLength="33" lineIndex="1746">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1747, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="72567" charLength="33" lineIndex="1751">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1752, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="72772" charLength="33" lineIndex="1756">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1757, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="72977" charLength="33" lineIndex="1761">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1762, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="73181" charLength="33" lineIndex="1766">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1767, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="73382" charLength="33" lineIndex="1771">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1772, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="73586" charLength="33" lineIndex="1776">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1777, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="73791" charLength="33" lineIndex="1781">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1782, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="73996" charLength="33" lineIndex="1786">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1787, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="74201" charLength="33" lineIndex="1791">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1792, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="74406" charLength="33" lineIndex="1796">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1797, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="74608" charLength="33" lineIndex="1801">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1802, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="74809" charLength="33" lineIndex="1806">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1807, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="75012" charLength="33" lineIndex="1811">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1812, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="75215" charLength="33" lineIndex="1816">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1817, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="75416" charLength="33" lineIndex="1821">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1822, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="75628" charLength="33" lineIndex="1826">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1827, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="75829" charLength="33" lineIndex="1831">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1832, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="76034" charLength="33" lineIndex="1836">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1837, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="76237" charLength="33" lineIndex="1841">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1842, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="76443" charLength="33" lineIndex="1846">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1847, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="76648" charLength="33" lineIndex="1851">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1852, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="76857" charLength="33" lineIndex="1856">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1857, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="77070" charLength="33" lineIndex="1861">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1862, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="77278" charLength="33" lineIndex="1866">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1867, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="77486" charLength="33" lineIndex="1871">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1872, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="77694" charLength="33" lineIndex="1876">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1877, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="77900" charLength="33" lineIndex="1881">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1882, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="78108" charLength="33" lineIndex="1886">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1887, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="78316" charLength="33" lineIndex="1891">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1892, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="78522" charLength="33" lineIndex="1896">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1897, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="78730" charLength="33" lineIndex="1901">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1902, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="78935" charLength="33" lineIndex="1906">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1907, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="79141" charLength="33" lineIndex="1911">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1912, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="79349" charLength="33" lineIndex="1916">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1917, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="79553" charLength="33" lineIndex="1921">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1922, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="79761" charLength="33" lineIndex="1926">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1927, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="79968" charLength="33" lineIndex="1931">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1932, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="80176" charLength="33" lineIndex="1936">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1937, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="80384" charLength="33" lineIndex="1941">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1942, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="80592" charLength="33" lineIndex="1946">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1947, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="80799" charLength="33" lineIndex="1951">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1952, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="81007" charLength="33" lineIndex="1956">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1957, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="81215" charLength="33" lineIndex="1961">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1962, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="81423" charLength="33" lineIndex="1966">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1967, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="81631" charLength="33" lineIndex="1971">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1972, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="81839" charLength="33" lineIndex="1976">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1977, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="82047" charLength="33" lineIndex="1981">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1982, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="82254" charLength="33" lineIndex="1986">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1987, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="82460" charLength="33" lineIndex="1991">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1992, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="82667" charLength="33" lineIndex="1996">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 1997, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="82874" charLength="33" lineIndex="2001">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2002, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="83081" charLength="33" lineIndex="2006">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2007, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="83288" charLength="33" lineIndex="2011">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2012, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="83496" charLength="33" lineIndex="2016">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2017, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="83704" charLength="33" lineIndex="2021">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2022, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="83911" charLength="33" lineIndex="2026">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2027, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="84119" charLength="33" lineIndex="2031">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2032, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="84327" charLength="33" lineIndex="2036">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2037, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="84533" charLength="33" lineIndex="2041">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2042, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="84741" charLength="33" lineIndex="2046">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2047, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="84949" charLength="33" lineIndex="2051">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2052, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="85156" charLength="33" lineIndex="2056">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2057, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="85363" charLength="33" lineIndex="2061">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2062, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="85571" charLength="33" lineIndex="2066">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2067, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="85779" charLength="33" lineIndex="2071">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2072, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="85987" charLength="58" lineIndex="2076">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 2077, 'ent = maps\_utility::createOneshotEffect( "hallway_smoke_dark" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="86247" charLength="58" lineIndex="2082">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 2083, 'ent = maps\_utility::createOneshotEffect( "hallway_smoke_dark" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="86506" charLength="58" lineIndex="2088">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 2089, 'ent = maps\_utility::createOneshotEffect( "hallway_smoke_dark" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="86766" charLength="58" lineIndex="2094">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 2095, 'ent = maps\_utility::createOneshotEffect( "hallway_smoke_dark" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="87022" charLength="58" lineIndex="2100">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 2101, 'ent = maps\_utility::createOneshotEffect( "hallway_smoke_dark" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="87282" charLength="58" lineIndex="2106">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 2107, 'ent = maps\_utility::createOneshotEffect( "hallway_smoke_dark" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="87538" charLength="58" lineIndex="2112">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 2113, 'ent = maps\_utility::createOneshotEffect( "hallway_smoke_dark" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="87798" charLength="58" lineIndex="2118">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\blackout_fx', line 2119, 'ent = maps\_utility::createOneshotEffect( "hallway_smoke_dark" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="88054" charLength="33" lineIndex="2124">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2125, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="88255" charLength="33" lineIndex="2129">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2130, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="88466" charLength="33" lineIndex="2134">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2135, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="88676" charLength="33" lineIndex="2139">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2140, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="88886" charLength="33" lineIndex="2144">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2145, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="89098" charLength="33" lineIndex="2149">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2150, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="89310" charLength="33" lineIndex="2154">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2155, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="89520" charLength="33" lineIndex="2159">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2160, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="89732" charLength="33" lineIndex="2164">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2165, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="89943" charLength="33" lineIndex="2169">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2170, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="90155" charLength="33" lineIndex="2174">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2175, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="90366" charLength="33" lineIndex="2179">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2180, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="90577" charLength="33" lineIndex="2184">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2185, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="90788" charLength="33" lineIndex="2189">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2190, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="91000" charLength="33" lineIndex="2194">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2195, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="91212" charLength="33" lineIndex="2199">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2200, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="91423" charLength="33" lineIndex="2204">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2205, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="91635" charLength="33" lineIndex="2209">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2210, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="91847" charLength="33" lineIndex="2214">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2215, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="92059" charLength="33" lineIndex="2219">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2220, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="92271" charLength="33" lineIndex="2224">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2225, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="92483" charLength="33" lineIndex="2229">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2230, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="92695" charLength="33" lineIndex="2234">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2235, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="92907" charLength="33" lineIndex="2239">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2240, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="93119" charLength="33" lineIndex="2244">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2245, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="93331" charLength="33" lineIndex="2249">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2250, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="93543" charLength="33" lineIndex="2254">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\blackout_fx', line 2255, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

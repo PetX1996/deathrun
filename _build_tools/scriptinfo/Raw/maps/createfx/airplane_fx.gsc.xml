@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createfx\airplane_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <error type="semantic" charIndex="95" charLength="55" lineIndex="4">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 5, 'ent = maps\_utility::createExploder( "fuselage_explosion10" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="379" charLength="63" lineIndex="11">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 12, 'ent = maps\_utility::createExploder( "fuselage_explosion_wind_suck" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="718" charLength="54" lineIndex="19">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 20, 'ent = maps\_utility::createOneshotEffect( "exit_door_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="977" charLength="54" lineIndex="25">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 26, 'ent = maps\_utility::createOneshotEffect( "exit_door_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1236" charLength="54" lineIndex="31">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 32, 'ent = maps\_utility::createOneshotEffect( "exit_door_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1495" charLength="54" lineIndex="37">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 38, 'ent = maps\_utility::createOneshotEffect( "exit_door_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1753" charLength="54" lineIndex="43">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 44, 'ent = maps\_utility::createOneshotEffect( "exit_door_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2011" charLength="65" lineIndex="49">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 50, 'ent = maps\_utility::createExploder( "fuselage_explosion_cabin_dust1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2329" charLength="65" lineIndex="56">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 57, 'ent = maps\_utility::createExploder( "fuselage_explosion_cabin_dust1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2647" charLength="65" lineIndex="63">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 64, 'ent = maps\_utility::createExploder( "fuselage_explosion_cabin_dust1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2969" charLength="65" lineIndex="70">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 71, 'ent = maps\_utility::createExploder( "fuselage_explosion_cabin_dust1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3287" charLength="65" lineIndex="77">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 78, 'ent = maps\_utility::createExploder( "fuselage_explosion_cabin_dust1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3605" charLength="59" lineIndex="84">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 85, 'ent = maps\_utility::createOneshotEffect( "exit_door_wind_suck" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3874" charLength="54" lineIndex="90">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 91, 'ent = maps\_utility::createOneshotEffect( "exit_door_dust" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4132" charLength="55" lineIndex="96">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 97, 'ent = maps\_utility::createExploder( "fuselage_explosion10" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4471" charLength="54" lineIndex="104">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 105, 'ent = maps\_utility::createExploder( "fuselage_explosion1" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4806" charLength="53" lineIndex="112">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 113, 'ent = maps\_utility::createExploder( "airplane_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5156" charLength="53" lineIndex="120">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 121, 'ent = maps\_utility::createExploder( "airplane_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5506" charLength="53" lineIndex="128">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 129, 'ent = maps\_utility::createExploder( "airplane_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5855" charLength="53" lineIndex="136">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 137, 'ent = maps\_utility::createExploder( "airplane_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6203" charLength="53" lineIndex="144">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 145, 'ent = maps\_utility::createExploder( "suitcase_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6480" charLength="53" lineIndex="151">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 152, 'ent = maps\_utility::createExploder( "airplane_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6831" charLength="53" lineIndex="159">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 160, 'ent = maps\_utility::createExploder( "airplane_explosion" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7169" charLength="59" lineIndex="167">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 168, 'ent = maps\_utility::createExploder( "fuselage_breach_airleak2" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7524" charLength="59" lineIndex="175">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 176, 'ent = maps\_utility::createExploder( "fuselage_breach_airleak2" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7881" charLength="59" lineIndex="183">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 184, 'ent = maps\_utility::createExploder( "fuselage_breach_airleak2" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8237" charLength="52" lineIndex="191">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\airplane_fx', line 192, 'ent = maps\_utility::createOneshotEffect( "cloud_tunnel" );'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

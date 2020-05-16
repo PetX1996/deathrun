@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_teargrenades</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="startMonitoringTearUsage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="stopMonitoringTearUsage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="disconnected">
+      </param>
+    </func>
+    <func name="monitorTearUsage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="tearGrenade_think" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="tear" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="pos">
+      </param>
+    </func>
+    <func name="teartimer" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="teargassuffering" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="drawcylinder" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="pos">
+      </param>
+      <param name="rad">
+      </param>
+      <param name="height">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="PreCacheShellShock" charIndex="361" charLength="29" codePart="precacheShellShock(&quot;teargas&quot;)" isCall="True">
+      <funcRefArg charIndex="380" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_perplayer" name="init" charIndex="409" charLength="113" codePart="maps\mp\gametypes\_perplayer::init(&quot;tear_grenade_monitor&quot;, ::startMonitoringTearUsage, ::stopMonitoringTearUsage)" isCall="True">
+      <funcRefArg charIndex="444" charLength="22" />
+      <funcRefArg charIndex="468" charLength="26" />
+      <funcRefArg charIndex="496" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_teargrenades" name="startMonitoringTearUsage" charIndex="468" charLength="26" codePart="::startMonitoringTearUsage" isCall="False" />
+    <funcRef sfPath="maps\mp\_teargrenades" name="stopMonitoringTearUsage" charIndex="496" charLength="25" codePart="::stopMonitoringTearUsage" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\_perplayer" name="enable" charIndex="526" charLength="47" codePart="maps\mp\gametypes\_perplayer::enable(fgmonitor)" isCall="True">
+      <funcRefArg charIndex="563" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_teargrenades" name="monitorTearUsage" charIndex="613" charLength="30" codePart="self thread monitorTearUsage()" isCall="True" />
+    <funcRef sfPath="codapi" name="notify" charIndex="692" charLength="41" codePart="self notify(&quot;stop_monitoring_tear_usage&quot;)" isCall="True">
+      <funcRefArg charIndex="704" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="765" charLength="40" codePart="self endon(&quot;stop_monitoring_tear_usage&quot;)" isCall="True">
+      <funcRefArg charIndex="776" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="HasWeapon" charIndex="832" charLength="33" codePart="self hasWeapon(&quot;tear_grenade_mp&quot;)" isCall="True">
+      <funcRefArg charIndex="847" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetAmmoCount" charIndex="1005" charLength="36" codePart="self getammocount(&quot;tear_grenade_mp&quot;)" isCall="True">
+      <funcRefArg charIndex="1023" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetAmmoCount" charIndex="1068" charLength="36" codePart="self getammocount(&quot;tear_grenade_mp&quot;)" isCall="True">
+      <funcRefArg charIndex="1086" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLn" charIndex="1166" charLength="13" codePart="iprintln(num)" isCall="True">
+      <funcRefArg charIndex="1175" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="1233" charLength="35" codePart="getEntArray(&quot;grenade&quot;, &quot;classname&quot;)" isCall="True">
+      <funcRefArg charIndex="1245" charLength="9" />
+      <funcRefArg charIndex="1256" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1380" charLength="34" codePart="isdefined(grenades[g].teargrenade)" isCall="True">
+      <funcRefArg charIndex="1390" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="1438" charLength="52" codePart="distance(grenades[g].origin, self.origin + (0,0,48))" isCall="True">
+      <funcRefArg charIndex="1447" charLength="18" />
+      <funcRefArg charIndex="1467" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1504" charLength="19" codePart="isdefined(bestdist)" isCall="True">
+      <funcRefArg charIndex="1514" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1630" charLength="19" codePart="isdefined(bestdist)" isCall="True">
+      <funcRefArg charIndex="1640" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_teargrenades" name="tearGrenade_think" charIndex="1706" charLength="59" codePart="grenades[bestg] thread tearGrenade_think(self.pers[&quot;team&quot;])" isCall="True">
+      <funcRefArg charIndex="1747" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="1979" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="maps\mp\_teargrenades" name="tear" charIndex="1996" charLength="28" codePart="ent thread tear(self.origin)" isCall="True">
+      <funcRefArg charIndex="2012" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="2054" charLength="67" codePart="spawn(&quot;trigger_radius&quot;, pos, 0, level.tearradius, level.tearheight)" isCall="True">
+      <funcRefArg charIndex="2060" charLength="16" />
+      <funcRefArg charIndex="2078" charLength="3" />
+      <funcRefArg charIndex="2083" charLength="1" />
+      <funcRefArg charIndex="2086" charLength="16" />
+      <funcRefArg charIndex="2104" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="2209" charLength="9" codePart="gettime()" isCall="True" />
+    <funcRef sfPath="maps\mp\_teargrenades" name="teartimer" charIndex="2225" charLength="23" codePart="self thread teartimer()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="2252" charLength="26" codePart="self endon(&quot;tear_timeout&quot;)" isCall="True">
+      <funcRefArg charIndex="2263" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="2301" charLength="32" codePart="trig waittill(&quot;trigger&quot;, player)" isCall="True">
+      <funcRefArg charIndex="2315" charLength="9" />
+      <funcRefArg charIndex="2326" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="2409" charLength="9" codePart="gettime()" isCall="True" />
+    <funcRef sfPath="codapi" name="LengthSquared" charIndex="2775" charLength="23" codePart="lengthsquared(offset2d)" isCall="True">
+      <funcRefArg charIndex="2789" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="2923" charLength="9" codePart="gettime()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2976" charLength="34" codePart="isdefined(player.teargassuffering)" isCall="True">
+      <funcRefArg charIndex="2986" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_teargrenades" name="teargassuffering" charIndex="3016" charLength="32" codePart="player thread teargassuffering()" isCall="True" />
+    <funcRef sfPath="codapi" name="notify" charIndex="3105" charLength="27" codePart="self notify(&quot;tear_timeout&quot;)" isCall="True">
+      <funcRefArg charIndex="3117" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="3164" charLength="19" codePart="self endon(&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="3175" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="3187" charLength="24" codePart="self endon(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="3198" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="ShellShock" charIndex="3253" charLength="30" codePart="self shellshock(&quot;teargas&quot;, 60)" isCall="True">
+      <funcRefArg charIndex="3269" charLength="9" />
+      <funcRefArg charIndex="3280" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="3310" charLength="9" codePart="gettime()" isCall="True" />
+    <funcRef sfPath="codapi" name="ShellShock" charIndex="3417" charLength="29" codePart="self shellshock(&quot;teargas&quot;, 1)" isCall="True">
+      <funcRefArg charIndex="3433" charLength="9" />
+      <funcRefArg charIndex="3444" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="3870" charLength="112" codePart="line(pos + (cos(theta) * currad, sin(theta) * currad, 0), pos + (cos(theta2) * currad, sin(theta2) * currad, 0))" isCall="True">
+      <funcRefArg charIndex="3875" charLength="51" />
+      <funcRefArg charIndex="3928" charLength="53" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Cos" charIndex="3882" charLength="10" codePart="cos(theta)" isCall="True">
+      <funcRefArg charIndex="3886" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Sin" charIndex="3903" charLength="10" codePart="sin(theta)" isCall="True">
+      <funcRefArg charIndex="3907" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Cos" charIndex="3935" charLength="11" codePart="cos(theta2)" isCall="True">
+      <funcRefArg charIndex="3939" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Sin" charIndex="3957" charLength="11" codePart="sin(theta2)" isCall="True">
+      <funcRefArg charIndex="3961" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="3988" charLength="128" codePart="line(pos + (cos(theta) * currad, sin(theta) * currad, curheight), pos + (cos(theta2) * currad, sin(theta2) * currad, curheight))" isCall="True">
+      <funcRefArg charIndex="3993" charLength="59" />
+      <funcRefArg charIndex="4054" charLength="61" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Cos" charIndex="4000" charLength="10" codePart="cos(theta)" isCall="True">
+      <funcRefArg charIndex="4004" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Sin" charIndex="4021" charLength="10" codePart="sin(theta)" isCall="True">
+      <funcRefArg charIndex="4025" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Cos" charIndex="4061" charLength="11" codePart="cos(theta2)" isCall="True">
+      <funcRefArg charIndex="4065" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Sin" charIndex="4083" charLength="11" codePart="sin(theta2)" isCall="True">
+      <funcRefArg charIndex="4087" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="4122" charLength="118" codePart="line(pos + (cos(theta) * currad, sin(theta) * currad, 0), pos + (cos(theta) * currad, sin(theta) * currad, curheight))" isCall="True">
+      <funcRefArg charIndex="4127" charLength="51" />
+      <funcRefArg charIndex="4180" charLength="59" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Cos" charIndex="4134" charLength="10" codePart="cos(theta)" isCall="True">
+      <funcRefArg charIndex="4138" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Sin" charIndex="4155" charLength="10" codePart="sin(theta)" isCall="True">
+      <funcRefArg charIndex="4159" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Cos" charIndex="4187" charLength="10" codePart="cos(theta)" isCall="True">
+      <funcRefArg charIndex="4191" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Sin" charIndex="4208" charLength="10" codePart="sin(theta)" isCall="True">
+      <funcRefArg charIndex="4212" charLength="5" />
+    </funcRef>
+    <error type="warning" charIndex="673" charLength="12" lineIndex="20">
+      <message>Variable 'disconnected' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'disconnected' is defined, but its value is never used., file 'maps\mp\_teargrenades', line 21, 'stopMonitoringTearUsage(disconnected)'</fullMessage>
+    </error>
+    <error type="warning" charIndex="1846" charLength="4" lineIndex="73">
+      <message>Variable 'team' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'team' is defined, but its value is never used., file 'maps\mp\_teargrenades', line 74, 'tearGrenade_think(team)'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

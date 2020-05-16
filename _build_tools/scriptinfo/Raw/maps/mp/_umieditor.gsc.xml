@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_umieditor</name>
+  </settings>
+  <content>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onOpenDevMenu" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onOpenDevMenuRequest" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="watchDevelopmentMenuResponses" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="initMapEditor" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devToggleGiveWaypointsMode" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devCycleWaypointType" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devLinkWaypoint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devFinishLink" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devLinkTwoWaypoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="waypointA">
+      </param>
+      <param name="waypointB">
+      </param>
+      <param name="deferUpdates">
+      </param>
+    </func>
+    <func name="devAutoLinkWaypoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devGiveWaypoint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devGetAvailableUnlinkedWaypointFlag" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devUiDeleteWaypoint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devDeleteWaypoint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="waypointId">
+      </param>
+    </func>
+    <func name="devSwapWaypoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="waypointA">
+      </param>
+      <param name="waypointB">
+      </param>
+      <param name="redrawWaypointLinks">
+      </param>
+    </func>
+    <func name="devUpdateWaypointReferences" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="newWaypointId">
+      </param>
+      <param name="oldWaypointId">
+      </param>
+    </func>
+    <func name="devDeleteLink" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devUnlinkWaypoint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="waypointId">
+      </param>
+    </func>
+    <func name="devEmplaceWaypoint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devMoveWaypoint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="flag">
+      </param>
+    </func>
+    <func name="devInitializeUnlinkedWaypoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devUpdateLocalWaypoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="nearestWp">
+      </param>
+    </func>
+    <func name="devFindClosestWaypoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="waypoints">
+      </param>
+      <param name="origin">
+      </param>
+      <param name="n">
+      </param>
+    </func>
+    <func name="devQuicksortWaypoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="data">
+      </param>
+      <param name="left">
+      </param>
+      <param name="right">
+      </param>
+      <param name="callback">
+      </param>
+    </func>
+    <func name="devSelectKthClosestWaypoint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="list">
+      </param>
+      <param name="left">
+      </param>
+      <param name="right">
+      </param>
+      <param name="k">
+      </param>
+      <param name="callback">
+      </param>
+    </func>
+    <func name="devPartition" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="list">
+      </param>
+      <param name="left">
+      </param>
+      <param name="right">
+      </param>
+      <param name="pivotIndex">
+      </param>
+      <param name="callback">
+      </param>
+    </func>
+    <func name="devWatchPlayer" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devInitWaypointHud" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getOrigin" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="struct">
+      </param>
+    </func>
+    <func name="getDistance" access="Public">
+      <self>
+      </self>
+      <summary>callback</summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="struct">
+      </param>
+    </func>
+    <func name="devFindNearestWaypointIndex" access="Public">
+      <self>
+      </self>
+      <summary>callback</summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="origin">
+      </param>
+    </func>
+    <func name="devFindNearestWaypointWithLinksIndex" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="origin">
+      </param>
+    </func>
+    <func name="devFlagWaypoint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="waypointId">
+      </param>
+    </func>
+    <func name="devUnflagWaypoint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="waypointId">
+      </param>
+    </func>
+    <func name="devInitWaypointFlags" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devDrawWaypointLinks" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devWatchNearestWaypointLink" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devFindNearestWaypointLink" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devFindWaypointLinkIndex" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="fromWp">
+      </param>
+      <param name="toWp">
+      </param>
+    </func>
+    <func name="devDumpWaypointLinks" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devGiveEquipmentShop" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devEmplaceEquipmentShop" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devDrawLaser" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="color">
+      </param>
+      <param name="origin">
+      </param>
+      <param name="direction">
+      </param>
+    </func>
+    <func name="devEmplaceWeaponShop" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="initWeaponShopEditor" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="weaponShops">
+      </param>
+    </func>
+    <func name="initEquipmentShopEditor" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="equipmentShops">
+      </param>
+    </func>
+    <func name="devMoveEquipmentShop" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="shop">
+      </param>
+    </func>
+    <func name="devMoveWeaponShop" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="shop">
+      </param>
+    </func>
+    <func name="devGiveWeaponsShop" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devDeleteClosestShop" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devSaveTradespawns" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devExponentialGuard" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="number">
+      </param>
+    </func>
+    <func name="devSaveWaypoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devDumpEntities" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <error type="semantic" charIndex="1866" charLength="31" lineIndex="36">
+      <message>Could not include file 'scripts\include\array'</message>
+      <fullMessage>Bad semantic: Could not include file 'scripts\include\array', file 'maps\mp\_umieditor', line 37, '#include scripts\include\array;'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1899" charLength="30" lineIndex="37">
+      <message>Could not include file 'scripts\include\data'</message>
+      <fullMessage>Bad semantic: Could not include file 'scripts\include\data', file 'maps\mp\_umieditor', line 38, '#include scripts\include\data;'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1931" charLength="34" lineIndex="38">
+      <message>Could not include file 'scripts\include\entities'</message>
+      <fullMessage>Bad semantic: Could not include file 'scripts\include\entities', file 'maps\mp\_umieditor', line 39, '#include scripts\include\entities;'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1967" charLength="29" lineIndex="39">
+      <message>Could not include file 'scripts\include\hud'</message>
+      <fullMessage>Bad semantic: Could not include file 'scripts\include\hud', file 'maps\mp\_umieditor', line 40, '#include scripts\include\hud;'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1998" charLength="32" lineIndex="40">
+      <message>Could not include file 'scripts\include\matrix'</message>
+      <fullMessage>Bad semantic: Could not include file 'scripts\include\matrix', file 'maps\mp\_umieditor', line 41, '#include scripts\include\matrix;'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2032" charLength="33" lineIndex="41">
+      <message>Could not include file 'scripts\include\utility'</message>
+      <fullMessage>Bad semantic: Could not include file 'scripts\include\utility', file 'maps\mp\_umieditor', line 42, '#include scripts\include\utility;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

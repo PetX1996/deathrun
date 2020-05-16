@@ -1,0 +1,1276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\sab</name>
+  </settings>
+  <content>
+    <include>maps\mp\_utility</include>
+    <include>maps\mp\gametypes\_hud_util</include>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPrecacheGameType" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onRoundSwitch" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onStartGameType" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onTimeLimit" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onOvertime" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onDeadEvent" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="onSpawnPlayer" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateGametypeDvars" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="sabotage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="createBombZone" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="trigger">
+      </param>
+    </func>
+    <func name="onBeginUse" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="player">
+      </param>
+    </func>
+    <func name="onEndUse" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="player">
+      </param>
+      <param name="result">
+      </param>
+    </func>
+    <func name="onPickup" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="player">
+      </param>
+    </func>
+    <func name="onDrop" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="player">
+      </param>
+    </func>
+    <func name="abandonmentThink" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="delay">
+      </param>
+    </func>
+    <func name="onUse" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="player">
+      </param>
+    </func>
+    <func name="onCantUse" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="player">
+      </param>
+    </func>
+    <func name="bombPlanted" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="destroyedObj">
+      </param>
+      <param name="team">
+      </param>
+    </func>
+    <func name="playSoundinSpace" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="alias">
+      </param>
+      <param name="origin">
+      </param>
+    </func>
+    <func name="bombTimerWait" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="resetBombsite" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="setUpForDefusing" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="bombDefused" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="object">
+      </param>
+    </func>
+    <func name="onEndGame" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="winningTeam">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="809" charLength="18" codePart="getdvar(&quot;mapname&quot;)" isCall="True">
+      <funcRefArg charIndex="817" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="init" charIndex="865" charLength="38" codePart="maps\mp\gametypes\_globallogic::init()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_callbacksetup" name="SetupCallbacks" charIndex="907" charLength="50" codePart="maps\mp\gametypes\_callbacksetup::SetupCallbacks()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="SetupCallbacks" charIndex="961" charLength="48" codePart="maps\mp\gametypes\_globallogic::SetupCallbacks()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="registerRoundSwitchDvar" charIndex="1078" charLength="82" codePart="maps\mp\gametypes\_globallogic::registerRoundSwitchDvar( level.gameType, 0, 0, 9 )" isCall="True">
+      <funcRefArg charIndex="1135" charLength="14" />
+      <funcRefArg charIndex="1151" charLength="1" />
+      <funcRefArg charIndex="1154" charLength="1" />
+      <funcRefArg charIndex="1157" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="registerTimeLimitDvar" charIndex="1164" charLength="84" codePart="maps\mp\gametypes\_globallogic::registerTimeLimitDvar( level.gameType, 10, 0, 1440 )" isCall="True">
+      <funcRefArg charIndex="1219" charLength="14" />
+      <funcRefArg charIndex="1235" charLength="2" />
+      <funcRefArg charIndex="1239" charLength="1" />
+      <funcRefArg charIndex="1242" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="registerScoreLimitDvar" charIndex="1252" charLength="83" codePart="maps\mp\gametypes\_globallogic::registerScoreLimitDvar( level.gameType, 0, 0, 500 )" isCall="True">
+      <funcRefArg charIndex="1308" charLength="14" />
+      <funcRefArg charIndex="1324" charLength="1" />
+      <funcRefArg charIndex="1327" charLength="1" />
+      <funcRefArg charIndex="1330" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="registerRoundLimitDvar" charIndex="1339" charLength="82" codePart="maps\mp\gametypes\_globallogic::registerRoundLimitDvar( level.gameType, 1, 0, 10 )" isCall="True">
+      <funcRefArg charIndex="1395" charLength="14" />
+      <funcRefArg charIndex="1411" charLength="1" />
+      <funcRefArg charIndex="1414" charLength="1" />
+      <funcRefArg charIndex="1417" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="registerNumLivesDvar" charIndex="1425" charLength="80" codePart="maps\mp\gametypes\_globallogic::registerNumLivesDvar( level.gameType, 0, 0, 10 )" isCall="True">
+      <funcRefArg charIndex="1479" charLength="14" />
+      <funcRefArg charIndex="1495" charLength="1" />
+      <funcRefArg charIndex="1498" charLength="1" />
+      <funcRefArg charIndex="1501" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\sab" name="onPrecacheGameType" charIndex="1572" charLength="20" codePart="::onPrecacheGameType" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\sab" name="onStartGameType" charIndex="1621" charLength="17" codePart="::onStartGameType" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\sab" name="onSpawnPlayer" charIndex="1665" charLength="15" codePart="::onSpawnPlayer" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\sab" name="onTimeLimit" charIndex="1705" charLength="13" codePart="::onTimeLimit" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\sab" name="onDeadEvent" charIndex="1743" charLength="13" codePart="::onDeadEvent" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\sab" name="onRoundSwitch" charIndex="1783" charLength="15" codePart="::onRoundSwitch" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\sab" name="onStartGameType" charIndex="2033" charLength="17" codePart="::onStartGameType" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\sab" name="onSpawnPlayer" charIndex="2077" charLength="15" codePart="::onSpawnPlayer" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\sab" name="onEndGame" charIndex="2115" charLength="11" codePart="::onEndGame" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="registerNumLivesDvar" charIndex="2310" charLength="69" codePart="maps\mp\gametypes\_globallogic::registerNumLivesDvar( &quot;tb&quot;, 1, 1, 1 )" isCall="True">
+      <funcRefArg charIndex="2364" charLength="4" />
+      <funcRefArg charIndex="2370" charLength="1" />
+      <funcRefArg charIndex="2373" charLength="1" />
+      <funcRefArg charIndex="2376" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="registerTimeLimitDvar" charIndex="2384" charLength="70" codePart="maps\mp\gametypes\_globallogic::registerTimeLimitDvar( &quot;tb&quot;, 0, 0, 0 )" isCall="True">
+      <funcRefArg charIndex="2439" charLength="4" />
+      <funcRefArg charIndex="2445" charLength="1" />
+      <funcRefArg charIndex="2448" charLength="1" />
+      <funcRefArg charIndex="2451" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="2474" charLength="48" codePart="getent( &quot;sab_bomb_defuse_allies&quot;, &quot;targetname&quot; )" isCall="True">
+      <funcRefArg charIndex="2482" charLength="24" />
+      <funcRefArg charIndex="2508" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2531" charLength="20" codePart="isdefined( badtrig )" isCall="True">
+      <funcRefArg charIndex="2542" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="2557" charLength="16" codePart="badtrig delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="2589" charLength="46" codePart="getent( &quot;sab_bomb_defuse_axis&quot;, &quot;targetname&quot; )" isCall="True">
+      <funcRefArg charIndex="2597" charLength="22" />
+      <funcRefArg charIndex="2621" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2644" charLength="20" codePart="isdefined( badtrig )" isCall="True">
+      <funcRefArg charIndex="2655" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="2670" charLength="16" codePart="badtrig delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="2838" charLength="31" codePart="precacheShader(&quot;waypoint_bomb&quot;)" isCall="True">
+      <funcRefArg charIndex="2853" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="2873" charLength="31" codePart="precacheShader(&quot;waypoint_kill&quot;)" isCall="True">
+      <funcRefArg charIndex="2888" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="2908" charLength="37" codePart="precacheShader(&quot;waypoint_bomb_enemy&quot;)" isCall="True">
+      <funcRefArg charIndex="2923" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="2949" charLength="33" codePart="precacheShader(&quot;waypoint_defend&quot;)" isCall="True">
+      <funcRefArg charIndex="2964" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="2986" charLength="33" codePart="precacheShader(&quot;waypoint_defuse&quot;)" isCall="True">
+      <funcRefArg charIndex="3001" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="3023" charLength="33" codePart="precacheShader(&quot;waypoint_target&quot;)" isCall="True">
+      <funcRefArg charIndex="3038" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="3060" charLength="39" codePart="precacheShader(&quot;compass_waypoint_bomb&quot;)" isCall="True">
+      <funcRefArg charIndex="3075" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="3103" charLength="41" codePart="precacheShader(&quot;compass_waypoint_defend&quot;)" isCall="True">
+      <funcRefArg charIndex="3118" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="3148" charLength="41" codePart="precacheShader(&quot;compass_waypoint_defuse&quot;)" isCall="True">
+      <funcRefArg charIndex="3163" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="3193" charLength="41" codePart="precacheShader(&quot;compass_waypoint_target&quot;)" isCall="True">
+      <funcRefArg charIndex="3208" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="3238" charLength="35" codePart="precacheShader(&quot;hud_suitcase_bomb&quot;)" isCall="True">
+      <funcRefArg charIndex="3253" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="3280" charLength="45" codePart="precacheString(&amp;&quot;MP_EXPLOSIVES_RECOVERED_BY&quot;)" isCall="True">
+      <funcRefArg charIndex="3295" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="3329" charLength="43" codePart="precacheString(&amp;&quot;MP_EXPLOSIVES_DROPPED_BY&quot;)" isCall="True">
+      <funcRefArg charIndex="3344" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="3376" charLength="43" codePart="precacheString(&amp;&quot;MP_EXPLOSIVES_PLANTED_BY&quot;)" isCall="True">
+      <funcRefArg charIndex="3391" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="3423" charLength="43" codePart="precacheString(&amp;&quot;MP_EXPLOSIVES_DEFUSED_BY&quot;)" isCall="True">
+      <funcRefArg charIndex="3438" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="3470" charLength="49" codePart="precacheString(&amp;&quot;MP_YOU_HAVE_RECOVERED_THE_BOMB&quot;)" isCall="True">
+      <funcRefArg charIndex="3485" charLength="33" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="3523" charLength="52" codePart="precacheString(&amp;&quot;PLATFORM_HOLD_TO_PLANT_EXPLOSIVES&quot;)" isCall="True">
+      <funcRefArg charIndex="3538" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="3579" charLength="53" codePart="precacheString(&amp;&quot;PLATFORM_HOLD_TO_DEFUSE_EXPLOSIVES&quot;)" isCall="True">
+      <funcRefArg charIndex="3594" charLength="37" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="3636" charLength="40" codePart="precacheString(&amp;&quot;MP_PLANTING_EXPLOSIVE&quot;)" isCall="True">
+      <funcRefArg charIndex="3651" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="3680" charLength="40" codePart="precacheString(&amp;&quot;MP_DEFUSING_EXPLOSIVE&quot;)" isCall="True">
+      <funcRefArg charIndex="3695" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="3724" charLength="38" codePart="precacheString(&amp;&quot;MP_TARGET_DESTROYED&quot;)" isCall="True">
+      <funcRefArg charIndex="3739" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="3766" charLength="32" codePart="precacheString(&amp;&quot;MP_NO_RESPAWN&quot;)" isCall="True">
+      <funcRefArg charIndex="3781" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="3802" charLength="33" codePart="precacheString(&amp;&quot;MP_TIE_BREAKER&quot;)" isCall="True">
+      <funcRefArg charIndex="3817" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="3840" charLength="32" codePart="precacheString(&amp;&quot;MP_NO_RESPAWN&quot;)" isCall="True">
+      <funcRefArg charIndex="3855" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="3876" charLength="34" codePart="precacheString(&amp;&quot;MP_SUDDEN_DEATH&quot;)" isCall="True">
+      <funcRefArg charIndex="3891" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3947" charLength="34" codePart="isdefined( game[&quot;switchedsides&quot;] )" isCall="True">
+      <funcRefArg charIndex="3958" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4399" charLength="34" codePart="isdefined( game[&quot;switchedsides&quot;] )" isCall="True">
+      <funcRefArg charIndex="4410" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientNameMode" charIndex="4474" charLength="32" codePart="setClientNameMode(&quot;auto_change&quot;)" isCall="True">
+      <funcRefArg charIndex="4492" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveText" charIndex="4613" charLength="79" codePart="maps\mp\gametypes\_globallogic::setObjectiveText( &quot;allies&quot;, &amp;&quot;OBJECTIVES_SAB&quot; )" isCall="True">
+      <funcRefArg charIndex="4663" charLength="8" />
+      <funcRefArg charIndex="4673" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveText" charIndex="4697" charLength="77" codePart="maps\mp\gametypes\_globallogic::setObjectiveText( &quot;axis&quot;, &amp;&quot;OBJECTIVES_SAB&quot; )" isCall="True">
+      <funcRefArg charIndex="4747" charLength="6" />
+      <funcRefArg charIndex="4755" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveScoreText" charIndex="4816" charLength="84" codePart="maps\mp\gametypes\_globallogic::setObjectiveScoreText( &quot;allies&quot;, &amp;&quot;OBJECTIVES_SAB&quot; )" isCall="True">
+      <funcRefArg charIndex="4871" charLength="8" />
+      <funcRefArg charIndex="4881" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveScoreText" charIndex="4906" charLength="82" codePart="maps\mp\gametypes\_globallogic::setObjectiveScoreText( &quot;axis&quot;, &amp;&quot;OBJECTIVES_SAB&quot; )" isCall="True">
+      <funcRefArg charIndex="4961" charLength="6" />
+      <funcRefArg charIndex="4969" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveScoreText" charIndex="5012" charLength="90" codePart="maps\mp\gametypes\_globallogic::setObjectiveScoreText( &quot;allies&quot;, &amp;&quot;OBJECTIVES_SAB_SCORE&quot; )" isCall="True">
+      <funcRefArg charIndex="5067" charLength="8" />
+      <funcRefArg charIndex="5077" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveScoreText" charIndex="5108" charLength="88" codePart="maps\mp\gametypes\_globallogic::setObjectiveScoreText( &quot;axis&quot;, &amp;&quot;OBJECTIVES_SAB_SCORE&quot; )" isCall="True">
+      <funcRefArg charIndex="5163" charLength="6" />
+      <funcRefArg charIndex="5171" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveHintText" charIndex="5206" charLength="88" codePart="maps\mp\gametypes\_globallogic::setObjectiveHintText( &quot;allies&quot;, &amp;&quot;OBJECTIVES_SAB_HINT&quot; )" isCall="True">
+      <funcRefArg charIndex="5260" charLength="8" />
+      <funcRefArg charIndex="5270" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveHintText" charIndex="5299" charLength="86" codePart="maps\mp\gametypes\_globallogic::setObjectiveHintText( &quot;axis&quot;, &amp;&quot;OBJECTIVES_SAB_HINT&quot; )" isCall="True">
+      <funcRefArg charIndex="5353" charLength="6" />
+      <funcRefArg charIndex="5361" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveText" charIndex="5405" charLength="79" codePart="maps\mp\gametypes\_globallogic::setObjectiveText( &quot;allies&quot;, &amp;&quot;OBJECTIVES_WAR&quot; )" isCall="True">
+      <funcRefArg charIndex="5455" charLength="8" />
+      <funcRefArg charIndex="5465" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveText" charIndex="5489" charLength="77" codePart="maps\mp\gametypes\_globallogic::setObjectiveText( &quot;axis&quot;, &amp;&quot;OBJECTIVES_WAR&quot; )" isCall="True">
+      <funcRefArg charIndex="5539" charLength="6" />
+      <funcRefArg charIndex="5547" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveScoreText" charIndex="5609" charLength="84" codePart="maps\mp\gametypes\_globallogic::setObjectiveScoreText( &quot;allies&quot;, &amp;&quot;OBJECTIVES_WAR&quot; )" isCall="True">
+      <funcRefArg charIndex="5664" charLength="8" />
+      <funcRefArg charIndex="5674" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveScoreText" charIndex="5699" charLength="82" codePart="maps\mp\gametypes\_globallogic::setObjectiveScoreText( &quot;axis&quot;, &amp;&quot;OBJECTIVES_WAR&quot; )" isCall="True">
+      <funcRefArg charIndex="5754" charLength="6" />
+      <funcRefArg charIndex="5762" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveScoreText" charIndex="5805" charLength="90" codePart="maps\mp\gametypes\_globallogic::setObjectiveScoreText( &quot;allies&quot;, &amp;&quot;OBJECTIVES_WAR_SCORE&quot; )" isCall="True">
+      <funcRefArg charIndex="5860" charLength="8" />
+      <funcRefArg charIndex="5870" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveScoreText" charIndex="5901" charLength="88" codePart="maps\mp\gametypes\_globallogic::setObjectiveScoreText( &quot;axis&quot;, &amp;&quot;OBJECTIVES_WAR_SCORE&quot; )" isCall="True">
+      <funcRefArg charIndex="5956" charLength="6" />
+      <funcRefArg charIndex="5964" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveHintText" charIndex="5999" charLength="88" codePart="maps\mp\gametypes\_globallogic::setObjectiveHintText( &quot;allies&quot;, &amp;&quot;OBJECTIVES_WAR_HINT&quot; )" isCall="True">
+      <funcRefArg charIndex="6053" charLength="8" />
+      <funcRefArg charIndex="6063" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="setObjectiveHintText" charIndex="6092" charLength="86" codePart="maps\mp\gametypes\_globallogic::setObjectiveHintText( &quot;axis&quot;, &amp;&quot;OBJECTIVES_WAR_HINT&quot; )" isCall="True">
+      <funcRefArg charIndex="6146" charLength="6" />
+      <funcRefArg charIndex="6154" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="placeSpawnPoints" charIndex="6256" charLength="78" codePart="maps\mp\gametypes\_spawnlogic::placeSpawnPoints( &quot;mp_sab_spawn_allies_start&quot; )" isCall="True">
+      <funcRefArg charIndex="6305" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="placeSpawnPoints" charIndex="6338" charLength="76" codePart="maps\mp\gametypes\_spawnlogic::placeSpawnPoints( &quot;mp_sab_spawn_axis_start&quot; )" isCall="True">
+      <funcRefArg charIndex="6387" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="addSpawnPoints" charIndex="6418" charLength="80" codePart="maps\mp\gametypes\_spawnlogic::addSpawnPoints( &quot;allies&quot;, &quot;mp_sab_spawn_allies&quot; )" isCall="True">
+      <funcRefArg charIndex="6465" charLength="8" />
+      <funcRefArg charIndex="6475" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="addSpawnPoints" charIndex="6502" charLength="76" codePart="maps\mp\gametypes\_spawnlogic::addSpawnPoints( &quot;axis&quot;, &quot;mp_sab_spawn_axis&quot; )" isCall="True">
+      <funcRefArg charIndex="6549" charLength="6" />
+      <funcRefArg charIndex="6557" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="findBoxCenter" charIndex="6603" charLength="80" codePart="maps\mp\gametypes\_spawnlogic::findBoxCenter( level.spawnMins, level.spawnMaxs )" isCall="True">
+      <funcRefArg charIndex="6649" charLength="15" />
+      <funcRefArg charIndex="6666" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetMapCenter" charIndex="6687" charLength="31" codePart="setMapCenter( level.mapCenter )" isCall="True">
+      <funcRefArg charIndex="6701" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="6743" charLength="45" codePart="getentarray(&quot;mp_sab_spawn_axis&quot;, &quot;classname&quot;)" isCall="True">
+      <funcRefArg charIndex="6755" charLength="19" />
+      <funcRefArg charIndex="6776" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="6813" charLength="47" codePart="getentarray(&quot;mp_sab_spawn_allies&quot;, &quot;classname&quot;)" isCall="True">
+      <funcRefArg charIndex="6825" charLength="21" />
+      <funcRefArg charIndex="6848" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="6889" charLength="51" codePart="getentarray(&quot;mp_sab_spawn_axis_start&quot;, &quot;classname&quot;)" isCall="True">
+      <funcRefArg charIndex="6901" charLength="25" />
+      <funcRefArg charIndex="6928" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="6971" charLength="53" codePart="getentarray(&quot;mp_sab_spawn_allies_start&quot;, &quot;classname&quot;)" isCall="True">
+      <funcRefArg charIndex="6983" charLength="27" />
+      <funcRefArg charIndex="7012" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_rank" name="registerScoreInfo" charIndex="7030" charLength="57" codePart="maps\mp\gametypes\_rank::registerScoreInfo( &quot;plant&quot;, 20 )" isCall="True">
+      <funcRefArg charIndex="7074" charLength="7" />
+      <funcRefArg charIndex="7083" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_rank" name="registerScoreInfo" charIndex="7091" charLength="58" codePart="maps\mp\gametypes\_rank::registerScoreInfo( &quot;defuse&quot;, 15 )" isCall="True">
+      <funcRefArg charIndex="7135" charLength="8" />
+      <funcRefArg charIndex="7145" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="main" charIndex="7211" charLength="45" codePart="maps\mp\gametypes\_gameobjects::main(allowed)" isCall="True">
+      <funcRefArg charIndex="7248" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="main" charIndex="7299" charLength="45" codePart="maps\mp\gametypes\_gameobjects::main(allowed)" isCall="True">
+      <funcRefArg charIndex="7336" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\sab" name="updateGametypeDvars" charIndex="7351" charLength="28" codePart="thread updateGametypeDvars()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\sab" name="sabotage" charIndex="7386" charLength="17" codePart="thread sabotage()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\sab" name="onOvertime" charIndex="7471" charLength="19" codePart="thread onOvertime()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="7518" charLength="28" codePart="level endon ( &quot;game_ended&quot; )" isCall="True">
+      <funcRefArg charIndex="7532" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="7677" charLength="42" codePart="level.players[index] notify(&quot;force_spawn&quot;)" isCall="True">
+      <funcRefArg charIndex="7705" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_message" name="oldNotifyMessage" charIndex="7724" charLength="155" codePart="level.players[index] thread maps\mp\gametypes\_hud_message::oldNotifyMessage( &amp;&quot;MP_SUDDEN_DEATH&quot;, &amp;&quot;MP_NO_RESPAWN&quot;, undefined, (1, 0, 0), &quot;mp_last_stand&quot; )" isCall="True">
+      <funcRefArg charIndex="7802" charLength="18" />
+      <funcRefArg charIndex="7822" charLength="16" />
+      <funcRefArg charIndex="7840" charLength="9" />
+      <funcRefArg charIndex="7851" charLength="9" />
+      <funcRefArg charIndex="7862" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvars" charIndex="7886" charLength="241" codePart="level.players[index] setClientDvars(&quot;cg_deadChatWithDead&quot;, 1,&#xD;&#xA;							&quot;cg_deadChatWithTeam&quot;, 0,&#xD;&#xA;							&quot;cg_deadHearTeamLiving&quot;, 0,&#xD;&#xA;							&quot;cg_deadHearAllLiving&quot;, 0,&#xD;&#xA;							&quot;cg_everyoneHearsEveryone&quot;, 0,&#xD;&#xA;							&quot;g_compassShowEnemies&quot;, 1 )" isCall="True">
+      <funcRefArg charIndex="7922" charLength="21" />
+      <funcRefArg charIndex="7945" charLength="1" />
+      <funcRefArg charIndex="7956" charLength="21" />
+      <funcRefArg charIndex="7979" charLength="1" />
+      <funcRefArg charIndex="7990" charLength="23" />
+      <funcRefArg charIndex="8015" charLength="1" />
+      <funcRefArg charIndex="8026" charLength="22" />
+      <funcRefArg charIndex="8050" charLength="1" />
+      <funcRefArg charIndex="8061" charLength="26" />
+      <funcRefArg charIndex="8089" charLength="1" />
+      <funcRefArg charIndex="8100" charLength="22" />
+      <funcRefArg charIndex="8124" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetGameEndTime" charIndex="8238" charLength="50" codePart="setGameEndTime( getTime() + ((90-waitTime)*1000) )" isCall="True">
+      <funcRefArg charIndex="8254" charLength="33" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="8254" charLength="9" codePart="getTime()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="endGame" charIndex="8320" charLength="79" codePart="thread maps\mp\gametypes\_globallogic::endGame( &quot;tie&quot;, game[&quot;strings&quot;][&quot;tie&quot;] )" isCall="True">
+      <funcRefArg charIndex="8368" charLength="5" />
+      <funcRefArg charIndex="8375" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="endGame" charIndex="8643" charLength="131" codePart="thread maps\mp\gametypes\_globallogic::endGame( level.bombPlantedBy, game[&quot;strings&quot;][level.bombPlantedBy+&quot;_mission_accomplished&quot;] )" isCall="True">
+      <funcRefArg charIndex="8691" charLength="19" />
+      <funcRefArg charIndex="8712" charLength="61" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="endGame" charIndex="8798" charLength="79" codePart="thread maps\mp\gametypes\_globallogic::endGame( &quot;tie&quot;, game[&quot;strings&quot;][&quot;tie&quot;] )" isCall="True">
+      <funcRefArg charIndex="8846" charLength="5" />
+      <funcRefArg charIndex="8853" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="endGame" charIndex="9130" charLength="138" codePart="thread maps\mp\gametypes\_globallogic::endGame( level.bombPlantedBy, game[&quot;strings&quot;][level.otherTeam[level.bombPlantedBy]+&quot;_eliminated&quot;] )" isCall="True">
+      <funcRefArg charIndex="9178" charLength="19" />
+      <funcRefArg charIndex="9199" charLength="68" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="endGame" charIndex="9395" charLength="108" codePart="thread maps\mp\gametypes\_globallogic::endGame( level.otherTeam[team], game[&quot;strings&quot;][team+&quot;_eliminated&quot;] )" isCall="True">
+      <funcRefArg charIndex="9443" charLength="21" />
+      <funcRefArg charIndex="9466" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="getOtherTeam" charIndex="9701" charLength="25" codePart="getOtherTeam( spawnteam )" isCall="True">
+      <funcRefArg charIndex="9715" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getSpawnpoint_Random" charIndex="9809" charLength="75" codePart="maps\mp\gametypes\_spawnlogic::getSpawnpoint_Random(level.spawn_axis_start)" isCall="True">
+      <funcRefArg charIndex="9861" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getSpawnpoint_Random" charIndex="9911" charLength="77" codePart="maps\mp\gametypes\_spawnlogic::getSpawnpoint_Random(level.spawn_allies_start)" isCall="True">
+      <funcRefArg charIndex="9963" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getSpawnpoint_NearTeam" charIndex="10051" charLength="71" codePart="maps\mp\gametypes\_spawnlogic::getSpawnpoint_NearTeam(level.spawn_axis)" isCall="True">
+      <funcRefArg charIndex="10105" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_spawnlogic" name="getSpawnpoint_NearTeam" charIndex="10149" charLength="73" codePart="maps\mp\gametypes\_spawnlogic::getSpawnpoint_NearTeam(level.spawn_allies)" isCall="True">
+      <funcRefArg charIndex="10203" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_message" name="oldNotifyMessage" charIndex="10265" charLength="138" codePart="self thread maps\mp\gametypes\_hud_message::oldNotifyMessage( &amp;&quot;MP_TIE_BREAKER&quot;, &amp;&quot;MP_NO_RESPAWN&quot;, undefined, (1, 0, 0), &quot;mp_last_stand&quot; )" isCall="True">
+      <funcRefArg charIndex="10327" charLength="17" />
+      <funcRefArg charIndex="10346" charLength="16" />
+      <funcRefArg charIndex="10364" charLength="9" />
+      <funcRefArg charIndex="10375" charLength="9" />
+      <funcRefArg charIndex="10386" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="getObjectiveHintText" charIndex="10425" charLength="73" codePart="maps\mp\gametypes\_globallogic::getObjectiveHintText( self.pers[&quot;team&quot;] )" isCall="True">
+      <funcRefArg charIndex="10479" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10508" charLength="24" codePart="isDefined( hintMessage )" isCall="True">
+      <funcRefArg charIndex="10519" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_message" name="hintMessage" charIndex="10539" charLength="70" codePart="self thread maps\mp\gametypes\_hud_message::hintMessage( hintMessage )" isCall="True">
+      <funcRefArg charIndex="10596" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvars" charIndex="10617" charLength="225" codePart="self setClientDvars(&quot;cg_deadChatWithDead&quot;, 1,&#xD;&#xA;							&quot;cg_deadChatWithTeam&quot;, 0,&#xD;&#xA;							&quot;cg_deadHearTeamLiving&quot;, 0,&#xD;&#xA;							&quot;cg_deadHearAllLiving&quot;, 0,&#xD;&#xA;							&quot;cg_everyoneHearsEveryone&quot;, 0,&#xD;&#xA;							&quot;g_compassShowEnemies&quot;, 1 )" isCall="True">
+      <funcRefArg charIndex="10637" charLength="21" />
+      <funcRefArg charIndex="10660" charLength="1" />
+      <funcRefArg charIndex="10671" charLength="21" />
+      <funcRefArg charIndex="10694" charLength="1" />
+      <funcRefArg charIndex="10705" charLength="23" />
+      <funcRefArg charIndex="10730" charLength="1" />
+      <funcRefArg charIndex="10741" charLength="22" />
+      <funcRefArg charIndex="10765" charLength="1" />
+      <funcRefArg charIndex="10776" charLength="26" />
+      <funcRefArg charIndex="10804" charLength="1" />
+      <funcRefArg charIndex="10815" charLength="22" />
+      <funcRefArg charIndex="10839" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="10852" charLength="31" codePart="assert( isDefined(spawnpoint) )" isCall="True">
+      <funcRefArg charIndex="10860" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10860" charLength="21" codePart="isDefined(spawnpoint)" isCall="True">
+      <funcRefArg charIndex="10870" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="10889" charLength="50" codePart="self spawn( spawnpoint.origin, spawnpoint.angles )" isCall="True">
+      <funcRefArg charIndex="10901" charLength="17" />
+      <funcRefArg charIndex="10920" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="dvarFloatValue" charIndex="10994" charLength="39" codePart="dvarFloatValue( &quot;planttime&quot;, 5, 0, 20 )" isCall="True">
+      <funcRefArg charIndex="11010" charLength="11" />
+      <funcRefArg charIndex="11023" charLength="1" />
+      <funcRefArg charIndex="11026" charLength="1" />
+      <funcRefArg charIndex="11029" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="dvarFloatValue" charIndex="11056" charLength="40" codePart="dvarFloatValue( &quot;defusetime&quot;, 5, 0, 20 )" isCall="True">
+      <funcRefArg charIndex="11072" charLength="12" />
+      <funcRefArg charIndex="11086" charLength="1" />
+      <funcRefArg charIndex="11089" charLength="1" />
+      <funcRefArg charIndex="11092" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="dvarFloatValue" charIndex="11118" charLength="41" codePart="dvarFloatValue( &quot;bombtimer&quot;, 45, 1, 300 )" isCall="True">
+      <funcRefArg charIndex="11134" charLength="11" />
+      <funcRefArg charIndex="11147" charLength="2" />
+      <funcRefArg charIndex="11151" charLength="1" />
+      <funcRefArg charIndex="11154" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="dvarIntValue" charIndex="11181" charLength="36" codePart="dvarIntValue( &quot;hotpotato&quot;, 1, 0, 1 )" isCall="True">
+      <funcRefArg charIndex="11195" charLength="11" />
+      <funcRefArg charIndex="11208" charLength="1" />
+      <funcRefArg charIndex="11211" charLength="1" />
+      <funcRefArg charIndex="11214" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="11339" charLength="37" codePart="loadfx(&quot;explosions/tanker_explosion&quot;)" isCall="True">
+      <funcRefArg charIndex="11346" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="11392" charLength="46" codePart="getEnt( &quot;sab_bomb_pickup_trig&quot;, &quot;targetname&quot; )" isCall="True">
+      <funcRefArg charIndex="11400" charLength="22" />
+      <funcRefArg charIndex="11424" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="11448" charLength="20" codePart="isDefined( trigger )" isCall="True">
+      <funcRefArg charIndex="11459" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="error" charIndex="11479" charLength="56" codePart="error( &quot;No sab_bomb_pickup_trig trigger found in map.&quot; )" isCall="True">
+      <funcRefArg charIndex="11486" charLength="48" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="11569" charLength="34" codePart="getEnt( &quot;sab_bomb&quot;, &quot;targetname&quot; )" isCall="True">
+      <funcRefArg charIndex="11577" charLength="10" />
+      <funcRefArg charIndex="11589" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="11613" charLength="23" codePart="isDefined( visuals[0] )" isCall="True">
+      <funcRefArg charIndex="11624" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="error" charIndex="11647" charLength="49" codePart="error( &quot;No sab_bomb script_model found in map.&quot; )" isCall="True">
+      <funcRefArg charIndex="11654" charLength="41" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="11718" charLength="37" codePart="precacheModel( &quot;prop_suitcase_bomb&quot; )" isCall="True">
+      <funcRefArg charIndex="11733" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="11760" charLength="43" codePart="visuals[0] setModel( &quot;prop_suitcase_bomb&quot; )" isCall="True">
+      <funcRefArg charIndex="11781" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="createCarryObject" charIndex="11823" charLength="90" codePart="maps\mp\gametypes\_gameobjects::createCarryObject( &quot;neutral&quot;, trigger, visuals, (0,0,32) )" isCall="True">
+      <funcRefArg charIndex="11874" charLength="9" />
+      <funcRefArg charIndex="11885" charLength="7" />
+      <funcRefArg charIndex="11894" charLength="7" />
+      <funcRefArg charIndex="11903" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="allowCarry" charIndex="11917" charLength="65" codePart="level.sabBomb maps\mp\gametypes\_gameobjects::allowCarry( &quot;any&quot; )" isCall="True">
+      <funcRefArg charIndex="11975" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set2DIcon" charIndex="11986" charLength="91" codePart="level.sabBomb maps\mp\gametypes\_gameobjects::set2DIcon( &quot;enemy&quot;, &quot;compass_waypoint_bomb&quot; )" isCall="True">
+      <funcRefArg charIndex="12043" charLength="7" />
+      <funcRefArg charIndex="12052" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set3DIcon" charIndex="12081" charLength="83" codePart="level.sabBomb maps\mp\gametypes\_gameobjects::set3DIcon( &quot;enemy&quot;, &quot;waypoint_bomb&quot; )" isCall="True">
+      <funcRefArg charIndex="12138" charLength="7" />
+      <funcRefArg charIndex="12147" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set2DIcon" charIndex="12168" charLength="94" codePart="level.sabBomb maps\mp\gametypes\_gameobjects::set2DIcon( &quot;friendly&quot;, &quot;compass_waypoint_bomb&quot; )" isCall="True">
+      <funcRefArg charIndex="12225" charLength="10" />
+      <funcRefArg charIndex="12237" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set3DIcon" charIndex="12266" charLength="86" codePart="level.sabBomb maps\mp\gametypes\_gameobjects::set3DIcon( &quot;friendly&quot;, &quot;waypoint_bomb&quot; )" isCall="True">
+      <funcRefArg charIndex="12323" charLength="10" />
+      <funcRefArg charIndex="12335" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setCarryIcon" charIndex="12356" charLength="81" codePart="level.sabBomb maps\mp\gametypes\_gameobjects::setCarryIcon( &quot;hud_suitcase_bomb&quot; )" isCall="True">
+      <funcRefArg charIndex="12416" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setVisibleTeam" charIndex="12441" charLength="69" codePart="level.sabBomb maps\mp\gametypes\_gameobjects::setVisibleTeam( &quot;any&quot; )" isCall="True">
+      <funcRefArg charIndex="12503" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\sab" name="onPickup" charIndex="12578" charLength="10" codePart="::onPickup" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\sab" name="onDrop" charIndex="12615" charLength="8" codePart="::onDrop" isCall="False" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12815" charLength="52" codePart="isDefined( getEnt( &quot;sab_bomb_axis&quot;, &quot;targetname&quot; ) )" isCall="True">
+      <funcRefArg charIndex="12826" charLength="40" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="12826" charLength="39" codePart="getEnt( &quot;sab_bomb_axis&quot;, &quot;targetname&quot; )" isCall="True">
+      <funcRefArg charIndex="12834" charLength="15" />
+      <funcRefArg charIndex="12851" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="error" charIndex="12878" charLength="47" codePart="error(&quot;No sab_bomb_axis trigger found in map.&quot;)" isCall="True">
+      <funcRefArg charIndex="12884" charLength="40" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12950" charLength="54" codePart="isDefined( getEnt( &quot;sab_bomb_allies&quot;, &quot;targetname&quot; ) )" isCall="True">
+      <funcRefArg charIndex="12961" charLength="42" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="12961" charLength="41" codePart="getEnt( &quot;sab_bomb_allies&quot;, &quot;targetname&quot; )" isCall="True">
+      <funcRefArg charIndex="12969" charLength="17" />
+      <funcRefArg charIndex="12988" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="error" charIndex="13014" charLength="49" codePart="error(&quot;No sab_bomb_allies trigger found in map.&quot;)" isCall="True">
+      <funcRefArg charIndex="13020" charLength="42" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\sab" name="createBombZone" charIndex="13148" charLength="67" codePart="createBombZone( &quot;allies&quot;, getEnt( &quot;sab_bomb_axis&quot;, &quot;targetname&quot; ) )" isCall="True">
+      <funcRefArg charIndex="13164" charLength="8" />
+      <funcRefArg charIndex="13174" charLength="40" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="13174" charLength="39" codePart="getEnt( &quot;sab_bomb_axis&quot;, &quot;targetname&quot; )" isCall="True">
+      <funcRefArg charIndex="13182" charLength="15" />
+      <funcRefArg charIndex="13199" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\sab" name="createBombZone" charIndex="13246" charLength="67" codePart="createBombZone( &quot;axis&quot;, getEnt( &quot;sab_bomb_allies&quot;, &quot;targetname&quot; ) )" isCall="True">
+      <funcRefArg charIndex="13262" charLength="6" />
+      <funcRefArg charIndex="13270" charLength="42" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="13270" charLength="41" codePart="getEnt( &quot;sab_bomb_allies&quot;, &quot;targetname&quot; )" isCall="True">
+      <funcRefArg charIndex="13278" charLength="17" />
+      <funcRefArg charIndex="13297" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\sab" name="createBombZone" charIndex="13361" charLength="69" codePart="createBombZone( &quot;allies&quot;, getEnt( &quot;sab_bomb_allies&quot;, &quot;targetname&quot; ) )" isCall="True">
+      <funcRefArg charIndex="13377" charLength="8" />
+      <funcRefArg charIndex="13387" charLength="42" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="13387" charLength="41" codePart="getEnt( &quot;sab_bomb_allies&quot;, &quot;targetname&quot; )" isCall="True">
+      <funcRefArg charIndex="13395" charLength="17" />
+      <funcRefArg charIndex="13414" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\sab" name="createBombZone" charIndex="13461" charLength="65" codePart="createBombZone( &quot;axis&quot;, getEnt( &quot;sab_bomb_axis&quot;, &quot;targetname&quot; ) )" isCall="True">
+      <funcRefArg charIndex="13477" charLength="6" />
+      <funcRefArg charIndex="13485" charLength="40" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="13485" charLength="39" codePart="getEnt( &quot;sab_bomb_axis&quot;, &quot;targetname&quot; )" isCall="True">
+      <funcRefArg charIndex="13493" charLength="15" />
+      <funcRefArg charIndex="13510" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="13587" charLength="43" codePart="getEntArray( trigger.target, &quot;targetname&quot; )" isCall="True">
+      <funcRefArg charIndex="13600" charLength="14" />
+      <funcRefArg charIndex="13616" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="createUseObject" charIndex="13648" charLength="83" codePart="maps\mp\gametypes\_gameobjects::createUseObject( team, trigger, visuals, (0,0,64) )" isCall="True">
+      <funcRefArg charIndex="13697" charLength="4" />
+      <funcRefArg charIndex="13703" charLength="7" />
+      <funcRefArg charIndex="13712" charLength="7" />
+      <funcRefArg charIndex="13721" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\sab" name="resetBombsite" charIndex="13735" charLength="24" codePart="bombZone resetBombsite()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\sab" name="onUse" charIndex="13780" charLength="7" codePart="::onUse" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\sab" name="onBeginUse" charIndex="13813" charLength="12" codePart="::onBeginUse" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\sab" name="onEndUse" charIndex="13849" charLength="10" codePart="::onEndUse" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\sab" name="onCantUse" charIndex="13884" charLength="11" codePart="::onCantUse" isCall="False" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="13995" charLength="39" codePart="isDefined( visuals[i].script_exploder )" isCall="True">
+      <funcRefArg charIndex="14006" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="isFriendlyTeam" charIndex="14203" charLength="74" codePart="self maps\mp\gametypes\_gameobjects::isFriendlyTeam( player.pers[&quot;team&quot;] )" isCall="True">
+      <funcRefArg charIndex="14256" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsAlive" charIndex="14395" charLength="17" codePart="isAlive( player )" isCall="True">
+      <funcRefArg charIndex="14404" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="14519" charLength="33" codePart="level notify ( &quot;bomb_picked_up&quot; )" isCall="True">
+      <funcRefArg charIndex="14534" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayLocalSound" charIndex="14805" charLength="45" codePart="player playLocalSound( &quot;mp_suitcase_pickup&quot; )" isCall="True">
+      <funcRefArg charIndex="14828" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LogString" charIndex="14854" charLength="32" codePart="player logString( &quot;bomb taken&quot; )" isCall="True">
+      <funcRefArg charIndex="14872" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="leaderDialogOnPlayer" charIndex="14893" charLength="84" codePart="player maps\mp\gametypes\_globallogic::leaderDialogOnPlayer( &quot;obj_destroy&quot;, &quot;bomb&quot; )" isCall="True">
+      <funcRefArg charIndex="14954" charLength="13" />
+      <funcRefArg charIndex="14969" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="leaderDialog" charIndex="15008" charLength="87" codePart="maps\mp\gametypes\_globallogic::leaderDialog( &quot;bomb_taken&quot;, team, &quot;bomb&quot;, excludeList )" isCall="True">
+      <funcRefArg charIndex="15054" charLength="12" />
+      <funcRefArg charIndex="15068" charLength="4" />
+      <funcRefArg charIndex="15074" charLength="6" />
+      <funcRefArg charIndex="15082" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="leaderDialog" charIndex="15134" charLength="70" codePart="maps\mp\gametypes\_globallogic::leaderDialog( &quot;bomb_lost&quot;, otherTeam )" isCall="True">
+      <funcRefArg charIndex="15180" charLength="11" />
+      <funcRefArg charIndex="15193" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="leaderDialog" charIndex="15209" charLength="71" codePart="maps\mp\gametypes\_globallogic::leaderDialog( &quot;obj_defend&quot;, otherTeam )" isCall="True">
+      <funcRefArg charIndex="15255" charLength="12" />
+      <funcRefArg charIndex="15269" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="getOwnerTeam" charIndex="15391" charLength="51" codePart="self maps\mp\gametypes\_gameobjects::getOwnerTeam()" isCall="True" />
+    <funcRef sfPath="maps\mp\_utility" name="printOnTeamArg" charIndex="15452" charLength="61" codePart="printOnTeamArg( &amp;&quot;MP_EXPLOSIVES_RECOVERED_BY&quot;, team, player )" isCall="True">
+      <funcRefArg charIndex="15468" charLength="29" />
+      <funcRefArg charIndex="15499" charLength="4" />
+      <funcRefArg charIndex="15505" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="playSoundOnPlayers" charIndex="15518" charLength="56" codePart="playSoundOnPlayers( game[&quot;bomb_recovered_sound&quot;], team )" isCall="True">
+      <funcRefArg charIndex="15538" charLength="28" />
+      <funcRefArg charIndex="15568" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="printOnTeamArg" charIndex="15594" charLength="61" codePart="printOnTeamArg( &amp;&quot;MP_EXPLOSIVES_RECOVERED_BY&quot;, team, player )" isCall="True">
+      <funcRefArg charIndex="15610" charLength="29" />
+      <funcRefArg charIndex="15641" charLength="4" />
+      <funcRefArg charIndex="15647" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="playSoundOnPlayers" charIndex="15742" charLength="50" codePart="playSoundOnPlayers( game[&quot;bomb_recovered_sound&quot;] )" isCall="True">
+      <funcRefArg charIndex="15762" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setOwnerTeam" charIndex="15803" charLength="57" codePart="self maps\mp\gametypes\_gameobjects::setOwnerTeam( team )" isCall="True">
+      <funcRefArg charIndex="15854" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setVisibleTeam" charIndex="15864" charLength="60" codePart="self maps\mp\gametypes\_gameobjects::setVisibleTeam( &quot;any&quot; )" isCall="True">
+      <funcRefArg charIndex="15917" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set2DIcon" charIndex="15928" charLength="84" codePart="self maps\mp\gametypes\_gameobjects::set2DIcon( &quot;enemy&quot;, &quot;compass_waypoint_target&quot; )" isCall="True">
+      <funcRefArg charIndex="15976" charLength="7" />
+      <funcRefArg charIndex="15985" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set3DIcon" charIndex="16016" charLength="74" codePart="self maps\mp\gametypes\_gameobjects::set3DIcon( &quot;enemy&quot;, &quot;waypoint_kill&quot; )" isCall="True">
+      <funcRefArg charIndex="16064" charLength="7" />
+      <funcRefArg charIndex="16073" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set2DIcon" charIndex="16094" charLength="87" codePart="self maps\mp\gametypes\_gameobjects::set2DIcon( &quot;friendly&quot;, &quot;compass_waypoint_defend&quot; )" isCall="True">
+      <funcRefArg charIndex="16142" charLength="10" />
+      <funcRefArg charIndex="16154" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set3DIcon" charIndex="16185" charLength="79" codePart="self maps\mp\gametypes\_gameobjects::set3DIcon( &quot;friendly&quot;, &quot;waypoint_defend&quot; )" isCall="True">
+      <funcRefArg charIndex="16233" charLength="10" />
+      <funcRefArg charIndex="16245" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setVisibleTeam" charIndex="16272" charLength="78" codePart="level.bombZones[team] maps\mp\gametypes\_gameobjects::setVisibleTeam( &quot;none&quot; )" isCall="True">
+      <funcRefArg charIndex="16342" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setVisibleTeam" charIndex="16354" charLength="82" codePart="level.bombZones[otherTeam] maps\mp\gametypes\_gameobjects::setVisibleTeam( &quot;any&quot; )" isCall="True">
+      <funcRefArg charIndex="16429" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="16524" charLength="19" codePart="isDefined( player )" isCall="True">
+      <funcRefArg charIndex="16535" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="printOnTeamArg" charIndex="16550" charLength="106" codePart="printOnTeamArg( &amp;&quot;MP_EXPLOSIVES_DROPPED_BY&quot;, self maps\mp\gametypes\_gameobjects::getOwnerTeam(), player )" isCall="True">
+      <funcRefArg charIndex="16566" charLength="27" />
+      <funcRefArg charIndex="16595" charLength="51" />
+      <funcRefArg charIndex="16648" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="getOwnerTeam" charIndex="16595" charLength="51" codePart="self maps\mp\gametypes\_gameobjects::getOwnerTeam()" isCall="True" />
+    <funcRef sfPath="maps\mp\_utility" name="playSoundOnPlayers" charIndex="16797" charLength="101" codePart="playSoundOnPlayers( game[&quot;bomb_dropped_sound&quot;], self maps\mp\gametypes\_gameobjects::getOwnerTeam() )" isCall="True">
+      <funcRefArg charIndex="16817" charLength="26" />
+      <funcRefArg charIndex="16845" charLength="52" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="getOwnerTeam" charIndex="16845" charLength="51" codePart="self maps\mp\gametypes\_gameobjects::getOwnerTeam()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="16908" charLength="19" codePart="isDefined( player )" isCall="True">
+      <funcRefArg charIndex="16919" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LogString" charIndex="16934" charLength="34" codePart="player logString( &quot;bomb dropped&quot; )" isCall="True">
+      <funcRefArg charIndex="16952" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LogString" charIndex="16982" charLength="27" codePart="logString( &quot;bomb dropped&quot; )" isCall="True">
+      <funcRefArg charIndex="16993" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\sab" name="abandonmentThink" charIndex="17108" charLength="30" codePart="thread abandonmentThink( 0.0 )" isCall="True">
+      <funcRefArg charIndex="17133" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="17183" charLength="32" codePart="level endon ( &quot;bomb_picked_up&quot; )" isCall="True">
+      <funcRefArg charIndex="17197" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17247" charLength="25" codePart="isDefined( self.carrier )" isCall="True">
+      <funcRefArg charIndex="17258" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="getOwnerTeam" charIndex="17295" charLength="51" codePart="self maps\mp\gametypes\_gameobjects::getOwnerTeam()" isCall="True" />
+    <funcRef sfPath="maps\mp\_utility" name="playSoundOnPlayers" charIndex="17499" charLength="59" codePart="playSoundOnPlayers( game[&quot;bomb_dropped_sound&quot;], otherTeam )" isCall="True">
+      <funcRefArg charIndex="17519" charLength="26" />
+      <funcRefArg charIndex="17547" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setOwnerTeam" charIndex="17564" charLength="62" codePart="self maps\mp\gametypes\_gameobjects::setOwnerTeam( &quot;neutral&quot; )" isCall="True">
+      <funcRefArg charIndex="17615" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setVisibleTeam" charIndex="17630" charLength="60" codePart="self maps\mp\gametypes\_gameobjects::setVisibleTeam( &quot;any&quot; )" isCall="True">
+      <funcRefArg charIndex="17683" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set2DIcon" charIndex="17694" charLength="82" codePart="self maps\mp\gametypes\_gameobjects::set2DIcon( &quot;enemy&quot;, &quot;compass_waypoint_bomb&quot; )" isCall="True">
+      <funcRefArg charIndex="17742" charLength="7" />
+      <funcRefArg charIndex="17751" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set3DIcon" charIndex="17780" charLength="74" codePart="self maps\mp\gametypes\_gameobjects::set3DIcon( &quot;enemy&quot;, &quot;waypoint_bomb&quot; )" isCall="True">
+      <funcRefArg charIndex="17828" charLength="7" />
+      <funcRefArg charIndex="17837" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set2DIcon" charIndex="17858" charLength="85" codePart="self maps\mp\gametypes\_gameobjects::set2DIcon( &quot;friendly&quot;, &quot;compass_waypoint_bomb&quot; )" isCall="True">
+      <funcRefArg charIndex="17906" charLength="10" />
+      <funcRefArg charIndex="17918" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set3DIcon" charIndex="17947" charLength="77" codePart="self maps\mp\gametypes\_gameobjects::set3DIcon( &quot;friendly&quot;, &quot;waypoint_bomb&quot; )" isCall="True">
+      <funcRefArg charIndex="17995" charLength="10" />
+      <funcRefArg charIndex="18007" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setVisibleTeam" charIndex="18030" charLength="82" codePart="level.bombZones[&quot;allies&quot;] maps\mp\gametypes\_gameobjects::setVisibleTeam( &quot;none&quot; )" isCall="True">
+      <funcRefArg charIndex="18104" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setVisibleTeam" charIndex="18116" charLength="80" codePart="level.bombZones[&quot;axis&quot;] maps\mp\gametypes\_gameobjects::setVisibleTeam( &quot;none&quot; )" isCall="True">
+      <funcRefArg charIndex="18188" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="isFriendlyTeam" charIndex="18324" charLength="74" codePart="self maps\mp\gametypes\_gameobjects::isFriendlyTeam( player.pers[&quot;team&quot;] )" isCall="True">
+      <funcRefArg charIndex="18377" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="18408" charLength="32" codePart="player notify ( &quot;bomb_planted&quot; )" isCall="True">
+      <funcRefArg charIndex="18424" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlaySound" charIndex="18445" charLength="35" codePart="player playSound( &quot;mp_bomb_plant&quot; )" isCall="True">
+      <funcRefArg charIndex="18463" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LogString" charIndex="18485" charLength="34" codePart="player logString( &quot;bomb planted&quot; )" isCall="True">
+      <funcRefArg charIndex="18503" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="printBoldOnTeamArg" charIndex="18560" charLength="63" codePart="printBoldOnTeamArg( &amp;&quot;MP_EXPLOSIVES_PLANTED_BY&quot;, team, player )" isCall="True">
+      <funcRefArg charIndex="18580" charLength="27" />
+      <funcRefArg charIndex="18609" charLength="4" />
+      <funcRefArg charIndex="18615" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="printBoldOnTeam" charIndex="18629" charLength="54" codePart="printBoldOnTeam( &amp;&quot;MP_EXPLOSIVES_PLANTED&quot;, otherTeam )" isCall="True">
+      <funcRefArg charIndex="18646" charLength="24" />
+      <funcRefArg charIndex="18672" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLn" charIndex="18693" charLength="47" codePart="iPrintLn( &amp;&quot;MP_EXPLOSIVES_PLANTED_BY&quot;, player )" isCall="True">
+      <funcRefArg charIndex="18703" charLength="27" />
+      <funcRefArg charIndex="18732" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="leaderDialog" charIndex="18745" charLength="62" codePart="maps\mp\gametypes\_globallogic::leaderDialog( &quot;bomb_planted&quot; )" isCall="True">
+      <funcRefArg charIndex="18791" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="givePlayerScore" charIndex="18814" charLength="66" codePart="maps\mp\gametypes\_globallogic::givePlayerScore( &quot;plant&quot;, player )" isCall="True">
+      <funcRefArg charIndex="18863" charLength="7" />
+      <funcRefArg charIndex="18872" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\sab" name="bombPlanted" charIndex="18934" charLength="53" codePart="level thread bombPlanted( self, player.pers[&quot;team&quot;] )" isCall="True">
+      <funcRefArg charIndex="18960" charLength="4" />
+      <funcRefArg charIndex="18966" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="allowCarry" charIndex="19138" charLength="66" codePart="level.sabBomb maps\mp\gametypes\_gameobjects::allowCarry( &quot;none&quot; )" isCall="True">
+      <funcRefArg charIndex="19196" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setVisibleTeam" charIndex="19209" charLength="70" codePart="level.sabBomb maps\mp\gametypes\_gameobjects::setVisibleTeam( &quot;none&quot; )" isCall="True">
+      <funcRefArg charIndex="19271" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setDropped" charIndex="19284" charLength="58" codePart="level.sabBomb maps\mp\gametypes\_gameobjects::setDropped()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\sab" name="setUpForDefusing" charIndex="19399" charLength="23" codePart="self setUpForDefusing()" isCall="True" />
+    <funcRef sfPath="codapi" name="notify" charIndex="19462" charLength="32" codePart="player notify ( &quot;bomb_defused&quot; )" isCall="True">
+      <funcRefArg charIndex="19478" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LogString" charIndex="19499" charLength="34" codePart="player logString( &quot;bomb defused&quot; )" isCall="True">
+      <funcRefArg charIndex="19517" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLn" charIndex="19569" charLength="47" codePart="iPrintLn( &amp;&quot;MP_EXPLOSIVES_DEFUSED_BY&quot;, player )" isCall="True">
+      <funcRefArg charIndex="19579" charLength="27" />
+      <funcRefArg charIndex="19608" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="leaderDialog" charIndex="19621" charLength="62" codePart="maps\mp\gametypes\_globallogic::leaderDialog( &quot;bomb_defused&quot; )" isCall="True">
+      <funcRefArg charIndex="19667" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="givePlayerScore" charIndex="19690" charLength="67" codePart="maps\mp\gametypes\_globallogic::givePlayerScore( &quot;defuse&quot;, player )" isCall="True">
+      <funcRefArg charIndex="19739" charLength="8" />
+      <funcRefArg charIndex="19749" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\sab" name="bombDefused" charIndex="19814" charLength="32" codePart="level thread bombDefused( self )" isCall="True">
+      <funcRefArg charIndex="19840" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19880" charLength="35" codePart="isDefined( level.plantingTeamDead )" isCall="True">
+      <funcRefArg charIndex="19891" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="endGame" charIndex="19927" charLength="121" codePart="thread maps\mp\gametypes\_globallogic::endGame( player.pers[&quot;team&quot;], game[&quot;strings&quot;][level.bombPlantedBy+&quot;_eliminated&quot;] )" isCall="True">
+      <funcRefArg charIndex="19975" charLength="19" />
+      <funcRefArg charIndex="19996" charLength="51" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\sab" name="resetBombsite" charIndex="20074" charLength="20" codePart="self resetBombsite()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="allowCarry" charIndex="20103" charLength="65" codePart="level.sabBomb maps\mp\gametypes\_gameobjects::allowCarry( &quot;any&quot; )" isCall="True">
+      <funcRefArg charIndex="20161" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setPickedUp" charIndex="20173" charLength="67" codePart="level.sabBomb maps\mp\gametypes\_gameobjects::setPickedUp( player )" isCall="True">
+      <funcRefArg charIndex="20232" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLnBold" charIndex="20279" charLength="52" codePart="player iPrintLnBold( &amp;&quot;MP_CANT_PLANT_WITHOUT_BOMB&quot; )" isCall="True">
+      <funcRefArg charIndex="20300" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="pauseTimer" charIndex="20380" charLength="44" codePart="maps\mp\gametypes\_globallogic::pauseTimer()" isCall="True" />
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="20520" charLength="29" codePart="setDvar( &quot;ui_bomb_timer&quot;, 1 )" isCall="True">
+      <funcRefArg charIndex="20529" charLength="15" />
+      <funcRefArg charIndex="20546" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetGameEndTime" charIndex="20600" charLength="61" codePart="setGameEndTime( int( getTime() + (level.bombTimer * 1000) ) )" isCall="True">
+      <funcRefArg charIndex="20616" charLength="44" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="20616" charLength="43" codePart="int( getTime() + (level.bombTimer * 1000) )" isCall="True">
+      <funcRefArg charIndex="20621" charLength="37" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTime" charIndex="20621" charLength="9" codePart="getTime()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="playTickingSound" charIndex="20668" charLength="81" codePart="destroyedObj.visuals[0] thread maps\mp\gametypes\_globallogic::playTickingSound()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetTime" charIndex="20768" charLength="9" codePart="gettime()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\sab" name="bombTimerWait" charIndex="20781" charLength="15" codePart="bombTimerWait()" isCall="True" />
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="20803" charLength="29" codePart="setDvar( &quot;ui_bomb_timer&quot;, 0 )" isCall="True">
+      <funcRefArg charIndex="20812" charLength="15" />
+      <funcRefArg charIndex="20829" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="stopTickingSound" charIndex="20836" charLength="74" codePart="destroyedObj.visuals[0] maps\mp\gametypes\_globallogic::stopTickingSound()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetTime" charIndex="20995" charLength="9" codePart="gettime()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="21630" charLength="28" codePart="isdefined( level.bombowner )" isCall="True">
+      <funcRefArg charIndex="21641" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RadiusDamage" charIndex="21664" charLength="86" codePart="destroyedObj.visuals[0] radiusDamage( explosionOrigin, 512, 200, 20, level.bombowner )" isCall="True">
+      <funcRefArg charIndex="21702" charLength="15" />
+      <funcRefArg charIndex="21719" charLength="3" />
+      <funcRefArg charIndex="21724" charLength="3" />
+      <funcRefArg charIndex="21729" charLength="2" />
+      <funcRefArg charIndex="21733" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RadiusDamage" charIndex="21761" charLength="69" codePart="destroyedObj.visuals[0] radiusDamage( explosionOrigin, 512, 200, 20 )" isCall="True">
+      <funcRefArg charIndex="21799" charLength="15" />
+      <funcRefArg charIndex="21816" charLength="3" />
+      <funcRefArg charIndex="21821" charLength="3" />
+      <funcRefArg charIndex="21826" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="21843" charLength="16" codePart="randomfloat(360)" isCall="True">
+      <funcRefArg charIndex="21855" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnFx" charIndex="21881" charLength="101" codePart="spawnFx( level._effect[&quot;bombexplosion&quot;], explosionOrigin + (0,0,50), (0,0,1), (cos(rot),sin(rot),0) )" isCall="True">
+      <funcRefArg charIndex="21890" charLength="30" />
+      <funcRefArg charIndex="21922" charLength="26" />
+      <funcRefArg charIndex="21950" charLength="7" />
+      <funcRefArg charIndex="21959" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Cos" charIndex="21960" charLength="8" codePart="cos(rot)" isCall="True">
+      <funcRefArg charIndex="21964" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Sin" charIndex="21969" charLength="8" codePart="sin(rot)" isCall="True">
+      <funcRefArg charIndex="21973" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="TriggerFX" charIndex="21986" charLength="28" codePart="triggerFx( explosionEffect )" isCall="True">
+      <funcRefArg charIndex="21997" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\sab" name="playSoundinSpace" charIndex="22021" charLength="68" codePart="thread playSoundinSpace( &quot;exp_suitcase_bomb_main&quot;, explosionOrigin )" isCall="True">
+      <funcRefArg charIndex="22046" charLength="24" />
+      <funcRefArg charIndex="22072" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="22101" charLength="39" codePart="isDefined( destroyedObj.exploderIndex )" isCall="True">
+      <funcRefArg charIndex="22112" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="exploder" charIndex="22146" charLength="38" codePart="exploder( destroyedObj.exploderIndex )" isCall="True">
+      <funcRefArg charIndex="22156" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetGameEndTime" charIndex="22266" charLength="19" codePart="setGameEndTime( 0 )" isCall="True">
+      <funcRefArg charIndex="22282" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="endGame" charIndex="22352" charLength="91" codePart="thread maps\mp\gametypes\_globallogic::endGame( team, game[&quot;strings&quot;][&quot;target_destroyed&quot;] )" isCall="True">
+      <funcRefArg charIndex="22400" charLength="4" />
+      <funcRefArg charIndex="22406" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="22498" charLength="32" codePart="spawn( &quot;script_origin&quot;, origin )" isCall="True">
+      <funcRefArg charIndex="22505" charLength="15" />
+      <funcRefArg charIndex="22522" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlaySound" charIndex="22557" charLength="23" codePart="org playSound( alias  )" isCall="True">
+      <funcRefArg charIndex="22572" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="22638" charLength="12" codePart="org delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="22681" charLength="27" codePart="level endon(&quot;bomb_defused&quot;)" isCall="True">
+      <funcRefArg charIndex="22693" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="allowUse" charIndex="22763" charLength="56" codePart="self maps\mp\gametypes\_gameobjects::allowUse( &quot;enemy&quot; )" isCall="True">
+      <funcRefArg charIndex="22810" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setUseTime" charIndex="22823" charLength="66" codePart="self maps\mp\gametypes\_gameobjects::setUseTime( level.plantTime )" isCall="True">
+      <funcRefArg charIndex="22872" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setUseText" charIndex="22893" charLength="75" codePart="self maps\mp\gametypes\_gameobjects::setUseText( &amp;&quot;MP_PLANTING_EXPLOSIVE&quot; )" isCall="True">
+      <funcRefArg charIndex="22942" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setUseHintText" charIndex="22972" charLength="91" codePart="self maps\mp\gametypes\_gameobjects::setUseHintText( &amp;&quot;PLATFORM_HOLD_TO_PLANT_EXPLOSIVES&quot; )" isCall="True">
+      <funcRefArg charIndex="23025" charLength="37" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setKeyObject" charIndex="23067" charLength="66" codePart="self maps\mp\gametypes\_gameobjects::setKeyObject( level.sabBomb )" isCall="True">
+      <funcRefArg charIndex="23118" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set2DIcon" charIndex="23137" charLength="87" codePart="self maps\mp\gametypes\_gameobjects::set2DIcon( &quot;friendly&quot;, &quot;compass_waypoint_defend&quot; )" isCall="True">
+      <funcRefArg charIndex="23185" charLength="10" />
+      <funcRefArg charIndex="23197" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set3DIcon" charIndex="23228" charLength="79" codePart="self maps\mp\gametypes\_gameobjects::set3DIcon( &quot;friendly&quot;, &quot;waypoint_defend&quot; )" isCall="True">
+      <funcRefArg charIndex="23276" charLength="10" />
+      <funcRefArg charIndex="23288" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set2DIcon" charIndex="23311" charLength="84" codePart="self maps\mp\gametypes\_gameobjects::set2DIcon( &quot;enemy&quot;, &quot;compass_waypoint_target&quot; )" isCall="True">
+      <funcRefArg charIndex="23359" charLength="7" />
+      <funcRefArg charIndex="23368" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set3DIcon" charIndex="23399" charLength="76" codePart="self maps\mp\gametypes\_gameobjects::set3DIcon( &quot;enemy&quot;, &quot;waypoint_target&quot; )" isCall="True">
+      <funcRefArg charIndex="23447" charLength="7" />
+      <funcRefArg charIndex="23456" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setVisibleTeam" charIndex="23479" charLength="61" codePart="self maps\mp\gametypes\_gameobjects::setVisibleTeam( &quot;none&quot; )" isCall="True">
+      <funcRefArg charIndex="23532" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="allowUse" charIndex="23612" charLength="59" codePart="self maps\mp\gametypes\_gameobjects::allowUse( &quot;friendly&quot; )" isCall="True">
+      <funcRefArg charIndex="23659" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setUseTime" charIndex="23675" charLength="67" codePart="self maps\mp\gametypes\_gameobjects::setUseTime( level.defuseTime )" isCall="True">
+      <funcRefArg charIndex="23724" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setUseText" charIndex="23746" charLength="75" codePart="self maps\mp\gametypes\_gameobjects::setUseText( &amp;&quot;MP_DEFUSING_EXPLOSIVE&quot; )" isCall="True">
+      <funcRefArg charIndex="23795" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setUseHintText" charIndex="23825" charLength="92" codePart="self maps\mp\gametypes\_gameobjects::setUseHintText( &amp;&quot;PLATFORM_HOLD_TO_DEFUSE_EXPLOSIVES&quot; )" isCall="True">
+      <funcRefArg charIndex="23878" charLength="38" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setKeyObject" charIndex="23921" charLength="62" codePart="self maps\mp\gametypes\_gameobjects::setKeyObject( undefined )" isCall="True">
+      <funcRefArg charIndex="23972" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set2DIcon" charIndex="23987" charLength="87" codePart="self maps\mp\gametypes\_gameobjects::set2DIcon( &quot;friendly&quot;, &quot;compass_waypoint_defuse&quot; )" isCall="True">
+      <funcRefArg charIndex="24035" charLength="10" />
+      <funcRefArg charIndex="24047" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set3DIcon" charIndex="24078" charLength="79" codePart="self maps\mp\gametypes\_gameobjects::set3DIcon( &quot;friendly&quot;, &quot;waypoint_defuse&quot; )" isCall="True">
+      <funcRefArg charIndex="24126" charLength="10" />
+      <funcRefArg charIndex="24138" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set2DIcon" charIndex="24161" charLength="84" codePart="self maps\mp\gametypes\_gameobjects::set2DIcon( &quot;enemy&quot;, &quot;compass_waypoint_defend&quot; )" isCall="True">
+      <funcRefArg charIndex="24209" charLength="7" />
+      <funcRefArg charIndex="24218" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="set3DIcon" charIndex="24249" charLength="76" codePart="self maps\mp\gametypes\_gameobjects::set3DIcon( &quot;enemy&quot;, &quot;waypoint_defend&quot; )" isCall="True">
+      <funcRefArg charIndex="24297" charLength="7" />
+      <funcRefArg charIndex="24306" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_gameobjects" name="setVisibleTeam" charIndex="24329" charLength="60" codePart="self maps\mp\gametypes\_gameobjects::setVisibleTeam( &quot;any&quot; )" isCall="True">
+      <funcRefArg charIndex="24382" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="24426" charLength="29" codePart="setDvar( &quot;ui_bomb_timer&quot;, 0 )" isCall="True">
+      <funcRefArg charIndex="24435" charLength="15" />
+      <funcRefArg charIndex="24452" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_globallogic" name="resumeTimer" charIndex="24459" charLength="45" codePart="maps\mp\gametypes\_globallogic::resumeTimer()" isCall="True" />
+    <funcRef sfPath="codapi" name="notify" charIndex="24602" charLength="28" codePart="level notify(&quot;bomb_defused&quot;)" isCall="True">
+      <funcRefArg charIndex="24615" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="24676" charLength="24" codePart="isdefined( winningTeam )" isCall="True">
+      <funcRefArg charIndex="24687" charLength="12" />
+    </funcRef>
+    <error type="warning" charIndex="7724" charLength="155" lineIndex="230">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_hud_message::oldNotifyMessage'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_hud_message::oldNotifyMessage', file 'maps\mp\gametypes\sab', line 231, 'level.players[index] thread maps\mp\gametypes\_hud_message::oldNotifyMessage( &amp;"MP_SUDDEN_DEATH", &amp;"MP_NO_RESPAWN", undefined, (1, 0, 0), "mp_last_stand" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="10051" charLength="71" lineIndex="311">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_spawnlogic::getSpawnpoint_NearTeam'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_spawnlogic::getSpawnpoint_NearTeam', file 'maps\mp\gametypes\sab', line 312, 'spawnpoint = maps\mp\gametypes\_spawnlogic::getSpawnpoint_NearTeam(level.spawn_axis);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="10149" charLength="73" lineIndex="313">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_spawnlogic::getSpawnpoint_NearTeam'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_spawnlogic::getSpawnpoint_NearTeam', file 'maps\mp\gametypes\sab', line 314, 'spawnpoint = maps\mp\gametypes\_spawnlogic::getSpawnpoint_NearTeam(level.spawn_allies);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="10265" charLength="138" lineIndex="318">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_hud_message::oldNotifyMessage'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_hud_message::oldNotifyMessage', file 'maps\mp\gametypes\sab', line 319, 'self thread maps\mp\gametypes\_hud_message::oldNotifyMessage( &amp;"MP_TIE_BREAKER", &amp;"MP_NO_RESPAWN", undefined, (1, 0, 0), "mp_last_stand" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="14361" charLength="4" lineIndex="444">
+      <message>Variable 'team' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'team' is defined, but its value is never used., file 'maps\mp\gametypes\sab', line 445, 'onEndUse( team, player, result )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="14375" charLength="6" lineIndex="444">
+      <message>Variable 'result' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'result' is defined, but its value is never used., file 'maps\mp\gametypes\sab', line 445, 'onEndUse( team, player, result )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="15134" charLength="70" lineIndex="479">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::leaderDialog'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::leaderDialog', file 'maps\mp\gametypes\sab', line 480, 'maps\mp\gametypes\_globallogic::leaderDialog( "bomb_lost", otherTeam );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="15209" charLength="71" lineIndex="480">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::leaderDialog'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::leaderDialog', file 'maps\mp\gametypes\sab', line 481, 'maps\mp\gametypes\_globallogic::leaderDialog( "obj_defend", otherTeam );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="15742" charLength="50" lineIndex="494">
+      <message>Could not find enough arguments, function 'maps\mp\_utility::playSoundOnPlayers'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_utility::playSoundOnPlayers', file 'maps\mp\gametypes\sab', line 495, 'playSoundOnPlayers( game["bomb_recovered_sound"] );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="18745" charLength="62" lineIndex="580">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::leaderDialog'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::leaderDialog', file 'maps\mp\gametypes\sab', line 581, 'maps\mp\gametypes\_globallogic::leaderDialog( "bomb_planted" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="18814" charLength="66" lineIndex="582">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::givePlayerScore'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::givePlayerScore', file 'maps\mp\gametypes\sab', line 583, 'maps\mp\gametypes\_globallogic::givePlayerScore( "plant", player );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="19621" charLength="62" lineIndex="603">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::leaderDialog'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::leaderDialog', file 'maps\mp\gametypes\sab', line 604, 'maps\mp\gametypes\_globallogic::leaderDialog( "bomb_defused" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="19690" charLength="67" lineIndex="605">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::givePlayerScore'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_globallogic::givePlayerScore', file 'maps\mp\gametypes\sab', line 606, 'maps\mp\gametypes\_globallogic::givePlayerScore( "defuse", player );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="24412" charLength="6" lineIndex="743">
+      <message>Variable 'object' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'object' is defined, but its value is never used., file 'maps\mp\gametypes\sab', line 744, 'bombDefused( object )'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

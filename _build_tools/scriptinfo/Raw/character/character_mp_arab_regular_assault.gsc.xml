@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_mp_arab_regular_assault</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="45" codePart="self setModel(&quot;body_mp_arab_regular_assault&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="107" charLength="51" codePart="self attach(&quot;head_mp_arab_regular_suren&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="119" charLength="28" />
+      <funcRefArg charIndex="149" charLength="2" />
+      <funcRefArg charIndex="153" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetViewModel" charIndex="162" charLength="43" codePart="self setViewmodel(&quot;viewhands_desert_opfor&quot;)" isCall="True">
+      <funcRefArg charIndex="180" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="252" charLength="45" codePart="precacheModel(&quot;body_mp_arab_regular_assault&quot;)" isCall="True">
+      <funcRefArg charIndex="266" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="301" charLength="43" codePart="precacheModel(&quot;head_mp_arab_regular_suren&quot;)" isCall="True">
+      <funcRefArg charIndex="315" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="348" charLength="39" codePart="precacheModel(&quot;viewhands_desert_opfor&quot;)" isCall="True">
+      <funcRefArg charIndex="362" charLength="24" />
+    </funcRef>
+  </content>
+</scriptinfo>

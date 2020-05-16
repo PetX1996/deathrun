@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_vacant_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="54" charLength="37" codePart="loadfx( &quot;smoke/hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="62" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="142" charLength="39" codePart="loadfx( &quot;dust/light_shaft_dust_large&quot; )" isCall="True">
+      <funcRefArg charIndex="150" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="226" charLength="36" codePart="loadfx( &quot;dust/room_dust_200_blend&quot; )" isCall="True">
+      <funcRefArg charIndex="234" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="307" charLength="36" codePart="loadfx( &quot;dust/room_dust_100_blend&quot; )" isCall="True">
+      <funcRefArg charIndex="315" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="396" charLength="41" codePart="loadfx( &quot;smoke/battlefield_smokebank_S&quot; )" isCall="True">
+      <funcRefArg charIndex="404" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="488" charLength="39" codePart="loadfx( &quot;dust/dust_ceiling_ash_large&quot; )" isCall="True">
+      <funcRefArg charIndex="496" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="575" charLength="34" codePart="loadfx( &quot;dust/ash_spiral_runner&quot; )" isCall="True">
+      <funcRefArg charIndex="583" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="630" charLength="30" codePart="getdvar( &quot;clientSideEffects&quot; )" isCall="True">
+      <funcRefArg charIndex="639" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\createfx\mp_vacant_fx" name="main" charIndex="673" charLength="34" codePart="maps\createfx\mp_vacant_fx::main()" isCall="True" />
+  </content>
+</scriptinfo>

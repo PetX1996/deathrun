@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_minefields</name>
+  </settings>
+  <content>
+    <func name="minefields" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="minefield_think" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="minefield_kill" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="trigger">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="31" charLength="38" codePart="getentarray(&quot;minefield&quot;, &quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="43" charLength="11" />
+      <funcRefArg charIndex="56" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="139" charLength="37" codePart="loadfx (&quot;explosions/grenadeExp_dirt&quot;)" isCall="True">
+      <funcRefArg charIndex="147" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_minefields" name="minefield_think" charIndex="231" charLength="38" codePart="minefields[i] thread minefield_think()" isCall="True" />
+    <funcRef sfPath="codapi" name="waittill" charIndex="322" charLength="31" codePart="self waittill (&quot;trigger&quot;,other)" isCall="True">
+      <funcRefArg charIndex="337" charLength="9" />
+      <funcRefArg charIndex="347" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsPlayer" charIndex="365" charLength="15" codePart="isPlayer(other)" isCall="True">
+      <funcRefArg charIndex="374" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_minefields" name="minefield_kill" charIndex="386" charLength="33" codePart="other thread minefield_kill(self)" isCall="True">
+      <funcRefArg charIndex="414" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="463" charLength="25" codePart="isDefined(self.minefield)" isCall="True">
+      <funcRefArg charIndex="473" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlaySound" charIndex="532" charLength="34" codePart="self playsound (&quot;minefield_click&quot;)" isCall="True">
+      <funcRefArg charIndex="548" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="589" charLength="15" codePart="randomFloat(.5)" isCall="True">
+      <funcRefArg charIndex="601" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="614" charLength="15" codePart="isdefined(self)" isCall="True">
+      <funcRefArg charIndex="624" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsTouching" charIndex="633" charLength="24" codePart="self istouching(trigger)" isCall="True">
+      <funcRefArg charIndex="649" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetOrigin" charIndex="675" charLength="16" codePart="self getorigin()" isCall="True" />
+    <funcRef sfPath="codapi" name="PlaySound" charIndex="754" charLength="28" codePart="self playsound(&quot;explo_mine&quot;)" isCall="True">
+      <funcRefArg charIndex="769" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayFX" charIndex="787" charLength="47" codePart="playfx(level._effect[&quot;mine_explosion&quot;], origin)" isCall="True">
+      <funcRefArg charIndex="794" charLength="31" />
+      <funcRefArg charIndex="827" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RadiusDamage" charIndex="839" charLength="49" codePart="radiusDamage(origin, range, maxdamage, mindamage)" isCall="True">
+      <funcRefArg charIndex="852" charLength="6" />
+      <funcRefArg charIndex="860" charLength="5" />
+      <funcRefArg charIndex="867" charLength="9" />
+      <funcRefArg charIndex="878" charLength="9" />
+    </funcRef>
+  </content>
+</scriptinfo>

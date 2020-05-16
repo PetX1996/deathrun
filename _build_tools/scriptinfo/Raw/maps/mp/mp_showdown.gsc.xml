@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_showdown</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="maps\mp\mp_showdown_fx" name="main" charIndex="12" charLength="30" codePart="maps\mp\mp_showdown_fx::main()" isCall="True" />
+    <funcRef sfPath="maps\createart\mp_showdown_art" name="main" charIndex="46" charLength="38" codePart="maps\createart\mp_showdown_art::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\_load" name="main" charIndex="88" charLength="21" codePart="maps\mp\_load::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\_compass" name="setupMiniMap" charIndex="115" charLength="57" codePart="maps\mp\_compass::setupMiniMap(&quot;compass_map_mp_showdown&quot;)" isCall="True">
+      <funcRefArg charIndex="146" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AmbientPlay" charIndex="178" charLength="32" codePart="ambientPlay(&quot;ambient_crossfire&quot;)" isCall="True">
+      <funcRefArg charIndex="190" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="417" charLength="38" codePart="setdvar( &quot;r_specularcolorscale&quot;, &quot;1&quot; )" isCall="True">
+      <funcRefArg charIndex="426" charLength="22" />
+      <funcRefArg charIndex="450" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="462" charLength="33" codePart="setdvar(&quot;compassmaxrange&quot;,&quot;2000&quot;)" isCall="True">
+      <funcRefArg charIndex="470" charLength="17" />
+      <funcRefArg charIndex="488" charLength="6" />
+    </funcRef>
+    <error type="warning" charIndex="88" charLength="21" lineIndex="4">
+      <message>Could not find enough arguments, function 'maps\mp\_load::main'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_load::main', file 'maps\mp\mp_showdown', line 5, 'maps\mp\_load::main();'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

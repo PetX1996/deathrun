@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createfx\coup_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <error type="semantic" charIndex="95" charLength="54" lineIndex="4">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 5, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="349" charLength="54" lineIndex="10">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 11, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="602" charLength="54" lineIndex="16">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 17, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="859" charLength="54" lineIndex="22">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 23, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1118" charLength="54" lineIndex="28">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 29, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1376" charLength="54" lineIndex="34">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 35, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1633" charLength="54" lineIndex="40">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 41, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1891" charLength="54" lineIndex="46">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 47, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2149" charLength="54" lineIndex="52">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 53, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2407" charLength="54" lineIndex="58">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 59, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2665" charLength="54" lineIndex="64">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 65, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2922" charLength="54" lineIndex="70">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 71, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3180" charLength="54" lineIndex="76">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 77, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3438" charLength="54" lineIndex="82">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 83, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3696" charLength="54" lineIndex="88">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 89, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3954" charLength="54" lineIndex="94">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 95, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4211" charLength="54" lineIndex="100">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 101, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4466" charLength="54" lineIndex="106">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 107, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4724" charLength="54" lineIndex="112">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 113, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4980" charLength="54" lineIndex="118">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 119, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5237" charLength="54" lineIndex="124">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 125, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5495" charLength="54" lineIndex="130">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 131, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5753" charLength="54" lineIndex="136">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 137, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6007" charLength="54" lineIndex="142">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 143, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6265" charLength="54" lineIndex="148">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 149, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6522" charLength="54" lineIndex="154">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 155, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6780" charLength="54" lineIndex="160">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 161, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7038" charLength="54" lineIndex="166">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 167, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7295" charLength="54" lineIndex="172">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 173, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7553" charLength="54" lineIndex="178">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 179, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7811" charLength="54" lineIndex="184">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 185, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8069" charLength="54" lineIndex="190">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 191, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8327" charLength="54" lineIndex="196">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 197, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8585" charLength="54" lineIndex="202">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 203, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8844" charLength="54" lineIndex="208">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 209, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9101" charLength="54" lineIndex="214">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 215, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9359" charLength="54" lineIndex="220">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 221, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9618" charLength="54" lineIndex="226">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 227, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9877" charLength="54" lineIndex="232">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 233, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10129" charLength="54" lineIndex="238">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 239, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10384" charLength="54" lineIndex="244">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 245, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10643" charLength="54" lineIndex="250">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 251, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10900" charLength="44" lineIndex="256">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 257, 'ent = maps\_utility::createOneshotEffect( "hawk" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11127" charLength="55" lineIndex="262">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 263, 'ent = maps\_utility::createOneshotEffect( "firelp_small_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11387" charLength="57" lineIndex="268">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 269, 'ent = maps\_utility::createOneshotEffect( "firelp_small_pm_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11640" charLength="57" lineIndex="274">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 275, 'ent = maps\_utility::createOneshotEffect( "firelp_small_pm_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11892" charLength="55" lineIndex="280">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 281, 'ent = maps\_utility::createOneshotEffect( "firelp_small_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="12204" charLength="55" lineIndex="287">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 288, 'ent = maps\_utility::createOneshotEffect( "firelp_small_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="12515" charLength="55" lineIndex="294">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 295, 'ent = maps\_utility::createOneshotEffect( "firelp_small_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="12825" charLength="57" lineIndex="301">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 302, 'ent = maps\_utility::createOneshotEffect( "firelp_small_pm_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="13077" charLength="57" lineIndex="307">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 308, 'ent = maps\_utility::createOneshotEffect( "firelp_small_pm_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="13328" charLength="57" lineIndex="313">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 314, 'ent = maps\_utility::createOneshotEffect( "firelp_small_pm_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="13580" charLength="57" lineIndex="319">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 320, 'ent = maps\_utility::createOneshotEffect( "firelp_small_pm_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="13832" charLength="55" lineIndex="325">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 326, 'ent = maps\_utility::createOneshotEffect( "firelp_small_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="14132" charLength="57" lineIndex="332">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 333, 'ent = maps\_utility::createOneshotEffect( "firelp_small_pm_a" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="14384" charLength="48" lineIndex="338">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 339, 'ent = maps\_utility::createExploder( "birds_takeoff" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="14688" charLength="48" lineIndex="346">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 347, 'ent = maps\_utility::createExploder( "birds_takeoff" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="14997" charLength="56" lineIndex="354">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 355, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="15241" charLength="56" lineIndex="360">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 361, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="15485" charLength="56" lineIndex="366">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 367, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="15763" charLength="56" lineIndex="373">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 374, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="16044" charLength="56" lineIndex="380">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 381, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="16329" charLength="56" lineIndex="387">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 388, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="16614" charLength="56" lineIndex="394">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 395, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="16899" charLength="56" lineIndex="401">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 402, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="17184" charLength="56" lineIndex="408">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 409, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="17468" charLength="56" lineIndex="415">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 416, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="17753" charLength="56" lineIndex="422">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 423, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18038" charLength="54" lineIndex="429">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 430, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18293" charLength="54" lineIndex="435">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 436, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18548" charLength="54" lineIndex="441">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 442, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="18803" charLength="54" lineIndex="447">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 448, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19062" charLength="54" lineIndex="453">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 454, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19321" charLength="56" lineIndex="459">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 460, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19606" charLength="56" lineIndex="466">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 467, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="19890" charLength="56" lineIndex="473">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 474, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20174" charLength="56" lineIndex="480">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 481, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20458" charLength="56" lineIndex="487">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 488, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="20741" charLength="56" lineIndex="494">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 495, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21025" charLength="56" lineIndex="501">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 502, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21308" charLength="56" lineIndex="508">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 509, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21590" charLength="56" lineIndex="515">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 516, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="21874" charLength="56" lineIndex="522">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 523, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22157" charLength="56" lineIndex="529">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 530, 'ent = maps\_utility::createOneshotEffect( "dust_wind_spiral" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22440" charLength="53" lineIndex="536">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 537, 'ent = maps\_utility::createOneshotEffect( "firelp_med_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22683" charLength="53" lineIndex="542">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 543, 'ent = maps\_utility::createOneshotEffect( "firelp_med_pm" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="22918" charLength="56" lineIndex="548">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 549, 'ent = maps\_utility::createOneshotEffect( "wavebreak_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23180" charLength="56" lineIndex="554">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 555, 'ent = maps\_utility::createOneshotEffect( "wavebreak_runner" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23443" charLength="64" lineIndex="560">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 561, 'ent = maps\_utility::createOneshotEffect( "bird_seagull_flock_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23709" charLength="64" lineIndex="566">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\coup_fx', line 567, 'ent = maps\_utility::createOneshotEffect( "bird_seagull_flock_large" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="23974" charLength="33" lineIndex="572">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\coup_fx', line 573, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24183" charLength="33" lineIndex="577">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\coup_fx', line 578, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24385" charLength="33" lineIndex="582">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\coup_fx', line 583, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24588" charLength="33" lineIndex="587">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\coup_fx', line 588, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="24796" charLength="33" lineIndex="592">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\coup_fx', line 593, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25004" charLength="33" lineIndex="597">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\coup_fx', line 598, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25212" charLength="33" lineIndex="602">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\coup_fx', line 603, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25420" charLength="33" lineIndex="607">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\coup_fx', line 608, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="25628" charLength="33" lineIndex="612">
+      <message>Could not find file 'maps\_createfx'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_createfx', file 'maps\createfx\coup_fx', line 613, 'ent = maps\_createfx::createLoopSound();'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_cargoship_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="47" charLength="38" codePart="loadfx( &quot;explosions/grenadeExp_wood&quot; )" isCall="True">
+      <funcRefArg charIndex="55" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="124" charLength="40" codePart="loadfx( &quot;explosions/grenadeExp_dirt_1&quot; )" isCall="True">
+      <funcRefArg charIndex="132" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="202" charLength="44" codePart="loadfx( &quot;explosions/grenadeExp_concrete_1&quot; )" isCall="True">
+      <funcRefArg charIndex="210" charLength="35" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="293" charLength="44" codePart="loadfx( &quot;explosions/grenadeExp_concrete_1&quot; )" isCall="True">
+      <funcRefArg charIndex="301" charLength="35" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="398" charLength="37" codePart="loadfx( &quot;weather/rain_mp_cargoship&quot; )" isCall="True">
+      <funcRefArg charIndex="406" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="477" charLength="37" codePart="loadfx( &quot;weather/lightning_mp_farm&quot; )" isCall="True">
+      <funcRefArg charIndex="485" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="559" charLength="29" codePart="loadfx( &quot;misc/cgoshp_drips&quot; )" isCall="True">
+      <funcRefArg charIndex="567" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="634" charLength="31" codePart="loadfx( &quot;misc/cgoshp_drips_a&quot; )" isCall="True">
+      <funcRefArg charIndex="642" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="875" charLength="53" codePart="loadfx( &quot;ambient_runners/mp_cargoship_rain_noise01&quot; )" isCall="True">
+      <funcRefArg charIndex="883" charLength="44" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="981" charLength="53" codePart="loadfx( &quot;ambient_runners/mp_cargoship_rain_noise02&quot; )" isCall="True">
+      <funcRefArg charIndex="989" charLength="44" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="1087" charLength="53" codePart="loadfx( &quot;ambient_runners/mp_cargoship_rain_noise03&quot; )" isCall="True">
+      <funcRefArg charIndex="1095" charLength="44" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="1193" charLength="53" codePart="loadfx( &quot;ambient_runners/mp_cargoship_rain_noise04&quot; )" isCall="True">
+      <funcRefArg charIndex="1201" charLength="44" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="1299" charLength="53" codePart="loadfx( &quot;ambient_runners/mp_cargoship_rain_noise05&quot; )" isCall="True">
+      <funcRefArg charIndex="1307" charLength="44" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="1410" charLength="56" codePart="loadfx( &quot;ambient_runners/mp_cargoship_rain_noise_ud01&quot; )" isCall="True">
+      <funcRefArg charIndex="1418" charLength="47" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="1522" charLength="56" codePart="loadfx( &quot;ambient_runners/mp_cargoship_rain_noise_ud02&quot; )" isCall="True">
+      <funcRefArg charIndex="1530" charLength="47" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="1634" charLength="56" codePart="loadfx( &quot;ambient_runners/mp_cargoship_rain_noise_ud03&quot; )" isCall="True">
+      <funcRefArg charIndex="1642" charLength="47" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="1709" charLength="30" codePart="getdvar( &quot;clientSideEffects&quot; )" isCall="True">
+      <funcRefArg charIndex="1718" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\createfx\mp_cargoship_fx" name="main" charIndex="1752" charLength="37" codePart="maps\createfx\mp_cargoship_fx::main()" isCall="True" />
+  </content>
+</scriptinfo>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_citystreets</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="maps\mp\mp_citystreets_fx" name="main" charIndex="12" charLength="33" codePart="maps\mp\mp_citystreets_fx::main()" isCall="True" />
+    <funcRef sfPath="maps\createart\mp_citystreets_art" name="main" charIndex="49" charLength="41" codePart="maps\createart\mp_citystreets_art::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\_load" name="main" charIndex="94" charLength="21" codePart="maps\mp\_load::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\_compass" name="setupMiniMap" charIndex="121" charLength="60" codePart="maps\mp\_compass::setupMiniMap(&quot;compass_map_mp_citystreets&quot;)" isCall="True">
+      <funcRefArg charIndex="152" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AmbientPlay" charIndex="229" charLength="38" codePart="ambientPlay(&quot;ambient_citystreets_day&quot;)" isCall="True">
+      <funcRefArg charIndex="241" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VisionSetNaked" charIndex="271" charLength="34" codePart="VisionSetNaked( &quot;mp_citystreets&quot; )" isCall="True">
+      <funcRefArg charIndex="287" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="511" charLength="38" codePart="setdvar( &quot;r_specularcolorscale&quot;, &quot;1&quot; )" isCall="True">
+      <funcRefArg charIndex="520" charLength="22" />
+      <funcRefArg charIndex="544" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="555" charLength="33" codePart="setdvar(&quot;compassmaxrange&quot;,&quot;2000&quot;)" isCall="True">
+      <funcRefArg charIndex="563" charLength="17" />
+      <funcRefArg charIndex="581" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="main" charIndex="594" charLength="34" codePart="maps\mp\_explosive_barrels::main()" isCall="True" />
+    <error type="warning" charIndex="94" charLength="21" lineIndex="4">
+      <message>Could not find enough arguments, function 'maps\mp\_load::main'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_load::main', file 'maps\mp\mp_citystreets', line 5, 'maps\mp\_load::main();'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

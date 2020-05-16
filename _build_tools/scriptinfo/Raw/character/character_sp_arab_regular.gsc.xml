@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_arab_regular</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codescripts\character" name="setModelFromArray" charIndex="58" charLength="83" codePart="codescripts\character::setModelFromArray(xmodelalias\alias_sp_arab_regular::main())" isCall="True">
+      <funcRefArg charIndex="99" charLength="41" />
+    </funcRef>
+    <funcRef sfPath="codescripts\character" name="precacheModelArray" charIndex="188" charLength="84" codePart="codescripts\character::precacheModelArray(xmodelalias\alias_sp_arab_regular::main())" isCall="True">
+      <funcRefArg charIndex="230" charLength="41" />
+    </funcRef>
+    <error type="semantic" charIndex="99" charLength="41" lineIndex="3">
+      <message>Could not find file 'xmodelalias\alias_sp_arab_regular'</message>
+      <fullMessage>Bad semantic: Could not find file 'xmodelalias\alias_sp_arab_regular', file 'character\character_sp_arab_regular', line 4, 'codescripts\character::setModelFromArray(xmodelalias\alias_sp_arab_regular::main());'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="230" charLength="41" lineIndex="9">
+      <message>Could not find file 'xmodelalias\alias_sp_arab_regular'</message>
+      <fullMessage>Bad semantic: Could not find file 'xmodelalias\alias_sp_arab_regular', file 'character\character_sp_arab_regular', line 10, 'codescripts\character::precacheModelArray(xmodelalias\alias_sp_arab_regular::main());'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_baserace</name>
+  </settings>
+  <content>
+    <include>maps\mp\_utility</include>
+    <include>maps\mp\gametypes\_hud_util</include>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="test" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="createConstructionTrigger" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="position">
+      </param>
+      <param name="team">
+      </param>
+    </func>
+    <func name="createCollectableTrigger" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="height">
+      </param>
+      <param name="radius">
+      </param>
+    </func>
+    <func name="createCrate" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="spawntarget">
+      </param>
+    </func>
+    <func name="watchCratePickup" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="pickupCrate" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="crate">
+      </param>
+    </func>
+    <error type="semantic" charIndex="0" charLength="32" lineIndex="0">
+      <message>Could not include file 'scripts\include\useful'</message>
+      <fullMessage>Bad semantic: Could not include file 'scripts\include\useful', file 'maps\mp\_baserace', line 1, '#include scripts\include\useful;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

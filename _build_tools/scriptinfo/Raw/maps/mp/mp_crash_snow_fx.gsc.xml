@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_crash_snow_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="swapAirstrikeFX" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="54" charLength="39" codePart="loadfx (&quot;fire/firelp_med_pm_nodistort&quot;)" isCall="True">
+      <funcRefArg charIndex="62" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="136" charLength="31" codePart="loadfx (&quot;fire/firelp_small_pm&quot;)" isCall="True">
+      <funcRefArg charIndex="144" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="211" charLength="33" codePart="loadfx (&quot;fire/firelp_small_pm_a&quot;)" isCall="True">
+      <funcRefArg charIndex="219" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="286" charLength="28" codePart="loadfx (&quot;weather/snow_wind&quot;)" isCall="True">
+      <funcRefArg charIndex="294" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="356" charLength="28" codePart="loadfx (&quot;weather/snow_wind&quot;)" isCall="True">
+      <funcRefArg charIndex="364" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="427" charLength="42" codePart="loadfx (&quot;weather/snow_wind_spiral_runner&quot;)" isCall="True">
+      <funcRefArg charIndex="435" charLength="33" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="517" charLength="40" codePart="loadfx (&quot;smoke/battlefield_smokebank_S&quot;)" isCall="True">
+      <funcRefArg charIndex="525" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="602" charLength="36" codePart="loadfx (&quot;smoke/hallway_smoke_light&quot;)" isCall="True">
+      <funcRefArg charIndex="610" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="678" charLength="38" codePart="loadfx (&quot;weather/snow_light_mp_crash&quot;)" isCall="True">
+      <funcRefArg charIndex="686" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="731" charLength="30" codePart="getdvar( &quot;clientSideEffects&quot; )" isCall="True">
+      <funcRefArg charIndex="740" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\createfx\mp_crash_snow_fx" name="main" charIndex="774" charLength="38" codePart="maps\createfx\mp_crash_snow_fx::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\mp_crash_snow_fx" name="swapAirstrikeFX" charIndex="822" charLength="24" codePart="thread swapAirstrikeFX()" isCall="True" />
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="898" charLength="43" codePart="loadfx (&quot;explosions/clusterbomb_christmas&quot;)" isCall="True">
+      <funcRefArg charIndex="906" charLength="34" />
+    </funcRef>
+  </content>
+</scriptinfo>

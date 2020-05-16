@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_sp_zakhaev_gimp</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="46" codePart="self setModel(&quot;body_complete_gimp_sp_zakhaev&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="154" charLength="46" codePart="precacheModel(&quot;body_complete_gimp_sp_zakhaev&quot;)" isCall="True">
+      <funcRefArg charIndex="168" charLength="31" />
+    </funcRef>
+  </content>
+</scriptinfo>

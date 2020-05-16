@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createfx\bog_b_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <error type="semantic" charIndex="62" charLength="63" lineIndex="3">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 4, 'ent = maps\_utility::createOneshotEffect( "battlefield_smokebank_S" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="328" charLength="55" lineIndex="9">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 10, 'ent = maps\_utility::createExploder( "wall_explosion_draft" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="626" charLength="54" lineIndex="16">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 17, 'ent = maps\_utility::createExploder( "wall_explosion_grnd" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="909" charLength="55" lineIndex="23">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 24, 'ent = maps\_utility::createExploder( "wall_explosion_small" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1207" charLength="55" lineIndex="30">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 31, 'ent = maps\_utility::createExploder( "wall_explosion_small" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1492" charLength="55" lineIndex="37">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 38, 'ent = maps\_utility::createExploder( "wall_explosion_small" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="1791" charLength="55" lineIndex="44">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 45, 'ent = maps\_utility::createExploder( "wall_explosion_small" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2077" charLength="55" lineIndex="51">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 52, 'ent = maps\_utility::createExploder( "wall_explosion_small" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2376" charLength="61" lineIndex="58">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 59, 'ent = maps\_utility::createOneshotEffect( "paper_falling_burning" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2637" charLength="61" lineIndex="64">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 65, 'ent = maps\_utility::createOneshotEffect( "paper_falling_burning" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2898" charLength="61" lineIndex="70">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 71, 'ent = maps\_utility::createOneshotEffect( "paper_falling_burning" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3159" charLength="61" lineIndex="76">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 77, 'ent = maps\_utility::createOneshotEffect( "paper_falling_burning" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3419" charLength="61" lineIndex="82">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 83, 'ent = maps\_utility::createOneshotEffect( "paper_falling_burning" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3680" charLength="61" lineIndex="88">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 89, 'ent = maps\_utility::createOneshotEffect( "paper_falling_burning" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="3941" charLength="63" lineIndex="94">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 95, 'ent = maps\_utility::createOneshotEffect( "battlefield_smokebank_S" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4206" charLength="63" lineIndex="100">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 101, 'ent = maps\_utility::createOneshotEffect( "battlefield_smokebank_S" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4470" charLength="63" lineIndex="106">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 107, 'ent = maps\_utility::createOneshotEffect( "battlefield_smokebank_S" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4730" charLength="63" lineIndex="112">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 113, 'ent = maps\_utility::createOneshotEffect( "battlefield_smokebank_S" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="4995" charLength="63" lineIndex="118">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 119, 'ent = maps\_utility::createOneshotEffect( "battlefield_smokebank_S" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5259" charLength="63" lineIndex="124">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 125, 'ent = maps\_utility::createOneshotEffect( "battlefield_smokebank_S" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5519" charLength="63" lineIndex="130">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 131, 'ent = maps\_utility::createOneshotEffect( "battlefield_smokebank_S" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="5784" charLength="63" lineIndex="136">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 137, 'ent = maps\_utility::createOneshotEffect( "battlefield_smokebank_S" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6049" charLength="54" lineIndex="142">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 143, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6296" charLength="54" lineIndex="148">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 149, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6544" charLength="54" lineIndex="154">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 155, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="6790" charLength="54" lineIndex="160">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 161, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7037" charLength="54" lineIndex="166">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 167, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7279" charLength="54" lineIndex="172">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 173, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7521" charLength="54" lineIndex="178">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 179, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="7768" charLength="54" lineIndex="184">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 185, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8016" charLength="54" lineIndex="190">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 191, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8264" charLength="54" lineIndex="196">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 197, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8504" charLength="54" lineIndex="202">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 203, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8750" charLength="54" lineIndex="208">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 209, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="8996" charLength="54" lineIndex="214">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 215, 'ent = maps\_utility::createOneshotEffect( "dust_wind_slow" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9242" charLength="58" lineIndex="220">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 221, 'ent = maps\_utility::createOneshotEffect( "thin_black_smoke_L" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9496" charLength="58" lineIndex="226">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 227, 'ent = maps\_utility::createOneshotEffect( "thin_black_smoke_L" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="9750" charLength="58" lineIndex="232">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 233, 'ent = maps\_utility::createOneshotEffect( "thin_black_smoke_L" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10005" charLength="58" lineIndex="238">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 239, 'ent = maps\_utility::createOneshotEffect( "thin_black_smoke_M" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10260" charLength="55" lineIndex="244">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 245, 'ent = maps\_utility::createExploder( "wall_explosion_draft" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10561" charLength="55" lineIndex="251">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 252, 'ent = maps\_utility::createExploder( "wall_explosion_draft" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="10858" charLength="55" lineIndex="258">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 259, 'ent = maps\_utility::createExploder( "wall_explosion_draft" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11160" charLength="55" lineIndex="265">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 266, 'ent = maps\_utility::createExploder( "wall_explosion_small" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11459" charLength="55" lineIndex="272">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 273, 'ent = maps\_utility::createExploder( "wall_explosion_round" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="11763" charLength="51" lineIndex="279">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 280, 'ent = maps\_utility::createExploder( "tank_round_spark" );'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="12058" charLength="55" lineIndex="286">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createfx\bog_b_fx', line 287, 'ent = maps\_utility::createExploder( "wall_explosion_small" );'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

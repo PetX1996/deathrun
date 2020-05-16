@@ -1,0 +1,836 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_oldschool</name>
+  </settings>
+  <content>
+    <include>maps\mp\_utility</include>
+    <include>maps\mp\gametypes\_hud_util</include>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="giveLoadout" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="deletePickups" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="initPickups" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="spawnPickupFX" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="groundpoint">
+      </param>
+      <param name="fx">
+      </param>
+    </func>
+    <func name="playEffectShortly" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="fx">
+      </param>
+    </func>
+    <func name="getPickupGroundpoint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="pickup">
+      </param>
+    </func>
+    <func name="trackPickup" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="pickup">
+      </param>
+      <param name="id">
+      </param>
+    </func>
+    <func name="hidePerkNameAfterTime" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="index">
+      </param>
+      <param name="delay">
+      </param>
+    </func>
+    <func name="playSoundinSpace" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="alias">
+      </param>
+      <param name="origin">
+      </param>
+    </func>
+    <func name="setPickupStartAmmo" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="weapname">
+      </param>
+    </func>
+    <func name="changeSecondaryGrenadeType" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="weapname">
+      </param>
+    </func>
+    <func name="deleteTriggerWhenPickedUp" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="trig">
+      </param>
+    </func>
+    <func name="resetActionSlotToAltMode" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="weapname">
+      </param>
+    </func>
+    <func name="getWeaponAmmoTotal" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="weapname">
+      </param>
+    </func>
+    <func name="removeInventoryWeapon" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="spinPickup" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="deleteOnDeath" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ent">
+      </param>
+    </func>
+    <func name="delayedDeletion" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="delay">
+      </param>
+    </func>
+    <func name="delayedDeletionOnSwappedWeapons" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="delay">
+      </param>
+    </func>
+    <func name="onPlayerConnect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="onPlayerSpawned" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="clearPerksOnDeath" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="watchWeaponsList" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateWeaponsList" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="delay">
+      </param>
+    </func>
+    <func name="hadWeaponBeforePickingUp" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="newWeapon">
+      </param>
+    </func>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="deletePickups" charIndex="112" charLength="15" codePart="deletePickups()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="154" charLength="43" codePart="getdvar( &quot;scr_os_pickupweaponrespawntime&quot; )" isCall="True">
+      <funcRefArg charIndex="163" charLength="33" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="209" charLength="49" codePart="setdvar( &quot;scr_os_pickupweaponrespawntime&quot;, &quot;15&quot; )" isCall="True">
+      <funcRefArg charIndex="218" charLength="32" />
+      <funcRefArg charIndex="252" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="294" charLength="48" codePart="getdvarfloat( &quot;scr_os_pickupweaponrespawntime&quot; )" isCall="True">
+      <funcRefArg charIndex="308" charLength="33" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="351" charLength="41" codePart="getdvar( &quot;scr_os_pickupperkrespawntime&quot; )" isCall="True">
+      <funcRefArg charIndex="360" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="404" charLength="47" codePart="setdvar( &quot;scr_os_pickupperkrespawntime&quot;, &quot;25&quot; )" isCall="True">
+      <funcRefArg charIndex="413" charLength="30" />
+      <funcRefArg charIndex="445" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="485" charLength="46" codePart="getdvarfloat( &quot;scr_os_pickupperkrespawntime&quot; )" isCall="True">
+      <funcRefArg charIndex="499" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="initPickups" charIndex="538" charLength="20" codePart="thread initPickups()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="onPlayerConnect" charIndex="565" charLength="24" codePart="thread onPlayerConnect()" isCall="True" />
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="621" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="TableLookup" charIndex="1316" charLength="43" codePart="tableLookup( &quot;mp/statstable.csv&quot;, 0, i, 4 )" isCall="True">
+      <funcRefArg charIndex="1329" charLength="19" />
+      <funcRefArg charIndex="1350" charLength="1" />
+      <funcRefArg charIndex="1353" charLength="1" />
+      <funcRefArg charIndex="1356" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="1369" charLength="30" codePart="issubstr( perk, &quot;specialty_&quot; )" isCall="True">
+      <funcRefArg charIndex="1379" charLength="4" />
+      <funcRefArg charIndex="1385" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetArrayKeys" charIndex="2040" charLength="37" codePart="getArrayKeys( level.perkPickupHints )" isCall="True">
+      <funcRefArg charIndex="2054" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheString" charIndex="2131" charLength="60" codePart="precacheString( level.perkPickupHints[ perkPickupKeys[i] ] )" isCall="True">
+      <funcRefArg charIndex="2147" charLength="43" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="2218" charLength="45" codePart="assert( isdefined( level.oldschoolLoadout ) )" isCall="True">
+      <funcRefArg charIndex="2226" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2226" charLength="35" codePart="isdefined( level.oldschoolLoadout )" isCall="True">
+      <funcRefArg charIndex="2237" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="StrTok" charIndex="2325" charLength="36" codePart="strtok( loadout.primaryWeapon, &quot;_&quot; )" isCall="True">
+      <funcRefArg charIndex="2333" charLength="21" />
+      <funcRefArg charIndex="2356" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_teams" name="playerModelForWeapon" charIndex="2417" charLength="81" codePart="self maps\mp\gametypes\_teams::playerModelForWeapon( self.pers[&quot;primaryWeapon&quot;] )" isCall="True">
+      <funcRefArg charIndex="2470" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GiveWeapon" charIndex="2507" charLength="40" codePart="self GiveWeapon( loadout.primaryWeapon )" isCall="True">
+      <funcRefArg charIndex="2524" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GiveStartAmmo" charIndex="2551" charLength="43" codePart="self giveStartAmmo( loadout.primaryWeapon )" isCall="True">
+      <funcRefArg charIndex="2571" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetSpawnWeapon" charIndex="2598" charLength="44" codePart="self setSpawnWeapon( loadout.primaryWeapon )" isCall="True">
+      <funcRefArg charIndex="2619" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GiveWeapon" charIndex="2676" charLength="42" codePart="self GiveWeapon( loadout.secondaryWeapon )" isCall="True">
+      <funcRefArg charIndex="2693" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GiveStartAmmo" charIndex="2722" charLength="45" codePart="self giveStartAmmo( loadout.secondaryWeapon )" isCall="True">
+      <funcRefArg charIndex="2742" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetActionSlot" charIndex="2774" charLength="38" codePart="self SetActionSlot( 1, &quot;nightvision&quot; )" isCall="True">
+      <funcRefArg charIndex="2794" charLength="1" />
+      <funcRefArg charIndex="2797" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GiveWeapon" charIndex="2863" charLength="42" codePart="self GiveWeapon( loadout.inventoryWeapon )" isCall="True">
+      <funcRefArg charIndex="2880" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_class" name="setWeaponAmmoOverall" charIndex="2910" charLength="107" codePart="self maps\mp\gametypes\_class::setWeaponAmmoOverall( loadout.inventoryWeapon, loadout.inventoryWeaponAmmo )" isCall="True">
+      <funcRefArg charIndex="2963" charLength="23" />
+      <funcRefArg charIndex="2988" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetActionSlot" charIndex="3081" charLength="58" codePart="self SetActionSlot( 3, &quot;weapon&quot;, loadout.inventoryWeapon )" isCall="True">
+      <funcRefArg charIndex="3101" charLength="1" />
+      <funcRefArg charIndex="3104" charLength="8" />
+      <funcRefArg charIndex="3114" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetActionSlot" charIndex="3144" charLength="27" codePart="self SetActionSlot( 4, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="3164" charLength="1" />
+      <funcRefArg charIndex="3167" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetActionSlot" charIndex="3191" charLength="34" codePart="self SetActionSlot( 3, &quot;altMode&quot; )" isCall="True">
+      <funcRefArg charIndex="3211" charLength="1" />
+      <funcRefArg charIndex="3214" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetActionSlot" charIndex="3230" charLength="27" codePart="self SetActionSlot( 4, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="3250" charLength="1" />
+      <funcRefArg charIndex="3253" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GiveWeapon" charIndex="3388" charLength="37" codePart="self GiveWeapon( grenadeTypePrimary )" isCall="True">
+      <funcRefArg charIndex="3405" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetWeaponAmmoClip" charIndex="3430" charLength="73" codePart="self SetWeaponAmmoClip( grenadeTypePrimary, loadout.grenadeCountPrimary )" isCall="True">
+      <funcRefArg charIndex="3454" charLength="18" />
+      <funcRefArg charIndex="3474" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SwitchToOffhand" charIndex="3508" charLength="42" codePart="self SwitchToOffhand( grenadeTypePrimary )" isCall="True">
+      <funcRefArg charIndex="3530" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetOffhandSecondaryClass" charIndex="3744" charLength="38" codePart="self setOffhandSecondaryClass(&quot;flash&quot;)" isCall="True">
+      <funcRefArg charIndex="3774" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetOffhandSecondaryClass" charIndex="3796" charLength="38" codePart="self setOffhandSecondaryClass(&quot;smoke&quot;)" isCall="True">
+      <funcRefArg charIndex="3826" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GiveWeapon" charIndex="3843" charLength="39" codePart="self giveWeapon( grenadeTypeSecondary )" isCall="True">
+      <funcRefArg charIndex="3860" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetWeaponAmmoClip" charIndex="3887" charLength="77" codePart="self SetWeaponAmmoClip( grenadeTypeSecondary, loadout.grenadeCountSecondary )" isCall="True">
+      <funcRefArg charIndex="3911" charLength="20" />
+      <funcRefArg charIndex="3933" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="4007" charLength="47" codePart="getentarray( &quot;oldschool_pickup&quot;, &quot;targetname&quot; )" isCall="True">
+      <funcRefArg charIndex="4020" charLength="18" />
+      <funcRefArg charIndex="4040" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4110" charLength="30" codePart="isdefined( pickups[i].target )" isCall="True">
+      <funcRefArg charIndex="4121" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="4147" charLength="50" codePart="getent( pickups[i].target, &quot;targetname&quot; ) delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="4147" charLength="41" codePart="getent( pickups[i].target, &quot;targetname&quot; )" isCall="True">
+      <funcRefArg charIndex="4155" charLength="17" />
+      <funcRefArg charIndex="4174" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="4202" charLength="19" codePart="pickups[i] delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="4282" charLength="36" codePart="loadfx( &quot;misc/ui_pickup_available&quot; )" isCall="True">
+      <funcRefArg charIndex="4290" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="4354" charLength="38" codePart="loadfx( &quot;misc/ui_pickup_unavailable&quot; )" isCall="True">
+      <funcRefArg charIndex="4362" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="4487" charLength="47" codePart="getentarray( &quot;oldschool_pickup&quot;, &quot;targetname&quot; )" isCall="True">
+      <funcRefArg charIndex="4500" charLength="18" />
+      <funcRefArg charIndex="4520" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="trackPickup" charIndex="4581" charLength="35" codePart="thread trackPickup( pickups[i], i )" isCall="True">
+      <funcRefArg charIndex="4601" charLength="10" />
+      <funcRefArg charIndex="4613" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnFx" charIndex="4671" charLength="44" codePart="spawnFx( fx, groundpoint, (0,0,1), (1,0,0) )" isCall="True">
+      <funcRefArg charIndex="4680" charLength="2" />
+      <funcRefArg charIndex="4684" charLength="11" />
+      <funcRefArg charIndex="4697" charLength="7" />
+      <funcRefArg charIndex="4706" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="TriggerFX" charIndex="4719" charLength="19" codePart="triggerFx( effect )" isCall="True">
+      <funcRefArg charIndex="4730" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="4795" charLength="19" codePart="self endon(&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="4806" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayFXOnTag" charIndex="4830" charLength="37" codePart="playFxOnTag( fx, self, &quot;tag_origin&quot; )" isCall="True">
+      <funcRefArg charIndex="4843" charLength="2" />
+      <funcRefArg charIndex="4847" charLength="4" />
+      <funcRefArg charIndex="4853" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTrace" charIndex="4919" charLength="71" codePart="bullettrace( pickup.origin, pickup.origin + (0,0,-128), false, pickup )" isCall="True">
+      <funcRefArg charIndex="4932" charLength="13" />
+      <funcRefArg charIndex="4947" charLength="26" />
+      <funcRefArg charIndex="4975" charLength="5" />
+      <funcRefArg charIndex="4982" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Cos" charIndex="5312" charLength="10" codePart="cos(angle)" isCall="True">
+      <funcRefArg charIndex="5316" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Sin" charIndex="5324" charLength="10" codePart="sin(angle)" isCall="True">
+      <funcRefArg charIndex="5328" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTrace" charIndex="5366" charLength="51" codePart="bullettrace( pos, pos + (0,0,-128), false, pickup )" isCall="True">
+      <funcRefArg charIndex="5379" charLength="3" />
+      <funcRefArg charIndex="5384" charLength="16" />
+      <funcRefArg charIndex="5402" charLength="5" />
+      <funcRefArg charIndex="5409" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="getPickupGroundpoint" charIndex="5657" charLength="30" codePart="getPickupGroundpoint( pickup )" isCall="True">
+      <funcRefArg charIndex="5679" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="spawnPickupFX" charIndex="5706" charLength="57" codePart="spawnPickupFX( groundpoint, level.pickupAvailableEffect )" isCall="True">
+      <funcRefArg charIndex="5721" charLength="11" />
+      <funcRefArg charIndex="5734" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="6051" charLength="32" codePart="issubstr( classname, &quot;weapon_&quot; )" isCall="True">
+      <funcRefArg charIndex="6061" charLength="9" />
+      <funcRefArg charIndex="6072" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_weapons" name="getItemWeaponName" charIndex="6124" charLength="54" codePart="pickup maps\mp\gametypes\_weapons::getItemWeaponName()" isCall="True" />
+    <funcRef sfPath="maps\mp\_utility" name="error" charIndex="6488" charLength="125" codePart="maps\mp\_utility::error( &quot;oldschool_pickup with classname script_model does not have script_noteworthy set to a valid perk&quot; )" isCall="True">
+      <funcRefArg charIndex="6513" charLength="99" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="6642" charLength="37" codePart="getent( pickup.target, &quot;targetname&quot; )" isCall="True">
+      <funcRefArg charIndex="6650" charLength="13" />
+      <funcRefArg charIndex="6665" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="6740" charLength="30" codePart="getDvarInt( &quot;scr_game_perks&quot; )" isCall="True">
+      <funcRefArg charIndex="6752" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="6782" charLength="15" codePart="pickup delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="Delete" charIndex="6803" charLength="13" codePart="trig delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="Delete" charIndex="6822" charLength="18" codePart="effectObj delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6871" charLength="42" codePart="isDefined( level.perkPickupHints[ perk ] )" isCall="True">
+      <funcRefArg charIndex="6882" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetHintString" charIndex="6920" charLength="51" codePart="trig setHintString( level.perkPickupHints[ perk ] )" isCall="True">
+      <funcRefArg charIndex="6940" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="error" charIndex="6991" charLength="131" codePart="maps\mp\_utility::error( &quot;oldschool_pickup with classname &quot; + classname + &quot; is not supported (at location &quot; + pickup.origin + &quot;)&quot; )" isCall="True">
+      <funcRefArg charIndex="7016" charLength="105" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7149" charLength="32" codePart="isDefined( pickup.script_delay )" isCall="True">
+      <funcRefArg charIndex="7160" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="changeSecondaryGrenadeType" charIndex="7332" charLength="52" codePart="pickup thread changeSecondaryGrenadeType( weapname )" isCall="True">
+      <funcRefArg charIndex="7374" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="setPickupStartAmmo" charIndex="7390" charLength="37" codePart="pickup setPickupStartAmmo( weapname )" isCall="True">
+      <funcRefArg charIndex="7417" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="7458" charLength="45" codePart="pickup waittill( &quot;trigger&quot;, player, dropped )" isCall="True">
+      <funcRefArg charIndex="7475" charLength="9" />
+      <funcRefArg charIndex="7486" charLength="6" />
+      <funcRefArg charIndex="7494" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7522" charLength="19" codePart="isdefined( pickup )" isCall="True">
+      <funcRefArg charIndex="7533" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="7630" charLength="31" codePart="assert( !isdefined( dropped ) )" isCall="True">
+      <funcRefArg charIndex="7638" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7639" charLength="20" codePart="isdefined( dropped )" isCall="True">
+      <funcRefArg charIndex="7650" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7683" charLength="20" codePart="isdefined( dropped )" isCall="True">
+      <funcRefArg charIndex="7694" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="delayedDeletion" charIndex="7819" charLength="48" codePart="dropped thread delayedDeletion( dropDeleteTime )" isCall="True">
+      <funcRefArg charIndex="7851" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="7897" charLength="16" codePart="assert( isPerk )" isCall="True">
+      <funcRefArg charIndex="7905" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="8058" charLength="34" codePart="trig waittill( &quot;trigger&quot;, player )" isCall="True">
+      <funcRefArg charIndex="8073" charLength="9" />
+      <funcRefArg charIndex="8084" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="8103" charLength="15" codePart="pickup delete()" isCall="True" />
+    <funcRef sfPath="maps\mp\_utility" name="triggerOff" charIndex="8124" charLength="17" codePart="trig triggerOff()" isCall="True" />
+    <funcRef sfPath="codapi" name="WeaponInventoryType" charIndex="8185" charLength="31" codePart="weaponInventoryType( weapname )" isCall="True">
+      <funcRefArg charIndex="8206" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8232" charLength="35" codePart="isdefined( player.inventoryWeapon )" isCall="True">
+      <funcRefArg charIndex="8243" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="removeInventoryWeapon" charIndex="8320" charLength="30" codePart="player removeInventoryWeapon()" isCall="True" />
+    <funcRef sfPath="codapi" name="SetActionSlot" charIndex="8397" charLength="45" codePart="player SetActionSlot( 3, &quot;weapon&quot;, weapname )" isCall="True">
+      <funcRefArg charIndex="8419" charLength="1" />
+      <funcRefArg charIndex="8422" charLength="8" />
+      <funcRefArg charIndex="8432" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="8742" charLength="16" codePart="assert( isPerk )" isCall="True">
+      <funcRefArg charIndex="8750" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="HasPerk" charIndex="8775" charLength="22" codePart="player hasPerk( perk )" isCall="True">
+      <funcRefArg charIndex="8791" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetPerk" charIndex="8811" charLength="22" codePart="player setPerk( perk )" isCall="True">
+      <funcRefArg charIndex="8827" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="showPerk" charIndex="8840" charLength="45" codePart="player showPerk( player.numperks, perk, -50 )" isCall="True">
+      <funcRefArg charIndex="8857" charLength="15" />
+      <funcRefArg charIndex="8874" charLength="4" />
+      <funcRefArg charIndex="8880" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="hidePerkNameAfterTime" charIndex="8892" charLength="59" codePart="player thread hidePerkNameAfterTime( player.numperks, 3.0 )" isCall="True">
+      <funcRefArg charIndex="8929" charLength="15" />
+      <funcRefArg charIndex="8946" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="playSoundinSpace" charIndex="9001" charLength="61" codePart="thread playSoundinSpace( level.oldschoolPickupSound, origin )" isCall="True">
+      <funcRefArg charIndex="9026" charLength="26" />
+      <funcRefArg charIndex="9054" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="9071" charLength="18" codePart="effectObj delete()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="spawnPickupFX" charIndex="9106" charLength="59" codePart="spawnPickupFX( groundpoint, level.pickupUnavailableEffect )" isCall="True">
+      <funcRefArg charIndex="9121" charLength="11" />
+      <funcRefArg charIndex="9134" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="9208" charLength="38" codePart="spawn( classname, origin, spawnflags )" isCall="True">
+      <funcRefArg charIndex="9215" charLength="9" />
+      <funcRefArg charIndex="9226" charLength="6" />
+      <funcRefArg charIndex="9234" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="9301" charLength="24" codePart="pickup setModel( model )" isCall="True">
+      <funcRefArg charIndex="9318" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="triggerOn" charIndex="9331" charLength="16" codePart="trig triggerOn()" isCall="True" />
+    <funcRef sfPath="codapi" name="PlaySound" charIndex="9361" charLength="47" codePart="pickup playSound( level.oldschoolRespawnSound )" isCall="True">
+      <funcRefArg charIndex="9379" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="9417" charLength="18" codePart="effectObj delete()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="spawnPickupFX" charIndex="9452" charLength="57" codePart="spawnPickupFX( groundpoint, level.pickupAvailableEffect )" isCall="True">
+      <funcRefArg charIndex="9467" charLength="11" />
+      <funcRefArg charIndex="9480" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="9566" charLength="24" codePart="self endon(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="9577" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="hidePerk" charIndex="9614" charLength="40" codePart="self thread hidePerk( index, 2.0, true )" isCall="True">
+      <funcRefArg charIndex="9636" charLength="5" />
+      <funcRefArg charIndex="9643" charLength="3" />
+      <funcRefArg charIndex="9648" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="9709" charLength="32" codePart="spawn( &quot;script_origin&quot;, origin )" isCall="True">
+      <funcRefArg charIndex="9716" charLength="15" />
+      <funcRefArg charIndex="9733" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlaySound" charIndex="9768" charLength="23" codePart="org playSound( alias  )" isCall="True">
+      <funcRefArg charIndex="9783" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="9849" charLength="12" codePart="org delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="WeaponStartAmmo" charIndex="10042" charLength="30" codePart="weaponStartAmmo( curweapname )" isCall="True">
+      <funcRefArg charIndex="10059" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="WeaponClipSize" charIndex="10088" charLength="29" codePart="weaponClipSize( curweapname )" isCall="True">
+      <funcRefArg charIndex="10104" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="ItemWeaponSetAmmo" charIndex="10270" charLength="57" codePart="self itemWeaponSetAmmo( clipammo, reserveammo, altindex )" isCall="True">
+      <funcRefArg charIndex="10294" charLength="8" />
+      <funcRefArg charIndex="10304" charLength="11" />
+      <funcRefArg charIndex="10317" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="WeaponAltWeaponName" charIndex="10346" charLength="34" codePart="weaponAltWeaponName( curweapname )" isCall="True">
+      <funcRefArg charIndex="10367" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="10451" charLength="21" codePart="self endon(&quot;trigger&quot;)" isCall="True">
+      <funcRefArg charIndex="10462" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="10725" charLength="61" codePart="spawn( &quot;trigger_radius&quot;, self.origin - (0,0,20), 0, 128, 64 )" isCall="True">
+      <funcRefArg charIndex="10732" charLength="16" />
+      <funcRefArg charIndex="10750" charLength="22" />
+      <funcRefArg charIndex="10774" charLength="1" />
+      <funcRefArg charIndex="10777" charLength="3" />
+      <funcRefArg charIndex="10782" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="deleteTriggerWhenPickedUp" charIndex="10790" charLength="45" codePart="self thread deleteTriggerWhenPickedUp( trig )" isCall="True">
+      <funcRefArg charIndex="10829" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="10858" charLength="34" codePart="trig waittill( &quot;trigger&quot;, player )" isCall="True">
+      <funcRefArg charIndex="10873" charLength="9" />
+      <funcRefArg charIndex="10884" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="getWeaponAmmoTotal" charIndex="10902" charLength="51" codePart="player getWeaponAmmoTotal( level.weapons[&quot;smoke&quot;] )" isCall="True">
+      <funcRefArg charIndex="10929" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="getWeaponAmmoTotal" charIndex="10967" charLength="51" codePart="player getWeaponAmmoTotal( level.weapons[&quot;flash&quot;] )" isCall="True">
+      <funcRefArg charIndex="10994" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="getWeaponAmmoTotal" charIndex="11032" charLength="56" codePart="player getWeaponAmmoTotal( level.weapons[&quot;concussion&quot;] )" isCall="True">
+      <funcRefArg charIndex="11059" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetOffhandSecondaryClass" charIndex="11105" charLength="47" codePart="player setOffhandSecondaryClass( offhandClass )" isCall="True">
+      <funcRefArg charIndex="11138" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="11208" charLength="24" codePart="self waittill(&quot;trigger&quot;)" isCall="True">
+      <funcRefArg charIndex="11222" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="11236" charLength="13" codePart="trig delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="notify" charIndex="11299" charLength="48" codePart="self notify(&quot;resetting_action_slot_to_alt_mode&quot;)" isCall="True">
+      <funcRefArg charIndex="11311" charLength="35" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="11351" charLength="47" codePart="self endon(&quot;resetting_action_slot_to_alt_mode&quot;)" isCall="True">
+      <funcRefArg charIndex="11362" charLength="35" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="getWeaponAmmoTotal" charIndex="11426" charLength="35" codePart="self getWeaponAmmoTotal( weapname )" isCall="True">
+      <funcRefArg charIndex="11451" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetCurrentWeapon" charIndex="11488" charLength="23" codePart="self getCurrentWeapon()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="removeInventoryWeapon" charIndex="11603" charLength="28" codePart="self removeInventoryWeapon()" isCall="True" />
+    <funcRef sfPath="codapi" name="SetActionSlot" charIndex="11635" charLength="34" codePart="self SetActionSlot( 3, &quot;altmode&quot; )" isCall="True">
+      <funcRefArg charIndex="11655" charLength="1" />
+      <funcRefArg charIndex="11658" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetWeaponAmmoClip" charIndex="11720" charLength="34" codePart="self getWeaponAmmoClip( weapname )" isCall="True">
+      <funcRefArg charIndex="11744" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetWeaponAmmoStock" charIndex="11757" charLength="35" codePart="self getWeaponAmmoStock( weapname )" isCall="True">
+      <funcRefArg charIndex="11782" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="11834" charLength="33" codePart="isDefined( self.inventoryWeapon )" isCall="True">
+      <funcRefArg charIndex="11845" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="TakeWeapon" charIndex="11873" charLength="39" codePart="self takeWeapon( self.inventoryWeapon )" isCall="True">
+      <funcRefArg charIndex="11890" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="12044" charLength="19" codePart="self endon(&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="12055" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="12078" charLength="37" codePart="spawn( &quot;script_origin&quot;, self.origin )" isCall="True">
+      <funcRefArg charIndex="12085" charLength="15" />
+      <funcRefArg charIndex="12102" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="12120" charLength="18" codePart="org endon(&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="12130" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LinkTo" charIndex="12147" charLength="18" codePart="self linkto( org )" isCall="True">
+      <funcRefArg charIndex="12160" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="deleteOnDeath" charIndex="12170" charLength="32" codePart="self thread deleteOnDeath( org )" isCall="True">
+      <funcRefArg charIndex="12197" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RotateYaw" charIndex="12229" charLength="29" codePart="org rotateyaw( 360, 3, 0, 0 )" isCall="True">
+      <funcRefArg charIndex="12244" charLength="3" />
+      <funcRefArg charIndex="12249" charLength="1" />
+      <funcRefArg charIndex="12252" charLength="1" />
+      <funcRefArg charIndex="12255" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="12315" charLength="18" codePart="ent endon(&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="12325" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="12337" charLength="22" codePart="self waittill(&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="12351" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="12363" charLength="12" codePart="ent delete()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="delayedDeletionOnSwappedWeapons" charIndex="12413" charLength="52" codePart="self thread delayedDeletionOnSwappedWeapons( delay )" isCall="True">
+      <funcRefArg charIndex="12458" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12494" charLength="17" codePart="isDefined( self )" isCall="True">
+      <funcRefArg charIndex="12505" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="12521" charLength="20" codePart="self notify(&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="12533" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="12546" charLength="13" codePart="self delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="12617" charLength="19" codePart="self endon(&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="12628" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="12656" charLength="43" codePart="self waittill( &quot;trigger&quot;, player, dropped )" isCall="True">
+      <funcRefArg charIndex="12671" charLength="9" />
+      <funcRefArg charIndex="12682" charLength="6" />
+      <funcRefArg charIndex="12690" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12709" charLength="20" codePart="isdefined( dropped )" isCall="True">
+      <funcRefArg charIndex="12720" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="delayedDeletion" charIndex="12749" charLength="39" codePart="dropped thread delayedDeletion( delay )" isCall="True">
+      <funcRefArg charIndex="12781" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="12836" charLength="39" codePart="level waittill ( &quot;connecting&quot;, player )" isCall="True">
+      <funcRefArg charIndex="12853" charLength="12" />
+      <funcRefArg charIndex="12867" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="onPlayerSpawned" charIndex="12882" charLength="31" codePart="player thread onPlayerSpawned()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="12948" charLength="26" codePart="self endon( &quot;disconnect&quot; )" isCall="True">
+      <funcRefArg charIndex="12960" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="12995" charLength="33" codePart="self waittill( &quot;spawned_player&quot; )" isCall="True">
+      <funcRefArg charIndex="13010" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="ClearPerks" charIndex="13078" charLength="17" codePart="self clearPerks()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="clearPerksOnDeath" charIndex="13122" charLength="31" codePart="self thread clearPerksOnDeath()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="watchWeaponsList" charIndex="13162" charLength="30" codePart="self thread watchWeaponsList()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="13229" charLength="24" codePart="self endon(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="13240" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="13257" charLength="22" codePart="self waittill(&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="13271" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="ClearPerks" charIndex="13286" charLength="17" codePart="self clearPerks()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_hud_util" name="hidePerk" charIndex="13352" charLength="24" codePart="self hidePerk( i, 0.05 )" isCall="True">
+      <funcRefArg charIndex="13367" charLength="1" />
+      <funcRefArg charIndex="13370" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="13433" charLength="19" codePart="self endon(&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="13444" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetWeaponsList" charIndex="13497" charLength="21" codePart="self getWeaponsList()" isCall="True" />
+    <funcRef sfPath="codapi" name="waittill" charIndex="13540" charLength="43" codePart="self waittill( &quot;weapon_change&quot;, newWeapon )" isCall="True">
+      <funcRefArg charIndex="13555" charLength="15" />
+      <funcRefArg charIndex="13572" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_oldschool" name="updateWeaponsList" charIndex="13592" charLength="36" codePart="self thread updateWeaponsList( .05 )" isCall="True">
+      <funcRefArg charIndex="13623" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="13672" charLength="19" codePart="self endon(&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="13683" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="13695" charLength="36" codePart="self notify(&quot;updating_weapons_list&quot;)" isCall="True">
+      <funcRefArg charIndex="13707" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="13735" charLength="35" codePart="self endon(&quot;updating_weapons_list&quot;)" isCall="True">
+      <funcRefArg charIndex="13746" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetWeaponsList" charIndex="13792" charLength="21" codePart="self getWeaponsList()" isCall="True" />
+    <error type="warning" charIndex="5633" charLength="2" lineIndex="195">
+      <message>Variable 'id' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'id' is defined, but its value is never used., file 'maps\mp\gametypes\_oldschool', line 196, 'trackPickup( pickup, id )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="7486" charLength="6" lineIndex="270">
+      <message>Variable 'player' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'player' is defined, but its value is never used., file 'maps\mp\gametypes\_oldschool', line 271, 'pickup waittill( "trigger", player, dropped );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="8084" charLength="6" lineIndex="300">
+      <message>Variable 'player' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'player' is defined, but its value is never used., file 'maps\mp\gametypes\_oldschool', line 301, 'trig waittill( "trigger", player );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="12682" charLength="6" lineIndex="508">
+      <message>Variable 'player' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'player' is defined, but its value is never used., file 'maps\mp\gametypes\_oldschool', line 509, 'self waittill( "trigger", player, dropped );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="13352" charLength="24" lineIndex="552">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::hidePerk'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_hud_util::hidePerk', file 'maps\mp\gametypes\_oldschool', line 553, 'self hidePerk( i, 0.05 );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="13572" charLength="9" lineIndex="567">
+      <message>Variable 'newWeapon' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'newWeapon' is defined, but its value is never used., file 'maps\mp\gametypes\_oldschool', line 568, 'self waittill( "weapon_change", newWeapon );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="13659" charLength="5" lineIndex="573">
+      <message>Variable 'delay' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'delay' is defined, but its value is never used., file 'maps\mp\gametypes\_oldschool', line 574, 'updateWeaponsList( delay )'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

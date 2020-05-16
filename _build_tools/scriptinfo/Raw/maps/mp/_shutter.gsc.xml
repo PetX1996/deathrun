@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_shutter</name>
+  </settings>
+  <content>
+    <include>common_scripts\utility</include>
+    <include>maps\mp\_utility</include>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="windController" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="shutterWanderLeft" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="shutter">
+      </param>
+      <param name="windDirection">
+      </param>
+    </func>
+    <func name="shutterWanderRight" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="shutter">
+      </param>
+      <param name="windDirection">
+      </param>
+    </func>
+    <func name="wireWander" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="wire">
+      </param>
+    </func>
+    <funcRef sfPath="maps\mp\_utility" name="array_levelthread" charIndex="123" charLength="66" codePart="array_levelthread (getentarray(&quot;wire&quot;,&quot;targetname&quot;), ::wireWander)" isCall="True">
+      <funcRefArg charIndex="142" charLength="32" />
+      <funcRefArg charIndex="176" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="142" charLength="32" codePart="getentarray(&quot;wire&quot;,&quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="154" charLength="6" />
+      <funcRefArg charIndex="161" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_shutter" name="wireWander" charIndex="176" charLength="12" codePart="::wireWander" isCall="False" />
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="210" charLength="41" codePart="getentarray (&quot;shutter_left&quot;,&quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="223" charLength="14" />
+      <funcRefArg charIndex="238" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="269" charLength="47" codePart="getentarray (&quot;shutter_right_open&quot;,&quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="282" charLength="20" />
+      <funcRefArg charIndex="303" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="422" charLength="48" codePart="getentarray (&quot;shutter_left_closed&quot;,&quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="435" charLength="21" />
+      <funcRefArg charIndex="457" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RotateTo" charIndex="637" charLength="86" codePart="shutter rotateto((shutter.angles[0], shutter.angles[1] + 180, shutter.angles[2]), 0.1)" isCall="True">
+      <funcRefArg charIndex="654" charLength="63" />
+      <funcRefArg charIndex="719" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="858" charLength="42" codePart="getentarray (&quot;shutter_right&quot;,&quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="871" charLength="15" />
+      <funcRefArg charIndex="887" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="918" charLength="46" codePart="getentarray (&quot;shutter_left_open&quot;,&quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="931" charLength="19" />
+      <funcRefArg charIndex="951" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="1072" charLength="49" codePart="getentarray (&quot;shutter_right_closed&quot;,&quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="1085" charLength="22" />
+      <funcRefArg charIndex="1108" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="array_levelthread" charIndex="1388" charLength="68" codePart="array_levelthread (leftShutters, ::shutterWanderLeft, windDirection)" isCall="True">
+      <funcRefArg charIndex="1407" charLength="12" />
+      <funcRefArg charIndex="1421" charLength="19" />
+      <funcRefArg charIndex="1442" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_shutter" name="shutterWanderLeft" charIndex="1421" charLength="19" codePart="::shutterWanderLeft" isCall="False" />
+    <funcRef sfPath="maps\mp\_utility" name="array_levelthread" charIndex="1461" charLength="70" codePart="array_levelthread (rightShutters, ::shutterWanderRight, windDirection)" isCall="True">
+      <funcRefArg charIndex="1480" charLength="13" />
+      <funcRefArg charIndex="1495" charLength="20" />
+      <funcRefArg charIndex="1517" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_shutter" name="shutterWanderRight" charIndex="1495" charLength="20" codePart="::shutterWanderRight" isCall="False" />
+    <funcRef sfPath="codapi" name="waittill" charIndex="1536" charLength="44" codePart="level waittill (&quot;wind blows&quot;, windDirection)" isCall="True">
+      <funcRefArg charIndex="1552" charLength="12" />
+      <funcRefArg charIndex="1566" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="1661" charLength="14" codePart="randomint(100)" isCall="True">
+      <funcRefArg charIndex="1671" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="1714" charLength="42" codePart="level notify (&quot;wind blows&quot;, windDirection)" isCall="True">
+      <funcRefArg charIndex="1728" charLength="12" />
+      <funcRefArg charIndex="1742" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="1771" charLength="15" codePart="randomfloat(10)" isCall="True">
+      <funcRefArg charIndex="1783" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="2061" charLength="26" codePart="level endon (&quot;wind blows&quot;)" isCall="True">
+      <funcRefArg charIndex="2074" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RotateTo" charIndex="2195" charLength="73" codePart="shutter rotateto((shutter.angles[0], newYaw, shutter.angles[2]), newTime)" isCall="True">
+      <funcRefArg charIndex="2212" charLength="46" />
+      <funcRefArg charIndex="2260" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="2321" charLength="13" codePart="randomint(80)" isCall="True">
+      <funcRefArg charIndex="2331" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="2343" charLength="14" codePart="randomint(100)" isCall="True">
+      <funcRefArg charIndex="2353" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Abs" charIndex="2581" charLength="31" codePart="abs(shutter.angles[1] - newYaw)" isCall="True">
+      <funcRefArg charIndex="2585" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="2642" charLength="14" codePart="randomfloat(2)" isCall="True">
+      <funcRefArg charIndex="2654" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RotateTo" charIndex="2868" charLength="103" codePart="shutter rotateto((shutter.angles[0], newYaw, shutter.angles[2]), newTime, newTime * 0.5, newTime * 0.5)" isCall="True">
+      <funcRefArg charIndex="2885" charLength="46" />
+      <funcRefArg charIndex="2933" charLength="7" />
+      <funcRefArg charIndex="2942" charLength="13" />
+      <funcRefArg charIndex="2957" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="3265" charLength="26" codePart="level endon (&quot;wind blows&quot;)" isCall="True">
+      <funcRefArg charIndex="3278" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RotateTo" charIndex="3399" charLength="73" codePart="shutter rotateto((shutter.angles[0], newYaw, shutter.angles[2]), newTime)" isCall="True">
+      <funcRefArg charIndex="3416" charLength="46" />
+      <funcRefArg charIndex="3464" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="3525" charLength="13" codePart="randomint(80)" isCall="True">
+      <funcRefArg charIndex="3535" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="3547" charLength="14" codePart="randomint(100)" isCall="True">
+      <funcRefArg charIndex="3557" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Abs" charIndex="3785" charLength="31" codePart="abs(shutter.angles[1] - newYaw)" isCall="True">
+      <funcRefArg charIndex="3789" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="3846" charLength="14" codePart="randomfloat(2)" isCall="True">
+      <funcRefArg charIndex="3858" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RotateTo" charIndex="4072" charLength="103" codePart="shutter rotateto((shutter.angles[0], newYaw, shutter.angles[2]), newTime, newTime * 0.5, newTime * 0.5)" isCall="True">
+      <funcRefArg charIndex="4089" charLength="46" />
+      <funcRefArg charIndex="4137" charLength="7" />
+      <funcRefArg charIndex="4146" charLength="13" />
+      <funcRefArg charIndex="4161" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="4239" charLength="38" codePart="getentarray (wire.target,&quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="4252" charLength="11" />
+      <funcRefArg charIndex="4264" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorToAngles" charIndex="4349" charLength="28" codePart="vectortoangles (org1 - org2)" isCall="True">
+      <funcRefArg charIndex="4365" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="4387" charLength="30" codePart="spawn (&quot;script_model&quot;,(0,0,0))" isCall="True">
+      <funcRefArg charIndex="4394" charLength="14" />
+      <funcRefArg charIndex="4409" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="vectorScale" charIndex="4434" charLength="22" codePart="vectorScale(org1, 0.5)" isCall="True">
+      <funcRefArg charIndex="4446" charLength="4" />
+      <funcRefArg charIndex="4452" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="common_scripts\utility" name="vectorScale" charIndex="4459" charLength="22" codePart="vectorScale(org2, 0.5)" isCall="True">
+      <funcRefArg charIndex="4471" charLength="4" />
+      <funcRefArg charIndex="4477" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LinkTo" charIndex="4535" charLength="17" codePart="wire linkto (ent)" isCall="True">
+      <funcRefArg charIndex="4548" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="4601" charLength="14" codePart="randomfloat(2)" isCall="True">
+      <funcRefArg charIndex="4613" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RotateRoll" charIndex="4619" charLength="28" codePart="ent rotateroll(dist*0.5,0.2)" isCall="True">
+      <funcRefArg charIndex="4634" charLength="8" />
+      <funcRefArg charIndex="4643" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="4702" charLength="22" codePart="randomfloat (rotRange)" isCall="True">
+      <funcRefArg charIndex="4715" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RotateRoll" charIndex="4748" charLength="54" codePart="ent rotateroll(dist,rottime, rottime*0.5, rottime*0.5)" isCall="True">
+      <funcRefArg charIndex="4763" charLength="4" />
+      <funcRefArg charIndex="4768" charLength="7" />
+      <funcRefArg charIndex="4777" charLength="11" />
+      <funcRefArg charIndex="4790" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RotateRoll" charIndex="4826" charLength="59" codePart="ent rotateroll(dist * -1,rottime, rottime*0.5, rottime*0.5)" isCall="True">
+      <funcRefArg charIndex="4841" charLength="9" />
+      <funcRefArg charIndex="4851" charLength="7" />
+      <funcRefArg charIndex="4860" charLength="11" />
+      <funcRefArg charIndex="4873" charLength="11" />
+    </funcRef>
+    <error type="warning" charIndex="123" charLength="66" lineIndex="7">
+      <message>Could not find enough arguments, function 'maps\mp\_utility::array_levelthread'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_utility::array_levelthread', file 'maps\mp\_shutter', line 8, 'array_levelthread (getentarray("wire","targetname"), ::wireWander);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="1388" charLength="68" lineIndex="43">
+      <message>Could not find enough arguments, function 'maps\mp\_utility::array_levelthread'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_utility::array_levelthread', file 'maps\mp\_shutter', line 44, 'array_levelthread (leftShutters, ::shutterWanderLeft, windDirection);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="1461" charLength="70" lineIndex="44">
+      <message>Could not find enough arguments, function 'maps\mp\_utility::array_levelthread'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_utility::array_levelthread', file 'maps\mp\_shutter', line 45, 'array_levelthread (rightShutters, ::shutterWanderRight, windDirection);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="1566" charLength="13" lineIndex="45">
+      <message>Variable 'windDirection' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'windDirection' is defined, but its value is never used., file 'maps\mp\_shutter', line 46, 'level waittill ("wind blows", windDirection);'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

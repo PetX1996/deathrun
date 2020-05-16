@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createart\hunted_art</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="401" charLength="28" codePart="getent(&quot;player&quot;,&quot;classname&quot;)" isCall="True">
+      <funcRefArg charIndex="408" charLength="8" />
+      <funcRefArg charIndex="417" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetExpFog" charIndex="478" charLength="53" codePart="setExpFog(512, 6145, 0.132176, 0.192839, 0.238414, 0)" isCall="True">
+      <funcRefArg charIndex="488" charLength="3" />
+      <funcRefArg charIndex="493" charLength="4" />
+      <funcRefArg charIndex="499" charLength="8" />
+      <funcRefArg charIndex="509" charLength="8" />
+      <funcRefArg charIndex="519" charLength="8" />
+      <funcRefArg charIndex="529" charLength="1" />
+    </funcRef>
+    <error type="semantic" charIndex="401" charLength="64" lineIndex="16">
+      <message>Could not find file 'maps\_art'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_art', file 'maps\createart\hunted_art', line 17, 'getent("player","classname") maps\_art::setdefaultdepthoffield();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="535" charLength="44" lineIndex="21">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createart\hunted_art', line 22, 'maps\_utility::set_vision_set( "hunted", 0 );'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

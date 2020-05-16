@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_dead_russian_loyalist_d</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="48" codePart="self setModel(&quot;body_sp_russian_loyalist_d_dead&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="33" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="110" charLength="61" codePart="self attach(&quot;head_sp_loyalist_tom_hat_body_d_dead&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="122" charLength="38" />
+      <funcRefArg charIndex="162" charLength="2" />
+      <funcRefArg charIndex="166" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="221" charLength="48" codePart="precacheModel(&quot;body_sp_russian_loyalist_d_dead&quot;)" isCall="True">
+      <funcRefArg charIndex="235" charLength="33" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="273" charLength="53" codePart="precacheModel(&quot;head_sp_loyalist_tom_hat_body_d_dead&quot;)" isCall="True">
+      <funcRefArg charIndex="287" charLength="38" />
+    </funcRef>
+  </content>
+</scriptinfo>

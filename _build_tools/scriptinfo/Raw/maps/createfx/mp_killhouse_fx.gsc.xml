@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createfx\mp_killhouse_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="95" charLength="58" codePart="maps\mp\_utility::createOneshotEffect( &quot;amb_dust_hangar&quot; )" isCall="True">
+      <funcRefArg charIndex="134" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="346" charLength="58" codePart="maps\mp\_utility::createOneshotEffect( &quot;amb_dust_hangar&quot; )" isCall="True">
+      <funcRefArg charIndex="385" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="597" charLength="58" codePart="maps\mp\_utility::createOneshotEffect( &quot;amb_dust_hangar&quot; )" isCall="True">
+      <funcRefArg charIndex="636" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="848" charLength="58" codePart="maps\mp\_utility::createOneshotEffect( &quot;amb_dust_hangar&quot; )" isCall="True">
+      <funcRefArg charIndex="887" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="1099" charLength="64" codePart="maps\mp\_utility::createOneshotEffect( &quot;ground_smoke_launch_a&quot; )" isCall="True">
+      <funcRefArg charIndex="1138" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="1361" charLength="64" codePart="maps\mp\_utility::createOneshotEffect( &quot;ground_smoke_launch_a&quot; )" isCall="True">
+      <funcRefArg charIndex="1400" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="createOneshotEffect" charIndex="1623" charLength="64" codePart="maps\mp\_utility::createOneshotEffect( &quot;ground_smoke_launch_a&quot; )" isCall="True">
+      <funcRefArg charIndex="1662" charLength="24" />
+    </funcRef>
+  </content>
+</scriptinfo>

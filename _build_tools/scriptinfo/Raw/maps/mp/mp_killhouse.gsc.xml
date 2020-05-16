@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_killhouse</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="maps\mp\mp_killhouse_fx" name="main" charIndex="12" charLength="31" codePart="maps\mp\mp_killhouse_fx::main()" isCall="True" />
+    <funcRef sfPath="maps\createart\mp_killhouse_art" name="main" charIndex="47" charLength="39" codePart="maps\createart\mp_killhouse_art::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\_load" name="main" charIndex="90" charLength="21" codePart="maps\mp\_load::main()" isCall="True" />
+    <funcRef sfPath="maps\mp\_compass" name="setupMiniMap" charIndex="117" charLength="58" codePart="maps\mp\_compass::setupMiniMap(&quot;compass_map_mp_killhouse&quot;)" isCall="True">
+      <funcRefArg charIndex="148" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AmbientPlay" charIndex="181" charLength="36" codePart="ambientPlay(&quot;ambient_overgrown_day&quot;)" isCall="True">
+      <funcRefArg charIndex="193" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="425" charLength="38" codePart="setdvar( &quot;r_specularcolorscale&quot;, &quot;1&quot; )" isCall="True">
+      <funcRefArg charIndex="434" charLength="22" />
+      <funcRefArg charIndex="458" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="469" charLength="38" codePart="setdvar(&quot;r_glowbloomintensity0&quot;,&quot;.25&quot;)" isCall="True">
+      <funcRefArg charIndex="477" charLength="23" />
+      <funcRefArg charIndex="501" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="511" charLength="38" codePart="setdvar(&quot;r_glowbloomintensity1&quot;,&quot;.25&quot;)" isCall="True">
+      <funcRefArg charIndex="519" charLength="23" />
+      <funcRefArg charIndex="543" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="553" charLength="40" codePart="setdvar(&quot;r_glowskybleedintensity0&quot;,&quot;.3&quot;)" isCall="True">
+      <funcRefArg charIndex="561" charLength="26" />
+      <funcRefArg charIndex="588" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="597" charLength="33" codePart="setdvar(&quot;compassmaxrange&quot;,&quot;2200&quot;)" isCall="True">
+      <funcRefArg charIndex="605" charLength="17" />
+      <funcRefArg charIndex="623" charLength="6" />
+    </funcRef>
+    <error type="warning" charIndex="90" charLength="21" lineIndex="4">
+      <message>Could not find enough arguments, function 'maps\mp\_load::main'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_load::main', file 'maps\mp\mp_killhouse', line 5, 'maps\mp\_load::main();'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

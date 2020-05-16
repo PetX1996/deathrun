@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createfx\bog_a_audio</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="init_animsounds" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="maps\createfx\bog_a_audio" name="init_animsounds" charIndex="168" charLength="24" codePart="thread init_animsounds()" isCall="True" />
+    <error type="semantic" charIndex="0" charLength="20" lineIndex="0">
+      <message>Could not include file 'maps\_anim'</message>
+      <fullMessage>Bad semantic: Could not include file 'maps\_anim', file 'maps\createfx\bog_a_audio', line 1, '#include maps\_anim;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

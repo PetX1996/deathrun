@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>codescripts\character</name>
+  </settings>
+  <content>
+    <func name="setModelFromArray" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="a">
+      </param>
+    </func>
+    <func name="precacheModelArray" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="a">
+      </param>
+    </func>
+    <func name="useOptionalModels" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="randomElement" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="a">
+      </param>
+    </func>
+    <func name="attachFromArray" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="a">
+      </param>
+    </func>
+    <func name="new" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="save" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="load" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="info">
+      </param>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="info">
+      </param>
+    </func>
+    <func name="get_random_character" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="amount">
+      </param>
+    </func>
+    <func name="get_least_used_index" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="prefix">
+      </param>
+      <param name="group">
+      </param>
+    </func>
+    <func name="initialize_character_group" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="prefix">
+      </param>
+      <param name="group">
+      </param>
+      <param name="amount">
+      </param>
+    </func>
+    <func name="random" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="array">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="28" charLength="41" codePart="self setModel( a[ randomint( a.size ) ] )" isCall="True">
+      <funcRefArg charIndex="43" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="46" charLength="19" codePart="randomint( a.size )" isCall="True">
+      <funcRefArg charIndex="57" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="140" charLength="23" codePart="precacheModel( a[ i ] )" isCall="True">
+      <funcRefArg charIndex="155" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="203" charLength="25" codePart="getdvarint( &quot;g_useGear&quot; )" isCall="True">
+      <funcRefArg charIndex="215" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="270" charLength="19" codePart="randomint( a.size )" isCall="True">
+      <funcRefArg charIndex="281" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="325" charLength="43" codePart="self attach( randomElement( a ), &quot;&quot;, true )" isCall="True">
+      <funcRefArg charIndex="338" charLength="18" />
+      <funcRefArg charIndex="358" charLength="2" />
+      <funcRefArg charIndex="362" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codescripts\character" name="randomElement" charIndex="338" charLength="18" codePart="randomElement( a )" isCall="True">
+      <funcRefArg charIndex="353" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="DetachAll" charIndex="387" charLength="16" codePart="self detachAll()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="447" charLength="23" codePart="isdefined( oldGunHand )" isCall="True">
+      <funcRefArg charIndex="458" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="739" charLength="22" codePart="isdefined( self.name )" isCall="True">
+      <funcRefArg charIndex="750" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="802" charLength="43" codePart="println( &quot;Save: Guy has name &quot;, self.name )" isCall="True">
+      <funcRefArg charIndex="811" charLength="21" />
+      <funcRefArg charIndex="834" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="861" charLength="35" codePart="println( &quot;save: Guy had no name!&quot; )" isCall="True">
+      <funcRefArg charIndex="870" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetAttachSize" charIndex="917" charLength="20" codePart="self getAttachSize()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetAttachModelName" charIndex="1018" charLength="28" codePart="self getAttachModelName( i )" isCall="True">
+      <funcRefArg charIndex="1043" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetAttachTagName" charIndex="1084" charLength="26" codePart="self getAttachTagName( i )" isCall="True">
+      <funcRefArg charIndex="1107" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="DetachAll" charIndex="1155" charLength="16" codePart="self detachAll()" isCall="True" />
+    <funcRef sfPath="codapi" name="SetModel" charIndex="1261" charLength="32" codePart="self setModel( info[ &quot;model&quot; ] )" isCall="True">
+      <funcRefArg charIndex="1276" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1340" charLength="27" codePart="isdefined( info[ &quot;name&quot; ] )" isCall="True">
+      <funcRefArg charIndex="1351" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="1408" charLength="43" codePart="println( &quot;Load: Guy has name &quot;, self.name )" isCall="True">
+      <funcRefArg charIndex="1417" charLength="21" />
+      <funcRefArg charIndex="1440" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="1467" charLength="35" codePart="println( &quot;Load: Guy had no name!&quot; )" isCall="True">
+      <funcRefArg charIndex="1476" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="1613" charLength="67" codePart="self attach( attachInfo[ i ][ &quot;model&quot; ], attachInfo[ i ][ &quot;tag&quot; ] )" isCall="True">
+      <funcRefArg charIndex="1626" charLength="26" />
+      <funcRefArg charIndex="1654" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1715" charLength="27" codePart="isdefined( info[ &quot;name&quot; ] )" isCall="True">
+      <funcRefArg charIndex="1726" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="1748" charLength="52" codePart="println( &quot;Precache: Guy has name &quot;, info[ &quot;name&quot; ] )" isCall="True">
+      <funcRefArg charIndex="1757" charLength="25" />
+      <funcRefArg charIndex="1784" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="1812" charLength="39" codePart="println( &quot;Precache: Guy had no name!&quot; )" isCall="True">
+      <funcRefArg charIndex="1821" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="1857" charLength="32" codePart="precacheModel( info[ &quot;model&quot; ] )" isCall="True">
+      <funcRefArg charIndex="1872" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="1998" charLength="43" codePart="precacheModel( attachInfo[ i ][ &quot;model&quot; ] )" isCall="True">
+      <funcRefArg charIndex="2013" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="StrTok" charIndex="2485" charLength="29" codePart="strtok( self.classname, &quot;_&quot; )" isCall="True">
+      <funcRefArg charIndex="2493" charLength="14" />
+      <funcRefArg charIndex="2509" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="2625" charLength="19" codePart="randomint( amount )" isCall="True">
+      <funcRefArg charIndex="2636" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2852" charLength="35" codePart="isdefined( self.script_char_index )" isCall="True">
+      <funcRefArg charIndex="2863" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3065" charLength="35" codePart="isdefined( self.script_char_group )" isCall="True">
+      <funcRefArg charIndex="3076" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3189" charLength="40" codePart="isdefined( level.character_index_cache )" isCall="True">
+      <funcRefArg charIndex="3200" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3384" charLength="50" codePart="isdefined( level.character_index_cache[ prefix ] )" isCall="True">
+      <funcRefArg charIndex="3395" charLength="38" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3599" charLength="59" codePart="isdefined( level.character_index_cache[ prefix ][ group ] )" isCall="True">
+      <funcRefArg charIndex="3610" charLength="47" />
+    </funcRef>
+    <funcRef sfPath="codescripts\character" name="initialize_character_group" charIndex="3668" charLength="51" codePart="initialize_character_group( prefix, group, amount )" isCall="True">
+      <funcRefArg charIndex="3696" charLength="6" />
+      <funcRefArg charIndex="3704" charLength="5" />
+      <funcRefArg charIndex="3711" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3735" charLength="18" codePart="isdefined( index )" isCall="True">
+      <funcRefArg charIndex="3746" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codescripts\character" name="get_least_used_index" charIndex="3771" charLength="37" codePart="get_least_used_index( prefix, group )" isCall="True">
+      <funcRefArg charIndex="3793" charLength="6" />
+      <funcRefArg charIndex="3801" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3821" charLength="18" codePart="isdefined( index )" isCall="True">
+      <funcRefArg charIndex="3832" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="3876" charLength="17" codePart="randomint( 5000 )" isCall="True">
+      <funcRefArg charIndex="3887" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="4733" charLength="97" codePart="assertex( lowest_indices.size, &quot;Tried to spawn a character but the lowest indices didn't exist&quot; )" isCall="True">
+      <funcRefArg charIndex="4743" charLength="19" />
+      <funcRefArg charIndex="4764" charLength="65" />
+    </funcRef>
+    <funcRef sfPath="codescripts\character" name="random" charIndex="4841" charLength="24" codePart="random( lowest_indices )" isCall="True">
+      <funcRefArg charIndex="4849" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="5071" charLength="23" codePart="randomint( array.size )" isCall="True">
+      <funcRefArg charIndex="5082" charLength="11" />
+    </funcRef>
+    <error type="semantic" charIndex="524" charLength="17" lineIndex="33">
+      <message>Unknown variable/constant 'anim'</message>
+      <fullMessage>Bad semantic: Unknown variable/constant 'anim', file 'codescripts\character', line 34, 'self [[ anim.PutGunInHand ]]( oldGunHand );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="3110" charLength="4" lineIndex="134">
+      <message>Variable 'type' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'type' is defined, but its value is never used., file 'codescripts\character', line 135, 'type = "grouped";'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

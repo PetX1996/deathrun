@@ -1,0 +1,1306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_utility</name>
+  </settings>
+  <content>
+    <include>common_scripts\utility</include>
+    <include>maps\mp\gametypes\_hud_util</include>
+    <func name="triggerOff" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="triggerOn" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="error" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="msg">
+      </param>
+    </func>
+    <func name="vector_scale" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="vec">
+      </param>
+      <param name="scale">
+      </param>
+    </func>
+    <func name="vector_multiply" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="vec">
+      </param>
+      <param name="vec2">
+      </param>
+    </func>
+    <func name="add_to_array" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="array">
+      </param>
+      <param name="ent">
+      </param>
+    </func>
+    <func name="exploder" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="num">
+      </param>
+    </func>
+    <func name="exploder_sound" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="cannon_effect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="exploder_playSound" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="brush_delete" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="brush_show" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="brush_throw" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getPlant" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="orientToNormal" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="normal">
+      </param>
+    </func>
+    <func name="array_levelthread" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ents">
+      </param>
+      <param name="process">
+      </param>
+      <param name="var">
+      </param>
+      <param name="excluders">
+      </param>
+    </func>
+    <func name="set_ambient" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="track">
+      </param>
+    </func>
+    <func name="deletePlacedEntity" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="entity">
+      </param>
+    </func>
+    <func name="playSoundOnPlayers" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="sound">
+      </param>
+      <param name="team">
+      </param>
+    </func>
+    <func name="waitRespawnButton" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="setLowerMessage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="text">
+      </param>
+      <param name="time">
+      </param>
+    </func>
+    <func name="clearLowerMessage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="fadetime">
+      </param>
+    </func>
+    <func name="printOnTeam" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="text">
+      </param>
+      <param name="team">
+      </param>
+    </func>
+    <func name="printBoldOnTeam" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="text">
+      </param>
+      <param name="team">
+      </param>
+    </func>
+    <func name="printBoldOnTeamArg" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="text">
+      </param>
+      <param name="team">
+      </param>
+      <param name="arg">
+      </param>
+    </func>
+    <func name="printOnTeamArg" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="text">
+      </param>
+      <param name="team">
+      </param>
+      <param name="arg">
+      </param>
+    </func>
+    <func name="printOnPlayers" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="text">
+      </param>
+      <param name="team">
+      </param>
+    </func>
+    <func name="printAndSoundOnEveryone" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="otherteam">
+      </param>
+      <param name="printFriendly">
+      </param>
+      <param name="printEnemy">
+      </param>
+      <param name="soundFriendly">
+      </param>
+      <param name="soundEnemy">
+      </param>
+      <param name="printarg">
+      </param>
+    </func>
+    <func name="_playLocalSound" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="soundAlias">
+      </param>
+    </func>
+    <func name="dvarIntValue" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="dVar">
+      </param>
+      <param name="defVal">
+      </param>
+      <param name="minVal">
+      </param>
+      <param name="maxVal">
+      </param>
+    </func>
+    <func name="dvarFloatValue" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="dVar">
+      </param>
+      <param name="defVal">
+      </param>
+      <param name="minVal">
+      </param>
+      <param name="maxVal">
+      </param>
+    </func>
+    <func name="play_sound_on_tag" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="alias">
+      </param>
+      <param name="tag">
+      </param>
+    </func>
+    <func name="createLoopEffect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="fxid">
+      </param>
+    </func>
+    <func name="createOneshotEffect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="fxid">
+      </param>
+    </func>
+    <func name="loop_fx_sound" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="alias">
+      </param>
+      <param name="origin">
+      </param>
+      <param name="ender">
+      </param>
+      <param name="timeout">
+      </param>
+    </func>
+    <func name="exploder_damage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="exploder_before_load" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="num">
+      </param>
+    </func>
+    <func name="exploder_after_load" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="num">
+      </param>
+    </func>
+    <func name="activate_exploder" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="num">
+      </param>
+    </func>
+    <func name="sound_effect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="effect_soundalias" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="play_sound_in_space" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="alias">
+      </param>
+      <param name="origin">
+      </param>
+      <param name="master">
+      </param>
+    </func>
+    <func name="fire_effect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="loop_sound_delete" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ender">
+      </param>
+      <param name="ent">
+      </param>
+    </func>
+    <func name="createExploder" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="fxid">
+      </param>
+    </func>
+    <func name="getOtherTeam" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="wait_endon" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="waitTime">
+      </param>
+      <param name="endOnString">
+      </param>
+      <param name="endonString2">
+      </param>
+      <param name="endonString3">
+      </param>
+    </func>
+    <func name="isMG" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="weapon">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="98" charLength="27" codePart="isdefined (self.realOrigin)" isCall="True">
+      <funcRefArg charIndex="109" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="262" charLength="27" codePart="isDefined (self.realOrigin)" isCall="True">
+      <funcRefArg charIndex="273" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="348" charLength="26" codePart="println(&quot;^c*ERROR* &quot;, msg)" isCall="True">
+      <funcRefArg charIndex="356" charLength="12" />
+      <funcRefArg charIndex="370" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="411" charLength="16" codePart="getdvar(&quot;debug&quot;)" isCall="True">
+      <funcRefArg charIndex="419" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertMsg" charIndex="439" charLength="57" codePart="assertmsg(&quot;This is a forced error - attach the log file&quot;)" isCall="True">
+      <funcRefArg charIndex="449" charLength="46" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="772" charLength="16" codePart="isdefined( ent )" isCall="True">
+      <funcRefArg charIndex="783" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="817" charLength="18" codePart="isdefined( array )" isCall="True">
+      <funcRefArg charIndex="828" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1009" charLength="28" codePart="isdefined(self.script_delay)" isCall="True">
+      <funcRefArg charIndex="1019" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlaySound" charIndex="1072" charLength="50" codePart="self playSound(level.scr_sound[self.script_sound])" isCall="True">
+      <funcRefArg charIndex="1087" charLength="34" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1156" charLength="30" codePart="isdefined( self.v[ &quot;delay&quot; ] )" isCall="True">
+      <funcRefArg charIndex="1167" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1335" charLength="34" codePart="isdefined( self.v[ &quot;delay_min&quot; ] )" isCall="True">
+      <funcRefArg charIndex="1346" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1418" charLength="34" codePart="isdefined( self.v[ &quot;delay_max&quot; ] )" isCall="True">
+      <funcRefArg charIndex="1429" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloatRange" charIndex="1526" charLength="40" codePart="randomfloatrange( min_delay, max_delay )" isCall="True">
+      <funcRefArg charIndex="1544" charLength="9" />
+      <funcRefArg charIndex="1555" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1578" charLength="31" codePart="isdefined( self.v[ &quot;repeat&quot; ] )" isCall="True">
+      <funcRefArg charIndex="1589" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayFX" charIndex="1669" charLength="100" codePart="playfx( level._effect[ self.v[ &quot;fxid&quot; ] ], self.v[ &quot;origin&quot; ], self.v[ &quot;forward&quot; ], self.v[ &quot;up&quot; ] )" isCall="True">
+      <funcRefArg charIndex="1677" charLength="33" />
+      <funcRefArg charIndex="1712" charLength="18" />
+      <funcRefArg charIndex="1732" charLength="19" />
+      <funcRefArg charIndex="1753" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="exploder_playSound" charIndex="1775" charLength="20" codePart="exploder_playSound()" isCall="True" />
+    <funcRef sfPath="codapi" name="RandomFloatRange" charIndex="1834" charLength="40" codePart="randomfloatrange( min_delay, max_delay )" isCall="True">
+      <funcRefArg charIndex="1852" charLength="9" />
+      <funcRefArg charIndex="1863" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayFX" charIndex="1902" charLength="100" codePart="playfx( level._effect[ self.v[ &quot;fxid&quot; ] ], self.v[ &quot;origin&quot; ], self.v[ &quot;forward&quot; ], self.v[ &quot;up&quot; ] )" isCall="True">
+      <funcRefArg charIndex="1910" charLength="33" />
+      <funcRefArg charIndex="1945" charLength="18" />
+      <funcRefArg charIndex="1965" charLength="19" />
+      <funcRefArg charIndex="1986" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="exploder_playSound" charIndex="2006" charLength="20" codePart="exploder_playSound()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2065" charLength="35" codePart="isdefined( self.v[ &quot;soundalias&quot; ] )" isCall="True">
+      <funcRefArg charIndex="2076" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="play_sound_in_space" charIndex="2154" charLength="65" codePart="play_sound_in_space( self.v[ &quot;soundalias&quot; ], self.v[ &quot;origin&quot; ] )" isCall="True">
+      <funcRefArg charIndex="2175" charLength="22" />
+      <funcRefArg charIndex="2199" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2446" charLength="30" codePart="isdefined( self.v[ &quot;delay&quot; ] )" isCall="True">
+      <funcRefArg charIndex="2457" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2590" charLength="23" codePart="isdefined( self.model )" isCall="True">
+      <funcRefArg charIndex="2601" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="2633" charLength="33" codePart="assert( isdefined( self.model ) )" isCall="True">
+      <funcRefArg charIndex="2641" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2641" charLength="23" codePart="isdefined( self.model )" isCall="True">
+      <funcRefArg charIndex="2652" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2782" charLength="26" codePart="isdefined( self.exploded )" isCall="True">
+      <funcRefArg charIndex="2793" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Hide" charIndex="2856" charLength="17" codePart="self.model hide()" isCall="True" />
+    <funcRef sfPath="codapi" name="NotSolid" charIndex="2878" charLength="21" codePart="self.model notsolid()" isCall="True" />
+    <funcRef sfPath="codapi" name="Show" charIndex="2952" charLength="17" codePart="self.model show()" isCall="True" />
+    <funcRef sfPath="codapi" name="Solid" charIndex="2974" charLength="18" codePart="self.model solid()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3018" charLength="29" codePart="isdefined( self.v[ &quot;fxid&quot; ] )" isCall="True">
+      <funcRefArg charIndex="3029" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="3193" charLength="19" codePart="self.model delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3242" charLength="30" codePart="isdefined( self.v[ &quot;delay&quot; ] )" isCall="True">
+      <funcRefArg charIndex="3253" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="3310" charLength="33" codePart="assert( isdefined( self.model ) )" isCall="True">
+      <funcRefArg charIndex="3318" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3318" charLength="23" codePart="isdefined( self.model )" isCall="True">
+      <funcRefArg charIndex="3329" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Show" charIndex="3350" charLength="17" codePart="self.model show()" isCall="True" />
+    <funcRef sfPath="codapi" name="Solid" charIndex="3371" charLength="18" codePart="self.model solid()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3607" charLength="26" codePart="isdefined( self.exploded )" isCall="True">
+      <funcRefArg charIndex="3618" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Hide" charIndex="3722" charLength="17" codePart="self.model hide()" isCall="True" />
+    <funcRef sfPath="codapi" name="NotSolid" charIndex="3744" charLength="21" codePart="self.model notsolid()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3800" charLength="30" codePart="isdefined( self.v[ &quot;delay&quot; ] )" isCall="True">
+      <funcRefArg charIndex="3811" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3890" charLength="31" codePart="isdefined( self.v[ &quot;target&quot; ] )" isCall="True">
+      <funcRefArg charIndex="3901" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="3933" charLength="42" codePart="getent( self.v[ &quot;target&quot; ], &quot;targetname&quot; )" isCall="True">
+      <funcRefArg charIndex="3941" charLength="18" />
+      <funcRefArg charIndex="3961" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3986" charLength="16" codePart="isdefined( ent )" isCall="True">
+      <funcRefArg charIndex="3997" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="4012" charLength="19" codePart="self.model delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="Show" charIndex="4052" charLength="17" codePart="self.model show()" isCall="True" />
+    <funcRef sfPath="codapi" name="RotateVelocity" charIndex="4273" charLength="44" codePart="self.model rotateVelocity( ( x, y, z ), 12 )" isCall="True">
+      <funcRefArg charIndex="4300" charLength="11" />
+      <funcRefArg charIndex="4313" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="MoveGravity" charIndex="4323" charLength="41" codePart="self.model moveGravity( ( x, y, z ), 12 )" isCall="True">
+      <funcRefArg charIndex="4347" charLength="11" />
+      <funcRefArg charIndex="4360" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4408" charLength="26" codePart="isdefined( self.exploded )" isCall="True">
+      <funcRefArg charIndex="4419" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Hide" charIndex="4591" charLength="17" codePart="self.model hide()" isCall="True" />
+    <funcRef sfPath="codapi" name="Delete" charIndex="4679" charLength="19" codePart="self.model delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="AnglesToForward" charIndex="5628" charLength="28" codePart="anglesToForward(self.angles)" isCall="True">
+      <funcRefArg charIndex="5644" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="vector_scale" charIndex="5670" charLength="28" codePart="vector_scale(forward, range)" isCall="True">
+      <funcRefArg charIndex="5683" charLength="7" />
+      <funcRefArg charIndex="5692" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTrace" charIndex="5778" charLength="79" codePart="bulletTrace(traceorigins[0], (traceorigins[0] + (0, 0, -18)), false, undefined)" isCall="True">
+      <funcRefArg charIndex="5790" charLength="15" />
+      <funcRefArg charIndex="5807" charLength="31" />
+      <funcRefArg charIndex="5840" charLength="5" />
+      <funcRefArg charIndex="5847" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="5983" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="maps\mp\_utility" name="orientToNormal" charIndex="6051" charLength="31" codePart="orientToNormal(trace[&quot;normal&quot;])" isCall="True">
+      <funcRefArg charIndex="6066" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTrace" charIndex="6116" charLength="79" codePart="bulletTrace(traceorigins[1], (traceorigins[1] + (0, 0, -18)), false, undefined)" isCall="True">
+      <funcRefArg charIndex="6128" charLength="15" />
+      <funcRefArg charIndex="6145" charLength="31" />
+      <funcRefArg charIndex="6178" charLength="5" />
+      <funcRefArg charIndex="6185" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="6319" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="maps\mp\_utility" name="orientToNormal" charIndex="6387" charLength="31" codePart="orientToNormal(trace[&quot;normal&quot;])" isCall="True">
+      <funcRefArg charIndex="6402" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="BulletTrace" charIndex="6734" charLength="81" codePart="bulletTrace(traceorigins[i], (traceorigins[i] + (0, 0, -1000)), false, undefined)" isCall="True">
+      <funcRefArg charIndex="6746" charLength="15" />
+      <funcRefArg charIndex="6763" charLength="33" />
+      <funcRefArg charIndex="6798" charLength="5" />
+      <funcRefArg charIndex="6805" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="7026" charLength="28" codePart="isdefined(besttracefraction)" isCall="True">
+      <funcRefArg charIndex="7036" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="7380" charLength="13" codePart="spawnstruct()" isCall="True" />
+    <funcRef sfPath="maps\mp\_utility" name="orientToNormal" charIndex="7446" charLength="31" codePart="orientToNormal(trace[&quot;normal&quot;])" isCall="True">
+      <funcRefArg charIndex="7461" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Length" charIndex="7583" charLength="18" codePart="length(hor_normal)" isCall="True">
+      <funcRefArg charIndex="7590" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="7659" charLength="27" codePart="vectornormalize(hor_normal)" isCall="True">
+      <funcRefArg charIndex="7675" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorToAngles" charIndex="7811" charLength="23" codePart="vectortoangles(tangent)" isCall="True">
+      <funcRefArg charIndex="7826" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8256" charLength="21" codePart="isdefined (excluders)" isCall="True">
+      <funcRefArg charIndex="8267" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8472" charLength="15" codePart="isdefined (var)" isCall="True">
+      <funcRefArg charIndex="8483" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8653" charLength="31" codePart="isdefined (level.ambient_track)" isCall="True">
+      <funcRefArg charIndex="8664" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8690" charLength="38" codePart="isdefined (level.ambient_track[track])" isCall="True">
+      <funcRefArg charIndex="8701" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AmbientPlay" charIndex="8738" charLength="43" codePart="ambientPlay (level.ambient_track[track], 2)" isCall="True">
+      <funcRefArg charIndex="8751" charLength="26" />
+      <funcRefArg charIndex="8779" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="8786" charLength="41" codePart="println (&quot;playing ambient track &quot;, track)" isCall="True">
+      <funcRefArg charIndex="8795" charLength="24" />
+      <funcRefArg charIndex="8821" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="8882" charLength="32" codePart="getentarray(entity, &quot;classname&quot;)" isCall="True">
+      <funcRefArg charIndex="8894" charLength="6" />
+      <funcRefArg charIndex="8902" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="9010" charLength="20" codePart="entities[i] delete()" isCall="True" />
+    <funcRef sfPath="codapidev" name="Assert" charIndex="9081" charLength="36" codePart="assert( isdefined( level.players ) )" isCall="True">
+      <funcRefArg charIndex="9089" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="9089" charLength="26" codePart="isdefined( level.players )" isCall="True">
+      <funcRefArg charIndex="9100" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="9162" charLength="29" codePart="isdefined( level.players[0] )" isCall="True">
+      <funcRefArg charIndex="9173" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayLocalSound" charIndex="9198" charLength="38" codePart="level.players[0] playLocalSound(sound)" isCall="True">
+      <funcRefArg charIndex="9230" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="9261" charLength="17" codePart="isdefined( team )" isCall="True">
+      <funcRefArg charIndex="9272" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="9381" charLength="32" codePart="isdefined( player.pers[&quot;team&quot;] )" isCall="True">
+      <funcRefArg charIndex="9392" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayLocalSound" charIndex="9454" charLength="28" codePart="player playLocalSound(sound)" isCall="True">
+      <funcRefArg charIndex="9476" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayLocalSound" charIndex="9560" charLength="38" codePart="level.players[i] playLocalSound(sound)" isCall="True">
+      <funcRefArg charIndex="9592" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="9642" charLength="24" codePart="self endon(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="9653" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="9670" charLength="25" codePart="self endon(&quot;end_respawn&quot;)" isCall="True">
+      <funcRefArg charIndex="9681" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="UseButtonPressed" charIndex="9707" charLength="23" codePart="self useButtonPressed()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="9802" charLength="30" codePart="isDefined( self.lowerMessage )" isCall="True">
+      <funcRefArg charIndex="9813" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="9856" charLength="38" codePart="isDefined( self.lowerMessageOverride )" isCall="True">
+      <funcRefArg charIndex="9867" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="9983" charLength="32" codePart="self notify(&quot;lower_message_set&quot;)" isCall="True">
+      <funcRefArg charIndex="9995" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetText" charIndex="10019" charLength="33" codePart="self.lowerMessage setText( text )" isCall="True">
+      <funcRefArg charIndex="10046" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10064" charLength="17" codePart="isDefined( time )" isCall="True">
+      <funcRefArg charIndex="10075" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetTimer" charIndex="10099" charLength="32" codePart="self.lowerTimer setTimer( time )" isCall="True">
+      <funcRefArg charIndex="10125" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetText" charIndex="10143" charLength="29" codePart="self.lowerTimer setText( &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="10168" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="FadeOverTime" charIndex="10179" charLength="38" codePart="self.lowerMessage fadeOverTime( 0.05 )" isCall="True">
+      <funcRefArg charIndex="10211" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="FadeOverTime" charIndex="10252" charLength="36" codePart="self.lowerTimer fadeOverTime( 0.05 )" isCall="True">
+      <funcRefArg charIndex="10282" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10366" charLength="30" codePart="isDefined( self.lowerMessage )" isCall="True">
+      <funcRefArg charIndex="10377" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="10415" charLength="32" codePart="self notify(&quot;lower_message_set&quot;)" isCall="True">
+      <funcRefArg charIndex="10427" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10460" charLength="20" codePart="isdefined( fadetime)" isCall="True">
+      <funcRefArg charIndex="10471" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="setLowerMessage" charIndex="10507" charLength="22" codePart="setLowerMessage( &amp;&quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="10524" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="10549" charLength="24" codePart="self endon(&quot;disconnect&quot;)" isCall="True">
+      <funcRefArg charIndex="10560" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="10578" charLength="31" codePart="self endon(&quot;lower_message_set&quot;)" isCall="True">
+      <funcRefArg charIndex="10589" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="FadeOverTime" charIndex="10618" charLength="42" codePart="self.lowerMessage fadeOverTime( fadetime )" isCall="True">
+      <funcRefArg charIndex="10650" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="FadeOverTime" charIndex="10697" charLength="40" codePart="self.lowerTimer fadeOverTime( fadetime )" isCall="True">
+      <funcRefArg charIndex="10727" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="setLowerMessage" charIndex="10798" charLength="24" codePart="self setLowerMessage(&quot;&quot;)" isCall="True">
+      <funcRefArg charIndex="10819" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="10863" charLength="36" codePart="assert( isdefined( level.players ) )" isCall="True">
+      <funcRefArg charIndex="10871" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10871" charLength="26" codePart="isdefined( level.players )" isCall="True">
+      <funcRefArg charIndex="10882" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10990" charLength="30" codePart="isdefined(player.pers[&quot;team&quot;])" isCall="True">
+      <funcRefArg charIndex="11000" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLn" charIndex="11062" charLength="21" codePart="player iprintln(text)" isCall="True">
+      <funcRefArg charIndex="11078" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="11130" charLength="36" codePart="assert( isdefined( level.players ) )" isCall="True">
+      <funcRefArg charIndex="11138" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="11138" charLength="26" codePart="isdefined( level.players )" isCall="True">
+      <funcRefArg charIndex="11149" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="11257" charLength="30" codePart="isdefined(player.pers[&quot;team&quot;])" isCall="True">
+      <funcRefArg charIndex="11267" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLnBold" charIndex="11329" charLength="25" codePart="player iprintlnbold(text)" isCall="True">
+      <funcRefArg charIndex="11349" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="11411" charLength="36" codePart="assert( isdefined( level.players ) )" isCall="True">
+      <funcRefArg charIndex="11419" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="11419" charLength="26" codePart="isdefined( level.players )" isCall="True">
+      <funcRefArg charIndex="11430" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="11538" charLength="30" codePart="isdefined(player.pers[&quot;team&quot;])" isCall="True">
+      <funcRefArg charIndex="11548" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLnBold" charIndex="11610" charLength="30" codePart="player iprintlnbold(text, arg)" isCall="True">
+      <funcRefArg charIndex="11630" charLength="4" />
+      <funcRefArg charIndex="11636" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="11691" charLength="36" codePart="assert( isdefined( level.players ) )" isCall="True">
+      <funcRefArg charIndex="11699" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="11699" charLength="26" codePart="isdefined( level.players )" isCall="True">
+      <funcRefArg charIndex="11710" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="11818" charLength="30" codePart="isdefined(player.pers[&quot;team&quot;])" isCall="True">
+      <funcRefArg charIndex="11828" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLn" charIndex="11890" charLength="26" codePart="player iprintln(text, arg)" isCall="True">
+      <funcRefArg charIndex="11906" charLength="4" />
+      <funcRefArg charIndex="11912" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12037" charLength="17" codePart="isDefined( team )" isCall="True">
+      <funcRefArg charIndex="12048" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12070" charLength="34" codePart="isdefined(players[i].pers[&quot;team&quot;])" isCall="True">
+      <funcRefArg charIndex="12080" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLn" charIndex="12149" charLength="25" codePart="players[i] iprintln(text)" isCall="True">
+      <funcRefArg charIndex="12169" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLn" charIndex="12198" charLength="25" codePart="players[i] iprintln(text)" isCall="True">
+      <funcRefArg charIndex="12218" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12369" charLength="26" codePart="isDefined( soundFriendly )" isCall="True">
+      <funcRefArg charIndex="12380" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12438" charLength="23" codePart="isDefined( soundEnemy )" isCall="True">
+      <funcRefArg charIndex="12449" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="12471" charLength="24" codePart="assert( shouldDoSounds )" isCall="True">
+      <funcRefArg charIndex="12479" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="12768" charLength="23" codePart="isdefined( playerteam )" isCall="True">
+      <funcRefArg charIndex="12779" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLn" charIndex="12837" charLength="42" codePart="player iprintln( printFriendly, printarg )" isCall="True">
+      <funcRefArg charIndex="12854" charLength="13" />
+      <funcRefArg charIndex="12869" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLn" charIndex="12928" charLength="39" codePart="player iprintln( printEnemy, printarg )" isCall="True">
+      <funcRefArg charIndex="12945" charLength="10" />
+      <funcRefArg charIndex="12957" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="13014" charLength="27" codePart="assert( level.splitscreen )" isCall="True">
+      <funcRefArg charIndex="13022" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayLocalSound" charIndex="13047" charLength="48" codePart="level.players[0] playLocalSound( soundFriendly )" isCall="True">
+      <funcRefArg charIndex="13080" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="13120" charLength="24" codePart="assert( shouldDoSounds )" isCall="True">
+      <funcRefArg charIndex="13128" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="13315" charLength="23" codePart="isdefined( playerteam )" isCall="True">
+      <funcRefArg charIndex="13326" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLn" charIndex="13395" charLength="42" codePart="player iprintln( printFriendly, printarg )" isCall="True">
+      <funcRefArg charIndex="13412" charLength="13" />
+      <funcRefArg charIndex="13427" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayLocalSound" charIndex="13446" charLength="38" codePart="player playLocalSound( soundFriendly )" isCall="True">
+      <funcRefArg charIndex="13469" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLn" charIndex="13551" charLength="39" codePart="player iprintln( printEnemy, printarg )" isCall="True">
+      <funcRefArg charIndex="13568" charLength="10" />
+      <funcRefArg charIndex="13580" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayLocalSound" charIndex="13599" charLength="35" codePart="player playLocalSound( soundEnemy )" isCall="True">
+      <funcRefArg charIndex="13622" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="13809" charLength="23" codePart="isdefined( playerteam )" isCall="True">
+      <funcRefArg charIndex="13820" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLn" charIndex="13889" charLength="42" codePart="player iprintln( printFriendly, printarg )" isCall="True">
+      <funcRefArg charIndex="13906" charLength="13" />
+      <funcRefArg charIndex="13921" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayLocalSound" charIndex="13940" charLength="38" codePart="player playLocalSound( soundFriendly )" isCall="True">
+      <funcRefArg charIndex="13963" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLn" charIndex="14045" charLength="39" codePart="player iprintln( printEnemy, printarg )" isCall="True">
+      <funcRefArg charIndex="14062" charLength="10" />
+      <funcRefArg charIndex="14074" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntityNumber" charIndex="14185" charLength="22" codePart="self getEntityNumber()" isCall="True" />
+    <funcRef sfPath="codapi" name="PlayLocalSound" charIndex="14230" charLength="33" codePart="self playLocalSound( soundAlias )" isCall="True">
+      <funcRefArg charIndex="14251" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="14375" charLength="15" codePart="getDvar( dVar )" isCall="True">
+      <funcRefArg charIndex="14384" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="14406" charLength="23" codePart="setDvar( dVar, defVal )" isCall="True">
+      <funcRefArg charIndex="14415" charLength="4" />
+      <funcRefArg charIndex="14421" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="14466" charLength="18" codePart="getDvarInt( dVar )" isCall="True">
+      <funcRefArg charIndex="14478" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="14609" charLength="22" codePart="setDvar( dVar, value )" isCall="True">
+      <funcRefArg charIndex="14618" charLength="4" />
+      <funcRefArg charIndex="14624" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="14761" charLength="15" codePart="getDvar( dVar )" isCall="True">
+      <funcRefArg charIndex="14770" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="14792" charLength="23" codePart="setDvar( dVar, defVal )" isCall="True">
+      <funcRefArg charIndex="14801" charLength="4" />
+      <funcRefArg charIndex="14807" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="14852" charLength="20" codePart="getDvarFloat( dVar )" isCall="True">
+      <funcRefArg charIndex="14866" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="14997" charLength="22" codePart="setDvar( dVar, value )" isCall="True">
+      <funcRefArg charIndex="15006" charLength="4" />
+      <funcRefArg charIndex="15012" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="15087" charLength="15" codePart="isdefined( tag)" isCall="True">
+      <funcRefArg charIndex="15098" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="15118" charLength="50" codePart="spawn( &quot;script_origin&quot;, self getTagOrigin( tag ) )" isCall="True">
+      <funcRefArg charIndex="15125" charLength="15" />
+      <funcRefArg charIndex="15142" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetTagOrigin" charIndex="15142" charLength="24" codePart="self getTagOrigin( tag )" isCall="True">
+      <funcRefArg charIndex="15161" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LinkTo" charIndex="15173" charLength="41" codePart="org linkto( self, tag, (0,0,0), (0,0,0) )" isCall="True">
+      <funcRefArg charIndex="15185" charLength="4" />
+      <funcRefArg charIndex="15191" charLength="3" />
+      <funcRefArg charIndex="15196" charLength="7" />
+      <funcRefArg charIndex="15205" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="15240" charLength="33" codePart="spawn( &quot;script_origin&quot;, (0,0,0) )" isCall="True">
+      <funcRefArg charIndex="15247" charLength="15" />
+      <funcRefArg charIndex="15264" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LinkTo" charIndex="15336" charLength="18" codePart="org linkto( self )" isCall="True">
+      <funcRefArg charIndex="15348" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlaySound" charIndex="15364" charLength="21" codePart="org playsound (alias)" isCall="True">
+      <funcRefArg charIndex="15379" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="15405" charLength="12" codePart="org delete()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createEffect" charIndex="15463" charLength="49" codePart="maps\mp\_createfx::createEffect( &quot;loopfx&quot;, fxid )" isCall="True">
+      <funcRefArg charIndex="15496" charLength="8" />
+      <funcRefArg charIndex="15506" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_createfx" name="createEffect" charIndex="15599" charLength="52" codePart="maps\mp\_createfx::createEffect( &quot;oneshotfx&quot;, fxid )" isCall="True">
+      <funcRefArg charIndex="15632" charLength="11" />
+      <funcRefArg charIndex="15645" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="15758" charLength="31" codePart="spawn (&quot;script_origin&quot;,(0,0,0))" isCall="True">
+      <funcRefArg charIndex="15765" charLength="15" />
+      <funcRefArg charIndex="15781" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="15798" charLength="18" codePart="isdefined( ender )" isCall="True">
+      <funcRefArg charIndex="15809" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="loop_sound_delete" charIndex="15826" charLength="37" codePart="thread loop_sound_delete (ender, org)" isCall="True">
+      <funcRefArg charIndex="15852" charLength="5" />
+      <funcRefArg charIndex="15859" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="15868" charLength="19" codePart="self endon( ender )" isCall="True">
+      <funcRefArg charIndex="15880" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayLoopSound" charIndex="15918" charLength="25" codePart="org playloopsound (alias)" isCall="True">
+      <funcRefArg charIndex="15937" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="15952" charLength="19" codePart="isdefined (timeout)" isCall="True">
+      <funcRefArg charIndex="15963" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="16057" charLength="30" codePart="isdefined( self.v[ &quot;delay&quot; ] )" isCall="True">
+      <funcRefArg charIndex="16068" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="16151" charLength="38" codePart="isdefined( self.v[ &quot;damage_radius&quot; ] )" isCall="True">
+      <funcRefArg charIndex="16162" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RadiusDamage" charIndex="16376" charLength="46" codePart="radiusDamage( origin, radius, damage, damage )" isCall="True">
+      <funcRefArg charIndex="16390" charLength="6" />
+      <funcRefArg charIndex="16398" charLength="6" />
+      <funcRefArg charIndex="16406" charLength="6" />
+      <funcRefArg charIndex="16414" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="activate_exploder" charIndex="16701" charLength="24" codePart="activate_exploder( num )" isCall="True">
+      <funcRefArg charIndex="16720" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="activate_exploder" charIndex="16765" charLength="24" codePart="activate_exploder( num )" isCall="True">
+      <funcRefArg charIndex="16784" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Int" charIndex="16833" charLength="10" codePart="int( num )" isCall="True">
+      <funcRefArg charIndex="16838" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="16937" charLength="16" codePart="isdefined( ent )" isCall="True">
+      <funcRefArg charIndex="16948" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17098" charLength="32" codePart="isdefined( ent.v[ &quot;exploder&quot; ] )" isCall="True">
+      <funcRefArg charIndex="17109" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17208" charLength="30" codePart="isdefined( ent.v[ &quot;firefx&quot; ] )" isCall="True">
+      <funcRefArg charIndex="17219" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="fire_effect" charIndex="17245" charLength="24" codePart="ent thread fire_effect()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17280" charLength="28" codePart="isdefined( ent.v[ &quot;fxid&quot; ] )" isCall="True">
+      <funcRefArg charIndex="17291" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="cannon_effect" charIndex="17345" charLength="26" codePart="ent thread cannon_effect()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17388" charLength="34" codePart="isdefined( ent.v[ &quot;soundalias&quot; ] )" isCall="True">
+      <funcRefArg charIndex="17399" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="sound_effect" charIndex="17429" charLength="25" codePart="ent thread sound_effect()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17465" charLength="30" codePart="isdefined( ent.v[ &quot;damage&quot; ] )" isCall="True">
+      <funcRefArg charIndex="17476" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="exploder_damage" charIndex="17502" charLength="28" codePart="ent thread exploder_damage()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="17541" charLength="34" codePart="isdefined( ent.v[ &quot;earthquake&quot; ] )" isCall="True">
+      <funcRefArg charIndex="17552" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Earthquake" charIndex="17619" charLength="168" codePart="earthquake( level.earthquake[ eq ][ &quot;magnitude&quot; ], &#xD;&#xA;						level.earthquake[ eq ][ &quot;duration&quot; ], &#xD;&#xA;						ent.v[ &quot;origin&quot; ], &#xD;&#xA;						level.earthquake[ eq ][ &quot;radius&quot; ] )" isCall="True">
+      <funcRefArg charIndex="17631" charLength="37" />
+      <funcRefArg charIndex="17678" charLength="36" />
+      <funcRefArg charIndex="17724" charLength="17" />
+      <funcRefArg charIndex="17751" charLength="35" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="brush_show" charIndex="17848" charLength="23" codePart="ent thread brush_show()" isCall="True" />
+    <funcRef sfPath="maps\mp\_utility" name="brush_throw" charIndex="18001" charLength="24" codePart="ent thread brush_throw()" isCall="True" />
+    <funcRef sfPath="maps\mp\_utility" name="brush_delete" charIndex="18039" charLength="25" codePart="ent thread brush_delete()" isCall="True" />
+    <funcRef sfPath="maps\mp\_utility" name="effect_soundalias" charIndex="18320" charLength="24" codePart="self effect_soundalias()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18384" charLength="27" codePart="isdefined (self.v[&quot;delay&quot;])" isCall="True">
+      <funcRefArg charIndex="18395" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="play_sound_in_space" charIndex="18582" charLength="37" codePart="play_sound_in_space ( alias, origin )" isCall="True">
+      <funcRefArg charIndex="18604" charLength="5" />
+      <funcRefArg charIndex="18611" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="18682" charLength="31" codePart="spawn (&quot;script_origin&quot;,(0,0,1))" isCall="True">
+      <funcRefArg charIndex="18689" charLength="15" />
+      <funcRefArg charIndex="18705" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18722" charLength="18" codePart="isdefined (origin)" isCall="True">
+      <funcRefArg charIndex="18733" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18796" charLength="17" codePart="isdefined(master)" isCall="True">
+      <funcRefArg charIndex="18806" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlaySoundAsMaster" charIndex="18828" charLength="29" codePart="org playsoundasmaster (alias)" isCall="True">
+      <funcRefArg charIndex="18851" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlaySound" charIndex="18869" charLength="21" codePart="org playsound (alias)" isCall="True">
+      <funcRefArg charIndex="18884" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="18911" charLength="12" codePart="org delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="18955" charLength="30" codePart="isdefined( self.v[ &quot;delay&quot; ] )" isCall="True">
+      <funcRefArg charIndex="18966" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19053" charLength="34" codePart="isdefined( self.v[ &quot;delay_min&quot; ] )" isCall="True">
+      <funcRefArg charIndex="19064" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19095" charLength="34" codePart="isdefined( self.v[ &quot;delay_max&quot; ] )" isCall="True">
+      <funcRefArg charIndex="19106" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="19169" charLength="60" codePart="randomfloat( self.v[ &quot;delay_max&quot; ] - self.v[ &quot;delay_min&quot; ] )" isCall="True">
+      <funcRefArg charIndex="19182" charLength="46" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19451" charLength="18" codePart="isdefined( ender )" isCall="True">
+      <funcRefArg charIndex="19462" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19577" charLength="36" codePart="isdefined( self.v[ &quot;firefxdelay&quot; ] )" isCall="True">
+      <funcRefArg charIndex="19588" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="19685" charLength="24" codePart="isdefined( firefxSound )" isCall="True">
+      <funcRefArg charIndex="19696" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="loop_fx_sound" charIndex="19716" charLength="65" codePart="level thread loop_fx_sound( firefxSound, origin, ender, timeout )" isCall="True">
+      <funcRefArg charIndex="19744" charLength="11" />
+      <funcRefArg charIndex="19757" charLength="6" />
+      <funcRefArg charIndex="19765" charLength="5" />
+      <funcRefArg charIndex="19772" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayFX" charIndex="19787" charLength="66" codePart="playfx( level._effect[ firefx ], self.v[ &quot;origin&quot; ], forward, up )" isCall="True">
+      <funcRefArg charIndex="19795" charLength="23" />
+      <funcRefArg charIndex="19820" charLength="18" />
+      <funcRefArg charIndex="19840" charLength="7" />
+      <funcRefArg charIndex="19849" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="20070" charLength="19" codePart="ent endon (&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="20081" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="20093" charLength="21" codePart="self waittill (ender)" isCall="True">
+      <funcRefArg charIndex="20108" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="20118" charLength="12" codePart="ent delete()" isCall="True" />
+    <funcRef sfPath="maps\mp\_createfx" name="createEffect" charIndex="20172" charLength="51" codePart="maps\mp\_createfx::createEffect( &quot;exploder&quot;, fxid )" isCall="True">
+      <funcRefArg charIndex="20205" charLength="10" />
+      <funcRefArg charIndex="20217" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertMsg" charIndex="20427" charLength="49" codePart="assertMsg( &quot;getOtherTeam: invalid team &quot; + team )" isCall="True">
+      <funcRefArg charIndex="20438" charLength="37" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="20555" charLength="26" codePart="self endon ( endOnString )" isCall="True">
+      <funcRefArg charIndex="20568" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="20590" charLength="25" codePart="isDefined( endonString2 )" isCall="True">
+      <funcRefArg charIndex="20601" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="20621" charLength="27" codePart="self endon ( endonString2 )" isCall="True">
+      <funcRefArg charIndex="20634" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="20657" charLength="25" codePart="isDefined( endonString3 )" isCall="True">
+      <funcRefArg charIndex="20668" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="20688" charLength="27" codePart="self endon ( endonString3 )" isCall="True">
+      <funcRefArg charIndex="20701" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="20774" charLength="29" codePart="isSubStr( weapon, &quot;_bipod_&quot; )" isCall="True">
+      <funcRefArg charIndex="20784" charLength="6" />
+      <funcRefArg charIndex="20792" charLength="10" />
+    </funcRef>
+    <error type="warning" charIndex="2154" charLength="65" lineIndex="106">
+      <message>Could not find enough arguments, function 'maps\mp\_utility::play_sound_in_space'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_utility::play_sound_in_space', file 'maps\mp\_utility', line 107, 'play_sound_in_space( self.v[ "soundalias" ], self.v[ "origin" ] );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="2412" charLength="3" lineIndex="114">
+      <message>Variable 'num' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'num' is defined, but its value is never used., file 'maps\mp\_utility', line 115, 'num = self.v[ "exploder" ];'</fullMessage>
+    </error>
+    <error type="warning" charIndex="10507" charLength="22" lineIndex="475">
+      <message>Could not find enough arguments, function 'maps\mp\_utility::setLowerMessage'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_utility::setLowerMessage', file 'maps\mp\_utility', line 476, 'setLowerMessage( &amp;"" );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="10798" charLength="24" lineIndex="489">
+      <message>Could not find enough arguments, function 'maps\mp\_utility::setLowerMessage'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_utility::setLowerMessage', file 'maps\mp\_utility', line 490, 'self setLowerMessage("");'</fullMessage>
+    </error>
+    <error type="warning" charIndex="18582" charLength="37" lineIndex="856">
+      <message>Could not find enough arguments, function 'maps\mp\_utility::play_sound_in_space'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_utility::play_sound_in_space', file 'maps\mp\_utility', line 857, 'play_sound_in_space ( alias, origin );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="19293" charLength="3" lineIndex="885">
+      <message>Variable 'org' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'org' is defined, but its value is never used., file 'maps\mp\_utility', line 886, 'org = undefined;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

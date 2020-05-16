@@ -1,0 +1,906 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_dev</name>
+  </settings>
+  <content>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateDevSettings" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="giveExtraPerks" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="xKillsY" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="attackerName">
+      </param>
+      <param name="victimName">
+      </param>
+    </func>
+    <func name="updateMinimapSetting" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="vecscale" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="vec">
+      </param>
+      <param name="scalar">
+      </param>
+    </func>
+    <func name="drawMiniMapBounds" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="viewpos">
+      </param>
+      <param name="mincorner">
+      </param>
+      <param name="maxcorner">
+      </param>
+    </func>
+    <func name="addTestClients" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="TestClient" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="showSpawnpoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="print3DUntilNotified" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="origin">
+      </param>
+      <param name="text">
+      </param>
+      <param name="color">
+      </param>
+      <param name="alpha">
+      </param>
+      <param name="scale">
+      </param>
+    </func>
+    <func name="lineUntilNotified" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="start">
+      </param>
+      <param name="end">
+      </param>
+      <param name="color">
+      </param>
+      <param name="depthTest">
+      </param>
+    </func>
+    <func name="hideSpawnpoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="20" charLength="25" codePart="getdvar(&quot;scr_showspawns&quot;)" isCall="True">
+      <funcRefArg charIndex="28" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="56" charLength="30" codePart="setdvar(&quot;scr_showspawns&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="64" charLength="16" />
+      <funcRefArg charIndex="82" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheItem" charIndex="92" charLength="32" codePart="precacheItem(&quot;defaultweapon_mp&quot;)" isCall="True">
+      <funcRefArg charIndex="105" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="addTestClients" charIndex="130" charLength="23" codePart="thread addTestClients()" isCall="True" />
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="160" charLength="31" codePart="setdvar( &quot;scr_giveradar&quot;, &quot;0&quot; )" isCall="True">
+      <funcRefArg charIndex="169" charLength="15" />
+      <funcRefArg charIndex="186" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="195" charLength="35" codePart="setdvar( &quot;scr_giveairstrike&quot;, &quot;0&quot; )" isCall="True">
+      <funcRefArg charIndex="204" charLength="19" />
+      <funcRefArg charIndex="225" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="234" charLength="36" codePart="setdvar( &quot;scr_givehelicopter&quot;, &quot;0&quot; )" isCall="True">
+      <funcRefArg charIndex="243" charLength="20" />
+      <funcRefArg charIndex="265" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="276" charLength="29" codePart="setdvar( &quot;scr_giveperk&quot;, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="285" charLength="14" />
+      <funcRefArg charIndex="301" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="309" charLength="29" codePart="setdvar( &quot;scr_takeperk&quot;, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="318" charLength="14" />
+      <funcRefArg charIndex="334" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="updateDevSettings" charIndex="360" charLength="19" codePart="updateDevSettings()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="451" charLength="28" codePart="getdvarInt(&quot;scr_showspawns&quot;)" isCall="True">
+      <funcRefArg charIndex="462" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="575" charLength="27" codePart="isdefined(level.showspawns)" isCall="True">
+      <funcRefArg charIndex="585" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="679" charLength="43" codePart="setdvar(&quot;scr_showspawns&quot;, level.showspawns)" isCall="True">
+      <funcRefArg charIndex="687" charLength="16" />
+      <funcRefArg charIndex="705" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="showSpawnpoints" charIndex="754" charLength="17" codePart="showSpawnpoints()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="hideSpawnpoints" charIndex="785" charLength="17" codePart="hideSpawnpoints()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="updateMinimapSetting" charIndex="813" charLength="22" codePart="updateMinimapSetting()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="847" charLength="27" codePart="getdvarint(&quot;scr_giveradar&quot;)" isCall="True">
+      <funcRefArg charIndex="858" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hardpoints" name="giveHardpointItem" charIndex="941" charLength="79" codePart="level.players[i] maps\mp\gametypes\_hardpoints::giveHardpointItem( &quot;radar_mp&quot; )" isCall="True">
+      <funcRefArg charIndex="1008" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1030" charLength="31" codePart="setdvar( &quot;scr_giveradar&quot;, &quot;0&quot; )" isCall="True">
+      <funcRefArg charIndex="1039" charLength="15" />
+      <funcRefArg charIndex="1056" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="1074" charLength="31" codePart="getdvarint(&quot;scr_giveairstrike&quot;)" isCall="True">
+      <funcRefArg charIndex="1085" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hardpoints" name="giveHardpointItem" charIndex="1172" charLength="83" codePart="level.players[i] maps\mp\gametypes\_hardpoints::giveHardpointItem( &quot;airstrike_mp&quot; )" isCall="True">
+      <funcRefArg charIndex="1239" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1265" charLength="35" codePart="setdvar( &quot;scr_giveairstrike&quot;, &quot;0&quot; )" isCall="True">
+      <funcRefArg charIndex="1274" charLength="19" />
+      <funcRefArg charIndex="1295" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="1313" charLength="32" codePart="getdvarint(&quot;scr_givehelicopter&quot;)" isCall="True">
+      <funcRefArg charIndex="1324" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hardpoints" name="giveHardpointItem" charIndex="1412" charLength="84" codePart="level.players[i] maps\mp\gametypes\_hardpoints::giveHardpointItem( &quot;helicopter_mp&quot; )" isCall="True">
+      <funcRefArg charIndex="1479" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1506" charLength="36" codePart="setdvar( &quot;scr_givehelicopter&quot;, &quot;0&quot; )" isCall="True">
+      <funcRefArg charIndex="1515" charLength="20" />
+      <funcRefArg charIndex="1537" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="1557" charLength="23" codePart="getdvar(&quot;scr_giveperk&quot;)" isCall="True">
+      <funcRefArg charIndex="1565" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="1603" charLength="23" codePart="getdvar(&quot;scr_giveperk&quot;)" isCall="True">
+      <funcRefArg charIndex="1611" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetPerk" charIndex="1683" charLength="32" codePart="level.players[i] setPerk( perk )" isCall="True">
+      <funcRefArg charIndex="1709" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1770" charLength="29" codePart="setdvar( &quot;scr_giveperk&quot;, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="1779" charLength="14" />
+      <funcRefArg charIndex="1795" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="1812" charLength="23" codePart="getdvar(&quot;scr_takeperk&quot;)" isCall="True">
+      <funcRefArg charIndex="1820" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="1858" charLength="23" codePart="getdvar(&quot;scr_takeperk&quot;)" isCall="True">
+      <funcRefArg charIndex="1866" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="UnSetPerk" charIndex="1938" charLength="34" codePart="level.players[i] unsetPerk( perk )" isCall="True">
+      <funcRefArg charIndex="1966" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="2035" charLength="29" codePart="setdvar( &quot;scr_takeperk&quot;, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="2044" charLength="14" />
+      <funcRefArg charIndex="2060" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="2080" charLength="26" codePart="getDvar( &quot;scr_x_kills_y&quot; )" isCall="True">
+      <funcRefArg charIndex="2089" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="StrTok" charIndex="2135" charLength="41" codePart="strTok( getDvar( &quot;scr_x_kills_y&quot; ), &quot; &quot; )" isCall="True">
+      <funcRefArg charIndex="2143" charLength="26" />
+      <funcRefArg charIndex="2171" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="2143" charLength="26" codePart="getDvar( &quot;scr_x_kills_y&quot; )" isCall="True">
+      <funcRefArg charIndex="2152" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="xKillsY" charIndex="2212" charLength="46" codePart="thread xKillsY( nameTokens[0], nameTokens[1] )" isCall="True">
+      <funcRefArg charIndex="2228" charLength="13" />
+      <funcRefArg charIndex="2243" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="2265" charLength="30" codePart="setDvar( &quot;scr_x_kills_y&quot;, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="2274" charLength="15" />
+      <funcRefArg charIndex="2291" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="2310" charLength="28" codePart="getDvar(&quot;scr_usehelicopter&quot;)" isCall="True">
+      <funcRefArg charIndex="2318" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="2366" charLength="30" codePart="getDvar( &quot;scr_usehelicopter&quot; )" isCall="True">
+      <funcRefArg charIndex="2375" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="2401" charLength="34" codePart="setDvar( &quot;scr_usehelicopter&quot;, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="2410" charLength="19" />
+      <funcRefArg charIndex="2431" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2626" charLength="18" codePart="isDefined( owner )" isCall="True">
+      <funcRefArg charIndex="2637" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hardpoints" name="triggerHardPoint" charIndex="2651" charLength="72" codePart="owner maps\mp\gametypes\_hardpoints::triggerHardpoint( &quot;helicopter_mp&quot; )" isCall="True">
+      <funcRefArg charIndex="2706" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="2739" charLength="26" codePart="getDvar( &quot;scr_set_level&quot; )" isCall="True">
+      <funcRefArg charIndex="2748" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Min" charIndex="2873" charLength="40" codePart="min( getDvarInt( &quot;scr_set_level&quot; ), 54 )" isCall="True">
+      <funcRefArg charIndex="2878" charLength="29" />
+      <funcRefArg charIndex="2909" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="2878" charLength="29" codePart="getDvarInt( &quot;scr_set_level&quot; )" isCall="True">
+      <funcRefArg charIndex="2890" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Max" charIndex="2928" charLength="17" codePart="max( newRank, 1 )" isCall="True">
+      <funcRefArg charIndex="2933" charLength="7" />
+      <funcRefArg charIndex="2942" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="2952" charLength="30" codePart="setDvar( &quot;scr_set_level&quot;, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="2961" charLength="15" />
+      <funcRefArg charIndex="2978" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_rank" name="getRankInfoMinXP" charIndex="3068" charLength="50" codePart="maps\mp\gametypes\_rank::getRankInfoMinXP( index )" isCall="True">
+      <funcRefArg charIndex="3111" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_rank" name="giveRankXP" charIndex="3124" charLength="85" codePart="level.players[0] thread maps\mp\gametypes\_rank::giveRankXP( &quot;kill&quot;, newXp - lastXp )" isCall="True">
+      <funcRefArg charIndex="3185" charLength="6" />
+      <funcRefArg charIndex="3193" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="3254" charLength="31" codePart="self notify ( &quot;cancel_notify&quot; )" isCall="True">
+      <funcRefArg charIndex="3268" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="3305" charLength="23" codePart="getDvar( &quot;scr_givexp&quot; )" isCall="True">
+      <funcRefArg charIndex="3314" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_rank" name="giveRankXP" charIndex="3344" charLength="102" codePart="level.players[0] thread maps\mp\gametypes\_rank::giveRankXP( &quot;challenge&quot;, getDvarInt( &quot;scr_givexp&quot; ) )" isCall="True">
+      <funcRefArg charIndex="3405" charLength="11" />
+      <funcRefArg charIndex="3418" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="3418" charLength="26" codePart="getDvarInt( &quot;scr_givexp&quot; )" isCall="True">
+      <funcRefArg charIndex="3430" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="3455" charLength="27" codePart="setDvar( &quot;scr_givexp&quot;, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="3464" charLength="12" />
+      <funcRefArg charIndex="3478" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="3499" charLength="30" codePart="getDvar( &quot;scr_unlock_weapon&quot; )" isCall="True">
+      <funcRefArg charIndex="3508" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_rank" name="unlockWeapon" charIndex="3545" charLength="95" codePart="level.players[0] thread maps\mp\gametypes\_rank::unlockWeapon( getDvar( &quot;scr_unlock_weapon&quot; ) )" isCall="True">
+      <funcRefArg charIndex="3608" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="3608" charLength="30" codePart="getDvar( &quot;scr_unlock_weapon&quot; )" isCall="True">
+      <funcRefArg charIndex="3617" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="3645" charLength="34" codePart="setDvar( &quot;scr_unlock_weapon&quot;, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="3654" charLength="19" />
+      <funcRefArg charIndex="3675" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="3694" charLength="28" codePart="getDvar( &quot;scr_unlock_camo&quot; )" isCall="True">
+      <funcRefArg charIndex="3703" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_rank" name="unlockCamoSingular" charIndex="3738" charLength="99" codePart="level.players[0] thread maps\mp\gametypes\_rank::unlockCamoSingular( getDvar( &quot;scr_unlock_camo&quot; ) )" isCall="True">
+      <funcRefArg charIndex="3807" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="3807" charLength="28" codePart="getDvar( &quot;scr_unlock_camo&quot; )" isCall="True">
+      <funcRefArg charIndex="3816" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="3842" charLength="32" codePart="setDvar( &quot;scr_unlock_camo&quot;, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="3851" charLength="17" />
+      <funcRefArg charIndex="3870" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="3889" charLength="34" codePart="getDvar( &quot;scr_unlock_attachment&quot; )" isCall="True">
+      <funcRefArg charIndex="3898" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_rank" name="unlockAttachmentSingular" charIndex="3939" charLength="111" codePart="level.players[0] thread maps\mp\gametypes\_rank::unlockAttachmentSingular( getDvar( &quot;scr_unlock_attachment&quot; ) )" isCall="True">
+      <funcRefArg charIndex="4014" charLength="35" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="4014" charLength="34" codePart="getDvar( &quot;scr_unlock_attachment&quot; )" isCall="True">
+      <funcRefArg charIndex="4023" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="4055" charLength="38" codePart="setDvar( &quot;scr_unlock_attachment&quot;, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="4064" charLength="23" />
+      <funcRefArg charIndex="4089" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="4108" charLength="26" codePart="getDvar( &quot;scr_do_notify&quot; )" isCall="True">
+      <funcRefArg charIndex="4117" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_hud_message" name="oldNotifyMessage" charIndex="4197" charLength="148" codePart="level.players[i] maps\mp\gametypes\_hud_message::oldNotifyMessage( getDvar( &quot;scr_do_notify&quot; ), getDvar( &quot;scr_do_notify&quot; ), game[&quot;icons&quot;][&quot;allies&quot;] )" isCall="True">
+      <funcRefArg charIndex="4264" charLength="26" />
+      <funcRefArg charIndex="4292" charLength="26" />
+      <funcRefArg charIndex="4320" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="4264" charLength="26" codePart="getDvar( &quot;scr_do_notify&quot; )" isCall="True">
+      <funcRefArg charIndex="4273" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="4292" charLength="26" codePart="getDvar( &quot;scr_do_notify&quot; )" isCall="True">
+      <funcRefArg charIndex="4301" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Announcement" charIndex="4354" charLength="42" codePart="announcement( getDvar( &quot;scr_do_notify&quot; ) )" isCall="True">
+      <funcRefArg charIndex="4368" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="4368" charLength="26" codePart="getDvar( &quot;scr_do_notify&quot; )" isCall="True">
+      <funcRefArg charIndex="4377" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="4401" charLength="30" codePart="setDvar( &quot;scr_do_notify&quot;, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="4410" charLength="15" />
+      <funcRefArg charIndex="4427" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="4445" charLength="25" codePart="getDvar( &quot;scr_entdebug&quot; )" isCall="True">
+      <funcRefArg charIndex="4454" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="4493" charLength="13" codePart="getEntArray()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="4685" charLength="31" codePart="isSubStr( classname, &quot;_spawn&quot; )" isCall="True">
+      <funcRefArg charIndex="4695" charLength="9" />
+      <funcRefArg charIndex="4706" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4822" charLength="39" codePart="isDefined( level.entCounts[classname] )" isCall="True">
+      <funcRefArg charIndex="4833" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4955" charLength="39" codePart="isDefined( level.entGroups[classname] )" isCall="True">
+      <funcRefArg charIndex="4966" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5166" charLength="28" codePart="isdefined( self.extraPerks )" isCall="True">
+      <funcRefArg charIndex="5177" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetArrayKeys" charIndex="5221" charLength="31" codePart="getArrayKeys( self.extraPerks )" isCall="True">
+      <funcRefArg charIndex="5235" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetPerk" charIndex="5297" charLength="24" codePart="self setPerk( perks[i] )" isCall="True">
+      <funcRefArg charIndex="5311" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsAlive" charIndex="5672" charLength="19" codePart="isAlive( attacker )" isCall="True">
+      <funcRefArg charIndex="5681" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsAlive" charIndex="5696" charLength="17" codePart="isAlive( victim )" isCall="True">
+      <funcRefArg charIndex="5705" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="6526" charLength="42" codePart="getdvarfloat(&quot;scr_requiredMapAspectRatio&quot;)" isCall="True">
+      <funcRefArg charIndex="6539" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6580" charLength="30" codePart="isdefined(level.minimapheight)" isCall="True">
+      <funcRefArg charIndex="6590" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="6617" charLength="34" codePart="setdvar(&quot;scr_minimap_height&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="6625" charLength="20" />
+      <funcRefArg charIndex="6647" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="6703" charLength="34" codePart="getdvarfloat(&quot;scr_minimap_height&quot;)" isCall="True">
+      <funcRefArg charIndex="6716" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6794" charLength="30" codePart="isdefined(level.minimaporigin)" isCall="True">
+      <funcRefArg charIndex="6804" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Unlink" charIndex="6832" charLength="28" codePart="level.minimapplayer unlink()" isCall="True" />
+    <funcRef sfPath="codapi" name="Delete" charIndex="6866" charLength="28" codePart="level.minimaporigin delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="notify" charIndex="6900" charLength="35" codePart="level notify(&quot;end_draw_map_bounds&quot;)" isCall="True">
+      <funcRefArg charIndex="6913" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="7037" charLength="34" codePart="getentarray(&quot;player&quot;, &quot;classname&quot;)" isCall="True">
+      <funcRefArg charIndex="7049" charLength="8" />
+      <funcRefArg charIndex="7059" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="7152" charLength="43" codePart="getentarray(&quot;minimap_corner&quot;, &quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="7164" charLength="16" />
+      <funcRefArg charIndex="7182" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="8066" charLength="37" codePart="spawn(&quot;script_origin&quot;, player.origin)" isCall="True">
+      <funcRefArg charIndex="8072" charLength="15" />
+      <funcRefArg charIndex="8089" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Cos" charIndex="8133" charLength="18" codePart="cos(getnorthyaw())" isCall="True">
+      <funcRefArg charIndex="8137" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetNorthYaw" charIndex="8137" charLength="13" codePart="getnorthyaw()" isCall="True" />
+    <funcRef sfPath="codapi" name="Sin" charIndex="8153" charLength="18" codePart="sin(getnorthyaw())" isCall="True">
+      <funcRefArg charIndex="8157" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetNorthYaw" charIndex="8157" charLength="13" codePart="getnorthyaw()" isCall="True" />
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="8255" charLength="39" codePart="vectordot(northvector, viewpostocorner)" isCall="True">
+      <funcRefArg charIndex="8265" charLength="11" />
+      <funcRefArg charIndex="8278" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="8374" charLength="38" codePart="vectordot(eastvector, viewpostocorner)" isCall="True">
+      <funcRefArg charIndex="8384" charLength="10" />
+      <funcRefArg charIndex="8396" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="vecscale" charIndex="8804" charLength="81" codePart="vecscale( eastvector, vectordot( eastvector, maxcorner - viewpos ) * (incr - 1) )" isCall="True">
+      <funcRefArg charIndex="8814" charLength="10" />
+      <funcRefArg charIndex="8826" charLength="58" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="8826" charLength="44" codePart="vectordot( eastvector, maxcorner - viewpos )" isCall="True">
+      <funcRefArg charIndex="8837" charLength="10" />
+      <funcRefArg charIndex="8849" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="vecscale" charIndex="9075" charLength="83" codePart="vecscale( northvector, vectordot( northvector, maxcorner - viewpos ) * (incr - 1) )" isCall="True">
+      <funcRefArg charIndex="9085" charLength="11" />
+      <funcRefArg charIndex="9098" charLength="59" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="9098" charLength="45" codePart="vectordot( northvector, maxcorner - viewpos )" isCall="True">
+      <funcRefArg charIndex="9109" charLength="11" />
+      <funcRefArg charIndex="9122" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="ATan" charIndex="9409" charLength="37" codePart="atan(disttoside * .8 / minimapheight)" isCall="True">
+      <funcRefArg charIndex="9414" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="ATan" charIndex="9470" charLength="55" codePart="atan(disttotop * aspectratioguess * .8 / minimapheight)" isCall="True">
+      <funcRefArg charIndex="9475" charLength="49" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="ATan" charIndex="9612" charLength="32" codePart="atan(disttoside / minimapheight)" isCall="True">
+      <funcRefArg charIndex="9617" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="ATan" charIndex="9668" charLength="50" codePart="atan(disttotop * aspectratioguess / minimapheight)" isCall="True">
+      <funcRefArg charIndex="9673" charLength="44" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LinkTo" charIndex="9952" charLength="21" codePart="player linkto(origin)" isCall="True">
+      <funcRefArg charIndex="9966" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetNorthYaw" charIndex="10045" charLength="13" codePart="getnorthyaw()" isCall="True" />
+    <funcRef sfPath="codapi" name="TakeAllWeapons" charIndex="10079" charLength="23" codePart="player TakeAllWeapons()" isCall="True" />
+    <funcRef sfPath="codapi" name="GiveWeapon" charIndex="10110" charLength="39" codePart="player GiveWeapon( &quot;defaultweapon_mp&quot; )" isCall="True">
+      <funcRefArg charIndex="10129" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="10157" charLength="39" codePart="player setclientdvar(&quot;cg_drawgun&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="10178" charLength="12" />
+      <funcRefArg charIndex="10192" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="10204" charLength="38" codePart="player setclientdvar(&quot;cg_draw2d&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="10225" charLength="11" />
+      <funcRefArg charIndex="10238" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="10250" charLength="39" codePart="player setclientdvar(&quot;cg_drawfps&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="10271" charLength="12" />
+      <funcRefArg charIndex="10285" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="10297" charLength="38" codePart="player setclientdvar(&quot;fx_enable&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="10318" charLength="11" />
+      <funcRefArg charIndex="10331" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="10343" charLength="34" codePart="player setclientdvar(&quot;r_fog&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="10364" charLength="7" />
+      <funcRefArg charIndex="10373" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="10385" charLength="42" codePart="player setclientdvar(&quot;r_highLodDist&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="10406" charLength="15" />
+      <funcRefArg charIndex="10423" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="10454" charLength="38" codePart="player setclientdvar(&quot;r_znear&quot;, znear)" isCall="True">
+      <funcRefArg charIndex="10475" charLength="9" />
+      <funcRefArg charIndex="10486" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="10524" charLength="39" codePart="player setclientdvar(&quot;r_lodscale&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="10545" charLength="12" />
+      <funcRefArg charIndex="10559" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="10571" charLength="43" codePart="player setclientdvar(&quot;cg_drawversion&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="10592" charLength="16" />
+      <funcRefArg charIndex="10610" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="10622" charLength="38" codePart="player setclientdvar(&quot;sm_enable&quot;, &quot;1&quot;)" isCall="True">
+      <funcRefArg charIndex="10643" charLength="11" />
+      <funcRefArg charIndex="10656" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="10668" charLength="52" codePart="player setclientdvar(&quot;player_view_pitch_down&quot;, &quot;90&quot;)" isCall="True">
+      <funcRefArg charIndex="10689" charLength="24" />
+      <funcRefArg charIndex="10715" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="10728" charLength="49" codePart="player setclientdvar(&quot;player_view_pitch_up&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="10749" charLength="22" />
+      <funcRefArg charIndex="10773" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="10785" charLength="37" codePart="player setclientdvar(&quot;cg_fov&quot;, angle)" isCall="True">
+      <funcRefArg charIndex="10806" charLength="8" />
+      <funcRefArg charIndex="10816" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetClientDvar" charIndex="10830" charLength="38" codePart="player setclientdvar(&quot;cg_fovmin&quot;, &quot;1&quot;)" isCall="True">
+      <funcRefArg charIndex="10851" charLength="11" />
+      <funcRefArg charIndex="10864" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10911" charLength="28" codePart="isdefined( level.objPoints )" isCall="True">
+      <funcRefArg charIndex="10922" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="11028" charLength="52" codePart="isdefined( level.objPoints[level.objPointNames[i]] )" isCall="True">
+      <funcRefArg charIndex="11039" charLength="40" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Destroy" charIndex="11092" charLength="49" codePart="level.objPoints[level.objPointNames[i]] destroy()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="drawMiniMapBounds" charIndex="11314" charLength="55" codePart="thread drawMiniMapBounds(viewpos, mincorner, maxcorner)" isCall="True">
+      <funcRefArg charIndex="11339" charLength="7" />
+      <funcRefArg charIndex="11348" charLength="9" />
+      <funcRefArg charIndex="11359" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetPlayerAngles" charIndex="11407" charLength="37" codePart="player setplayerangles(origin.angles)" isCall="True">
+      <funcRefArg charIndex="11430" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="11469" charLength="85" codePart="println(&quot;^1Error: There are not exactly 2 \&quot;minimap_corner\&quot; entities in the level.&quot;)" isCall="True">
+      <funcRefArg charIndex="11477" charLength="76" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="11576" charLength="34" codePart="setdvar(&quot;scr_minimap_height&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="11584" charLength="20" />
+      <funcRefArg charIndex="11606" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="11768" charLength="35" codePart="level notify(&quot;end_draw_map_bounds&quot;)" isCall="True">
+      <funcRefArg charIndex="11781" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="11807" charLength="34" codePart="level endon(&quot;end_draw_map_bounds&quot;)" isCall="True">
+      <funcRefArg charIndex="11819" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Cos" charIndex="11904" charLength="18" codePart="cos(getnorthyaw())" isCall="True">
+      <funcRefArg charIndex="11908" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetNorthYaw" charIndex="11908" charLength="13" codePart="getnorthyaw()" isCall="True" />
+    <funcRef sfPath="codapi" name="Sin" charIndex="11924" charLength="18" codePart="sin(getnorthyaw())" isCall="True">
+      <funcRefArg charIndex="11928" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetNorthYaw" charIndex="11928" charLength="13" codePart="getnorthyaw()" isCall="True" />
+    <funcRef sfPath="codapi" name="Length" charIndex="11963" charLength="29" codePart="length(mincorner - maxcorner)" isCall="True">
+      <funcRefArg charIndex="11970" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="12281" charLength="60" codePart="vectornormalize((mincorneroffset[0], mincorneroffset[1], 0))" isCall="True">
+      <funcRefArg charIndex="12297" charLength="43" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="vecscale" charIndex="12369" charLength="42" codePart="vecscale(mincorneroffset, diaglen * 1/800)" isCall="True">
+      <funcRefArg charIndex="12378" charLength="15" />
+      <funcRefArg charIndex="12395" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="12476" charLength="60" codePart="vectornormalize((maxcorneroffset[0], maxcorneroffset[1], 0))" isCall="True">
+      <funcRefArg charIndex="12492" charLength="43" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="vecscale" charIndex="12564" charLength="42" codePart="vecscale(maxcorneroffset, diaglen * 1/800)" isCall="True">
+      <funcRefArg charIndex="12573" charLength="15" />
+      <funcRefArg charIndex="12590" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="vecscale" charIndex="12656" charLength="43" codePart="vecscale(north, vectordot(diagonal, north))" isCall="True">
+      <funcRefArg charIndex="12665" charLength="5" />
+      <funcRefArg charIndex="12672" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="12672" charLength="26" codePart="vectordot(diagonal, north)" isCall="True">
+      <funcRefArg charIndex="12682" charLength="8" />
+      <funcRefArg charIndex="12692" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="vecscale" charIndex="12715" charLength="48" codePart="vecscale(north, abs(vectordot(diagonal, north)))" isCall="True">
+      <funcRefArg charIndex="12724" charLength="5" />
+      <funcRefArg charIndex="12731" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Abs" charIndex="12731" charLength="31" codePart="abs(vectordot(diagonal, north))" isCall="True">
+      <funcRefArg charIndex="12735" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="12735" charLength="26" codePart="vectordot(diagonal, north)" isCall="True">
+      <funcRefArg charIndex="12745" charLength="8" />
+      <funcRefArg charIndex="12755" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="vecscale" charIndex="12888" charLength="35" codePart="vecscale(mincorner + maxcorner, .5)" isCall="True">
+      <funcRefArg charIndex="12897" charLength="21" />
+      <funcRefArg charIndex="12920" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="vecscale" charIndex="12926" charLength="24" codePart="vecscale(sidenorth, .51)" isCall="True">
+      <funcRefArg charIndex="12935" charLength="9" />
+      <funcRefArg charIndex="12946" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="13003" charLength="22" codePart="line(corner0, corner1)" isCall="True">
+      <funcRefArg charIndex="13008" charLength="7" />
+      <funcRefArg charIndex="13017" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="13030" charLength="22" codePart="line(corner1, corner2)" isCall="True">
+      <funcRefArg charIndex="13035" charLength="7" />
+      <funcRefArg charIndex="13044" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="13057" charLength="22" codePart="line(corner2, corner3)" isCall="True">
+      <funcRefArg charIndex="13062" charLength="7" />
+      <funcRefArg charIndex="13071" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="13084" charLength="22" codePart="line(corner3, corner0)" isCall="True">
+      <funcRefArg charIndex="13089" charLength="7" />
+      <funcRefArg charIndex="13098" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="13297" charLength="54" codePart="print3d(toppos, &quot;This Side Up&quot;, (1,1,1), 1, textscale)" isCall="True">
+      <funcRefArg charIndex="13305" charLength="6" />
+      <funcRefArg charIndex="13313" charLength="14" />
+      <funcRefArg charIndex="13329" charLength="7" />
+      <funcRefArg charIndex="13338" charLength="1" />
+      <funcRefArg charIndex="13341" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="13432" charLength="29" codePart="getdvarInt(&quot;scr_testclients&quot;)" isCall="True">
+      <funcRefArg charIndex="13443" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="13576" charLength="29" codePart="getdvarInt(&quot;scr_testclients&quot;)" isCall="True">
+      <funcRefArg charIndex="13587" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="13609" charLength="31" codePart="setDvar( &quot;scr_testclients&quot;, 0 )" isCall="True">
+      <funcRefArg charIndex="13618" charLength="17" />
+      <funcRefArg charIndex="13637" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AddTestClient" charIndex="13693" charLength="15" codePart="addtestclient()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="13720" charLength="17" codePart="isdefined(ent[i])" isCall="True">
+      <funcRefArg charIndex="13730" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="13745" charLength="36" codePart="println(&quot;Could not add test client&quot;)" isCall="True">
+      <funcRefArg charIndex="13753" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="TestClient" charIndex="13924" charLength="38" codePart="ent[i] thread TestClient(&quot;autoassign&quot;)" isCall="True">
+      <funcRefArg charIndex="13949" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="addTestClients" charIndex="13973" charLength="23" codePart="thread addTestClients()" isCall="True" />
+    <funcRef sfPath="codapi" name="endon" charIndex="14026" charLength="26" codePart="self endon( &quot;disconnect&quot; )" isCall="True">
+      <funcRefArg charIndex="14038" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="14065" charLength="28" codePart="isdefined(self.pers[&quot;team&quot;])" isCall="True">
+      <funcRefArg charIndex="14075" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="14112" charLength="52" codePart="self notify(&quot;menuresponse&quot;, game[&quot;menu_team&quot;], team)" isCall="True">
+      <funcRefArg charIndex="14124" charLength="14" />
+      <funcRefArg charIndex="14140" charLength="17" />
+      <funcRefArg charIndex="14159" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetArrayKeys" charIndex="14192" charLength="30" codePart="getArrayKeys( level.classMap )" isCall="True">
+      <funcRefArg charIndex="14206" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsSubStr" charIndex="14294" charLength="32" codePart="issubstr( classes[i], &quot;custom&quot; )" isCall="True">
+      <funcRefArg charIndex="14304" charLength="10" />
+      <funcRefArg charIndex="14316" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="14330" charLength="63" codePart="isDefined( level.default_perk[ level.classMap[ classes[i] ] ] )" isCall="True">
+      <funcRefArg charIndex="14341" charLength="51" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="14451" charLength="24" codePart="assert( okclasses.size )" isCall="True">
+      <funcRefArg charIndex="14459" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="14518" charLength="27" codePart="randomint( okclasses.size )" isCall="True">
+      <funcRefArg charIndex="14529" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="14584" charLength="49" codePart="self notify(&quot;menuresponse&quot;, &quot;changeclass&quot;, class)" isCall="True">
+      <funcRefArg charIndex="14596" charLength="14" />
+      <funcRefArg charIndex="14612" charLength="13" />
+      <funcRefArg charIndex="14627" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="14643" charLength="33" codePart="self waittill( &quot;spawned_player&quot; )" isCall="True">
+      <funcRefArg charIndex="14658" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="14733" charLength="28" codePart="isdefined(level.spawnpoints)" isCall="True">
+      <funcRefArg charIndex="14743" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToForward" charIndex="14997" charLength="34" codePart="anglestoforward(spawnpoint.angles)" isCall="True">
+      <funcRefArg charIndex="15013" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToRight" charIndex="15044" charLength="32" codePart="anglestoright(spawnpoint.angles)" isCall="True">
+      <funcRefArg charIndex="15058" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="vector_scale" charIndex="15093" charLength="43" codePart="maps\mp\_utility::vector_scale(forward, 16)" isCall="True">
+      <funcRefArg charIndex="15124" charLength="7" />
+      <funcRefArg charIndex="15133" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="vector_scale" charIndex="15149" charLength="41" codePart="maps\mp\_utility::vector_scale(right, 16)" isCall="True">
+      <funcRefArg charIndex="15180" charLength="5" />
+      <funcRefArg charIndex="15187" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="lineUntilNotified" charIndex="15333" charLength="40" codePart="thread lineUntilNotified(a, b, color, 0)" isCall="True">
+      <funcRefArg charIndex="15358" charLength="1" />
+      <funcRefArg charIndex="15361" charLength="1" />
+      <funcRefArg charIndex="15364" charLength="5" />
+      <funcRefArg charIndex="15371" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="lineUntilNotified" charIndex="15378" charLength="40" codePart="thread lineUntilNotified(b, c, color, 0)" isCall="True">
+      <funcRefArg charIndex="15403" charLength="1" />
+      <funcRefArg charIndex="15406" charLength="1" />
+      <funcRefArg charIndex="15409" charLength="5" />
+      <funcRefArg charIndex="15416" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="lineUntilNotified" charIndex="15423" charLength="40" codePart="thread lineUntilNotified(c, d, color, 0)" isCall="True">
+      <funcRefArg charIndex="15448" charLength="1" />
+      <funcRefArg charIndex="15451" charLength="1" />
+      <funcRefArg charIndex="15454" charLength="5" />
+      <funcRefArg charIndex="15461" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="lineUntilNotified" charIndex="15468" charLength="40" codePart="thread lineUntilNotified(d, a, color, 0)" isCall="True">
+      <funcRefArg charIndex="15493" charLength="1" />
+      <funcRefArg charIndex="15496" charLength="1" />
+      <funcRefArg charIndex="15499" charLength="5" />
+      <funcRefArg charIndex="15506" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="lineUntilNotified" charIndex="15515" charLength="53" codePart="thread lineUntilNotified(a, a + (0, 0, 72), color, 0)" isCall="True">
+      <funcRefArg charIndex="15540" charLength="1" />
+      <funcRefArg charIndex="15543" charLength="14" />
+      <funcRefArg charIndex="15559" charLength="5" />
+      <funcRefArg charIndex="15566" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="lineUntilNotified" charIndex="15573" charLength="53" codePart="thread lineUntilNotified(b, b + (0, 0, 72), color, 0)" isCall="True">
+      <funcRefArg charIndex="15598" charLength="1" />
+      <funcRefArg charIndex="15601" charLength="14" />
+      <funcRefArg charIndex="15617" charLength="5" />
+      <funcRefArg charIndex="15624" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="lineUntilNotified" charIndex="15631" charLength="53" codePart="thread lineUntilNotified(c, c + (0, 0, 72), color, 0)" isCall="True">
+      <funcRefArg charIndex="15656" charLength="1" />
+      <funcRefArg charIndex="15659" charLength="14" />
+      <funcRefArg charIndex="15675" charLength="5" />
+      <funcRefArg charIndex="15682" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="lineUntilNotified" charIndex="15689" charLength="53" codePart="thread lineUntilNotified(d, d + (0, 0, 72), color, 0)" isCall="True">
+      <funcRefArg charIndex="15714" charLength="1" />
+      <funcRefArg charIndex="15717" charLength="14" />
+      <funcRefArg charIndex="15733" charLength="5" />
+      <funcRefArg charIndex="15740" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="lineUntilNotified" charIndex="15845" charLength="40" codePart="thread lineUntilNotified(a, b, color, 0)" isCall="True">
+      <funcRefArg charIndex="15870" charLength="1" />
+      <funcRefArg charIndex="15873" charLength="1" />
+      <funcRefArg charIndex="15876" charLength="5" />
+      <funcRefArg charIndex="15883" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="lineUntilNotified" charIndex="15890" charLength="40" codePart="thread lineUntilNotified(b, c, color, 0)" isCall="True">
+      <funcRefArg charIndex="15915" charLength="1" />
+      <funcRefArg charIndex="15918" charLength="1" />
+      <funcRefArg charIndex="15921" charLength="5" />
+      <funcRefArg charIndex="15928" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="lineUntilNotified" charIndex="15935" charLength="40" codePart="thread lineUntilNotified(c, d, color, 0)" isCall="True">
+      <funcRefArg charIndex="15960" charLength="1" />
+      <funcRefArg charIndex="15963" charLength="1" />
+      <funcRefArg charIndex="15966" charLength="5" />
+      <funcRefArg charIndex="15973" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="lineUntilNotified" charIndex="15980" charLength="40" codePart="thread lineUntilNotified(d, a, color, 0)" isCall="True">
+      <funcRefArg charIndex="16005" charLength="1" />
+      <funcRefArg charIndex="16008" charLength="1" />
+      <funcRefArg charIndex="16011" charLength="5" />
+      <funcRefArg charIndex="16018" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToForward" charIndex="16076" charLength="34" codePart="anglestoforward(spawnpoint.angles)" isCall="True">
+      <funcRefArg charIndex="16092" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToForward" charIndex="16135" charLength="34" codePart="anglestoforward(spawnpoint.angles)" isCall="True">
+      <funcRefArg charIndex="16151" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToRight" charIndex="16192" charLength="32" codePart="anglestoright(spawnpoint.angles)" isCall="True">
+      <funcRefArg charIndex="16206" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="vector_scale" charIndex="16247" charLength="49" codePart="maps\mp\_utility::vector_scale(arrow_forward, 32)" isCall="True">
+      <funcRefArg charIndex="16278" charLength="13" />
+      <funcRefArg charIndex="16293" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="vector_scale" charIndex="16321" charLength="53" codePart="maps\mp\_utility::vector_scale(arrowhead_forward, 24)" isCall="True">
+      <funcRefArg charIndex="16352" charLength="17" />
+      <funcRefArg charIndex="16371" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_utility" name="vector_scale" charIndex="16397" charLength="50" codePart="maps\mp\_utility::vector_scale(arrowhead_right, 8)" isCall="True">
+      <funcRefArg charIndex="16428" charLength="15" />
+      <funcRefArg charIndex="16445" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="lineUntilNotified" charIndex="16597" charLength="49" codePart="thread lineUntilNotified(center, a, (1, 1, 1), 0)" isCall="True">
+      <funcRefArg charIndex="16622" charLength="6" />
+      <funcRefArg charIndex="16630" charLength="1" />
+      <funcRefArg charIndex="16633" charLength="9" />
+      <funcRefArg charIndex="16644" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="lineUntilNotified" charIndex="16651" charLength="44" codePart="thread lineUntilNotified(a, b, (1, 1, 1), 0)" isCall="True">
+      <funcRefArg charIndex="16676" charLength="1" />
+      <funcRefArg charIndex="16679" charLength="1" />
+      <funcRefArg charIndex="16682" charLength="9" />
+      <funcRefArg charIndex="16693" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="lineUntilNotified" charIndex="16700" charLength="44" codePart="thread lineUntilNotified(a, c, (1, 1, 1), 0)" isCall="True">
+      <funcRefArg charIndex="16725" charLength="1" />
+      <funcRefArg charIndex="16728" charLength="1" />
+      <funcRefArg charIndex="16731" charLength="9" />
+      <funcRefArg charIndex="16742" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_dev" name="print3DUntilNotified" charIndex="16751" charLength="98" codePart="thread print3DUntilNotified(spawnpoint.origin + (0, 0, 72), spawnpoint.classname, (1, 1, 1), 1, 1)" isCall="True">
+      <funcRefArg charIndex="16779" charLength="30" />
+      <funcRefArg charIndex="16811" charLength="20" />
+      <funcRefArg charIndex="16833" charLength="9" />
+      <funcRefArg charIndex="16844" charLength="1" />
+      <funcRefArg charIndex="16847" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="16922" charLength="31" codePart="level endon(&quot;hide_spawnpoints&quot;)" isCall="True">
+      <funcRefArg charIndex="16934" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Print3d" charIndex="16975" charLength="42" codePart="print3d(origin, text, color, alpha, scale)" isCall="True">
+      <funcRefArg charIndex="16983" charLength="6" />
+      <funcRefArg charIndex="16991" charLength="4" />
+      <funcRefArg charIndex="16997" charLength="5" />
+      <funcRefArg charIndex="17004" charLength="5" />
+      <funcRefArg charIndex="17011" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="17095" charLength="31" codePart="level endon(&quot;hide_spawnpoints&quot;)" isCall="True">
+      <funcRefArg charIndex="17107" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Line" charIndex="17148" charLength="34" codePart="line(start, end, color, depthTest)" isCall="True">
+      <funcRefArg charIndex="17153" charLength="5" />
+      <funcRefArg charIndex="17160" charLength="3" />
+      <funcRefArg charIndex="17165" charLength="5" />
+      <funcRefArg charIndex="17172" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="17230" charLength="32" codePart="level notify(&quot;hide_spawnpoints&quot;)" isCall="True">
+      <funcRefArg charIndex="17243" charLength="18" />
+    </funcRef>
+    <error type="warning" charIndex="4197" charLength="148" lineIndex="168">
+      <message>Could not find enough arguments, function 'maps\mp\gametypes\_hud_message::oldNotifyMessage'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\gametypes\_hud_message::oldNotifyMessage', file 'maps\mp\gametypes\_dev', line 169, 'level.players[i] maps\mp\gametypes\_hud_message::oldNotifyMessage( getDvar( "scr_do_notify" ), getDvar( "scr_do_notify" ), game["icons"]["allies"] );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="11848" charLength="10" lineIndex="408">
+      <message>Variable 'viewheight' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'viewheight' is defined, but its value is never used., file 'maps\mp\gametypes\_dev', line 409, 'viewheight = (viewpos[2] - maxcorner[2]);'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

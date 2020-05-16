@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_entityheadicons</name>
+  </settings>
+  <content>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="setEntityHeadIcon" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="offset">
+      </param>
+    </func>
+    <func name="showAllEntityHeadIcons" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="hideAllEntityHeadIcons" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="disconnected">
+      </param>
+    </func>
+    <func name="updateEntityHeadIcon" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="entity">
+      </param>
+    </func>
+    <func name="keepEntityHeadIconsPositioned" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="destroyHeadIconsOnDeath" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateEntityHeadIconPos" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="headicon">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="16" charLength="38" codePart="isdefined(level.initedEntityHeadIcons)" isCall="True">
+      <funcRefArg charIndex="26" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="688" charLength="48" codePart="precacheShader( game[&quot;entity_headicon_allies&quot;] )" isCall="True">
+      <funcRefArg charIndex="704" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheShader" charIndex="740" charLength="46" codePart="precacheShader( game[&quot;entity_headicon_axis&quot;] )" isCall="True">
+      <funcRefArg charIndex="756" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_perplayer" name="init" charIndex="858" charLength="111" codePart="maps\mp\gametypes\_perplayer::init(&quot;entityheadiconhandler&quot;, ::showAllEntityHeadIcons, ::hideAllEntityHeadIcons)" isCall="True">
+      <funcRefArg charIndex="893" charLength="23" />
+      <funcRefArg charIndex="918" charLength="24" />
+      <funcRefArg charIndex="944" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_entityheadicons" name="showAllEntityHeadIcons" charIndex="918" charLength="24" codePart="::showAllEntityHeadIcons" isCall="False" />
+    <funcRef sfPath="maps\mp\_entityheadicons" name="hideAllEntityHeadIcons" charIndex="944" charLength="24" codePart="::hideAllEntityHeadIcons" isCall="False" />
+    <funcRef sfPath="maps\mp\gametypes\_perplayer" name="enable" charIndex="973" charLength="59" codePart="maps\mp\gametypes\_perplayer::enable(entityHeadIconHandler)" isCall="True">
+      <funcRefArg charIndex="1010" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1229" charLength="34" codePart="isdefined(self.entityHeadIconTeam)" isCall="True">
+      <funcRefArg charIndex="1239" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1434" charLength="17" codePart="isdefined(offset)" isCall="True">
+      <funcRefArg charIndex="1444" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1647" charLength="34" codePart="isdefined(self.entityHeadIcons[i])" isCall="True">
+      <funcRefArg charIndex="1657" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Destroy" charIndex="1687" charLength="33" codePart="self.entityHeadIcons[i] destroy()" isCall="True" />
+    <funcRef sfPath="codapi" name="notify" charIndex="1756" charLength="42" codePart="self notify(&quot;kill_entity_headicon_thread&quot;)" isCall="True">
+      <funcRefArg charIndex="1768" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_entityheadicons" name="updateEntityHeadIcon" charIndex="1922" charLength="59" codePart="level.playersViewingHeadIcons[i] updateEntityHeadIcon(self)" isCall="True">
+      <funcRefArg charIndex="1976" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_entityheadicons" name="keepEntityHeadIconsPositioned" charIndex="2323" charLength="43" codePart="self thread keepEntityHeadIconsPositioned()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2409" charLength="31" codePart="isdefined(self.entityHeadIcons)" isCall="True">
+      <funcRefArg charIndex="2419" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2541" charLength="41" codePart="isdefined(level.entitiesWithHeadIcons[i])" isCall="True">
+      <funcRefArg charIndex="2551" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_entityheadicons" name="updateEntityHeadIcon" charIndex="2588" charLength="57" codePart="self updateEntityHeadIcon(level.entitiesWithHeadIcons[i])" isCall="True">
+      <funcRefArg charIndex="2614" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3099" charLength="34" codePart="isdefined(self.entityHeadIcons[i])" isCall="True">
+      <funcRefArg charIndex="3109" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Destroy" charIndex="3140" charLength="33" codePart="self.entityHeadIcons[i] destroy()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3587" charLength="28" codePart="isdefined(self.pers[&quot;team&quot;])" isCall="True">
+      <funcRefArg charIndex="3597" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="NewClientHudElem" charIndex="3695" charLength="22" codePart="newClientHudElem(self)" isCall="True">
+      <funcRefArg charIndex="3712" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetShader" charIndex="3970" charLength="72" codePart="headicon setShader(game[&quot;entity_headicon_&quot; + self.pers[&quot;team&quot;]], 10, 10)" isCall="True">
+      <funcRefArg charIndex="3989" charLength="44" />
+      <funcRefArg charIndex="4035" charLength="2" />
+      <funcRefArg charIndex="4039" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetWayPoint" charIndex="4046" charLength="27" codePart="headicon setwaypoint(false)" isCall="True">
+      <funcRefArg charIndex="4067" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="4423" charLength="41" codePart="self endon(&quot;kill_entity_headicon_thread&quot;)" isCall="True">
+      <funcRefArg charIndex="4434" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="4468" charLength="19" codePart="self endon(&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="4479" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_entityheadicons" name="destroyHeadIconsOnDeath" charIndex="4494" charLength="37" codePart="self thread destroyHeadIconsOnDeath()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4664" charLength="34" codePart="isdefined(self.entityHeadIcons[i])" isCall="True">
+      <funcRefArg charIndex="4674" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_entityheadicons" name="updateEntityHeadIconPos" charIndex="4706" charLength="53" codePart="self updateEntityHeadIconPos(self.entityHeadIcons[i])" isCall="True">
+      <funcRefArg charIndex="4735" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="4849" charLength="25" codePart="self waittill ( &quot;death&quot; )" isCall="True">
+      <funcRefArg charIndex="4865" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4940" charLength="34" codePart="isdefined(self.entityHeadIcons[i])" isCall="True">
+      <funcRefArg charIndex="4950" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Destroy" charIndex="4980" charLength="33" codePart="self.entityHeadIcons[i] destroy()" isCall="True" />
+  </content>
+</scriptinfo>

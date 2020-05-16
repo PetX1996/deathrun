@@ -1,0 +1,939 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_hardpoints</name>
+  </settings>
+  <content>
+    <include>maps\mp\_utility</include>
+    <include>maps\mp\gametypes\_hud_util</include>
+    <include>common_scripts\utility</include>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="protectStartRound" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getProtectionTime" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="current">
+      </param>
+      <param name="interval">
+      </param>
+      <param name="protect">
+      </param>
+    </func>
+    <func name="distance2d" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="a">
+      </param>
+      <param name="b">
+      </param>
+    </func>
+    <func name="teamHasRadar" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="getMP_WAR_AIRSTRIKE_INBOUND_NEAR_YOUR_POSITION" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="doArtillery" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="origin">
+      </param>
+      <param name="owner">
+      </param>
+      <param name="team">
+      </param>
+    </func>
+    <func name="doLineArtillery" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="origin">
+      </param>
+      <param name="originB">
+      </param>
+      <param name="owner">
+      </param>
+      <param name="team">
+      </param>
+    </func>
+    <func name="debugArtilleryDangerCenters" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getAirstrikeDanger" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="point">
+      </param>
+    </func>
+    <func name="getSingleAirstrikeDanger" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="point">
+      </param>
+      <param name="origin">
+      </param>
+      <param name="forward">
+      </param>
+    </func>
+    <func name="pointIsInAirstrikeArea" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="point">
+      </param>
+      <param name="targetpos">
+      </param>
+      <param name="yaw">
+      </param>
+    </func>
+    <func name="losRadiusDamage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="pos">
+      </param>
+      <param name="radius">
+      </param>
+      <param name="max">
+      </param>
+      <param name="min">
+      </param>
+      <param name="owner">
+      </param>
+      <param name="eInflictor">
+      </param>
+    </func>
+    <func name="airstrikeDamageEntsThread" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="napalmDamageEntsThread" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="pos">
+      </param>
+      <param name="owner">
+      </param>
+      <param name="eInflictor">
+      </param>
+    </func>
+    <func name="gassDamageEntsThread" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="pos">
+      </param>
+      <param name="owner">
+      </param>
+      <param name="eInflictor">
+      </param>
+    </func>
+    <func name="NukeDamageEntsThread" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="pos">
+      </param>
+      <param name="owner">
+      </param>
+      <param name="eInflictor">
+      </param>
+    </func>
+    <func name="radiusArtilleryShellshock" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="pos">
+      </param>
+      <param name="radius">
+      </param>
+      <param name="maxduration">
+      </param>
+      <param name="minduration">
+      </param>
+    </func>
+    <func name="artilleryShellshock" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="type">
+      </param>
+      <param name="duration">
+      </param>
+    </func>
+    <func name="airstrikeLine" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="start">
+      </param>
+      <param name="end">
+      </param>
+      <param name="color">
+      </param>
+      <param name="duration">
+      </param>
+    </func>
+    <func name="traceBomb" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="doPlaneStrike" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="owner">
+      </param>
+      <param name="requiredDeathCount">
+      </param>
+      <param name="bombsite">
+      </param>
+      <param name="startPoint">
+      </param>
+      <param name="endPoint">
+      </param>
+      <param name="bombTime">
+      </param>
+      <param name="flyTime">
+      </param>
+      <param name="direction">
+      </param>
+    </func>
+    <func name="callStrike_bombEffect" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="plane">
+      </param>
+      <param name="launchTime">
+      </param>
+      <param name="owner">
+      </param>
+      <param name="requiredDeathCount">
+      </param>
+    </func>
+    <func name="spawnbomb" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="origin">
+      </param>
+      <param name="angles">
+      </param>
+    </func>
+    <func name="deleteAfterTime" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="time">
+      </param>
+    </func>
+    <func name="drawLine" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="start">
+      </param>
+      <param name="end">
+      </param>
+      <param name="timeSlice">
+      </param>
+    </func>
+    <func name="playPlaneFx" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="owner">
+      </param>
+    </func>
+    <func name="getBestPlaneDirection" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="hitpos">
+      </param>
+    </func>
+    <func name="callStrike" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="owner">
+      </param>
+      <param name="coord">
+      </param>
+      <param name="yaw">
+      </param>
+    </func>
+    <func name="callStrike_bomb" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="bombTime">
+      </param>
+      <param name="coord">
+      </param>
+      <param name="repeat">
+      </param>
+      <param name="owner">
+      </param>
+    </func>
+    <func name="flat_origin" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="org">
+      </param>
+    </func>
+    <func name="flat_angle" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="angle">
+      </param>
+    </func>
+    <func name="targetisclose" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="other">
+      </param>
+      <param name="target">
+      </param>
+    </func>
+    <func name="targetisinfront" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="other">
+      </param>
+      <param name="target">
+      </param>
+    </func>
+    <func name="delete_on_death" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ent">
+      </param>
+    </func>
+    <func name="play_loop_sound_on_entity" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="alias">
+      </param>
+      <param name="offset">
+      </param>
+    </func>
+    <func name="callStrike_planeSound" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="plane">
+      </param>
+      <param name="bombsite">
+      </param>
+      <param name="owner">
+      </param>
+    </func>
+    <func name="playSoundinSpace" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="alias">
+      </param>
+      <param name="origin">
+      </param>
+      <param name="master">
+      </param>
+    </func>
+    <func name="giveHardpointItemForStreak" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="streakNotify" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="streakVal">
+      </param>
+    </func>
+    <func name="giveHardpoint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="hardpointType">
+      </param>
+      <param name="streak">
+      </param>
+    </func>
+    <func name="hardpointNotify" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="hardpointType">
+      </param>
+      <param name="streakVal">
+      </param>
+    </func>
+    <func name="giveHardpointItem" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="hardpointType">
+      </param>
+      <param name="streak">
+      </param>
+    </func>
+    <func name="upgradeHardpointItem" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getNextHardpointItem" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="hardpointType">
+      </param>
+    </func>
+    <func name="giveOwnedHardpointItem" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="hardpointItemWaiter" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getRemains" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="hardpointType">
+      </param>
+      <param name="_hp_item">
+      </param>
+    </func>
+    <func name="triggerHardpoint" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="hardpointType">
+      </param>
+    </func>
+    <func name="getMP_WAR_RADAR_ACQUIRED" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getMP_WAR_RADAR_ACQUIRED_ENEMY" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="UAVAcquiredPrintAndSound" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="otherteam">
+      </param>
+      <param name="callingPlayer">
+      </param>
+      <param name="numseconds">
+      </param>
+    </func>
+    <func name="useRadarItem" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="waitUAVTimerKillTeam" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+    </func>
+    <func name="useTeamUAV" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="otherteam">
+      </param>
+    </func>
+    <func name="usePlayerUAV" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="otherteam">
+      </param>
+    </func>
+    <func name="getUAVEXPIRED" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="setTeamRadarWrapper" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="team">
+      </param>
+      <param name="value">
+      </param>
+    </func>
+    <func name="selectAirstrikeLocation" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="hardpointType">
+      </param>
+    </func>
+    <func name="selectLineAirstrikeLocation" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="hardpointType">
+      </param>
+    </func>
+    <func name="finishAirstrikeUsage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="location">
+      </param>
+      <param name="usedCallback">
+      </param>
+    </func>
+    <func name="finishLineAirstrikeUsage" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="locationA">
+      </param>
+      <param name="locationB">
+      </param>
+      <param name="usedCallback">
+      </param>
+    </func>
+    <func name="endSelectionOn" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="waitfor">
+      </param>
+    </func>
+    <func name="endSelectionOnGameEnd" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="stopAirstrikeLocationSelection" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="disconnected">
+      </param>
+    </func>
+    <func name="useAirstrike" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="pos">
+      </param>
+    </func>
+    <func name="useLineAirstrike" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="pos1">
+      </param>
+      <param name="pos2">
+      </param>
+    </func>
+    <func name="hardpointReminder" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="hardpointType">
+      </param>
+    </func>
+    <error type="semantic" charIndex="791" charLength="28" lineIndex="16">
+      <message>Could not include file 'openwarfare\_utils'</message>
+      <fullMessage>Bad semantic: Could not include file 'openwarfare\_utils', file 'maps\mp\gametypes\_hardpoints', line 17, '#include openwarfare\_utils;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

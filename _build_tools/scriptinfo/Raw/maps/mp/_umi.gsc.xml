@@ -1,0 +1,892 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_umi</name>
+  </settings>
+  <content>
+    <func name="modName" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="nativeMapType" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="setNativeMapType" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="nativeMapType">
+      </param>
+    </func>
+    <func name="devDumpCsvWaypointsToBtd" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devDumpBtdWaypointsToCsv" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="devDrawAllPossibleSpawnpoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="deleteUnusedSpawnpoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="deleteSab">
+      </param>
+      <param name="deleteSd">
+      </param>
+      <param name="deleteDom">
+      </param>
+      <param name="deleteCtf">
+      </param>
+    </func>
+    <func name="deleteCtfEntities" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="deleteTurrets" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="deleteHqEntities" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="disambiguateBarrelsByTargetname" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+    </func>
+    <func name="deleteSabotageEntities" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="loadGlidePad" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="trigger">
+      </param>
+      <param name="origin1">
+      </param>
+      <param name="origin2">
+      </param>
+      <param name="origin3">
+      </param>
+      <param name="origin4">
+      </param>
+      <param name="origin5">
+      </param>
+      <param name="origin6">
+      </param>
+      <param name="velocity">
+      </param>
+    </func>
+    <func name="loadCyclicalAnimation" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="model">
+      </param>
+      <param name="type">
+      </param>
+      <param name="steps">
+      </param>
+      <param name="reversible">
+      </param>
+      <param name="delay">
+      </param>
+    </func>
+    <func name="loadElevator" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="model">
+      </param>
+      <param name="trigger">
+      </param>
+      <param name="positionA">
+      </param>
+      <param name="positionB">
+      </param>
+      <param name="velocity">
+      </param>
+    </func>
+    <func name="loadMapTeleporter" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="trigger">
+      </param>
+      <param name="destination">
+      </param>
+    </func>
+    <func name="loadHurtTriggers" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="trigger">
+      </param>
+    </func>
+    <func name="buildShopsByTradespawns" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="equipmentShops">
+      </param>
+      <param name="havePrefabModels">
+      </param>
+    </func>
+    <func name="buildShopsByTargetname" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+    </func>
+    <func name="buildWeaponShopsByTargetname" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+      <param name="loadTime">
+      </param>
+    </func>
+    <func name="buildWeaponShopsByTradespawns" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="weaponShops">
+      </param>
+      <param name="havePrefabModels">
+      </param>
+    </func>
+    <func name="convertToNativeWaypoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="buildZombieSpawnsByClassname" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="classname">
+      </param>
+    </func>
+    <func name="buildZombieSpawnByTargetname" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+      <param name="priority">
+      </param>
+    </func>
+    <func name="addPlayerSpawnsByClassname" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="classname">
+      </param>
+      <param name="enabled">
+      </param>
+    </func>
+    <func name="addPlayerSpawnsByTargetname" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+      <param name="enabled">
+      </param>
+    </func>
+    <func name="buildBarricadesByTargetname" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+      <param name="partCount">
+      </param>
+      <param name="health">
+      </param>
+      <param name="deathFx">
+      </param>
+      <param name="buildFx">
+      </param>
+      <param name="dropAll">
+      </param>
+    </func>
+    <func name="buildBarricadesByClassname" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="classname">
+      </param>
+      <param name="partCount">
+      </param>
+      <param name="health">
+      </param>
+      <param name="deathFx">
+      </param>
+      <param name="buildFx">
+      </param>
+      <param name="dropAll">
+      </param>
+    </func>
+    <func name="buildWeaponPickupByTargetname" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+      <param name="itemText">
+      </param>
+      <param name="weapon">
+      </param>
+      <param name="weaponType">
+      </param>
+    </func>
+    <func name="buildWeaponPickupByClassname" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="classname">
+      </param>
+      <param name="itemText">
+      </param>
+      <param name="weapon">
+      </param>
+      <param name="weaponType">
+      </param>
+    </func>
+    <func name="setPreferBtdWaypoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="value">
+      </param>
+    </func>
+    <func name="waitUntilFirstPlayerSpawns" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="startGame" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="deleteEntitiesByClassname" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="classname">
+      </param>
+    </func>
+    <func name="deleteEntitiesByTargetname" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+    </func>
+    <func name="deletePickupItems" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="deleteNearbyEntities" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="origin">
+      </param>
+      <param name="maximumDistance2D">
+      </param>
+      <param name="maxDeltaHeight">
+      </param>
+    </func>
+    <func name="preferBtdWaypoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="isUmiMap" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="privateGuessModName" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="initWaypoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="initSetup" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="initBarricades" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="loadWaypoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="loadTradespawn" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="buildAmmoStock" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+      <param name="loadTime">
+      </param>
+    </func>
+    <func name="buildWeaponUpgrade" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+    </func>
+    <func name="buildSurvSpawn" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+      <param name="priority">
+      </param>
+    </func>
+    <func name="waittillStart" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="startSurvWaves" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="buildBarricade" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+      <param name="partCount">
+      </param>
+      <param name="health">
+      </param>
+      <param name="deathFx">
+      </param>
+      <param name="buildFx">
+      </param>
+      <param name="dropAll">
+      </param>
+    </func>
+    <func name="buildWeaponPickup" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+      <param name="itemText">
+      </param>
+      <param name="weapon">
+      </param>
+      <param name="weaponType">
+      </param>
+    </func>
+    <func name="setWeaponHandling" access="Public">
+      <self>
+      </self>
+      <summary>rotu unused ?</summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="id">
+      </param>
+    </func>
+    <func name="setSpawnWeapons" access="Public">
+      <self>
+      </self>
+      <summary>rotu unused ?</summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="primary">
+      </param>
+      <param name="secondary">
+      </param>
+    </func>
+    <func name="buildParachutePickup" access="Public">
+      <self>
+      </self>
+      <summary>rotu unused ?</summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+    </func>
+    <func name="setWorldVision" access="Public">
+      <self>
+      </self>
+      <summary>rotu unused ?</summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="vision">
+      </param>
+      <param name="transitiontime">
+      </param>
+    </func>
+    <func name="setGameMode" access="Public">
+      <self>
+      </self>
+      <summary>rotu unused ?</summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="mode">
+      </param>
+    </func>
+    <func name="setPlayerSpawns" access="Public">
+      <self>
+      </self>
+      <summary>rotu unused ?</summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+    </func>
+    <func name="addDefaultZombieSpawns" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="placeShops" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="weapons">
+      </param>
+      <param name="shops">
+      </param>
+    </func>
+    <func name="convertWaypoints" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="zombieDefaultTarget" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="origin">
+      </param>
+    </func>
+    <func name="mapThink" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="setPlayerModels" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getFreeStruct" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="structs">
+      </param>
+      <param name="additional">
+      </param>
+    </func>
+    <func name="addDefaultPlayerSpawns" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="swap">
+      </param>
+    </func>
+    <func name="addPlayerSpawns" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="classname">
+      </param>
+      <param name="enabled">
+      </param>
+    </func>
+    <error type="semantic" charIndex="2124" charLength="31" lineIndex="39">
+      <message>Could not include file 'scripts\include\array'</message>
+      <fullMessage>Bad semantic: Could not include file 'scripts\include\array', file 'maps\mp\_umi', line 40, '#include scripts\include\array;'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2157" charLength="30" lineIndex="40">
+      <message>Could not include file 'scripts\include\data'</message>
+      <fullMessage>Bad semantic: Could not include file 'scripts\include\data', file 'maps\mp\_umi', line 41, '#include scripts\include\data;'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2189" charLength="34" lineIndex="41">
+      <message>Could not include file 'scripts\include\entities'</message>
+      <fullMessage>Bad semantic: Could not include file 'scripts\include\entities', file 'maps\mp\_umi', line 42, '#include scripts\include\entities;'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2225" charLength="29" lineIndex="42">
+      <message>Could not include file 'scripts\include\hud'</message>
+      <fullMessage>Bad semantic: Could not include file 'scripts\include\hud', file 'maps\mp\_umi', line 43, '#include scripts\include\hud;'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2256" charLength="32" lineIndex="43">
+      <message>Could not include file 'scripts\include\matrix'</message>
+      <fullMessage>Bad semantic: Could not include file 'scripts\include\matrix', file 'maps\mp\_umi', line 44, '#include scripts\include\matrix;'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="2290" charLength="33" lineIndex="44">
+      <message>Could not include file 'scripts\include\utility'</message>
+      <fullMessage>Bad semantic: Could not include file 'scripts\include\utility', file 'maps\mp\_umi', line 45, '#include scripts\include\utility;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

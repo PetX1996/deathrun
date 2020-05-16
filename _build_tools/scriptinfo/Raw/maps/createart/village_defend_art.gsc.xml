@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createart\village_defend_art</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="395" charLength="31" codePart="getent( &quot;player&quot;, &quot;classname&quot; )" isCall="True">
+      <funcRefArg charIndex="403" charLength="8" />
+      <funcRefArg charIndex="413" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="491" charLength="33" codePart="setdvar( &quot;scr_fog_disable&quot;, &quot;0&quot; )" isCall="True">
+      <funcRefArg charIndex="500" charLength="17" />
+      <funcRefArg charIndex="519" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetExpFog" charIndex="530" charLength="56" codePart="setExpFog( 2000, 5500, 0.462745, 0.478431, 0.454902, 0 )" isCall="True">
+      <funcRefArg charIndex="541" charLength="4" />
+      <funcRefArg charIndex="547" charLength="4" />
+      <funcRefArg charIndex="553" charLength="8" />
+      <funcRefArg charIndex="563" charLength="8" />
+      <funcRefArg charIndex="573" charLength="8" />
+      <funcRefArg charIndex="583" charLength="2" />
+    </funcRef>
+    <error type="semantic" charIndex="395" charLength="67" lineIndex="14">
+      <message>Could not find file 'maps\_art'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_art', file 'maps\createart\village_defend_art', line 15, 'getent( "player", "classname" ) maps\_art::setdefaultdepthoffield();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="590" charLength="52" lineIndex="21">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createart\village_defend_art', line 22, 'maps\_utility::set_vision_set( "village_defend", 0 );'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\mp_bloc_fx</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="46" charLength="38" codePart="loadfx( &quot;weather/snow_light_mp_bloc&quot; )" isCall="True">
+      <funcRefArg charIndex="54" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="124" charLength="37" codePart="loadfx( &quot;smoke/hallway_smoke_light&quot; )" isCall="True">
+      <funcRefArg charIndex="132" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="198" charLength="29" codePart="loadfx( &quot;weather/snow_wind&quot; )" isCall="True">
+      <funcRefArg charIndex="206" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="242" charLength="30" codePart="getdvar( &quot;clientSideEffects&quot; )" isCall="True">
+      <funcRefArg charIndex="251" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\createfx\mp_bloc_fx" name="main" charIndex="285" charLength="32" codePart="maps\createfx\mp_bloc_fx::main()" isCall="True" />
+  </content>
+</scriptinfo>

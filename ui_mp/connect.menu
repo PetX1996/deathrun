@@ -1,0 +1,258 @@
+#include "ui_mp/macros.inc"
+
+// Displayed when client is initially connecting to the server.
+{
+	assetGlobalDef
+	{
+		fadeClamp		1.0						// sets the fadeup alpha
+		fadeCycle		1						// how often fade happens in milliseconds
+		fadeAmount		0.1						// amount to adjust alpha per cycle
+	}
+	menuDef
+	{
+		name			"connect"
+		rect			0 0 640 480 HORIZONTAL_ALIGN_SUBLEFT VERTICAL_ALIGN_SUBTOP // always has aspect ration 4:3
+		style			WINDOW_STYLE_FILLED
+		fullScreen		0
+		focusColor		COLOR_FOCUSED
+		visible			0
+		//soundloop 		"loading_music"
+
+		onOpen
+		{
+			// resets all dvars from a previous map
+			execNow "exec ccfgs/connect.cfg"
+		
+			//execnow "selectStringTableEntryInDvar mp/didyouknow2.csv 0 didyouknow2";
+		}
+		
+		#define LOADSCREEN_ASPECTRATION 0.62
+		#define LOGO_ASPECTRATION 0.62
+		
+		#define MAP_BG_W 337
+		#define MAP_BG_H (MAP_BG_W * LOADSCREEN_ASPECTRATION)
+		#define MAP_BG_X ((640 - MAP_BG_W) * 0.5)
+		#define MAP_BG_Y 190
+		
+		#define MAP_FG_SPACE 10
+		#define MAP_FG_W (MAP_BG_W - (MAP_FG_SPACE * 2))
+		#define MAP_FG_H (MAP_BG_H - (MAP_FG_SPACE * 2))
+		#define MAP_FG_X (MAP_BG_X + MAP_FG_SPACE)
+		#define MAP_FG_Y (MAP_BG_Y + MAP_FG_SPACE)
+		
+		#define LOGO_SPACE 10
+		#define LOGO_LEFT_BG_W (640 - MAP_BG_W)
+		#define LOGO_LEFT_BG_H (MAP_BG_H * 0.5)
+		#define LOGO_LEFT_BG_X ((-1) * (LOGO_LEFT_BG_W * 0.5))
+		#define LOGO_LEFT_BG_Y (MAP_BG_Y + ((MAP_BG_H - LOGO_LEFT_BG_H) * 0.5))
+
+		#define LOGO_RIGHT_BG_W (-1 * (640 - MAP_BG_W))
+		#define LOGO_RIGHT_BG_H (MAP_BG_H * 0.5)
+		#define LOGO_RIGHT_BG_X (640 + (LOGO_RIGHT_BG_W * 0.5))
+		#define LOGO_RIGHT_BG_Y (MAP_BG_Y + ((MAP_BG_H - LOGO_RIGHT_BG_H) * 0.5))
+		
+		#define LOGO_LEFT_H (LOGO_LEFT_BG_H - (LOGO_SPACE * 2))
+		#define LOGO_LEFT_W (LOGO_LEFT_H / LOGO_ASPECTRATION)
+		#define LOGO_LEFT_X (MAP_BG_X - LOGO_LEFT_W - LOGO_SPACE)
+		#define LOGO_LEFT_Y (LOGO_LEFT_BG_Y + LOGO_SPACE)
+
+		#define LOGO_RIGHT_H LOGO_LEFT_H
+		#define LOGO_RIGHT_W LOGO_LEFT_W
+		#define LOGO_RIGHT_X ((MAP_BG_X + MAP_BG_W) + LOGO_SPACE)
+		#define LOGO_RIGHT_Y (LOGO_RIGHT_BG_Y + LOGO_SPACE)
+		
+		#define PROGRESS_W 480
+		#define PROGRESS_H 40
+		#define PROGRESS_X ((640 - PROGRESS_W) * 0.5)
+		#define PROGRESS_Y (MAP_BG_Y + MAP_BG_H + (480 - (MAP_BG_Y + MAP_BG_H) - PROGRESS_H) * 0.5)
+		
+		// bg
+		itemDef
+		{
+			type			ITEM_TYPE_BUTTON
+			rect			0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+			style			WINDOW_STYLE_SHADER
+			backcolor		COLOR_WHITE
+			background		"ui_connectbg"
+			visible			1
+		}
+		
+		SHADER_STATIC(LOGO_LEFT_BG_X, LOGO_LEFT_BG_Y, LOGO_LEFT_BG_W, LOGO_LEFT_BG_H, "gradient_fadein", 0 0 0 1, 1)
+		SHADER_STATIC(LOGO_RIGHT_BG_X, LOGO_RIGHT_BG_Y, LOGO_RIGHT_BG_W, LOGO_RIGHT_BG_H, "gradient_fadein", 0 0 0 1, 1)
+		/*
+		// logo bg
+		itemDef
+		{
+			type			ITEM_TYPE_BUTTON
+			rect			LOGO_LEFT_BG_X LOGO_LEFT_BG_Y LOGO_LEFT_BG_W LOGO_LEFT_BG_H HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+			style			WINDOW_STYLE_SHADER
+			background		"gradient_fadein"
+			forecolor		0 0 0 1
+			visible			1
+		}
+		// logo bg
+		itemDef
+		{
+			type			ITEM_TYPE_BUTTON
+			rect			LOGO_RIGHT_BG_X LOGO_RIGHT_BG_Y LOGO_RIGHT_BG_W LOGO_RIGHT_BG_H HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+			style			WINDOW_STYLE_SHADER
+			background		"gradient_fadein"
+			forecolor		0 0 0 1
+			visible			1
+		}
+		*/
+		
+		// logos
+		SHADER_STATIC(LOGO_LEFT_X, LOGO_LEFT_Y, LOGO_LEFT_W, LOGO_LEFT_H, "ui_logoserver", COLOR_WHITE, 1)
+		SHADER_STATIC(LOGO_RIGHT_X, LOGO_RIGHT_Y, LOGO_RIGHT_W, LOGO_RIGHT_H, "ui_logoserver", COLOR_WHITE, 1)
+		
+		// map
+		PANEL_STATIC(MAP_BG_X, MAP_BG_Y, MAP_BG_W, MAP_BG_H, COLOR_WHITE, 1)
+		SHADER_STATIC(MAP_FG_X, MAP_FG_Y, MAP_FG_W, MAP_FG_H, "$levelBriefing", COLOR_WHITE, 1)
+		
+		// progress bar
+		itemDef 
+		{
+			name			"loadbar"
+			style			WINDOW_STYLE_LOADBAR
+			rect			PROGRESS_X PROGRESS_Y PROGRESS_W PROGRESS_H HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
+			background		"ui_connectload"
+			visible			1	
+			decoration	
+		}
+		
+		// load progress bar background
+		/*
+		itemDef
+		{
+			rect		-240 -65 480 299 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+			origin			WIDESCREEN_OFFSET
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_SHADER
+			background		"menu_back2"
+			visible 		1
+			decoration
+		}
+		
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			FULLSCREEN_WIDE
+			background		"menu_back2"
+			forecolor		1 1 1 1
+			visible			1
+			decoration
+		}
+		
+		itemDef
+		{
+			rect		-220 -50 440 268 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+			origin			WIDESCREEN_OFFSET
+			forecolor		0.5 0.5 0.5 0.7
+			style			WINDOW_STYLE_SHADER
+			background		"$levelBriefing"
+			visible 		1
+			decoration
+		}
+		
+		itemDef
+		{
+			rect		-203 -63 406 254 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+			origin			WIDESCREEN_OFFSET
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_SHADER
+			background		"$menu_back"
+			visible 		1
+			decoration
+		}
+		itemDef
+		{
+			rect		-200 -60 400 248 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+			origin			WIDESCREEN_OFFSET
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_SHADER
+			background		"$levelBriefing"
+			visible 		1
+			decoration
+		}
+		// load progress bar
+		itemDef 
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			-256 -65 512 64 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_BOTTOM
+			origin			WIDESCREEN_OFFSET
+			background		"menu_front2"
+			forecolor		1 1 1 1
+			visible			1	
+			decoration	
+		}
+		// load progress bar
+		itemDef 
+		{
+			name			"loadbar"
+			style			WINDOW_STYLE_LOADBAR
+			rect			-256 -65 512 64 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_BOTTOM
+			origin			WIDESCREEN_OFFSET
+			background		"menu_front"
+			visible			1	
+			decoration
+		}
+		
+		
+		itemDef
+		{
+			name			"loadbar"
+			style			WINDOW_STYLE_LOADBAR
+			rect		-220 -50 440 268 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER
+			forecolor		1 1 1 1
+			origin			WIDESCREEN_OFFSET
+			background		"$levelBriefing"
+			visible			1
+			decoration
+		}
+		
+		//loga
+		itemDef
+		{
+			rect			10 -165 165 83 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_CENTER
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_SHADER
+			origin			WIDESCREEN_OFFSET
+			background		"menu_back"
+			visible 		1
+			decoration
+		}
+		itemDef
+		{
+			rect			18 -160 150 75 HORIZONTAL_ALIGN_LEFT VERTICAL_ALIGN_CENTER
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_SHADER
+			origin			WIDESCREEN_OFFSET
+			background		"menu_logo0"
+			visible 		1
+			decoration
+		}
+		itemDef
+		{
+			rect			-176 -165 165 83 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_CENTER
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_SHADER
+			origin			WIDESCREEN_OFFSET
+			background		"menu_back"
+			visible 		1
+			decoration
+		}
+		itemDef
+		{
+			rect			-169 -160 150 75 HORIZONTAL_ALIGN_RIGHT VERTICAL_ALIGN_CENTER
+			forecolor		1 1 1 1
+			style			WINDOW_STYLE_SHADER
+			origin			WIDESCREEN_OFFSET
+			background		"menu_logo1"
+			visible 		1
+			decoration
+		}
+		#include "ui/safearea.menu"*/
+	}
+}
+

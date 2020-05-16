@@ -1,0 +1,4758 @@
+BSP limits
+(approx.), calculated using the limit% supplied by cod4map.exe -info
+
+    models: 4096
+    materials: 1024 (1223)
+    brushes: 32,768 (32765)
+    brushsides: 655,360? (655368)
+    planes: 65,536 (65544)
+    entdata: 16,777,216 byte / 16 MiB (16773218)
+    nodes: 32,768 (32773)
+    leafs: 32,768 (32768)
+    leafbrushes: 262,144 (262150)
+    leafsurfaces: ?
+    collisionverts: 65,536 (65542)
+    collisiontris: 131,072 (131080)
+    collisionedgewalk: ? (393,026)
+    collisionborders: 32,768 (32775)
+    collisionparts: 131,072 (131181)
+    collisionaabbs: 262,144 (262654)
+    layered verts: 524,288 (524317)
+    layered data: 1,048,576? (1284080)
+    simple verts: 524,288? (589834)
+    layered indexes: ? (992,147)
+    simple indexes: 1,048,576? (1179581)
+    layered tri soups: 32,768 (32771)
+    simple tri soups: 32,768 (32766)
+    lightmaps: 31
+    light grid header: ?
+    light grid rows: 4096 (4235)
+    light grid points: 1,048,576 (1048545)
+    light grid colors: ? (671,063) 
+
+    visibility: ?
+    portalverts: 16,384 (16380)
+    layered aabbtrees: 32,768 (32791)
+    simple aabbtrees: 32,768 (32738)
+    cells: 1024
+    portals: 2048
+    cullgroups: ?
+    cullgroupindexes: ?
+    reflection_probes: 255
+    primary lights: 255
+    light regions: 255
+    light region hulls: 2048 (2045)
+    light region axes: 16,384? (16000)
+    paths: ? (1666) 
+
+Engine limits
+	
+	4096 Dvars
+	63+1 Dvar name characters shown in console, but the names can be longer
+	2048 Fx (simultaneously playing)
+	128 Tags (Joints) in MP
+	31 HUD Elements (Client)
+	1600 Sounds
+	Test map, brushes: 102,631 (138,752)
+	97.8 MB mapfile
+	1024 Entities in the map (64 are reserved for players)
+
+
+	Name					COD4	NINJA		USED IN COD4
+	-----					----	-----		------------
+	aitype                   0      0			
+	col_map_mp               1		1
+	col_map_sp               1		1
+	com_map                  1		1
+	font                     16     16
+	fx                       400	680			282
+	game_map_mp              1      1
+	game_map_sp              1      1
+	gfx_map                  1      1
+	image                 	 2400	3800		525
+	impactfx                 4      4			2
+	lightdef                 32     32			2
+	loaded_sound           	 1200	1200
+	localize              	 6144	6144
+	map_ents                 2      2
+	material              	 2048	2048		661
+	menu                     640	640			288
+	menufile                 128	128			36
+	mptype                   0      0
+	physpreset               64		64			10
+	rawfile                	 1024	1024		298
+	sndcurve                 64		64			1
+	snddriverglobals         1      1			1
+	sound                 	 16000	16000
+	stringtable              50		50
+	techset                	 1024	1024		234
+	ui_map                   0  	0
+	weapon                 	 128	196			116
+	xanim                 	 4096	4096		1127
+	xmodel                 	 1000	2000		602
+	xmodelalias              0      0
+	xmodelpieces             64     64
+
+	active scripts			 1020	1020
+	
+	XMODELS
+	! ak sa pouûÌva funkcia PreCacheModel() na model, ktor˝ nie je v FF, aj tak ho to prid·!!!
+	! v˝sledkom je ingame error '1000 xmodel assets', inak je error hl·sen˝ v MessageBox-e
+	! Pri spustenÌ hry lok·lne v developeri sa to chov· podivne, prid·vaj˙ sa aj modely, ktorÈ tam nemaj˙ Ëo robiù...
+
+	map				xmodels
+	------			-----
+	mp_backlot 		320
+	mp_citystrees 	371
+
+//////////////////////////////////////////////////////////////////////////////////////
+// koæko kr·t sa mÙûe opakovaù cyklus bez waitu?
+// ËÌm viac bordelu tento cyklus obsahuje, t˝m menej kr·t sa mÙûe opakovaù
+//////////////////////////////////////////////////////////////////////////////////////
+//       100 v pohode
+//     1 000 bodka na lagometri
+//    10 000 veæk· zelen· paliËka
+//   100 000 veæk· Ëerven· paliËka+v˝padok pripojenia
+// 1 000 000 p·d serveru/zlikvidovanie funkcie
+//////////////////////////////////////////////////////////////////////////////////////
+//   111 215 - z·pis do logu+matematickÈ v˝poËty
+//   154 763 - z·pis do logu
+//////////////////////////////////////////////////////////////////////////////////////
+
+switch
+	- sekvenËne prehæad·va aû do konca
+	- vûdy aû do konca! viac poloûiek -> viac v˝poËtovÈho Ëasu
+
+////////////////////////////////////////////////////
+// koæko je voæn˝ch dvarov na strane klienta?
+////////////////////////////////////////////////////
+// 4096 - maximum
+// cca. 2700 - 2950 voæn˝ch
+////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////
+// koæko premenn˝ch je moûnÈ maxim·lne pouûiù?
+////////////////////////////////////////////////////////////
+// lok·lne/ËlenskÈ d·ta
+// 125/377		- aktu·lne pouûÌvanÈ
+// 64246/375	- maximum pridanÌm lok·lnej premennej
+// 32190/32431	- maximum pridanÌm Ëlensk˝ch d·t
+////////////////////////////////////////////////////////////
+// 64621		- maximum po spoËÌtanÌ vöek˝ch premenn˝ch
+////////////////////////////////////////////////////////////
+
+//
+// ====== VARIABLE OVERFLOW ======
+//
+// maximum = 65536
+//
+// AktÌvna funkcia 					- current++
+//
+// ====== EVENTS ======
+// AktÌvny waittill 				- maximum--
+// AktÌvny endon					- maximum--
+//
+// ====== LOCAL ======
+// integer			max 2147483647(4 bajt) - current++
+// float							- current++
+// string			max cca. 2300	- current++
+// array							- current++
+// function address					- current++
+//
+// ====== STRUCT ======
+// pridanie ötrukt˙ry				- current++
+// pridanie ËlenskÈho data			- current++
+//
+
+////////////////////////////////////////////////////////////
+// ak· je maxim·lna veækosù dvaru?
+////////////////////////////////////////////////////////////
+// cca 1000 znakov :)
+////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////
+// akÈ ËÌslo je moûnÈ uloûiù do statu?
+////////////////////////////////////////////////////////////
+// menöie - 0 - 255
+// v‰Ëöie - -2147483647 - 2147483647
+////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////
+// BULLETTRACE
+////////////////////////////////////////////////////////////
+// position - zasiahnut˝ bod
+// fraction - pomer urazenej dr·hy k celkovej dr·he
+// entity - zasiahnut· entita
+// normal - orient·cia zasiahnutÈho polygonu
+// surfacetype - materi·l zasiahnutÈho polygonu
+// 				default
+//				bark
+//				brick
+//				carpet
+//				cloth
+//				concrete
+//				dirt
+//				flesh
+//				foliage
+//				glass
+//				grass
+//				gravel
+//				ice
+//				metal
+//				mud
+//				paper
+//				rock
+//				sand
+//				snow
+//				water
+//				wood
+//				asphalt
+////////////////////////////////////////////////////////////
+
+// ==============================================================================================================================================================================//
+// MENU
+// ==============================================================================================================================================================================//
+
+On the site of ModsOnline Wiki there are a lot of functions, commands, (reserved) keys and flags related to menu scripting. The only problem is that they are not explained...
+
+http://www.modsonwiki.com/index.php/Call_of_Duty_4:_Script_-_Menu_Scripting
+
+Maybe, we could try and explain them all and show how they work as some kind of tutorial?
+
+// Menu updates by files from raw/ui_mp
+
+Structural Items
+
+	assetGlobalDef
+	itemDef
+	menuDef
+	
+Flags
+
+	autoWrapped				- zalamovanie textu
+	decoration 				- z·k·zanie blikania textu
+	hidenDuringFlashbang	?
+	hidenDuringScope		?
+	horizontalScroll		?
+	legacySplitScreenScale	?
+	maxCharsGotoNext		?
+	noScrollBars			?
+	notSelectable			?
+	outOfBoundsClick		?
+	popup 					- menu v menu
+	usePaging				?
+	
+Events
+
+	accept					?
+	action 					When the item or menu is clicked
+	doubleClick	 			When the item or menu is double-clicked
+	execKey 		<key>	When pressed this key
+	execKeyInt 		<key>	?
+	focusDvar				? // connected with 'dvarTest'
+	focusFirst				?
+	leaveFocus				When mouse is not on item
+	mouseEnter	 			When the mouse enters the item or menu
+	mouseEnterText			?
+	mouseExit				When the mouse exits the item or menu
+	mouseExitText			?
+	onClose					When the menu is closed
+	onEsc					When Esc(ape) is pressed
+	onFocus					When mouse is on item
+	onOpen					When the menu is opened
+
+Commands and Tests
+
+	close								<menuDefName>
+	closeForGametype					?
+	closeMenuOnDvar						<dvarName> <dvarValue> <menuName>
+	exec								<cmds>
+	execNow								<cmds>
+	execNowOnDvarFloatValue				<dvar> <value> <cmds>
+	execNowOnDvarIntValue				<dvar> <value> <cmds>
+	execNowOnDvarStringValue			<dvar> <value> <cmds>
+	execOnDvarFloatValue				<dvar> <value> <cmds>
+	execOnDvarIntValue					<dvar> <value> <cmds>
+	execOnDvarStringValue				<dvar> <value> <cmds>
+	fadeIn								?
+	fadeOut								?
+	feederTop							
+	getAutoUpdate						?
+	getKickPlayerQuestion				
+	hide								<itemDefName>
+	hideMenu							<menu>
+	inGameClose							?
+	inGameOpen							?
+	kickPlayer							
+	nextLevel							?
+	noSaveHide							?
+	open								<menuDefName; with "" - open menu in ui_mp\scriptmenus; without "" - open menu in ui_mp>
+	openForGametype						?
+	play								<soundAlias>
+	profileHide							?
+	profileShow							?
+	saveAvailableHide					?
+	saveDelay							?
+	saveGameHide						?
+	saveGameShow						?
+	scriptMenuRespondOnDvarFloatValue	<dvar> <value> <message>
+	scriptMenuRespondOnDvarIntValue		<dvar> <value> <message>
+	scriptMenuRespondOnDvarStringValue	<dvar> <value> <message>
+	scriptMenuResponse					<message>
+	setBackground 						<material>
+	setColor							<key> <red> <green> <blue> <alpha>
+	setDvar								<dvar> <value>
+	setFocus							<itemDefName>
+	setFocusByDvar						<dvarName>
+	setItemColor						<itemDefName> <key> <red> <green> <blue> <alpha>		
+	setLocalVarInt						<name> <value>
+	setLocalVarString					<name> <value>
+	setSaveExecOnSuccess				?
+	show								<itemDefName>
+	showGamerCard						
+	showHideNewGameResume				?
+	showMenu							<menu>
+	statClearBitMask					<?> <?>
+	uiScript							<cmds>
+		addFavorite						
+		addPlayerProfiles				
+		clearMods						
+		closeJoin						
+		closeJoin						
+		closeMenuOnDvar					<dvarName> <dvarValue> <menuDefName>
+		createFavorite					
+		deleteFavorite					
+		getCDKey						
+		joinServer						
+		loadArenas						
+		loadMods						
+		openMenuOnDvar					<dvarName> <dvarValue> <menuDefName>
+		openMenuOnDvarNot				<dvarName> <dvarValue> <menuDefName>
+		refreshFilter					
+		refreshLeaderboards				
+		refreshServers					
+		runMod							
+		serverSort						<int>
+		serverStatus					
+		setPbClStatus					<int>
+		startServer						
+		startSingleplayer				
+		stopRefresh						
+		update							?
+		updateFilter					
+		verifyCDKey						
+		viewGamerCard					
+	writeSave
+
+Keywords
+
+	align				<int>
+	backColor   		<red> <green> <blue> <alpha>
+	background 			<material name>
+	blurWorld			<value> [MenuDef only]
+	border				<int>
+	borderColor			<red> <green> <blue> <alpha>
+	borderSize			<float/int>
+	columns				?
+	disableColor		<r> <g> <b> <a>
+	disableDvar			?
+	dvar				<dvarName> // may connected with 'type ITEM_TYPE_BIND' as bind
+	dvarEnumList		?
+	dvarFloat			<dvarName> <float> <float> <float> // connected with 'type ITEM_TYPE_SLIDER'
+	dvarFloatList		{ <string> <value> <string> <value> <string> <value> .... } // connected with 'dvar' and 'type ITEM_TYPE_MULTI'
+	dvarStrList			?
+	dvarTest			<dvarName>
+	elementHeight		<int>
+	elementType			<int>
+	elementWidth		<int>
+	enableDvar			?
+	exp 				foreColor A( <float> )
+	exp 				material( <materialName> )
+	exp 				rect H( <int> )
+	exp 				rect W( <int> )
+	exp 				rect X( <int> )
+	exp 				rect Y( <int> )
+	exp 				text( <text> )
+	faceCycle			?
+	fadeAmount			?
+	fadeClamp			?
+	fadeInAmount		?
+	feeder				?
+	focusColor			?
+	focusDvar			{ <value> } // connected with 'dvarTest'
+	focusSound			?
+	foreColor			<red> <green> <blue> <alpha>
+	fullscreen			<boolean>
+	gameMsgWindowIndex	<int>
+	gameMsgWindowMode	<int>
+	group				<string>
+	hideDvar			{ <dvar enum for dvarTest> } // connected with 'dvarTest'
+	maxChars   			<int> : Maximum amount of characters in a textfield
+	maxPaintChars		<int> : Maximum amount of characters in the with of a textfield
+	name 				<string>
+	origin				<x> <y>
+	outlineColor		<red> <green> <blue> <alpha>
+	ownerdraw			<int>
+	ownerdrawFlag		?
+	rect 				<x> <y> <width> <height> <horizontal align> <vertical align>
+	selectBorder		<r> <g> <b> <a>
+	selectIcon			<material>
+	showDvar			{ <valueA> <valueB> <valueC> ... } // connected with 'dvarTest'
+	soundLoop			<soundalias>
+	special				?
+	style				<int>
+	text				<string>
+	textAlign			<int>
+	textAlignX			<int - alignAlign offset>
+	textAlignY			<int - alignAlign offset>
+	textFile			?
+	textFont			<int>
+	textSaveGame		?
+	textScale			<float>
+	textStyle			<int>
+	type				<int>
+	visible				[when( <condition> )]
+
+PreCompile Args & Operations
+
+	#include
+
+	#define
+	#undef
+
+	#ifdef <variable> .. #endif
+	#ifdef <variable> .. #else .. #endif
+
+	#ifndef <variable> .. #endif
+	#ifndef <variable> .. #else .. #endif
+
+	#if <condition> .. #endif
+	#if <condition> .. #elif <condition> .. #endif
+
+PreCompile Functions
+
+	Defined( <variable> )
+
+PreCompile Operators
+
+	?:
+	
+Operators
+	
+	() 
+	
+	* / + - % 
+	
+	> >= < <= == || && !
+	
+	& <<
+	
+Functions
+
+	ActionSlotUsable( <slotId> )
+	ADSJavelin()
+	AloneInParty()
+	Cos( <value> )
+	DvarBool( <name> )
+	DvarInt( <name> )
+	DvarString( <name> )
+	FlashBanged()
+	Float( <value> )
+	GameTypeDescription()
+	GameTypeName()
+	HudFade( <menuDefName> )
+	InKillCam()
+	InLobby()
+	InPrivateParty()
+	Int( <value> )
+	IsIntermission()
+	KeyBinding( <cmd> )
+	LocalVarBool( <name> )
+	LocalVarInt( <name> )
+	LocalVarString( <name> )
+	LocString( <locString>, <insertValue>, <insertValue>, ... )
+	MarinesField( "score" )
+	Max( <valueA>, <valueB> )
+	MaxRecommendedPlayers()
+	MenuIsOpen( <menuDefName> )
+	Milliseconds()
+	Min( <valueA>, <valueB> )
+	OpforField( "score" )
+	OtherTeam( "score" )
+	Player( "score" )
+	Player( "teamname" )
+	PrivatePartyHost()
+	PrivatePartyHostInLobby()
+	Scoped()
+	ScoreAtRank( <int> )
+	SecondsAsCountdown( <time> )
+	SecondsAsTime( <seconds> )
+	Selecting_Location()
+	Sin( <value> )
+	SpectatingClient()
+	Stat( <statId> )
+	StatClearPerkNew( <?> )
+	StatRangeAnyBitsSet( <statIdFrom>, <statIdTo>, <mask> )
+	StatSetUsingTable( <statId>, <valueFromTable> )
+	String( <value> )
+	TableLookUp( <fileName>, <search column num>, <search value>, <return column num> )
+	Team( "name" ) // "TEAM_AXIS" "TEAM_ALLIES" "TEAM_SPECTATOR" "TEAM_FREE"
+	Team( "score" )
+	TimeLeft()
+	UI_Active()
+
+	
+*/
+
+/*
+
+scriptMenuResponse "assault_mp,0" // ,0 - WTF?!
+
+		type ITEM_TYPE_BIND
+		text " "
+		dvar "openscriptmenu ingame changeweapon"
+*/
+
+/*
+http://bashandslash.com/index.php?option=com_content&task=view&id=196&Itemid=74
+
++actionslot
++activate
++attack
++back
++breath_sprint
++forward
++frag
++gostand
++holdbreath
++leanleft
++leanright
++left
++lookdown
++lookup
++melee
++melee_breath
++mlook
++movedown
++moveleft
++moveright
++moveup
++prone
++reload
++right
++scores
++smoke
++speed
++speed_throw
++sprint
++stance
++strafe
++talk
++throw
++toggleads_throw
++usereload
+
+-actionslot
+-activate
+-attack
+-back
+-breath_sprint
+-forward
+-frag
+-gostand
+-holdbreath
+-leanleft
+-leanright
+-left
+-lookdown
+-lookup
+-melee
+-melee_breath
+-mlook
+-movedown
+-moveleft
+-moveright
+-moveup
+-prone
+-reload
+-right
+-scores
+-smoke
+-speed
+-speed_throw
+-sprint
+-stance
+-strafe
+-talk
+-throw
+-toggleads_throw
+-usereload
+
+centerview
+gocrouch
+goprone
+chatmodepublic
+chatmodeteam
+leaveads
+lowerstance
+mp_QuickMessage
+raisestance
+toggleads
+toggleconsole
+togglecrouch
+toggleMenu
+toggleprone
+vote no
+vote yes
+weapnext
+weapprev
+
+assert								?
+banClient							?
+banUser								?
+bind								?
+bindlist							?
+callvote							?
+cg_shellshock						?
+cg_shellshock_load					?
+cg_shellshock_save					?
+cinematic							?
+clear								?
+clientinfo							?
+clientkick							?
+closemenu							?
+cmd									?
+cmdlist								
+con_hidechannel						?
+con_channellist						?
+con_showchannel						?
+con_visiblechannellist				?
+configstrings						?
+connect								<ip:port>
+crash								?
+cubemapShot							?
+demigod								
+demo								?
+devmap								<mapName>
+dir									?
+disconnect							
+dumpuser							?
+dvar_bool							?
+dvar_float							?
+dvar_int							?
+dvardump							
+dvarlist							
+editclanname						
+endsplitscreensignin				
+error								?
+exec								<fileName>
+fast_restart						
+fdir								?
+follow								?
+follownext							?
+followprev							?
+freeze								?
+fs_openedList						?
+fs_referencedList					?
+fullpath							?
+gameCompleteStatus					?
+give ammo							
+give								<weaponName>
+globalservers						?
+god									
+heartbeat							?
+imagelist							?
+in_restart							?
+jumptonode							?
+kick								?
+kill								?
+killserver							?
+levelshot							?
+localizeSoundAliasFiles				?
+localservers						?
+logo								?
+map									<mapName>
+map_restart							
+map_rotate							
+meminfo								?
+mr									?
+muteplayer							?
+net_dumpprofile						?
+net_restart							?
+noclip								
+nosplitscreen						
+notarget							?
+onlykick							?
+openScriptMenu						<menuName> <response>
+path								?
+phys_go								?
+phys_stop							?
+ping								?						
+printentities						?
+r_applyPicmip						?
+r_loadsun							?
+r_savesun							?
+r_smc_flush							?
+r_smc_stats							?
+ragdoll_baselerp_bone				?
+ragdoll_bone						?
+ragdoll_clear						?
+ragdoll_joint						?
+ragdoll_limit						?
+ragdoll_pin_bone					?
+ragdoll_selfpair					?
+rcon								?
+readStats							?
+reconnect							?
+record								?
+reloadmaterialtextures				?
+reset								?
+resetStats							?
+say									?
+say_team							?
+screenshot							?
+screenshotJpeg						?
+scriptUsage							
+selectStringTableEntryInDvar		<tableFileName> <returnColumnNum> <dvarName>
+serverinfo							?
+serverstatus						?
+set									<dvarName> <value>
+seta								?
+setdvartotime						<dvarName>
+setenv								?
+setfromdvar							?
+setfromlocString					<dvarName> <locString>
+setPerk								?
+sets								?
+setu								?
+setviewpos							?
+showip								?
+snd_deactivateEnvironmentEffects	?
+snd_deactivateEq					?
+snd_playLocal						?
+snd_restart							?
+snd_setEnvironmentEffects			?
+snd_setEq							?
+snd_setEqFreq						?
+snd_setEqGain						?
+snd_setEqQ							?
+snd_setEqType						?
+splitscreencontrols					
+splitscreencontrols					
+startSingleplayer					?
+startsplitscreensignin				
+statGetInDvar						<statId> <dvarName>
+stats								?
+statSet								<statId> <value>
+status								?
+stoprecord							?
+stringUsage							?
+systeminfo							?
+take								?
+team								?
+tempBanClient						?
+tempBanUser							?
+timedemo							?
+toggle								<dvarName> <valueA> <valueB> <valueC> ...
+togglep								?
+touchFile							?
+ufo									
+ui_enumeratesaved					
+unbanUser							?
+unbind								?
+unbindall							
+unmuteplayer						?
+unskippablecinematic				?
+updategamerprofile					
+updatehunkusage						?
+uploadStats							?
+vid_restart							
+viewpos								?
+VoiceChat							?
+VoiceTeamChat						?
+vstr								?
+wait								<time>							
+writeconfig							?
+writedefaults						?
+xpartygo							
+xpartyready							<int>
+xpartyveto							<int>
+xplaylistchoosegame					
+xsessionupdate						
+xshowfriendslist					
+xstartpartyhost						
+xstopparty							
+xstopprivateparty					
+xupdatepartystate					
+
+*/
+
+/*
+execKey "a" { scriptMenuResponse "a" }
+execKey "b" { scriptMenuResponse "b" }
+execKey "c" { scriptMenuResponse "c" }
+execKey "d" { scriptMenuResponse "d" }
+execKey "e" { scriptMenuResponse "e" }
+execKey "f" { scriptMenuResponse "f" }
+execKey "g" { scriptMenuResponse "g" }
+execKey "h" { scriptMenuResponse "h" }
+execKey "i" { scriptMenuResponse "i" }
+execKey "j" { scriptMenuResponse "j" }
+execKey "k" { scriptMenuResponse "k" }
+execKey "l" { scriptMenuResponse "l" }
+execKey "m" { scriptMenuResponse "m" }
+execKey "n" { scriptMenuResponse "n" }
+execKey "o" { scriptMenuResponse "o" }
+execKey "p" { scriptMenuResponse "p" }
+execKey "q" { scriptMenuResponse "q" }
+execKey "r" { scriptMenuResponse "r" }
+execKey "s" { scriptMenuResponse "s" }
+execKey "t" { scriptMenuResponse "t" }
+execKey "u" { scriptMenuResponse "u" }
+execKey "v" { scriptMenuResponse "v" }
+execKey "w" { scriptMenuResponse "w" }
+execKey "x" { scriptMenuResponse "x" }
+execKey "y" { scriptMenuResponse "y" }
+execKey "z" { scriptMenuResponse "z" }
+execKey "0" { scriptMenuResponse "0" }
+execKey "1" { scriptMenuResponse "1" }
+execKey "2" { scriptMenuResponse "2" }
+execKey "3" { scriptMenuResponse "3" }
+execKey "4" { scriptMenuResponse "4" }
+execKey "5" { scriptMenuResponse "5" }
+execKey "6" { scriptMenuResponse "6" }
+execKey "7" { scriptMenuResponse "7" }
+execKey "8" { scriptMenuResponse "8" }
+execKey "9" { scriptMenuResponse "9" }
+execKey "-" { scriptMenuResponse "-" }
+execKey "," { scriptMenuResponse "," }
+execKey "." { scriptMenuResponse "." }
+execKey "+" { scriptMenuResponse "+" }
+execKey "/" { scriptMenuResponse "/" }
+execKey "*" { scriptMenuResponse "*" }
+execKeyInt 9 { scriptMenuResponse "tab" }
+execKeyInt 13 { scriptMenuResponse "enter" }
+execKeyInt 27 { scriptMenuResponse "esc" }
+execKeyInt 32 { scriptMenuResponse "space" }
+execKeyInt 127 { scriptMenuResponse "backSpace" }
+execKeyInt 132 { scriptMenuResponse "·" }
+execKeyInt 138 { scriptMenuResponse "È" }
+execKeyInt 142 { scriptMenuResponse "Û" }
+execKeyInt 143 { scriptMenuResponse "ˆ" }
+execKeyInt 146 { scriptMenuResponse "˙" }
+execKeyInt 147 { scriptMenuResponse "¸" }
+execKeyInt 151 { scriptMenuResponse "capsLock" }
+execKeyInt 153 { scriptMenuResponse "pBreak" }
+execKeyInt 154 { scriptMenuResponse "up" }
+execKeyInt 155 { scriptMenuResponse "down" }
+execKeyInt 156 { scriptMenuResponse "left" }
+execKeyInt 157 { scriptMenuResponse "right" }
+execKeyInt 158 { scriptMenuResponse "alt" }
+execKeyInt 159 { scriptMenuResponse "altgrCtrl" }
+execKeyInt 160 { scriptMenuResponse "shift" }
+execKeyInt 161 { scriptMenuResponse "insert" }
+execKeyInt 162 { scriptMenuResponse "delete" }
+execKeyInt 163 { scriptMenuResponse "pagedown" }
+execKeyInt 164 { scriptMenuResponse "pageup" }
+execKeyInt 165 { scriptMenuResponse "home" }
+execKeyInt 166 { scriptMenuResponse "end" }
+execKeyInt 167 { scriptMenuResponse "f1" }
+execKeyInt 168 { scriptMenuResponse "f2" }
+execKeyInt 169 { scriptMenuResponse "f3" }
+execKeyInt 170 { scriptMenuResponse "f4" }
+execKeyInt 171 { scriptMenuResponse "f5" }
+execKeyInt 172 { scriptMenuResponse "f6" }
+execKeyInt 173 { scriptMenuResponse "f7" }
+execKeyInt 174 { scriptMenuResponse "f8" }
+execKeyInt 175 { scriptMenuResponse "f9" }
+execKeyInt 176 { scriptMenuResponse "f10" }
+execKeyInt 177 { scriptMenuResponse "f11" }
+execKeyInt 178 { scriptMenuResponse "f12" }
+execKeyInt 197 { scriptMenuResponse "numlock" }
+execKeyInt 191 { scriptMenuResponse "kp_enter" }
+execKeyInt 200 { scriptMenuResponse "mouse1" }
+execKeyInt 201 { scriptMenuResponse "mouse2" }
+execKeyInt 202 { scriptMenuResponse "mouse3" }
+execKeyInt 237 { scriptMenuResponse "Ì" }
+execKeyInt 245 { scriptMenuResponse "ı" }
+execKeyInt 251 { scriptMenuResponse "˚" }
+*/
+
+
+// =============================== //
+// == Poradie sp˙ötania funkciÌ == //
+// =============================== //
+/*
+GSC modu - main()
+GSC mapy - main()
+Callback_StartGameType()
+*/
+// =============================== //
+
+/* 
+TODO: preskumat toto!
+
+"Press^3 [{+activate}] ^7to respawn"
+
+nachadza sa v lokalizacnom subore, je mozne pouzit aj v iprintln()/iprintlnbold()
+
+je mozne poslat ako cvar a zobrazovat v menu?
+
+Gets a key binding. Applicable values are: "+scores","+speed","+forward","+back", "+moveleft","+moveright", "+moveup", "+movedown", "+left", "+right", "+strafe", "+lookup", "+lookdown", "+mlook", "centerview", "toggleads","+melee", "+prone", "lowerstance", "raisestance", "togglecrouch", "toggleprone", "goprone", "gocrouch", "+gostand", "weaponslot primary", "weaponslot primaryb", "+attack", "weapprev", "weapnext", "+activate", "+reload", "+leanleft", "+leanright", "screenshot", "screenshotJPEG", 
+
+*/
+
+/*	
+Bones
+
+	Bone 0: 'tag_origin'
+	Bone 1: 'j_mainroot'
+	Bone 2: 'pelvis'
+	Bone 3: 'tag_sync'
+	Bone 4: 'j_coatfront_le'
+	Bone 5: 'j_coatfront_ri'
+	Bone 6: 'j_coatrear_le'
+	Bone 7: 'j_coatrear_ri'
+	Bone 8: 'j_hip_le'
+	Bone 9: 'j_hip_ri'
+	Bone 10: 'torso_stabilizer'
+	Bone 11: 'j_spinelower'
+	Bone 12: 'back_low'
+	Bone 13: 'tag_stowed_hip_rear'
+	Bone 14: 'j_hiptwist_le'
+	Bone 15: 'j_hiptwist_ri'
+	Bone 16: 'j_knee_le'
+	Bone 17: 'j_knee_ri'
+	Bone 18: 'j_spineupper'
+	Bone 19: 'back_mid'
+	Bone 20: 'j_ankle_le'
+	Bone 21: 'j_ankle_ri'
+	Bone 22: 'j_knee_bulge_le'
+	Bone 23: 'j_knee_bulge_ri'
+	Bone 24: 'j_spine4'
+	Bone 25: 'j_ball_le'
+	Bone 26: 'j_ball_ri'
+	Bone 27: 'j_clavicle_le'
+	Bone 28: 'j_clavicle_ri'
+	Bone 29: 'j_neck'
+	Bone 30: 'neck'
+	Bone 31: 'j_shoulderraise_le'
+	Bone 32: 'j_shoulderraise_ri'
+	Bone 33: 'tag_bipod'
+	Bone 34: 'tag_inhand'
+	Bone 35: 'tag_stowed_back'
+	Bone 36: 'tag_weapon_chest'
+	Bone 37: 'j_head'
+	Bone 38: 'head'
+	Bone 39: 'j_shoulder_le'
+	Bone 40: 'j_shoulder_ri'
+	Bone 41: 'j_brow_le'
+	Bone 42: 'j_brow_ri'
+	Bone 43: 'j_cheek_le'
+	Bone 44: 'j_cheek_ri'
+	Bone 45: 'j_elbow_bulge_le'
+	Bone 46: 'j_elbow_bulge_ri'
+	Bone 47: 'j_elbow_le'
+	Bone 48: 'j_elbow_ri'
+	Bone 49: 'j_eye_lid_bot_le'
+	Bone 50: 'j_eye_lid_bot_ri'
+	Bone 51: 'j_eye_lid_top_le'
+	Bone 52: 'j_eye_lid_top_ri'
+	Bone 53: 'j_eyeball_le'
+	Bone 54: 'j_eyeball_ri'
+	Bone 55: 'j_head_end'
+	Bone 56: 'j_jaw'
+	Bone 57: 'j_levator_le'
+	Bone 58: 'j_levator_ri'
+	Bone 59: 'j_lip_top_le'
+	Bone 60: 'j_lip_top_ri'
+	Bone 61: 'j_mouth_le'
+	Bone 62: 'j_mouth_ri'
+	Bone 63: 'j_shouldertwist_le'
+	Bone 64: 'j_shouldertwist_ri'
+	Bone 65: 'tag_eye'
+	Bone 66: 'j_chin_skinroll'
+	Bone 67: 'j_helmet'
+	Bone 68: 'j_lip_bot_le'
+	Bone 69: 'j_lip_bot_ri'
+	Bone 70: 'j_wrist_le'
+	Bone 71: 'j_wrist_ri'
+	Bone 72: 'j_wristtwist_le'
+	Bone 73: 'j_wristtwist_ri'
+	Bone 74: 'tag_reflector_arm_le'
+	Bone 75: 'tag_reflector_arm_ri'
+	Bone 76: 'j_gun'
+	Bone 77: 'j_index_le_1'
+	Bone 78: 'j_index_ri_1'
+	Bone 79: 'j_mid_le_1'
+	Bone 80: 'j_mid_ri_1'
+	Bone 81: 'j_pinky_le_1'
+	Bone 82: 'j_pinky_ri_1'
+	Bone 83: 'j_ring_le_1'
+	Bone 84: 'j_ring_ri_1'
+	Bone 85: 'j_thumb_le_1'
+	Bone 86: 'j_thumb_ri_1'
+	Bone 87: 'tag_weapon_left'
+	Bone 88: 'tag_weapon_right'
+	Bone 89: 'j_index_le_2'
+	Bone 90: 'j_index_ri_2'
+	Bone 91: 'j_mid_le_2'
+	Bone 92: 'j_mid_ri_2'
+	Bone 93: 'j_pinky_le_2'
+	Bone 94: 'j_pinky_ri_2'
+	Bone 95: 'j_ring_le_2'
+	Bone 96: 'j_ring_ri_2'
+	Bone 97: 'j_thumb_le_2'
+	Bone 98: 'j_thumb_ri_2'
+	Bone 99: 'j_index_le_3'
+	Bone 100: 'j_index_ri_3'
+	Bone 101: 'j_mid_le_3'
+	Bone 102: 'j_mid_ri_3'
+	Bone 103: 'j_pinky_le_3'
+	Bone 104: 'j_pinky_ri_3'
+	Bone 105: 'j_ring_le_3'
+	Bone 106: 'j_ring_ri_3'
+	Bone 107: 'j_thumb_le_3'
+	Bone 108: 'j_thumb_ri_3'
+
+multiplayercontrollers.csv
+	
+	J_MainRoot,pelvis
+	J_SpineLower,back_low
+	J_SpineUpper,back_mid
+	J_Neck,neck
+	J_Head,head
+
+multiplayerstabilizers.csv
+	
+	J_SpineLower,torso_stabilizer
+
+partclassification.csv	
+	
+	J_Hip_RI,right_leg_upper
+	J_Hip_LE,left_leg_upper
+	J_Knee_RI,right_leg_lower
+	J_SpineUpper,torso_upper
+	J_Knee_LE,left_leg_lower
+	J_Ankle_RI,right_foot
+	J_Ankle_LE,left_foot
+	J_Clavicle_RI,torso_upper
+	J_Clavicle_LE,torso_upper
+	J_Shoulder_RI,right_arm_upper
+	J_Shoulder_LE,left_arm_upper
+	J_Neck,neck
+	J_Head,head
+	J_Elbow_RI,right_arm_lower
+	J_Elbow_LE,left_arm_lower
+	J_Wrist_RI,right_hand
+	J_Wrist_LE,left_hand
+	J_MainRoot,torso_lower
+	TAG_WEAPON_LEFT,gun
+	TAG_WEAPON_RIGHT,gun
+	J_Helmet,helmet
+
+partclassification_mp.csv
+
+	J_Hip_RI,right_leg_upper
+	J_Hip_LE,left_leg_upper
+	J_Knee_RI,right_leg_lower
+	J_SpineUpper,torso_lower
+	J_SpineLower,torso_lower
+	J_MainRoot,torso_lower
+	J_Knee_LE,left_leg_lower
+	J_Ankle_RI,right_foot
+	J_Ankle_LE,left_foot
+	J_Clavicle_RI,torso_upper
+	J_Clavicle_LE,torso_upper
+	J_Shoulder_RI,right_arm_upper
+	J_Shoulder_LE,left_arm_upper
+	J_Neck,neck
+	J_Head,head
+	J_Elbow_RI,right_arm_lower
+	J_Elbow_LE,left_arm_lower
+	J_Wrist_RI,right_hand
+	J_Wrist_LE,left_hand
+
+
+	
+MeansOfDeath
+
+	"MOD_UNKNOWN"
+	"MOD_PISTOL_BULLET"
+	"MOD_RIFLE_BULLET"
+	"MOD_GRENADE"
+	"MOD_GRENADE_SPLASH"
+	"MOD_PROJECTILE"
+	"MOD_PROJECTILE_SPLASH"
+	"MOD_MELEE"
+	"MOD_HEAD_SHOT"
+	"MOD_CRUSH"
+	"MOD_TELEFRAG"
+	"MOD_FALLING"
+	"MOD_SUICIDE"
+	"MOD_TRIGGER_HURT"
+	"MOD_EXPLOSIVE"
+	"MOD_IMPACT"
+
+HitLocs
+	
+	"none"
+	"helmet"
+	"head"
+	"neck"
+	"torso_upper"
+	"torso_lower"
+	"right_arm_upper"
+	"left_arm_upper"
+	"right_arm_lower"
+	"left_arm_lower"
+	"right_hand"
+	"left_hand"
+	"right_leg_upper"
+	"left_leg_upper"
+	"right_leg_lower"
+	"left_leg_lower"
+	"right_foot"
+	"left_foot"
+	"gun"
+
+Fonts
+
+	"default"			// HE_FONT_DEFAULT
+	"bigfixed"			// HE_FONT_BIGFIXED
+	"smallfixed"		// HE_FONT_SMALLFIXED
+	"objective"			// HE_FONT_OBJECTIVE
+
+AlignX
+
+	"left"  			// HE_ALIGN_LEFT
+	"center" 			// HE_ALIGN_CENTER
+	"right"  			// HE_ALIGN_RIGHT
+
+AlignY
+	
+	"top"    			// HE_ALIGN_TOP
+	"middle"			// HE_ALIGN_MIDDLE
+	"bottom"			// HE_ALIGN_BOTTOM
+
+AlignHorizontal
+	
+	"subleft"			// HORIZONTAL_ALIGN_SUBLEFT
+	"left"				// HORIZONTAL_ALIGN_LEFT
+	"center"			// HORIZONTAL_ALIGN_CENTER
+	"right"				// HORIZONTAL_ALIGN_RIGHT
+	"fullscreen"		// HORIZONTAL_ALIGN_FULLSCREEN
+	"noscale"			// HORIZONTAL_ALIGN_NOSCALE
+	"alignto640"		// HORIZONTAL_ALIGN_TO640
+	"center_safearea"	// HORIZONTAL_ALIGN_CENTER_SAFEAREA
+	
+AlignVertical
+	
+	"subtop"			// VERTICAL_ALIGN_SUBTOP
+	"top"				// VERTICAL_ALIGN_TOP
+	"middle"			// VERTICAL_ALIGN_CENTER
+	"bottom"			// VERTICAL_ALIGN_BOTTOM
+	"fullscreen"		// VERTICAL_ALIGN_FULLSCREEN
+	"noscale"			// VERTICAL_ALIGN_NOSCALE
+	"alignto480"		// VERTICAL_ALIGN_TO480
+	"center_safearea"	// VERTICAL_ALIGN_CENTER_SAFEAREA
+	
+ClassNames
+
+	player
+	grenade
+	script_brushmodel
+	script_model
+	script_origin
+	trigger_damage
+		- notify "damage" when damaged by weapon
+		- notify "trigger" when damaged by weapon
+	trigger_disk
+		- notify "trigger" when touched in weird distance...
+	trigger_friendlychain
+	trigger_hurt
+		- notify "trigger" when touched
+		- give player damage
+	trigger_lookat
+	trigger_multiple
+		- notify "trigger" when touched
+	trigger_radius
+		- notify "trigger" when touched
+	trigger_use
+	trigger_use_touch
+		- notify "trigger" when touched & pressing USE
+	
+game["state"]
+
+	"playing"
+	"postgame"
+	
+player.sessionstate
+
+	"playing"
+	"spectator"
+	"intermission"
+	"dead"
+	
+Notifies
+
+?	entity		"effect delay changed"					<change>
+?	entity		"effect deleted"
+?	entity		"effect id changed"						<change>
+?	entity		"effect org changed"					<change>			
+?	entity		delete							
+?	entity		stop_pickup_timeout
+?	level		"start fx" + self.fxStart
+?	level		"stop all gunfireloopfx"
+?	level		"stop fx" + self.fxStop
+?	player		alt_detonate
+?	player		host_sucks_end_game									
+	entity		damage									<damage> <attacker> <direction_vec> <point> <type> <modelName> <tagName> <partName> <iDFlags>
+	entity		movedone
+	entity		rotatedone
+	entity		trigger									<player> <dropped>
+	grenade		explode									<position>
+	level		eternity		
+	player		begin					
+	player		begin_firing
+	player		cancel_location
+	player		confirm_location						<location>
+	player		death					
+	player		detonate
+	player		disconnect				
+	player		end_firing
+	player		flashbang								<amount_distance> <amount_angle> <attacker>
+	player		grenade_fire							<grenade> <weaponName>
+	player		grenade_pullback						<weaponName>
+	player		menuresponse							<menuName> <response>
+	player		reload_start					
+	player		sprint_begin
+	player		sprint_end		
+	player		weapon_change							<weaponName>
+	vehicle		near_goal
+	
+Script Notifies
+
+	?			"highlight change"
+	?			"stop sound" + "veh_mig29_close_loop"
+	?			"stop sound" + "veh_mig29_dist_loop"
+	?			airstrikeDamageEntsThread
+	?			dropped
+	?			reset
+	?			stop_ticking
+	entity		activated
+	entity		arrived
+	entity		carrier_cleared
+	entity		death
+	entity		detonated
+	entity		die
+	entity		disabled
+	entity		end_detection
+	entity		exploding
+	entity		finaldeath
+	entity		changing_solidness
+	entity		kill_entity_headicon_thread
+	entity		passive
+	entity		pickup_object
+	entity		returned								<msg>
+	entity		stop_loop
+	entity		unlink
+	HUDElem		fontPulse
+	HUDElem		stop_flashing_thread
+	level		"abort forfeit"
+	level		"forfeit in progress"
+	level		"helicopter gone"
+	level		"radar_timer_kill_" + team
+	level		"wind blows"							<windDirection>
+	level		awardHQPointsRunning
+	level		bomb_defused
+	level		bomb_picked_up
+	level		cancel_notify
+	level		connected								<player>
+	level		connecting								<player>
+	level		createfx_exploder_reset
+	level		debugArtilleryDangerCenters_thread
+	level		drawing_spawn_data
+	level		end_draw_map_bounds
+	level		game_ended
+	level		give_match_bonus
+	level		grace_period_ending
+	level		hide_spawnpoints
+	level		hq_captured
+	level		hq_destroyed
+	level		hq_reset
+	level		match_ending_soon
+	level		match_ending_very_soon
+	level		new_createfx_centerprint
+	level		new_ent_selection
+	level		prematch_over
+	level		radar_status_change						<team>
+	level		restarting
+	level		stop_spawn_profile
+	level		stop_spawn_weight_debug
+	level		update_roundlimit
+	level		update_scorelimit
+	level		update_timelimit
+	level		updating_dm_scores
+	level		updating_scores
+	level		updating_team_status
+	level		wave_respawn_allies
+	level		wave_respawn_axis
+	player		"clearing_expID_" + expID
+	player		begin_airstrike
+	player		begin_killcam 							<attackerKcStartTime>
+	player		bomb_defused
+	player		bomb_planted
+	player		death_delay_finished
+	player		destroyed_car
+	player		destroyed_explosive
+	player		destroyed_helicopter
+	player		done_using
+	player		drop_object
+	player		end_explode
+	player		end_healthregen
+	player		end_killcam
+	player		end_respawn
+	player		flash_rumble_loop
+	player		force_spawn
+	player		joined_spectators
+	player		joined_team	
+	player		killed_player
+	player		lower_message_set
+	player		notifyMessageDone
+	player		perks_hidden
+	player		playerKilledChallengesProcessed
+	player		radar_timer_kill
+	player		reset_outcome
+	player		resetOnCancel
+	player		resetting_action_slot_to_alt_mode
+	player		showClientScoreBar
+	player		spawned
+	player		spawned_player
+	player		spectator_thirdperson_thread
+	player		stop_location_selection
+	player		stop_monitoring_flash
+	player		stop_monitoring_tear_usage
+	player		update_outcome
+	player		update_playerscore_hud
+	player		update_rank
+	player		update_score
+	player		updating_weapons_list
+	player		use_hold
+	player		used
+	struct		tear_timeout
+	vehicle		"destination reached"
+	vehicle		"flag check is running"
+	vehicle		"give up"
+	vehicle		"missile fired"
+	vehicle		"missile ready"
+	vehicle		"path start"
+	vehicle		"primary acquired"
+	vehicle		"secondary acquired"
+	vehicle		"stop body smoke"
+	vehicle		"turret on target"
+	vehicle		"turret reloading"
+	vehicle		abandoned
+	vehicle		crashing
+	vehicle		death
+	vehicle		delete
+	vehicle		evasive
+	vehicle		flying
+	vehicle		leaving
+	vehicle		turret_on_target
+	
+Default Ent's Vars
+
+	vector 	angles 				(0, 0, 0)
+	string	classname 			"noclass"
+	int		count 				0
+	int 	dmg 				0
+	int		health 				0
+	string 	model 				"" 
+	vector 	origin 				(0, 0, 0)
+	int 	spawnflags 			0
+	
+Default Player's Vars
+	
+	int 	archivetime 		0
+	int 	assists 			0
+	vector 	angles 				(0, 0, 0)
+	string 	classname 			"noclass"
+	int 	count 				0
+	int 	deaths 				0
+	int 	dmg 				0
+	? 		hasradar			?
+	string 	headicon 			""
+	string 	headiconteam 		"none"
+	int 	health 				0
+	? 		killcamentity		?
+	int 	kills 				0
+	int 	maxhealth 			0
+	string 	model 				""
+	string	name 				""
+	vector 	origin 				(0, 0, 0)
+	array 	pers				?
+	? 		psoffsettime		?
+	int 	score 				0
+	string 	sessionstate 		"spectator"
+	string 	sessionteam 		"none"
+	int 	spectatorclient		-1
+	string 	statusicon			""
+	int 	spawnflags 			0
+	
+Ent's vars usable in radiant
+
+	float 	script_duration
+	float 	script_physics 						// used for exploder_chunk to use physics throw
+	float 	script_savetrigger_timer			//used to set minimum required times on autosave triggers in timed missions
+	float 	script_volumedown					// on a vehicle node this makes the vehicle go to no sound over this much time
+	float 	script_volumeramp  					// time to ramp in a vehicles engine noise.
+	float 	script_volumeup						// on a vehicle node this makes the vehicle go to max volume over this much time
+	float	delay
+	float	fixednodesaferadius					// the safe radius
+	float	height
+	float	script_accuracy						// Set this on AI to have them spawn with a modified accuracy 
+	float	script_attackspeed
+	float	script_burst
+	float	script_burst_max 					// Put on an mg turret, max time of a burst
+	float	script_burst_min 					// Put on an mg turret, min time of a burst
+	float	script_death
+	float	script_death_max
+	float	script_death_min
+	float	script_delay						// Action will be delayed for this long before triggering
+	float	script_delay_max					// Maximum delay before action is triggered
+	float	script_delay_min					// Minimum delay before action is triggered
+	float	script_dot 							// used on targetname trigger_lookat triggers to change the fov
+	float	script_dronelag						//amount of timed space between drones following vehicle paths
+	float	script_falldirection				// Used to specify the direction a treeburst tree trunk falls towards
+	float	script_firefxdelay					// repetition rate on a firefx for exploders
+	float	script_firefxtimeout				// Amount of time before a looping effect fades out
+	float	script_chance						//chance that an exploder will explode, checked every 4 seconds or whatever script_delay is on the trigger.
+	float	script_playerconeradius 			// used optionally with script_avoidplayer if you want a cone radius other than 200.  		
+	float	script_reuse
+	float	script_reuse_max 					// Maximum time before a new AI will use this turret.
+	float	script_reuse_min 					// Minimum time before a new AI will use this turret.
+	float	script_suppression					// Suppression wait for this AI
+	float	script_targetoffset_z				//offset from model where missiles should aim - used for helicopter pilot levels
+	float	script_timeout
+	float	script_trailfxdelay					// Specifies the trailfx repeat delay
+	float	script_trailfxtimeout				// Specifies the trailfxtimeout
+	float	script_wait							// Script will wait this long between actions
+	float	script_wait_add						// Additive delay is the # of seconds extra added between actions
+	float	script_wait_max						// Maximum wait time between actions
+	float	script_wait_min						// Minimum wait time between actions
+	int     script_accumulate 					// damage that must accumulate for destruction to occur
+	int     script_threshold 					// min damage that has any effect
+	int 	script_accel						// used in checks to change the acceleration on helicopter path origins or nodes
+	int 	script_airspeed						// used in checks for setting speed on helicopter path origins or nodes
+	int 	script_ammo_40mm 					// does nothing right now
+	int 	script_ammo_clip 					// weapon placed in radiant - this many rounds in the clip - must be used with script_ammo_extra
+	int 	script_ammo_extra 					// weapon placed in radiant - this many rounds outside the clip - must be used with script_ammo_clip
+	int 	script_anglevehicle
+	int 	script_avoidplayer 					// setting to 1 will cause the tank to perform collision avoidance on the player
+	int 	script_battlechatter
+	int 	script_bcdialog						//set to 0 on a spawner/ai when you want to turn off battlechatter forever on that individual
+	int 	script_cleartargetyaw				// used in checks to reset a target yaw on helicopter path origins or nodes
+	int 	script_decel						// used in checks to change the deceleration on helicopter path origins or nodes
+	int 	script_dontshootwhilemoving
+	int 	script_drone 						//setting to 1 makes the spawner a script drone
+	int 	script_emptyspawner 				// When you go through a trigger with this on it, any spawners that have the same # will have their count set to 0.
+	int 	script_engage						// used in checks to fire weapons on helicopter path origins or nodes
+	int 	script_engageDelay					// used in checks to delay weapons firing on helicopter path origins or nodes
+	int 	script_fixednode					// can force .fixednode on an AI
+	int 	script_forceyaw						// used in checks for a target or goal yaw on helicopter path origins or nodes
+	int 	script_goalyaw 						// set to true to set the goal yaw
+	int 	script_godmode 						// makes a vehicle be god mode
+	int 	script_grenadespeed					// used for setting magic grenade launch speeds on script origins
+	int 	script_hoverwait					// used in checks to set hovering times on helicopter path origins or nodes
+	int 	script_index 						// can be used generically as an index for whatever reason
+	int 	script_light_toggle 				// set to 1 on vehicle enables vehicles ability to turn on and off lights.
+	int 	script_longdeath					// set to 0 disable long death animations like lying on the ground and shooting
+	int 	script_maxspawn						// used on flood spawn trigger to regulate the max number of ai
+	int 	script_noenemyinfo 					// setting to 1 makes a guy spawn with no enemy info
+	int 	script_nowall						// make AI play a special set of corner animations that dont require a wall
+	int 	script_pilottalk					// used in checks to trigger dialogue on helicopter path origins or nodes
+	int 	script_random_killspawner 			//group a trigger with some spawners
+	int 	script_randomspawn					//use with a script_random_killspawner - script will randomly spawn one of the groups 
+	int 	script_stack						// for walls where friendlies hang out 
+	int 	script_stealth_dontseek				// dont set your goalpos to the enemy's goalpos on combat
+	int 	script_vehicledetourgroup 			// use this for telling a detour node to only detour vehicles in matching groups
+	int 	script_vehicletriggergroup 			// a more generic grouping.  I'm using this so that paths can be shared easier.   setting this on a node with other vehicle trigger functions will only effect vehicles in the matching group.
+	int 	script_vehiclewalk	
+	int 	script_volume						// set to 1 if you want to control the vehicle's volume in your script rather than have it lerp automatically
+	int 	script_wheeldirection 				// 1 goes forward 0 goes backwards.
+	int 	script_yawspeed						// used in checks for setting yaw speed on helicopter path origins or nodes
+	int 	speed
+	int 	squadnum
+	int	 	script_breach_id					// used on a door to force a special type of breach.
+	int		count
+	int		dontdrawoncompass					// If set, the AI will not be drawn on the player's compass. Only matters for friendlies
+	int		dontdropweapon						// If set, the AI will not drop a weapon when he dies
+	int		export
+	int		radius
+	int		script_allowdeath
+	int		script_ambientpriority				// declare the ambient priority associated with this trigger
+	int		script_autosave
+	int		script_avoidvehicles				//setting to 0 on a tank will make it not do collision avoidance stuff
+	int		script_badplace						//no badplaces on tanks.  for tanks that won't be near ai. on big tank battles.
+	int		script_balcony						// current mechanism for flagging an actor to test for balcony death
+	int		script_bombmode_dual
+	int		script_bombmode_original
+	int		script_bombmode_single
+	int		script_bulletshield 				// used to apply toggleable bullet shields to vehicles that have them enabled.
+	int		script_cobratarget					//set to 1 to create a target for this entity on pilotcobra missions
+	int		script_damage						// Damage of radius damage on an exploder
+	int		script_deathflag_longdeath 			// set to on and script_deathflag guys will notify on death OR longpaindeath
+	int		script_deathchain
+	int		script_deathroll					//turns on and off deathroll for vehicles crossing paths
+	int		script_delayed_playerseek
+	int		script_delete
+	int		script_disconnectpaths				// makes exploder script_brushes connectpaths when hidden and disconnect when shown. could be used to disable cover nodes.
+	int		script_displaceable					// makes an AI able to change his goal radius from animscript.
+	int		script_dont_link_turret
+	int		script_drones_max
+	int		script_drones_min
+	int		script_explode						// Tells a plane to explode with this exploder.
+	int		script_exploder						// Grouping things that explode
+	int		script_exploder_server				// Sets the exploder to be on the server side
+	int		script_fallback
+	int		script_fallback_group				// Makes stray spawned guys part of bigger falling back movements.
+	int		script_fightdist					// Spawners will spawn with this pathEnemyFightDist
+	int		script_fireondrones					//toggles machineguns firing on drones behavior
+	int		script_flakaicount					//for setting the amount of ai to spawn on a flak
+	int		script_flashbangs   				//set this to > 0 to give an AI flashbangs instead of frag grenades.
+	int		script_followmax
+	int		script_followmin
+	int		script_forcegoal					// forces an AI to use the goal radius of the node they target, rather than switch to 2000 (for flood_and_secure spawners)
+	int		script_forcegrenade					// Set to 1 to enable AI to throw as many grenades as they want rather than extremely rarely.
+	int		script_forcespawn					// Used to forcespawn (aka stalingradspawn) an AI.
+	int		script_fxstart						// Identifies effects so they can be turned on by grouping with a trigger
+	int		script_fxstop						// Identifies effects so they can be turned off by grouping with a trigger
+	int		script_gatetrigger					// vehicles will wait at vehicle nodes with this untill the trigger is hit.
+	int		script_goalvolume					// groups guys so they use a goalvolume
+	int		script_grenades
+	int		script_growl						// makes a dog growl as he runs, instead of barking
+	int		script_health 						// bringing it back!
+	int		script_char_group					// indicate this guy is a member of a group of same chars
+	int		script_char_index					// overwrite the character index
+	int		script_cheap						// makes vehicles lose some functionality but be far fewer variables
+	int		script_ignore_suppression			// sets .ignoreSuppression to true if its set.
+	int		script_ignoreall					// sets .ignoreall to true if its set.
+	int		script_ignoreme						// If this setting exists on a spawner this guy will have his .ignoreme set to true
+	int		script_increment
+	int		script_keepdriver					// set this on the vehicle to make the vehilce driver not unload.
+	int		script_killspawner 					// When you go through a trigger with this on it, any spawners that have the same # will be deleted.
+	int		script_killspawner_group
+	int		script_looping
+	int		script_maxdist						// Spawners will spawn with this pathEnemyLookAhead
+	int		script_mg_angle						//this gives option to start the machinegun at an angle
+	int		script_mg42auto						// When you hit this trigger any grouped mg42s will go into auto mode and clear target.
+	int		script_mgturret						// Group AI with a node that targets an mg42 and the AI will keep the gun in use.
+	int		script_moveoverride 				// Spawners with this will go to their (targetted) node before fighting.
+	int		script_nofriendlywave				// disables tracking of this ai for friendly_wave's
+	int		script_nohealth						// makes the guy not drop health
+	int		script_nomg							//makes machineguns not spawn at all on a tank. used for big tank battles where they aren't necessary on all the tanks.
+	int		script_offradius					// Guys get off a flak if a player gets this close to a flak after hitting the off-trigger, default 350
+	int		script_offtime						// Number of milliseconds before guys get off a flak when you hit the off-trigger, defaults to 20000
+	int		script_onlyidle
+	int		script_pacifist
+	int		script_patroller
+	int		script_physicsjolt 					//toggle tanks shaking physics as it drives by.
+	int		script_plane						// Specifies which plane set this is, so they can all be started together.
+	int		script_playerseek
+	int		script_prefab_exploder				// Override an exploder since exploders in prefabs get unique'd.
+	int		script_radius						// Sets an AI's starting goal radius. On an exploder this sets the radius damage's radius.
+	int		script_repeat						// # of times an effect in an exploder will repeat
+	int		script_requires_player
+	int		script_seekgoal
+	int		script_sightrange
+	int		script_spawn_here					// for camper_spawner
+	int		script_start
+	int		script_startinghealth
+	int		script_startingposition				// used for riders of vehicles to manually designate riding postions (also used for walkers)
+	int		script_stopnode 					//tells helicopters to stop at a node. 
+	int		script_stoptoshoot					// used for tanks, setting this to greater than zero will make a tank stop before firing it's main cannon
+	int		script_timer						// Timeout for friendly_chat
+	int		script_trace
+	int		script_trigger_group				// used to disable a group of triggers when one gets hit.
+	int		script_triggered_playerseek			//group a trigger and an ai with this and he the grouped ai will do playerseek behaviour when the trigger is hit
+	int		script_turret
+	int		script_turretmg
+	int		script_unloaddelay					//make a vehicle delay this long before unloading at the end of a path. < 1 means never unload // nate we should remove this or make it work on all of the unloads.
+	int		script_unloadmgguy					// set this on the halftrack to make the mg guy unload.
+	int		script_usemg42						// If set to false, a friendly will not use be told by friendly_mg42 triggers to use an mg42.
+	int		script_vehicle_selfremove			// vehicle will delete itself when it reaches the end of its path
+	int		script_vehicledetour
+	int		script_vehiclegroup					// links a vehicle to its spawners
+	int		script_vehicleGroupDelete 			// Deletes associated vehicles and their aigroups (as still designated by script_vehiclegroup on the vehicles and the ai's)
+	int		script_vehiclenodegroup  			//used for getting an array of vehicle nodes
+	int		script_vehicleride				
+	int		script_VehicleSpawngroup 			// spawns associated vehicles and their aigroups (as still designated by script_vehiclegroup on the vehicles and the ai's)
+	int		script_VehicleStartMove 			// initiates associated vehicles movement on its path, note that if no script_vehicleStart nodes or triggers exist then the vehicle will stay and wait for the level script to initiate it's movement stacking this with script_VehicleSpawngroup will make spawn and go right away.
+	int		script_wingman
+	int		spawnflags
+	string  script_forcecolor					// forces an AI to use all nodes of this color
+	string  script_gameobjectname 				// Used in multiplayer to add/remove entities based on gametype.
+	string  script_soundalias  					// play this soundalias on exploders
+	string  script_squadname					// squad (spawner cluster) identifier
+	string 	script_attackPattern				// used in checks to control weapons firing on helicopter path origins or nodes
+	string 	script_force_count 					// set to true on spawner - flood spawner will not increment this spawners count if the player didnt see the guy die
+	string 	script_ghettotag 
+	string 	script_mortargroup					// to group mortars with their triggers
+	string 	script_namenumber					// General purpose string identifier that used to be in this file that I use frequently
+	string 	script_nodestate					// generic identifier for nodes
+	string 	script_stance						// General purpose string identifier useful for stance related scripting
+	string 	script_team							// how to know which team a tank is on (needed to free up target/targetname for radiant linkability)
+	string 	script_unload 						// tells the vehicle to unload this group of guys
+	string 	script_vehicle_lights_off 			// set to a group of lights to turn them off
+	string 	script_vehicle_lights_on  			// set to a group of lights to turn them on
+	string 	script_vehicleaianim  				//this will be a radiant drop down list that tells the ai on the vehicle which animations to play
+	string 	script_wtf
+	string 	spawner_id 							//using this for jeepride, guh, grunt, blarg! -nate 
+	string	ambience_inner
+	string	ambience_outer
+	string	ambient								// String index of the level.ambient_track to play on this trigger.
+	string	destructible_type					//identifier
+	string	groupname
+	string	name
+	string	script_aigroup
+	string	script_ambientpackage				// declare the ambient package associated with this trigger
+	string	script_ambientroom					// declare the room associated with this trigger
+	string	script_animation					// If defined, patrollers will play a random pause animation at this node.
+	string	script_area							// used by battlechatter system
+	string	script_assaultnode					// generic identifier for nodes
+	string	script_autosavename
+	string	script_bctrigger
+	string	script_color_allies					// groups allied AI with nodes/triggers of that color
+	string	script_color_axis					// groups axis AI with nodes/triggers of that color
+	string	script_crashtype					//designates a crashpath
+	string	script_crashtypeoverride			//override the type of crash a vehicle will do when it dies values are "tank", "mobile"
+	string	script_deathflag
+	string	script_delay_goto_goalmax   		//z: an AI will spawn, but not run to his goal for a random amount of time
+	string	script_delay_goto_goalmin   		//z: an AI will spawn, but not run to his goal for a random amount of time
+	string	script_destructable_area 			// used to let destructable walls block off areas of the map (affects spawning, for instance)
+	string	script_earthquake					// References level.earthquake variables to do an earthquake
+	string	script_ender						// Stop a looping effect
+	string	script_ent_trailfxsound				// Specifies the sound to play in conjunction with the trailfx
+	string	script_firefx						// Fx to play infinitely from a used exploder
+	string	script_firefxsound					// Looping sound for an exploder firefx
+	string	script_flag							// the flag that gets enabled/disabled by targetname flag_set and flag_unset
+	string	script_flag_clear					// clears the flag when it hits this spot
+	string	script_flag_false					// This entity should not activate unless all the flags in this string are false
+	string	script_flag_set						// helis using helipath will set this flag when they reach this point
+	string	script_flag_true					// This entity should not activate unless at least one of the flags in this string is true
+	string	script_flag_wait					// helis using helipath will wait at this point until this flag is set
+	string	script_followmode
+	string	script_friendname
+	string	script_fxcommand					// What to do with the effect
+	string	script_fxid							// The id of the effect to do
+	string	script_gametype_ctf					// Preston: Used in multiplayer to add/remove entities based on gametype.
+	string	script_gametype_dm					// Preston: Used in multiplayer to add/remove entities based on gametype.
+	string	script_gametype_hq					// Preston: Used in multiplayer to add/remove entities based on gametype.
+	string	script_gametype_sd					// Preston: Used in multiplayer to add/remove entities based on gametype.
+	string	script_gametype_tdm					// Preston: Used in multiplayer to add/remove entities based on gametype.
+	string	script_hidden						// the thing which is hidden and appears later (mortars)
+	string	script_hint							// put on trigger_hint
+	string	script_label
+	string	script_landmark						// used by battlechatter system
+	string	script_linkName						// Works with script_linkTo
+	string	script_linkTo						// A compound string that is a list of script_linkname'd entities that this entity links to.
+	string	script_location						// used by battlechatter system
+	string	script_mapsize_08					// Preston: Used in multiplayer to add/remove entities based on the set mapsize.
+	string	script_mapsize_16					// Preston: Used in multiplayer to add/remove entities based on the set mapsize.
+	string	script_mapsize_32					// Preston: Used in multiplayer to add/remove entities based on the set mapsize.
+	string	script_mapsize_64					// Preston: Used in multiplayer to add/remove entities based on the set mapsize.
+	string	script_noteworthy  					// Used to get a string for scripted sequences mainly.
+	string	script_objective
+	string	script_objective_active   			// used with flood_and_Secure and "friendlychain"s to only be active if this objective 
+	string	script_objective_inactive 			// is active
+	string	script_parameters					// generic string used for similar purpose as script_noteworthy
+	string	script_personality					// This guy will use this personality type
+	string	script_presound						// To play sounds on exploders before the explosion, for pathfinder only
+	string	script_rumble 						// rumble file to play on an exploder
+	string	script_skilloverride
+	string	script_sound						// Plays level.scr_sound ["string"]
+	string	script_squad						// Group spawners/ai so they share enemy information
+	string	script_tankgroup					// used to add a tankgroup to vehicles.
+	string	script_targettype					//"air" or "ground" - used for helicopter pilot levels
+	string	script_threatbiasgroup				// adds spawned ai to this threatbiasgroup
+	string	script_trailfx						// Specifies the trailfx to be used on the entity.
+	string	script_trailfxsound					// Specifies the trailfx sound to play
+	string	script_trailfxtag					// Specifies the trailfx tag to play off of
+	string	script_triggername					// Z: used for elevators in the dam
+	string	script_turningdir					// set this to the direction of the anim set you want a vehicle to use.  "right","hard_right","left","hard_left","forward"
+	string	script_turret_ambush 				// shares turret spots for portable mgs
+	string	script_turret_share 				// shares turret spots for portable mgs
+	string	script_vehicledetourtype			//describing how a vehicledetour node works,  first non default type being "scriptswitch" which will let the script notify the path to become a switch node. Useful in situations where a tank will fight in circles and then procede on whatever script condition.
+	string	target
+	string	targetname
+	string	vehicletype
+	string	weaponinfo
+	vector	angles
+	vector	origin
+	vector	script_angles						// generic angles storage
+	vector	script_bg_offset 					// I'm using this in cobrapilot to move the background pieces into place
+	
+STATS
+
+	0 - 3499
+
+	0 - 1999 	- BYTE(8 bit) 0 - 255
+	2000 - 3499 - INT(32 bit) -2147483648 - 2147483647
+
+	0 - 298 ; 300 - 3499 - OK
+
+	299 - ERROR - resets stats to default value
+
+	OFFLINE & ONLINE
+	200 - 249
+
+	ONLINE
+	0 - 3499 
+
+	NonZeroStats
+	1:08 101 1
+	1:08 102 1
+	1:08 103 1
+	1:08 154 1
+	1:08 156 1
+	1:08 160 1
+	1:08 161 1
+	1:08 162 1
+	1:08 167 1
+	1:08 176 1
+	1:08 184 1
+	1:08 186 1
+	1:08 190 1
+	1:08 201 25
+	1:08 202 5
+	1:08 205 191
+	1:08 206 160
+	1:08 207 154
+	1:08 208 103
+	1:08 211 10
+	1:08 213 2
+	1:08 214 3
+	1:08 215 184
+	1:08 216 156
+	1:08 217 162
+	1:08 218 101
+	1:08 221 81
+	1:08 223 2
+	1:08 225 176
+	1:08 226 167
+	1:08 227 161
+	1:08 228 103
+	1:08 231 71
+	1:08 235 186
+	1:08 236 156
+	1:08 237 154
+	1:08 238 102
+	1:08 241 61
+	1:08 244 3
+	1:08 245 176
+	1:08 246 160
+	1:08 247 161
+	1:08 248 101
+	1:08 2352 12
+	1:08 3000 9
+	1:08 3002 9
+	1:08 3010 769
+	1:08 3011 769
+	1:08 3020 801
+	1:08 3025 801
+	1:08 3061 769
+	1:09 3071 769
+	1:09 3080 769
+	1:09 3081 769
+	
+	NonChangeStats
+	3498 0
+	3499 0
+	
+	FREE
+	-------------
+	0 - 100
+	104 - 153
+	249 - 1999
+	2000 - 2299
+	2300 - 2351
+	2353 - 2999
+	3100 - 3497
+	-------------
+
+	RESERVED
+	2300,VERSION
+	2301,RANKXP
+	2302,SCORE
+	2303,KILLS
+	2304,KILL_STREAK
+	2305,DEATHS
+	2306,DEATH_STREAK
+	2307,ASSISTS
+	2308,HEADSHOTS
+	2309,TEAMKILLS
+	2310,SUICIDES
+	2311,TIME_PLAYED_ALLIES
+	2312,TIME_PLAYED_OPFOR
+	2313,TIME_PLAYED_OTHER
+	2314,TIME_PLAYED_TOTAL
+	2315,KDRATIO
+	2316,WINS
+	2317,LOSSES
+	2318,TIES
+	2319,WIN_STREAK
+	2320,CUR_WIN_STREAK
+	2321,WLRATIO
+	2322,HITS
+	2323,MISSES
+	2324,TOTAL_SHOTS
+	2325,ACCURACY
+	2326,PLEVEL
+	2350,RANK
+	2351,MINXP
+	2352,MAXXP
+	2353,LASTXP
+	
+	0 - 149 some weapons...
+	150 - 199 ?
+	173 - 189 ?
+	270 - 279 ?
+	501 - 699 some challenges...
+	201 - 249 some classes...
+	3000 - 3089 - some weapons...
+	
+Super Jump - jump_height 999;
+No Fall Damage - bg_fallDamageMaxHeight 9999;bg_fallDamageMinHeight 9998;
+Gravity - g_gravity 200;
+Speed - g_speed 999;
+Timescale - timescale 2;
+Friction - friction 0.01;
+Knockback - knockback 999;
+Unlimited Ammo - player_sustainAmmo 1;
+Laser - cg_laserforceon 1;
+Wall Hack - r_znear 35;
+All Time UAV - g_compassShowEnemies 1;scr_force_gameuav 1;
+UAV Size - compassSize 1.5;
+Aimbot/Red box - aim_lockon_debug 1;aim_lockon_region_height 1;aim_lockon_region_width 1;
+Names Through Walls - cg_enemyNameFadeOut 900000;cg_enemyNameFadeIn 0;cg_drawThroughWalls 1;
+Auto M16 - player_burstFireCooldown 0;
+No Stun/Flash Effect - cg_drawShellshock 0;cg_Shellshock 0;
+Gun X (ProMod) - cg_gun_x #;
+Gun Y - cg_gun_y #;
+Gun Z - cg_gun_z #;
+Third Person - cg_thirdperson 1;
+Field of View - cg_fov 180;
+Clip Size - player_clipSizeMultiplier 10;
+Tracers - cg_tracerlength 160;cg_tracerScale 1;cg_tracerScaleDistRange 25000;cg_tracerScaleMinDist 5000;cg_tracerScrewDist 100;cg_tracerScrewRadius 0.5;cg_tracerSpeed 60;cg_tracerwidth 4
+Far Knife - player_meleeRange 999;
+Unlimited Sprint - player_sprintUnlimited 1;
+Small Crosshairs - cg_crosshairAlpha 1;cg_crosshairAlphaMin 0.5;cg_crosshairDynamic 0;cg_crosshairEnemyColor 1;cg_crosshairVerticalOffset;
+Sprint Faster - player_sprintSpeedScale 5.0;
+Disable Frags - scr_weapon_allowfrags 0;
+1 Vote Skip Map - party_vetoPercentRequired 0.001;
+FPS Counter - cg_drawFPS Simple;cg_drawFPSLabels 1;cg_drawFPS Verbose;
+God Mode - scr_csmode 99999;
+Force Host - party_iamhost 1;party_hostmigration 0;party_connectToOthers 0;
+Spawn Bots - set scr_testclients 17;
+Online Game - onlinegame 1;xblive_privatematch 0;scr_forcerankedmatch 1;
+Fast Restart - fast_restart;
+	
+Super Stopping Power - perk_bulletdamage 999;
+Super Juggernaut - perk_armorVest 999;
+Super Sleight of Hand - perk_weapreloadMultiplier 0.001;
+Super Double Tap - perk_weapRateMultiplier 0.001;
+Super Sonic Boom - perk_explosiveDamage 999;
+Super Deep Impact - perk_bulletPenetrationMultiplier 999;
+Super Iron Lungs - perk_extraBreath 999;
+Super Steady Aim - perk_weapspreadMultiplier 0.001;
+Super Eavesdrop - perk_parabolicradis 1000;
+Super Extreme Conditioning - perk_sprintMultiplier 999;
+RPG Martyrdom - perk_grenadeDeath rpg_mp;
+
+Chrome
+	r_specularmap 2
+Cartoon
+	r_fullbright 1
+Rainbow
+	r_debugShader 1
+PC Graphics
+	scr_art_tweak 1
+	scr_art_tweak_message 1
+	r_glowUseTweaks 1
+	r_filmUseTweaks 1
+Thermal
+	r_filmTweakInvert 1
+	r_filmusetweaks 1
+	r_filmtweakenable 1
+	r_filmTweakLightTint 5.3 6.3 7.2
+Blue
+	r_filmTweakInvert 1
+	r_filmTweakbrightness 2
+	r_filmusetweaks 1
+	r_filmTweakenable 1 0
+	toggle r_filmtweakLighttint 1.06 0.5 1.3
+Purple
+	set r_filmTweakInvert 1
+	set r_filmTweakbrightness 2
+	set r_filmusetweaks 1
+	set r_filmTweakenable 1
+	set r_filmtweakLighttint 1 2 1 1.1
+	set r_filmtweakdarktint 1 2 1
+Default
+	r_filmTweakInvert 0
+	cg_gun_x 1
+	r_debugShader 0
+	bind button_rtrig +attack
+	cg_drawgun 1
+	cg_fov 65
+	scr_art_tweak 0
+	r_glowUseTweaks 0
+	r_specularmap 0
+	r_contrast 1
+	r_filmTweakbrightness 0
+	r_filmusetweaks 0
+	r_filmTweakenable 0
+	r_filmtweakLighttint 1.1 1.05 0.85
+	r_filmtweakdarktint 0.7 0.85 1
+	cg_thirdperson 0
+	r_showFloatZDebug 0
+	
+Colored Gamertag
+	ui_playerPartyColor # # # 1
+My Scoreboard Color
+	cg_scoreboardMyColor # # # 1
+Free-for-All Scoreboard
+	g_ScoresColor_Free # # # 1
+Colored Scoreboard
+	g_ScoresColor_axis # # # 1
+	g_ScoresColor_allies # # # 1
+Team Color
+	g_teamcolor_axis # # # 1
+	g_teamcolor_allies # # # 1
+Low Ammo Color
+	lowAmmoWarningColor1 # # # 1
+	lowAmmoWarningColor2 # # # 1
+No Ammo Color
+	lowAmmoWarningNoAmmoColor1 # # # 1
+	lowAmmoWarningNoAmmoColor2 # # # 1
+	lowAmmoWarningNoReloadColor1 # # # 1
+	lowAmmoWarningNoReloadColor2 # # # 1
+Ping Bars
+	cg_ScoresPing_HighColor # # # 1
+	cg_ScoresPing_LowColor # # # 1
+	cg_ScoresPing_Interval 40
+	cg_ScoresPing_MaxBars 9
+	cg_scoreboardPingText 1
+	
+Map Name
+	ui_mapname ^1Want My Candy?
+Gametype
+	ui_gametype ^1ModdingCandy
+Axis Teamname
+	g_TeamName_Axis ^1ModdingCandy
+Allies TeamName
+	g_TeamName_Allies ^1Is It 1337??
+	
+/*
+=============================== DVAR DUMP ========================================
+      actionSlotsHide "0"
+      activeAction ""
+      ai_corpseCount "10"
+      aim_accel_turnrate_debug "0"
+      aim_accel_turnrate_enabled "1"
+      aim_accel_turnrate_lerp "1200"
+      aim_autoaim_debug "0"
+      aim_autoaim_enabled "0"
+      aim_autoaim_lerp "40"
+      aim_autoaim_region_height "120"
+      aim_autoaim_region_width "160"
+      aim_automelee_debug "0"
+      aim_automelee_enabled "1"
+      aim_automelee_lerp "40"
+      aim_automelee_range "128"
+      aim_automelee_region_height "240"
+      aim_automelee_region_width "320"
+      aim_input_graph_debug "0"
+      aim_input_graph_enabled "1"
+      aim_input_graph_index "3"
+      aim_lockon_debug "0"
+      aim_lockon_deflection "0.05"
+      aim_lockon_enabled "1"
+      aim_lockon_region_height "90"
+      aim_lockon_region_width "90"
+      aim_lockon_strength "0.6"
+      aim_scale_view_axis "1"
+      aim_slowdown_debug "0"
+      aim_slowdown_enabled "1"
+      aim_slowdown_pitch_scale "0.4"
+      aim_slowdown_pitch_scale_ads "0.5"
+      aim_slowdown_region_height "90"
+      aim_slowdown_region_width "90"
+      aim_slowdown_yaw_scale "0.4"
+      aim_slowdown_yaw_scale_ads "0.5"
+      aim_target_sentient_radius "10"
+      aim_turnrate_pitch "90"
+      aim_turnrate_pitch_ads "55"
+      aim_turnrate_yaw "260"
+      aim_turnrate_yaw_ads "90"
+      ammoCounterHide "0"
+      authPort "20800"
+      authServerName "cod4master.activision.com"
+      bg_aimSpreadMoveSpeedThreshold "11"
+      bg_bobAmplitudeDucked "0.0075 0.0075"
+      bg_bobAmplitudeProne "0.02 0.005"
+      bg_bobAmplitudeSprinting "0.02 0.014"
+      bg_bobAmplitudeStanding "0.007 0.007"
+      bg_bobMax "8"
+      bg_fallDamageMaxHeight "300"
+      bg_fallDamageMinHeight "128"
+      bg_foliagesnd_fastinterval "500"
+      bg_foliagesnd_maxspeed "180"
+      bg_foliagesnd_minspeed "40"
+      bg_foliagesnd_resetinterval "500"
+      bg_foliagesnd_slowinterval "1500"
+      bg_ladder_yawcap "100"
+      bg_legYawTolerance "20"
+      bg_maxGrenadeIndicatorSpeed "20"
+      bg_prone_yawcap "85"
+      bg_shock_lookControl "0"
+      bg_shock_lookControl_fadeTime "0.001"
+      bg_shock_lookControl_maxpitchspeed "0"
+      bg_shock_lookControl_maxyawspeed "0"
+      bg_shock_lookControl_mousesensitivityscale "0"
+      bg_shock_movement "1"
+      bg_shock_screenBlurBlendFadeTime "0.001"
+      bg_shock_screenBlurBlendTime "0.001"
+      bg_shock_screenFlashShotFadeTime "0"
+      bg_shock_screenFlashWhiteFadeTime "0"
+      bg_shock_screenType "blurred"
+      bg_shock_sound "0"
+      bg_shock_soundDryLevel "1"
+      bg_shock_soundEnd "shellshock_end"
+      bg_shock_soundEndAbort "shellshock_end_abort"
+      bg_shock_soundFadeInTime "0.25"
+      bg_shock_soundFadeOutTime "2.5"
+      bg_shock_soundLoop "shellshock_loop"
+      bg_shock_soundLoopEndDelay "-1.5"
+      bg_shock_soundLoopFadeTime "2"
+      bg_shock_soundLoopSilent "shellshock_loop_silent"
+      bg_shock_soundModEndDelay "-0.75"
+      bg_shock_soundRoomType "generic"
+      bg_shock_soundWetLevel "0.5"
+      bg_shock_viewKickFadeTime "0.001"
+      bg_shock_viewKickPeriod "0.75"
+      bg_shock_viewKickRadius "0"
+      bg_shock_volume_ambient "0.2"
+      bg_shock_volume_announcer "0.9"
+      bg_shock_volume_auto "0.5"
+      bg_shock_volume_auto2 "0.5"
+      bg_shock_volume_auto2d "0.5"
+      bg_shock_volume_autodog "0.9"
+      bg_shock_volume_body "0.2"
+      bg_shock_volume_body2d "0.2"
+      bg_shock_volume_bulletimpact "0.5"
+      bg_shock_volume_bulletwhizby "0.5"
+      bg_shock_volume_effects1 "0.5"
+      bg_shock_volume_effects2 "0.5"
+      bg_shock_volume_element "0.5"
+      bg_shock_volume_hurt "0.4"
+      bg_shock_volume_item "0.2"
+      bg_shock_volume_local "0.2"
+      bg_shock_volume_local2 "0.2"
+      bg_shock_volume_menu "1"
+      bg_shock_volume_mission "0.9"
+      bg_shock_volume_music "0.5"
+      bg_shock_volume_musicnopause "0.5"
+      bg_shock_volume_nonshock "0.5"
+      bg_shock_volume_physics "0.5"
+      bg_shock_volume_player1 "0.4"
+      bg_shock_volume_player2 "0.4"
+      bg_shock_volume_reload "0.2"
+      bg_shock_volume_reload2d "0.2"
+      bg_shock_volume_shellshock "1"
+      bg_shock_volume_vehicle "0.1"
+      bg_shock_volume_vehiclelimited "0.1"
+      bg_shock_volume_voice "0.2"
+      bg_shock_volume_weapon "0.5"
+      bg_shock_volume_weapon2d "0.5"
+      bg_swingSpeed "0.2"
+      bg_viewKickMax "90"
+      bg_viewKickMin "5"
+      bg_viewKickRandom "0.4"
+      bg_viewKickScale "0.2"
+      bullet_penetrationEnabled "1"
+      bullet_penetrationMinFxDist "30"
+      cg_airstrikeKillCamCloseXYDist "24"
+      cg_airstrikeKillCamCloseZDist "24"
+      cg_airstrikeKillCamDist "200"
+      cg_airstrikeKillCamFarBlur "2"
+      cg_airstrikeKillCamFarBlurDist "300"
+      cg_airstrikeKillCamFarBlurStart "100"
+      cg_airstrikeKillCamFov "80"
+      cg_airstrikeKillCamNearBlur "4"
+      cg_airstrikeKillCamNearBlurEnd "100"
+      cg_airstrikeKillCamNearBlurStart "0"
+      cg_blood "1"
+      cg_brass "1"
+      cg_centertime "5"
+      cg_chatHeight "8"
+      cg_chatTime "12000"
+      cg_connectionIconSize "0"
+      cg_constantSizeHeadIcons "0"
+      cg_crosshairAlpha "1"
+      cg_crosshairAlphaMin "0.5"
+      cg_crosshairDynamic "0"
+      cg_crosshairEnemyColor "1"
+      cg_cursorHints "1"
+      cg_deadChatWithDead "0"
+      cg_deadChatWithTeam "1"
+      cg_deadHearAllLiving "0"
+      cg_deadHearTeamLiving "1"
+      cg_debug_overlay_viewport "0"
+      cg_debugevents "0"
+      cg_debugInfoCornerOffset "0 0"
+      cg_debugposition "0"
+      cg_descriptiveText "0"
+      cg_draw2D "1"
+      cg_drawBreathHint "1"
+      cg_drawCrosshair "1"
+      cg_drawCrosshairNames "1"
+      cg_drawCrosshairNamesPosX "300"
+      cg_drawCrosshairNamesPosY "180"
+      cg_drawFPS "Simple"
+      cg_drawFPSLabels "1"
+      cg_drawFriendlyNames "1"
+      cg_drawGun "1"
+      cg_drawHealth "0"
+      cg_drawLagometer "0"
+      cg_drawMantleHint "1"
+      cg_drawMaterial "Off"
+      cg_drawpaused "1"
+      cg_drawScriptUsage "0"
+      cg_drawShellshock "1"
+      cg_drawSnapshot "0"
+      cg_drawSpectatorMessages "1"
+      cg_drawTalk "ALL"
+      cg_drawThroughWalls "0"
+      cg_drawTurretCrosshair "1"
+      cg_dumpAnims "-1"
+      cg_enemyNameFadeIn "250"
+      cg_enemyNameFadeOut "250"
+      cg_errordecay "100"
+      cg_everyoneHearsEveryone "0"
+      cg_firstPersonTracerChance "0.5"
+      cg_footsteps "1"
+      cg_fov "80"
+      cg_fovMin "10"
+      cg_fovScale "1"
+      cg_friendlyNameFadeIn "0"
+      cg_friendlyNameFadeOut "1500"
+      cg_gameBoldMessageWidth "390"
+      cg_gameMessageWidth "455"
+      cg_gun_move_f "0"
+      cg_gun_move_minspeed "0"
+      cg_gun_move_r "0"
+      cg_gun_move_rate "0"
+      cg_gun_move_u "0"
+      cg_gun_ofs_f "0"
+      cg_gun_ofs_r "0"
+      cg_gun_ofs_u "0"
+      cg_gun_x "0"
+      cg_gun_y "0"
+      cg_gun_z "0"
+      cg_headIconMinScreenRadius "0.015"
+      cg_heliKillCamDist "1000"
+      cg_heliKillCamFarBlur "2"
+      cg_heliKillCamFarBlurDist "300"
+      cg_heliKillCamFarBlurStart "100"
+      cg_heliKillCamFov "15"
+      cg_heliKillCamNearBlur "4"
+      cg_heliKillCamNearBlurEnd "100"
+      cg_heliKillCamNearBlurStart "0"
+      cg_heliKillCamZDist "50"
+      cg_hintFadeTime "100"
+      cg_hudChatIntermissionPosition "5 110"
+      cg_hudChatPosition "5 200"
+      cg_hudDamageIconHeight "64"
+      cg_hudDamageIconInScope "0"
+      cg_hudDamageIconOffset "128"
+      cg_hudDamageIconTime "2000"
+      cg_hudDamageIconWidth "128"
+      cg_hudGrenadeIconEnabledFlash "0"
+      cg_hudGrenadeIconHeight "25"
+      cg_hudGrenadeIconInScope "0"
+      cg_hudGrenadeIconMaxHeight "104"
+      cg_hudGrenadeIconMaxRangeFlash "500"
+      cg_hudGrenadeIconMaxRangeFrag "250"
+      cg_hudGrenadeIconOffset "50"
+      cg_hudGrenadeIconWidth "25"
+      cg_hudGrenadePointerHeight "12"
+      cg_hudGrenadePointerPivot "12 27"
+      cg_hudGrenadePointerPulseFreq "1.7"
+      cg_hudGrenadePointerPulseMax "1.85"
+      cg_hudGrenadePointerPulseMin "0.3"
+      cg_hudGrenadePointerWidth "25"
+      cg_hudlegacysplitscreenscale "2"
+      cg_hudMapBorderWidth "2"
+      cg_hudMapFriendlyHeight "15"
+      cg_hudMapFriendlyWidth "15"
+      cg_hudMapPlayerHeight "20"
+      cg_hudMapPlayerWidth "20"
+      cg_hudMapRadarLineThickness "0.15"
+      cg_hudObjectiveTextScale "0.3"
+      cg_hudProneY "-160"
+      cg_hudSayPosition "5 180"
+      cg_hudsplitscreencompassscale "1.5"
+      cg_hudsplitscreenstancescale "2"
+      cg_hudStanceFlash "1 1 1 1"
+      cg_hudStanceHintPrints "0"
+      cg_hudVotePosition "5 220"
+      cg_invalidCmdHintBlinkInterval "600"
+      cg_invalidCmdHintDuration "1800"
+      cg_laserEndOffset "0.5"
+      cg_laserFlarePct "0.2"
+      cg_laserForceOn "0"
+      cg_laserLight "1"
+      cg_laserLightBeginOffset "13"
+      cg_laserLightBodyTweak "15"
+      cg_laserLightEndOffset "-3"
+      cg_laserLightRadius "3"
+      cg_laserRadius "0.8"
+      cg_laserRange "1500"
+      cg_laserRangePlayer "1500"
+      cg_mapLocationSelectionCursorSpeed "0.6"
+      cg_marks_ents_player_only "0"
+      cg_nopredict "0"
+      cg_overheadIconSize "0.7"
+      cg_overheadNamesFarDist "1024"
+      cg_overheadNamesFarScale "0.6"
+      cg_overheadNamesFont "2"
+      cg_overheadNamesGlow "0 0 0 1"
+      cg_overheadNamesMaxDist "10000"
+      cg_overheadNamesNearDist "256"
+      cg_overheadNamesSize "0.5"
+      cg_overheadRankSize "0.5"
+      cg_predictItems "1"
+      cg_scoreboardBannerHeight "35"
+      cg_scoreboardFont "0"
+      cg_scoreboardHeaderFontScale "0.35"
+      cg_scoreboardHeight "435"
+      cg_scoreboardItemHeight "18"
+      cg_scoreboardMyColor "1 0.8 0.4 1"
+      cg_scoreboardPingGraph "0"
+      cg_scoreboardPingHeight "0.7"
+      cg_scoreboardPingText "1"
+      cg_scoreboardPingWidth "0.036"
+      cg_scoreboardRankFontScale "0.25"
+      cg_scoreboardScrollStep "3"
+      cg_scoreboardTextOffset "0.5"
+      cg_scoreboardWidth "500"
+      cg_ScoresPing_BgColor "0.25098 0.25098 0.25098 0.501961"
+      cg_ScoresPing_HighColor "0.8 0 0 1"
+      cg_ScoresPing_Interval "100"
+      cg_ScoresPing_LowColor "0 0.74902 0 1"
+      cg_ScoresPing_MaxBars "4"
+      cg_ScoresPing_MedColor "0.8 0.8 0 1"
+      cg_scriptIconSize "0"
+      cg_showmiss "0"
+      cg_sprintMeterDisabledColor "0.8 0.1 0.1 0.2"
+      cg_sprintMeterEmptyColor "0.7 0.5 0.2 0.8"
+      cg_sprintMeterFullColor "0.8 0.8 0.8 0.8"
+      cg_subtitleMinTime "3"
+      cg_subtitles "1"
+      cg_subtitleWidthStandard "520"
+      cg_subtitleWidthWidescreen "520"
+      cg_teamChatsOnly "0"
+      cg_thirdPerson "0"
+      cg_thirdPersonAngle "0"
+      cg_thirdPersonRange "120"
+      cg_tracerchance "0.2"
+      cg_tracerlength "160"
+      cg_tracerScale "1"
+      cg_tracerScaleDistRange "25000"
+      cg_tracerScaleMinDist "5000"
+      cg_tracerScrewDist "100"
+      cg_tracerScrewRadius "0.5"
+      cg_tracerSpeed "7500"
+      cg_tracerwidth "4"
+      cg_viewZSmoothingMax "16"
+      cg_viewZSmoothingMin "1"
+      cg_viewZSmoothingTime "0.1"
+      cg_voiceIconSize "0"
+      cg_weaponCycleDelay "500"
+      cg_weaponHintsCoD1Style "1"
+      cg_weaponleftbone "tag_weapon_left"
+      cg_weaponrightbone "tag_weapon_right"
+      cg_youInKillCamSize "6"
+      cl_allowDownload "1"
+      cl_analog_attack_threshold "0.8"
+      cl_anglespeedkey "1.5"
+      cl_anonymous "0"
+      cl_avidemo "0"
+      cl_bypassMouseInput "0"
+      cl_connectionAttempts "10"
+      cl_connectTimeout "200"
+      cl_forceavidemo "0"
+      cl_freelook "1"
+      cl_freezeDemo "0"
+      cl_hudDrawsBehindUI "1"
+      cl_ingame "1"
+      cl_maxpackets "100"
+      cl_maxPing "800"
+      cl_maxppf "5"
+      cl_motdString ""
+      cl_mouseAccel "0"
+      cl_nodelta "0"
+      cl_noprint "0"
+      cl_packetdup "2"
+      cl_paused "0"
+      cl_pitchspeed "140"
+      cl_punkbuster "1"
+      cl_serverStatusResendTime "750"
+      cl_showmouserate "0"
+      cl_shownet "0"
+      cl_shownuments "0"
+      cl_showSend "0"
+      cl_showServerCommands "0"
+      cl_showTimeDelta "0"
+      cl_stanceHoldTime "300"
+      cl_talking "0"
+      cl_timeout "40"
+      cl_updateavailable "0"
+      cl_updatefiles ""
+      cl_updateoldversion ""
+      cl_updateversion ""
+      cl_voice "1"
+      cl_wwwDownload "1"
+      cl_yawspeed "140"
+      clientSideEffects "1"
+      com_animCheck "0"
+      com_filter_output "0"
+      com_introPlayed "1"
+      com_maxfps "250"
+      com_maxFrameTime "100"
+      com_playerProfile "PetX"
+      com_recommendedSet "1"
+      com_statmon "0"
+      com_timescale "1"
+      compass "1"
+      compassClampIcons "1"
+      compassCoords "740 3590 400"
+      compassECoordCutoff "37"
+      compassEnemyFootstepEnabled "0"
+      compassEnemyFootstepMaxRange "500"
+      compassEnemyFootstepMaxZ "100"
+      compassEnemyFootstepMinSpeed "140"
+      compassFriendlyHeight "18.75"
+      compassFriendlyWidth "18.75"
+      compassMaxRange "2000"
+      compassMinRadius "0.0001"
+      compassMinRange "0.0001"
+      compassObjectiveArrowHeight "20"
+      compassObjectiveArrowOffset "2"
+      compassObjectiveArrowRotateDist "5"
+      compassObjectiveArrowWidth "20"
+      compassObjectiveDetailDist "10"
+      compassObjectiveDrawLines "1"
+      compassObjectiveHeight "20"
+      compassObjectiveIconHeight "16"
+      compassObjectiveIconWidth "16"
+      compassObjectiveMaxHeight "70"
+      compassObjectiveMaxRange "2048"
+      compassObjectiveMinAlpha "1"
+      compassObjectiveMinDistRange "1"
+      compassObjectiveMinHeight "-70"
+      compassObjectiveNearbyDist "4"
+      compassObjectiveNumRings "10"
+      compassObjectiveRingSize "80"
+      compassObjectiveRingTime "10000"
+      compassObjectiveTextHeight "18"
+      compassObjectiveTextScale "0.3"
+      compassObjectiveWidth "20"
+      compassPlayerHeight "18.75"
+      compassPlayerWidth "18.75"
+      compassRadarLineThickness "0.4"
+      compassRadarPingFadeTime "4"
+      compassRadarUpdateTime "4"
+      compassRotation "1"
+      compassSize "1"
+      compassSoundPingFadeTime "2"
+      compassTickertapeStretch "0.5"
+      con_default_console_filter "*"
+      con_errormessagetime "8"
+      con_gameMsgWindow0FadeInTime "0.25"
+      con_gameMsgWindow0FadeOutTime "0.5"
+      con_gameMsgWindow0Filter "gamenotify obituary"
+      con_gameMsgWindow0LineCount "4"
+      con_gameMsgWindow0MsgTime "5"
+      con_gameMsgWindow0ScrollTime "0.25"
+      con_gameMsgWindow0SplitscreenScale "1.5"
+      con_gameMsgWindow1FadeInTime "0.25"
+      con_gameMsgWindow1FadeOutTime "0.01"
+      con_gameMsgWindow1Filter "boldgame"
+      con_gameMsgWindow1LineCount "5"
+      con_gameMsgWindow1MsgTime "8"
+      con_gameMsgWindow1ScrollTime "0.25"
+      con_gameMsgWindow1SplitscreenScale "1.5"
+      con_gameMsgWindow2FadeInTime "0.75"
+      con_gameMsgWindow2FadeOutTime "0.5"
+      con_gameMsgWindow2Filter "subtitle"
+      con_gameMsgWindow2LineCount "7"
+      con_gameMsgWindow2MsgTime "5"
+      con_gameMsgWindow2ScrollTime "0.25"
+      con_gameMsgWindow2SplitscreenScale "1.5"
+      con_gameMsgWindow3FadeInTime "0.25"
+      con_gameMsgWindow3FadeOutTime "0.5"
+      con_gameMsgWindow3Filter ""
+      con_gameMsgWindow3LineCount "5"
+      con_gameMsgWindow3MsgTime "5"
+      con_gameMsgWindow3ScrollTime "0.25"
+      con_gameMsgWindow3SplitscreenScale "1.5"
+      con_inputBoxColor "0.25 0.25 0.2 1"
+      con_inputHintBoxColor "0.4 0.4 0.35 1"
+      con_matchPrefixOnly "1"
+      con_minicon "0"
+      con_miniconlines "5"
+      con_minicontime "4"
+      con_outputBarColor "1 1 0.95 0.6"
+      con_outputSliderColor "0.15 0.15 0.1 0.6"
+      con_outputWindowColor "0.35 0.35 0.3 0.75"
+      con_typewriterColorBase "1 1 1"
+      con_typewriterColorGlowCheckpoint "0.6 0.5 0.6 1"
+      con_typewriterColorGlowCompleted "0 0.3 0.8 1"
+      con_typewriterColorGlowFailed "0.8 0 0 1"
+      con_typewriterColorGlowUpdated "0 0.6 0.18 1"
+      con_typewriterDecayDuration "700"
+      con_typewriterDecayStartTime "6000"
+      con_typewriterPrintSpeed "50"
+      customclass1 ""
+      customclass2 "Custom Slot 2"
+      customclass3 "Custom Slot 3"
+      customclass4 "Custom Slot 4"
+      customclass5 "Custom Slot 5"
+      debug_destructibles "0"
+      dedicated "listen server"
+      destructibles_enable_physics "1"
+      developer "0"
+      developer_script "0"
+      didyouknow "@PLATFORM_DYK_MSG21"
+      drew_notes "5"
+      dynEnt_active "1"
+      dynEnt_bulletForce "1000"
+      dynEnt_explodeForce "12500"
+      dynEnt_explodeMaxEnts "20"
+      dynEnt_explodeMinForce "40"
+      dynEnt_explodeSpinScale "3"
+      dynEnt_explodeUpbias "0.5"
+      dynEntPieces_angularVelocity "0 0 0"
+      dynEntPieces_impactForce "1000"
+      dynEntPieces_velocity "0 0 0"
+      fixedtime "0"
+      friction "5.5"
+      fs_basegame ""
+      fs_basepath "D:\Program Files (x86)\Activision\Call of Duty 4 - Modern Warfare"
+      fs_cdpath ""
+      fs_copyfiles "0"
+      fs_debug "0"
+      fs_game ""
+      fs_homepath "D:\Program Files (x86)\Activision\Call of Duty 4 - Modern Warfare"
+      fs_ignoreLocalized "0"
+      fs_restrict "0"
+      fs_usedevdir "0"
+      fx_count "0"
+      fx_cull_effect_spawn "0"
+      fx_cull_elem_draw "1"
+      fx_cull_elem_spawn "1"
+      fx_debugBolt "0"
+      fx_draw "1"
+      fx_drawClouds "1"
+      fx_enable "1"
+      fx_freeze "0"
+      fx_mark_profile "0"
+      fx_marks "1"
+      fx_marks_ents "1"
+      fx_marks_smodels "1"
+      fx_profile "0"
+      fx_visMinTraceDist "80"
+      g_allowvote "1"
+      g_antilag "1"
+      g_banIPs ""
+      g_clonePlayerMaxVelocity "80"
+      g_compassShowEnemies "0"
+      g_deadChat "1"
+      g_debugBullets "0"
+      g_debugDamage "0"
+      g_debugLocDamage "0"
+      g_dropForwardSpeed "10"
+      g_dropHorzSpeedRand "100"
+      g_dropUpSpeedBase "10"
+      g_dropUpSpeedRand "5"
+      g_dumpAnims "-1"
+      g_entinfo "off"
+      g_fogColorReadOnly "0.584314 0.631373 0.552941 1"
+      g_fogHalfDistReadOnly "20000"
+      g_fogStartDistReadOnly "800"
+      g_friendlyfireDist "256"
+      g_friendlyNameDist "15000"
+      g_gametype "war"
+      g_gravity "800"
+      g_inactivity "0"
+      g_knockback "1000"
+      g_listEntity "0"
+      g_log "games_mp.log"
+      g_logSync "1"
+      g_mantleBlockTimeBuffer "500"
+      g_maxDroppedWeapons "16"
+      g_minGrenadeDamageSpeed "400"
+      g_motd ""
+      g_no_script_spam "0"
+      g_oldVoting "1"
+      g_password ""
+      g_playerCollisionEjectSpeed "25"
+      g_redCrosshairs "1"
+      g_ScoresColor_Allies "0.6 0.639216 0.690196 0"
+      g_ScoresColor_Axis "0.65098 0.568627 0.411765 0"
+      g_ScoresColor_EnemyTeam "0.690196 0.0705882 0.0509804 1"
+      g_ScoresColor_Free "0.760784 0.780392 0.101961 0"
+      g_ScoresColor_MyTeam "0.25098 0.721569 0.25098 1"
+      g_ScoresColor_Spectator "0.25098 0.25098 0.25098 0"
+      g_smoothClients "1"
+      g_speed "190"
+      g_synchronousClients "0"
+      g_TeamColor_Allies "0.6 0.639216 0.690196 0"
+      g_TeamColor_Axis "0.65098 0.568627 0.411765 0"
+      g_TeamColor_EnemyTeam "1 0.45098 0.501961 0"
+      g_TeamColor_Free "0.74902 0.25098 0.25098 1"
+      g_TeamColor_MyTeam "0.6 0.8 0.6 0"
+      g_TeamColor_Spectator "0.25098 0.25098 0.25098 1"
+      g_TeamIcon_Allies "faction_128_usmc"
+      g_TeamIcon_Axis "faction_128_arab"
+      g_TeamIcon_Free ""
+      g_TeamIcon_Spectator ""
+      g_TeamName_Allies "MPUI_MARINES_SHORT"
+      g_TeamName_Axis "MPUI_OPFOR_SHORT"
+      g_useGear "1"
+      g_useholdspawndelay "500"
+      g_useholdtime "0"
+      g_voiceChatTalkingDuration "500"
+      g_voteAbstainWeight "0.5"
+      gamedate "Jun 18 2008"
+      gamename "Call of Duty 4"
+      heli_barrelMaxVelocity "1250"
+      heli_barrelRotation "70"
+      heli_barrelSlowdown "360"
+      hiDef "1"
+      hud_deathQuoteFadeTime "1000"
+      hud_enable "1"
+      hud_fade_ammodisplay "1.7"
+      hud_fade_compass "0"
+      hud_fade_healthbar "0"
+      hud_fade_offhand "1.7"
+      hud_fade_sprint "1.7"
+      hud_fade_stance "0"
+      hud_fadeout_speed "0.1"
+      hud_flash_period_offhand "0.5"
+      hud_flash_time_offhand "2"
+      hud_health_pulserate_critical "0.5"
+      hud_health_pulserate_injured "1"
+      hud_health_startpulse_critical "0.33"
+      hud_health_startpulse_injured "1"
+      hud_healthOverlay_phaseEnd_pulseDuration "700"
+      hud_healthOverlay_phaseEnd_toAlpha "0"
+      hud_healthOverlay_phaseOne_pulseDuration "150"
+      hud_healthOverlay_phaseThree_pulseDuration "400"
+      hud_healthOverlay_phaseThree_toAlphaMultiplier "0.6"
+      hud_healthOverlay_phaseTwo_pulseDuration "320"
+      hud_healthOverlay_phaseTwo_toAlphaMultiplier "0.7"
+      hud_healthOverlay_pulseStart "0.55"
+      hud_healthOverlay_regenPauseTime "8000"
+      hudElemPausedBrightness "0.4"
+      in_mouse "1"
+      inertiaAngle "0"
+      inertiaDebug "0"
+      inertiaMax "50"
+      jump_height "39"
+      jump_ladderPushVel "128"
+      jump_slowdownEnable "1"
+      jump_spreadAdd "64"
+      jump_stepSize "18"
+      koth_autodestroytime "60"
+      koth_capturetime "20"
+      koth_delayPlayer "0"
+      koth_destroytime "10"
+      koth_kothmode "0"
+      koth_spawnDelay "60"
+      koth_spawntime "0"
+      loc_forceEnglish "0"
+      loc_language "0"
+      loc_translate "1"
+      loc_warnings "0"
+      loc_warningsAsErrors "0"
+      logfile "2"
+      lowAmmoWarningColor1 "0.901961 0.901961 0.901961 0.8"
+      lowAmmoWarningColor2 "1 1 1 1"
+      lowAmmoWarningNoAmmoColor1 "0.8 0 0 0.8"
+      lowAmmoWarningNoAmmoColor2 "1 0 0 1"
+      lowAmmoWarningNoReloadColor1 "0.701961 0.701961 0 0.8"
+      lowAmmoWarningNoReloadColor2 "1 1 0 1"
+      lowAmmoWarningPulseFreq "1.7"
+      lowAmmoWarningPulseMax "1.5"
+      lowAmmoWarningPulseMin "0"
+      m_filter "0"
+      m_forward "0.25"
+      m_pitch "0.022"
+      m_side "0.25"
+      m_yaw "0.022"
+      mantle_check_angle "60"
+      mantle_check_radius "0.1"
+      mantle_check_range "20"
+      mantle_debug "0"
+      mantle_enable "1"
+      mantle_view_yawcap "60"
+      mapname "mp_convoy"
+      masterPort "20810"
+      masterServerName "cod4master.activision.com"
+      melee_debug "0"
+      missileDebugAttractors "0"
+      missileDebugDraw "0"
+      missileDebugText "0"
+      missileHellfireMaxSlope "0.5"
+      missileHellfireUpAccel "1000"
+      missileJavAccelClimb "300"
+      missileJavAccelDescend "3000"
+      missileJavClimbAngleDirect "85"
+      missileJavClimbAngleTop "50"
+      missileJavClimbCeilingDirect "0"
+      missileJavClimbCeilingTop "3000"
+      missileJavClimbHeightDirect "10000"
+      missileJavClimbHeightTop "15000"
+      missileJavClimbToOwner "700"
+      missileJavSpeedLimitClimb "1000"
+      missileJavSpeedLimitDescend "6000"
+      missileJavTurnDecel "0.05"
+      missileJavTurnRateDirect "60"
+      missileJavTurnRateTop "100"
+      missileWaterMaxDepth "60"
+      monkeytoy "0"
+      motd ""
+      msg_dumpEnts "0"
+      msg_hudelemspew "0"
+      msg_printEntityNums "0"
+      name "<3 <3 <3"
+      net_ip "localhost"
+      net_lanauthorize "0"
+      net_noipx "0"
+      net_noudp "0"
+      net_port "28960"
+      net_profile "0"
+      net_showprofile "0"
+      net_socksEnabled "0"
+      net_socksPassword ""
+      net_socksPort "1080"
+      net_socksServer ""
+      net_socksUsername ""
+      nextdemo ""
+      nextmap "map_restart"
+      nightVisionDisableEffects "0"
+      nightVisionFadeInOutTime "0.1"
+      nightVisionPowerOnTime "0.3"
+      onlinegame "1"
+      overrideNVGModelWithKnife "0"
+      packetDebug "0"
+      password ""
+      perk_armorVest "75"
+      perk_bulletDamage "40"
+      perk_bulletPenetrationMultiplier "2"
+      perk_explosiveDamage "25"
+      perk_extraBreath "5"
+      perk_grenadeDeath "frag_grenade_short_mp"
+      perk_parabolicAngle "180"
+      perk_parabolicIcon "specialty_parabolic"
+      perk_parabolicRadius "400"
+      perk_sprintMultiplier "2"
+      perk_weapRateMultiplier "0.75"
+      perk_weapReloadMultiplier "0.5"
+      perk_weapSpreadMultiplier "0.65"
+      phys_autoDisableAngular "1"
+      phys_autoDisableLinear "20"
+      phys_autoDisableTime "0.9"
+      phys_bulletSpinScale "3"
+      phys_bulletUpBias "0.5"
+      phys_cfm "0.0001"
+      phys_collUseEntities "0"
+      phys_contact_cfm "1e-005"
+      phys_contact_cfm_ragdoll "0.001"
+      phys_contact_erp "0.8"
+      phys_contact_erp_ragdoll "0.3"
+      phys_csl "1"
+      phys_dragAngular "0.5"
+      phys_dragLinear "0.03"
+      phys_drawAwake "0"
+      phys_drawAwakeTooLong "0"
+      phys_drawCollisionObj "0"
+      phys_drawCollisionWorld "0"
+      phys_drawcontacts "0"
+      phys_drawDebugInfo "0"
+      phys_dumpcontacts "0"
+      phys_erp "0.8"
+      phys_frictionScale "1"
+      phys_gravity "-800"
+      phys_gravityChangeWakeupRadius "120"
+      phys_interBodyCollision "0"
+      phys_jitterMaxMass "200"
+      phys_joint_cfm "0.0001"
+      phys_joint_stop_cfm "0.0001"
+      phys_joint_stop_erp "0.8"
+      phys_mcv "20"
+      phys_mcv_ragdoll "1000"
+      phys_minImpactMomentum "250"
+      phys_narrowObjMaxLength "4"
+      phys_noIslands "0"
+      phys_qsi "15"
+      phys_reorderConst "1"
+      phys_visibleTris "0"
+      pickupPrints "0"
+      player_adsExitDelay "0"
+      player_backSpeedScale "0.7"
+      player_breath_fire_delay "0"
+      player_breath_gasp_lerp "6"
+      player_breath_gasp_scale "4.5"
+      player_breath_gasp_time "1"
+      player_breath_hold_lerp "1"
+      player_breath_hold_time "4.5"
+      player_breath_snd_delay "1"
+      player_breath_snd_lerp "2"
+      player_burstFireCooldown "0.2"
+      player_debugHealth "0"
+      player_dmgtimer_flinchTime "500"
+      player_dmgtimer_maxTime "750"
+      player_dmgtimer_minScale "0"
+      player_dmgtimer_stumbleTime "500"
+      player_dmgtimer_timePerPoint "100"
+      player_footstepsThreshhold "0"
+      player_lean_rotate_crouch_left "0.8"
+      player_lean_rotate_crouch_right "0.3"
+      player_lean_rotate_left "0.8"
+      player_lean_rotate_right "0.4"
+      player_lean_shift_crouch_left "4"
+      player_lean_shift_crouch_right "15"
+      player_lean_shift_left "5"
+      player_lean_shift_right "9"
+      player_meleeChargeFriction "1200"
+      player_meleeHeight "10"
+      player_meleeRange "64"
+      player_meleeWidth "10"
+      player_MGUseRadius "128"
+      player_move_factor_on_torso "0"
+      player_moveThreshhold "10"
+      player_scopeExitOnDamage "0"
+      player_spectateSpeedScale "1"
+      player_sprintCameraBob "0.5"
+      player_sprintForwardMinimum "105"
+      player_sprintMinTime "1"
+      player_sprintRechargePause "0"
+      player_sprintSpeedScale "1.5"
+      player_sprintStrafeSpeedScale "0.667"
+      player_sprintTime "4"
+      player_strafeAnimCosAngle "0.5"
+      player_strafeSpeedScale "0.8"
+      player_summary_challenge "0"
+      player_summary_match "0"
+      player_summary_misc "0"
+      player_summary_score "0"
+      player_summary_xp "0"
+      player_sustainAmmo "0"
+      player_throwbackInnerRadius "90"
+      player_throwbackOuterRadius "160"
+      player_turnAnims "0"
+      player_unlock_page "0"
+      player_unlockattachment0a ""
+      player_unlockattachment0b ""
+      player_unlockattachment1a ""
+      player_unlockattachment1b ""
+      player_unlockattachment2a ""
+      player_unlockattachment2b ""
+      player_unlockattachments "0"
+      player_unlockcamo0a ""
+      player_unlockcamo0b ""
+      player_unlockcamo1a ""
+      player_unlockcamo1b ""
+      player_unlockcamo2a ""
+      player_unlockcamo2b ""
+      player_unlockcamos "0"
+      player_unlockchallenge0 ""
+      player_unlockchallenge1 ""
+      player_unlockchallenge2 ""
+      player_unlockchallenges "0"
+      player_unlockfeature0 ""
+      player_unlockfeature1 ""
+      player_unlockfeature2 ""
+      player_unlockfeatures "0"
+      player_unlockperk0 ""
+      player_unlockperk1 ""
+      player_unlockperk2 ""
+      player_unlockperks "0"
+      player_unlockweapon0 ""
+      player_unlockweapon1 ""
+      player_unlockweapon2 ""
+      player_unlockweapons "0"
+      player_view_pitch_down "85"
+      player_view_pitch_up "85"
+      protocol "6"
+      r_aaAlpha "off"
+      r_aaSamples "1"
+      r_altModelLightingUpdate "0"
+      r_aspectRatio "auto"
+      r_autopriority "0"
+      r_blur "0"
+      r_brightness "0"
+      r_cacheModelLighting "1"
+      r_cacheSModelLighting "1"
+      r_clear "dev-only blink"
+      r_clearColor "0 0 0 0"
+      r_clearColor2 "0 0 0 0"
+      r_colorMap "Unchanged"
+      r_contrast "1"
+      r_customMode ""
+      r_debugLineWidth "1"
+      r_debugShader "none"
+      r_depthPrepass "0"
+      r_desaturation "1"
+      r_detail "1"
+      r_diffuseColorScale "1"
+      r_displayRefresh "75 Hz"
+      r_distortion "1"
+      r_dlightLimit "4"
+      r_dof_bias "0.5"
+      r_dof_enable "1"
+      r_dof_farBlur "1.8"
+      r_dof_farEnd "7000"
+      r_dof_farStart "1000"
+      r_dof_nearBlur "6"
+      r_dof_nearEnd "60"
+      r_dof_nearStart "10"
+      r_dof_tweak "0"
+      r_dof_viewModelEnd "8"
+      r_dof_viewModelStart "2"
+      r_drawDecals "1"
+      r_drawSun "0"
+      r_drawWater "1"
+      r_envMapExponent "5"
+      r_envMapMaxIntensity "0.5"
+      r_envMapMinIntensity "0.2"
+      r_envMapOverride "0"
+      r_envMapSpecular "1"
+      r_envMapSunIntensity "2"
+      r_fastSkin "0"
+      r_filmTweakBrightness "0"
+      r_filmTweakContrast "1.4"
+      r_filmTweakDarkTint "0.7 0.85 1"
+      r_filmTweakDesaturation "0.2"
+      r_filmTweakEnable "0"
+      r_filmTweakInvert "0"
+      r_filmTweakLightTint "1.1 1.05 0.85"
+      r_filmUseTweaks "0"
+      r_floatz "1"
+      r_fog "1"
+      r_forceLod "none"
+      r_fullbright "0"
+      r_fullscreen "1"
+      r_gamma "1.04762"
+      r_glow "1"
+      r_glow_allowed "1"
+      r_glow_allowed_script_forced "0"
+      r_glowTweakBloomCutoff "0.5"
+      r_glowTweakBloomDesaturation "0"
+      r_glowTweakBloomIntensity0 "1"
+      r_glowTweakEnable "0"
+      r_glowTweakRadius0 "5"
+      r_glowUseTweaks "0"
+      r_gpuSync "adaptive"
+      r_highLodDist "-1"
+      r_ignore "0"
+      r_ignorehwgamma "0"
+      r_inGameVideo "1"
+      r_lightMap "Unchanged"
+      r_lightTweakAmbient "0.3"
+      r_lightTweakAmbientColor "0.74902 0.839216 1 1"
+      r_lightTweakDiffuseFraction "0.1"
+      r_lightTweakSunColor "1 0.894118 0.623529 1"
+      r_lightTweakSunDiffuseColor "0.74902 0.839216 1 1"
+      r_lightTweakSunDirection "-30 -340 0"
+      r_lightTweakSunLight "1.6"
+      r_loadForRenderer "1"
+      r_lockPvs "0"
+      r_lodBiasRigid "0"
+      r_lodBiasSkinned "0"
+      r_lodScaleRigid "1"
+      r_lodScaleSkinned "1"
+      r_logFile "0"
+      r_lowestLodDist "-1"
+      r_lowLodDist "-1"
+      r_mediumLodDist "-1"
+      r_mode "1680x1050"
+      r_modelVertColor "1"
+      r_monitor "0"
+      r_multiGpu "0"
+      r_norefresh "0"
+      r_normal "1"
+      r_normalMap "Unchanged"
+      r_outdoor "1"
+      r_outdoorAwayBias "32"
+      r_outdoorDownBias "0"
+      r_outdoorFeather "8"
+      r_picmip "0"
+      r_picmip_bump "0"
+      r_picmip_manual "0"
+      r_picmip_spec "0"
+      r_picmip_water "0"
+      r_polygonOffsetBias "-1"
+      r_polygonOffsetScale "-1"
+      r_portalBevels "0.7"
+      r_portalBevelsOnly "0"
+      r_portalMinClipArea "0.02"
+      r_portalMinRecurseDepth "2"
+      r_portalWalkLimit "0"
+      r_preloadShaders "0"
+      r_pretess "1"
+      r_reflectionProbeGenerate "0"
+      r_reflectionProbeGenerateExit "0"
+      r_reflectionProbeRegenerateAll "0"
+      r_rendererInUse "Shader model 3.0"
+      r_rendererPreference "Default"
+      r_resampleScene "1"
+      r_scaleViewport "1"
+      r_showFbColorDebug "None"
+      r_showFloatZDebug "0"
+      r_showLightGrid "0"
+      r_showMissingLightGrid "0"
+      r_showPixelCost "off"
+      r_showPortals "0"
+      r_singleCell "0"
+      r_skinCache "1"
+      r_skipPvs "0"
+      r_smc_enable "1"
+      r_smp_backend "1"
+      r_smp_worker "1"
+      r_smp_worker_thread0 "1"
+      r_smp_worker_thread1 "1"
+      r_specular "1"
+      r_specularColorScale "1"
+      r_specularMap "Unchanged"
+      r_spotLightBrightness "14"
+      r_spotLightEndRadius "196"
+      r_spotLightEntityShadows "1"
+      r_spotLightFovInnerFraction "0.7"
+      r_spotLightShadows "1"
+      r_spotLightSModelShadows "1"
+      r_spotLightStartRadius "36"
+      r_sse_skinning "1"
+      r_sun_from_dvars "0"
+      r_sun_fx_position "0 0 0"
+      r_sunblind_fadein "0.5"
+      r_sunblind_fadeout "3"
+      r_sunblind_max_angle "5"
+      r_sunblind_max_darken "0.75"
+      r_sunblind_min_angle "30"
+      r_sunflare_fadein "1"
+      r_sunflare_fadeout "1"
+      r_sunflare_max_alpha "1"
+      r_sunflare_max_angle "2"
+      r_sunflare_max_size "2500"
+      r_sunflare_min_angle "45"
+      r_sunflare_min_size "0"
+      r_sunflare_shader "sun_flare"
+      r_sunglare_fadein "0.5"
+      r_sunglare_fadeout "3"
+      r_sunglare_max_angle "5"
+      r_sunglare_max_lighten "0.75"
+      r_sunglare_min_angle "30"
+      r_sunsprite_shader "sun"
+      r_sunsprite_size "16"
+      r_texFilterAnisoMax "4"
+      r_texFilterAnisoMin "1"
+      r_texFilterDisable "0"
+      r_texFilterMipBias "0"
+      r_texFilterMipMode "Unchanged"
+      r_useLayeredMaterials "0"
+      r_vc_makelog "0"
+      r_vc_showlog "0"
+      r_vsync "0"
+      r_warningRepeatDelay "5"
+      r_zfar "0"
+      r_zFeather "0"
+      r_znear "4"
+      r_znear_depthhack "0.1"
+      radius_damage_debug "0"
+      ragdoll_baselerp_time "1000"
+      ragdoll_bullet_force "500"
+      ragdoll_bullet_upbias "0.5"
+      ragdoll_debug "0"
+      ragdoll_dump_anims "0"
+      ragdoll_enable "1"
+      ragdoll_explode_force "18000"
+      ragdoll_explode_upbias "0.8"
+      ragdoll_fps "20"
+      ragdoll_jitter_scale "1"
+      ragdoll_jointlerp_time "3000"
+      ragdoll_max_life "4500"
+      ragdoll_max_simulating "16"
+      ragdoll_rotvel_scale "1"
+      ragdoll_self_collision_scale "1.2"
+      rate "25000"
+      rcon_password ""
+      sc_blur "2"
+      sc_count "24"
+      sc_debugCasterCount "24"
+      sc_debugReceiverCount "24"
+      sc_enable "0"
+      sc_fadeRange "0.25"
+      sc_length "400"
+      sc_offscreenCasterLodBias "0"
+      sc_offscreenCasterLodScale "20"
+      sc_shadowInRate "2"
+      sc_shadowOutRate "5"
+      sc_showDebug "0"
+      sc_showOverlay "0"
+      sc_wantCount "12"
+      sc_wantCountMargin "1"
+      scr_allies "usmc"
+      scr_art_tweak "0"
+      scr_art_visionfile "mp_convoy"
+      scr_axis "arab"
+      scr_cinematic_autofocus "1"
+      scr_ctf_numlives "0"
+      scr_ctf_playerrespawndelay "0"
+      scr_ctf_roundlimit "2"
+      scr_ctf_roundswitch "1"
+      scr_ctf_scorelimit "10"
+      scr_ctf_timelimit "5"
+      scr_ctf_waverespawndelay "15"
+      scr_dm_numlives "0"
+      scr_dm_playerrespawndelay "0"
+      scr_dm_roundlimit "1"
+      scr_dm_scorelimit "150"
+      scr_dm_timelimit "10"
+      scr_dm_waverespawndelay "0"
+      scr_dof_enable "1"
+      scr_dom_numlives "0"
+      scr_dom_playerrespawndelay "0"
+      scr_dom_roundlimit "1"
+      scr_dom_scorelimit "200"
+      scr_dom_timelimit "0"
+      scr_dom_waverespawndelay "0"
+      scr_drawfriend "0"
+      scr_fog_disable "0"
+      scr_game_allowkillcam "1"
+      scr_game_deathpointloss "0"
+      scr_game_forceuav "0"
+      scr_game_graceperiod "0"
+      scr_game_hardpoints "1"
+      scr_game_matchstarttime "5"
+      scr_game_onlyheadshots "0"
+      scr_game_perks "1"
+      scr_game_playerwaittime "15"
+      scr_game_spectatetype "1"
+      scr_game_suicidepointloss "0"
+      scr_hardcore "0"
+      scr_hardpoint_allowartillery "1"
+      scr_hardpoint_allowhelicopter "1"
+      scr_hardpoint_allowsupply "1"
+      scr_hardpoint_allowuav "1"
+      scr_heli_armor "500"
+      scr_heli_armor_bulletdamage "0.3"
+      scr_heli_attract_range "4096"
+      scr_heli_attract_strength "1000"
+      scr_heli_debug "0"
+      scr_heli_dest_wait "2"
+      scr_heli_hardpoint_interval "180"
+      scr_heli_health_degrade "0"
+      scr_heli_loopmax "1"
+      scr_heli_maxhealth "1100"
+      scr_heli_missile_engage_dist "2000"
+      scr_heli_missile_friendlycare "256"
+      scr_heli_missile_max "3"
+      scr_heli_missile_regen_time "10"
+      scr_heli_missile_rof "5"
+      scr_heli_missile_target_cone "0.3"
+      scr_heli_rage_missile "5"
+      scr_heli_target_recognition "0.5"
+      scr_heli_target_spawnprotection "5"
+      scr_heli_targeting_delay "0.5"
+      scr_heli_turret_engage_dist "1000"
+      scr_heli_turret_spinup_delay "0.75"
+      scr_heli_turretClipSize "40"
+      scr_heli_turretReloadTime "1.5"
+      scr_heli_visual_range "3500"
+      scr_intermission_time "30"
+      scr_koth_numlives "0"
+      scr_koth_playerrespawndelay "0"
+      scr_koth_roundlimit "1"
+      scr_koth_roundswitch "1"
+      scr_koth_scorelimit "250"
+      scr_koth_timelimit "15"
+      scr_koth_waverespawndelay "0"
+      scr_mapsize "64"
+      scr_motd ""
+      scr_oldschool "0"
+      scr_player_forcerespawn "1"
+      scr_player_healthregentime "5"
+      scr_player_maxhealth "100"
+      scr_player_numlives "0"
+      scr_player_respawndelay "0"
+      scr_player_sprinttime "4"
+      scr_player_suicidespawndelay "0"
+      scr_RequiredMapAspectratio "1"
+      scr_sab_bombtimer "30"
+      scr_sab_defusetime "5"
+      scr_sab_hotpotato "0"
+      scr_sab_numlives "0"
+      scr_sab_planttime "2.5"
+      scr_sab_playerrespawndelay "7.5"
+      scr_sab_roundlimit "0"
+      scr_sab_roundswitch "1"
+      scr_sab_scorelimit "1"
+      scr_sab_timelimit "20"
+      scr_sab_waverespawndelay "0"
+      scr_sd_bombtimer "45"
+      scr_sd_defusetime "5"
+      scr_sd_multibomb "0"
+      scr_sd_numlives "1"
+      scr_sd_planttime "5"
+      scr_sd_playerrespawndelay "0"
+      scr_sd_roundlimit "0"
+      scr_sd_roundswitch "3"
+      scr_sd_scorelimit "4"
+      scr_sd_timelimit "2.5"
+      scr_sd_waverespawndelay "0"
+      scr_show_unlock_wait "0.1"
+      scr_team_fftype "0"
+      scr_team_kickteamkillers "0"
+      scr_team_respawntime "0"
+      scr_team_teamkillpointloss "1"
+      scr_team_teamkillspawndelay "20"
+      scr_teambalance "0"
+      scr_teamKillPunishCount "3"
+      scr_war_numlives "0"
+      scr_war_playerrespawndelay "0"
+      scr_war_roundlimit "1"
+      scr_war_scorelimit "750"
+      scr_war_timelimit "10"
+      scr_war_waverespawndelay "0"
+      scr_weapon_allowc4 "1"
+      scr_weapon_allowclaymores "1"
+      scr_weapon_allowflash "1"
+      scr_weapon_allowfrags "1"
+      scr_weapon_allowmines "1"
+      scr_weapon_allowrpgs "1"
+      scr_weapon_allowsmoke "1"
+      scr_xpscale "1"
+      sensitivity "5"
+      server1 ""
+      server10 ""
+      server11 ""
+      server12 ""
+      server13 ""
+      server14 ""
+      server15 ""
+      server16 ""
+      server2 ""
+      server3 ""
+      server4 ""
+      server5 ""
+      server6 ""
+      server7 ""
+      server8 ""
+      server9 ""
+      shortversion "1.7"
+      showdrop "0"
+      showpackets "0"
+      sm_enable "0"
+      sm_fastSunShadow "1"
+      sm_lightScore_eyeProjectDist "64"
+      sm_lightScore_spotProjectFrac "0.125"
+      sm_maxLights "4"
+      sm_polygonOffsetBias "0.5"
+      sm_polygonOffsetScale "2"
+      sm_qualitySpotShadow "1"
+      sm_spotEnable "1"
+      sm_spotShadowFadeTime "1"
+      sm_strictCull "1"
+      sm_sunEnable "1"
+      sm_sunSampleSizeNear "0.25"
+      sm_sunShadowCenter "0 0 0"
+      sm_sunShadowScale "1"
+      snaps "30"
+      snd_cinematicVolumeScale "0.85"
+      snd_draw3D "Off"
+      snd_drawInfo "None"
+      snd_enable2D "1"
+      snd_enable3D "1"
+      snd_enableEq "1"
+      snd_enableReverb "1"
+      snd_enableStream "1"
+      snd_errorOnMissing "0"
+      snd_khz "44"
+      snd_levelFadeTime "250"
+      snd_outputConfiguration "Windows default"
+      snd_slaveFadeTime "500"
+      snd_touchStreamFilesOnLoad "0"
+      snd_volume "0.338776"
+      stat_version "10"
+      stopspeed "100"
+      sv_allowAnonymous "0"
+      sv_allowDownload "1"
+      sv_allowedClan1 ""
+      sv_allowedClan2 ""
+      sv_botsPressAttackBtn "1"
+      sv_cheats "0"
+      sv_clientArchive "1"
+      sv_clientSideBullets "1"
+      sv_connectTimeout "45"
+      sv_debugRate "0"
+      sv_debugReliableCmds "0"
+      sv_disableClientConsole "0"
+      sv_FFCheckSums ""
+      sv_FFNames ""
+      sv_floodprotect "4"
+      sv_fps "20"
+      sv_hostname "CoD4Host"
+      sv_iwdNames "iw_13 iw_12 iw_11 iw_10 iw_09 iw_08 iw_07 iw_06 iw_05 iw_04 iw_03 iw_02 iw_01 iw_00"
+      sv_iwds "2115322797 1043426064 -292863836 173489706 -1846635013 -1079795827 -1041447890 -715502781 489843315 499941093 309900900 -165391090 648005745 -1190209610 "
+      sv_keywords ""
+      sv_kickBanTime "300"
+      sv_mapname ""
+      sv_mapRotation "map mp_backlot map mp_bloc map mp_bog map mp_cargoship map mp_citystreets map mp_convoy map mp_countdown map mp_crash map mp_crossfire map mp_farm map mp_overgrown map mp_pipeline map mp_showdown map mp_strike map mp_vacant"
+      sv_mapRotationCurrent ""
+      sv_maxclients "24"
+      sv_maxPing "0"
+      sv_maxRate "5000"
+      sv_minPing "0"
+      sv_packet_info "0"
+      sv_padPackets "0"
+      sv_paused "0"
+      sv_privateClients "0"
+      sv_privatePassword ""
+      sv_punkbuster "1"
+      sv_pure "1"
+      sv_reconnectlimit "3"
+      sv_referencedFFCheckSums "89196 39166328 13517381 259"
+      sv_referencedFFNames "code_post_gfx_mp mp_convoy common_mp mp_convoy_load"
+      sv_referencedIwdNames "main/iw_00 main/iw_04 main/iw_01 main/iw_06 main/iw_02 main/iw_03 main/iw_13 main/iw_12 main/iw_11 main/iw_05"
+      sv_referencedIwds "-1190209610 499941093 648005745 -715502781 -165391090 309900900 2115322797 1043426064 -292863836 489843315 "
+      sv_running "1"
+      sv_serverid "16"
+      sv_showAverageBPS "0"
+      sv_showCommands "0"
+      sv_timeout "240"
+      sv_voice "0"
+      sv_voiceQuality "3"
+      sv_wwwBaseURL ""
+      sv_wwwDlDisconnected "0"
+      sv_wwwDownload "0"
+      sv_zombietime "2"
+      sys_configSum "4379996"
+      sys_configureGHz "10.4183"
+      sys_cpuGHz "2.81247"
+      sys_cpuName "AMD Phenom(tm) II X4 925 Processor"
+      sys_gpu "ATI Radeon HD 5700 Series"
+      sys_lockThreads "none"
+      sys_smp_allowed "1"
+      sys_SSE "1"
+      sys_sysMB "1024"
+      timescale "1"
+      ui_3dwaypointtext "1"
+      ui_allow_classchange "0"
+      ui_allow_controlschange "1"
+      ui_allow_teamchange "0"
+      ui_allowvote "1"
+      ui_bigFont "0.4"
+      ui_bomb_timer "0"
+      ui_borderLowLightScale "0.35"
+      ui_browserFriendlyfire "-1"
+      ui_browserHardcore "-1"
+      ui_browserKillcam "-1"
+      ui_browserMod "0"
+      ui_browserOldSchool "-1"
+      ui_browserShowDedicated "0"
+      ui_browserShowEmpty "1"
+      ui_browserShowFull "1"
+      ui_browserShowPassword "-1"
+      ui_browserShowPunkBuster "-1"
+      ui_browserShowPure "1"
+      ui_buildLocation "-60 460"
+      ui_buildSize "0.3"
+      ui_cinematicsTimestamp "0"
+      ui_connectScreenTextGlowColor "0.3 0.6 0.3 1"
+      ui_currentMap "0"
+      ui_currentNetMap "0"
+      ui_customClassName ""
+      ui_customModeEditName ""
+      ui_customModeName ""
+      ui_deathicontext "1"
+      ui_dedicated "0"
+      ui_drawCrosshair "0"
+      ui_extraBigFont "0.55"
+      ui_friendlyfire "0"
+      ui_gametype "0"
+      ui_hint_text "@MP_NULL"
+      ui_hostname "CoD4Host"
+      ui_hud_hardcore "0"
+      ui_hud_obituaries "1"
+      ui_hud_showobjicons "1"
+      ui_joinGametype "1"
+      ui_lobbypopup ""
+      ui_mapname "mp_backlot"
+      ui_maxclients "32"
+      ui_motd ""
+      ui_mousePitch "0"
+      ui_multiplayer "1"
+      ui_netGametype "4"
+      ui_netGametypeName "war"
+      ui_netSource "2"
+      ui_playerProfileAlreadyChosen "1"
+      ui_playerProfileCount "2"
+      ui_playerProfileNameNew ""
+      ui_playerProfileSelected "PetX"
+      ui_score_bar "0"
+      ui_scorelimit "750"
+      ui_separator_show "1"
+      ui_serverStatusTimeOut "7000"
+      ui_showEndOfGame "0"
+      ui_showList "0"
+      ui_showmap "1"
+      ui_showMenuOnly ""
+      ui_smallFont "0.25"
+      ui_timelimit "10"
+      ui_uav_allies "0"
+      ui_uav_axis "0"
+      ui_uav_client "0"
+      ui_version_show "1"
+      ui_xpText "1"
+      uiscript_debug "0"
+      useFastFile "1"
+      vehDebugClient "0"
+      vehDebugServer "0"
+      vehDriverViewDist "300"
+      vehDriverViewFocusRange "50"
+      vehDriverViewHeightMax "50"
+      vehDriverViewHeightMin "-15"
+      vehHelicopterDecelerationFwd "0.5"
+      vehHelicopterDecelerationSide "1"
+      vehHelicopterHeadSwayDontSwayTheTurret "1"
+      vehHelicopterHoverSpeedThreshold "400"
+      vehHelicopterInvertUpDown "0"
+      vehHelicopterJitterJerkyness "0.3"
+      vehHelicopterLookaheadTime "1"
+      vehHelicopterMaxAccel "45"
+      vehHelicopterMaxAccelVertical "30"
+      vehHelicopterMaxPitch "35"
+      vehHelicopterMaxRoll "35"
+      vehHelicopterMaxSpeed "150"
+      vehHelicopterMaxSpeedVertical "65"
+      vehHelicopterMaxYawAccel "90"
+      vehHelicopterMaxYawRate "120"
+      vehHelicopterRightStickDeadzone "0.3"
+      vehHelicopterScaleMovement "1"
+      vehHelicopterSoftCollisions "0"
+      vehHelicopterStrafeDeadzone "0.3"
+      vehHelicopterTiltFromAcceleration "2"
+      vehHelicopterTiltFromControllerAxes "0"
+      vehHelicopterTiltFromDeceleration "2"
+      vehHelicopterTiltFromFwdAndYaw "0"
+      vehHelicopterTiltFromFwdAndYaw_VelAtMaxTilt "1"
+      vehHelicopterTiltFromVelocity "1"
+      vehHelicopterTiltMomentum "0.4"
+      vehHelicopterTiltSpeed "1.2"
+      vehHelicopterYawOnLeftStick "5"
+      vehTestHorsepower "200"
+      vehTestMaxMPH "40"
+      vehTestWeight "5200"
+      vehTextureScrollScale "0"
+      version "CoD4 MP 1.7 build 568 nightly Wed Jun 18 2008 04:48:38PM win-x86"
+      vid_xpos "3"
+      vid_ypos "22"
+      voice_deadChat "0"
+      voice_global "0"
+      voice_localEcho "0"
+      waypointDebugDraw "0"
+      waypointDistScaleRangeMax "3000"
+      waypointDistScaleRangeMin "1000"
+      waypointDistScaleSmallest "0.8"
+      waypointIconHeight "36"
+      waypointIconWidth "36"
+      waypointOffscreenCornerRadius "105"
+      waypointOffscreenDistanceThresholdAlpha "30"
+      waypointOffscreenPadBottom "30"
+      waypointOffscreenPadLeft "103"
+      waypointOffscreenPadRight "0"
+      waypointOffscreenPadTop "0"
+      waypointOffscreenPointerDistance "20"
+      waypointOffscreenPointerHeight "12"
+      waypointOffscreenPointerWidth "25"
+      waypointOffscreenRoundedCorners "1"
+      waypointOffscreenScaleLength "500"
+      waypointOffscreenScaleSmallest "1"
+      waypointPlayerOffsetCrouch "56"
+      waypointPlayerOffsetProne "30"
+      waypointPlayerOffsetStand "74"
+      waypointSplitscreenScale "1.8"
+      waypointTweakY "-17"
+      wideScreen "1"
+      winvoice_mic_mute "1"
+      winvoice_mic_reclevel "65535"
+      winvoice_mic_scaler "1"
+      winvoice_save_voice "0"
+
+1448 total dvars
+1448 dvar indexes
+=============================== END DVAR DUMP =====================================
+	
+Time Approximation
+
+	  0:05 Time 1 : 1
+	  0:06 Time 0.999 : 1
+	  0:07 Time 0.998 : 1
+	  0:08 Time 0.997 : 1
+	  0:09 Time 0.996 : 1
+	  0:10 Time 0.995 : 1
+	  0:11 Time 0.994 : 1
+	  0:12 Time 0.993 : 1
+	  0:13 Time 0.992 : 1
+	  0:14 Time 0.991 : 1
+	  0:15 Time 0.99 : 1
+	  0:16 Time 0.989 : 1
+	  0:17 Time 0.988 : 1
+	  0:18 Time 0.987 : 1
+	  0:19 Time 0.986 : 1
+	  0:20 Time 0.985 : 1
+	  0:21 Time 0.984 : 1
+	  0:22 Time 0.983 : 1
+	  0:23 Time 0.982 : 1
+	  0:24 Time 0.981 : 1
+	  0:25 Time 0.98 : 1
+	  0:26 Time 0.979 : 1
+	  0:27 Time 0.978 : 1
+	  0:28 Time 0.977 : 1
+	  0:29 Time 0.976 : 1
+	  0:30 Time 0.975 : 1
+	  0:31 Time 0.974 : 0.95
+	  0:32 Time 0.973 : 0.95
+	  0:33 Time 0.972 : 0.95
+	  0:34 Time 0.971 : 0.95
+	  0:35 Time 0.97 : 0.95
+	  0:36 Time 0.969 : 0.95
+	  0:37 Time 0.968 : 0.95
+	  0:38 Time 0.967 : 0.95
+	  0:39 Time 0.966 : 0.95
+	  0:40 Time 0.965 : 0.95
+	  0:41 Time 0.964 : 0.95
+	  0:42 Time 0.963 : 0.95
+	  0:43 Time 0.962 : 0.95
+	  0:44 Time 0.961001 : 0.95
+	  0:44 Time 0.960001 : 0.95
+	  0:45 Time 0.959001 : 0.95
+	  0:46 Time 0.958001 : 0.95
+	  0:47 Time 0.957001 : 0.95
+	  0:48 Time 0.956001 : 0.95
+	  0:49 Time 0.955001 : 0.95
+	  0:50 Time 0.954001 : 0.95
+	  0:51 Time 0.953001 : 0.95
+	  0:52 Time 0.952001 : 0.95
+	  0:53 Time 0.951001 : 0.95
+	  0:54 Time 0.950001 : 0.95
+	  0:55 Time 0.949001 : 0.95
+	  0:56 Time 0.948001 : 0.95
+	  0:57 Time 0.947001 : 0.95
+	  0:58 Time 0.946001 : 0.95
+	  0:59 Time 0.945001 : 0.95
+	  1:00 Time 0.944001 : 0.95
+	  1:01 Time 0.943001 : 0.95
+	  1:02 Time 0.942001 : 0.95
+	  1:03 Time 0.941001 : 0.95
+	  1:03 Time 0.940001 : 0.95
+	  1:04 Time 0.939001 : 0.95
+	  1:05 Time 0.938001 : 0.95
+	  1:06 Time 0.937001 : 0.95
+	  1:07 Time 0.936001 : 0.95
+	  1:08 Time 0.935001 : 0.95
+	  1:09 Time 0.934001 : 0.95
+	  1:10 Time 0.933001 : 0.95
+	  1:11 Time 0.932001 : 0.95
+	  1:12 Time 0.931001 : 0.95
+	  1:13 Time 0.930001 : 0.95
+	  1:14 Time 0.929001 : 0.95
+	  1:15 Time 0.928001 : 0.95
+	  1:16 Time 0.927001 : 0.95
+	  1:17 Time 0.926001 : 0.95
+	  1:18 Time 0.925001 : 0.95
+	  1:19 Time 0.924001 : 0.9
+	  1:20 Time 0.923001 : 0.9
+	  1:20 Time 0.922001 : 0.9
+	  1:21 Time 0.921001 : 0.9
+	  1:22 Time 0.920001 : 0.9
+	  1:23 Time 0.919001 : 0.9
+	  1:24 Time 0.918001 : 0.9
+	  1:25 Time 0.917001 : 0.9
+	  1:26 Time 0.916001 : 0.9
+	  1:27 Time 0.915001 : 0.9
+	  1:28 Time 0.914001 : 0.9
+	  1:29 Time 0.913001 : 0.9
+	  1:29 Time 0.912001 : 0.9
+	  1:30 Time 0.911001 : 0.9
+	  1:31 Time 0.910001 : 0.9
+	  1:32 Time 0.909001 : 0.9
+	  1:33 Time 0.908001 : 0.9
+	  1:34 Time 0.907001 : 0.9
+	  1:35 Time 0.906001 : 0.9
+	  1:36 Time 0.905001 : 0.9
+	  1:37 Time 0.904001 : 0.9
+	  1:38 Time 0.903001 : 0.9
+	  1:38 Time 0.902001 : 0.9
+	  1:39 Time 0.901001 : 0.9
+	  1:40 Time 0.900001 : 0.9
+	  1:41 Time 0.899001 : 0.9
+	  1:42 Time 0.898001 : 0.9
+	  1:43 Time 0.897001 : 0.9
+	  1:44 Time 0.896001 : 0.9
+	  1:45 Time 0.895001 : 0.9
+	  1:46 Time 0.894001 : 0.9
+	  1:47 Time 0.893001 : 0.9
+	  1:47 Time 0.892001 : 0.9
+	  1:48 Time 0.891001 : 0.9
+	  1:49 Time 0.890001 : 0.9
+	  1:50 Time 0.889001 : 0.9
+	  1:51 Time 0.888001 : 0.9
+	  1:52 Time 0.887001 : 0.9
+	  1:53 Time 0.886001 : 0.9
+	  1:54 Time 0.885001 : 0.9
+	  1:55 Time 0.884001 : 0.9
+	  1:56 Time 0.883002 : 0.9
+	  1:56 Time 0.882002 : 0.9
+	  1:57 Time 0.881002 : 0.9
+	  1:58 Time 0.880002 : 0.9
+	  1:59 Time 0.879002 : 0.9
+	  2:00 Time 0.878002 : 0.9
+	  2:01 Time 0.877002 : 0.9
+	  2:02 Time 0.876002 : 0.9
+	  2:03 Time 0.875002 : 0.9
+	  2:04 Time 0.874002 : 0.85
+	  2:04 Time 0.873002 : 0.85
+	  2:05 Time 0.872002 : 0.85
+	  2:06 Time 0.871002 : 0.85
+	  2:07 Time 0.870002 : 0.85
+	  2:08 Time 0.869002 : 0.85
+	  2:09 Time 0.868002 : 0.85
+	  2:10 Time 0.867002 : 0.85
+	  2:10 Time 0.866002 : 0.85
+	  2:11 Time 0.865002 : 0.85
+	  2:12 Time 0.864002 : 0.85
+	  2:13 Time 0.863002 : 0.85
+	  2:14 Time 0.862002 : 0.85
+	  2:15 Time 0.861002 : 0.85
+	  2:15 Time 0.860002 : 0.85
+	  2:16 Time 0.859002 : 0.85
+	  2:17 Time 0.858002 : 0.85
+	  2:18 Time 0.857002 : 0.85
+	  2:19 Time 0.856002 : 0.85
+	  2:20 Time 0.855002 : 0.85
+	  2:21 Time 0.854002 : 0.85
+	  2:21 Time 0.853002 : 0.85
+	  2:22 Time 0.852002 : 0.85
+	  2:23 Time 0.851002 : 0.85
+	  2:24 Time 0.850002 : 0.85
+	  2:25 Time 0.849002 : 0.85
+	  2:26 Time 0.848002 : 0.85
+	  2:27 Time 0.847002 : 0.85
+	  2:27 Time 0.846002 : 0.85
+	  2:28 Time 0.845002 : 0.85
+	  2:29 Time 0.844002 : 0.85
+	  2:30 Time 0.843002 : 0.85
+	  2:31 Time 0.842002 : 0.85
+	  2:32 Time 0.841002 : 0.85
+	  2:32 Time 0.840002 : 0.85
+	  2:33 Time 0.839002 : 0.85
+	  2:34 Time 0.838002 : 0.85
+	  2:35 Time 0.837002 : 0.85
+	  2:36 Time 0.836002 : 0.85
+	  2:37 Time 0.835002 : 0.85
+	  2:38 Time 0.834002 : 0.85
+	  2:38 Time 0.833002 : 0.85
+	  2:39 Time 0.832002 : 0.85
+	  2:40 Time 0.831002 : 0.85
+	  2:41 Time 0.830002 : 0.85
+	  2:42 Time 0.829002 : 0.85
+	  2:43 Time 0.828002 : 0.85
+	  2:44 Time 0.827002 : 0.85
+	  2:44 Time 0.826002 : 0.85
+	  2:45 Time 0.825002 : 0.85
+	  2:46 Time 0.824002 : 0.8
+	  2:47 Time 0.823002 : 0.8
+	  2:48 Time 0.822002 : 0.8
+	  2:48 Time 0.821002 : 0.8
+	  2:49 Time 0.820002 : 0.8
+	  2:50 Time 0.819002 : 0.8
+	  2:51 Time 0.818002 : 0.8
+	  2:52 Time 0.817002 : 0.8
+	  2:52 Time 0.816002 : 0.8
+	  2:53 Time 0.815002 : 0.8
+	  2:54 Time 0.814002 : 0.8
+	  2:55 Time 0.813002 : 0.8
+	  2:56 Time 0.812002 : 0.8
+	  2:56 Time 0.811002 : 0.8
+	  2:57 Time 0.810002 : 0.8
+	  2:58 Time 0.809002 : 0.8
+	  2:59 Time 0.808002 : 0.8
+	  3:00 Time 0.807002 : 0.8
+	  3:00 Time 0.806002 : 0.8
+	  3:01 Time 0.805003 : 0.8
+	  3:02 Time 0.804003 : 0.8
+	  3:03 Time 0.803003 : 0.8
+	  3:04 Time 0.802003 : 0.8
+	  3:04 Time 0.801003 : 0.8
+	  3:05 Time 0.800003 : 0.8
+	  3:06 Time 0.799003 : 0.8
+	  3:07 Time 0.798003 : 0.8
+	  3:08 Time 0.797003 : 0.8
+	  3:08 Time 0.796003 : 0.8
+	  3:09 Time 0.795003 : 0.8
+	  3:10 Time 0.794003 : 0.8
+	  3:11 Time 0.793003 : 0.8
+	  3:12 Time 0.792003 : 0.8
+	  3:12 Time 0.791003 : 0.8
+	  3:13 Time 0.790003 : 0.8
+	  3:14 Time 0.789003 : 0.8
+	  3:15 Time 0.788003 : 0.8
+	  3:16 Time 0.787003 : 0.8
+	  3:16 Time 0.786003 : 0.8
+	  3:17 Time 0.785003 : 0.8
+	  3:18 Time 0.784003 : 0.8
+	  3:19 Time 0.783003 : 0.8
+	  3:20 Time 0.782003 : 0.8
+	  3:20 Time 0.781003 : 0.8
+	  3:21 Time 0.780003 : 0.8
+	  3:22 Time 0.779003 : 0.8
+	  3:23 Time 0.778003 : 0.8
+	  3:24 Time 0.777003 : 0.8
+	  3:24 Time 0.776003 : 0.8
+	  3:25 Time 0.775003 : 0.8
+	  3:26 Time 0.774003 : 0.75
+	  3:27 Time 0.773003 : 0.75
+	  3:27 Time 0.772003 : 0.75
+	  3:28 Time 0.771003 : 0.75
+	  3:29 Time 0.770003 : 0.75
+	  3:30 Time 0.769003 : 0.75
+	  3:30 Time 0.768003 : 0.75
+	  3:31 Time 0.767003 : 0.75
+	  3:32 Time 0.766003 : 0.75
+	  3:33 Time 0.765003 : 0.75
+	  3:33 Time 0.764003 : 0.75
+	  3:34 Time 0.763003 : 0.75
+	  3:35 Time 0.762003 : 0.75
+	  3:36 Time 0.761003 : 0.75
+	  3:36 Time 0.760003 : 0.75
+	  3:37 Time 0.759003 : 0.75
+	  3:38 Time 0.758003 : 0.75
+	  3:39 Time 0.757003 : 0.75
+	  3:39 Time 0.756003 : 0.75
+	  3:40 Time 0.755003 : 0.75
+	  3:41 Time 0.754003 : 0.75
+	  3:42 Time 0.753003 : 0.75
+	  3:42 Time 0.752003 : 0.75
+	  3:43 Time 0.751003 : 0.75
+	  3:44 Time 0.750003 : 0.75
+	  3:45 Time 0.749003 : 0.75
+	  3:45 Time 0.748003 : 0.75
+	  3:46 Time 0.747003 : 0.75
+	  3:47 Time 0.746003 : 0.75
+	  3:48 Time 0.745003 : 0.75
+	  3:48 Time 0.744003 : 0.75
+	  3:49 Time 0.743003 : 0.75
+	  3:50 Time 0.742003 : 0.75
+	  3:51 Time 0.741003 : 0.75
+	  3:51 Time 0.740003 : 0.75
+	  3:52 Time 0.739003 : 0.75
+	  3:53 Time 0.738003 : 0.75
+	  3:54 Time 0.737003 : 0.75
+	  3:54 Time 0.736003 : 0.75
+	  3:55 Time 0.735003 : 0.75
+	  3:56 Time 0.734003 : 0.75
+	  3:57 Time 0.733003 : 0.75
+	  3:57 Time 0.732003 : 0.75
+	  3:58 Time 0.731003 : 0.75
+	  3:59 Time 0.730003 : 0.75
+	  4:00 Time 0.729003 : 0.75
+	  4:00 Time 0.728004 : 0.75
+	  4:01 Time 0.727004 : 0.75
+	  4:02 Time 0.726004 : 0.75
+	  4:03 Time 0.725004 : 0.75
+	  4:03 Time 0.724004 : 0.7
+	  4:04 Time 0.723004 : 0.7
+	  4:05 Time 0.722004 : 0.7
+	  4:06 Time 0.721004 : 0.7
+	  4:06 Time 0.720004 : 0.7
+	  4:07 Time 0.719004 : 0.7
+	  4:08 Time 0.718004 : 0.7
+	  4:08 Time 0.717004 : 0.7
+	  4:09 Time 0.716004 : 0.7
+	  4:10 Time 0.715004 : 0.7
+	  4:10 Time 0.714004 : 0.7
+	  4:11 Time 0.713004 : 0.7
+	  4:12 Time 0.712004 : 0.7
+	  4:13 Time 0.711004 : 0.7
+	  4:13 Time 0.710004 : 0.7
+	  4:14 Time 0.709004 : 0.7
+	  4:15 Time 0.708004 : 0.7
+	  4:15 Time 0.707004 : 0.7
+	  4:16 Time 0.706004 : 0.7
+	  4:17 Time 0.705004 : 0.7
+	  4:17 Time 0.704004 : 0.7
+	  4:18 Time 0.703004 : 0.7
+	  4:19 Time 0.702004 : 0.7
+	  4:20 Time 0.701004 : 0.7
+	  4:20 Time 0.700004 : 0.7
+	  4:21 Time 0.699004 : 0.7
+	  4:22 Time 0.698004 : 0.7
+	  4:22 Time 0.697004 : 0.7
+	  4:23 Time 0.696004 : 0.7
+	  4:24 Time 0.695004 : 0.7
+	  4:24 Time 0.694004 : 0.7
+	  4:25 Time 0.693004 : 0.7
+	  4:26 Time 0.692004 : 0.7
+	  4:27 Time 0.691004 : 0.7
+	  4:27 Time 0.690004 : 0.7
+	  4:28 Time 0.689004 : 0.7
+	  4:29 Time 0.688004 : 0.7
+	  4:29 Time 0.687004 : 0.7
+	  4:30 Time 0.686004 : 0.7
+	  4:31 Time 0.685004 : 0.7
+	  4:31 Time 0.684004 : 0.7
+	  4:32 Time 0.683004 : 0.7
+	  4:33 Time 0.682004 : 0.7
+	  4:34 Time 0.681004 : 0.7
+	  4:34 Time 0.680004 : 0.7
+	  4:35 Time 0.679004 : 0.7
+	  4:36 Time 0.678004 : 0.7
+	  4:36 Time 0.677004 : 0.7
+	  4:37 Time 0.676004 : 0.7
+	  4:38 Time 0.675004 : 0.7
+	  4:38 Time 0.674004 : 0.65
+	  4:39 Time 0.673004 : 0.65
+	  4:40 Time 0.672004 : 0.65
+	  4:40 Time 0.671004 : 0.65
+	  4:41 Time 0.670004 : 0.65
+	  4:42 Time 0.669004 : 0.65
+	  4:42 Time 0.668004 : 0.65
+	  4:43 Time 0.667004 : 0.65
+	  4:44 Time 0.666004 : 0.65
+	  4:44 Time 0.665004 : 0.65
+	  4:45 Time 0.664004 : 0.65
+	  4:46 Time 0.663004 : 0.65
+	  4:46 Time 0.662004 : 0.65
+	  4:47 Time 0.661004 : 0.65
+	  4:47 Time 0.660004 : 0.65
+	  4:48 Time 0.659004 : 0.65
+	  4:49 Time 0.658004 : 0.65
+	  4:49 Time 0.657004 : 0.65
+	  4:50 Time 0.656004 : 0.65
+	  4:51 Time 0.655004 : 0.65
+	  4:51 Time 0.654004 : 0.65
+	  4:52 Time 0.653004 : 0.65
+	  4:53 Time 0.652004 : 0.65
+	  4:53 Time 0.651004 : 0.65
+	  4:54 Time 0.650005 : 0.65
+	  4:55 Time 0.649005 : 0.65
+	  4:55 Time 0.648005 : 0.65
+	  4:56 Time 0.647005 : 0.65
+	  4:57 Time 0.646005 : 0.65
+	  4:57 Time 0.645005 : 0.65
+	  4:58 Time 0.644005 : 0.65
+	  4:59 Time 0.643005 : 0.65
+	  4:59 Time 0.642005 : 0.65
+	  5:00 Time 0.641005 : 0.65
+	  5:00 Time 0.640005 : 0.65
+	  5:01 Time 0.639005 : 0.65
+	  5:02 Time 0.638005 : 0.65
+	  5:02 Time 0.637005 : 0.65
+	  5:03 Time 0.636005 : 0.65
+	  5:04 Time 0.635005 : 0.65
+	  5:04 Time 0.634005 : 0.65
+	  5:05 Time 0.633005 : 0.65
+	  5:06 Time 0.632005 : 0.65
+	  5:06 Time 0.631005 : 0.65
+	  5:07 Time 0.630005 : 0.65
+	  5:08 Time 0.629005 : 0.65
+	  5:08 Time 0.628005 : 0.65
+	  5:09 Time 0.627005 : 0.65
+	  5:10 Time 0.626005 : 0.65
+	  5:10 Time 0.625005 : 0.65
+	  5:11 Time 0.624005 : 0.6
+	  5:11 Time 0.623005 : 0.6
+	  5:12 Time 0.622005 : 0.6
+	  5:13 Time 0.621005 : 0.6
+	  5:13 Time 0.620005 : 0.6
+	  5:14 Time 0.619005 : 0.6
+	  5:14 Time 0.618005 : 0.6
+	  5:15 Time 0.617005 : 0.6
+	  5:16 Time 0.616005 : 0.6
+	  5:16 Time 0.615005 : 0.6
+	  5:17 Time 0.614005 : 0.6
+	  5:17 Time 0.613005 : 0.6
+	  5:18 Time 0.612005 : 0.6
+	  5:19 Time 0.611005 : 0.6
+	  5:19 Time 0.610005 : 0.6
+	  5:20 Time 0.609005 : 0.6
+	  5:20 Time 0.608005 : 0.6
+	  5:21 Time 0.607005 : 0.6
+	  5:22 Time 0.606005 : 0.6
+	  5:22 Time 0.605005 : 0.6
+	  5:23 Time 0.604005 : 0.6
+	  5:23 Time 0.603005 : 0.6
+	  5:24 Time 0.602005 : 0.6
+	  5:25 Time 0.601005 : 0.6
+	  5:25 Time 0.600005 : 0.6
+	  5:26 Time 0.599005 : 0.6
+	  5:26 Time 0.598005 : 0.6
+	  5:27 Time 0.597005 : 0.6
+	  5:28 Time 0.596005 : 0.6
+	  5:28 Time 0.595005 : 0.6
+	  5:29 Time 0.594005 : 0.6
+	  5:29 Time 0.593005 : 0.6
+	  5:30 Time 0.592005 : 0.6
+	  5:31 Time 0.591005 : 0.6
+	  5:31 Time 0.590005 : 0.6
+	  5:32 Time 0.589005 : 0.6
+	  5:32 Time 0.588005 : 0.6
+	  5:33 Time 0.587005 : 0.6
+	  5:34 Time 0.586005 : 0.6
+	  5:34 Time 0.585005 : 0.6
+	  5:35 Time 0.584005 : 0.6
+	  5:35 Time 0.583005 : 0.6
+	  5:36 Time 0.582005 : 0.6
+	  5:37 Time 0.581005 : 0.6
+	  5:37 Time 0.580005 : 0.6
+	  5:38 Time 0.579005 : 0.6
+	  5:38 Time 0.578005 : 0.6
+	  5:39 Time 0.577005 : 0.6
+	  5:40 Time 0.576005 : 0.6
+	  5:40 Time 0.575005 : 0.6
+	  5:41 Time 0.574005 : 0.55
+	  5:41 Time 0.573005 : 0.55
+	  5:42 Time 0.572006 : 0.55
+	  5:42 Time 0.571006 : 0.55
+	  5:43 Time 0.570006 : 0.55
+	  5:44 Time 0.569006 : 0.55
+	  5:44 Time 0.568006 : 0.55
+	  5:45 Time 0.567006 : 0.55
+	  5:45 Time 0.566006 : 0.55
+	  5:46 Time 0.565006 : 0.55
+	  5:46 Time 0.564006 : 0.55
+	  5:47 Time 0.563006 : 0.55
+	  5:47 Time 0.562006 : 0.55
+	  5:48 Time 0.561006 : 0.55
+	  5:48 Time 0.560006 : 0.55
+	  5:49 Time 0.559006 : 0.55
+	  5:50 Time 0.558006 : 0.55
+	  5:50 Time 0.557006 : 0.55
+	  5:51 Time 0.556006 : 0.55
+	  5:51 Time 0.555006 : 0.55
+	  5:52 Time 0.554006 : 0.55
+	  5:52 Time 0.553006 : 0.55
+	  5:53 Time 0.552006 : 0.55
+	  5:53 Time 0.551006 : 0.55
+	  5:54 Time 0.550006 : 0.55
+	  5:55 Time 0.549006 : 0.55
+	  5:55 Time 0.548006 : 0.55
+	  5:56 Time 0.547006 : 0.55
+	  5:56 Time 0.546006 : 0.55
+	  5:57 Time 0.545006 : 0.55
+	  5:57 Time 0.544006 : 0.55
+	  5:58 Time 0.543006 : 0.55
+	  5:58 Time 0.542006 : 0.55
+	  5:59 Time 0.541006 : 0.55
+	  5:59 Time 0.540006 : 0.55
+	  6:00 Time 0.539006 : 0.55
+	  6:01 Time 0.538006 : 0.55
+	  6:01 Time 0.537006 : 0.55
+	  6:02 Time 0.536006 : 0.55
+	  6:02 Time 0.535006 : 0.55
+	  6:03 Time 0.534006 : 0.55
+	  6:03 Time 0.533006 : 0.55
+	  6:04 Time 0.532006 : 0.55
+	  6:04 Time 0.531006 : 0.55
+	  6:05 Time 0.530006 : 0.55
+	  6:06 Time 0.529006 : 0.55
+	  6:06 Time 0.528006 : 0.55
+	  6:07 Time 0.527006 : 0.55
+	  6:07 Time 0.526006 : 0.55
+	  6:08 Time 0.525006 : 0.55
+	  6:08 Time 0.524006 : 0.5
+	  6:09 Time 0.523006 : 0.5
+	  6:09 Time 0.522006 : 0.5
+	  6:10 Time 0.521006 : 0.5
+	  6:10 Time 0.520006 : 0.5
+	  6:11 Time 0.519006 : 0.5
+	  6:11 Time 0.518006 : 0.5
+	  6:12 Time 0.517006 : 0.5
+	  6:12 Time 0.516006 : 0.5
+	  6:13 Time 0.515006 : 0.5
+	  6:13 Time 0.514006 : 0.5
+	  6:14 Time 0.513006 : 0.5
+	  6:14 Time 0.512006 : 0.5
+	  6:15 Time 0.511006 : 0.5
+	  6:15 Time 0.510006 : 0.5
+	  6:16 Time 0.509006 : 0.5
+	  6:16 Time 0.508006 : 0.5
+	  6:17 Time 0.507006 : 0.5
+	  6:17 Time 0.506006 : 0.5
+	  6:18 Time 0.505006 : 0.5
+	  6:18 Time 0.504006 : 0.5
+	  6:19 Time 0.503006 : 0.5
+	  6:19 Time 0.502006 : 0.5
+	  6:20 Time 0.501006 : 0.5
+	  6:20 Time 0.500006 : 0.5
+	  6:21 Time 0.499006 : 0.5
+	  6:21 Time 0.498006 : 0.5
+	  6:22 Time 0.497006 : 0.5
+	  6:22 Time 0.496006 : 0.5
+	  6:23 Time 0.495007 : 0.5
+	  6:23 Time 0.494007 : 0.5
+	  6:24 Time 0.493007 : 0.5
+	  6:24 Time 0.492007 : 0.5
+	  6:25 Time 0.491007 : 0.5
+	  6:25 Time 0.490007 : 0.5
+	  6:26 Time 0.489007 : 0.5
+	  6:26 Time 0.488007 : 0.5
+	  6:27 Time 0.487007 : 0.5
+	  6:27 Time 0.486007 : 0.5
+	  6:28 Time 0.485007 : 0.5
+	  6:28 Time 0.484007 : 0.5
+	  6:29 Time 0.483007 : 0.5
+	  6:29 Time 0.482007 : 0.5
+	  6:30 Time 0.481007 : 0.5
+	  6:30 Time 0.480007 : 0.5
+	  6:31 Time 0.479007 : 0.5
+	  6:31 Time 0.478007 : 0.5
+	  6:32 Time 0.477007 : 0.5
+	  6:32 Time 0.476007 : 0.5
+	  6:33 Time 0.475007 : 0.5
+	  6:33 Time 0.474007 : 0.45
+	  6:34 Time 0.473007 : 0.45
+	  6:34 Time 0.472007 : 0.45
+	  6:35 Time 0.471007 : 0.45
+	  6:35 Time 0.470007 : 0.45
+	  6:35 Time 0.469007 : 0.45
+	  6:36 Time 0.468007 : 0.45
+	  6:36 Time 0.467007 : 0.45
+	  6:37 Time 0.466007 : 0.45
+	  6:37 Time 0.465007 : 0.45
+	  6:38 Time 0.464007 : 0.45
+	  6:38 Time 0.463007 : 0.45
+	  6:39 Time 0.462007 : 0.45
+	  6:39 Time 0.461007 : 0.45
+	  6:39 Time 0.460007 : 0.45
+	  6:40 Time 0.459007 : 0.45
+	  6:40 Time 0.458007 : 0.45
+	  6:41 Time 0.457007 : 0.45
+	  6:41 Time 0.456007 : 0.45
+	  6:42 Time 0.455007 : 0.45
+	  6:42 Time 0.454007 : 0.45
+	  6:43 Time 0.453007 : 0.45
+	  6:43 Time 0.452007 : 0.45
+	  6:44 Time 0.451007 : 0.45
+	  6:44 Time 0.450007 : 0.45
+	  6:44 Time 0.449007 : 0.45
+	  6:45 Time 0.448007 : 0.45
+	  6:45 Time 0.447007 : 0.45
+	  6:46 Time 0.446007 : 0.45
+	  6:46 Time 0.445007 : 0.45
+	  6:47 Time 0.444007 : 0.45
+	  6:47 Time 0.443007 : 0.45
+	  6:48 Time 0.442007 : 0.45
+	  6:48 Time 0.441007 : 0.45
+	  6:48 Time 0.440007 : 0.45
+	  6:49 Time 0.439007 : 0.45
+	  6:49 Time 0.438007 : 0.45
+	  6:50 Time 0.437007 : 0.45
+	  6:50 Time 0.436007 : 0.45
+	  6:51 Time 0.435007 : 0.45
+	  6:51 Time 0.434007 : 0.45
+	  6:52 Time 0.433007 : 0.45
+	  6:52 Time 0.432007 : 0.45
+	  6:53 Time 0.431007 : 0.45
+	  6:53 Time 0.430007 : 0.45
+	  6:53 Time 0.429007 : 0.45
+	  6:54 Time 0.428007 : 0.45
+	  6:54 Time 0.427007 : 0.45
+	  6:55 Time 0.426007 : 0.45
+	  6:55 Time 0.425007 : 0.45
+	  6:56 Time 0.424007 : 0.4
+	  6:56 Time 0.423007 : 0.4
+	  6:56 Time 0.422007 : 0.4
+	  6:57 Time 0.421007 : 0.4
+	  6:57 Time 0.420007 : 0.4
+	  6:58 Time 0.419007 : 0.4
+	  6:58 Time 0.418007 : 0.4
+	  6:58 Time 0.417008 : 0.4
+	  6:59 Time 0.416008 : 0.4
+	  6:59 Time 0.415008 : 0.4
+	  7:00 Time 0.414008 : 0.4
+	  7:00 Time 0.413008 : 0.4
+	  7:00 Time 0.412008 : 0.4
+	  7:01 Time 0.411008 : 0.4
+	  7:01 Time 0.410008 : 0.4
+	  7:02 Time 0.409008 : 0.4
+	  7:02 Time 0.408008 : 0.4
+	  7:02 Time 0.407008 : 0.4
+	  7:03 Time 0.406008 : 0.4
+	  7:03 Time 0.405008 : 0.4
+	  7:04 Time 0.404008 : 0.4
+	  7:04 Time 0.403008 : 0.4
+	  7:04 Time 0.402008 : 0.4
+	  7:05 Time 0.401008 : 0.4
+	  7:05 Time 0.400008 : 0.4
+	  7:06 Time 0.399008 : 0.4
+	  7:06 Time 0.398008 : 0.4
+	  7:06 Time 0.397008 : 0.4
+	  7:07 Time 0.396008 : 0.4
+	  7:07 Time 0.395008 : 0.4
+	  7:08 Time 0.394008 : 0.4
+	  7:08 Time 0.393008 : 0.4
+	  7:08 Time 0.392008 : 0.4
+	  7:09 Time 0.391008 : 0.4
+	  7:09 Time 0.390008 : 0.4
+	  7:10 Time 0.389008 : 0.4
+	  7:10 Time 0.388008 : 0.4
+	  7:10 Time 0.387008 : 0.4
+	  7:11 Time 0.386008 : 0.4
+	  7:11 Time 0.385008 : 0.4
+	  7:12 Time 0.384008 : 0.4
+	  7:12 Time 0.383008 : 0.4
+	  7:12 Time 0.382008 : 0.4
+	  7:13 Time 0.381008 : 0.4
+	  7:13 Time 0.380008 : 0.4
+	  7:14 Time 0.379008 : 0.4
+	  7:14 Time 0.378008 : 0.4
+	  7:14 Time 0.377008 : 0.4
+	  7:15 Time 0.376008 : 0.4
+	  7:15 Time 0.375008 : 0.4
+	  7:16 Time 0.374008 : 0.35
+	  7:16 Time 0.373008 : 0.35
+	  7:16 Time 0.372008 : 0.35
+	  7:17 Time 0.371008 : 0.35
+	  7:17 Time 0.370008 : 0.35
+	  7:17 Time 0.369008 : 0.35
+	  7:18 Time 0.368008 : 0.35
+	  7:18 Time 0.367008 : 0.35
+	  7:18 Time 0.366008 : 0.35
+	  7:19 Time 0.365008 : 0.35
+	  7:19 Time 0.364008 : 0.35
+	  7:19 Time 0.363008 : 0.35
+	  7:20 Time 0.362008 : 0.35
+	  7:20 Time 0.361008 : 0.35
+	  7:20 Time 0.360008 : 0.35
+	  7:21 Time 0.359008 : 0.35
+	  7:21 Time 0.358008 : 0.35
+	  7:22 Time 0.357008 : 0.35
+	  7:22 Time 0.356008 : 0.35
+	  7:22 Time 0.355008 : 0.35
+	  7:23 Time 0.354008 : 0.35
+	  7:23 Time 0.353008 : 0.35
+	  7:23 Time 0.352008 : 0.35
+	  7:24 Time 0.351008 : 0.35
+	  7:24 Time 0.350008 : 0.35
+	  7:24 Time 0.349008 : 0.35
+	  7:25 Time 0.348008 : 0.35
+	  7:25 Time 0.347008 : 0.35
+	  7:25 Time 0.346008 : 0.35
+	  7:26 Time 0.345008 : 0.35
+	  7:26 Time 0.344008 : 0.35
+	  7:26 Time 0.343008 : 0.35
+	  7:27 Time 0.342008 : 0.35
+	  7:27 Time 0.341008 : 0.35
+	  7:27 Time 0.340008 : 0.35
+	  7:28 Time 0.339009 : 0.35
+	  7:28 Time 0.338009 : 0.35
+	  7:29 Time 0.337009 : 0.35
+	  7:29 Time 0.336009 : 0.35
+	  7:29 Time 0.335009 : 0.35
+	  7:30 Time 0.334009 : 0.35
+	  7:30 Time 0.333009 : 0.35
+	  7:30 Time 0.332009 : 0.35
+	  7:31 Time 0.331009 : 0.35
+	  7:31 Time 0.330009 : 0.35
+	  7:31 Time 0.329009 : 0.35
+	  7:32 Time 0.328009 : 0.35
+	  7:32 Time 0.327009 : 0.35
+	  7:32 Time 0.326009 : 0.35
+	  7:33 Time 0.325009 : 0.35
+	  7:33 Time 0.324009 : 0.3
+	  7:33 Time 0.323009 : 0.3
+	  7:34 Time 0.322009 : 0.3
+	  7:34 Time 0.321009 : 0.3
+	  7:34 Time 0.320009 : 0.3
+	  7:35 Time 0.319009 : 0.3
+	  7:35 Time 0.318009 : 0.3
+	  7:35 Time 0.317009 : 0.3
+	  7:35 Time 0.316009 : 0.3
+	  7:36 Time 0.315009 : 0.3
+	  7:36 Time 0.314009 : 0.3
+	  7:36 Time 0.313009 : 0.3
+	  7:37 Time 0.312009 : 0.3
+	  7:37 Time 0.311009 : 0.3
+	  7:37 Time 0.310009 : 0.3
+	  7:38 Time 0.309009 : 0.3
+	  7:38 Time 0.308009 : 0.3
+	  7:38 Time 0.307009 : 0.3
+	  7:38 Time 0.306009 : 0.3
+	  7:39 Time 0.305009 : 0.3
+	  7:39 Time 0.304009 : 0.3
+	  7:39 Time 0.303009 : 0.3
+	  7:40 Time 0.302009 : 0.3
+	  7:40 Time 0.301009 : 0.3
+	  7:40 Time 0.300009 : 0.3
+	  7:41 Time 0.299009 : 0.3
+	  7:41 Time 0.298009 : 0.3
+	  7:41 Time 0.297009 : 0.3
+	  7:41 Time 0.296009 : 0.3
+	  7:42 Time 0.295009 : 0.3
+	  7:42 Time 0.294009 : 0.3
+	  7:42 Time 0.293009 : 0.3
+	  7:43 Time 0.292009 : 0.3
+	  7:43 Time 0.291009 : 0.3
+	  7:43 Time 0.290009 : 0.3
+	  7:44 Time 0.289009 : 0.3
+	  7:44 Time 0.288009 : 0.3
+	  7:44 Time 0.287009 : 0.3
+	  7:44 Time 0.286009 : 0.3
+	  7:45 Time 0.285009 : 0.3
+	  7:45 Time 0.284009 : 0.3
+	  7:45 Time 0.283009 : 0.3
+	  7:46 Time 0.282009 : 0.3
+	  7:46 Time 0.281009 : 0.3
+	  7:46 Time 0.280009 : 0.3
+	  7:47 Time 0.279009 : 0.3
+	  7:47 Time 0.278009 : 0.3
+	  7:47 Time 0.277009 : 0.3
+	  7:47 Time 0.276009 : 0.3
+	  7:48 Time 0.275009 : 0.3
+	  7:48 Time 0.274009 : 0.25
+	  7:48 Time 0.273009 : 0.25
+	  7:48 Time 0.272009 : 0.25
+	  7:49 Time 0.271009 : 0.25
+	  7:49 Time 0.270009 : 0.25
+	  7:49 Time 0.269009 : 0.25
+	  7:49 Time 0.268009 : 0.25
+	  7:50 Time 0.267009 : 0.25
+	  7:50 Time 0.266009 : 0.25
+	  7:50 Time 0.265009 : 0.25
+	  7:50 Time 0.264009 : 0.25
+	  7:51 Time 0.263009 : 0.25
+	  7:51 Time 0.26201 : 0.25
+	  7:51 Time 0.26101 : 0.25
+	  7:51 Time 0.26001 : 0.25
+	  7:52 Time 0.25901 : 0.25
+	  7:52 Time 0.25801 : 0.25
+	  7:52 Time 0.25701 : 0.25
+	  7:52 Time 0.25601 : 0.25
+	  7:53 Time 0.25501 : 0.25
+	  7:53 Time 0.25401 : 0.25
+	  7:53 Time 0.25301 : 0.25
+	  7:53 Time 0.25201 : 0.25
+	  7:54 Time 0.25101 : 0.25
+	  7:54 Time 0.25001 : 0.25
+	  7:54 Time 0.24901 : 0.25
+	  7:54 Time 0.24801 : 0.25
+	  7:55 Time 0.24701 : 0.25
+	  7:55 Time 0.24601 : 0.25
+	  7:55 Time 0.24501 : 0.25
+	  7:55 Time 0.24401 : 0.25
+	  7:56 Time 0.24301 : 0.25
+	  7:56 Time 0.24201 : 0.25
+	  7:56 Time 0.24101 : 0.25
+	  7:56 Time 0.24001 : 0.25
+	  7:57 Time 0.23901 : 0.25
+	  7:57 Time 0.23801 : 0.25
+	  7:57 Time 0.23701 : 0.25
+	  7:57 Time 0.23601 : 0.25
+	  7:58 Time 0.23501 : 0.25
+	  7:58 Time 0.23401 : 0.25
+	  7:58 Time 0.23301 : 0.25
+	  7:58 Time 0.23201 : 0.25
+	  7:59 Time 0.23101 : 0.25
+	  7:59 Time 0.23001 : 0.25
+	  7:59 Time 0.22901 : 0.25
+	  7:59 Time 0.22801 : 0.25
+	  8:00 Time 0.22701 : 0.25
+	  8:00 Time 0.22601 : 0.25
+	  8:00 Time 0.22501 : 0.25
+	  8:00 Time 0.22401 : 0.2
+	  8:01 Time 0.22301 : 0.2
+	  8:01 Time 0.22201 : 0.2
+	  8:01 Time 0.22101 : 0.2
+	  8:01 Time 0.22001 : 0.2
+	  8:01 Time 0.21901 : 0.2
+	  8:02 Time 0.21801 : 0.2
+	  8:02 Time 0.21701 : 0.2
+	  8:02 Time 0.21601 : 0.2
+	  8:02 Time 0.21501 : 0.2
+	  8:02 Time 0.21401 : 0.2
+	  8:03 Time 0.21301 : 0.2
+	  8:03 Time 0.21201 : 0.2
+	  8:03 Time 0.21101 : 0.2
+	  8:03 Time 0.21001 : 0.2
+	  8:03 Time 0.20901 : 0.2
+	  8:04 Time 0.20801 : 0.2
+	  8:04 Time 0.20701 : 0.2
+	  8:04 Time 0.20601 : 0.2
+	  8:04 Time 0.20501 : 0.2
+	  8:04 Time 0.20401 : 0.2
+	  8:05 Time 0.20301 : 0.2
+	  8:05 Time 0.20201 : 0.2
+	  8:05 Time 0.20101 : 0.2
+	  8:05 Time 0.20001 : 0.2
+	  8:05 Time 0.19901 : 0.2
+	  8:06 Time 0.19801 : 0.2
+	  8:06 Time 0.19701 : 0.2
+	  8:06 Time 0.19601 : 0.2
+	  8:06 Time 0.19501 : 0.2
+	  8:06 Time 0.19401 : 0.2
+	  8:07 Time 0.19301 : 0.2
+	  8:07 Time 0.19201 : 0.2
+	  8:07 Time 0.19101 : 0.2
+	  8:07 Time 0.19001 : 0.2
+	  8:07 Time 0.18901 : 0.2
+	  8:08 Time 0.18801 : 0.2
+	  8:08 Time 0.18701 : 0.2
+	  8:08 Time 0.18601 : 0.2
+	  8:08 Time 0.18501 : 0.2
+	  8:08 Time 0.18401 : 0.2
+	  8:09 Time 0.18301 : 0.2
+	  8:09 Time 0.18201 : 0.2
+	  8:09 Time 0.18101 : 0.2
+	  8:09 Time 0.18001 : 0.2
+	  8:09 Time 0.17901 : 0.2
+	  8:10 Time 0.17801 : 0.2
+	  8:10 Time 0.17701 : 0.2
+	  8:10 Time 0.17601 : 0.2
+	  8:10 Time 0.17501 : 0.2
+	  8:10 Time 0.17401 : 0.15
+	  8:11 Time 0.173009 : 0.15
+	  8:11 Time 0.172009 : 0.15
+	  8:11 Time 0.171009 : 0.15
+	  8:11 Time 0.170009 : 0.15
+	  8:11 Time 0.169009 : 0.15
+	  8:11 Time 0.168009 : 0.15
+	  8:11 Time 0.167009 : 0.15
+	  8:12 Time 0.166009 : 0.15
+	  8:12 Time 0.165009 : 0.15
+	  8:12 Time 0.164009 : 0.15
+	  8:12 Time 0.163009 : 0.15
+	  8:12 Time 0.162009 : 0.15
+	  8:12 Time 0.161009 : 0.15
+	  8:12 Time 0.160009 : 0.15
+	  8:13 Time 0.159009 : 0.15
+	  8:13 Time 0.158009 : 0.15
+	  8:13 Time 0.157009 : 0.15
+	  8:13 Time 0.156009 : 0.15
+	  8:13 Time 0.155009 : 0.15
+	  8:13 Time 0.154009 : 0.15
+	  8:14 Time 0.153009 : 0.15
+	  8:14 Time 0.152009 : 0.15
+	  8:14 Time 0.151009 : 0.15
+	  8:14 Time 0.150009 : 0.15
+	  8:14 Time 0.149009 : 0.15
+	  8:14 Time 0.148009 : 0.15
+	  8:14 Time 0.147009 : 0.15
+	  8:15 Time 0.146009 : 0.15
+	  8:15 Time 0.145009 : 0.15
+	  8:15 Time 0.144009 : 0.15
+	  8:15 Time 0.143009 : 0.15
+	  8:15 Time 0.142009 : 0.15
+	  8:15 Time 0.141009 : 0.15
+	  8:15 Time 0.140009 : 0.15
+	  8:16 Time 0.139009 : 0.15
+	  8:16 Time 0.138009 : 0.15
+	  8:16 Time 0.137009 : 0.15
+	  8:16 Time 0.136009 : 0.15
+	  8:16 Time 0.135009 : 0.15
+	  8:16 Time 0.134009 : 0.15
+	  8:17 Time 0.133009 : 0.15
+	  8:17 Time 0.132009 : 0.15
+	  8:17 Time 0.131009 : 0.15
+	  8:17 Time 0.130009 : 0.15
+	  8:17 Time 0.129009 : 0.15
+	  8:17 Time 0.128009 : 0.15
+	  8:17 Time 0.127009 : 0.15
+	  8:18 Time 0.126009 : 0.15
+	  8:18 Time 0.125009 : 0.15
+	  8:18 Time 0.124009 : 0.1
+	  8:18 Time 0.123009 : 0.1
+	  8:18 Time 0.122009 : 0.1
+	  8:18 Time 0.121009 : 0.1
+	  8:18 Time 0.120009 : 0.1
+	  8:18 Time 0.119009 : 0.1
+	  8:18 Time 0.118009 : 0.1
+	  8:19 Time 0.117009 : 0.1
+	  8:19 Time 0.116009 : 0.1
+	  8:19 Time 0.115009 : 0.1
+	  8:19 Time 0.114009 : 0.1
+	  8:19 Time 0.113009 : 0.1
+	  8:19 Time 0.112009 : 0.1
+	  8:19 Time 0.111009 : 0.1
+	  8:19 Time 0.110009 : 0.1
+	  8:19 Time 0.109009 : 0.1
+	  8:19 Time 0.108009 : 0.1
+	  8:20 Time 0.107009 : 0.1
+	  8:20 Time 0.106009 : 0.1
+	  8:20 Time 0.105009 : 0.1
+	  8:20 Time 0.104009 : 0.1
+	  8:20 Time 0.103009 : 0.1
+	  8:20 Time 0.102009 : 0.1
+	  8:20 Time 0.101009 : 0.1
+	  8:20 Time 0.100009 : 0.1
+	  8:20 Time 0.0990093 : 0.1
+	  8:20 Time 0.0980093 : 0.1
+	  8:21 Time 0.0970093 : 0.1
+	  8:21 Time 0.0960093 : 0.1
+	  8:21 Time 0.0950093 : 0.1
+	  8:21 Time 0.0940093 : 0.1
+	  8:21 Time 0.0930093 : 0.1
+	  8:21 Time 0.0920093 : 0.1
+	  8:21 Time 0.0910093 : 0.1
+	  8:21 Time 0.0900093 : 0.1
+	  8:21 Time 0.0890093 : 0.1
+	  8:21 Time 0.0880093 : 0.1
+	  8:22 Time 0.0870093 : 0.1
+	  8:22 Time 0.0860093 : 0.1
+	  8:22 Time 0.0850093 : 0.1
+	  8:22 Time 0.0840093 : 0.1
+	  8:22 Time 0.0830093 : 0.1
+	  8:22 Time 0.0820093 : 0.1
+	  8:22 Time 0.0810093 : 0.1
+	  8:22 Time 0.0800093 : 0.1
+	  8:22 Time 0.0790093 : 0.1
+	  8:22 Time 0.0780093 : 0.1
+	  8:23 Time 0.0770093 : 0.1
+	  8:23 Time 0.0760093 : 0.1
+	  8:23 Time 0.0750093 : 0.1
+	  8:23 Time 0.0740093 : 0.05
+	  8:23 Time 0.0730093 : 0.05
+	  8:23 Time 0.0720093 : 0.05
+	  8:23 Time 0.0710093 : 0.05
+	  8:23 Time 0.0700093 : 0.05
+	  8:23 Time 0.0690093 : 0.05
+	  8:23 Time 0.0680093 : 0.05
+	  8:23 Time 0.0670093 : 0.05
+	  8:23 Time 0.0660093 : 0.05
+	  8:23 Time 0.0650093 : 0.05
+	  8:23 Time 0.0640093 : 0.05
+	  8:23 Time 0.0630093 : 0.05
+	  8:23 Time 0.0620093 : 0.05
+	  8:23 Time 0.0610093 : 0.05
+	  8:23 Time 0.0600093 : 0.05
+	  8:24 Time 0.0590093 : 0.05
+	  8:24 Time 0.0580093 : 0.05
+	  8:24 Time 0.0570093 : 0.05
+	  8:24 Time 0.0560093 : 0.05
+	  8:24 Time 0.0550093 : 0.05
+	  8:24 Time 0.0540093 : 0.05
+	  8:24 Time 0.0530093 : 0.05
+	  8:24 Time 0.0520093 : 0.05
+	  8:24 Time 0.0510093 : 0.05
+	  8:24 Time 0.0500093 : 0.05
+	  8:24 Time 0.0490093 : 0.05
+	  8:24 Time 0.0480093 : 0.05
+	  8:24 Time 0.0470093 : 0.05
+	  8:24 Time 0.0460093 : 0.05
+	  8:24 Time 0.0450093 : 0.05
+	  8:24 Time 0.0440093 : 0.05
+	  8:24 Time 0.0430093 : 0.05
+	  8:24 Time 0.0420093 : 0.05
+	  8:24 Time 0.0410093 : 0.05
+	  8:24 Time 0.0400093 : 0.05
+	  8:25 Time 0.0390093 : 0.05
+	  8:25 Time 0.0380093 : 0.05
+	  8:25 Time 0.0370093 : 0.05
+	  8:25 Time 0.0360093 : 0.05
+	  8:25 Time 0.0350093 : 0.05
+	  8:25 Time 0.0340093 : 0.05
+	  8:25 Time 0.0330093 : 0.05
+	  8:25 Time 0.0320093 : 0.05
+	  8:25 Time 0.0310093 : 0.05
+	  8:25 Time 0.0300093 : 0.05
+	  8:25 Time 0.0290093 : 0.05
+	  8:25 Time 0.0280093 : 0.05
+	  8:25 Time 0.0270093 : 0.05
+	  8:25 Time 0.0260093 : 0.05
+	  8:25 Time 0.0250093 : 0.05
+	  8:25 Time 0.0240093 : 0.05
+	  8:25 Time 0.0230093 : 0.05
+	  8:25 Time 0.0220093 : 0.05
+	  8:25 Time 0.0210093 : 0.05
+	  8:25 Time 0.0200093 : 0.05
+	  8:26 Time 0.0190093 : 0.05
+	  8:26 Time 0.0180093 : 0.05
+	  8:26 Time 0.0170093 : 0.05
+	  8:26 Time 0.0160093 : 0.05
+	  8:26 Time 0.0150093 : 0.05
+	  8:26 Time 0.0140093 : 0.05
+	  8:26 Time 0.0130093 : 0.05
+	  8:26 Time 0.0120093 : 0.05
+	  8:26 Time 0.0110093 : 0.05
+	  8:26 Time 0.0100093 : 0.05
+	  8:26 Time 0.00900933 : 0.05
+	  8:26 Time 0.00800933 : 0.05
+	  8:26 Time 0.00700933 : 0.05
+	  8:26 Time 0.00600933 : 0.05
+	  8:26 Time 0.00500933 : 0.05
+	  8:26 Time 0.00400933 : 0.05
+	  8:26 Time 0.00300932 : 0.05
+	  8:26 Time 0.00200932 : 0.05
+	  8:26 Time 0.00100932 : 0.05
+	  8:26 Time 9.32463e-006 : 0.05
+	  
+// =================================================================================== //
+// podivnÈ zdroje...
+
+////Player settings
+player.name //player's name
+player.health //player's health, can be set above their maxhealth
+player.maxspeed //max speed they can move at, default 190 (?)
+player.maxhealth //health the player spawns with
+player.pers["team"] //team of the player. I think these are still allies/axis, because the killplayer script works
+player.hasradar //if player has/allowed rader?
+player.kills //number of kills
+player.headiconteam //team sees this icon above teammate's head
+player.headicon //player's icon above their head
+player.statusicon //player's icon in scores list
+player.deaths //number of deaths
+player.sessionstate (allies, axis, none, spectator)
+////
+
+<player> setrank() //set's player's rank
+<player> updatescores() //updates player's score?
+<player> unsetperk() //?
+<player> clearperks() //clear's the player's perks
+<player> getweaponslistprimaries() //gets list of current primary weapons? (might be just two, max)
+<player> getweaponslist() //gets a list of player's current weapons
+<player> setactionslot() //what?
+<player> setspreadoverride() //sets weapon spread override?
+<player> allowsprint() //allow/disallow sprinting for a player
+<player> allowjump() //allow/disallow jumping for a player
+<player> allowads() //allow aim down sight, default true I suppose
+<player> getguid() //gets the short guid of the player
+<player> getxuid() //?
+<player> istalking() //returns true if they are in the console/chatting?
+<player> playlocalsound() //starts a sound playing only for that player
+<player> stoplocalsound() //stops a sound playing only for that player
+<player> setclientdvar(<cvar>,<value>) //sets a client (d)variable, like cg_drawfps
+<player> cloneplayer() //clones a player, clone isn't like normal player but is used for dead bodies and such...in coduo anyway, not sure here
+<player> iprintlnbold("text") //prints a big line in the middle of the screen, if no player is specified then everyone sees it
+<player> iprintln("text") //prints a small line on the bottom left of the screen, if no player is specified then everyone sees it
+<player> getweaponammostock()
+<player> getweaponammoclip()
+<player> setweaponammostock()
+<player> setweaponammoclip()
+<player> enableweapons() //see below
+<player> disableweapons() //was disableweapon() in coduo, puts weapons away until they are re-enabled (for one player)
+<player> freezecontrols() //might only work in multiplayer, but something is used at the start of MP games to do this
+<player> openmenunomouse() //opens a specified menu with no mouse pointer, like show map in coduo
+<player> openmenu() //opens a specified menu
+<player> suicide() //kills player :D
+<player> dropitem() //drops a specified item (weapon)
+<player> setspawnweapon() //sets the player's spawning weapon
+<player> sayteam() //sends a chat message to the player's team from that player
+<player> sayall() //sends a chat message to everyone from a player
+<player> buttonpressed() //maybe you can see if any button is pressed by it's name? e.g. F12
+<player> getviewmodel() //(edit: viewmodel_hands_new)
+<player> setviewmodel() //?
+pingplayer() //returns ping of player?
+isonground() //returns true if player is touching the floor
+playerads() //returns true if player is aimed down sight?
+
+
+///Button presses, could only use attack, melee, and use buttons in uo :(
+
+fragbuttonpressed() //not sure
+meleebuttonpressed() //bash (v not shift :o)
+adsbuttonpressed() //aim down sight
+attackbuttonpressed() //good old clicking
+usebuttonpressed() //activate key
+e.g.
+if(player(attackbuttonpressed)) iprintlnbold("HEY!");
+
+getplayerangles() //gets the view angles of a player (in coduo we couldn't get the up/down angles, hopefully not the same here)
+setplayerangles() //sets the view angles of a player
+getvelocity() //gets the current speed of an entity
+<player> setorigin() //moves the player to a point on x/y/z
+switchtoweapon() //switches the player to a certain weapon/weaponslot?
+hasweapon() //returns true if they have that weapon?
+getcurrentweapon() //gets the weapon in the player's hand
+takeallweapons() //takes all weps off a player
+giveweapon() //gives a certain weapon in a certain weapon slot
+isonladder() //checks if an entity is on a ladder
+setmovespeedscale() //sets the scale of movement speed, default might be 190
+playrumbleonentity() //plays a rumble on an entity?
+stoploopsound() //stops the looping sound on an entity
+playloopsound() //plays a looping sound on an entity
+playsoundtoplayer() //plays sound to one player
+playsoundtoteam() //plays a sound to one team
+playsound() //plays a sound on an entity like a script_model/player
+istouching() //if one element is touching another
+e.g. if(thing1(istouching(thing2)) iprintlnbold("boo");
+
+ambientstop() //stops the ambient sound
+ambientplay() //plays an ambient (usually looping) sound
+setExpFog( <halfplane>, <nearplane>, R, G, B, ? (cullrange) );
+
+/////Hud scripting
+destroy() //deletes hud element
+moveovertime() //moves it to diff point on the screen, over time
+scaleovertime() //resizes the element over time
+fadeovertime() //fades the element over time
+glowalpha //same as below, transparency
+glowcolor //new thing, guess it controls the glowy text color
+hidewhendead //guess: hides the element when player is dead
+hidewheninmenu //guess: hides the element if the player has a menu up
+sort //sort order on screen
+label //?
+alpha //transparency from 0 to 1
+color //color of hudelem...?
+vertalign //?
+horzalign //?
+aligny //aligns the element on y
+alignx //aligns the element on x
+fontscale //sets size of font
+setText() //sets text on a hudelement
+/////
+
+
+And, in that section of the gsc is an interesting little dvar:
+"g_playerCollisionEjectSpeed"
+(Speed at which to push intersecting players away from each other)
+
+////Vehicle stuff
+setdamagestage() //?
+setvehicleteam() //sets vehicle's owner team
+clearturrettarget() //?
+setturrettargetent() //?
+setturrettargetvec() //?
+fireweapon() //fires the turret/main weapon
+setvehweapon() //sets the vehicle's weapon
+getspeedmph() //speed in mph
+getspeed() //speed in...something else...game units maybe? (like inches)
+setspeed() //sets speed in game units
+////
+
+////Precaching
+precachelocationselector() //where you can choose to spawn
+precacheheadicon() //icons above player's heads
+precachestatusicon() //icons next to player names in scores
+precachemenu() //menu files, like main menu/weapon menu
+precacherumble() //new thingy, dunno what it does :o
+precachestring() //precaches text to be used in hud stuff
+precacheshader() //eg gfx/hud/hud@artillery_fire.tga or something
+precacheitem() //use this to precache weapon files
+precacheshellshock() //precaches a .shock file (coduo)
+precachemodel() //precaches any xmodel
+precacheturret() //guessing it gets the turret's model and wep file
+////
+
+
+Random example of external code:
+
+maps\mp\_fx::OneShotfx( effectname, (x y z), predelay);
+
+Plays <effectname> once at x,y,z after <predelay> seconds
+
+Known FX
+
+oadfx("explosions/tanker_explosion");
+loadfx("weather/snow_wind");
+loadfx("smoke/hallway_smoke_light");
+loadfx("weather/snow_light_mp_bloc");
+loadfx("ambient_runners/mp_bog_horizon_flash");
+loadfx("smoke/battlefield_smokebank_bog_a");
+loadfx("weather/fog_bog_a");
+loadfx("misc/antiair_runner_night");
+loadfx("fire/firelp_barrel_pm");
+loadfx("explosions/grenadeExp_concrete_1");
+loadfx("explosions/grenadeExp_dirt_1");
+loadfx("explosions/grenadeExp_wood");
+loadfx("explosions/grenadeExp_wood");
+loadfx("explosions/grenadeExp_dirt_1");
+loadfx("explosions/grenadeExp_concrete_1");
+loadfx("explosions/grenadeExp_concrete_1");
+loadfx("weather/rain_mp_cargoship");
+loadfx("weather/lightning_mp_farm");
+loadfx("misc/cgoshp_drips");
+loadfx("misc/cgoshp_drips_a");
+loadfx("weather/rain_noise");
+loadfx("weather/rain_noise_ud");
+loadfx("ambient_runners/mp_cargoship_rain_noise01");
+loadfx("ambient_runners/mp_cargoship_rain_noise02");
+loadfx("ambient_runners/mp_cargoship_rain_noise03");
+loadfx("ambient_runners/mp_cargoship_rain_noise04");
+loadfx("ambient_runners/mp_cargoship_rain_noise05");
+loadfx("ambient_runners/mp_cargoship_rain_noise_ud01");
+loadfx("ambient_runners/mp_cargoship_rain_noise_ud02");
+loadfx("ambient_runners/mp_cargoship_rain_noise_ud03");
+loadfx("weather/fog_bog_a");
+loadfx("smoke/amb_ash");
+loadfx("misc/floodlight_white");
+loadfx("misc/fluorescent_glow");
+loadfx("misc/floodlight_yellow");
+loadfx("dust/dust_wind_fast");
+loadfx("dust/dust_spiral_runner");
+loadfx("fire/firelp_small_pm");
+loadfx("fire/firelp_small_pm_a");
+loadfx("smoke/thin_black_smoke_L");
+loadfx("smoke/battlefield_smokebank_S");
+loadfx("fire/tank_fire_turret_abrams");
+loadfx("fire/tank_fire_hatch");
+loadfx("fire/firelp_med_pm_nodistort");    
+loadfx("fire/firelp_small_pm");
+loadfx("fire/firelp_small_pm_a");
+loadfx("dust/dust_wind_fast");
+loadfx("dust/dust_wind_slow_yel_loop");
+loadfx("dust/dust_spiral_runner");
+loadfx("smoke/battlefield_smokebank_S");
+loadfx("smoke/hallway_smoke_light");
+loadfx("dust/dust_wind_slow_yel_loop");
+loadfx("smoke/thin_black_smoke_L");
+loadfx("smoke/thin_black_smoke_M");
+loadfx("smoke/battlefield_smokebank_S");
+loadfx("misc/paper_falling");
+loadfx("ambient_runners/mp_farm_rain_splash01");
+loadfx("ambient_runners/mp_farm_water_noise01");
+loadfx("ambient_runners/mp_farm_water_noise_ud01");
+loadfx("smoke/thin_black_smoke_M");
+loadfx("smoke/thin_black_smoke_L");
+loadfx("smoke/battlefield_smokebank_S");
+loadfx("fire/firelp_small_pm");
+loadfx("fire/firelp_small_pm_a");
+loadfx("fire/firelp_med_pm_nodistort");
+loadfx("misc/leaves_ground_gentlewind");    
+loadfx("misc/leaves_fall_gentlewind");
+loadfx("misc/insects_carcass_runner");
+loadfx("weather/fog_daytime");
+loadfx("ambient_runners/mp_overgrown_insects01");
+loadfx("ambient_runners/mp_overgrown_insects02");
+loadfx("ambient_runners/mp_overgrown_insects03");
+loadfx("ambient_runners/mp_overgrown_insects04");
+loadfx("ambient_runners/mp_overgrown_insects05");
+loadfx("ambient_runners/mp_overgrown_fog_daytime01");
+loadfx("ambient_runners/mp_overgrown_leavesfall01");
+loadfx("ambient_runners/mp_overgrown_leavesground01");
+loadfx("props/glow_latern");
+loadfx("explosions/tanker_explosion");
+loadfx("smoke/battlefield_smokebank_S");
+loadfx("dust/light_shaft_dust_large");    
+loadfx("dust/ash_spiral_runner");
+loadfx("dust/room_dust_100_blend");    
+loadfx("dust/room_dust_200_blend");    
+loadfx("dust/dust_ceiling_ash_large");
+loadfx("smoke/hallway_smoke_light");
+loadfx("misc/bird_seagull_flock_large");
+loadfx("weather/jeepride_cloud_bank_far");
+loadfx("dust/ash_spiral_runner");
+loadfx("smoke/hallway_smoke_light");
+loadfx("explosions/clusterbomb");
+loadfx("explosions/artilleryExp_dirt_brown");
+loadfx("explosions/wall_explosion_pm_a");
+loadfx("fire/jet_afterburner");
+loadfx("smoke/jet_contrail");
+loadfx("treadfx/heli_dust_default");
+loadfx("treadfx/heli_water");
+loadfx("explosions/default_explosion");
+loadfx("explosions/large_vehicle_explosion");
+
+Worldspawn settings example:
+"sunRadiosity" ".7"
+"sunlight" "0.5"
+"sundirection" "-22 247 0"
+"sundiffusecolor" "0.717647 0.776471 1.000000"
+"suncolor" ".68 .72 .76"
+"northyaw" "90"
+"diffusefraction" ".4"
+"ambient" "0.125"
+"_color" ".67 .72 .94"
+"radiosityScale" "1.8"
+"classname" "worldspawn"
+
+Some classnames:
+worldspawn
+info_player_start
+mp_global_intermission
+mp_dm_spawn
+mp_tdm_spawn
+mp_dom_spawn
+mp_dom_spawn_axis_start
+mp_dom_spawn_allies_start
+mp_sab_spawn_axis
+mp_sab_spawn_allies
+mp_sab_spawn_axis_start
+mp_sab_spawn_allies_start
+mp_sd_spawn_attacker
+mp_sd_spawn_defender
+script_vehicle
+script_origin
+script_brushmodel
+item_health
+grenade
+trigger_hurt
+trigger_lookat
+trigger_multiple
+trigger_radius
+
+Model names:
+head_mp_usmc_tactical_baseball_cap
+body_mp_usmc_sniper
+prop_suitcase_bomb
+briefcase_bomb_defuse_mp
+briefcase_bomb_mp
+
+Some weapon model names:
+projectile_hellfire_missile
+projectile_sidewinder_missile
+weapon_ac130
+viewmodel_base_viewhands
+viewmodel_C4
+viewmodel_ak47_mp
+viewmodel_ak47_mp_brock
+viewmodel_ak47_gold_mp
+viewmodel_ak47_grenadier_mp
+viewmodel_ak47_grenadier_mp_brock
+viewmodel_ak47_grenadier_mp_bshdwl
+viewmodel_ak47_grenadier_mp_bwmrpt
+viewmodel_ak47_grenadier_mp_cmdtgr
+viewmodel_ak47_grenadier_mp_stagger
+viewmodel_ak47_gold_grenadier_mp
+weapon_claymore
+viewmodel_at4
+viewmodel_dragunov_mp
+viewmodel_dragunov_mp_brock
+viewmodel_dragunov_mp_bshdwl
+viewmodel_dragunov_mp_bwmrpt
+viewmodel_dragunov_mp_cmdtgr
+viewmodel_dragunov_mp_stagger
+viewmodel_barrett_mp
+viewmodel_barrett_mp_brock
+viewmodel_barrett_mp_bshdwl
+viewmodel_barrett_mp_bwmrpt
+viewmodel_barrett_mp_cmdtgr
+viewmodel_barrett_mp_stagger
+viewmodel_beretta_mp
+viewmodel_beretta_and_silencer_mp
+viewmodel_binoculars
+viewmodel_USP
+weapon_mk2fraggrenade
+viewmodel_briefcase_bomb_mp
+viewmodel_C4
+weapon_c4_mp
+viewmodel_knife
+projectile_hellfire_missile
+viewmodel_colt45_mp
+weapon_colt1911_black

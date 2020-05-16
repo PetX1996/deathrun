@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_tweakables</name>
+  </settings>
+  <content>
+    <include>maps\mp\_utility</include>
+    <func name="getTweakableDVarValue" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="category">
+      </param>
+      <param name="name">
+      </param>
+    </func>
+    <func name="getTweakableDVar" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="category">
+      </param>
+      <param name="name">
+      </param>
+    </func>
+    <func name="getTweakableValue" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="category">
+      </param>
+      <param name="name">
+      </param>
+    </func>
+    <func name="getTweakableLastValue" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="category">
+      </param>
+      <param name="name">
+      </param>
+    </func>
+    <func name="setTweakableValue" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="category">
+      </param>
+      <param name="name">
+      </param>
+      <param name="value">
+      </param>
+    </func>
+    <func name="setTweakableLastValue" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="category">
+      </param>
+      <param name="name">
+      </param>
+      <param name="value">
+      </param>
+    </func>
+    <func name="registerTweakable" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="category">
+      </param>
+      <param name="name">
+      </param>
+      <param name="dvar">
+      </param>
+      <param name="value">
+      </param>
+    </func>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="setClientTweakable" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="category">
+      </param>
+      <param name="name">
+      </param>
+    </func>
+    <func name="updateUITweakables" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateServerDvar" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="dvar">
+      </param>
+      <param name="value">
+      </param>
+    </func>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="701" charLength="27" codePart="assert( isDefined( dVar ) )" isCall="True">
+      <funcRefArg charIndex="709" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="709" charLength="17" codePart="isDefined( dVar )" isCall="True">
+      <funcRefArg charIndex="720" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="743" charLength="18" codePart="getDvarInt( dVar )" isCall="True">
+      <funcRefArg charIndex="755" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="1465" charLength="28" codePart="assert( isDefined( value ) )" isCall="True">
+      <funcRefArg charIndex="1473" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1473" charLength="18" codePart="isDefined( value )" isCall="True">
+      <funcRefArg charIndex="1484" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="2203" charLength="28" codePart="assert( isDefined( value ) )" isCall="True">
+      <funcRefArg charIndex="2211" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2211" charLength="18" codePart="isDefined( value )" isCall="True">
+      <funcRefArg charIndex="2222" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="Assert" charIndex="2977" charLength="28" codePart="assert( isDefined( value ) )" isCall="True">
+      <funcRefArg charIndex="2985" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2985" charLength="18" codePart="isDefined( value )" isCall="True">
+      <funcRefArg charIndex="2996" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="3705" charLength="22" codePart="setDvar( dVar, value )" isCall="True">
+      <funcRefArg charIndex="3714" charLength="4" />
+      <funcRefArg charIndex="3720" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsString" charIndex="4503" charLength="17" codePart="isString( value )" isCall="True">
+      <funcRefArg charIndex="4513" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="4534" charLength="15" codePart="getDvar( dvar )" isCall="True">
+      <funcRefArg charIndex="4543" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="4562" charLength="22" codePart="setDvar( dvar, value )" isCall="True">
+      <funcRefArg charIndex="4571" charLength="4" />
+      <funcRefArg charIndex="4577" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="4606" charLength="15" codePart="getDvar( dvar )" isCall="True">
+      <funcRefArg charIndex="4615" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="4645" charLength="15" codePart="getDvar( dvar )" isCall="True">
+      <funcRefArg charIndex="4654" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="4673" charLength="22" codePart="setDvar( dvar, value )" isCall="True">
+      <funcRefArg charIndex="4682" charLength="4" />
+      <funcRefArg charIndex="4688" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="4717" charLength="18" codePart="getDvarInt( dvar )" isCall="True">
+      <funcRefArg charIndex="4729" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4794" charLength="30" codePart="isDefined( level.rules[name] )" isCall="True">
+      <funcRefArg charIndex="4805" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="4852" charLength="13" codePart="spawnStruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5021" charLength="35" codePart="isDefined( level.gameTweaks[name] )" isCall="True">
+      <funcRefArg charIndex="5032" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="5089" charLength="13" codePart="spawnStruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5272" charLength="35" codePart="isDefined( level.teamTweaks[name] )" isCall="True">
+      <funcRefArg charIndex="5283" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="5340" charLength="13" codePart="spawnStruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5525" charLength="37" codePart="isDefined( level.playerTweaks[name] )" isCall="True">
+      <funcRefArg charIndex="5536" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="5597" charLength="13" codePart="spawnStruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5787" charLength="36" codePart="isDefined( level.classTweaks[name] )" isCall="True">
+      <funcRefArg charIndex="5798" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="5857" charLength="13" codePart="spawnStruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6045" charLength="37" codePart="isDefined( level.weaponTweaks[name] )" isCall="True">
+      <funcRefArg charIndex="6056" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="6117" charLength="13" codePart="spawnStruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6311" charLength="40" codePart="isDefined( level.hardpointTweaks[name] )" isCall="True">
+      <funcRefArg charIndex="6322" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="6389" charLength="13" codePart="spawnStruct()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="6586" charLength="34" codePart="isDefined( level.hudTweaks[name] )" isCall="True">
+      <funcRefArg charIndex="6597" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SpawnStruct" charIndex="6652" charLength="13" codePart="spawnStruct()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="7164" charLength="84" codePart="registerTweakable( &quot;game&quot;, 			&quot;playerwaittime&quot;, 		&quot;scr_game_playerwaittime&quot;, 			15 )" isCall="True">
+      <funcRefArg charIndex="7183" charLength="6" />
+      <funcRefArg charIndex="7194" charLength="16" />
+      <funcRefArg charIndex="7214" charLength="25" />
+      <funcRefArg charIndex="7244" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="7256" charLength="83" codePart="registerTweakable( &quot;game&quot;, 			&quot;matchstarttime&quot;, 		&quot;scr_game_matchstarttime&quot;, 			5 )" isCall="True">
+      <funcRefArg charIndex="7275" charLength="6" />
+      <funcRefArg charIndex="7286" charLength="16" />
+      <funcRefArg charIndex="7306" charLength="25" />
+      <funcRefArg charIndex="7336" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="7347" charLength="81" codePart="registerTweakable( &quot;game&quot;, 			&quot;onlyheadshots&quot;, 		&quot;scr_game_onlyheadshots&quot;, 			0 )" isCall="True">
+      <funcRefArg charIndex="7366" charLength="6" />
+      <funcRefArg charIndex="7377" charLength="15" />
+      <funcRefArg charIndex="7396" charLength="24" />
+      <funcRefArg charIndex="7425" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="7436" charLength="79" codePart="registerTweakable( &quot;game&quot;, 			&quot;allowkillcam&quot;, 		&quot;scr_game_allowkillcam&quot;, 			1 )" isCall="True">
+      <funcRefArg charIndex="7455" charLength="6" />
+      <funcRefArg charIndex="7466" charLength="14" />
+      <funcRefArg charIndex="7484" charLength="23" />
+      <funcRefArg charIndex="7512" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="7523" charLength="79" codePart="registerTweakable( &quot;game&quot;, 			&quot;spectatetype&quot;, 		&quot;scr_game_spectatetype&quot;, 			2 )" isCall="True">
+      <funcRefArg charIndex="7542" charLength="6" />
+      <funcRefArg charIndex="7553" charLength="14" />
+      <funcRefArg charIndex="7571" charLength="23" />
+      <funcRefArg charIndex="7599" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="7612" charLength="83" codePart="registerTweakable( &quot;game&quot;, 			&quot;deathpointloss&quot;, 		&quot;scr_game_deathpointloss&quot;, 			0 )" isCall="True">
+      <funcRefArg charIndex="7631" charLength="6" />
+      <funcRefArg charIndex="7642" charLength="16" />
+      <funcRefArg charIndex="7662" charLength="25" />
+      <funcRefArg charIndex="7692" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="7703" charLength="85" codePart="registerTweakable( &quot;game&quot;, 			&quot;suicidepointloss&quot;, 	&quot;scr_game_suicidepointloss&quot;, 		0 )" isCall="True">
+      <funcRefArg charIndex="7722" charLength="6" />
+      <funcRefArg charIndex="7733" charLength="18" />
+      <funcRefArg charIndex="7754" charLength="27" />
+      <funcRefArg charIndex="7785" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="7796" charLength="87" codePart="registerTweakable( &quot;team&quot;, 			&quot;teamkillpointloss&quot;, 	&quot;scr_team_teamkillpointloss&quot;, 		0 )" isCall="True">
+      <funcRefArg charIndex="7815" charLength="6" />
+      <funcRefArg charIndex="7826" charLength="19" />
+      <funcRefArg charIndex="7848" charLength="28" />
+      <funcRefArg charIndex="7880" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="7978" charLength="71" codePart="registerTweakable( &quot;team&quot;, 			&quot;fftype&quot;, 				&quot;scr_team_fftype&quot;, 					0 )" isCall="True">
+      <funcRefArg charIndex="7997" charLength="6" />
+      <funcRefArg charIndex="8008" charLength="8" />
+      <funcRefArg charIndex="8022" charLength="17" />
+      <funcRefArg charIndex="8046" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="8054" charLength="89" codePart="registerTweakable( &quot;team&quot;, 			&quot;teamkillspawndelay&quot;, 	&quot;scr_team_teamkillspawndelay&quot;, 		0 )" isCall="True">
+      <funcRefArg charIndex="8073" charLength="6" />
+      <funcRefArg charIndex="8084" charLength="20" />
+      <funcRefArg charIndex="8107" charLength="29" />
+      <funcRefArg charIndex="8140" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="8242" charLength="79" codePart="registerTweakable( &quot;player&quot;, 		&quot;maxhealth&quot;, 			&quot;scr_player_maxhealth&quot;, 			100 )" isCall="True">
+      <funcRefArg charIndex="8261" charLength="8" />
+      <funcRefArg charIndex="8273" charLength="11" />
+      <funcRefArg charIndex="8289" charLength="22" />
+      <funcRefArg charIndex="8316" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="8329" charLength="87" codePart="registerTweakable( &quot;player&quot;, 		&quot;healthregentime&quot;, 		&quot;scr_player_healthregentime&quot;, 		5 )" isCall="True">
+      <funcRefArg charIndex="8348" charLength="8" />
+      <funcRefArg charIndex="8360" charLength="17" />
+      <funcRefArg charIndex="8381" charLength="28" />
+      <funcRefArg charIndex="8413" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="8424" charLength="82" codePart="registerTweakable( &quot;player&quot;, 		&quot;forcerespawn&quot;, 		&quot;scr_player_forcerespawn&quot;, 			1 )" isCall="True">
+      <funcRefArg charIndex="8443" charLength="8" />
+      <funcRefArg charIndex="8455" charLength="14" />
+      <funcRefArg charIndex="8473" charLength="25" />
+      <funcRefArg charIndex="8503" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="8516" charLength="73" codePart="registerTweakable( &quot;weapon&quot;, 	&quot;allowfrag&quot;, 		&quot;scr_weapon_allowfrags&quot;, 1 )" isCall="True">
+      <funcRefArg charIndex="8535" charLength="8" />
+      <funcRefArg charIndex="8546" charLength="11" />
+      <funcRefArg charIndex="8561" charLength="23" />
+      <funcRefArg charIndex="8586" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="8593" charLength="74" codePart="registerTweakable( &quot;weapon&quot;, 	&quot;allowsmoke&quot;, 		&quot;scr_weapon_allowsmoke&quot;, 1 )" isCall="True">
+      <funcRefArg charIndex="8612" charLength="8" />
+      <funcRefArg charIndex="8623" charLength="12" />
+      <funcRefArg charIndex="8639" charLength="23" />
+      <funcRefArg charIndex="8664" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="8671" charLength="74" codePart="registerTweakable( &quot;weapon&quot;, 	&quot;allowflash&quot;, 		&quot;scr_weapon_allowflash&quot;, 1 )" isCall="True">
+      <funcRefArg charIndex="8690" charLength="8" />
+      <funcRefArg charIndex="8701" charLength="12" />
+      <funcRefArg charIndex="8717" charLength="23" />
+      <funcRefArg charIndex="8742" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="8749" charLength="69" codePart="registerTweakable( &quot;weapon&quot;, 	&quot;allowc4&quot;, 			&quot;scr_weapon_allowc4&quot;, 1 )" isCall="True">
+      <funcRefArg charIndex="8768" charLength="8" />
+      <funcRefArg charIndex="8779" charLength="9" />
+      <funcRefArg charIndex="8793" charLength="20" />
+      <funcRefArg charIndex="8815" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="8822" charLength="81" codePart="registerTweakable( &quot;weapon&quot;, 	&quot;allowclaymores&quot;, 	&quot;scr_weapon_allowclaymores&quot;, 1 )" isCall="True">
+      <funcRefArg charIndex="8841" charLength="8" />
+      <funcRefArg charIndex="8852" charLength="16" />
+      <funcRefArg charIndex="8871" charLength="27" />
+      <funcRefArg charIndex="8900" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="8907" charLength="72" codePart="registerTweakable( &quot;weapon&quot;, 	&quot;allowrpgs&quot;, 		&quot;scr_weapon_allowrpgs&quot;, 1 )" isCall="True">
+      <funcRefArg charIndex="8926" charLength="8" />
+      <funcRefArg charIndex="8937" charLength="11" />
+      <funcRefArg charIndex="8952" charLength="22" />
+      <funcRefArg charIndex="8976" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="8983" charLength="74" codePart="registerTweakable( &quot;weapon&quot;, 	&quot;allowmines&quot;, 		&quot;scr_weapon_allowmines&quot;, 1 )" isCall="True">
+      <funcRefArg charIndex="9002" charLength="8" />
+      <funcRefArg charIndex="9013" charLength="12" />
+      <funcRefArg charIndex="9029" charLength="23" />
+      <funcRefArg charIndex="9054" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="9063" charLength="86" codePart="registerTweakable( &quot;hardpoint&quot;, &quot;allowartillery&quot;, 	&quot;scr_hardpoint_allowartillery&quot;, 1 )" isCall="True">
+      <funcRefArg charIndex="9082" charLength="11" />
+      <funcRefArg charIndex="9095" charLength="16" />
+      <funcRefArg charIndex="9114" charLength="30" />
+      <funcRefArg charIndex="9146" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="9153" charLength="75" codePart="registerTweakable( &quot;hardpoint&quot;, &quot;allowuav&quot;, 		&quot;scr_hardpoint_allowuav&quot;, 1 )" isCall="True">
+      <funcRefArg charIndex="9172" charLength="11" />
+      <funcRefArg charIndex="9185" charLength="10" />
+      <funcRefArg charIndex="9199" charLength="24" />
+      <funcRefArg charIndex="9225" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="9232" charLength="81" codePart="registerTweakable( &quot;hardpoint&quot;, &quot;allowsupply&quot;, 		&quot;scr_hardpoint_allowsupply&quot;, 1 )" isCall="True">
+      <funcRefArg charIndex="9251" charLength="11" />
+      <funcRefArg charIndex="9264" charLength="13" />
+      <funcRefArg charIndex="9281" charLength="27" />
+      <funcRefArg charIndex="9310" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="9317" charLength="88" codePart="registerTweakable( &quot;hardpoint&quot;, &quot;allowhelicopter&quot;, 	&quot;scr_hardpoint_allowhelicopter&quot;, 1 )" isCall="True">
+      <funcRefArg charIndex="9336" charLength="11" />
+      <funcRefArg charIndex="9349" charLength="17" />
+      <funcRefArg charIndex="9369" charLength="31" />
+      <funcRefArg charIndex="9402" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="registerTweakable" charIndex="9415" charLength="77" codePart="registerTweakable( &quot;hud&quot;, 		&quot;showobjicons&quot;, 	&quot;ui_hud_showobjicons&quot;, 						1 )" isCall="True">
+      <funcRefArg charIndex="9434" charLength="5" />
+      <funcRefArg charIndex="9443" charLength="14" />
+      <funcRefArg charIndex="9460" charLength="21" />
+      <funcRefArg charIndex="9489" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="setClientTweakable" charIndex="9500" charLength="45" codePart="setClientTweakable( &quot;hud&quot;, 		&quot;showobjicons&quot; )" isCall="True">
+      <funcRefArg charIndex="9520" charLength="5" />
+      <funcRefArg charIndex="9529" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="updateUITweakables" charIndex="9551" charLength="33" codePart="level thread updateUITweakables()" isCall="True" />
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="getTweakableDVarValue" charIndex="9887" charLength="47" codePart="getTweakableDVarValue( &quot;hud&quot;, clientTweakable )" isCall="True">
+      <funcRefArg charIndex="9910" charLength="5" />
+      <funcRefArg charIndex="9917" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="getTweakableLastValue" charIndex="9952" charLength="47" codePart="getTweakableLastValue( &quot;hud&quot;, clientTweakable )" isCall="True">
+      <funcRefArg charIndex="9975" charLength="5" />
+      <funcRefArg charIndex="9982" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="updateServerDvar" charIndex="10050" charLength="72" codePart="updateServerDvar( getTweakableDvar( &quot;hud&quot;, clientTweakable ), curValue )" isCall="True">
+      <funcRefArg charIndex="10068" charLength="42" />
+      <funcRefArg charIndex="10112" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="getTweakableDVar" charIndex="10068" charLength="42" codePart="getTweakableDvar( &quot;hud&quot;, clientTweakable )" isCall="True">
+      <funcRefArg charIndex="10086" charLength="5" />
+      <funcRefArg charIndex="10093" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="setTweakableLastValue" charIndex="10129" charLength="57" codePart="setTweakableLastValue( &quot;hud&quot;, clientTweakable, curValue )" isCall="True">
+      <funcRefArg charIndex="10152" charLength="5" />
+      <funcRefArg charIndex="10159" charLength="15" />
+      <funcRefArg charIndex="10176" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="MakeDvarServerInfo" charIndex="10270" charLength="33" codePart="makeDVarServerInfo( dvar, value )" isCall="True">
+      <funcRefArg charIndex="10290" charLength="4" />
+      <funcRefArg charIndex="10296" charLength="6" />
+    </funcRef>
+    <error type="warning" charIndex="9614" charLength="8" lineIndex="361">
+      <message>Variable 'category' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'category' is defined, but its value is never used., file 'maps\mp\gametypes\_tweakables', line 362, 'setClientTweakable( category, name )'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

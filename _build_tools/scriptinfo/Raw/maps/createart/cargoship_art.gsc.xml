@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\createart\cargoship_art</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="148" charLength="31" codePart="setdvar(&quot;scr_fog_disable&quot;, &quot;1&quot;)" isCall="True">
+      <funcRefArg charIndex="156" charLength="17" />
+      <funcRefArg charIndex="175" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="439" charLength="28" codePart="getent(&quot;player&quot;,&quot;classname&quot;)" isCall="True">
+      <funcRefArg charIndex="446" charLength="8" />
+      <funcRefArg charIndex="455" charLength="11" />
+    </funcRef>
+    <error type="semantic" charIndex="439" charLength="64" lineIndex="18">
+      <message>Could not find file 'maps\_art'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_art', file 'maps\createart\cargoship_art', line 19, 'getent("player","classname") maps\_art::setdefaultdepthoffield();'</fullMessage>
+    </error>
+    <error type="semantic" charIndex="516" charLength="47" lineIndex="22">
+      <message>Could not find file 'maps\_utility'</message>
+      <fullMessage>Bad semantic: Could not find file 'maps\_utility', file 'maps\createart\cargoship_art', line 23, 'maps\_utility::set_vision_set( "cargoship", 0 );'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

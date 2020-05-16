@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_art</name>
+  </settings>
+  <content>
+    <include>common_scripts\utility</include>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="artfxprintln" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="file">
+      </param>
+      <param name="string">
+      </param>
+    </func>
+    <func name="strtok_loc" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="string">
+      </param>
+      <param name="par1">
+      </param>
+    </func>
+    <func name="setfogsliders" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="tweakart" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="fovslidercheck" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="dumpsettings" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="tweakfog_fraction" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="253" charLength="26" codePart="getDvar( &quot;scr_art_tweak&quot; )" isCall="True">
+      <funcRefArg charIndex="262" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="289" charLength="26" codePart="getDvar( &quot;scr_art_tweak&quot; )" isCall="True">
+      <funcRefArg charIndex="298" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="328" charLength="29" codePart="setDvar( &quot;scr_art_tweak&quot;, 0 )" isCall="True">
+      <funcRefArg charIndex="337" charLength="15" />
+      <funcRefArg charIndex="354" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="368" charLength="27" codePart="getDvar( &quot;scr_dof_enable&quot; )" isCall="True">
+      <funcRefArg charIndex="377" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="407" charLength="32" codePart="setDvar( &quot;scr_dof_enable&quot;, &quot;1&quot; )" isCall="True">
+      <funcRefArg charIndex="416" charLength="16" />
+      <funcRefArg charIndex="434" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="452" charLength="36" codePart="getDvar( &quot;scr_cinematic_autofocus&quot; )" isCall="True">
+      <funcRefArg charIndex="461" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="500" charLength="41" codePart="setDvar( &quot;scr_cinematic_autofocus&quot;, &quot;1&quot; )" isCall="True">
+      <funcRefArg charIndex="509" charLength="25" />
+      <funcRefArg charIndex="536" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="552" charLength="31" codePart="getDvar( &quot;scr_art_visionfile&quot; )" isCall="True">
+      <funcRefArg charIndex="561" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="595" charLength="45" codePart="setDvar( &quot;scr_art_visionfile&quot;, level.script )" isCall="True">
+      <funcRefArg charIndex="604" charLength="20" />
+      <funcRefArg charIndex="626" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="654" charLength="29" codePart="isDefined( level.dofDefault )" isCall="True">
+      <funcRefArg charIndex="665" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="tweakart" charIndex="1094" charLength="17" codePart="thread tweakart()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="1124" charLength="25" codePart="isdefined( level.script )" isCall="True">
+      <funcRefArg charIndex="1135" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="ToLower" charIndex="1170" charLength="31" codePart="tolower( getdvar( &quot;mapname&quot; ) )" isCall="True">
+      <funcRefArg charIndex="1179" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="1179" charLength="20" codePart="getdvar( &quot;mapname&quot; )" isCall="True">
+      <funcRefArg charIndex="1188" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="FPrintLn" charIndex="2277" charLength="24" codePart="fprintln( file, string )" isCall="True">
+      <funcRefArg charIndex="2287" charLength="4" />
+      <funcRefArg charIndex="2293" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="strtok_loc" charIndex="3066" charLength="50" codePart="strtok_loc( getdvar( &quot;g_fogColorReadOnly&quot; ), &quot; &quot; )" isCall="True">
+      <funcRefArg charIndex="3078" charLength="31" />
+      <funcRefArg charIndex="3111" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="3078" charLength="31" codePart="getdvar( &quot;g_fogColorReadOnly&quot; )" isCall="True">
+      <funcRefArg charIndex="3087" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="3199" charLength="34" codePart="getdvar( &quot;g_fogHalfDistReadOnly&quot; )" isCall="True">
+      <funcRefArg charIndex="3208" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="3249" charLength="35" codePart="getdvar( &quot;g_fogStartDistReadOnly&quot; )" isCall="True">
+      <funcRefArg charIndex="3258" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3298" charLength="16" codePart="isdefined( red )" isCall="True">
+      <funcRefArg charIndex="3309" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3323" charLength="18" codePart="isdefined( green )" isCall="True">
+      <funcRefArg charIndex="3334" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3350" charLength="17" codePart="isdefined( blue )" isCall="True">
+      <funcRefArg charIndex="3361" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3376" charLength="22" codePart="isdefined( halfplane )" isCall="True">
+      <funcRefArg charIndex="3387" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3407" charLength="22" codePart="isdefined( halfplane )" isCall="True">
+      <funcRefArg charIndex="3418" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="3535" charLength="42" codePart="setdvar(&quot;scr_fog_exp_halfplane&quot;,halfplane)" isCall="True">
+      <funcRefArg charIndex="3543" charLength="23" />
+      <funcRefArg charIndex="3567" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="3581" charLength="38" codePart="setdvar(&quot;scr_fog_nearplane&quot;,nearplane)" isCall="True">
+      <funcRefArg charIndex="3589" charLength="19" />
+      <funcRefArg charIndex="3609" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="3623" charLength="26" codePart="setdvar(&quot;scr_fog_red&quot;,red)" isCall="True">
+      <funcRefArg charIndex="3631" charLength="13" />
+      <funcRefArg charIndex="3645" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="3653" charLength="30" codePart="setdvar(&quot;scr_fog_green&quot;,green)" isCall="True">
+      <funcRefArg charIndex="3661" charLength="15" />
+      <funcRefArg charIndex="3677" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="3687" charLength="28" codePart="setdvar(&quot;scr_fog_blue&quot;,blue)" isCall="True">
+      <funcRefArg charIndex="3695" charLength="14" />
+      <funcRefArg charIndex="3710" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3751" charLength="28" codePart="isdefined( level.tweakfile )" isCall="True">
+      <funcRefArg charIndex="3762" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="4060" charLength="36" codePart="setdvar( &quot;scr_fog_fraction&quot;, &quot;1.0&quot; )" isCall="True">
+      <funcRefArg charIndex="4069" charLength="18" />
+      <funcRefArg charIndex="4089" charLength="6" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="4100" charLength="30" codePart="setdvar( &quot;scr_art_dump&quot;, &quot;0&quot; )" isCall="True">
+      <funcRefArg charIndex="4109" charLength="14" />
+      <funcRefArg charIndex="4125" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="4189" charLength="63" codePart="setdvar( &quot;scr_dof_nearStart&quot;, level.dofDefault[ &quot;nearStart&quot; ] )" isCall="True">
+      <funcRefArg charIndex="4198" charLength="19" />
+      <funcRefArg charIndex="4219" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="4256" charLength="59" codePart="setdvar( &quot;scr_dof_nearEnd&quot;, level.dofDefault[ &quot;nearEnd&quot; ] )" isCall="True">
+      <funcRefArg charIndex="4265" charLength="17" />
+      <funcRefArg charIndex="4284" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="4319" charLength="61" codePart="setdvar( &quot;scr_dof_farStart&quot;, level.dofDefault[ &quot;farStart&quot; ] )" isCall="True">
+      <funcRefArg charIndex="4328" charLength="18" />
+      <funcRefArg charIndex="4348" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="4384" charLength="57" codePart="setdvar( &quot;scr_dof_farEnd&quot;, level.dofDefault[ &quot;farEnd&quot; ] )" isCall="True">
+      <funcRefArg charIndex="4393" charLength="16" />
+      <funcRefArg charIndex="4411" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="4445" charLength="61" codePart="setdvar( &quot;scr_dof_nearBlur&quot;, level.dofDefault[ &quot;nearBlur&quot; ] )" isCall="True">
+      <funcRefArg charIndex="4454" charLength="18" />
+      <funcRefArg charIndex="4474" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="4510" charLength="59" codePart="setdvar( &quot;scr_dof_farBlur&quot;, level.dofDefault[ &quot;farBlur&quot; ] )" isCall="True">
+      <funcRefArg charIndex="4519" charLength="17" />
+      <funcRefArg charIndex="4538" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="4769" charLength="29" codePart="getDvarint( &quot;scr_art_tweak&quot; )" isCall="True">
+      <funcRefArg charIndex="4781" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="4815" charLength="91" codePart="assertex( getdvar( &quot;scr_art_dump&quot; ) == &quot;0&quot;, &quot;Must Enable Art Tweaks to export _art file.&quot; )" isCall="True">
+      <funcRefArg charIndex="4825" charLength="32" />
+      <funcRefArg charIndex="4859" charLength="46" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="4825" charLength="25" codePart="getdvar( &quot;scr_art_dump&quot; )" isCall="True">
+      <funcRefArg charIndex="4834" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="4931" charLength="29" codePart="getDvarint( &quot;scr_art_tweak&quot; )" isCall="True">
+      <funcRefArg charIndex="4943" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="setfogsliders" charIndex="4972" charLength="15" codePart="setfogsliders()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="5066" charLength="37" codePart="getDvarint( &quot;scr_art_tweak_message&quot; )" isCall="True">
+      <funcRefArg charIndex="5078" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="5115" charLength="39" codePart="setDvar( &quot;scr_art_tweak_message&quot;, &quot;0&quot; )" isCall="True">
+      <funcRefArg charIndex="5124" charLength="23" />
+      <funcRefArg charIndex="5149" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLnBold" charIndex="5160" charLength="35" codePart="iprintlnbold( &quot;ART TWEAK ENABLED&quot; )" isCall="True">
+      <funcRefArg charIndex="5174" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="tweakfog_fraction" charIndex="5277" charLength="19" codePart="tweakfog_fraction()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="5384" charLength="39" codePart="getdvarfloat( &quot;scr_fog_exp_halfplane&quot; )" isCall="True">
+      <funcRefArg charIndex="5398" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="5449" charLength="35" codePart="getdvarfloat( &quot;scr_fog_nearplane&quot; )" isCall="True">
+      <funcRefArg charIndex="5463" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="5504" charLength="29" codePart="getdvarfloat( &quot;scr_fog_red&quot; )" isCall="True">
+      <funcRefArg charIndex="5518" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="5555" charLength="31" codePart="getdvarfloat( &quot;scr_fog_green&quot; )" isCall="True">
+      <funcRefArg charIndex="5569" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="5607" charLength="30" codePart="getdvarfloat( &quot;scr_fog_blue&quot; )" isCall="True">
+      <funcRefArg charIndex="5621" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="fovslidercheck" charIndex="5749" charLength="16" codePart="fovslidercheck()" isCall="True" />
+    <funcRef sfPath="maps\mp\_art" name="dumpsettings" charIndex="5779" charLength="14" codePart="dumpsettings()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="5893" charLength="31" codePart="getdvarint( &quot;scr_fog_disable&quot; )" isCall="True">
+      <funcRefArg charIndex="5905" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetExpFog" charIndex="5931" charLength="102" codePart="setExpFog( level.fognearplane, level.fogexphalfplane, level.fogred, level.foggreen, level.fogblue, 0 )" isCall="True">
+      <funcRefArg charIndex="5942" charLength="18" />
+      <funcRefArg charIndex="5962" charLength="21" />
+      <funcRefArg charIndex="5985" charLength="12" />
+      <funcRefArg charIndex="5999" charLength="14" />
+      <funcRefArg charIndex="6015" charLength="13" />
+      <funcRefArg charIndex="6030" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetExpFog" charIndex="6047" charLength="51" codePart="setExpFog( 100000000000, 100000000001, 0, 0, 0, 0 )" isCall="True">
+      <funcRefArg charIndex="6058" charLength="12" />
+      <funcRefArg charIndex="6072" charLength="12" />
+      <funcRefArg charIndex="6086" charLength="1" />
+      <funcRefArg charIndex="6089" charLength="1" />
+      <funcRefArg charIndex="6092" charLength="1" />
+      <funcRefArg charIndex="6095" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLnBold" charIndex="6258" charLength="46" codePart="iprintlnbold( &quot;Art settings dumped success!&quot; )" isCall="True">
+      <funcRefArg charIndex="6272" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="6584" charLength="135" codePart="assertex( level.tweakfile, &quot;remove all art setting in &quot; + level.script + &quot;.gsc and add the following line before _load: &quot; + addstring )" isCall="True">
+      <funcRefArg charIndex="6594" charLength="15" />
+      <funcRefArg charIndex="6611" charLength="107" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="6725" charLength="30" codePart="setdvar( &quot;scr_art_dump&quot;, &quot;0&quot; )" isCall="True">
+      <funcRefArg charIndex="6734" charLength="14" />
+      <funcRefArg charIndex="6750" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="7052" charLength="63" codePart="setdvar( &quot;scr_dof_nearStart&quot;, level.dofDefault[ &quot;nearStart&quot; ] )" isCall="True">
+      <funcRefArg charIndex="7061" charLength="19" />
+      <funcRefArg charIndex="7082" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="7274" charLength="59" codePart="setdvar( &quot;scr_dof_nearEnd&quot;, level.dofDefault[ &quot;nearEnd&quot; ] )" isCall="True">
+      <funcRefArg charIndex="7283" charLength="17" />
+      <funcRefArg charIndex="7302" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="7488" charLength="61" codePart="setdvar( &quot;scr_dof_farStart&quot;, level.dofDefault[ &quot;farStart&quot; ] )" isCall="True">
+      <funcRefArg charIndex="7497" charLength="18" />
+      <funcRefArg charIndex="7517" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="7704" charLength="57" codePart="setdvar( &quot;scr_dof_farEnd&quot;, level.dofDefault[ &quot;farEnd&quot; ] )" isCall="True">
+      <funcRefArg charIndex="7713" charLength="16" />
+      <funcRefArg charIndex="7731" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="7919" charLength="59" codePart="setdvar( &quot;scr_dof_farBlur&quot;, level.dofDefault[ &quot;farBlur&quot; ] )" isCall="True">
+      <funcRefArg charIndex="7928" charLength="17" />
+      <funcRefArg charIndex="7947" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="8135" charLength="61" codePart="setdvar( &quot;scr_dof_farStart&quot;, level.dofDefault[ &quot;farStart&quot; ] )" isCall="True">
+      <funcRefArg charIndex="8144" charLength="18" />
+      <funcRefArg charIndex="8164" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="8240" charLength="25" codePart="getdvar( &quot;scr_art_dump&quot; )" isCall="True">
+      <funcRefArg charIndex="8249" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="8339" charLength="29" codePart="getdvar(&quot;scr_art_visionfile&quot;)" isCall="True">
+      <funcRefArg charIndex="8347" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="OpenFile" charIndex="8418" charLength="29" codePart="openfile( filename, &quot;write&quot; )" isCall="True">
+      <funcRefArg charIndex="8428" charLength="8" />
+      <funcRefArg charIndex="8438" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="8453" charLength="90" codePart="assertex( file != -1, &quot;File not writeable( maybe you should check it out ): &quot; + filename )" isCall="True">
+      <funcRefArg charIndex="8463" charLength="10" />
+      <funcRefArg charIndex="8475" charLength="67" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="8590" charLength="106" codePart="artfxprintln( file, &quot;// _createart generated.  modify at your own risk. Changing values should be fine.&quot; )" isCall="True">
+      <funcRefArg charIndex="8604" charLength="4" />
+      <funcRefArg charIndex="8610" charLength="85" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="8700" charLength="30" codePart="artfxprintln( file, &quot;main()&quot; )" isCall="True">
+      <funcRefArg charIndex="8714" charLength="4" />
+      <funcRefArg charIndex="8720" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="8734" charLength="25" codePart="artfxprintln( file, &quot;{&quot; )" isCall="True">
+      <funcRefArg charIndex="8748" charLength="4" />
+      <funcRefArg charIndex="8754" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="8765" charLength="24" codePart="artfxprintln( file, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="8779" charLength="4" />
+      <funcRefArg charIndex="8785" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="8793" charLength="49" codePart="artfxprintln( file, &quot;\tlevel.tweakfile = true;&quot; )" isCall="True">
+      <funcRefArg charIndex="8807" charLength="4" />
+      <funcRefArg charIndex="8813" charLength="28" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="8846" charLength="25" codePart="artfxprintln( file, &quot; &quot; )" isCall="True">
+      <funcRefArg charIndex="8860" charLength="4" />
+      <funcRefArg charIndex="8866" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="9897" charLength="24" codePart="artfxprintln( file, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="9911" charLength="4" />
+      <funcRefArg charIndex="9917" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="9925" charLength="44" codePart="artfxprintln( file, &quot;\t//* Fog section * &quot; )" isCall="True">
+      <funcRefArg charIndex="9939" charLength="4" />
+      <funcRefArg charIndex="9945" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="9973" charLength="24" codePart="artfxprintln( file, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="9987" charLength="4" />
+      <funcRefArg charIndex="9993" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="10545" charLength="117" codePart="artfxprintln( file, &quot;\tsetdvar( \&quot;scr_fog_disable\&quot;&quot; + &quot;, &quot; + &quot;\&quot;&quot; + getdvarint( &quot;scr_fog_disable&quot; ) + &quot;\&quot;&quot; + &quot; );&quot; )" isCall="True">
+      <funcRefArg charIndex="10559" charLength="4" />
+      <funcRefArg charIndex="10565" charLength="96" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="10614" charLength="31" codePart="getdvarint( &quot;scr_fog_disable&quot; )" isCall="True">
+      <funcRefArg charIndex="10626" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="10669" charLength="24" codePart="artfxprintln( file, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="10683" charLength="4" />
+      <funcRefArg charIndex="10689" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarInt" charIndex="10704" charLength="31" codePart="getdvarint( &quot;scr_fog_disable&quot; )" isCall="True">
+      <funcRefArg charIndex="10716" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="10741" charLength="169" codePart="artfxprintln( file, &quot;\tsetExpFog( &quot; + level.fognearplane + &quot;, &quot; + level.fogexphalfplane + &quot;, &quot; + level.fogred + &quot;, &quot; + level.foggreen + &quot;, &quot; + level.fogblue + &quot;, 0 );&quot; )" isCall="True">
+      <funcRefArg charIndex="10755" charLength="4" />
+      <funcRefArg charIndex="10761" charLength="148" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="10916" charLength="72" codePart="artfxprintln( file, &quot;\tVisionSetNaked( \&quot;&quot; + level.script + &quot;\&quot;, 0 );&quot; )" isCall="True">
+      <funcRefArg charIndex="10930" charLength="4" />
+      <funcRefArg charIndex="10936" charLength="51" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="10994" charLength="24" codePart="artfxprintln( file, &quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="11008" charLength="4" />
+      <funcRefArg charIndex="11014" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="11022" charLength="25" codePart="artfxprintln( file, &quot;}&quot; )" isCall="True">
+      <funcRefArg charIndex="11036" charLength="4" />
+      <funcRefArg charIndex="11042" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="CloseFile" charIndex="11061" charLength="17" codePart="closefile( file )" isCall="True">
+      <funcRefArg charIndex="11072" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="11082" charLength="79" codePart="assertex( ( saved == 1 ), &quot;File not saved( see above message? ): &quot; + filename )" isCall="True">
+      <funcRefArg charIndex="11092" charLength="14" />
+      <funcRefArg charIndex="11108" charLength="52" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="11264" charLength="29" codePart="getdvar(&quot;scr_art_visionfile&quot;)" isCall="True">
+      <funcRefArg charIndex="11272" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="OpenFile" charIndex="11316" charLength="35" codePart="openfile( visionFilename, &quot;write&quot; )" isCall="True">
+      <funcRefArg charIndex="11326" charLength="14" />
+      <funcRefArg charIndex="11342" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="11357" charLength="91" codePart="assertex( ( file != -1 ), &quot;File not writeable( may need checked out of P4 ): &quot; + filename )" isCall="True">
+      <funcRefArg charIndex="11367" charLength="14" />
+      <funcRefArg charIndex="11383" charLength="64" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="11454" charLength="92" codePart="artfxprintln( file, &quot;r_glow                    \&quot;&quot; + getdvar( &quot;r_glowTweakEnable&quot; ) + &quot;\&quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="11468" charLength="4" />
+      <funcRefArg charIndex="11474" charLength="71" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="11507" charLength="30" codePart="getdvar( &quot;r_glowTweakEnable&quot; )" isCall="True">
+      <funcRefArg charIndex="11516" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="11550" charLength="93" codePart="artfxprintln( file, &quot;r_glowRadius0             \&quot;&quot; + getdvar( &quot;r_glowTweakRadius0&quot; ) + &quot;\&quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="11564" charLength="4" />
+      <funcRefArg charIndex="11570" charLength="72" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="11603" charLength="31" codePart="getdvar( &quot;r_glowTweakRadius0&quot; )" isCall="True">
+      <funcRefArg charIndex="11612" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="11647" charLength="93" codePart="artfxprintln( file, &quot;r_glowRadius1             \&quot;&quot; + getdvar( &quot;r_glowTweakRadius1&quot; ) + &quot;\&quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="11661" charLength="4" />
+      <funcRefArg charIndex="11667" charLength="72" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="11700" charLength="31" codePart="getdvar( &quot;r_glowTweakRadius1&quot; )" isCall="True">
+      <funcRefArg charIndex="11709" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="11744" charLength="97" codePart="artfxprintln( file, &quot;r_glowBloomCutoff         \&quot;&quot; + getdvar( &quot;r_glowTweakBloomCutoff&quot; ) + &quot;\&quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="11758" charLength="4" />
+      <funcRefArg charIndex="11764" charLength="76" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="11797" charLength="35" codePart="getdvar( &quot;r_glowTweakBloomCutoff&quot; )" isCall="True">
+      <funcRefArg charIndex="11806" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="11845" charLength="103" codePart="artfxprintln( file, &quot;r_glowBloomDesaturation   \&quot;&quot; + getdvar( &quot;r_glowTweakBloomDesaturation&quot; ) + &quot;\&quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="11859" charLength="4" />
+      <funcRefArg charIndex="11865" charLength="82" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="11898" charLength="41" codePart="getdvar( &quot;r_glowTweakBloomDesaturation&quot; )" isCall="True">
+      <funcRefArg charIndex="11907" charLength="31" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="11952" charLength="101" codePart="artfxprintln( file, &quot;r_glowBloomIntensity0     \&quot;&quot; + getdvar( &quot;r_glowTweakBloomIntensity0&quot; ) + &quot;\&quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="11966" charLength="4" />
+      <funcRefArg charIndex="11972" charLength="80" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="12005" charLength="39" codePart="getdvar( &quot;r_glowTweakBloomIntensity0&quot; )" isCall="True">
+      <funcRefArg charIndex="12014" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="12057" charLength="101" codePart="artfxprintln( file, &quot;r_glowBloomIntensity1     \&quot;&quot; + getdvar( &quot;r_glowTweakBloomIntensity1&quot; ) + &quot;\&quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="12071" charLength="4" />
+      <funcRefArg charIndex="12077" charLength="80" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="12110" charLength="39" codePart="getdvar( &quot;r_glowTweakBloomIntensity1&quot; )" isCall="True">
+      <funcRefArg charIndex="12119" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="12162" charLength="104" codePart="artfxprintln( file, &quot;r_glowSkyBleedIntensity0  \&quot;&quot; + getdvar( &quot;r_glowTweakSkyBleedIntensity0&quot; ) + &quot;\&quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="12176" charLength="4" />
+      <funcRefArg charIndex="12182" charLength="83" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="12215" charLength="42" codePart="getdvar( &quot;r_glowTweakSkyBleedIntensity0&quot; )" isCall="True">
+      <funcRefArg charIndex="12224" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="12270" charLength="104" codePart="artfxprintln( file, &quot;r_glowSkyBleedIntensity1  \&quot;&quot; + getdvar( &quot;r_glowTweakSkyBleedIntensity1&quot; ) + &quot;\&quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="12284" charLength="4" />
+      <funcRefArg charIndex="12290" charLength="83" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="12323" charLength="42" codePart="getdvar( &quot;r_glowTweakSkyBleedIntensity1&quot; )" isCall="True">
+      <funcRefArg charIndex="12332" charLength="32" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="12378" charLength="25" codePart="artfxprintln( file, &quot; &quot; )" isCall="True">
+      <funcRefArg charIndex="12392" charLength="4" />
+      <funcRefArg charIndex="12398" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="12407" charLength="92" codePart="artfxprintln( file, &quot;r_filmEnable              \&quot;&quot; + getdvar( &quot;r_filmTweakEnable&quot; ) + &quot;\&quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="12421" charLength="4" />
+      <funcRefArg charIndex="12427" charLength="71" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="12460" charLength="30" codePart="getdvar( &quot;r_filmTweakEnable&quot; )" isCall="True">
+      <funcRefArg charIndex="12469" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="12503" charLength="94" codePart="artfxprintln( file, &quot;r_filmContrast            \&quot;&quot; + getdvar( &quot;r_filmTweakContrast&quot; ) + &quot;\&quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="12517" charLength="4" />
+      <funcRefArg charIndex="12523" charLength="73" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="12556" charLength="32" codePart="getdvar( &quot;r_filmTweakContrast&quot; )" isCall="True">
+      <funcRefArg charIndex="12565" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="12601" charLength="96" codePart="artfxprintln( file, &quot;r_filmBrightness          \&quot;&quot; + getdvar( &quot;r_filmTweakBrightness&quot; ) + &quot;\&quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="12615" charLength="4" />
+      <funcRefArg charIndex="12621" charLength="75" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="12654" charLength="34" codePart="getdvar( &quot;r_filmTweakBrightness&quot; )" isCall="True">
+      <funcRefArg charIndex="12663" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="12701" charLength="98" codePart="artfxprintln( file, &quot;r_filmDesaturation        \&quot;&quot; + getdvar( &quot;r_filmTweakDesaturation&quot; ) + &quot;\&quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="12715" charLength="4" />
+      <funcRefArg charIndex="12721" charLength="77" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="12754" charLength="36" codePart="getdvar( &quot;r_filmTweakDesaturation&quot; )" isCall="True">
+      <funcRefArg charIndex="12763" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="12803" charLength="92" codePart="artfxprintln( file, &quot;r_filmInvert              \&quot;&quot; + getdvar( &quot;r_filmTweakInvert&quot; ) + &quot;\&quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="12817" charLength="4" />
+      <funcRefArg charIndex="12823" charLength="71" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="12856" charLength="30" codePart="getdvar( &quot;r_filmTweakInvert&quot; )" isCall="True">
+      <funcRefArg charIndex="12865" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="12899" charLength="95" codePart="artfxprintln( file, &quot;r_filmLightTint           \&quot;&quot; + getdvar( &quot;r_filmTweakLightTint&quot; ) + &quot;\&quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="12913" charLength="4" />
+      <funcRefArg charIndex="12919" charLength="74" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="12952" charLength="33" codePart="getdvar( &quot;r_filmTweakLightTint&quot; )" isCall="True">
+      <funcRefArg charIndex="12961" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_art" name="artfxprintln" charIndex="12998" charLength="94" codePart="artfxprintln( file, &quot;r_filmDarkTint            \&quot;&quot; + getdvar( &quot;r_filmTweakDarkTint&quot; ) + &quot;\&quot;&quot; )" isCall="True">
+      <funcRefArg charIndex="13012" charLength="4" />
+      <funcRefArg charIndex="13018" charLength="73" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="13051" charLength="32" codePart="getdvar( &quot;r_filmTweakDarkTint&quot; )" isCall="True">
+      <funcRefArg charIndex="13060" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="CloseFile" charIndex="13108" charLength="17" codePart="closefile( file )" isCall="True">
+      <funcRefArg charIndex="13119" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertEx" charIndex="13129" charLength="85" codePart="assertex( ( saved == 1 ), &quot;File not saved( see above message? ): &quot; + visionFilename )" isCall="True">
+      <funcRefArg charIndex="13139" charLength="14" />
+      <funcRefArg charIndex="13155" charLength="58" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IPrintLnBold" charIndex="13233" charLength="41" codePart="iprintlnbold( &quot;ART DUMPED SUCCESSFULLY&quot; )" isCall="True">
+      <funcRefArg charIndex="13247" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="13343" charLength="34" codePart="getdvarfloat( &quot;scr_fog_fraction&quot; )" isCall="True">
+      <funcRefArg charIndex="13357" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="13515" charLength="29" codePart="getdvarfloat( &quot;scr_fog_red&quot; )" isCall="True">
+      <funcRefArg charIndex="13529" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="13562" charLength="31" codePart="getdvarfloat( &quot;scr_fog_green&quot; )" isCall="True">
+      <funcRefArg charIndex="13576" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="13611" charLength="30" codePart="getdvarfloat( &quot;scr_fog_blue&quot; )" isCall="True">
+      <funcRefArg charIndex="13625" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="13648" charLength="32" codePart="setdvar( &quot;scr_fog_fraction&quot;, 1 )" isCall="True">
+      <funcRefArg charIndex="13657" charLength="18" />
+      <funcRefArg charIndex="13677" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="PrintLn" charIndex="13717" charLength="40" codePart="println( &quot;no negative numbers please.&quot; )" isCall="True">
+      <funcRefArg charIndex="13726" charLength="30" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="14039" charLength="33" codePart="setdvar( &quot;scr_fog_red&quot;, fc[ 0 ] )" isCall="True">
+      <funcRefArg charIndex="14048" charLength="13" />
+      <funcRefArg charIndex="14063" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="14077" charLength="35" codePart="setdvar( &quot;scr_fog_green&quot;, fc[ 1 ] )" isCall="True">
+      <funcRefArg charIndex="14086" charLength="15" />
+      <funcRefArg charIndex="14103" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="14117" charLength="34" codePart="setdvar( &quot;scr_fog_blue&quot;, fc[ 2 ] )" isCall="True">
+      <funcRefArg charIndex="14126" charLength="14" />
+      <funcRefArg charIndex="14142" charLength="8" />
+    </funcRef>
+    <error type="warning" charIndex="2606" charLength="4" lineIndex="100">
+      <message>Variable 'par1' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'par1' is defined, but its value is never used., file 'maps\mp\_art', line 101, 'strtok_loc( string, par1 )'</fullMessage>
+    </error>
+    <error type="warning" charIndex="4625" charLength="4" lineIndex="177">
+      <message>Variable 'file' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'file' is defined, but its value is never used., file 'maps\mp\_art', line 178, 'file = undefined;'</fullMessage>
+    </error>
+    <error type="warning" charIndex="4645" charLength="8" lineIndex="178">
+      <message>Variable 'filename' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'filename' is defined, but its value is never used., file 'maps\mp\_art', line 179, 'filename = undefined;'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

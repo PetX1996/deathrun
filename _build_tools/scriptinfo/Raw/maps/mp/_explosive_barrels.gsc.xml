@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_explosive_barrels</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="oil_spill_think" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getClosestEnt" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="org">
+      </param>
+      <param name="array">
+      </param>
+    </func>
+    <func name="oil_spill_burn_after" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="oil_spill_burn" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="P">
+      </param>
+      <param name="dest">
+      </param>
+    </func>
+    <func name="oil_spill_burn_section" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="P">
+      </param>
+    </func>
+    <func name="explodable_barrel_think" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="explodable_barrel_burn" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="explodable_barrel_explode" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="getstruct" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="name">
+      </param>
+      <param name="type">
+      </param>
+    </func>
+    <func name="array_remove" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="ents">
+      </param>
+      <param name="remover">
+      </param>
+    </func>
+    <func name="array_removeUndefined" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="array">
+      </param>
+    </func>
+    <func name="vector_multiply" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="vec">
+      </param>
+      <param name="dif">
+      </param>
+    </func>
+    <func name="array_thread" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="entities">
+      </param>
+      <param name="process">
+      </param>
+      <param name="var">
+      </param>
+      <param name="exclusions">
+      </param>
+    </func>
+    <func name="breakable_clip" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="116" charLength="46" codePart="getentarray (&quot;explodable_barrel&quot;,&quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="129" charLength="19" />
+      <funcRefArg charIndex="149" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="173" charLength="18" codePart="isdefined(barrels)" isCall="True">
+      <funcRefArg charIndex="183" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="251" charLength="53" codePart="getentarray (&quot;explodable_barrel&quot;,&quot;script_noteworthy&quot;)" isCall="True">
+      <funcRefArg charIndex="264" charLength="19" />
+      <funcRefArg charIndex="284" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="315" charLength="18" codePart="isdefined(barrels)" isCall="True">
+      <funcRefArg charIndex="325" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="450" charLength="26" codePart="loadfx (&quot;props/barrelExp&quot;)" isCall="True">
+      <funcRefArg charIndex="458" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="528" charLength="30" codePart="loadfx (&quot;props/barrel_ignite&quot;)" isCall="True">
+      <funcRefArg charIndex="536" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="606" charLength="32" codePart="loadfx (&quot;props/barrel_fire_top&quot;)" isCall="True">
+      <funcRefArg charIndex="614" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="659" charLength="38" codePart="getentarray (&quot;oil_spill&quot;,&quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="672" charLength="11" />
+      <funcRefArg charIndex="684" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="705" charLength="19" codePart="isdefined(oilspill)" isCall="True">
+      <funcRefArg charIndex="715" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="799" charLength="28" codePart="loadfx (&quot;props/barrel_fire&quot;)" isCall="True">
+      <funcRefArg charIndex="807" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="LoadFX" charIndex="877" charLength="34" codePart="loadfx(&quot;impacts/small_metalhit_1&quot;)" isCall="True">
+      <funcRefArg charIndex="884" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="1347" charLength="43" codePart="getentarray (&quot;breakable clip&quot;,&quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="1360" charLength="16" />
+      <funcRefArg charIndex="1377" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="array_thread" charIndex="1626" charLength="87" codePart="array_thread(getentarray (&quot;explodable_barrel&quot;,&quot;targetname&quot;), ::explodable_barrel_think)" isCall="True">
+      <funcRefArg charIndex="1639" charLength="46" />
+      <funcRefArg charIndex="1687" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="1639" charLength="46" codePart="getentarray (&quot;explodable_barrel&quot;,&quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="1652" charLength="19" />
+      <funcRefArg charIndex="1672" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="explodable_barrel_think" charIndex="1687" charLength="25" codePart="::explodable_barrel_think" isCall="False" />
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="array_thread" charIndex="1824" charLength="72" codePart="array_thread(getentarray (&quot;oil_spill&quot;, &quot;targetname&quot;), ::oil_spill_think)" isCall="True">
+      <funcRefArg charIndex="1837" charLength="39" />
+      <funcRefArg charIndex="1878" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="1837" charLength="39" codePart="getentarray (&quot;oil_spill&quot;, &quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="1850" charLength="11" />
+      <funcRefArg charIndex="1863" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="oil_spill_think" charIndex="1878" charLength="17" codePart="::oil_spill_think" isCall="False" />
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="getstruct" charIndex="1938" charLength="36" codePart="getstruct(self.target, &quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="1948" charLength="11" />
+      <funcRefArg charIndex="1961" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="getstruct" charIndex="1991" charLength="40" codePart="getstruct(self.end.target, &quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="2001" charLength="15" />
+      <funcRefArg charIndex="2018" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="getClosestEnt" charIndex="2049" charLength="80" codePart="getClosestEnt(self.start.origin, getentarray (&quot;explodable_barrel&quot;,&quot;targetname&quot;))" isCall="True">
+      <funcRefArg charIndex="2063" charLength="17" />
+      <funcRefArg charIndex="2082" charLength="46" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="2082" charLength="46" codePart="getentarray (&quot;explodable_barrel&quot;,&quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="2095" charLength="19" />
+      <funcRefArg charIndex="2115" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="2146" charLength="33" codePart="getent(self.target, &quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="2153" charLength="11" />
+      <funcRefArg charIndex="2166" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetCanDamage" charIndex="2183" charLength="23" codePart="self setcandamage(true)" isCall="True">
+      <funcRefArg charIndex="2201" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2216" charLength="22" codePart="isdefined(self.barrel)" isCall="True">
+      <funcRefArg charIndex="2226" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="oil_spill_burn_after" charIndex="2279" charLength="34" codePart="self thread oil_spill_burn_after()" isCall="True" />
+    <funcRef sfPath="codapi" name="waittill" charIndex="2340" charLength="63" codePart="self waittill(&quot;damage&quot;, other, damage, direction_vec, P, type )" isCall="True">
+      <funcRefArg charIndex="2354" charLength="8" />
+      <funcRefArg charIndex="2364" charLength="5" />
+      <funcRefArg charIndex="2371" charLength="6" />
+      <funcRefArg charIndex="2379" charLength="13" />
+      <funcRefArg charIndex="2394" charLength="1" />
+      <funcRefArg charIndex="2397" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayFX" charIndex="2510" charLength="67" codePart="playfx (level.breakables_fx[&quot;oilspill&quot;][&quot;spark&quot;], P, direction_vec)" isCall="True">
+      <funcRefArg charIndex="2518" charLength="40" />
+      <funcRefArg charIndex="2560" charLength="1" />
+      <funcRefArg charIndex="2563" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="oil_spill_burn_section" charIndex="2660" charLength="32" codePart="thread oil_spill_burn_section(P)" isCall="True">
+      <funcRefArg charIndex="2690" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="oil_spill_burn" charIndex="2697" charLength="48" codePart="self thread oil_spill_burn(P, self.start.origin)" isCall="True">
+      <funcRefArg charIndex="2724" charLength="1" />
+      <funcRefArg charIndex="2727" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="oil_spill_burn" charIndex="2750" charLength="46" codePart="self thread oil_spill_burn(P, self.end.origin)" isCall="True">
+      <funcRefArg charIndex="2777" charLength="1" />
+      <funcRefArg charIndex="2780" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2817" charLength="22" codePart="isdefined(self.barrel)" isCall="True">
+      <funcRefArg charIndex="2827" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="2844" charLength="33" codePart="self.barrel waittill(&quot;exploding&quot;)" isCall="True">
+      <funcRefArg charIndex="2865" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="2884" charLength="19" codePart="self.extra delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="Hide" charIndex="2907" charLength="11" codePart="self hide()" isCall="True" />
+    <funcRef sfPath="codapi" name="Delete" charIndex="2936" charLength="13" codePart="self delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="Distance" charIndex="3170" charLength="35" codePart="distance(array[i] getorigin(), org)" isCall="True">
+      <funcRefArg charIndex="3179" charLength="20" />
+      <funcRefArg charIndex="3201" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetOrigin" charIndex="3179" charLength="20" codePart="array[i] getorigin()" isCall="True" />
+    <funcRef sfPath="codapi" name="waittill" charIndex="3351" charLength="72" codePart="self.barrel waittill(&quot;damage&quot;, amount ,attacker, direction_vec, P, type)" isCall="True">
+      <funcRefArg charIndex="3372" charLength="8" />
+      <funcRefArg charIndex="3382" charLength="7" />
+      <funcRefArg charIndex="3390" charLength="8" />
+      <funcRefArg charIndex="3400" charLength="13" />
+      <funcRefArg charIndex="3415" charLength="1" />
+      <funcRefArg charIndex="3418" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3629" charLength="29" codePart="isdefined( self.damageOwner )" isCall="True">
+      <funcRefArg charIndex="3640" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RadiusDamage" charIndex="3665" charLength="43" codePart="self radiusdamage (self.origin, 4, 10, 10 )" isCall="True">
+      <funcRefArg charIndex="3684" charLength="11" />
+      <funcRefArg charIndex="3697" charLength="1" />
+      <funcRefArg charIndex="3700" charLength="2" />
+      <funcRefArg charIndex="3704" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RadiusDamage" charIndex="3720" charLength="60" codePart="self radiusdamage (self.origin, 4, 10, 10, self.damageOwner)" isCall="True">
+      <funcRefArg charIndex="3739" charLength="11" />
+      <funcRefArg charIndex="3752" charLength="1" />
+      <funcRefArg charIndex="3755" charLength="2" />
+      <funcRefArg charIndex="3759" charLength="2" />
+      <funcRefArg charIndex="3763" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorNormalize" charIndex="3830" charLength="25" codePart="vectornormalize(dest - P)" isCall="True">
+      <funcRefArg charIndex="3846" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="3866" charLength="17" codePart="distance(p, dest)" isCall="True">
+      <funcRefArg charIndex="3875" charLength="1" />
+      <funcRefArg charIndex="3878" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="vector_multiply" charIndex="3911" charLength="31" codePart="vector_multiply(forward, range)" isCall="True">
+      <funcRefArg charIndex="3927" charLength="7" />
+      <funcRefArg charIndex="3936" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorToAngles" charIndex="3955" charLength="23" codePart="vectortoangles(forward)" isCall="True">
+      <funcRefArg charIndex="3970" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToRight" charIndex="3990" charLength="20" codePart="anglestoright(angle)" isCall="True">
+      <funcRefArg charIndex="4004" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="4027" charLength="46" codePart="getentarray (&quot;explodable_barrel&quot;,&quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="4040" charLength="19" />
+      <funcRefArg charIndex="4060" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Spawn" charIndex="4108" charLength="25" codePart="spawn(&quot;script_origin&quot;, P)" isCall="True">
+      <funcRefArg charIndex="4114" charLength="15" />
+      <funcRefArg charIndex="4131" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="vector_multiply" charIndex="4242" charLength="47" codePart="vector_multiply(right, randomfloatrange(-6, 6))" isCall="True">
+      <funcRefArg charIndex="4258" charLength="5" />
+      <funcRefArg charIndex="4265" charLength="23" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloatRange" charIndex="4265" charLength="23" codePart="randomfloatrange(-6, 6)" isCall="True">
+      <funcRefArg charIndex="4282" charLength="2" />
+      <funcRefArg charIndex="4286" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="oil_spill_burn_section" charIndex="4301" charLength="32" codePart="thread oil_spill_burn_section(P)" isCall="True">
+      <funcRefArg charIndex="4331" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="array_removeUndefined" charIndex="4441" charLength="30" codePart="array_removeUndefined(barrels)" isCall="True">
+      <funcRefArg charIndex="4463" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToUp" charIndex="4521" charLength="29" codePart="anglestoup(barrels[i].angles)" isCall="True">
+      <funcRefArg charIndex="4532" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="vector_multiply" charIndex="4585" charLength="24" codePart="vector_multiply(vec, 22)" isCall="True">
+      <funcRefArg charIndex="4601" charLength="3" />
+      <funcRefArg charIndex="4606" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PhysicsTrace" charIndex="4622" charLength="38" codePart="physicstrace(start, start + (0,0,-64))" isCall="True">
+      <funcRefArg charIndex="4635" charLength="5" />
+      <funcRefArg charIndex="4642" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="DistanceSquared" charIndex="4674" charLength="23" codePart="distancesquared(P, pos)" isCall="True">
+      <funcRefArg charIndex="4690" charLength="1" />
+      <funcRefArg charIndex="4693" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="4770" charLength="15" codePart="randomfloat(10)" isCall="True">
+      <funcRefArg charIndex="4782" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4805" charLength="30" codePart="isdefined ( self.damageOwner )" isCall="True">
+      <funcRefArg charIndex="4817" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RadiusDamage" charIndex="4844" charLength="46" codePart="self radiusdamage (barrels[i].origin, 4, d, d)" isCall="True">
+      <funcRefArg charIndex="4863" charLength="17" />
+      <funcRefArg charIndex="4882" charLength="1" />
+      <funcRefArg charIndex="4885" charLength="1" />
+      <funcRefArg charIndex="4888" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RadiusDamage" charIndex="4908" charLength="64" codePart="self radiusdamage (barrels[i].origin, 4, d, d, self.damageOwner)" isCall="True">
+      <funcRefArg charIndex="4927" charLength="17" />
+      <funcRefArg charIndex="4946" charLength="1" />
+      <funcRefArg charIndex="4949" charLength="1" />
+      <funcRefArg charIndex="4952" charLength="1" />
+      <funcRefArg charIndex="4955" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="array_remove" charIndex="5066" charLength="32" codePart="array_remove(barrels, remove[i])" isCall="True">
+      <funcRefArg charIndex="5079" charLength="7" />
+      <funcRefArg charIndex="5088" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5128" charLength="22" codePart="isdefined(self.barrel)" isCall="True">
+      <funcRefArg charIndex="5138" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Distance" charIndex="5169" charLength="30" codePart="distance(P, self.start.origin)" isCall="True">
+      <funcRefArg charIndex="5178" charLength="1" />
+      <funcRefArg charIndex="5181" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="5223" charLength="15" codePart="randomfloat(10)" isCall="True">
+      <funcRefArg charIndex="5235" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5250" charLength="30" codePart="isdefined ( self.damageOwner )" isCall="True">
+      <funcRefArg charIndex="5262" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RadiusDamage" charIndex="5287" charLength="47" codePart="self radiusdamage (self.barrel.origin, 4, d, d)" isCall="True">
+      <funcRefArg charIndex="5306" charLength="18" />
+      <funcRefArg charIndex="5326" charLength="1" />
+      <funcRefArg charIndex="5329" charLength="1" />
+      <funcRefArg charIndex="5332" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RadiusDamage" charIndex="5348" charLength="65" codePart="self radiusdamage (self.barrel.origin, 4, d, d, self.damageOwner)" isCall="True">
+      <funcRefArg charIndex="5367" charLength="18" />
+      <funcRefArg charIndex="5387" charLength="1" />
+      <funcRefArg charIndex="5390" charLength="1" />
+      <funcRefArg charIndex="5393" charLength="1" />
+      <funcRefArg charIndex="5396" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayFX" charIndex="5481" charLength="51" codePart="playfx (level.breakables_fx[&quot;oilspill&quot;][&quot;burn&quot;], P)" isCall="True">
+      <funcRefArg charIndex="5489" charLength="39" />
+      <funcRefArg charIndex="5530" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5568" charLength="30" codePart="isdefined ( self.damageOwner )" isCall="True">
+      <funcRefArg charIndex="5580" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RadiusDamage" charIndex="5605" charLength="30" codePart="self radiusdamage(P, 32, 5, 1)" isCall="True">
+      <funcRefArg charIndex="5623" charLength="1" />
+      <funcRefArg charIndex="5626" charLength="2" />
+      <funcRefArg charIndex="5630" charLength="1" />
+      <funcRefArg charIndex="5633" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RadiusDamage" charIndex="5649" charLength="48" codePart="self radiusdamage(P, 32, 5, 1, self.damageOwner)" isCall="True">
+      <funcRefArg charIndex="5667" charLength="1" />
+      <funcRefArg charIndex="5670" charLength="2" />
+      <funcRefArg charIndex="5674" charLength="1" />
+      <funcRefArg charIndex="5677" charLength="1" />
+      <funcRefArg charIndex="5680" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="5925" charLength="55" codePart="isdefined(level.precachemodeltype[&quot;com_barrel_benzin&quot;])" isCall="True">
+      <funcRefArg charIndex="5935" charLength="44" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="6045" charLength="33" codePart="precacheModel(&quot;com_barrel_piece&quot;)" isCall="True">
+      <funcRefArg charIndex="6059" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="6083" charLength="34" codePart="precacheModel(&quot;com_barrel_piece2&quot;)" isCall="True">
+      <funcRefArg charIndex="6097" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="endon" charIndex="6126" charLength="24" codePart="self endon (&quot;exploding&quot;)" isCall="True">
+      <funcRefArg charIndex="6138" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="breakable_clip" charIndex="6157" charLength="21" codePart="self breakable_clip()" isCall="True" />
+    <funcRef sfPath="codapi" name="SetCanDamage" charIndex="6206" charLength="23" codePart="self setcandamage(true)" isCall="True">
+      <funcRefArg charIndex="6224" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="waittill" charIndex="6249" charLength="65" codePart="self waittill(&quot;damage&quot;, amount ,attacker, direction_vec, P, type)" isCall="True">
+      <funcRefArg charIndex="6263" charLength="8" />
+      <funcRefArg charIndex="6273" charLength="7" />
+      <funcRefArg charIndex="6281" charLength="8" />
+      <funcRefArg charIndex="6291" charLength="13" />
+      <funcRefArg charIndex="6306" charLength="1" />
+      <funcRefArg charIndex="6309" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="6501" charLength="14" codePart="randomfloat(1)" isCall="True">
+      <funcRefArg charIndex="6513" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="explodable_barrel_burn" charIndex="6587" charLength="36" codePart="self thread explodable_barrel_burn()" isCall="True" />
+    <funcRef sfPath="codapi" name="AnglesToUp" charIndex="6707" charLength="23" codePart="anglestoup(self.angles)" isCall="True">
+      <funcRefArg charIndex="6718" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToUp" charIndex="6744" charLength="20" codePart="anglestoup((0,90,0))" isCall="True">
+      <funcRefArg charIndex="6755" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="6774" charLength="22" codePart="vectordot(up, worldup)" isCall="True">
+      <funcRefArg charIndex="6784" charLength="2" />
+      <funcRefArg charIndex="6788" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="vector_multiply" charIndex="6835" charLength="23" codePart="vector_multiply(up, 44)" isCall="True">
+      <funcRefArg charIndex="6851" charLength="2" />
+      <funcRefArg charIndex="6855" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="vector_multiply" charIndex="6895" charLength="23" codePart="vector_multiply(up, 22)" isCall="True">
+      <funcRefArg charIndex="6911" charLength="2" />
+      <funcRefArg charIndex="6915" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="vector_multiply" charIndex="6944" charLength="23" codePart="vector_multiply(up, 22)" isCall="True">
+      <funcRefArg charIndex="6960" charLength="2" />
+      <funcRefArg charIndex="6964" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayFX" charIndex="7161" charLength="75" codePart="playfx (level.breakables_fx[&quot;barrel&quot;][&quot;burn_start&quot;], self.origin + offset1)" isCall="True">
+      <funcRefArg charIndex="7169" charLength="43" />
+      <funcRefArg charIndex="7214" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayFX" charIndex="7312" charLength="69" codePart="playfx (level.breakables_fx[&quot;barrel&quot;][&quot;burn&quot;], self.origin + offset2)" isCall="True">
+      <funcRefArg charIndex="7320" charLength="37" />
+      <funcRefArg charIndex="7359" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RandomFloat" charIndex="7445" charLength="15" codePart="randomfloat(10)" isCall="True">
+      <funcRefArg charIndex="7457" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="explodable_barrel_explode" charIndex="7508" charLength="39" codePart="self thread explodable_barrel_explode()" isCall="True" />
+    <funcRef sfPath="codapi" name="notify" charIndex="7588" charLength="25" codePart="self notify (&quot;exploding&quot;)" isCall="True">
+      <funcRefArg charIndex="7601" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="notify" charIndex="7617" charLength="21" codePart="self notify (&quot;death&quot;)" isCall="True">
+      <funcRefArg charIndex="7630" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToUp" charIndex="7649" charLength="23" codePart="anglestoup(self.angles)" isCall="True">
+      <funcRefArg charIndex="7660" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="AnglesToUp" charIndex="7686" charLength="20" codePart="anglestoup((0,90,0))" isCall="True">
+      <funcRefArg charIndex="7697" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="VectorDot" charIndex="7716" charLength="22" codePart="vectordot(up, worldup)" isCall="True">
+      <funcRefArg charIndex="7726" charLength="2" />
+      <funcRefArg charIndex="7730" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="vector_multiply" charIndex="7808" charLength="23" codePart="vector_multiply(up, 22)" isCall="True">
+      <funcRefArg charIndex="7824" charLength="2" />
+      <funcRefArg charIndex="7828" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PhysicsTrace" charIndex="7844" charLength="40" codePart="physicstrace(start, (start + (0,0,-64)))" isCall="True">
+      <funcRefArg charIndex="7857" charLength="5" />
+      <funcRefArg charIndex="7864" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlaySound" charIndex="7947" charLength="37" codePart="self playsound (level.barrelExpSound)" isCall="True">
+      <funcRefArg charIndex="7963" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PlayFX" charIndex="8061" charLength="71" codePart="playfx (level.breakables_fx[&quot;barrel&quot;][&quot;explode&quot;], self.origin + offset)" isCall="True">
+      <funcRefArg charIndex="8069" charLength="40" />
+      <funcRefArg charIndex="8111" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8187" charLength="23" codePart="isdefined (self.remove)" isCall="True">
+      <funcRefArg charIndex="8198" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="8219" charLength="20" codePart="self.remove delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8334" charLength="22" codePart="isdefined(self.radius)" isCall="True">
+      <funcRefArg charIndex="8344" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="8482" charLength="29" codePart="isdefined( self.damageOwner )" isCall="True">
+      <funcRefArg charIndex="8493" charLength="17" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RadiusDamage" charIndex="8518" charLength="76" codePart="self radiusDamage(self.origin + (0,0,30), blastRadius, maxDamage, minDamage)" isCall="True">
+      <funcRefArg charIndex="8536" charLength="22" />
+      <funcRefArg charIndex="8560" charLength="11" />
+      <funcRefArg charIndex="8573" charLength="9" />
+      <funcRefArg charIndex="8584" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="RadiusDamage" charIndex="8606" charLength="94" codePart="self radiusDamage(self.origin + (0,0,30), blastRadius, maxDamage, minDamage, self.damageOwner)" isCall="True">
+      <funcRefArg charIndex="8624" charLength="22" />
+      <funcRefArg charIndex="8648" charLength="11" />
+      <funcRefArg charIndex="8661" charLength="9" />
+      <funcRefArg charIndex="8672" charLength="9" />
+      <funcRefArg charIndex="8683" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PhysicsExplosionSphere" charIndex="8708" charLength="93" codePart="physicsExplosionSphere( self.origin + (0,0,30), blastRadius, blastRadius/2, phyExpMagnitude )" isCall="True">
+      <funcRefArg charIndex="8732" charLength="22" />
+      <funcRefArg charIndex="8756" charLength="11" />
+      <funcRefArg charIndex="8769" charLength="13" />
+      <funcRefArg charIndex="8784" charLength="16" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_shellshock" name="barrel_earthQuake" charIndex="8808" charLength="55" codePart="self maps\mp\gametypes\_shellshock::barrel_earthQuake()" isCall="True" />
+    <funcRef sfPath="codapi" name="RandomInt" charIndex="8875" charLength="12" codePart="randomint(2)" isCall="True">
+      <funcRefArg charIndex="8885" charLength="1" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="8897" charLength="33" codePart="self setModel(&quot;com_barrel_piece&quot;)" isCall="True">
+      <funcRefArg charIndex="8911" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="8942" charLength="34" codePart="self setModel(&quot;com_barrel_piece2&quot;)" isCall="True">
+      <funcRefArg charIndex="8956" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="vector_multiply" charIndex="9032" charLength="23" codePart="vector_multiply(up, 22)" isCall="True">
+      <funcRefArg charIndex="9048" charLength="2" />
+      <funcRefArg charIndex="9052" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PhysicsTrace" charIndex="9067" charLength="40" codePart="physicstrace(start, (start + (0,0,-64)))" isCall="True">
+      <funcRefArg charIndex="9080" charLength="5" />
+      <funcRefArg charIndex="9087" charLength="19" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="9264" charLength="35" codePart="isdefined(level.struct_class_names)" isCall="True">
+      <funcRefArg charIndex="9274" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="9379" charLength="16" codePart="isdefined(array)" isCall="True">
+      <funcRefArg charIndex="9389" charLength="5" />
+    </funcRef>
+    <funcRef sfPath="codapidev" name="AssertMsg" charIndex="9446" charLength="94" codePart="assertMsg (&quot;getstruct used for more than one struct of type &quot; + type + &quot; called &quot; + name +&quot;.&quot;)" isCall="True">
+      <funcRefArg charIndex="9457" charLength="82" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="9868" charLength="19" codePart="isdefined(array[i])" isCall="True">
+      <funcRefArg charIndex="9878" charLength="8" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10137" charLength="23" codePart="isDefined( exclusions )" isCall="True">
+      <funcRefArg charIndex="10148" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10454" charLength="16" codePart="isDefined( var )" isCall="True">
+      <funcRefArg charIndex="10465" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10684" charLength="22" codePart="isdefined(self.target)" isCall="True">
+      <funcRefArg charIndex="10694" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEnt" charIndex="10722" charLength="32" codePart="getent(self.target,&quot;targetname&quot;)" isCall="True">
+      <funcRefArg charIndex="10729" charLength="11" />
+      <funcRefArg charIndex="10741" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="10893" charLength="33" codePart="isdefined (level.breakables_clip)" isCall="True">
+      <funcRefArg charIndex="10904" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="getClosestEnt" charIndex="10982" charLength="52" codePart="getClosestEnt( self.origin , level.breakables_clip )" isCall="True">
+      <funcRefArg charIndex="10997" charLength="12" />
+      <funcRefArg charIndex="11011" charLength="22" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="11042" charLength="23" codePart="isdefined (self.remove)" isCall="True">
+      <funcRefArg charIndex="11053" charLength="11" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\_explosive_barrels" name="array_remove" charIndex="11094" charLength="52" codePart="array_remove ( level.breakables_clip , self.remove )" isCall="True">
+      <funcRefArg charIndex="11109" charLength="22" />
+      <funcRefArg charIndex="11133" charLength="12" />
+    </funcRef>
+    <error type="warning" charIndex="1626" charLength="87" lineIndex="53">
+      <message>Could not find enough arguments, function 'maps\mp\_explosive_barrels::array_thread'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_explosive_barrels::array_thread', file 'maps\mp\_explosive_barrels', line 54, 'array_thread(getentarray ("explodable_barrel","targetname"), ::explodable_barrel_think);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="1824" charLength="72" lineIndex="55">
+      <message>Could not find enough arguments, function 'maps\mp\_explosive_barrels::array_thread'</message>
+      <fullMessage>Warning: Could not find enough arguments, function 'maps\mp\_explosive_barrels::array_thread', file 'maps\mp\_explosive_barrels', line 56, 'array_thread(getentarray ("oil_spill", "targetname"), ::oil_spill_think);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="2371" charLength="6" lineIndex="74">
+      <message>Variable 'damage' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'damage' is defined, but its value is never used., file 'maps\mp\_explosive_barrels', line 75, 'self waittill("damage", other, damage, direction_vec, P, type );'</fullMessage>
+    </error>
+    <error type="warning" charIndex="3382" charLength="6" lineIndex="121">
+      <message>Variable 'amount' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'amount' is defined, but its value is never used., file 'maps\mp\_explosive_barrels', line 122, 'self.barrel waittill("damage", amount ,attacker, direction_vec, P, type);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="3400" charLength="13" lineIndex="121">
+      <message>Variable 'direction_vec' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'direction_vec' is defined, but its value is never used., file 'maps\mp\_explosive_barrels', line 122, 'self.barrel waittill("damage", amount ,attacker, direction_vec, P, type);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="3415" charLength="1" lineIndex="121">
+      <message>Variable 'P' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'P' is defined, but its value is never used., file 'maps\mp\_explosive_barrels', line 122, 'self.barrel waittill("damage", amount ,attacker, direction_vec, P, type);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="5456" charLength="5" lineIndex="207">
+      <message>Variable 'count' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'count' is defined, but its value is never used., file 'maps\mp\_explosive_barrels', line 208, 'count = 0;'</fullMessage>
+    </error>
+    <error type="warning" charIndex="6291" charLength="13" lineIndex="241">
+      <message>Variable 'direction_vec' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'direction_vec' is defined, but its value is never used., file 'maps\mp\_explosive_barrels', line 242, 'self waittill("damage", amount ,attacker, direction_vec, P, type);'</fullMessage>
+    </error>
+    <error type="warning" charIndex="6306" charLength="1" lineIndex="241">
+      <message>Variable 'P' is defined, but its value is never used.</message>
+      <fullMessage>Warning: Variable 'P' is defined, but its value is never used., file 'maps\mp\_explosive_barrels', line 242, 'self waittill("damage", amount ,attacker, direction_vec, P, type);'</fullMessage>
+    </error>
+  </content>
+</scriptinfo>

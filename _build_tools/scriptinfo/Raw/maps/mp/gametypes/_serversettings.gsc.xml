@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\gametypes\_serversettings</name>
+  </settings>
+  <content>
+    <func name="init" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="updateServerSettings" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="constrainGameType" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="gametype">
+      </param>
+    </func>
+    <func name="constrainMapSize" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="mapsize">
+      </param>
+    </func>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="29" charLength="22" codePart="getdvar(&quot;sv_hostname&quot;)" isCall="True">
+      <funcRefArg charIndex="37" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="113" charLength="38" codePart="setdvar(&quot;sv_hostname&quot;, level.hostname)" isCall="True">
+      <funcRefArg charIndex="121" charLength="13" />
+      <funcRefArg charIndex="136" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="155" charLength="38" codePart="setdvar(&quot;ui_hostname&quot;, level.hostname)" isCall="True">
+      <funcRefArg charIndex="163" charLength="13" />
+      <funcRefArg charIndex="178" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="MakeDvarServerInfo" charIndex="197" charLength="44" codePart="makedvarserverinfo(&quot;ui_hostname&quot;, &quot;CoDHost&quot;)" isCall="True">
+      <funcRefArg charIndex="216" charLength="13" />
+      <funcRefArg charIndex="231" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="260" charLength="19" codePart="getdvar(&quot;scr_motd&quot;)" isCall="True">
+      <funcRefArg charIndex="268" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="326" charLength="31" codePart="setdvar(&quot;scr_motd&quot;, level.motd)" isCall="True">
+      <funcRefArg charIndex="334" charLength="10" />
+      <funcRefArg charIndex="346" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="361" charLength="30" codePart="setdvar(&quot;ui_motd&quot;, level.motd)" isCall="True">
+      <funcRefArg charIndex="369" charLength="9" />
+      <funcRefArg charIndex="380" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="MakeDvarServerInfo" charIndex="395" charLength="33" codePart="makedvarserverinfo(&quot;ui_motd&quot;, &quot;&quot;)" isCall="True">
+      <funcRefArg charIndex="414" charLength="9" />
+      <funcRefArg charIndex="425" charLength="2" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="452" charLength="22" codePart="getdvar(&quot;g_allowvote&quot;)" isCall="True">
+      <funcRefArg charIndex="460" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="532" charLength="39" codePart="setdvar(&quot;g_allowvote&quot;, level.allowvote)" isCall="True">
+      <funcRefArg charIndex="540" charLength="13" />
+      <funcRefArg charIndex="555" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="575" charLength="40" codePart="setdvar(&quot;ui_allowvote&quot;, level.allowvote)" isCall="True">
+      <funcRefArg charIndex="583" charLength="14" />
+      <funcRefArg charIndex="599" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="MakeDvarServerInfo" charIndex="619" charLength="39" codePart="makedvarserverinfo(&quot;ui_allowvote&quot;, &quot;1&quot;)" isCall="True">
+      <funcRefArg charIndex="638" charLength="14" />
+      <funcRefArg charIndex="654" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="getTweakableValue" charIndex="685" charLength="68" codePart="maps\mp\gametypes\_tweakables::getTweakableValue( &quot;team&quot;, &quot;fftype&quot; )" isCall="True">
+      <funcRefArg charIndex="735" charLength="6" />
+      <funcRefArg charIndex="743" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="757" charLength="46" codePart="setdvar(&quot;ui_friendlyfire&quot;, level.friendlyfire)" isCall="True">
+      <funcRefArg charIndex="765" charLength="17" />
+      <funcRefArg charIndex="784" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="MakeDvarServerInfo" charIndex="807" charLength="42" codePart="makedvarserverinfo(&quot;ui_friendlyfire&quot;, &quot;0&quot;)" isCall="True">
+      <funcRefArg charIndex="826" charLength="17" />
+      <funcRefArg charIndex="845" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="858" charLength="22" codePart="getdvar(&quot;scr_mapsize&quot;)" isCall="True">
+      <funcRefArg charIndex="866" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="891" charLength="28" codePart="setdvar(&quot;scr_mapsize&quot;, &quot;64&quot;)" isCall="True">
+      <funcRefArg charIndex="899" charLength="13" />
+      <funcRefArg charIndex="914" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="931" charLength="27" codePart="getdvarFloat(&quot;scr_mapsize&quot;)" isCall="True">
+      <funcRefArg charIndex="944" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="969" charLength="28" codePart="setdvar(&quot;scr_mapsize&quot;, &quot;64&quot;)" isCall="True">
+      <funcRefArg charIndex="977" charLength="13" />
+      <funcRefArg charIndex="992" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="1009" charLength="27" codePart="getdvarFloat(&quot;scr_mapsize&quot;)" isCall="True">
+      <funcRefArg charIndex="1022" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1047" charLength="28" codePart="setdvar(&quot;scr_mapsize&quot;, &quot;32&quot;)" isCall="True">
+      <funcRefArg charIndex="1055" charLength="13" />
+      <funcRefArg charIndex="1070" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="1087" charLength="27" codePart="getdvarFloat(&quot;scr_mapsize&quot;)" isCall="True">
+      <funcRefArg charIndex="1100" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1125" charLength="28" codePart="setdvar(&quot;scr_mapsize&quot;, &quot;16&quot;)" isCall="True">
+      <funcRefArg charIndex="1133" charLength="13" />
+      <funcRefArg charIndex="1148" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1165" charLength="27" codePart="setdvar(&quot;scr_mapsize&quot;, &quot;8&quot;)" isCall="True">
+      <funcRefArg charIndex="1173" charLength="13" />
+      <funcRefArg charIndex="1188" charLength="3" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvarFloat" charIndex="1212" charLength="27" codePart="getdvarFloat(&quot;scr_mapsize&quot;)" isCall="True">
+      <funcRefArg charIndex="1225" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_serversettings" name="constrainGameType" charIndex="1245" charLength="40" codePart="constrainGameType(getdvar(&quot;g_gametype&quot;))" isCall="True">
+      <funcRefArg charIndex="1263" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="1263" charLength="21" codePart="getdvar(&quot;g_gametype&quot;)" isCall="True">
+      <funcRefArg charIndex="1271" charLength="12" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_serversettings" name="constrainMapSize" charIndex="1289" charLength="31" codePart="constrainMapSize(level.mapsize)" isCall="True">
+      <funcRefArg charIndex="1306" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_serversettings" name="updateServerSettings" charIndex="1341" charLength="22" codePart="updateServerSettings()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="1428" charLength="22" codePart="getdvar(&quot;sv_hostname&quot;)" isCall="True">
+      <funcRefArg charIndex="1436" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1528" charLength="38" codePart="setdvar(&quot;ui_hostname&quot;, level.hostname)" isCall="True">
+      <funcRefArg charIndex="1536" charLength="13" />
+      <funcRefArg charIndex="1551" charLength="14" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="1587" charLength="19" codePart="getdvar(&quot;scr_motd&quot;)" isCall="True">
+      <funcRefArg charIndex="1595" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1670" charLength="30" codePart="setdvar(&quot;ui_motd&quot;, level.motd)" isCall="True">
+      <funcRefArg charIndex="1678" charLength="9" />
+      <funcRefArg charIndex="1689" charLength="10" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetDvar" charIndex="1724" charLength="22" codePart="getdvar(&quot;g_allowvote&quot;)" isCall="True">
+      <funcRefArg charIndex="1732" charLength="13" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="1826" charLength="40" codePart="setdvar(&quot;ui_allowvote&quot;, level.allowvote)" isCall="True">
+      <funcRefArg charIndex="1834" charLength="14" />
+      <funcRefArg charIndex="1850" charLength="15" />
+    </funcRef>
+    <funcRef sfPath="maps\mp\gametypes\_tweakables" name="getTweakableValue" charIndex="1896" charLength="68" codePart="maps\mp\gametypes\_tweakables::getTweakableValue( &quot;team&quot;, &quot;fftype&quot; )" isCall="True">
+      <funcRefArg charIndex="1946" charLength="6" />
+      <funcRefArg charIndex="1954" charLength="9" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetDvar" charIndex="2060" charLength="46" codePart="setdvar(&quot;ui_friendlyfire&quot;, level.friendlyfire)" isCall="True">
+      <funcRefArg charIndex="2068" charLength="17" />
+      <funcRefArg charIndex="2087" charLength="18" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="2162" charLength="13" codePart="getentarray()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2283" charLength="36" codePart="isdefined(entity.script_gametype_dm)" isCall="True">
+      <funcRefArg charIndex="2293" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="2426" charLength="15" codePart="entity delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2496" charLength="37" codePart="isdefined(entity.script_gametype_tdm)" isCall="True">
+      <funcRefArg charIndex="2506" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="2641" charLength="15" codePart="entity delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2711" charLength="37" codePart="isdefined(entity.script_gametype_ctf)" isCall="True">
+      <funcRefArg charIndex="2721" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="2856" charLength="15" codePart="entity delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="2925" charLength="36" codePart="isdefined(entity.script_gametype_hq)" isCall="True">
+      <funcRefArg charIndex="2935" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="3068" charLength="15" codePart="entity delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3137" charLength="36" codePart="isdefined(entity.script_gametype_sd)" isCall="True">
+      <funcRefArg charIndex="3147" charLength="25" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="3280" charLength="15" codePart="entity delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3351" charLength="38" codePart="isdefined(entity.script_gametype_koth)" isCall="True">
+      <funcRefArg charIndex="3361" charLength="27" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="3498" charLength="15" codePart="entity delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="GetEntArray" charIndex="3578" charLength="13" codePart="getentarray()" isCall="True" />
+    <funcRef sfPath="codapi" name="Int" charIndex="3669" charLength="12" codePart="int(mapsize)" isCall="True">
+      <funcRefArg charIndex="3673" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3700" charLength="35" codePart="isdefined(entity.script_mapsize_08)" isCall="True">
+      <funcRefArg charIndex="3710" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="3840" charLength="15" codePart="entity delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="Int" charIndex="3879" charLength="12" codePart="int(mapsize)" isCall="True">
+      <funcRefArg charIndex="3883" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="3911" charLength="35" codePart="isdefined(entity.script_mapsize_16)" isCall="True">
+      <funcRefArg charIndex="3921" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="4051" charLength="15" codePart="entity delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="Int" charIndex="4090" charLength="12" codePart="int(mapsize)" isCall="True">
+      <funcRefArg charIndex="4094" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4122" charLength="35" codePart="isdefined(entity.script_mapsize_32)" isCall="True">
+      <funcRefArg charIndex="4132" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="4262" charLength="15" codePart="entity delete()" isCall="True" />
+    <funcRef sfPath="codapi" name="Int" charIndex="4301" charLength="12" codePart="int(mapsize)" isCall="True">
+      <funcRefArg charIndex="4305" charLength="7" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="IsDefined" charIndex="4333" charLength="35" codePart="isdefined(entity.script_mapsize_64)" isCall="True">
+      <funcRefArg charIndex="4343" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Delete" charIndex="4473" charLength="15" codePart="entity delete()" isCall="True" />
+  </content>
+</scriptinfo>

@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>maps\mp\_unified_mapping_interface</name>
+  </settings>
+  <content>
+    <func name="modName" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="nativeMapType" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="setNativeMapType" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="nativeMapType">
+      </param>
+    </func>
+    <func name="isUmiMap" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="privateGuessModName" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="buildShops" access="Public">
+      <self>
+      </self>
+      <summary>umi for building stores</summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="buildWeaponShopsByTargetname" access="Public">
+      <self>
+      </self>
+      <summary>umi for weapons shop/upgrade</summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="buildWeaponShopsByTradespawns" access="Public">
+      <self>
+      </self>
+      <summary>umi for weapons shop/upgrade</summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="buildAmmoStock" access="Public">
+      <self>
+      </self>
+      <summary>rotu legacy equipment shop</summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+    </func>
+    <func name="buildWeaponUpgrade" access="Public">
+      <self>
+      </self>
+      <summary>rotu legacy weapon upgrade</summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+      <param name="targetname">
+      </param>
+    </func>
+    <func name="placeShops" access="Public">
+      <self>
+      </self>
+      <summary>rozo legacy for placing shops and weapons upgrades</summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="buildSurvSpawn" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+  </content>
+</scriptinfo>

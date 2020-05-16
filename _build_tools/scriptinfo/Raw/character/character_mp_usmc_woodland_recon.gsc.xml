@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_mp_usmc_woodland_recon</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="44" codePart="self setModel(&quot;body_mp_usmc_woodland_recon&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="106" charLength="43" codePart="self attach(&quot;head_mp_usmc_nomex&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="118" charLength="20" />
+      <funcRefArg charIndex="140" charLength="2" />
+      <funcRefArg charIndex="144" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetViewModel" charIndex="153" charLength="43" codePart="self setViewmodel(&quot;viewhands_sas_woodland&quot;)" isCall="True">
+      <funcRefArg charIndex="171" charLength="24" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="246" charLength="44" codePart="precacheModel(&quot;body_mp_usmc_woodland_recon&quot;)" isCall="True">
+      <funcRefArg charIndex="260" charLength="29" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="294" charLength="35" codePart="precacheModel(&quot;head_mp_usmc_nomex&quot;)" isCall="True">
+      <funcRefArg charIndex="308" charLength="20" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="333" charLength="39" codePart="precacheModel(&quot;viewhands_sas_woodland&quot;)" isCall="True">
+      <funcRefArg charIndex="347" charLength="24" />
+    </funcRef>
+  </content>
+</scriptinfo>

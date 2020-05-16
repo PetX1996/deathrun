@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<scriptinfo>
+  <settings global="False" successfully="True" compiled="False">
+    <name>character\character_mp_usmc_sniper</name>
+  </settings>
+  <content>
+    <func name="main" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <func name="precache" access="Public">
+      <self>
+      </self>
+      <summary>
+      </summary>
+      <returns>
+      </returns>
+      <example>
+      </example>
+    </func>
+    <funcRef sfPath="codapi" name="SetModel" charIndex="58" charLength="36" codePart="self setModel(&quot;body_mp_usmc_sniper&quot;)" isCall="True">
+      <funcRefArg charIndex="72" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="Attach" charIndex="98" charLength="59" codePart="self attach(&quot;head_mp_usmc_tactical_baseball_cap&quot;, &quot;&quot;, true)" isCall="True">
+      <funcRefArg charIndex="110" charLength="36" />
+      <funcRefArg charIndex="148" charLength="2" />
+      <funcRefArg charIndex="152" charLength="4" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="SetViewModel" charIndex="161" charLength="45" codePart="self setViewmodel(&quot;viewmodel_base_viewhands&quot;)" isCall="True">
+      <funcRefArg charIndex="179" charLength="26" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="257" charLength="36" codePart="precacheModel(&quot;body_mp_usmc_sniper&quot;)" isCall="True">
+      <funcRefArg charIndex="271" charLength="21" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="297" charLength="51" codePart="precacheModel(&quot;head_mp_usmc_tactical_baseball_cap&quot;)" isCall="True">
+      <funcRefArg charIndex="311" charLength="36" />
+    </funcRef>
+    <funcRef sfPath="codapi" name="PreCacheModel" charIndex="352" charLength="41" codePart="precacheModel(&quot;viewmodel_base_viewhands&quot;)" isCall="True">
+      <funcRefArg charIndex="366" charLength="26" />
+    </funcRef>
+  </content>
+</scriptinfo>

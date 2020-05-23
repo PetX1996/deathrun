@@ -17,6 +17,8 @@ set spcEnable=%~1
 shift
 set spcSettings=%~1
 shift
+set spcPlatform=%~1
+shift
 
 set runEnable=%~1
 shift
@@ -143,6 +145,7 @@ echo.	iwdEnable: %iwdEnable%
 echo.	iwdQuality: %iwdQuality%
 echo.	spcEnable: %spcEnable%
 echo.	spcSettings: %spcSettings%
+echo. spcPlatform: %spcPlatform%
 echo.	runEnable: %runEnable%
 echo.	runType: %runType%
 echo.	runSettings: %runSettings%
@@ -304,12 +307,36 @@ if "%iwdQuality%"=="2" set iwdQuality=BestCompression
 goto FINAL
 
 :FUNC_COMPILE_SPC
+if "%spcPlatform%"=="" call:FUNC_COMPILE_SPC_PLATFORMCHOICE
+
 echo.   ==========================================================================
 echo.   I                        Pre-compiling of GSC                            I
 echo.   ==========================================================================
 cd %GAMEDIR%\bin\CODSCRIPT
 spc.exe -workingDir="%GAMEDIR%\bin\CODSCRIPT" -raw=FSGame -FSGameFolderName="%SOURCEFOLDER%" -settingsFile=%SOURCEFSGAME%\spc.xml %spcSettings%
 if "%verbose%"=="1" pause
+
+if "%spcPlatform%"=="1" (
+  cd %OUTPUTDIR%
+  del /f /s "*.gsx"
+)
+
+goto FINAL
+
+:FUNC_COMPILE_SPC_PLATFORMCHOICE
+echo.   ==========================================================================
+echo.   I                             GSC PLATFORM                               I
+echo.   ==========================================================================
+echo.   I                          Please choose:                                I
+echo.   ==========================================================================
+echo    I                             1. Classic                                 I
+echo.   I                             2. Ninja 1.8X                              I
+echo.   I                                                                        I
+echo.   I                             0. Exit                                    I
+echo.   ==========================================================================
+if "%spcPlatform%"=="" set /p spcPlatform=:
+if "%spcPlatform%"=="1" set spcPlatform=1
+if "%spcPlatform%"=="2" set spcPlatform=2
 goto FINAL
 
 :: ==================================

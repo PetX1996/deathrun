@@ -1,4 +1,5 @@
 .svn
+.git
 .dds
 .gsc
 .png

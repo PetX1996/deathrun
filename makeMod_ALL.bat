@@ -4,6 +4,8 @@ set verbose=%~1
 shift
 set mainChoice=%~1
 shift
+set copyArgs=%~1
+shift
 
 set ffEnable=%~1
 shift
@@ -91,6 +93,7 @@ if "%mainChoice%"=="1" (
 )
 if "%mainChoice%"=="2" (
 	set verbose=0
+  set copyArgs=/d
 	set ffEnable=1
 	set iwdEnable=1
 	set spcEnable=1	
@@ -140,12 +143,13 @@ pause
 :FUNC_SETTINGS_DEBUG
 echo.	verbose: %verbose%
 echo.	mainChoice: %mainChoice%
+echo.	copyArgs: %copyArgs%
 echo.	ffEnable: %ffEnable%
 echo.	iwdEnable: %iwdEnable%
 echo.	iwdQuality: %iwdQuality%
 echo.	spcEnable: %spcEnable%
 echo.	spcSettings: %spcSettings%
-echo. spcPlatform: %spcPlatform%
+echo.	spcPlatform: %spcPlatform%
 echo.	runEnable: %runEnable%
 echo.	runType: %runType%
 echo.	runSettings: %runSettings%
@@ -220,26 +224,26 @@ if not exist "%GAMEDIR%\zone_source\english" xcopy "%GAMEDIR%\zone_source\englis
 echo.   ==========================================================================
 echo.   I                    Copying raw files...                                I
 echo.   ==========================================================================
-xcopy animtrees "%GAMEDIR%\raw\animtrees" /SYI /d %XCOPY_EXCLUDE%
-xcopy ccfgs "%GAMEDIR%\raw\ccfgs" /SYI /d %XCOPY_EXCLUDE%
-xcopy english "%GAMEDIR%\raw\english" /SYI /d %XCOPY_EXCLUDE%
-xcopy fx "%GAMEDIR%\raw\fx" /SYI /d %XCOPY_EXCLUDE%
-xcopy images "%GAMEDIR%\raw\images" /SYI /d %XCOPY_EXCLUDE%
-xcopy maps "%GAMEDIR%\raw\maps" /SYI /d %XCOPY_EXCLUDE%
-xcopy materials "%GAMEDIR%\raw\materials" /SYI /d %XCOPY_EXCLUDE%
-xcopy material_properties "%GAMEDIR%\raw\material_properties" /SYI /d %XCOPY_EXCLUDE%
-xcopy mp "%GAMEDIR%\raw\mp" /SYI %XCOPY_EXCLUDE%
-rem xcopy shock "%GAMEDIR%\raw\shock" /SYI /d %XCOPY_EXCLUDE%
-xcopy sound "%GAMEDIR%\raw\sound" /SYI /d %XCOPY_EXCLUDE%
-xcopy soundaliases "%GAMEDIR%\raw\soundaliases" /SYI %XCOPY_EXCLUDE%
-xcopy ui "%GAMEDIR%\raw\ui" /SYI /d %XCOPY_EXCLUDE%
-xcopy ui_mp "%GAMEDIR%\raw\ui_mp" /SYI /d %XCOPY_EXCLUDE%
-xcopy vision "%GAMEDIR%\raw\vision" /SYI /d %XCOPY_EXCLUDE%
-xcopy weapons\mp "%GAMEDIR%\raw\weapons\mp" /SYI /d %XCOPY_EXCLUDE%
-xcopy xanim "%GAMEDIR%\raw\xanim" /SYI /d %XCOPY_EXCLUDE%
-xcopy xmodel "%GAMEDIR%\raw\xmodel" /SYI /d %XCOPY_EXCLUDE%
-xcopy xmodelparts "%GAMEDIR%\raw\xmodelparts" /SYI /d %XCOPY_EXCLUDE%
-xcopy xmodelsurfs "%GAMEDIR%\raw\xmodelsurfs" /SYI /d %XCOPY_EXCLUDE%
+xcopy animtrees "%GAMEDIR%\raw\animtrees" /SYI %copyArgs% %XCOPY_EXCLUDE%
+xcopy ccfgs "%GAMEDIR%\raw\ccfgs" /SYI %copyArgs% %XCOPY_EXCLUDE%
+xcopy english "%GAMEDIR%\raw\english" /SYI %copyArgs% %XCOPY_EXCLUDE%
+xcopy fx "%GAMEDIR%\raw\fx" /SYI %copyArgs% %XCOPY_EXCLUDE%
+xcopy images "%GAMEDIR%\raw\images" /SYI %copyArgs% %XCOPY_EXCLUDE%
+xcopy maps "%GAMEDIR%\raw\maps" /SYI %copyArgs% %XCOPY_EXCLUDE%
+xcopy materials "%GAMEDIR%\raw\materials" /SYI %copyArgs% %XCOPY_EXCLUDE%
+xcopy material_properties "%GAMEDIR%\raw\material_properties" /SYI %copyArgs% %XCOPY_EXCLUDE%
+xcopy mp "%GAMEDIR%\raw\mp" /SYI %copyArgs% %XCOPY_EXCLUDE%
+rem xcopy shock "%GAMEDIR%\raw\shock" /SYI %copyArgs% %XCOPY_EXCLUDE%
+xcopy sound "%GAMEDIR%\raw\sound" /SYI %copyArgs% %XCOPY_EXCLUDE%
+xcopy soundaliases "%GAMEDIR%\raw\soundaliases" /SYI %copyArgs% %XCOPY_EXCLUDE%
+xcopy ui "%GAMEDIR%\raw\ui" /SYI %copyArgs% %XCOPY_EXCLUDE%
+xcopy ui_mp "%GAMEDIR%\raw\ui_mp" /SYI %copyArgs% %XCOPY_EXCLUDE%
+xcopy vision "%GAMEDIR%\raw\vision" /SYI %copyArgs% %XCOPY_EXCLUDE%
+xcopy weapons\mp "%GAMEDIR%\raw\weapons\mp" /SYI %copyArgs% %XCOPY_EXCLUDE%
+xcopy xanim "%GAMEDIR%\raw\xanim" /SYI %copyArgs% %XCOPY_EXCLUDE%
+xcopy xmodel "%GAMEDIR%\raw\xmodel" /SYI %copyArgs% %XCOPY_EXCLUDE%
+xcopy xmodelparts "%GAMEDIR%\raw\xmodelparts" /SYI %copyArgs% %XCOPY_EXCLUDE%
+xcopy xmodelsurfs "%GAMEDIR%\raw\xmodelsurfs" /SYI %copyArgs% %XCOPY_EXCLUDE%
 
 echo.   ==========================================================================
 echo.   I               Copying source assets CSV...                             I
@@ -264,10 +268,11 @@ goto FINAL
 
 :FUNC_COPYCONFIGS
 echo.   ==========================================================================
-echo.   I                           Copying Configs                              I
+echo.   I                       Copying server configs                           I
 echo.   ==========================================================================
 cd %SOURCEDIR%
-xcopy *.cfg "%OUTPUTDIR%" /SYI /d %XCOPY_EXCLUDE%
+xcopy configs "%OUTPUTDIR%\configs" /SYI %copyArgs% %XCOPY_EXCLUDE%
+xcopy *.cfg "%OUTPUTDIR%" /YI %copyArgs% %XCOPY_EXCLUDE%
 goto FINAL
 
 :FUNC_COMPILE_IWD
